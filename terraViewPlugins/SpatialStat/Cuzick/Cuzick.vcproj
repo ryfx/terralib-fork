@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="Cuzick"
+	ProjectGUID="{C8651354-61D8-461A-86D2-11AD12CE8A40}">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="..\Debug\plugins\"
+			IntermediateDirectory="..\Debug\plugins\obj\Cuzick\"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				Optimization="0"
+				AdditionalIncludeDirectories="..\..\..\src\terralib\kernel,.,..\..\..\terraViewPlugins\base,..\..\..\terraView,..\..\..\terraView\ui,..\..\..\ui\terraView,..\..\..\ui\appUtils,..\..\..\src\libspl,..\..\..\src\terralib\kernel,..\..\..\src\terralib\functions,..\..\..\src\terralib\drivers\qt,..\..\..\src\terralib\drivers\spl,..\..\..\src\appUtils,..\..\..\ui,..\..\..\src\terralib\utils,include,$(QTDIR)\include,src\ui\,ui,D:\funcate\tags_tlib\v-3.6.0\terralib\terraViewPlugins\SpatialStat\Cuzick,src\moc\,C:\Qt\3.2.0\mkspecs\win32-msvc.net"
+				PreprocessorDefinitions="_WINDOWS,_DEBUG,WIN32,QT_DLL,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				MinimalRebuild="TRUE"
+				ExceptionHandling="TRUE"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				BufferSecurityCheck="TRUE"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="..\Debug\plugins\obj\Cuzick\"
+				ObjectFile="..\Debug\plugins\obj\Cuzick\"
+				ProgramDataBaseFileName="../Debug/win32-msvc/obj/Cuzick/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="3"
+				DisableSpecificWarnings="4100"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mt320.lib libspl.lib terralib.lib te_apputils.lib terraViewCore.lib te_spl.lib te_spl.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile="..\Debug\plugins\Cuzick.dll"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="../../../Debug/terralib,../../../Debug/terralib,../../../Debug/te_apputils,../../../Debug/libspl,../../../Debug/te_spl,../../../Debug/terraViewCore,$(QTDIR)\lib"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
+				SubSystem="2"
+				BaseAddress="0x39D00000"
+				ImportLibrary="$(OutDir)/$(ProjectName).lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Copy Cuzick.dll to ..\..\..\terraView\windows\plugins"
+				CommandLine="copy  &quot;$(TargetPath)&quot; &quot;..\..\..\terraView\windows\plugins&quot;"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="..\Release\plugins\"
+			IntermediateDirectory="..\Release\plugins\obj\Cuzick\"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				Optimization="2"
+				AdditionalIncludeDirectories="..\..\..\src\terralib\kernel,.,..\..\..\terraViewPlugins\base,..\..\..\terraView,..\..\..\terraView\ui,..\..\..\ui\terraView,..\..\..\ui\appUtils,..\..\..\src\libspl,..\..\..\src\terralib\kernel,..\..\..\src\terralib\functions,..\..\..\src\terralib\drivers\qt,..\..\..\src\terralib\drivers\spl,..\..\..\src\appUtils,..\..\..\ui,..\..\..\src\terralib\utils,include,$(QTDIR)\include,src\ui\,ui,D:\funcate\tags_tlib\v-3.6.0\terralib\terraViewPlugins\SpatialStat\Cuzick,src\moc\,C:\Qt\3.2.0\mkspecs\win32-msvc.net"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,NDEBUG,WIN32,QT_DLL,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				ExceptionHandling="TRUE"
+				RuntimeLibrary="2"
+				BufferSecurityCheck="TRUE"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="..\Release\plugins\obj\Cuzick\"
+				ObjectFile="..\Release\plugins\obj\Cuzick\"
+				ProgramDataBaseFileName="../Release/win32-msvc/obj/Cuzick/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="0"
+				DisableSpecificWarnings="4100"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mt320.lib libspl.lib terralib.lib te_apputils.lib terraViewCore.lib te_spl.lib te_spl.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile="..\Release\plugins\Cuzick.dll"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="../../../Release/terralib,../../../Release/terralib,../../../Release/te_apputils,../../../Release/libspl,../../../Release/te_spl,../../../Release/terraViewCore,$(QTDIR)\lib"
+				DelayLoadDLLs="comdlg32.dll,oleaut32.dll,winmm.dll,wsock32.dll,winspool.dll"
+				ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
+				SubSystem="2"
+				BaseAddress="0x39D00000"
+				ImportLibrary="$(OutDir)/$(ProjectName).lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Copy Cuzick.dll to ..\..\..\Release\plugins"
+				CommandLine="copy  &quot;$(TargetPath)&quot; &quot;..\..\..\Release\plugins&quot;"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="src\Cuzick.cpp">
+			</File>
+			<File
+				RelativePath="src\cuzickplugin.cpp">
+			</File>
+			<File
+				RelativePath="src\cuzickPluginCode.cpp">
+			</File>
+			<File
+				RelativePath="src\CuzickPluginWindow.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath="include\Cuzick.h">
+			</File>
+			<File
+				RelativePath="include\cuzickplugin.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing include\cuzickplugin.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe include\cuzickplugin.h -o src\moc\moc_cuzickplugin.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="src\moc\moc_cuzickplugin.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing include\cuzickplugin.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe include\cuzickplugin.h -o src\moc\moc_cuzickplugin.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="src\moc\moc_cuzickplugin.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\cuzickPluginCode.h">
+			</File>
+			<File
+				RelativePath="include\CuzickPluginWindow.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing include\CuzickPluginWindow.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe include\CuzickPluginWindow.h -o src\moc\moc_CuzickPluginWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="src\moc\moc_CuzickPluginWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing include\CuzickPluginWindow.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe include\CuzickPluginWindow.h -o src\moc\moc_CuzickPluginWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="src\moc\moc_CuzickPluginWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated MOC Files"
+			Filter="cpp;c;cxx;moc">
+			<File
+				RelativePath="src\moc\moc_CuzickForm.cpp">
+			</File>
+			<File
+				RelativePath="src\moc\moc_cuzickplugin.cpp">
+			</File>
+			<File
+				RelativePath="src\moc\moc_CuzickPluginWindow.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated UI Files"
+			Filter="cpp;c;cxx;h;hpp;hxx;">
+			<File
+				RelativePath="src\ui\CuzickForm.cpp">
+			</File>
+			<File
+				RelativePath="src\ui\CuzickForm.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Forms"
+			Filter="ui"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="ui\CuzickForm.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ui\CuzickForm.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ui\CuzickForm.ui -o src\ui\CuzickForm.h &amp;&amp; $(QTDIR)\bin\uic.exe ui\CuzickForm.ui -i CuzickForm.h -o src\ui\CuzickForm.cpp &amp;&amp; $(QTDIR)\bin\moc.exe src\ui\CuzickForm.h -o src\moc\moc_CuzickForm.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="src\ui\CuzickForm.h;src\ui\CuzickForm.cpp;src\moc\moc_CuzickForm.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ui\CuzickForm.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ui\CuzickForm.ui -o src\ui\CuzickForm.h &amp;&amp; $(QTDIR)\bin\uic.exe ui\CuzickForm.ui -i CuzickForm.h -o src\ui\CuzickForm.cpp &amp;&amp; $(QTDIR)\bin\moc.exe src\ui\CuzickForm.h -o src\moc\moc_CuzickForm.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="src\ui\CuzickForm.h;src\ui\CuzickForm.cpp;src\moc\moc_CuzickForm.cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Translations Files"
+			Filter="ts"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="cuzick_pt.ts">
+			</File>
+			<File
+				RelativePath="cuzick_sp.ts">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

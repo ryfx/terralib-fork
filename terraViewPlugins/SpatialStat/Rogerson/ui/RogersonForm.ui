@@ -1,0 +1,623 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>rogerson</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>rogerson</cstring>
+    </property>
+    <property name="enabled">
+        <bool>true</bool>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>460</width>
+            <height>402</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>0</width>
+            <height>0</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>32767</width>
+            <height>32767</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Rogerson</string>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>false</bool>
+    </property>
+    <property name="modal">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="resizeMode">
+            <enum>Fixed</enum>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout19</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>InputgroupBox</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Entrada</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout8</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout7</cstring>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>textLabel1</cstring>
+                                            </property>
+                                            <property name="font">
+                                                <font>
+                                                </font>
+                                            </property>
+                                            <property name="text">
+                                                <string>&lt;font size="+1"&gt;&lt;font&gt;Tema:&lt;/font&gt;&lt;/font&gt;</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QComboBox">
+                                            <property name="name">
+                                                <cstring>themeComboBox</cstring>
+                                            </property>
+                                            <property name="sizePolicy">
+                                                <sizepolicy>
+                                                    <hsizetype>3</hsizetype>
+                                                    <vsizetype>0</vsizetype>
+                                                    <horstretch>0</horstretch>
+                                                    <verstretch>0</verstretch>
+                                                </sizepolicy>
+                                            </property>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout6</cstring>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout3</cstring>
+                                            </property>
+                                            <hbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>textLabel1_4</cstring>
+                                                    </property>
+                                                    <property name="font">
+                                                        <font>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>&lt;font size="+1"&gt;&lt;font&gt;Raio Crítico:&lt;/font&gt;&lt;/font&gt;</string>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QLineEdit">
+                                                    <property name="name">
+                                                        <cstring>RadiuslineEdit</cstring>
+                                                    </property>
+                                                    <property name="sizePolicy">
+                                                        <sizepolicy>
+                                                            <hsizetype>3</hsizetype>
+                                                            <vsizetype>0</vsizetype>
+                                                            <horstretch>0</horstretch>
+                                                            <verstretch>0</verstretch>
+                                                        </sizepolicy>
+                                                    </property>
+                                                    <property name="frameShape">
+                                                        <enum>LineEditPanel</enum>
+                                                    </property>
+                                                    <property name="frameShadow">
+                                                        <enum>Sunken</enum>
+                                                    </property>
+                                                </widget>
+                                            </hbox>
+                                        </widget>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout4</cstring>
+                                            </property>
+                                            <hbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>textLabel1_4_2</cstring>
+                                                    </property>
+                                                    <property name="font">
+                                                        <font>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>&lt;font size="+1"&gt;&lt;font&gt;Tempo Crítico:&lt;/font&gt;&lt;/font&gt;</string>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QLineEdit">
+                                                    <property name="name">
+                                                        <cstring>MedidaTempo</cstring>
+                                                    </property>
+                                                    <property name="sizePolicy">
+                                                        <sizepolicy>
+                                                            <hsizetype>3</hsizetype>
+                                                            <vsizetype>0</vsizetype>
+                                                            <horstretch>0</horstretch>
+                                                            <verstretch>0</verstretch>
+                                                        </sizepolicy>
+                                                    </property>
+                                                </widget>
+                                            </hbox>
+                                        </widget>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout5</cstring>
+                                            </property>
+                                            <hbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>textLabel1_4_3</cstring>
+                                                    </property>
+                                                    <property name="font">
+                                                        <font>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>&lt;font size="+1"&gt;&lt;font&gt;ARL:&lt;/font&gt;&lt;/font&gt;</string>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QLineEdit">
+                                                    <property name="name">
+                                                        <cstring>Arl</cstring>
+                                                    </property>
+                                                    <property name="sizePolicy">
+                                                        <sizepolicy>
+                                                            <hsizetype>3</hsizetype>
+                                                            <vsizetype>0</vsizetype>
+                                                            <horstretch>0</horstretch>
+                                                            <verstretch>0</verstretch>
+                                                        </sizepolicy>
+                                                    </property>
+                                                    <property name="frameShape">
+                                                        <enum>LineEditPanel</enum>
+                                                    </property>
+                                                    <property name="frameShadow">
+                                                        <enum>Sunken</enum>
+                                                    </property>
+                                                </widget>
+                                            </hbox>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                            </vbox>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout18</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>Output</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Output</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QTextBrowser" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>Output_text</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>0</width>
+                                            <height>200</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>timegroupBox</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Time Selection</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>layout17</cstring>
+                                    </property>
+                                    <vbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout9</cstring>
+                                            </property>
+                                            <hbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>textLabel1_3</cstring>
+                                                    </property>
+                                                    <property name="font">
+                                                        <font>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>&lt;font size="+1"&gt;&lt;font&gt;Unidade de Tempo:&lt;/font&gt;&lt;/font&gt;</string>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <item>
+                                                        <property name="text">
+                                                            <string>Hour</string>
+                                                        </property>
+                                                    </item>
+                                                    <item>
+                                                        <property name="text">
+                                                            <string>Day</string>
+                                                        </property>
+                                                    </item>
+                                                    <item>
+                                                        <property name="text">
+                                                            <string>Month</string>
+                                                        </property>
+                                                    </item>
+                                                    <item>
+                                                        <property name="text">
+                                                            <string>Year</string>
+                                                        </property>
+                                                    </item>
+                                                    <property name="name">
+                                                        <cstring>timeUnitComboBox</cstring>
+                                                    </property>
+                                                    <property name="sizePolicy">
+                                                        <sizepolicy>
+                                                            <hsizetype>3</hsizetype>
+                                                            <vsizetype>0</vsizetype>
+                                                            <horstretch>0</horstretch>
+                                                            <verstretch>0</verstretch>
+                                                        </sizepolicy>
+                                                    </property>
+                                                    <property name="currentItem">
+                                                        <number>0</number>
+                                                    </property>
+                                                </widget>
+                                            </hbox>
+                                        </widget>
+                                        <widget class="QCheckBox">
+                                            <property name="name">
+                                                <cstring>timecheckBox</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Habilitar Seleção de Tempo</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout16</cstring>
+                                            </property>
+                                            <hbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLayoutWidget">
+                                                    <property name="name">
+                                                        <cstring>layout15</cstring>
+                                                    </property>
+                                                    <vbox>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QLabel">
+                                                            <property name="name">
+                                                                <cstring>textLabel1_2</cstring>
+                                                            </property>
+                                                            <property name="font">
+                                                                <font>
+                                                                </font>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>Tabela de Atributos:</string>
+                                                            </property>
+                                                        </widget>
+                                                        <widget class="QLabel">
+                                                            <property name="name">
+                                                                <cstring>casesLabel</cstring>
+                                                            </property>
+                                                            <property name="font">
+                                                                <font>
+                                                                </font>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>Tempo:</string>
+                                                            </property>
+                                                            <property name="alignment">
+                                                                <set>AlignVCenter|AlignRight</set>
+                                                            </property>
+                                                            <property name="buddy" stdset="0">
+                                                                <cstring>casesEdit</cstring>
+                                                            </property>
+                                                        </widget>
+                                                    </vbox>
+                                                </widget>
+                                                <widget class="QLayoutWidget">
+                                                    <property name="name">
+                                                        <cstring>layout14</cstring>
+                                                    </property>
+                                                    <vbox>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QComboBox">
+                                                            <property name="name">
+                                                                <cstring>tableComboBox</cstring>
+                                                            </property>
+                                                            <property name="enabled">
+                                                                <bool>false</bool>
+                                                            </property>
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy>
+                                                                    <hsizetype>3</hsizetype>
+                                                                    <vsizetype>0</vsizetype>
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                        </widget>
+                                                        <widget class="QComboBox">
+                                                            <property name="name">
+                                                                <cstring>timeComboBox</cstring>
+                                                            </property>
+                                                            <property name="enabled">
+                                                                <bool>false</bool>
+                                                            </property>
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy>
+                                                                    <hsizetype>3</hsizetype>
+                                                                    <vsizetype>0</vsizetype>
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                        </widget>
+                                                    </vbox>
+                                                </widget>
+                                            </hbox>
+                                        </widget>
+                                    </vbox>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout13</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>okButton</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>10</pointsize>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>&amp;OK</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+O</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer1</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>quitButton</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>10</pointsize>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Quit</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+Q</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer2</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>themeComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>rogerson</receiver>
+        <slot>temaComboBoxClickSlot(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>okButton</sender>
+        <signal>clicked()</signal>
+        <receiver>rogerson</receiver>
+        <slot>okButtonClickSlot()</slot>
+    </connection>
+    <connection>
+        <sender>quitButton</sender>
+        <signal>clicked()</signal>
+        <receiver>rogerson</receiver>
+        <slot>CloseSlot()</slot>
+    </connection>
+    <connection>
+        <sender>timecheckBox</sender>
+        <signal>clicked()</signal>
+        <receiver>rogerson</receiver>
+        <slot>Enable_timeSlot()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>rogerson</receiver>
+        <slot>helpButtonSlot()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>themeComboBox</tabstop>
+    <tabstop>RadiuslineEdit</tabstop>
+    <tabstop>MedidaTempo</tabstop>
+    <tabstop>Arl</tabstop>
+    <tabstop>timecheckBox</tabstop>
+    <tabstop>timeUnitComboBox</tabstop>
+    <tabstop>tableComboBox</tabstop>
+    <tabstop>timeComboBox</tabstop>
+    <tabstop>Output_text</tabstop>
+    <tabstop>okButton</tabstop>
+    <tabstop>quitButton</tabstop>
+</tabstops>
+<slots>
+    <slot>temaComboBoxClickSlot(const QString&amp;)</slot>
+    <slot>okButtonClickSlot()</slot>
+    <slot>tableComboBoxClickSlot(const QString&amp;)</slot>
+    <slot>destroy()</slot>
+    <slot>CloseSlot()</slot>
+    <slot>Enable_timeSlot()</slot>
+    <slot>helpButtonSlot()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

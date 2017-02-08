@@ -1,0 +1,213 @@
+<html>
+<head>
+<title>Informações Relevantes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<font face="Arial, Helvetica, sans-serif" size="4">
+<table width="100%">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><b>Informações Relevantes </b><br>
+       <p align="right">
+             <a href="plugin_cell.html">Anterior </a>||<a href="../../fillCell.html"> Página Inicial</a>
+            </p>
+            <hr>
+      
+            <b>Dados de entrada em representação matricial ou célula</b>
+            <br />
+                     O Dado matricial deve ser entendido como qualquer dado armazenado em uma
+                    estrutura de matriz retangular com N linhas × M colunas, como grades regulares ou
+                    raster. Dados matriciais podem possuir uma terceira dimensão além daquela
+                    representada pelo plano cartesiano das linhas e colunas. Ou seja, a cada elemento do
+                    dado matricial pode estar associado não 1, mas um conjunto de valores. Assim, temos
+                    que um dado matricial pode possuir N colunas × M linhas × B bandas, como visto na
+                    figura abaixo.  
+                    <br /><br />
+            <ol>
+               <b>Operador Aplicável</b>
+                    <center><img src="imagens/Figura12.png" /></center>
+               <li>
+               <b>Valor Mínimo </b>
+               O valor mínimo é um operador que determina o menor valor de todos os valores
+                numéricos que estão contidos no espaço delimitado pela célula e o atribui como sendo
+                o valor de representação da célula. Como exemplo podemos ver a figura cujo valor de
+                representação da célula seria o valor 1 por ser o menor valor contido nesta célula.
+               </li>
+               <li>
+               <b>Valor Máximo</b>
+               O valor máximo é um operador que determina o maior valor de todos os valores
+                numéricos que estão contidos no espaço delimitado pela célula e o atribui como sendo
+                o valor de representação da célula. Como exemplo podemos ver a figura cujo valor de
+                representação da célula seria o valor 6 por ser o maior valor contido nesta célula.
+               </li>
+               <li>
+               <b>Valor Médio </b>
+               O valor médio é um operador que determina a média de todos os valores numéricos
+                que estão contidos no espaço delimitado pela célula e o atribui como sendo o valor de
+                representação da célula. Como exemplo, podemos ver a figura cujo valor de
+                representação da célula seria o valor 3.166 obtido através da divisão da soma (38)
+                pelo número de elementos da célula (12).
+               </li>
+              <li>
+              <b>Soma dos Valores </b>
+              A soma dos valores é um operador que determina a soma de todos os valores
+                numéricos que estão contidos no espaço delimitado pela célula e o atribui o resultado
+                como sendo o valor de representação da célula. Como exemplo, podemos ver a figura
+                cujo valor de representação da célula seria o valor 38 por ser a soma de todos os
+                valores contidos na célula.
+              </li>
+              <li>
+              <b>Classe Majoritária </b>
+              A classe majoritária é um operador que determina dentre todos os valores numéricos
+                que estão contidos no espaço delimitado pela célula aquele que ocorre mais vezes e o
+                atribui como sendo o valor de representação da célula. Como exemplo podemos ver a
+                figura cujo valor de representação da célula seria o valor 1 por ser este valor o de
+                maior ocorrência na célula (três vezes).
+              </li>
+              <li>
+              <b>Porcentagem de cada classe </b>
+              A porcentagem de cada classe é um operador que determina a porcentagem
+                relacionada a contagem de cada valor dentre todos os valores numéricos que estão
+                contido no espaço delimitado pela célula constituído um conjunto de classe para a
+                representação desses valores. Para o exemplo acima seriam criadas as seguintes
+                classes: 1, 2, 3, 4, 5 e 6; com as seguintes porcentagem: 25%, 16.6%, 16.6%, 16.6%,
+                8.3% e 16.6%.
+              </li>
+         
+            </ol>       
+         <hr>
+          <b>Dados de entrada em representação vetorial </b>
+          <br />
+          O dado vetorial pode ser entendido como um conjunto de entidades geométricas
+          básicas reconhecidas pelo SIG são elas: ponto, linha e o polígono.
+          <br />
+          <br />
+          <b>Operador Aplicável </b>
+          <br />
+          <ol>
+            <li>
+            <b>Mínima Distância </b>
+            A mínima Distancia é um operador que determina a menor distância dentre todas as
+            geometrias contidas na célula em relação ao centro da célula. Este operador se
+            correlaciona com as seguintes entidades geométricas: ponto, linha e polígono. O valor
+            do atributo a ser gravado na tabela corresponde a menor distância encontrada entre a
+            geometria e o centro da célula. Como exemplo temos a figura abaixo onde temos duas
+            retas, uma passando pelo centro e a outra não, neste caso o valor do atributo será 0
+            visto que é a distância mínima.
+            
+            </li>
+            <center><img src="imagens/Figura13.png" /></center>
+            <li>
+            <b>Presença </b>
+            A presença é um operador que determina se uma célula contem ou não uma
+            geometria. Este operador se correlaciona com as seguintes entidades geométricas:
+            ponto e linha. O valor do atributo será 0 ou 1, o 0 representa a ausência de geometria
+            na célula enquanto o 1 representa a presença de uma geometria na célula. Como
+            exemplo temos a figura abaixo onde o valor do atributo presença seria 1 visto que há
+            entidades geométricas presentes na célula.
+            </li>
+             <center><img src="imagens/Figura14.png" /></center>
+            <li>
+            <b>Contagem </b>
+            A contagem é um operador que determina o número de geometrias contidas na célula.
+                Este operador se correlaciona com as seguintes entidades geométricas: ponto, linha e
+                polígono. O valor do atributo será o número total de geometrias presentes na célula.
+                Como exemplo temos a figura abaixo onde teríamos como valor para o atributo de
+                contagem da célula o valor 5 representado o número total de entidades geométricas
+                presentes na célula.
+            </li>
+             <center><img src="imagens/Figura15.png" /></center>
+           <li>
+           <b>Porcentagem total de Intersecção </b>
+           A porcentagem total de intersecção é um operador que determina a porcentagem total
+            de área de intersecção entre a célula e um conjunto de polígonos. Este operador se
+            correlaciona apenas com a entidade geométrica polígono. O valor do atributo será a porcentagem 
+            total de intersecção da célula com um conjunto de polígonos. Como
+            exemplo, temos a figura abaixo onde os números representam as devidas
+            porcentagens das áreas de intersecção entre os polígonos e a célula. O valor 0.1
+            representa a área de intersecção entre os polígonos. O valor do atributo será a
+            porcentagem total da área de intersecção sendo este valor igual a 0.65 (0.15+0.2+0.3).
+           </li>
+              <center><img src="imagens/Figura16.png" /></center>
+          
+          </ol>
+        <hr />
+           <b>Dados de entrada em representação vetorial poligonal </b>
+           <br />
+           <br />
+           O dado vetorial poligonal é definido pela presença da geometria de polígono relacionada ao um conjunto 
+           de atributos nos quais se podem fazer operações mais complexas utilizando a área de intersecção entre a 
+           célula e o polígono.
+           <br /><br />
+           <b>Operador Aplicável</b>
+           <ol>
+            <li>
+              <b>Média Ponderada pela área de intersecção </b>
+            A média ponderada é definida como um conjunto de números: <img src="imagens/Figura17.png" />
+            de forma que cada um esteja sujeito a um peso, respectivamente, indicado por: <img src="imagens/Figura18.png" />
+            A média ponderada desses n números é a soma dos produtos de
+             cada um por seu peso, dividida por n, isto é:
+                                <center><img src="imagens/Figura19.png" /></center>
+             A média ponderada pela área de intersecção é um operador que avalia todos os
+            polígonos que fazem intersecção com a célula atribuindo aos pesos o valor da área de
+            intersecção. Na figura abaixo temos três polígonos. O polígono azul tem uma área de
+            intersecção igual a 0.1 e atributo igual a 2. O polígono verde tem uma área de
+            intersecção igual a 0.4 e atributo igual a 5. O polígono vermelho tem uma área de
+            intersecção igual a 0.15 e atributo igual a 6. O atributo de representação da célula será
+            o valor expresso por: (0.1*2+0.15*6+0.4*5)/(0.1+0.15.0.4) = 4.76.
+            </li>
+                 <center><img src="imagens/Figura20.png" /></center>
+             <li>
+               <b>Soma Ponderada pela área de intersecção </b>
+               A soma ponderada é definida como um conjunto de números: x1, x2, x3, . . . ,xn de forma que cada um esteja sujeito a um peso , 
+               respectivamente, indicado por: p1, p2, p3, . . . ,pn. A soma ponderada desses n números é a soma dos 
+               produtos de cada um por seu peso, isto é: x1*p1, x2*p2, x3*p3, ..., xn*pn.
+               A soma ponderada pela área de intersecção é um operador que avalia todos os polígonos que fazem 
+               intersecção com a célula atribuindo aos pesos o valor da área de intersecção. Na figura abaixo 
+               temos dois polígonos. O polígono amarelo tem uma área de intersecção igual a 0.1 e atributo igual a 10. 
+               O polígono azul tem uma área de intersecção igual a 0.4 e atributo igual a 5. O atributo de representação 
+               da célula será o valor expresso por: (0.4*5+0.1*10) = 3.
+            </li> 
+            <center><img src="imagens/Figura21.png" /></center>
+            
+            <li>
+            <b>Classe Majoritária </b>
+            A classe majoritária é um operador que determina dentre todos os polígonos que
+            fazem intersecção com a célula aquele que tem a maior área de intersecção com a
+            mesma. O valor do atributo da célula será representado pelo valor do atributo do
+            polígono que tem a maior área de intersecção com a mesma. Na figura abaixo temos
+            dois polígonos que fazem intersecção com a célula um verde e outro vermelho. O
+            polígono verde tem como atributo o valor 2 e uma área de intersecção com a célula
+            igual a 0.2. O polígono vermelho tem como atributo o valor 1 e uma área de
+            intersecção igual a 0.35. O valor final do atributo da célula será expresso pelo valor 1
+            referente ao atributo da célula de maior área de intersecção.
+            </li>
+               <center><img src="imagens/Figura22.png" /></center>
+             <li>
+             <b>Porcentagem da Classe Majoritária </b>
+             A porcentagem da classe majoritária é um operador que determina dentre todos os
+                polígonos que fazem intersecção com a célula aquele que tem a maior área de
+                intersecção com a mesma. O valor do atributo da célula é dado pelo valor da maior
+                área de intersecção. Na figura abaixo temos três polígonos. O polígono verde tem uma
+                área de intersecção com a célula igual a 0.15. O polígono azul uma área de
+                intersecção com a célula igual a 0.25. O polígono vermelho tem uma área de
+                intersecção com a célula igual a 0.2. O valor final do atributo da célula será expresso
+                pelo valor 0.25 referente a porcentagem de maior área de intersecção com a célula.
+             </li>
+               <center><img src="imagens/Figura23.png" /></center>
+          
+          
+           </ol>
+
+       <hr><br /><br />
+      </td>
+  </tr>
+  
+</table>
+</font> 
+</body>
+</html>

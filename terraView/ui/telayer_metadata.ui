@@ -1,0 +1,719 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>TelayerMetadata</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>TelayerMetadata</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>396</width>
+            <height>441</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Multiple Layer Metadata</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout18</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QFrame" row="1" column="0">
+                    <property name="name">
+                        <cstring>frame4</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout4</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QPushButton" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>helpPushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&amp;Help</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+H</string>
+                                    </property>
+                                </widget>
+                                <spacer row="0" column="1">
+                                    <property name="name">
+                                        <cstring>spacer3</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>331</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QPushButton" row="0" column="2">
+                                    <property name="name">
+                                        <cstring>closePushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&amp;Close</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+C</string>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QFrame" row="0" column="0">
+                    <property name="name">
+                        <cstring>frame3</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QWidgetStack" row="0" column="0">
+                            <property name="name">
+                                <cstring>wizardStack_</cstring>
+                            </property>
+                            <widget class="QWidget">
+                                <property name="name">
+                                    <cstring>WStackPage</cstring>
+                                </property>
+                                <attribute name="id">
+                                    <number>0</number>
+                                </attribute>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLayoutWidget" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>layout29</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLayoutWidget" row="1" column="0">
+                                                <property name="name">
+                                                    <cstring>layout28</cstring>
+                                                </property>
+                                                <grid>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QLayoutWidget" row="0" column="1">
+                                                        <property name="name">
+                                                            <cstring>layout27</cstring>
+                                                        </property>
+                                                        <grid>
+                                                            <property name="name">
+                                                                <cstring>unnamed</cstring>
+                                                            </property>
+                                                            <widget class="QPushButton" row="5" column="0">
+                                                                <property name="name">
+                                                                    <cstring>removeLayer_BTN_</cstring>
+                                                                </property>
+                                                                <property name="text">
+                                                                    <string>&lt;&lt;</string>
+                                                                </property>
+                                                            </widget>
+                                                            <widget class="QPushButton" row="2" column="0">
+                                                                <property name="name">
+                                                                    <cstring>addAllLayers_BTN_</cstring>
+                                                                </property>
+                                                                <property name="text">
+                                                                    <string>&gt;&gt;&gt;&gt;</string>
+                                                                </property>
+                                                            </widget>
+                                                            <spacer row="6" column="0">
+                                                                <property name="name">
+                                                                    <cstring>spacer2</cstring>
+                                                                </property>
+                                                                <property name="orientation">
+                                                                    <enum>Vertical</enum>
+                                                                </property>
+                                                                <property name="sizeType">
+                                                                    <enum>Expanding</enum>
+                                                                </property>
+                                                                <property name="sizeHint">
+                                                                    <size>
+                                                                        <width>20</width>
+                                                                        <height>45</height>
+                                                                    </size>
+                                                                </property>
+                                                            </spacer>
+                                                            <spacer row="0" column="0">
+                                                                <property name="name">
+                                                                    <cstring>spacer1</cstring>
+                                                                </property>
+                                                                <property name="orientation">
+                                                                    <enum>Vertical</enum>
+                                                                </property>
+                                                                <property name="sizeType">
+                                                                    <enum>Expanding</enum>
+                                                                </property>
+                                                                <property name="sizeHint">
+                                                                    <size>
+                                                                        <width>20</width>
+                                                                        <height>51</height>
+                                                                    </size>
+                                                                </property>
+                                                            </spacer>
+                                                            <widget class="QPushButton" row="4" column="0">
+                                                                <property name="name">
+                                                                    <cstring>removeAllLayers_BTN_</cstring>
+                                                                </property>
+                                                                <property name="text">
+                                                                    <string>&lt;&lt;&lt;&lt;</string>
+                                                                </property>
+                                                            </widget>
+                                                            <widget class="QPushButton" row="3" column="0">
+                                                                <property name="name">
+                                                                    <cstring>search_BTN_</cstring>
+                                                                </property>
+                                                                <property name="text">
+                                                                    <string>Search...</string>
+                                                                </property>
+                                                            </widget>
+                                                            <widget class="QPushButton" row="1" column="0">
+                                                                <property name="name">
+                                                                    <cstring>addLayer_BTN_</cstring>
+                                                                </property>
+                                                                <property name="text">
+                                                                    <string>&gt;&gt;</string>
+                                                                </property>
+                                                            </widget>
+                                                        </grid>
+                                                    </widget>
+                                                    <widget class="QGroupBox" row="0" column="2">
+                                                        <property name="name">
+                                                            <cstring>groupBox1_2</cstring>
+                                                        </property>
+                                                        <property name="title">
+                                                            <string>Selected Layers</string>
+                                                        </property>
+                                                        <grid>
+                                                            <property name="name">
+                                                                <cstring>unnamed</cstring>
+                                                            </property>
+                                                            <widget class="QListBox" row="0" column="0">
+                                                                <property name="name">
+                                                                    <cstring>selectLayers_LSB_</cstring>
+                                                                </property>
+                                                            </widget>
+                                                        </grid>
+                                                    </widget>
+                                                    <widget class="QGroupBox" row="0" column="0">
+                                                        <property name="name">
+                                                            <cstring>groupBox1</cstring>
+                                                        </property>
+                                                        <property name="title">
+                                                            <string>Input Layers</string>
+                                                        </property>
+                                                        <grid>
+                                                            <property name="name">
+                                                                <cstring>unnamed</cstring>
+                                                            </property>
+                                                            <widget class="QListBox" row="0" column="0">
+                                                                <property name="name">
+                                                                    <cstring>inputLayers_LSB_</cstring>
+                                                                </property>
+                                                            </widget>
+                                                        </grid>
+                                                    </widget>
+                                                </grid>
+                                            </widget>
+                                            <widget class="QLayoutWidget" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>layout8</cstring>
+                                                </property>
+                                                <grid>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QLabel" row="0" column="0">
+                                                        <property name="name">
+                                                            <cstring>textLabel1</cstring>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Select Layers...</string>
+                                                        </property>
+                                                    </widget>
+                                                    <widget class="Line" row="1" column="0">
+                                                        <property name="name">
+                                                            <cstring>line1</cstring>
+                                                        </property>
+                                                        <property name="frameShape">
+                                                            <enum>HLine</enum>
+                                                        </property>
+                                                        <property name="frameShadow">
+                                                            <enum>Sunken</enum>
+                                                        </property>
+                                                        <property name="orientation">
+                                                            <enum>Horizontal</enum>
+                                                        </property>
+                                                    </widget>
+                                                </grid>
+                                            </widget>
+                                            <widget class="QLayoutWidget" row="2" column="0">
+                                                <property name="name">
+                                                    <cstring>layout23</cstring>
+                                                </property>
+                                                <grid>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QPushButton" row="0" column="1">
+                                                        <property name="name">
+                                                            <cstring>nextPushButton</cstring>
+                                                        </property>
+                                                        <property name="enabled">
+                                                            <bool>false</bool>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Next &gt;&gt;</string>
+                                                        </property>
+                                                    </widget>
+                                                    <spacer row="0" column="0">
+                                                        <property name="name">
+                                                            <cstring>spacer5</cstring>
+                                                        </property>
+                                                        <property name="orientation">
+                                                            <enum>Horizontal</enum>
+                                                        </property>
+                                                        <property name="sizeType">
+                                                            <enum>Expanding</enum>
+                                                        </property>
+                                                        <property name="sizeHint">
+                                                            <size>
+                                                                <width>401</width>
+                                                                <height>20</height>
+                                                            </size>
+                                                        </property>
+                                                    </spacer>
+                                                </grid>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QWidget">
+                                <property name="name">
+                                    <cstring>WStackPage</cstring>
+                                </property>
+                                <attribute name="id">
+                                    <number>1</number>
+                                </attribute>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLayoutWidget" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>layout7</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="Line" row="1" column="0">
+                                                <property name="name">
+                                                    <cstring>line2</cstring>
+                                                </property>
+                                                <property name="frameShape">
+                                                    <enum>HLine</enum>
+                                                </property>
+                                                <property name="frameShadow">
+                                                    <enum>Sunken</enum>
+                                                </property>
+                                                <property name="orientation">
+                                                    <enum>Horizontal</enum>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>textLabel2</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Select the metadata to be updated...</string>
+                                                </property>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                    <widget class="QLayoutWidget" row="2" column="0">
+                                        <property name="name">
+                                            <cstring>layout25</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <spacer row="0" column="1">
+                                                <property name="name">
+                                                    <cstring>spacer4</cstring>
+                                                </property>
+                                                <property name="orientation">
+                                                    <enum>Horizontal</enum>
+                                                </property>
+                                                <property name="sizeType">
+                                                    <enum>Expanding</enum>
+                                                </property>
+                                                <property name="sizeHint">
+                                                    <size>
+                                                        <width>300</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                            </spacer>
+                                            <widget class="QPushButton" row="0" column="2">
+                                                <property name="name">
+                                                    <cstring>execPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Execute</string>
+                                                </property>
+                                                <property name="accel">
+                                                    <string>Alt+E</string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QPushButton" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>previousPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&lt;&lt; Previous</string>
+                                                </property>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                    <widget class="QGroupBox" row="1" column="0">
+                                        <property name="name">
+                                            <cstring>groupBox3</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>5</hsizetype>
+                                                <vsizetype>7</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="title">
+                                            <string>Metadata</string>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLayoutWidget" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>layout15</cstring>
+                                                </property>
+                                                <vbox>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QCheckBox">
+                                                        <property name="name">
+                                                            <cstring>all_CKB_</cstring>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>All</string>
+                                                        </property>
+                                                    </widget>
+                                                    <widget class="Line">
+                                                        <property name="name">
+                                                            <cstring>line3</cstring>
+                                                        </property>
+                                                        <property name="frameShape">
+                                                            <enum>HLine</enum>
+                                                        </property>
+                                                        <property name="frameShadow">
+                                                            <enum>Sunken</enum>
+                                                        </property>
+                                                        <property name="orientation">
+                                                            <enum>Horizontal</enum>
+                                                        </property>
+                                                    </widget>
+                                                    <widget class="QTable">
+                                                        <column>
+                                                            <property name="text">
+                                                                <string>Metadata</string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap></pixmap>
+                                                            </property>
+                                                        </column>
+                                                        <column>
+                                                            <property name="text">
+                                                                <string>Information</string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap></pixmap>
+                                                            </property>
+                                                        </column>
+                                                        <row>
+                                                            <property name="text">
+                                                                <string>1</string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap></pixmap>
+                                                            </property>
+                                                        </row>
+                                                        <row>
+                                                            <property name="text">
+                                                                <string>2</string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap></pixmap>
+                                                            </property>
+                                                        </row>
+                                                        <row>
+                                                            <property name="text">
+                                                                <string>3</string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap></pixmap>
+                                                            </property>
+                                                        </row>
+                                                        <row>
+                                                            <property name="text">
+                                                                <string>4</string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap></pixmap>
+                                                            </property>
+                                                        </row>
+                                                        <row>
+                                                            <property name="text">
+                                                                <string>5</string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap></pixmap>
+                                                            </property>
+                                                        </row>
+                                                        <row>
+                                                            <property name="text">
+                                                                <string>6</string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap></pixmap>
+                                                            </property>
+                                                        </row>
+                                                        <row>
+                                                            <property name="text">
+                                                                <string>7</string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap></pixmap>
+                                                            </property>
+                                                        </row>
+                                                        <row>
+                                                            <property name="text">
+                                                                <string>8</string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap></pixmap>
+                                                            </property>
+                                                        </row>
+                                                        <property name="name">
+                                                            <cstring>metadata_TBL_</cstring>
+                                                        </property>
+                                                        <property name="numRows">
+                                                            <number>8</number>
+                                                        </property>
+                                                        <property name="numCols">
+                                                            <number>2</number>
+                                                        </property>
+                                                    </widget>
+                                                </vbox>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                </grid>
+                            </widget>
+                        </widget>
+                    </grid>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>all_CKB_</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>TelayerMetadata</receiver>
+        <slot>all_CKB_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>execPushButton</sender>
+        <signal>pressed()</signal>
+        <receiver>TelayerMetadata</receiver>
+        <slot>execPushButton_pressed()</slot>
+    </connection>
+    <connection>
+        <sender>previousPushButton</sender>
+        <signal>pressed()</signal>
+        <receiver>TelayerMetadata</receiver>
+        <slot>previousPushButton_pressed()</slot>
+    </connection>
+    <connection>
+        <sender>closePushButton</sender>
+        <signal>pressed()</signal>
+        <receiver>TelayerMetadata</receiver>
+        <slot>closePushButton_pressed()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>pressed()</signal>
+        <receiver>TelayerMetadata</receiver>
+        <slot>helpPushButton_pressed()</slot>
+    </connection>
+    <connection>
+        <sender>addLayer_BTN_</sender>
+        <signal>pressed()</signal>
+        <receiver>TelayerMetadata</receiver>
+        <slot>addLayer_BTN__pressed()</slot>
+    </connection>
+    <connection>
+        <sender>addAllLayers_BTN_</sender>
+        <signal>pressed()</signal>
+        <receiver>TelayerMetadata</receiver>
+        <slot>addAllLayers_BTN__pressed()</slot>
+    </connection>
+    <connection>
+        <sender>search_BTN_</sender>
+        <signal>pressed()</signal>
+        <receiver>TelayerMetadata</receiver>
+        <slot>search_BTN__pressed()</slot>
+    </connection>
+    <connection>
+        <sender>removeAllLayers_BTN_</sender>
+        <signal>pressed()</signal>
+        <receiver>TelayerMetadata</receiver>
+        <slot>removeAllLayers_BTN__pressed()</slot>
+    </connection>
+    <connection>
+        <sender>removeLayer_BTN_</sender>
+        <signal>pressed()</signal>
+        <receiver>TelayerMetadata</receiver>
+        <slot>removeLayer_BTN__pressed()</slot>
+    </connection>
+    <connection>
+        <sender>nextPushButton</sender>
+        <signal>pressed()</signal>
+        <receiver>TelayerMetadata</receiver>
+        <slot>nextPushButton_pressed()</slot>
+    </connection>
+    <connection>
+        <sender>selectLayers_LSB_</sender>
+        <signal>pressed(QListBoxItem*)</signal>
+        <receiver>TelayerMetadata</receiver>
+        <slot>selectLayers_LSB__pressed(QListBoxItem*)</slot>
+    </connection>
+    <connection>
+        <sender>metadata_TBL_</sender>
+        <signal>doubleClicked(int,int,int,const QPoint&amp;)</signal>
+        <receiver>TelayerMetadata</receiver>
+        <slot>metadataTBL_doubleClicked(int,int,int,const QPoint&amp;)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>inputLayers_LSB_</tabstop>
+    <tabstop>addLayer_BTN_</tabstop>
+    <tabstop>addAllLayers_BTN_</tabstop>
+    <tabstop>search_BTN_</tabstop>
+    <tabstop>removeAllLayers_BTN_</tabstop>
+    <tabstop>removeLayer_BTN_</tabstop>
+    <tabstop>selectLayers_LSB_</tabstop>
+    <tabstop>nextPushButton</tabstop>
+    <tabstop>all_CKB_</tabstop>
+    <tabstop>execPushButton</tabstop>
+    <tabstop>previousPushButton</tabstop>
+    <tabstop>closePushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">TeTable.h</include>
+    <include location="local" impldecl="in implementation">telayer_metadata.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TeDatabase;</forward>
+    <forward>class TeLayer;</forward>
+    <forward>class QDateEdit</forward>
+    <forward>class QTimeEdit</forward>
+    <forward>class Help</forward>
+</forwards>
+<variables>
+    <variable>TeDatabase* db_;</variable>
+    <variable>QMap&lt;QListBoxItem*, TeLayer*&gt; layers_;</variable>
+    <variable>QMap&lt;int, TeTableRow&gt; layerMetadata_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot>all_CKB_toggled( bool status )</slot>
+    <slot>execPushButton_pressed()</slot>
+    <slot>previousPushButton_pressed()</slot>
+    <slot>closePushButton_pressed()</slot>
+    <slot>helpPushButton_pressed()</slot>
+    <slot>addLayer_BTN__pressed()</slot>
+    <slot>addAllLayers_BTN__pressed()</slot>
+    <slot>search_BTN__pressed()</slot>
+    <slot>removeAllLayers_BTN__pressed()</slot>
+    <slot>removeLayer_BTN__pressed()</slot>
+    <slot>nextPushButton_pressed()</slot>
+    <slot>selectLayers_LSB__pressed( QListBoxItem * item )</slot>
+    <slot>metadataTBL_doubleClicked( int, int, int, const QPoint &amp; )</slot>
+</slots>
+<functions>
+    <function specifier="non virtual">init( TeDatabase * db )</function>
+</functions>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

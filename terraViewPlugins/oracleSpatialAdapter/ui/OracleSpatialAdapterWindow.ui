@@ -1,0 +1,290 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>OracleSpatialAdapterWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>OracleSpatialAdapterWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>524</width>
+            <height>248</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Oracle Spatial Adapter</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout9</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout8</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QListBox" row="0" column="2">
+                            <property name="name">
+                                <cstring>selectedLayersListBox</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget" row="0" column="1">
+                            <property name="name">
+                                <cstring>layout7</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <spacer row="1" column="0">
+                                    <property name="name">
+                                        <cstring>spacer1</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Vertical</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>30</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QLayoutWidget" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>layout6</cstring>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QPushButton" row="2" column="0">
+                                            <property name="name">
+                                                <cstring>addAllPushButton</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Add All &gt;&gt;</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QPushButton" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>addPushButton</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Add &gt;&gt;</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QPushButton" row="3" column="0">
+                                            <property name="name">
+                                                <cstring>removePushButton</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>&lt;&lt; Remove</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QPushButton" row="1" column="0">
+                                            <property name="name">
+                                                <cstring>addAsPushButton</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Add As.. .&gt;&gt;</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QPushButton" row="4" column="0">
+                                            <property name="name">
+                                                <cstring>removeAllPushButton</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>&lt;&lt; Remove All</string>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QListBox" row="0" column="0">
+                            <property name="name">
+                                <cstring>layersListBox</cstring>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QLayoutWidget" row="1" column="0">
+                    <property name="name">
+                        <cstring>layout7</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton" row="0" column="3">
+                            <property name="name">
+                                <cstring>exitPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Exit</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+E</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="0">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                        </widget>
+                        <spacer row="0" column="1">
+                            <property name="name">
+                                <cstring>spacer2</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>230</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton" row="0" column="2">
+                            <property name="name">
+                                <cstring>createPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Execute</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+E</string>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>addPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>OracleSpatialAdapterWindow</receiver>
+        <slot>addPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>addAllPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>OracleSpatialAdapterWindow</receiver>
+        <slot>addAllPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>removePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>OracleSpatialAdapterWindow</receiver>
+        <slot>removePushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>removeAllPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>OracleSpatialAdapterWindow</receiver>
+        <slot>removeAllPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>createPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>OracleSpatialAdapterWindow</receiver>
+        <slot>createPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>exitPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>OracleSpatialAdapterWindow</receiver>
+        <slot>exitPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>OracleSpatialAdapterWindow</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>addAsPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>OracleSpatialAdapterWindow</receiver>
+        <slot>addAsPushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>layersListBox</tabstop>
+    <tabstop>addPushButton</tabstop>
+    <tabstop>addAsPushButton</tabstop>
+    <tabstop>addAllPushButton</tabstop>
+    <tabstop>removePushButton</tabstop>
+    <tabstop>removeAllPushButton</tabstop>
+    <tabstop>selectedLayersListBox</tabstop>
+    <tabstop>createPushButton</tabstop>
+    <tabstop>exitPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">string</include>
+    <include location="global" impldecl="in declaration">TeCommunicator.h</include>
+    <include location="global" impldecl="in declaration">vector</include>
+    <include location="local" impldecl="in implementation">OracleSpatialAdapterWindow.ui.h</include>
+</includes>
+<forwards>
+    <forward>class PluginParameters;</forward>
+    <forward>class PluginsSignal;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable access="public">TeCommunicator&lt; PluginsSignal &gt; comm_;</variable>
+    <variable access="public">PluginParameters* plugPars_;</variable>
+    <variable access="public">bool layerCreated_;</variable>
+    <variable access="public">Help* help_;</variable>    
+</variables>
+<slots>
+    <slot>updateForm( PluginParameters * pparams )</slot>
+    <slot>addPushButton_clicked()</slot>
+    <slot>addAllPushButton_clicked()</slot>
+    <slot>removePushButton_clicked()</slot>
+    <slot>removeAllPushButton_clicked()</slot>
+    <slot>createPushButton_clicked()</slot>
+    <slot>exitPushButton_clicked()</slot>
+    <slot>helpPushButton_clicked()</slot>
+    <slot>addAsPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function>init()</function>
+    <function>destroy()</function>
+    <function specifier="non virtual">initFromPluginParameters()</function>
+    <function returnType="int">getMaxValueFromColumn( const std::string &amp; tableName, const std::string &amp; columnName )</function>
+    <function returnType="bool">spatialToTerralib( const std::string &amp; tableName, std::string &amp; errorMessage )</function>
+</functions>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

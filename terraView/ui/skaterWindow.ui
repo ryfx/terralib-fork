@@ -1,0 +1,1303 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>SkaterWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>SkaterWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>499</width>
+            <height>475</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Skater</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <property name="toolTip" stdset="0">
+        <string>Name of the column to be created to hold results.</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox" row="0" column="0">
+            <property name="name">
+                <cstring>aggregationGroupBox</cstring>
+            </property>
+            <property name="paletteBackgroundColor">
+                <color>
+                    <red>218</red>
+                    <green>218</green>
+                    <blue>221</blue>
+                </color>
+            </property>
+            <property name="palette">
+                <palette>
+                    <active>
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                        <color>
+                            <red>217</red>
+                            <green>217</green>
+                            <blue>220</blue>
+                        </color>
+                        <color>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                        </color>
+                        <color>
+                            <red>236</red>
+                            <green>236</green>
+                            <blue>237</blue>
+                        </color>
+                        <color>
+                            <red>109</red>
+                            <green>109</green>
+                            <blue>110</blue>
+                        </color>
+                        <color>
+                            <red>144</red>
+                            <green>144</green>
+                            <blue>146</blue>
+                        </color>
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                        <color>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                        </color>
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                        <color>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                        </color>
+                        <color>
+                            <red>218</red>
+                            <green>218</green>
+                            <blue>221</blue>
+                        </color>
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>128</blue>
+                        </color>
+                        <color>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                        </color>
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                    </active>
+                    <disabled>
+                        <color>
+                            <red>128</red>
+                            <green>128</green>
+                            <blue>128</blue>
+                        </color>
+                        <color>
+                            <red>217</red>
+                            <green>217</green>
+                            <blue>220</blue>
+                        </color>
+                        <color>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                        </color>
+                        <color>
+                            <red>250</red>
+                            <green>250</green>
+                            <blue>253</blue>
+                        </color>
+                        <color>
+                            <red>109</red>
+                            <green>109</green>
+                            <blue>110</blue>
+                        </color>
+                        <color>
+                            <red>144</red>
+                            <green>144</green>
+                            <blue>146</blue>
+                        </color>
+                        <color>
+                            <red>128</red>
+                            <green>128</green>
+                            <blue>128</blue>
+                        </color>
+                        <color>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                        </color>
+                        <color>
+                            <red>128</red>
+                            <green>128</green>
+                            <blue>128</blue>
+                        </color>
+                        <color>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                        </color>
+                        <color>
+                            <red>218</red>
+                            <green>218</green>
+                            <blue>221</blue>
+                        </color>
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>128</blue>
+                        </color>
+                        <color>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                        </color>
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>255</blue>
+                        </color>
+                        <color>
+                            <red>255</red>
+                            <green>0</green>
+                            <blue>255</blue>
+                        </color>
+                    </disabled>
+                    <inactive>
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                        <color>
+                            <red>217</red>
+                            <green>217</green>
+                            <blue>220</blue>
+                        </color>
+                        <color>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                        </color>
+                        <color>
+                            <red>250</red>
+                            <green>250</green>
+                            <blue>253</blue>
+                        </color>
+                        <color>
+                            <red>109</red>
+                            <green>109</green>
+                            <blue>110</blue>
+                        </color>
+                        <color>
+                            <red>144</red>
+                            <green>144</green>
+                            <blue>146</blue>
+                        </color>
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                        <color>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                        </color>
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                        <color>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                        </color>
+                        <color>
+                            <red>218</red>
+                            <green>218</green>
+                            <blue>221</blue>
+                        </color>
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>128</blue>
+                        </color>
+                        <color>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                        </color>
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>255</blue>
+                        </color>
+                        <color>
+                            <red>255</red>
+                            <green>0</green>
+                            <blue>255</blue>
+                        </color>
+                    </inactive>
+                </palette>
+            </property>
+            <property name="title">
+                <string>Aggregation Method</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer row="0" column="1">
+                    <property name="name">
+                        <cstring>spacer36</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>18</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout50</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QRadioButton" row="1" column="0">
+                            <property name="name">
+                                <cstring>populationRadioButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Population</string>
+                            </property>
+                            <property name="checked">
+                                <bool>false</bool>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Aggregate by population size</string>
+                            </property>
+                        </widget>
+                        <widget class="QRadioButton" row="0" column="0">
+                            <property name="name">
+                                <cstring>groupsRadioButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Groups</string>
+                            </property>
+                            <property name="checked">
+                                <bool>true</bool>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Aggregate by number of groups</string>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QLayoutWidget" row="0" column="2">
+                    <property name="name">
+                        <cstring>layout226</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel1_3</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Value:</string>
+                            </property>
+                            <property name="scaledContents">
+                                <bool>false</bool>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>valueLineEdit</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>0</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>50</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>80</width>
+                                    <height>32767</height>
+                                </size>
+                            </property>
+                            <property name="frameShape">
+                                <enum>LineEditPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox" row="0" column="1">
+            <property name="name">
+                <cstring>resultsGroupBox</cstring>
+            </property>
+            <property name="paletteBackgroundColor">
+                <color>
+                    <red>224</red>
+                    <green>223</green>
+                    <blue>227</blue>
+                </color>
+            </property>
+            <property name="title">
+                <string>Results</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout263</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel1_2_3</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Table:</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QComboBox">
+                            <property name="name">
+                                <cstring>resultTableComboBox</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>150</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Table where the results column should be created</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget" row="1" column="0">
+                    <property name="name">
+                        <cstring>layout264</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel1_2_2_2</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Column Name:</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>resultColumnLineEdit</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>150</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="frameShape">
+                                <enum>LineEditPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Name of the column that will hold the results</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QLayoutWidget" row="2" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>layout129</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer120</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>okPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;OK</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                    <property name="default">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>Horizontal Spacing2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>cancelPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Cancel</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer119</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>helpPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Help</string>
+                    </property>
+                    <property name="accel">
+                        <string>F1</string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer121</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+        <widget class="QGroupBox" row="1" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>groupBox76</cstring>
+            </property>
+            <property name="title">
+                <string>Data Selection</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout32</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>themeGroupBox</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Theme Selection</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>layout31</cstring>
+                                    </property>
+                                    <vbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <spacer>
+                                            <property name="name">
+                                                <cstring>spacer14</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Vertical</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>MinimumExpanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>16</width>
+                                                    <height>5</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout19</cstring>
+                                            </property>
+                                            <hbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>textLabel1</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Theme:</string>
+                                                    </property>
+                                                    <property name="textFormat">
+                                                        <enum>AutoText</enum>
+                                                    </property>
+                                                    <property name="scaledContents">
+                                                        <bool>false</bool>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>AlignVCenter|AlignRight</set>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>dataThemeComboBox</cstring>
+                                                    </property>
+                                                    <property name="sizePolicy">
+                                                        <sizepolicy>
+                                                            <hsizetype>7</hsizetype>
+                                                            <vsizetype>0</vsizetype>
+                                                            <horstretch>0</horstretch>
+                                                            <verstretch>0</verstretch>
+                                                        </sizepolicy>
+                                                    </property>
+                                                    <property name="minimumSize">
+                                                        <size>
+                                                            <width>150</width>
+                                                            <height>0</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="toolTip" stdset="0">
+                                                        <string>Selects the active theme</string>
+                                                    </property>
+                                                </widget>
+                                            </hbox>
+                                        </widget>
+                                        <spacer>
+                                            <property name="name">
+                                                <cstring>spacer15</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Vertical</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Maximum</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>20</width>
+                                                    <height>16</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                    </vbox>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>popDataGroupBox</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Population Data Selection</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>layout18</cstring>
+                                    </property>
+                                    <vbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout266</cstring>
+                                            </property>
+                                            <hbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>textLabel1_2</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Table:</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>AlignVCenter|AlignRight</set>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>dataTableComboBox</cstring>
+                                                    </property>
+                                                    <property name="sizePolicy">
+                                                        <sizepolicy>
+                                                            <hsizetype>7</hsizetype>
+                                                            <vsizetype>0</vsizetype>
+                                                            <horstretch>0</horstretch>
+                                                            <verstretch>0</verstretch>
+                                                        </sizepolicy>
+                                                    </property>
+                                                    <property name="minimumSize">
+                                                        <size>
+                                                            <width>150</width>
+                                                            <height>0</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="toolTip" stdset="0">
+                                                        <string>Table that holds the population column</string>
+                                                    </property>
+                                                </widget>
+                                            </hbox>
+                                        </widget>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout17</cstring>
+                                            </property>
+                                            <hbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>textLabel1_2_2</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Column:</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>AlignVCenter|AlignRight</set>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>dataColumnComboBox</cstring>
+                                                    </property>
+                                                    <property name="sizePolicy">
+                                                        <sizepolicy>
+                                                            <hsizetype>7</hsizetype>
+                                                            <vsizetype>0</vsizetype>
+                                                            <horstretch>0</horstretch>
+                                                            <verstretch>0</verstretch>
+                                                        </sizepolicy>
+                                                    </property>
+                                                    <property name="minimumSize">
+                                                        <size>
+                                                            <width>150</width>
+                                                            <height>0</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="toolTip" stdset="0">
+                                                        <string>Column that holds the population data</string>
+                                                    </property>
+                                                </widget>
+                                            </hbox>
+                                        </widget>
+                                    </vbox>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QGroupBox" row="1" column="0">
+                    <property name="name">
+                        <cstring>groupBox7</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Apply Skater In Groups Of Objects Defined By An Attribute </string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout16</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout13</cstring>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>textLabel1_2_4</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Table:</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>AlignVCenter|AlignRight</set>
+                                            </property>
+                                        </widget>
+                                        <widget class="QComboBox">
+                                            <property name="name">
+                                                <cstring>groupTableComboBox</cstring>
+                                            </property>
+                                            <property name="sizePolicy">
+                                                <sizepolicy>
+                                                    <hsizetype>7</hsizetype>
+                                                    <vsizetype>0</vsizetype>
+                                                    <horstretch>0</horstretch>
+                                                    <verstretch>0</verstretch>
+                                                </sizepolicy>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>150</width>
+                                                    <height>0</height>
+                                                </size>
+                                            </property>
+                                            <property name="toolTip" stdset="0">
+                                                <string>Table that holds the population column</string>
+                                            </property>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer11</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>21</width>
+                                            <height>21</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout14</cstring>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>textLabel1_2_2_3</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Column:</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>AlignVCenter|AlignRight</set>
+                                            </property>
+                                        </widget>
+                                        <widget class="QComboBox">
+                                            <property name="name">
+                                                <cstring>groupColumnComboBox</cstring>
+                                            </property>
+                                            <property name="sizePolicy">
+                                                <sizepolicy>
+                                                    <hsizetype>7</hsizetype>
+                                                    <vsizetype>0</vsizetype>
+                                                    <horstretch>0</horstretch>
+                                                    <verstretch>0</verstretch>
+                                                </sizepolicy>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>180</width>
+                                                    <height>0</height>
+                                                </size>
+                                            </property>
+                                            <property name="toolTip" stdset="0">
+                                                <string>Column that holds the population data</string>
+                                            </property>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                            </hbox>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QGroupBox" row="2" column="0">
+                    <property name="name">
+                        <cstring>attGroupBox</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Attribute Selection</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="1">
+                            <property name="name">
+                                <cstring>layout306</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer215</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Vertical</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>16</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>addAttributePushButton</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>32</width>
+                                            <height>24</height>
+                                        </size>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>32</width>
+                                            <height>24</height>
+                                        </size>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                    <property name="pixmap">
+                                        <pixmap>right.bmp</pixmap>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>Spacer33</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Vertical</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>removeAttributePushButton</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>32</width>
+                                            <height>24</height>
+                                        </size>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>32</width>
+                                            <height>24</height>
+                                        </size>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                    <property name="pixmap">
+                                        <pixmap>left.bmp</pixmap>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>Spacer28</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Vertical</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>16</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </vbox>
+                        </widget>
+                        <widget class="QLayoutWidget" row="0" column="2">
+                            <property name="name">
+                                <cstring>layout345</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>themeTablesTextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Selected Attributes</string>
+                                    </property>
+                                </widget>
+                                <widget class="QListBox">
+                                    <property name="name">
+                                        <cstring>selectedAttributesListBox</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>110</width>
+                                            <height>100</height>
+                                        </size>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout346</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>layerTablesTextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Theme Attributes</string>
+                                    </property>
+                                </widget>
+                                <widget class="QListBox">
+                                    <property name="name">
+                                        <cstring>themeAttributesListBox</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>110</width>
+                                            <height>100</height>
+                                        </size>
+                                    </property>
+                                    <property name="selectionMode">
+                                        <enum>Single</enum>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                    </grid>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>removeAttributePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SkaterWindow</receiver>
+        <slot>attributeDeleted()</slot>
+    </connection>
+    <connection>
+        <sender>addAttributePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SkaterWindow</receiver>
+        <slot>attributeAdded()</slot>
+    </connection>
+    <connection>
+        <sender>dataThemeComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>SkaterWindow</receiver>
+        <slot>themeSeleceted()</slot>
+    </connection>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SkaterWindow</receiver>
+        <slot>cancelPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>groupsRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SkaterWindow</receiver>
+        <slot>groupsRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>populationRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SkaterWindow</receiver>
+        <slot>populationRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SkaterWindow</receiver>
+        <slot>okPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SkaterWindow</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>groupTableComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>SkaterWindow</receiver>
+        <slot>groupTableSelected()</slot>
+    </connection>
+    <connection>
+        <sender>dataTableComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>SkaterWindow</receiver>
+        <slot>tableSelected()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>groupsRadioButton</tabstop>
+    <tabstop>populationRadioButton</tabstop>
+    <tabstop>valueLineEdit</tabstop>
+    <tabstop>resultTableComboBox</tabstop>
+    <tabstop>resultColumnLineEdit</tabstop>
+    <tabstop>dataThemeComboBox</tabstop>
+    <tabstop>dataTableComboBox</tabstop>
+    <tabstop>dataColumnComboBox</tabstop>
+    <tabstop>themeAttributesListBox</tabstop>
+    <tabstop>addAttributePushButton</tabstop>
+    <tabstop>removeAttributePushButton</tabstop>
+    <tabstop>selectedAttributesListBox</tabstop>
+    <tabstop>okPushButton</tabstop>
+    <tabstop>cancelPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="global" impldecl="in declaration">TeAppTheme.h</include>
+    <include location="local" impldecl="in implementation">skaterWindow.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable>TerraViewBase* mainWindow_;</variable>
+    <variable>Help* help_;</variable>
+    <variable>string skaCol_;</variable>
+</variables>
+<slots>
+    <slot>themeSeleceted()</slot>
+    <slot returnType="bool">setDefaultWindow()</slot>
+    <slot>tableSelected()</slot>
+    <slot>groupTableSelected()</slot>
+    <slot>attributeAdded()</slot>
+    <slot>attributeDeleted()</slot>
+    <slot returnType="int">sendCurrentAttribute( QListBox * fromListBox, QListBox * toListBox )</slot>
+    <slot>execute()</slot>
+    <slot>cancelPushButton_clicked()</slot>
+    <slot>groupsRadioButton_clicked()</slot>
+    <slot>populationRadioButton_clicked()</slot>
+    <slot>fillAttributeListBox( vector&lt;TeAttrDataType&gt; &amp; aType, TeTheme * theme, QListBox * attListBox )</slot>
+    <slot>okPushButton_clicked()</slot>
+    <slot>close()</slot>
+    <slot>helpPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function returnType="bool">getSelectedAttributes( vector&lt;string&gt; &amp; Attr )</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

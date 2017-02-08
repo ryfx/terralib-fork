@@ -1,0 +1,294 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>dlgDropDatabase</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>dlgDropDatabase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>2</x>
+            <y>28</y>
+            <width>300</width>
+            <height>250</height>
+        </rect>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>300</width>
+            <height>250</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Drop Database(s)</string>
+    </property>
+    <property name="modal">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <property name="spacing">
+            <number>0</number>
+        </property>
+        <property name="resizeMode">
+            <enum>Minimum</enum>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>lytVertical</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QListView">
+                    <column>
+                        <property name="text">
+                            <string>Database(s)</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>Description</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                <item>
+                    <property name="text">
+                        <string>Item</string>
+                    </property>
+                    <property name="text">
+                        <string>None</string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap></pixmap>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap></pixmap>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Item</string>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap></pixmap>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap></pixmap>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Item</string>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap></pixmap>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap></pixmap>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Item</string>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap></pixmap>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap></pixmap>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Item</string>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap></pixmap>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap></pixmap>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Item</string>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap></pixmap>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap></pixmap>
+                    </property>
+                </item>
+                    <property name="name">
+                        <cstring>lvDatabase</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>300</width>
+                            <height>250</height>
+                        </size>
+                    </property>
+                    <property name="midLineWidth">
+                        <number>0</number>
+                    </property>
+                    <property name="vScrollBarMode">
+                        <enum>AlwaysOn</enum>
+                    </property>
+                    <property name="selectionMode">
+                        <enum>Single</enum>
+                    </property>
+                    <property name="showSortIndicator">
+                        <bool>false</bool>
+                    </property>
+                    <property name="rootIsDecorated">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>lytButton</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spDelete</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>21</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbDelete</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Delete</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spBetween</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>31</width>
+                                    <height>21</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pbClose</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Close</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spClose</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>21</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pbClose</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgDropDatabase</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>pbDelete</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgDropDatabase</receiver>
+        <slot>pbDelete_clicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">dlgDropDatabase.ui.h</include>
+</includes>
+<forwards>
+    <forward>class TeDatabase;</forward>
+</forwards>
+<variables>
+    <variable>TeDatabase *_database;</variable>
+    <variable>bool _update;</variable>
+</variables>
+<slots>
+    <slot>pbClose_clicked()</slot>
+    <slot>pbDelete_clicked()</slot>
+    <slot access="protected">init()</slot>
+</slots>
+<functions>
+    <function>loadDatabase(TeDatabase *db)</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

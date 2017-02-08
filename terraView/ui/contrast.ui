@@ -1,0 +1,597 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>ContrastWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>ContrastWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>316</width>
+            <height>209</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Image Enhancement</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout23</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout44</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="6" column="0">
+                            <property name="name">
+                                <cstring>layout43</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>blueTextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>B:</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                </widget>
+                                <widget class="QSlider">
+                                    <property name="name">
+                                        <cstring>blueSlider</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>220</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="maxValue">
+                                        <number>100</number>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer22</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>16</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>blueValueTextLabel</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>20</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <widget class="QLayoutWidget" row="2" column="0">
+                            <property name="name">
+                                <cstring>layout41</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>redTextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>R:</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                </widget>
+                                <widget class="QSlider">
+                                    <property name="name">
+                                        <cstring>redSlider</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>220</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="maxValue">
+                                        <number>100</number>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer20</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>16</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>redValueTextLabel</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>20</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <spacer row="1" column="0">
+                            <property name="name">
+                                <cstring>spacer16</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Vertical</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>16</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QLayoutWidget" row="4" column="0">
+                            <property name="name">
+                                <cstring>layout42</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>greenTextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>G:</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                </widget>
+                                <widget class="QSlider">
+                                    <property name="name">
+                                        <cstring>greenSlider</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>220</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="maxValue">
+                                        <number>100</number>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer21</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>16</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>greenValueTextLabel</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>20</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <spacer row="5" column="0">
+                            <property name="name">
+                                <cstring>spacer18</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Vertical</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>16</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout40</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>monoTextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>M:</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                </widget>
+                                <widget class="QSlider">
+                                    <property name="name">
+                                        <cstring>monoSlider</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>220</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="maxValue">
+                                        <number>100</number>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="tickmarks">
+                                        <enum>NoMarks</enum>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer19</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>16</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>monoValueTextLabel</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>20</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <spacer row="3" column="0">
+                            <property name="name">
+                                <cstring>spacer17</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Vertical</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>16</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </grid>
+                </widget>
+                <spacer row="1" column="0">
+                    <property name="name">
+                        <cstring>spacer26</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget" row="2" column="0">
+                    <property name="name">
+                        <cstring>layout22</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer34</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>16</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>okPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;OK</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+O</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer23</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>16</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>cancelPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Cancel</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer24</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>16</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer25</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </hbox>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>ContrastWindow</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>ContrastWindow</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>monoSlider</sender>
+        <signal>sliderMoved(int)</signal>
+        <receiver>ContrastWindow</receiver>
+        <slot>monoSlider_sliderMoved(int)</slot>
+    </connection>
+    <connection>
+        <sender>monoSlider</sender>
+        <signal>sliderReleased()</signal>
+        <receiver>ContrastWindow</receiver>
+        <slot>monoSlider_sliderReleased()</slot>
+    </connection>
+    <connection>
+        <sender>redSlider</sender>
+        <signal>sliderMoved(int)</signal>
+        <receiver>ContrastWindow</receiver>
+        <slot>redSlider_sliderMoved(int)</slot>
+    </connection>
+    <connection>
+        <sender>greenSlider</sender>
+        <signal>sliderMoved(int)</signal>
+        <receiver>ContrastWindow</receiver>
+        <slot>greenSlider_sliderMoved(int)</slot>
+    </connection>
+    <connection>
+        <sender>blueSlider</sender>
+        <signal>sliderMoved(int)</signal>
+        <receiver>ContrastWindow</receiver>
+        <slot>blueSlider_sliderMoved(int)</slot>
+    </connection>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>ContrastWindow</receiver>
+        <slot>okPushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>monoSlider</tabstop>
+    <tabstop>redSlider</tabstop>
+    <tabstop>greenSlider</tabstop>
+    <tabstop>blueSlider</tabstop>
+    <tabstop>okPushButton</tabstop>
+    <tabstop>cancelPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="local" impldecl="in implementation">contrast.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>class DisplayWindow;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable>TerraViewBase *mainWindow_;</variable>
+    <variable>DisplayWindow* displayWindow_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot>monoSlider_sliderMoved( int value )</slot>
+    <slot>monoSlider_sliderReleased()</slot>
+    <slot>redSlider_sliderMoved( int value )</slot>
+    <slot>redSlider_sliderReleased()</slot>
+    <slot>greenSlider_sliderMoved( int value )</slot>
+    <slot>greenSlider_sliderReleased()</slot>
+    <slot>blueSlider_sliderMoved( int value )</slot>
+    <slot>blueSlider_sliderReleased()</slot>
+    <slot>okPushButton_clicked()</slot>
+    <slot>helpPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function>init()</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

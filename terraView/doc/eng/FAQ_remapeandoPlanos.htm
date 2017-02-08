@@ -1,0 +1,45 @@
+<HTML> <HEAD> <TITLE> TerraView -   Frequently Asked Questions  </TITLE> </HEAD>
+
+<BODY>
+	
+<p align="center"> <big><b><font size="4" face="Arial, Helvetica, sans-serif">TerraView 
+  -  </font></b></big><font size="4" face="Arial, Helvetica, sans-serif"> 
+   <b>  Frequently Asked Questions</b> </font> </p>
+
+	
+<hr>
+<p align="justify"><strong>How to remap a layer from one projection to another?</strong></p>
+<hr>
+<p align="justify">Each layer with objects with vector representation 
+  is associated to a geographic projection,. which allows its objects to be located 
+  geographically. When a theme linked to a layer is created in a view, it is possible that 
+  this view has a geographic projection that is different from the layer projection.</p>
+<p align="justify"> When a theme is drawn in the Draw Area, <em>TerraView</em> 
+  recalculates the coordinates of the layer objects from the layer projection to the projection 
+  of the theme view, if they are different. 
+  This recalculation can be computationaly expensive when the layer/thems has 
+  many objects and is frequently redrawn. In this case, it might be useful to 
+  remap the layer to the same projection used for its visualization, and 
+  recalculate object coordinates just once. </p>
+<p align="justify"> The procedure to remap a layer P, with an associated theme 
+  T, from aprojection to another consists in creating another layer with the destination 
+  projection (in this case, equal to the view one), following these steps: </p>
+<div align="justify">
+  <ol>
+    <li>Activate theme T popup menu and select <strong>Create Layer from Theme </strong> option. 
+      An interface will be displayed to obtain information about the resulting Layer;</li>
+    <li>In the left side box, <strong>Objects Selection</strong>, the usual option in this 
+      case is <strong>Collection</strong> option, since all objects from theme T will be used 
+      to create the new layer;</li>
+    <li>In the right side box, <strong>New Layer</strong>, are the information about the 
+      name of the layer to be created and its projection with their parameters. 
+      The projection can be defined equal to the one of the view associated to the theme T, 
+      which is usual in this case, or any other projection;</li>
+  </ol>
+  If the reason for remapping is the above one, do not forget to create a theme linked to 
+  the new layer, in the same view used for visualization. </div>
+<p align="justify"></p>
+<hr>
+			
+</BODY>
+</HTML>

@@ -1,0 +1,276 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>SelectProxMatrix</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>SelectProxMatrix</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>398</width>
+            <height>119</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Select Proximity Matrix</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="3" column="0">
+            <property name="name">
+                <cstring>layout4</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>SetPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Set Matrix as Default</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>DeletePushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Delete Matrix</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>CancelPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Cancel</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+C</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>helpPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Help</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+H</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <spacer row="2" column="0">
+            <property name="name">
+                <cstring>spacer7</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>16</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout15</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer13_2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>66</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>themeTextLabel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Theme:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>temaComboBox</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>250</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="1" column="0">
+            <property name="name">
+                <cstring>layout16</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer6</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>27</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Proximity Matrix:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>matrixComboBox</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>250</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>temaComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>SelectProxMatrix</receiver>
+        <slot>fillProxMatrixCombo(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>SetPushButton</sender>
+        <signal>pressed()</signal>
+        <receiver>SelectProxMatrix</receiver>
+        <slot>SetPushButton_ativated()</slot>
+    </connection>
+    <connection>
+        <sender>DeletePushButton</sender>
+        <signal>pressed()</signal>
+        <receiver>SelectProxMatrix</receiver>
+        <slot>DeletePushButton_ativated()</slot>
+    </connection>
+    <connection>
+        <sender>CancelPushButton</sender>
+        <signal>pressed()</signal>
+        <receiver>SelectProxMatrix</receiver>
+        <slot>CancelPushButton_ativated()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SelectProxMatrix</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>temaComboBox</tabstop>
+    <tabstop>matrixComboBox</tabstop>
+    <tabstop>SetPushButton</tabstop>
+    <tabstop>DeletePushButton</tabstop>
+    <tabstop>CancelPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in declaration">TeDataTypes.h</include>
+    <include location="local" impldecl="in declaration">TeCoord2D.h</include>
+    <include location="local" impldecl="in implementation">terraViewBase.h</include>
+    <include location="local" impldecl="in implementation">TeTheme.h</include>
+    <include location="local" impldecl="in implementation">TeGUIUtils.h</include>
+    <include location="local" impldecl="in implementation">TeWaitCursor.h</include>
+    <include location="local" impldecl="in implementation">TeAppTheme.h</include>
+    <include location="local" impldecl="in implementation">qmessagebox.h</include>
+    <include location="local" impldecl="in implementation">TeDatabaseUtils.h</include>
+    <include location="global" impldecl="in implementation">qapplication.h</include>
+    <include location="local" impldecl="in implementation">selectProxMatrix.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TeTheme;</forward>
+    <forward>class TeDatabase;</forward>
+    <forward>class TerraViewBase;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable access="public">TeTheme* curTheme_;</variable>
+    <variable access="public">TeDatabase* db_;</variable>
+    <variable access="public">TerraViewBase* mainWindow_;</variable>
+    <variable access="public">map&lt;int, int&gt; comboIndex_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot returnType="bool">fillProxMatrixCombo( const QString &amp; temaName )</slot>
+    <slot>SetPushButton_ativated()</slot>
+    <slot>DeletePushButton_ativated()</slot>
+    <slot>CancelPushButton_ativated()</slot>
+    <slot>helpPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function specifier="non virtual">init()</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,26 @@
+/* XPM */
+static char *view_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 4 1",
+"  c #800080",
+". c #808080",
+"X c #C0C0C0",
+"o c gray100",
+/* pixels */
+"................",
+"................",
+"..XXXXXXXXXXXX..",
+"..XXXXXXXXXXXX..",
+"..X  XXXXX  oX..",
+"..X  XXXXX  oX..",
+"..XX  XXX  ooX..",
+"..XX  XXX  ooX..",
+"..XXX  X  oooX..",
+"..XXX  X  ooXX..",
+"..XXXX   oooXX..",
+"..XXXX   ooXXX..",
+"..XXXXX oooXXX..",
+"..XXXXXoooXXXX..",
+"................",
+"................"
+};

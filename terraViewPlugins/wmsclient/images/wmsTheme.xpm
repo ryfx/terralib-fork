@@ -1,0 +1,28 @@
+/* XPM */
+static char *wmsTheme_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 6 1",
+"  c navy",
+". c blue",
+"X c cyan",
+"o c #808080",
+"O c #C0C0C0",
+"+ c gray100",
+/* pixels */
+"oooooooooooooooo",
+"o........++OOOoo",
+"o........++OOOoo",
+"oOOO..+++++OOOoo",
+"oOOO..+++++OOOoo",
+"oOOO..++OOOOOOoo",
+"oOOO..  OOOOO oo",
+"oOOO..+ XOOOO oo",
+"oOOO..+  O O  oo",
+"oOOO..++ X O Xoo",
+"oOOOO+++ X O Xoo",
+"oOOOOOOOO X XOoo",
+"oOOOOOOOO X XOoo",
+"oOOOOOOOOOOOOOoo",
+"oooooooooooooooo",
+"oooooooooooooooo"
+};

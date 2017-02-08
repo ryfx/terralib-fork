@@ -1,0 +1,271 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>HidroBoostUIConnectedComponents</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>HidroBoostUIConnectedComponents</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>473</width>
+            <height>227</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Connected Components</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="resizeMode">
+            <enum>Fixed</enum>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout8</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="2" column="0">
+                    <property name="name">
+                        <cstring>layout2</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="1" column="0">
+                            <property name="name">
+                                <cstring>layout1</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QPushButton" row="0" column="3">
+                                    <property name="name">
+                                        <cstring>closePushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&amp;Close</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+C</string>
+                                    </property>
+                                </widget>
+                                <spacer row="0" column="1">
+                                    <property name="name">
+                                        <cstring>spacer1</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>181</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QPushButton" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>helpPushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&amp;Help</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+H</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton" row="0" column="2">
+                                    <property name="name">
+                                        <cstring>okPushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&amp;Ok</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+O</string>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="Line" row="0" column="0">
+                            <property name="name">
+                                <cstring>line1</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>HLine</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QFrame" row="1" column="0">
+                    <property name="name">
+                        <cstring>frame3</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Raised</enum>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout9</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QGroupBox" row="1" column="0">
+                                    <property name="name">
+                                        <cstring>groupBox2</cstring>
+                                    </property>
+                                    <property name="title">
+                                        <string>Result</string>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>textLabelResult</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Number of Connected Components:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLineEdit" row="0" column="1">
+                                            <property name="name">
+                                                <cstring>componentsNumberLineEdit</cstring>
+                                            </property>
+                                            <property name="enabled">
+                                                <bool>false</bool>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                                <widget class="QGroupBox" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>groupBoxGraph</cstring>
+                                    </property>
+                                    <property name="title">
+                                        <string>Selected Undirected Graph</string>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLineEdit" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>graphNameLineEdit</cstring>
+                                            </property>
+                                            <property name="enabled">
+                                                <bool>false</bool>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout3</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel" row="0" column="0">
+                            <property name="name">
+                                <cstring>textLabelTitle</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>1</bold>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Allow execute Connected Components from BGL...</string>
+                            </property>
+                        </widget>
+                        <widget class="Line" row="1" column="0">
+                            <property name="name">
+                                <cstring>line2</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>HLine</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroBoostUIConnectedComponents</receiver>
+        <slot>okPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>closePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroBoostUIConnectedComponents</receiver>
+        <slot>close()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>graphNameLineEdit</tabstop>
+    <tabstop>componentsNumberLineEdit</tabstop>
+    <tabstop>helpPushButton</tabstop>
+    <tabstop>okPushButton</tabstop>
+    <tabstop>closePushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">PluginParameters.h</include>
+    <include location="local" impldecl="in implementation">HidroBoostUIConnectedComponents.ui.h</include>
+</includes>
+<variables>
+    <variable>PluginParameters* _parameters;</variable>
+    <variable>bool _directGraph;</variable>
+</variables>
+<slots>
+    <slot>okPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function returnType="bool">init( PluginParameters * parameters, bool directGraph )</function>
+    <function>setGraphName( const std::string &amp; graphName )</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

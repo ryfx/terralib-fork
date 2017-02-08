@@ -1,0 +1,3 @@
+if not exist plugins mkdir plugins
+
+copy "$(TargetPath)" "plugins"

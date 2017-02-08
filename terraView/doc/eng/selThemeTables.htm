@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Selection of Theme Tables</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<font face="Arial, Helvetica, sans-serif" size="4">
+<table width="100%">
+  <tr> 
+    <td><b>Selection of Theme Tables</b><br>
+      <hr>
+      <p>For instance, assume that there are socio-economic attributes about Sao Paulo districts. They are in the 
+      <u>SOC_ECONOMY.dbf</u> file.  It is known that the link between each district and its geometry is given by 
+      the ID field and that the <u>SOC_ ECONOMY.dbf</u> table has a field named <u>DIST</u> with the same values 
+      to the field <u>ID</u>. Given that each record of the <u>SOC_ECONOMY.dbf</u> table refers to a single 
+      district and that this information does not change with time, this table is called static. A Layer may have more 
+      than one static attributes table. Therefore, we can import the table with socio-economic data as another attributes 
+      table of the districts layer. Access the <strong>File <font size="4" face="Arial, Helvetica, sans-serif">- 
+      </font> Import Table...</strong> to display the window shown in the figure below.</p>
+     <center> <img src="terraViewBase_arquivos/selec_tabela.png"></center>
+      <p>Follow these steps:</p>
+      <ol start="1" type="1">
+        <li>Click on <strong>File...</strong> button and select the <u>SOC_ECONOMY.dbf</u> table. 
+        Observe a sample of the table in the proper field. Note that TerraView recognizes in the DBF file 
+        the name and type of each column. Clicking on each column will display its information in the interface 
+        field <strong>Columns Definition</strong>. These definitions can not be changed since they are part of 
+        the DBF file. <strong></strong></li>
+        <li>Select the table <strong>Type</strong> as <strong>Static</strong>.</li>
+        <li>Select the <strong>layer</strong> to which the static attributes table is associated with. 
+        In this case, select the districts layer.</li>
+        <li>Select the column/attribute to be used to link with the districts geometries. In this case, 
+        select the <u>DIST</u> field.</li>
+        <li>Select the name of the new table. Note that TerraView has a <em>default</em> option.</li>
+        <li>Click on <strong>OK</strong> to execute.</li>
+      </ol>
+      <p>Now the districts layer has two alphanumeric or descriptive attributes tables: one from the original 
+      Shapefile and the other imported from the DBF file. Therefore, the Themes created for this Layer 
+      can define which static table will be visible. Right-click on the districts Themes and choose the 
+      <strong>Select Theme Tables...</strong> option to display the window shown in the figure below.</p>
+      <center> <img src="terraViewBase_arquivos/selec_tabela1.png"></center>      <p>&nbsp;</p>
+      <p>Note in the interface:
+      </p>
+      <ol>
+      <li>The left hand side of the window shows the list of tables that belong to the Layer which is the 
+      source of the Theme;</li>
+      <li>The right hand side shows which tables the Theme is currently using;</li>
+      <li>The arrows allow transfer of tables for one side to another;</li>
+      <li>Transfer the <em>SOC_ECONOMY</em> table to the theme Tables field and click on <strong>OK</strong> to execute.</li>
+    </ol></td>
+  </tr>
+  <tr>
+  </tr>
+</table>
+</font> 
+</body>
+</html>

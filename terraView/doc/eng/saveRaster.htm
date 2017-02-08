@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Save Raster</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<font face="Arial, Helvetica, sans-serif" size="4">
+<table width="100%">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><b>Save Raster</b><br>
+      <hr>
+       <br />
+           This funcionality allows a raster data stored in a Terraview database to be saved in a file, 
+           using some of the common raster data formats.
+          <br /><br />
+      Directory and output file name can be defined using <b>File</b> button or typed in the text field. 
+      If the file already exists, it will be overwritten after user confirmation. 
+      <br />
+      <br />
+          <b>Formats</b>
+          <br />
+      The available formats for saving a raster data (and available in <b>Format</b>) list are: <br />
+            <ol>
+            <li>GeoTiff: can store raster data with 1 or 3 bands, pallete or not. This format stores
+            common information, such as number of rows and columns, number of bands, and number of bits per 
+            raster data element; and geographic information, such as projection and datum, horizontal and 
+            vertical resolution, and bounding box;</li>
+            <li>JPEG: can store raster data with 1 or 3 bands only if their elements are unsigned char type. 
+            Pallete data are converted to 3 bands based on its color table. It is not possible to store 
+            geographic information in a JPEG file.</li>
+            
+            <li>RAW: stores 1 band of the raster data in a binary file sequentially by lines. No informatin about 
+            the data is stored.</li>
+            <li>SPRING: stores 1 band of the raster data in an ASCII file using the raster interchange format 
+             of SPRING software.</li>
+            </ol>
+             <center>
+           <img src="terraViewBase_arquivos/salvar_raster1.png" /><br />
+        </center>    
+            <br /><br />
+            <b>Raster Parameters</b><br />
+      The interface fields under <b>Raster Parameters</b> is used by the user to select which representation 
+      to save. <br />
+       <br />
+      A TerraView Layer may contain many raster representations associated to different geographic objects. 
+      <b>Object</b> field shows identifiers of objects with raster representation in the Layer used to create 
+      the Theme. The formats allow saving: 
+      <ul>
+        <li>1 band: similar to a monochromatic image. The user selects from a list of bands which one will be saved;</li>
+            
+        <li>3 bands: similar to 3 RGB (Red - Green - Blue) colors image. Raster data must have at least 3 bands. 
+            The user selects which band will correspond to each color by clicking on the button that 
+            corresponds to the color and selecting in the bands list the band for that color.</li>
+            </ul>	
+        <center>
+           <img src="terraViewBase_arquivos/salvar_raster.png" /><br />
+           
+           </center>   
+           
+        <br /><br />   
+        <b>Sampling</b> 
+        <br />
+      Allows the user to degrade the image resolution up to 4 levels (<b>Sampling</b> field). Level 1 is the 
+      original resolution, that is, no degradation. 
+      <b>Res. X</b> and <b>Res. Y</b> fields show the values of output resolutions. <br />
+      <br />
+      Output resolutions are obtained multiplying the original resolution by the sampling factor. 
+      For instance, if the original resolutions are 30 meters in horizontal and vertical directions, and 
+      the sampling factor is 2, output resolutions will be 60 meters. The sampling algorithm is the nearest neighbor.<br />
+      <br />
+          <center>
+           <img src="terraViewBase_arquivos/salvar_raster2.png" /><br />
+           
+           </center>   
+      </td>
+  </tr>
+  <tr>
+  </tr>
+</table>
+</font> 
+</body>
+</html>

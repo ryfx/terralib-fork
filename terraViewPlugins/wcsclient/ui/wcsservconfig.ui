@@ -1,0 +1,182 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>WCSServConfig</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>WCSServConfig</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>493</width>
+            <height>321</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>WCS server configuration</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout27</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupBox11</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Please, enter the address of the WCS server or choose one from the table below</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout26</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout25</cstring>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>textLabel3</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Service address:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLineEdit">
+                                            <property name="name">
+                                                <cstring>serv_lne_</cstring>
+                                            </property>
+                                            <property name="frameShape">
+                                                <enum>LineEditPanel</enum>
+                                            </property>
+                                            <property name="frameShadow">
+                                                <enum>Sunken</enum>
+                                            </property>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                                <widget class="QTable">
+                                    <column>
+                                        <property name="text">
+                                            <string>Service Name</string>
+                                        </property>
+                                    </column>
+                                    <column>
+                                        <property name="text">
+                                            <string>Service Address</string>
+                                        </property>
+                                    </column>
+                                    <property name="name">
+                                        <cstring>serv_tbl_</cstring>
+                                    </property>
+                                    <property name="numRows">
+                                        <number>3</number>
+                                    </property>
+                                    <property name="numCols">
+                                        <number>2</number>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout24</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>remove_serv_btn_</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Remove entry</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+R</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer9</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>40</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>cap_btn_</cstring>
+                            </property>
+                            <property name="text">
+                                <string>View &amp;capabilities document...</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>remove_serv_btn_</sender>
+        <signal>clicked()</signal>
+        <receiver>WCSServConfig</receiver>
+        <slot>remove_serv_btn_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>cap_btn_</sender>
+        <signal>clicked()</signal>
+        <receiver>WCSServConfig</receiver>
+        <slot>cap_btn_clicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">wcsservconfig.ui.h</include>
+</includes>
+<signals>
+    <signal>showCapabilities()</signal>
+</signals>
+<slots>
+    <slot>serv_tbl_clicked( int, int, int, const QPoint &amp; )</slot>
+    <slot>remove_serv_btn_clicked()</slot>
+    <slot>cap_btn_clicked()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

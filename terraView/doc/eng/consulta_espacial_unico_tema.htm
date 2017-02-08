@@ -1,0 +1,176 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>TerraView</title>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue style='tab-interval:36.0pt'>
+<font size="3" face="Arial, Helvetica, sans-serif"><body lang=PT-BR link=blue vlink=blue> 
+</font> 
+<div class=Section1> 
+  <p> <font size="3" face="Arial, Helvetica, sans-serif"><strong> <span style='font-family:"Arial","sans-serif";'> 
+    TerraView</span> </strong> </font></p>
+  <p align=right> <font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family:Arial'> 
+    <a href="consulta_espacial.htm">&lt;&lt; Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> 
+    | <a href="consulta_espacial_dois_temas.htm">Next &gt;&gt;</a> </span> </font></p>
+  <hr size=2 width="100%" align=center>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><strong><u> 
+    <span style='font-size: 13.5pt;font-family:Arial'>Spatial Query with Only 
+    One Theme</span></u></strong> </font></p>
+  <div align="justify"><font size="3" face="Arial, Helvetica, sans-serif"> 
+    <p>
+	A very interesting operation is to associate the objects of a theme according to 
+    their geometries, in a similar way to spatial pointing. It is possible to 
+    determine neighborhood relationships and crossings, making analysis much easier. 
+    Furthermore, it is possible to create a new layer with selected data if desired. 
+    </p>
+    <p>
+    <strong>Polygons</strong> <br>
+    </p>
+    <p>
+    Suppose the following situation: In order to investigate the region where 
+    Bandeirantes neighborhood and its neighbors are, a layer in TerraView that 
+    contains only this region can be created: </p>
+    <p>
+    1. Set Bairros theme active and point only Bandeirantes neighborhood. (Use 
+    column sort to facilitate this task and remove pointed colors and queries). 
+    </p>
+    <p> 2. Activate popup menu from Bairros theme and select <strong>Spatial Query</strong>. 
+    </p>
+    <p> 3. In Topological Relations choose <em>Touch</em> <img border=0 id="_x0000_i1029" src="terraViewBase_arquivos/botao_toca.png"> 
+      to find all the neighborhoods that border with Bandeirantes neighborhood.</p> 
+    <p>
+    4. Execute the operation and note that the neighborhoods that border Bandeirantes 
+    is now drawn with the color of queried objects. </p>
+    <p> 5. Next, create a new layer called reg_bandeirantes from the theme selecting 
+      pointed objects (Bandeirantes) and queried ones (its neighbors). Use <strong>Create 
+      Layer from Theme</strong> tool in the Bairros theme popup menu. In Selection 
+      of Objects mark <strong>Queried or Pointed</strong>. </p>
+    <p>
+    6. Create a new theme reg_bandeirantes from this layer in BH view. Note that 
+    only the neighborhoods of interest are going to be displayed. </p>
+    <p>
+    Other available options to associate polygons are: </p>
+    </font></div>
+  <div align=center>
+  <table width="60%" border="1" cellspacing="0" cellpadding="0" bordercolor="#000000" style="border-left: 1px; border-right: 1px; border-top: 1px; border-bottom: thin;">
+    <tr> 
+      <td width="40%" align="center"><font size="3" face="Arial, Helvetica, sans-serif"><strong>Operation</strong></font></td>
+      <td width="40%" align="center"><font size="3" face="Arial, Helvetica, sans-serif"><strong>Function</strong></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Disjoint</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>No 
+        intersection</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Equal</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Exact 
+        equal</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Touch</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Borders 
+        with</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Overlap</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Has 
+        intersection but is not contained</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Cover</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Contained 
+        and touches border</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Covered 
+        by</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Contains 
+        and touches border</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Within</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Is 
+        contained but does not touch border</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Contains</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Contains 
+        but does not touch border</span></font></td>
+    </tr>
+  </table></div>
+  <div align="justify"><font size="3" face="Arial, Helvetica, sans-serif">
+  <p><strong>Lines</strong> </p>
+  <p>Suppose that there is a task of defining all the streets or avenues that cross 
+    <st1:address w:st="on">Afonso Pena Avenue</st1:Street>. Because the data are 
+    stored by street segments it is necessary to select all the segments that 
+    compose this avenue. </p>
+   <p> 1. Activate RuasCentrais theme, remove pointed and queried objects, and select 
+    all segments that compose <st1:address w:st="on">Afonso Pena avenue</st1:address> 
+    (use column sort to easy this task). </p>
+    <p>2. Activate the popup menu and select <strong>Spatial Query</strong>. </p>
+    <p>3. In Topological Relations field, select Touches. Create as a <em>New 
+      Query</em>. </p>
+    <p>4. Observe that all lines that touch any segment of the avenue are selected. 
+          Execute a new spatial query by selecting Disjoint as topological relation 
+          and choose Add. Query options are similar to the attributes query: New Query, 
+          Add and Filter. </p>
+    <p> All central streets are now selected. The other topological relations available 
+    for lines are: </p>
+    </font> </div>
+  <div align=center>
+  <table width="60%" border="1" cellspacing="0" cellpadding="0" bordercolor="#000000" style="border-left: 1px; border-right: 1px; border-top: 1px; border-bottom: thin;">
+    <tr> 
+      <td width="40%" align="center"><font size="3" face="Arial, Helvetica, sans-serif"><strong>Operation</strong></font></td>
+      <td width="40%" align="center"><font size="3" face="Arial, Helvetica, sans-serif"><strong>Function</strong></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Disjoint</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>No 
+        intersection</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Equal</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Exact 
+        equal</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Touch</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Ends 
+        at the line</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Overlap</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Has 
+        a common segment</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Crosses</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Has 
+        a common point (not at end point)</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Within</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Is 
+        contained</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Contains</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Contains</span></font></td>
+    </tr>
+  </table></div>
+  <font size="3" face="Arial, Helvetica, sans-serif"><br>
+  <br>
+  </font> 
+  <hr size=2 width="100%" align=center>
+  <p align=right> <font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family:Arial'><a href="consulta_espacial.htm">&lt;&lt; 
+    Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="consulta_espacial_dois_temas.htm">Next 
+    &gt;&gt;</a> </span> </font></p>
+  
+</div>
+
+</body>
+
+</html>

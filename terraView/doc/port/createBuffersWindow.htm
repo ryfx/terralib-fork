@@ -1,0 +1,153 @@
+<html>
+
+<head>
+<title>Cria&ccedil;&atilde;o de Zonas de Dist&acirc;ncia ou Buffers</title>
+
+</head>
+
+<body lang=PT-BR>
+
+<div class=Section1> 
+  <p class=MsoNormal><font size="3" face="Arial, Helvetica, sans-serif"><strong><span style='font-family:"Arial","sans-serif";'>TerraView</span> 
+    </strong> </font></p>
+  <div align="right"><span style="font-family:Arial"><font size="3" face="Arial, Helvetica, sans-serif"><a href="atribuir_dado_localizacao.htm">&lt;&lt; 
+    Anterior</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">In&iacute;cio</a> | <a href="grafico.htm">Pr&oacute;ximo&gt;&gt;</a></font></span><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family: "Arial","sans-serif";'> 
+    </span> </font></div>
+  <hr size=2 width="100%" align=center>
+  <p align="center" class=MsoNormal><b><span style='font-family:Tahoma'><u>Criação 
+    de Zonas de Distância ou Buffers</u></span></b></p>
+  <p></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:Tahoma'>Um
+buffer ou zona de distância é uma área gerada ao redor de um objeto mantendo
+uma determinada distância. Alguns exemplos de buffer são mostrados na Figura 1.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='font-family:Tahoma'><img width=505 height=250
+src="createBuffersWindow_arquivos/image001.png"></span></p>
+
+  <p class=MsoCaption align=center style='text-align:center'><span
+style='font-family:Tahoma'>Figura 1 </span><span style='font-family:Tahoma'>-</span><span style='font-family:Tahoma'> 
+    Exemplos de Zona de Distância ou Buffer</span></p>
+
+  <p class=MsoNormal style='text-align:justify'><span style='font-family:Tahoma'>A 
+    tela para a criação de buffers ou zonas de distância é ilustrada na Figura 
+    2. Essa interface gera um novo plano de informação que contém todos os buffers 
+    gerados a partir dos objetos de um tema de entrada e uma determinada distância. 
+    Para acessar essa tela deve-se utilizar o menu de contexto sobre a Vista, 
+    na op&ccedil;&atilde;o <strong>Opera&ccedil;&otilde;es Geogr&aacute;ficas 
+    - Cria&ccedil;&atilde;o de Buffers</strong>...</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='font-family:Tahoma'><img width=548 height=466
+src="createBuffersWindow_arquivos/image002.png"></span></p>
+
+  <p class=MsoCaption align=center style='text-align:center'><span
+style='font-family:Tahoma'>Figura 2 </span><span style='font-family:Tahoma'>- 
+    Tela para criação de buffers</span></p>
+  <p></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:Tahoma'>A
+interface pode ser dividida em 6 partes: </span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-indent:
+-18.0pt'><span style='font-family:Tahoma'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-family:Tahoma'>Dados de entrada</span></b><span
+style='font-family:Tahoma'>: o usuário deve escolher o tema de entrada e quais
+os objetos desse tema serão considerados (todos, somente os apontados ou somente
+os consultados). </span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-indent:
+-18.0pt'><span style='font-family:Tahoma'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-family:Tahoma'>Distância</span></b><span
+style='font-family:Tahoma'>: o usuário pode entrar com uma distância fixa que
+será considerada para todos os objetos ou escolher um atributo numérico que
+define uma distância específica para cada objeto. </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:Tahoma'>IMPORTANTE:
+a distância DEVE estar na mesma unidade do dado. Por exemplo, se a unidade do
+dado for grau decimal, a distância deve ser fornecida em grau decimal também; se
+estiver em metros, deve ser fornecida em metros, e assim por diante. Para saber
+qual a unidade do tema de entrada, o usuário deve olhar a projeção do plano de
+informação base desse tema. </span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-indent:
+-18.0pt'><span style='font-family:Tahoma'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-family:Tahoma'>Múltiplos níveis</span></b><span
+style='font-family:Tahoma'>: o usuário pode gerar vários níveis de buffers
+baseado em uma distância <b><i>d</i></b>. Assim, cada buffer de nível <b><i>n</i></b>
+corresponde a um buffer de distância entre <b><i>d*(n-1)</i></b> e <b><i>d*n</i></b>.
+Na Figura 3, foram gerados 3 níveis de buffer ao redor das fronteiras do estado
+de Minas Gerais considerando uma distância de 7000 metros. O primeiro nível é um buffer de 7000 metros. O segundo nível corresponde a um buffer de
+distância entre 7000 e 14000 metros. E finalmente, o terceiro nível corresponde
+a um buffer de distância entre 14000 e 21000 metros.   </span></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='font-family:Tahoma'><img width=364 height=296
+src="createBuffersWindow_arquivos/image003.png"></span></p>
+
+  <p class=MsoCaption align=center style='text-align:center'><span
+style='font-family:Tahoma'>Figura 3</span><span style='font-family:Tahoma'> - 
+    Múltiplos Níveis </span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-indent:
+-18.0pt'><span style='font-family:Tahoma'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-family:Tahoma'>Eliminar fronteiras entre
+buffers</span></b><span style='font-family:Tahoma'>: cada buffer computado
+sobre cada objeto do tema de entrada gera um novo objeto no plano de saída.
+Dependendo da distância escolhida pelo usuário, o plano de saída pode conter
+objetos sobrepostos. Se o usuário escolher a opção de remover as fronteias
+entre os buffers, todos os objetos sobrepostos do plano de saída são unidos em um
+único objeto. Essa operação é ilustrada na Figura 4. </span></p>
+
+<p class=MsoNormal align=center style='margin-left:18.0pt;text-align:center;
+page-break-after:avoid'><span style='font-family:Tahoma'><img width=548
+height=220 src="createBuffersWindow_arquivos/image004.png"></span></p>
+
+  <p class=MsoCaption align=center style='text-align:center'><span
+style='font-family:Tahoma'>Figura 4 - Eliminar fronteiras entre buffers</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify'><span
+style='font-family:Tahoma'>O tema de entrada é mostrado na Figura 4.a. O plano
+de saída gerado sem remover as fronteiras entre os buffers é mostrado na Figura
+4.b. Podemos observar que cada buffer gerou um objeto no plano de saída
+(buffer_1, buffer_2 e buffer_3) e eles se sobrepõem. O plano de saída gerado
+removendo as fronteiras entre os buffers é mostrado na Figura 4.c. Neste caso,
+o plano de saída é formado somente por um objeto (buffer_1) que resultou da
+união de todos os buffers gerados.</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-indent:
+-18.0pt'><span style='font-family:Tahoma'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-family:Tahoma'>Tipo de buffer</span></b><span
+style='font-family:Tahoma'>: quando a representação geométrica do plano de
+entrada é poligonal, essa parte da interface é mostrada. Assim, o usuário pode escolher
+entre três tipos de buffers: Dentro, Fora ou Dentro e Fora. A Figura 5 ilustra
+cada tipo de buffer. A Figura 5.a mostra um buffer gerado considerando apenas a
+região interna do estado de Minas Gerais, a Figura 5.b mostra um buffer gerado
+considerando apenas a região externa e a Figura 5.c mostra um buffer gerado
+considerando a região interna e externa. </span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-family:Tahoma'><img width=548 height=185
+src="createBuffersWindow_arquivos/image005.png"></span></b></p>
+
+ <p class=MsoCaption align=center style='text-align:center'><span
+style='font-family:Tahoma'>Figura 5 - Tipos de Buffer</span></p>
+
+
+  <p class=MsoNormal style='margin-left:18.0pt;text-align:justify;text-indent:
+-18.0pt'><span style='font-family:Tahoma'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; 
+    </span></span><b><span style='font-family:Tahoma'>Nome do plano de saída</span></b><span
+style='font-family:Tahoma'>: o usuário deve fornecer o nome do plano de saída. O 
+    plano de informação gerado contém os buffers gerados e uma tabela estática 
+    com a distância e o nível de cada buffer.</span></p>
+  <hr size=2 width="100%" align=center>
+  <div align="right"><font size="3" face="Arial, Helvetica, sans-serif"> </font> 
+    <font size="3" face="Arial, Helvetica, sans-serif"><span style="font-family:Arial"><font size="3" face="Arial, Helvetica, sans-serif"><a href="atribuir_dado_localizacao.htm">&lt;&lt; 
+    Anterior</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">In&iacute;cio</a> | <a href="grafico.htm">Pr&oacute;ximo&gt;&gt;</a></font></span><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family: "Arial","sans-serif";'> 
+    </span></font><span style='font-family: "Arial","sans-serif";'> </span> </font></div>
+</div>
+
+</body>
+
+</html>

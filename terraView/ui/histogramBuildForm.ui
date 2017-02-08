@@ -1,0 +1,526 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>HistogramBuildForm</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>HistogramBuildForm</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>347</width>
+            <height>268</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>0</width>
+            <height>0</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Raster Histogram Generation</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="2" column="0">
+            <property name="name">
+                <cstring>layout7</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer7</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>FIntHist</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>true</bool>
+                    </property>
+                    <property name="frameShape">
+                        <enum>Box</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QCheckBox" row="2" column="0">
+                            <property name="name">
+                                <cstring>CBIntHistDiscritize</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Discretize levels</string>
+                            </property>
+                            <property name="checked">
+                                <bool>true</bool>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Round the histogram levels to the near integer. </string>
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout2</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLabel1</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="text">
+                                        <string>Levels Number :</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                </widget>
+                                <widget class="QCheckBox">
+                                    <property name="name">
+                                        <cstring>CBIntHistAutoGuess</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Auto Guess</string>
+                                    </property>
+                                    <property name="checked">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="toolTip" stdset="0">
+                                        <string>If checked, the number of levels will be automatically found by using level step with value one.</string>
+                                    </property>
+                                </widget>
+                                <widget class="QSpinBox">
+                                    <property name="name">
+                                        <cstring>SBIntHistLevels</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>60</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="buttonSymbols">
+                                        <enum>PlusMinus</enum>
+                                    </property>
+                                    <property name="maxValue">
+                                        <number>10000</number>
+                                    </property>
+                                    <property name="value">
+                                        <number>256</number>
+                                    </property>
+                                    <property name="toolTip" stdset="0">
+                                        <string>The number of interpolated levels.</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                    </grid>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer8</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout78</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer3</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>48</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QButtonGroup">
+                    <property name="name">
+                        <cstring>BGHistType</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Histogram Type</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout77</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QRadioButton" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>RBHistType</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="text">
+                                        <string>Interpolated</string>
+                                    </property>
+                                    <property name="checked">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="toolTip" stdset="0">
+                                        <string>Generates a level-ordered interpolated histogram.</string>
+                                    </property>
+                                </widget>
+                                <widget class="QRadioButton" row="0" column="1">
+                                    <property name="name">
+                                        <cstring>RBHistType_2</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="text">
+                                        <string>Other</string>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </grid>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer4</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>48</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="3" column="0">
+            <property name="name">
+                <cstring>layout4</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>PBgenerate</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="text">
+                        <string>&amp;OK</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+O</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>16</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>PBclose</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Cancel</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+C</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>16</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>helpPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Help</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+H</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="1" column="0">
+            <property name="name">
+                <cstring>layout6</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer5</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout1</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel1_2</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Raster Band:</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QSpinBox">
+                            <property name="name">
+                                <cstring>SBRasterBand</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>40</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="buttonSymbols">
+                                <enum>PlusMinus</enum>
+                            </property>
+                            <property name="maxValue">
+                                <number>0</number>
+                            </property>
+                            <property name="value">
+                                <number>0</number>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>The raster band (starting from zero)</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer6</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>PBclose</sender>
+        <signal>clicked()</signal>
+        <receiver>HistogramBuildForm</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>RBHistType</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>FIntHist</receiver>
+        <slot>setShown(bool)</slot>
+    </connection>
+    <connection>
+        <sender>CBIntHistAutoGuess</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>SBIntHistLevels</receiver>
+        <slot>setDisabled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>PBgenerate</sender>
+        <signal>clicked()</signal>
+        <receiver>HistogramBuildForm</receiver>
+        <slot>PBgenerateClick()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HistogramBuildForm</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>SBRasterBand</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>HistogramBuildForm</receiver>
+        <slot>bandChanged(int)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>RBHistType</tabstop>
+    <tabstop>RBHistType_2</tabstop>
+    <tabstop>SBRasterBand</tabstop>
+    <tabstop>CBIntHistAutoGuess</tabstop>
+    <tabstop>SBIntHistLevels</tabstop>
+    <tabstop>CBIntHistDiscritize</tabstop>
+    <tabstop>PBgenerate</tabstop>
+    <tabstop>PBclose</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="global" impldecl="in declaration">TeSharedPtr.h</include>
+    <include location="global" impldecl="in declaration">TePDIHistogram.hpp</include>
+    <include location="global" impldecl="in declaration">TeRaster.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+    <include location="local" impldecl="in implementation">histogramBuildForm.ui.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable>TerraViewBase* mainWindow_;</variable>
+    <variable>TeRaster* in_raster_;</variable>
+    <variable>TePDIHistogram hist_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot>PBgenerateClick()</slot>
+    <slot>helpPushButton_clicked()</slot>
+    <slot>bandChanged( int )</slot>
+    <slot>destroy()</slot>
+</slots>
+<functions>
+    <function specifier="non virtual">init()</function>
+    <function specifier="non virtual">setRaster( TeRaster * in_raster )</function>
+    <function specifier="non virtual" returnType="TePDIHistogram">getHistogram()</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

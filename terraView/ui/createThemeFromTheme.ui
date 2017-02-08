@@ -1,0 +1,374 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>CreateThemeFromTheme</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>CreateThemeFromTheme</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>367</width>
+            <height>237</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Create Theme From Theme</string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QButtonGroup" row="0" column="0" rowspan="3" colspan="1">
+            <property name="name">
+                <cstring>objectsButtonGroup</cstring>
+            </property>
+            <property name="title">
+                <string>Selection of Objects</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QRadioButton" row="6" column="0">
+                    <property name="name">
+                        <cstring>queriedaorpointedRadioButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Queried or Pointed</string>
+                    </property>
+                    <property name="buttonGroupId">
+                        <number>6</number>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="0" column="0">
+                    <property name="name">
+                        <cstring>colRradioButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Collection</string>
+                    </property>
+                    <property name="buttonGroupId">
+                        <number>0</number>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="3" column="0">
+                    <property name="name">
+                        <cstring>pointedRadioButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Pointed</string>
+                    </property>
+                    <property name="buttonGroupId">
+                        <number>2</number>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="5" column="0">
+                    <property name="name">
+                        <cstring>queriedandpointedRadioButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Queried and Pointed</string>
+                    </property>
+                    <property name="buttonGroupId">
+                        <number>5</number>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="2" column="0">
+                    <property name="name">
+                        <cstring>notqueriedRadioButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Not Queried</string>
+                    </property>
+                    <property name="buttonGroupId">
+                        <number>3</number>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="1" column="0">
+                    <property name="name">
+                        <cstring>queriedRadioButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Queried</string>
+                    </property>
+                    <property name="buttonGroupId">
+                        <number>1</number>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="4" column="0">
+                    <property name="name">
+                        <cstring>notpointedRadioButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Not Pointed</string>
+                    </property>
+                    <property name="buttonGroupId">
+                        <number>4</number>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox" row="0" column="1">
+            <property name="name">
+                <cstring>themeGroupBox</cstring>
+            </property>
+            <property name="title">
+                <string>NewTheme</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="1" column="0">
+                    <property name="name">
+                        <cstring>layout4_2</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>layerNameTextLabel</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Name:</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>themeNameLineEdit</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>130</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="frameShape">
+                                <enum>LineEditPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </grid>
+        </widget>
+        <spacer row="1" column="1">
+            <property name="name">
+                <cstring>spacer21</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>17</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QLayoutWidget" row="2" column="1">
+            <property name="name">
+                <cstring>layout15</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer row="0" column="2">
+                    <property name="name">
+                        <cstring>spacer14</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget" row="0" column="1">
+                    <property name="name">
+                        <cstring>layout9</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>okPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;OK</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+O</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer17</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Vertical</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>cancelPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Cancel</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer18</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Vertical</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+                <spacer row="0" column="0">
+                    <property name="name">
+                        <cstring>spacer22</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>16</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="559">789c6d91cb0ac2301045f7f98ad0bb2bd2975814f113049782b898a6165d74a37521e2bf9b4c5e6d759a50eec9e46632c953793cec659a8bc740c34d4975a5bb4cdb67dfbf4ee7dd5b24e546eab19265b210492695842acc67a432f252d5545646362cdbb5aa38998cecbaf5b2a88d849526d8ea37c6183ae6182022f81587196a4afa8f11666aa7c9670c34d4044ae4b1cf25d845c640a0f60c026352ced4428f5db82d110767e7045749c47697ab04318289bf64f4cefe624c7be24f8e1d0ca54d5a157b88f9338c5e214b3e5bf105d04a80ca</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CreateThemeFromTheme</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CreateThemeFromTheme</receiver>
+        <slot>okPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CreateThemeFromTheme</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>colRradioButton</tabstop>
+    <tabstop>queriedRadioButton</tabstop>
+    <tabstop>notqueriedRadioButton</tabstop>
+    <tabstop>pointedRadioButton</tabstop>
+    <tabstop>notpointedRadioButton</tabstop>
+    <tabstop>queriedandpointedRadioButton</tabstop>
+    <tabstop>queriedaorpointedRadioButton</tabstop>
+    <tabstop>themeNameLineEdit</tabstop>
+    <tabstop>okPushButton</tabstop>
+    <tabstop>cancelPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="local" impldecl="in implementation">createThemeFromTheme.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TeQtThemeItem;</forward>
+    <forward>class TeAppTheme;</forward>
+    <forward>class Help;</forward>
+    <forward>class TeDatabase;</forward>
+    <forward>class TeTheme;</forward>
+</forwards>
+<variables>
+    <variable>TeDatabase* db_;</variable>
+    <variable>Help* help_;</variable>
+    <variable>TeAppTheme* theme_;</variable>
+    <variable access="public">TeTheme* newTheme_;</variable>
+</variables>
+<slots>
+    <slot>okPushButton_clicked()</slot>
+    <slot>init( TeQtThemeItem * themeItem )</slot>
+    <slot>helpPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function specifier="non virtual" returnType="TeAppTheme *">getNewTheme()</function>
+    <function specifier="non virtual">setParams( TeDatabase * db )</function>
+    <function>show()</function>
+</functions>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

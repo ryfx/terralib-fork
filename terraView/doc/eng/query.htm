@@ -1,0 +1,113 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Consulta por atributos</title>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+
+<div class=Section1>
+
+<p align=center>
+	<strong><u>
+		<span style='font-size: 13.5pt;font-family:Arial'>Attribute Query</span>
+	</u></strong>
+</p>
+
+<p>
+	<span style='font-family:Arial'>
+Attribute query&nbsp;<u1:p></u1:p>module, shown in Figure 1, is used to select objects. Query results are visualized by highlighting in the grid and in the map displayed in TerraView draw area. Highlight color is set by changing TerraView <a href="visualQuery.htm">Query Visual</a>.
+<br><br>
+An editor field in the lower part of the module allows the user to type the query directly using the keyboard or the available tools can be used.
+<p align=center>
+<img border=0 id="_x0000_i1025" src="query_arquivos/query.PNG">
+<br>
+Fig. 1 - Attribute query interface.
+</p>
+The interface is designed to facilitate the construction of attribute queries. Upper part of the interface has a list called &quot;Attribute&quot; with the names of the theme attributes. This list prevents errors in the attribute name, since errors in attributes name cause execution errors.
+<br><br>
+Knowledge of attribute values range is helpful to construct a query. The module allows listing these values using a check box. When it is active, a list with the values sorted in ascendant order is displayed.
+<br><br>
+<strong>Editor field</strong>
+<br><br>
+Editor field functionalities are described below:
+<ul>
+	<li>Every time a list item or &quot;Operators&quot; box button is clicked, a copy is created in editor field. The copy is pasted on text field cursor or on a previous selection.</li>
+	<li>&quot;Undo&quot; and 'Redo&quot; buttons retrieve up to the last 100 edits.</li>
+	<li>Copy and paste operations can be selected with mouse right button.</li>
+	<li>&quot;Del&quot; button deletes a selection or deletes the character at the cursor right.</li>
+</ul>
+<strong>Query execution</strong>
+<ul>
+	<li>&quot;New Query&quot; button executes the constructed query.</li>
+	<li>&quot;Add&quot; button adds the constructed query result to an existing result.</li>
+	<li>&quot;Filtrar&quot; button executes the constructed query on an existing result.</li>
+</ul>
+<strong>Other buttons</strong>
+<ul>
+	<li>&quot;Help&quot; button display this help.</li>
+	<li>&quot;Cancel&quot; button closes query module.</li>
+</ul>
+<strong>Observations:<br><br>
+Upper and lower cases</strong>
+<br><br>
+Upper and lower case distinction depends on the database manager.
+<br><br>
+<strong>LIKE operator</strong>
+<br><br>
+This operator uses % character to indicate a <i>string</i> with any value. It can be applied to any type of field and used inside single quotes. Some examples are shown below:
+<ul>
+	<li>To select objects with names starting with letter A:<br><br>Name
+LIKE 'A%'</li>
+	<li>To select objects with names starting with letter A and ending with letter S:<br><br>Name LIKE 'A%S'</li>
+	<li>To select objects with names starting with letter A, ending with letter S, and with string NH between them:<br><br>Name LIKE 'A%NH%S'</li>
+	<li>To select objects with names starting with string RUA.<br><br>Name LIKE 'RUA%'</li>
+	<li>To select objects with names starting with string 487.<br><br>Name LIKE '487%'</li>
+</ul>
+
+<strong>Theme with 1 to n cardinality</strong>
+<br><br>
+In this case, aggregation function may be used and they are:
+<ul>
+<li>MIN</li>
+<li>MAX</li>
+<li>AVG</li>
+<li>SUM and</li>
+<li>COUNT</li>
+</ul>
+These functions allow many values to be associated to a single object. Some examples are shown below:
+<ul>
+Select municipalities with schools with an average of more than 50 teachers.
+<br><br>
+AVG(num_teachers) &gt; 50
+</ul>
+This example assumes that there is a theme with municipalities linked to an external table &quot;schools&quot; and that num_teachers is an attribute of &quot;schools&quot; table. This query selects all municipalities that have on average more than 50 teachers per school.
+<ul>
+Removing the aggregation function, a different result is obtained. In this case, the query selects all schools with more than 50 teachers.
+<br><br>
+num_teachers &gt; 50
+</ul>
+In this case, the result is displayed by:
+<ul>
+<li>highlighting in the grid all schools with more than 50 teachers</li>
+<li>highlighting in the draw area (map) all municipalities with at least one school satisfying  the query, that is, only the municipalities without any school with more than 50 teachers are not highlighted.</li>
+</ul>
+  
+Aggregation functions must be applied to all attributes in the constructed query. Therefore, the following query is not a valid one.
+<ul>
+SUM(num_teachers) &gt; 350 AND num_classrooms &gt; 30 ......ERROR
+</ul>
+An error message is displayed when this query is executed.
+
+</p>
+
+<hr size=2 width="100%" align=center>
+
+</span>
+
+</div>
+
+</body>
+
+</html>

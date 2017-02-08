@@ -1,0 +1,63 @@
+<HTML> <HEAD> <TITLE> TerraView -   Frequently Asked Questions </TITLE> </HEAD>
+
+<BODY>
+	
+<p align="center"> <big><b><font size="4" face="Arial, Helvetica, sans-serif">TerraView 
+  -  </font></b></big><font size="4" face="Arial, Helvetica, sans-serif"> 
+   <b>  Frequently Asked Questions</b> </font> </p>
+
+	
+<hr>
+<p align="left"><strong>Why vector data that has been correctly imported can not be 
+  visualized?</strong></p>
+<hr>
+<p align="justify">A theme, assuming that it is ticked for visualization, will not be visualized 
+   in two cases:	
+</p>
+<div align="justify">
+  <ol>
+    <li> 
+	<p align="justify">The layer was imported with no defined projection 
+	   ("No Projection") and later a theme was created from this layer in a view with a 
+	   defined projection (for instance UTM). This theme will not be visualized since it can not 
+	   be georefered, that is spatially located. To georefer, the corresponding layer must 
+	   have a defined projection. If a layer projection is defined and it is different from the 
+	   view projection, then the coordinates of every object of the layer will be converted 
+	   to the coordinates of the view during the theme visualization. </p></li>
+    <li> <p align="justify">The layer was imported with a defined projection 
+      (for instance UTM), and a theme was created form this layer in a view without a defined 
+      projection ("No Projection"). In this case, the themes to be visualized are the ones 
+      ticked for visualization linked to layers without a defined projection (that is, 
+      with "No Projection").</p></li>
+  </ol>
+  <p align="justify">The following table summarizes when a Theme is or is not visualized 
+    depending on the Layer and View projections: </p>
+  &nbsp; 
+</div>
+<table align=center border cellspacing=0 cellpadding=5>
+  <tr> 
+    <td colspan=2 rowspan=2 ></td>
+    <th colspan=2 align=center>Layer Projection</th>
+  </tr>
+  <TR> 
+    <TH>Defined</TH>
+    <TH>Not Defined</TH>
+  </TR>
+  <TR align=center> 
+    <TH rowspan=2>View Projection</TH>
+    <TH>Defined</TH>
+    <TD>YES</TD>
+    <TD>NO</TD>
+  </TR>
+  <TR align=center> 
+    <TH>Not Defined</TH>
+    <TD>NO</TD>
+    <TD>YES</TD>
+  </TR>
+</table>
+<p align="justify"></p>
+<hr>
+	
+		
+</BODY>
+</HTML>

@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>Import Table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<font face="Arial, Helvetica, sans-serif" size="4">
+<table width="100%">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><b>Import Table</b><br>
+      <hr>
+      <p>When a shapefile is imported, a Layer is created with objects, geometries (in &ldquo;.shp&rdquo; file) and 
+       descriptive attributes table (in &ldquo;.dbf&rdquo; file) in a single descriptive attributes table. 
+       However, these objects may have other descriptive attributes in other table files. 
+       This section shows how to import attribute tables into a Layer already existing in a TerraView database.</p>
+      <h3>Static Tables</h3>
+      <p>For instance, assume that there are socio-economic attributes about Sao Paulo districts. They are in the 
+      <u>SOC_ECONOMY.dbf</u> file.  It is known that the link between each district and its geometry is given by 
+      the ID field and that the <u>SOC_ ECONOMY.dbf</u> table has a field named <u>DIST</u> with the same values 
+      to the field <u>ID</u>. Given that each record of the <u>SOC_ECONOMY.dbf</u> table refers to a single 
+      district and that this information does not change with time, this table is called static. A Layer may have more 
+      than one static attributes table. Therefore, we can import the table with socio-economic data as another attributes 
+      table of the districts layer. Access the <strong>File <font size="4" face="Arial, Helvetica, sans-serif">- 
+      </font> Import Table...</strong> to display the window shown in the figure below.</p>
+      <p>&nbsp;</p><center>
+        <p><img src="terraViewBase_arquivos/importar_tabela.png"> </p>
+        <p>Import Table window.</p>
+      </center>
+      <p>Follow these steps:</p>
+      <ol start="1" type="1">
+        <li>Click on <strong>File...</strong> button and select the <u>SOC_ECONOMY.dbf</u> table. 
+        Observe a sample of the table in the proper field. Note that TerraView recognizes in the DBF file 
+        the name and type of each column. Clicking on each column will display its information in the interface 
+        field <strong>Columns Definition</strong>. These definitions can not be changed since they are part of 
+        the DBF file. <strong></strong></li>
+        <li>Select the table <strong>Type</strong> as <strong>Static</strong>.</li>
+        <li>Select the <strong>layer</strong> to which the static attributes table is associated with. 
+        In this case, select the districts layer.</li>
+        <li>Select the column/attribute to be used to link with the districts geometries. In this case, 
+        select the <u>DIST</u> field.</li>
+        <li>Select the name of the new table. Note that TerraView has a <em>default</em> option.</li>
+        <li>Click on <strong>OK</strong> to execute.</li>
+      </ol>
+      <p>Now the districts layer has two alphanumeric or descriptive attributes tables: one from the original 
+      Shapefile and the other imported from the DBF file. Therefore, the Themes created for this Layer 
+      can define which static table will be visible. Right-click on the districts Themes and choose the 
+      <strong>Select Theme Tables...</strong> option to display the window shown in the figure below.</p>
+      <p>&nbsp;</p><center>
+        <p><img src="terraViewBase_arquivos/importar_tabela1.png"> </p>
+        <p>Selection of the Theme Tables interface.</p>
+        
+      </center>
+      <p>Note in the interface:
+      </p>
+      <ol>
+      <li>The left hand side of the window shows the list of tables that belong to the Layer which is the 
+      source of the Theme;</li>
+      <li>The right hand side shows which tables the Theme is currently using;</li>
+      <li>The arrows allow transfer of tables for one side to another;</li>
+      <li>Transfer the <em>SOC_ECONOMY</em> table to the theme Tables field and click on <strong>OK</strong> to execute.</li>
+      </ol>
+        <p>Note in the figure below that now the Grid Area shows attributes of the two tables. Note that 
+        when there is a common name for the attributes, the interface makes explicit which table the column 
+        belongs to. For instance, check the ID attribute.
+          
+      </p>
+      </p>
+      <p>TerraView allows importing static attributes table in ASCII-CSV format also. The procedure is the same to the one 
+      described for DBF format. The difference is that the type of columns must be informed.</p>
+      <p><strong>Notes</strong>:</p>
+      <ul>
+        <li>A static table is always associated to a Layer previously imported to the database, with geometries 
+        and attributes of some object.</li>
+        <li>A static table has attributes of the same objects described in the Layer it belongs to. 
+        Each record of <u>SOCIO_ECONOMY.dbf</u> file contains attributes of a district. Therefore, this table 
+        is used as another static table of the districts layer.</li>
+        <li>A static table must have a column with values equal to the ones of the attribute used to link 
+        the geometries to the attributes.</li>
+      </ul>
+      <h3>External Tables</h3>
+      <p>External tables are not associated to objects represented in an already existing Layer. 
+      For instance, the <u>HOSPITALS.dbf</u> table contains attributes of some hospitals of Sao Paulo city. 
+      There are descriptive attributes only, that is, there are no hospitals geometry; therefore, 
+      it is not possible to create a hospitals Layer. Checking the table attributes, 
+      we note that each hospital has which district it is inside. This information could be used to link 
+      hospitals to districts. This table is an example of external tables. These tables have descriptive 
+      attributes only and do not belong to any layer; however they can be linked to existing themes 
+      by some of their attributes.<br>
+        To import an external table, access the <strong>File </strong><strong>&#124; Import Table... </strong>&nbsp 
+        item and execute the import in the same way as with tables of other types. 
+        Make sure to inform the type of table as an EXTERNAL table, as shown in the detail of the figure below. 
+        It is important to inform the column to be used as <strong>Primary Key</strong> of the tables, 
+        or you may let TerraView to create one. In this example, choose <strong>create</strong> option 
+        to allow the automatic creation of the column to be used as Primary Key.</p>
+     
+  <center>
+        <p><img src="terraViewBase_arquivos/importar_tabela2.png"> </p>
+        <p>Importing external tables.</p>
+        
+      </center>
+      <p>After importing, the HOSPITAIS table belongs to the database and not to a particular Layer. 
+      External tables can be linked to one or more Themes, which has a common attribute. </p>
+      <h3>Linking External Tables</h3>
+      <p>To link and external tables to an existing Theme, right-click on the theme and choose the 
+      <strong>Link External Table...</strong>.
+      </p>
+      <center>
+        <p><img src="terraViewBase_arquivos/importar_tabela3.png"> </p>
+        <p>Linking to External Table.</p>
+        <p>&nbsp;</p>
+        
+      </center>
+       Follow these steps:
+      <ol>
+      <li>Choose one of the external tables available in the External Tables list. 
+      In this case, the only available table is HOSPITAIS.</li>
+      <li>Note in the sample area which are the attributes (columns) of the external table and in the Grid Area 
+      which are the attributes of the theme static tables.</li>
+      <li>Observe that the DISTRITO attribute of the external table has the district name where the hospital 
+      is located and this information coincides with the district names in the Theme attribute DENO. 
+      These columns will be used to link the two tables.</li>
+      <li>Click on the column of the external table (DISTRITO) and, keeping the mouse left button pressed, 
+      drag and release it on the corresponding (DENO) column of the Theme.</li>
+      
+      </ol>
+      </td>
+      
+  </tr>
+  <tr>
+  </tr>
+</table>
+</font> 
+</body>
+</html>

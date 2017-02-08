@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<meta http-equiv="Content-Language" content="pt-br">
+		<title>Plugin WMS Cliente para TerraView </title>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+	</head>
+	
+	<body>
+		<p align="center">
+			<big><b>Plugin WMS Cliente para TerraView</b></big> <br>
+			<b>Guia do Usuário</b>
+		</p>
+		
+		<p align="right">		
+			<small><b>Autor:</b> <i>Gilberto Ribeiro de Queiroz</i> (<a href="mailto:gribeiro@dpi.inpe.br">gribeiro@dpi.inpe.br</a>)<br>
+			<b>Última atualização:</b> 17/09/2010</small><br><br>
+		</p>
+		
+		<p align="center">
+			<big><b>Associando estilos no padrão SLD para visualização de temas WMS</b></big>
+		</p>
+		
+		<p align="right">
+			<a href="wmslegend.htm">&lt;&lt; Anterior</a>&nbsp;|&nbsp;<a href="../wmsclient.htm">Início</a>&nbsp;|&nbsp;<a href="wmsthemeinfo.htm">Próximo &gt;&gt;</a>
+		</p>
+		
+		<p align="justify" class="tab">
+		Uma capacidade interessante que pode ser disponibilizada por serviços WMS é permitir que o usuário defina um <b> estilo</b>
+		para a camada que deseja recuperar e visualizar. Tendo identificado a camada e o estilo fornecido pelo usuário, o servidor WMS desenha e 
+		entrega ao plugin cliente WMS do TerraView o mapa ou figura correspondente à aplicação do estilo naquela camada.</p> 
+		<p align="justify" class="tab">O plugin WMS do TerraView
+        utiliza o padrão da OGC chamado SLD (sigla de Styled Layer Descriptor), para a definição de estilos pelo usuário. Ele se constitui basicamente 
+        em um arquivo XML, que é usado entre o cliente e o servidor WMS habilitado com SLD. Para maiores informações sobre a estrutura do descritor, vide
+        http://www.opengeospatial.org/standards/sld.</p>
+		
+		
+		<p align="justify" class="tab">Quando um tema WMS não está associado a nenhum estilo SLD, o que ocorre inicialmente desde a criação do tema WMS,
+		o servidor passa ao cliente a camada correspondente com um visual pré-definido. Na figura 1 pode-se ver o tema <i>Limites Estaduais do Brasil</i>
+		quando nenhum estilo SLD foi ainda a ele associado. </p>
+		
+				<center><img src="images/plugin_sld_01.png"></center>
+		<small><center>Figura 1 - Tema com o visual pré-definido no servidor WMS e menu pop-up para associar e desassociar estilos SLD</center></small>
+		
+		<p align="justify" class="tab">Para associar um estilo SLD a um tema WMS, deve-se pressionar o botão direito do mouse sobre o 
+		nome do tema. Um <b>menu de opções</b> como o mostrado na Figura 1 será apresentado.
+		Na primeira vez, como ainda não existe nenhum estilo associado, a opção <i>Limpar</i>, para desassociar o tema do estilo atualmente 
+		associado, estará desabilitada, enquando a opção <i>Associar</i> estará
+		habilitada. É possível referenciar o descritor do estilo SLD em um arquivo em disco ou através de uma endereço (URL) na web. Ao escolher 
+	    usar um descritor em disco, uma interface de seleção de arquivo padrão será mostrada. Na figura 2 é mostrada a interface para indicação
+		da URL do descritor do estilo.
+
+				<center><img src="images/plugin_sld_02.png"></center>
+		<small><center>Figura 2 - Indicando a URL do descritor SLD a ser associado ao tema</center></small>
+		<p align="justify" class="tab">
+		Na figura 3 é mostrado o mapa retornado pelo servidor, após usar o descritor para desenhar o mesmo tema WMS da figura 1. Observe que
+     	através de uma filtragem, foi especificado um visual diferenciado para o estado do Amazonas.	
+		</p>
+				<center><img src="images/plugin_sld_03.png"></center>
+		<small><center>Figura 3 - Tema desenhado de acordo com o descritor da figura 2. </center></small>		
+		
+		<p align="justify" class="tab">
+		As figuras seguintes, 4, 5 e 6, mostram os resultados retornados através da aplicação de outros estilos SLD
+		ao mesmo tema, <i>Limites Estaduais do Brasil</i>. 
+		</p>
+				<center><img src="images/plugin_sld_04.png"></center>
+		<small><center>Figura 4 - Tema desenhado sem preenchimento, apenas com linhas. </center></small>	
+		<br>
+				<center><img src="images/plugin_sld_05.png"></center>
+		<small><center>Figura 5 - Tema desenhado com variação na cor das linhas. </center></small>	
+		<br>
+				<center><img src="images/plugin_sld_06.png"></center>
+		<small><center>Figura 6 - Tema desenhado com preenchimento dos polígonos sem filtragem. </center></small>	
+		
+		<p align="justify" class="tab">
+		Os diversos descritores utilizados nestes exemplos podem ser obtidos via navegador, 
+		apontando para <i>http://www.dpi.inpe.br/terraview/docs/manual/exemplos/sld/mma</i>.
+		
+		
+		<p align="justify" class="tab">
+		A seguir, será apresentado como obter maiores informações sobre
+		o serviço WMS que fornece o mapa (representado pelo tema).
+		<a href="wmsthemeinfo.htm">Clique aqui</a> para
+		aprender a obter informações sobre o Serviço WMS de um tema ou prossiga para a próxima página.
+		</p>
+		
+		<p align="right">
+			<a href="wmslegend.htm">&lt;&lt; Anterior</a>&nbsp;|&nbsp;<a href="../wmsclient.htm">Início</a>&nbsp;|&nbsp;<a href="wmsthemeinfo.htm">Próximo &gt;&gt;</a>
+		</p>
+	</body>
+	
+</html>

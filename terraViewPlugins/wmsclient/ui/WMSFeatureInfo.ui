@@ -1,0 +1,220 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>WMSFeatureInfo</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>WMSFeatureInfo</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>456</width>
+            <height>338</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Feature Information</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout29</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout28</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout27</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLabel1</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>0</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>160</width>
+                                            <height>32767</height>
+                                        </size>
+                                    </property>
+                                    <property name="text">
+                                        <string>&lt;b&gt;Layer:&lt;/b&gt;</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>lblLayerName</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>0</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="frameShape">
+                                        <enum>Panel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>Sunken</enum>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <widget class="Line">
+                            <property name="name">
+                                <cstring>line7</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>HLine</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+                <widget class="QTextBrowser">
+                    <property name="name">
+                        <cstring>txtFeatureInformation</cstring>
+                    </property>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout23</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="Line">
+                            <property name="name">
+                                <cstring>line7_2</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>HLine</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout22</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>helpPushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&amp;Help</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+H</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer13</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>241</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>okPushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&amp;Ok</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+O</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                    </vbox>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>WMSFeatureInfo</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>WMSFeatureInfo</receiver>
+        <slot>helpPushButtonClicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in declaration">wms/TeWMSGetFeatureInfoResponse.h</include>
+    <include location="local" impldecl="in implementation">WMSFeatureInfo.ui.h</include>
+</includes>
+<forwards>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot>helpPushButtonClicked()</slot>
+</slots>
+<functions>
+    <function>showFeatureInformation( const std::string &amp; info )</function>
+    <function>setLayerName( const std::string &amp; name )</function>
+    <function>init()</function>
+    <function>destroy()</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,18 @@
+Edição de dados Vetoriais;BasicEditionPlugin/edicao_de_dados_geograficos.html
+Edição de dados Vetoriais,Ferramentas para Edição;BasicEditionPlugin/edicao_de_dados_geograficos.html
+Edição de dados Vetoriais,Ferramentas para Edição,Selecionar Geometria;BasicEditionPlugin/selecionar_geometria.html
+Edição de dados Vetoriais,Ferramentas para Edição,Criar Ponto;BasicEditionPlugin/criar_ponto.html
+Edição de dados Vetoriais,Ferramentas para Edição,Criar Linha;BasicEditionPlugin/criar_linha.html
+Edição de dados Vetoriais,Ferramentas para Edição,Criar Polígono;BasicEditionPlugin/criar_poligono.html
+Edição de dados Vetoriais,Ferramentas para Edição,Vértices;BasicEditionPlugin/vertices.html
+Edição de dados Vetoriais,Ferramentas para Edição,Juntar Linhas;BasicEditionPlugin/juntar_linhas.html
+Edição de dados Vetoriais,Ferramentas para Edição,Agregar Área;BasicEditionPlugin/agregar_area.html
+Edição de dados Vetoriais,Ferramentas para Edição,Subtrair Área;BasicEditionPlugin/subtrair_area.html
+Edição de dados Vetoriais,Ferramentas para Edição,Mover Geometria;BasicEditionPlugin/mover_geometria.html
+Edição de dados Vetoriais,Ferramentas para Edição,Snap;BasicEditionPlugin/snap.html
+Edição de dados Vetoriais,Ferramentas para Edição,Verificar Topologia;BasicEditionPlugin/verificar_topologia.html
+Edição de dados Vetoriais,Ferramentas para Edição,Exibir Erros de Topologia;BasicEditionPlugin/exibir_erros_topologia.html
+Edição de dados Vetoriais,Ferramentas para Edição,Exibe Janela de Atributos;BasicEditionPlugin/exibi_atributos.html
+Edição de dados Vetoriais,Preferências;BasicEditionPlugin/preferencias.html
+Edição de dados Vetoriais,Processo de Edição;BasicEditionPlugin/processo_de_edicao_grafica.html
+Edição de dados Vetoriais,Informações Complementares;BasicEditionPlugin/informacoes_complementares.html

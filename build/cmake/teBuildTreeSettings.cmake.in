@@ -1,0 +1,13 @@
+set( TE_INCLUDE_DIRS
+  "@TE_DIRS@"
+)
+set( TE_BINARIES
+  "@TE_BINS@"
+)
+
+set( TE_TRANSLATIONS
+  "@TE_TRANSLATIONS@"
+)
+
+
+include ( "@TE_CMAKEUTILS_FILE@")

@@ -1,0 +1,384 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>InsertSymbol</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>InsertSymbol</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>502</width>
+            <height>291</height>
+        </rect>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>32767</width>
+            <height>32767</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Insert Symbol</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QTable" row="0" column="0">
+            <property name="name">
+                <cstring>table</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>480</width>
+                    <height>200</height>
+                </size>
+            </property>
+            <property name="numRows">
+                <number>3</number>
+            </property>
+            <property name="numCols">
+                <number>3</number>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="2" column="0">
+            <property name="name">
+                <cstring>layout12</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer7</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>okPushButton</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>&amp;OK</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+O</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer10</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>21</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>cancelPushButton</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Cancel</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+C</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer9</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>31</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>helpPushButton</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Help</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+H</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer8</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="1" column="0">
+            <property name="name">
+                <cstring>layout141</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>fontTextLabel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Font:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>fontComboBox</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>200</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>fontSizeTextLabel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Size:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>fontSizeComboBox</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>40</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Color:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>colorPushButton</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>30</width>
+                            <height>24</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>30</width>
+                            <height>24</height>
+                        </size>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>0</blue>
+                        </color>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>fixedSizeCheckBox</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Fixed Size</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>InsertSymbol</receiver>
+        <slot>okPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>InsertSymbol</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>InsertSymbol</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>fontComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>InsertSymbol</receiver>
+        <slot>fontComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>table</sender>
+        <signal>clicked(int,int,int,const QPoint&amp;)</signal>
+        <receiver>InsertSymbol</receiver>
+        <slot>table_clicked(int,int,int,const QPoint&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>fontSizeComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>InsertSymbol</receiver>
+        <slot>fontSizeComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>table</sender>
+        <signal>doubleClicked(int,int,int,const QPoint&amp;)</signal>
+        <receiver>InsertSymbol</receiver>
+        <slot>table_doubleClicked(int,int,int,const QPoint&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>colorPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>InsertSymbol</receiver>
+        <slot>colorPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>colorPushButton</sender>
+        <signal>released()</signal>
+        <receiver>InsertSymbol</receiver>
+        <slot>colorPushButton_released()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>table</tabstop>
+    <tabstop>fontComboBox</tabstop>
+    <tabstop>fontSizeComboBox</tabstop>
+    <tabstop>colorPushButton</tabstop>
+    <tabstop>fixedSizeCheckBox</tabstop>
+    <tabstop>okPushButton</tabstop>
+    <tabstop>cancelPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="local" impldecl="in implementation">insertSymbol.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class Help;</forward>
+    <forward>class TerraViewBase;</forward>
+</forwards>
+<variables>
+    <variable access="public">QColor color_;</variable>
+    <variable access="public">QFont font_;</variable>
+    <variable access="public">QString selString_;</variable>
+    <variable access="public">bool erro_;</variable>
+    <variable>Help* help_;</variable>
+    <variable>TerraViewBase* mainWindow_;</variable>
+</variables>
+<slots>
+    <slot>okPushButton_clicked()</slot>
+    <slot>reject()</slot>
+    <slot>helpPushButton_clicked()</slot>
+    <slot>closeEvent( QCloseEvent * )</slot>
+    <slot>fontComboBox_activated( const QString &amp; family )</slot>
+    <slot>fontSizeComboBox_activated( const QString &amp; )</slot>
+    <slot>table_clicked( int row, int col, int, const QPoint &amp; )</slot>
+    <slot>table_doubleClicked( int row, int col, int, const QPoint &amp; )</slot>
+    <slot>colorPushButton_clicked()</slot>
+    <slot>colorPushButton_released()</slot>
+</slots>
+<functions>
+    <function>init()</function>
+    <function>setColor( QColor qc )</function>
+    <function>setFixedSize( bool b )</function>
+    <function>show()</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

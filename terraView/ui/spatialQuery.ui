@@ -1,0 +1,1519 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>SpatialQueryWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>SpatialQueryWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>538</width>
+            <height>457</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Spatial Query</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout22</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>Consultas</cstring>
+                    </property>
+                    <property name="title">
+                        <string></string>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>GroupBox1</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>5</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="title">
+                                <string>Themes</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget" row="0" column="1">
+                                    <property name="name">
+                                        <cstring>layout32</cstring>
+                                    </property>
+                                    <vbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QCheckBox">
+                                            <property name="name">
+                                                <cstring>CheckthemaCor_2_2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Visible Theme                           </string>
+                                            </property>
+                                            <property name="toolTip" stdset="0">
+                                                <string>List visible themes</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QComboBox">
+                                            <property name="name">
+                                                <cstring>ComboBox1_2</cstring>
+                                            </property>
+                                            <property name="enabled">
+                                                <bool>false</bool>
+                                            </property>
+                                            <property name="sizePolicy">
+                                                <sizepolicy>
+                                                    <hsizetype>7</hsizetype>
+                                                    <vsizetype>0</vsizetype>
+                                                    <horstretch>0</horstretch>
+                                                    <verstretch>0</verstretch>
+                                                </sizepolicy>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>200</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                            <property name="editable">
+                                                <bool>false</bool>
+                                            </property>
+                                            <property name="sizeLimit">
+                                                <number>100</number>
+                                            </property>
+                                            <property name="toolTip" stdset="0">
+                                                <string>A visible theme must be selected to execute spatial query between two themes.</string>
+                                            </property>
+                                        </widget>
+                                    </vbox>
+                                </widget>
+                                <widget class="QLayoutWidget" row="0" column="2">
+                                    <property name="name">
+                                        <cstring>layout34</cstring>
+                                    </property>
+                                    <vbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>TextLabel1_2_2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Tolerance</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLineEdit">
+                                            <property name="name">
+                                                <cstring>LineEdit3_2</cstring>
+                                            </property>
+                                            <property name="sizePolicy">
+                                                <sizepolicy>
+                                                    <hsizetype>5</hsizetype>
+                                                    <vsizetype>0</vsizetype>
+                                                    <horstretch>0</horstretch>
+                                                    <verstretch>0</verstretch>
+                                                </sizepolicy>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>50</width>
+                                                    <height>0</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>50</width>
+                                                    <height>32767</height>
+                                                </size>
+                                            </property>
+                                            <property name="frameShape">
+                                                <enum>LineEditPanel</enum>
+                                            </property>
+                                            <property name="frameShadow">
+                                                <enum>Sunken</enum>
+                                            </property>
+                                            <property name="text">
+                                                <string>0.0</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>AlignRight</set>
+                                            </property>
+                                            <property name="toolTip" stdset="0">
+                                                <string>Data precision that will be considered.</string>
+                                            </property>
+                                        </widget>
+                                    </vbox>
+                                </widget>
+                                <widget class="QLayoutWidget" row="1" column="0">
+                                    <property name="name">
+                                        <cstring>layout17</cstring>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QCheckBox">
+                                            <property name="name">
+                                                <cstring>pointedCheckBox</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Pointed</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QCheckBox">
+                                            <property name="name">
+                                                <cstring>queriedCheckBox</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Queried</string>
+                                            </property>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                                <widget class="QLayoutWidget" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>layout21</cstring>
+                                    </property>
+                                    <vbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>TextLabel2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Active Theme                      </string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLineEdit">
+                                            <property name="name">
+                                                <cstring>TemaLineEdit</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>200</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                            <property name="frameShape">
+                                                <enum>LineEditPanel</enum>
+                                            </property>
+                                            <property name="frameShadow">
+                                                <enum>Sunken</enum>
+                                            </property>
+                                            <property name="toolTip" stdset="0">
+                                                <string></string>
+                                            </property>
+                                        </widget>
+                                    </vbox>
+                                </widget>
+                                <spacer row="1" column="1">
+                                    <property name="name">
+                                        <cstring>spacer13_3</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Vertical</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </grid>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout36</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer15_2</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>61</width>
+                                            <height>31</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QButtonGroup">
+                                    <property name="name">
+                                        <cstring>ReltopButtonGroup_2_2</cstring>
+                                    </property>
+                                    <property name="title">
+                                        <string>Topological Relations </string>
+                                    </property>
+                                    <property name="exclusive">
+                                        <bool>true</bool>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLayoutWidget" row="1" column="0">
+                                            <property name="name">
+                                                <cstring>layout84</cstring>
+                                            </property>
+                                            <grid>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLayoutWidget" row="0" column="0">
+                                                    <property name="name">
+                                                        <cstring>layout70</cstring>
+                                                    </property>
+                                                    <hbox>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QPushButton">
+                                                            <property name="name">
+                                                                <cstring>DisjointPolButton</cstring>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string></string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap>disjointPol.bmp</pixmap>
+                                                            </property>
+                                                            <property name="toggleButton">
+                                                                <bool>true</bool>
+                                                            </property>
+                                                            <property name="toolTip" stdset="0">
+                                                                <string>Disjoint</string>
+                                                            </property>
+                                                        </widget>
+                                                        <widget class="QPushButton">
+                                                            <property name="name">
+                                                                <cstring>EqualPolButton</cstring>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string></string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap>equalPol.bmp</pixmap>
+                                                            </property>
+                                                            <property name="toggleButton">
+                                                                <bool>true</bool>
+                                                            </property>
+                                                            <property name="toolTip" stdset="0">
+                                                                <string>Equal</string>
+                                                            </property>
+                                                        </widget>
+                                                        <widget class="QPushButton">
+                                                            <property name="name">
+                                                                <cstring>OverlapPolButton</cstring>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string></string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap>overlapPol.bmp</pixmap>
+                                                            </property>
+                                                            <property name="toggleButton">
+                                                                <bool>true</bool>
+                                                            </property>
+                                                            <property name="toolTip" stdset="0">
+                                                                <string>Overlap</string>
+                                                            </property>
+                                                        </widget>
+                                                        <widget class="QPushButton">
+                                                            <property name="name">
+                                                                <cstring>TouchPolButton</cstring>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string></string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap>touchPol.bmp</pixmap>
+                                                            </property>
+                                                            <property name="toggleButton">
+                                                                <bool>true</bool>
+                                                            </property>
+                                                            <property name="toolTip" stdset="0">
+                                                                <string>Touch</string>
+                                                            </property>
+                                                        </widget>
+                                                        <widget class="QPushButton">
+                                                            <property name="name">
+                                                                <cstring>ContainPolButton</cstring>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string></string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap>isContainPol.bmp</pixmap>
+                                                            </property>
+                                                            <property name="toggleButton">
+                                                                <bool>true</bool>
+                                                            </property>
+                                                            <property name="toolTip" stdset="0">
+                                                                <string>Contain</string>
+                                                            </property>
+                                                        </widget>
+                                                        <widget class="QPushButton">
+                                                            <property name="name">
+                                                                <cstring>WithinPolButton</cstring>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string></string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap>containPol.bmp</pixmap>
+                                                            </property>
+                                                            <property name="toggleButton">
+                                                                <bool>true</bool>
+                                                            </property>
+                                                            <property name="toolTip" stdset="0">
+                                                                <string>Within</string>
+                                                            </property>
+                                                        </widget>
+                                                        <widget class="QPushButton">
+                                                            <property name="name">
+                                                                <cstring>CoversPolButton</cstring>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string></string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap>coverByPol.bmp</pixmap>
+                                                            </property>
+                                                            <property name="toggleButton">
+                                                                <bool>true</bool>
+                                                            </property>
+                                                            <property name="toolTip" stdset="0">
+                                                                <string>Cover</string>
+                                                            </property>
+                                                        </widget>
+                                                        <widget class="QPushButton">
+                                                            <property name="name">
+                                                                <cstring>CoveredByPolButton</cstring>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string></string>
+                                                            </property>
+                                                            <property name="pixmap">
+                                                                <pixmap>coverPol.bmp</pixmap>
+                                                            </property>
+                                                            <property name="toggleButton">
+                                                                <bool>true</bool>
+                                                            </property>
+                                                            <property name="toolTip" stdset="0">
+                                                                <string>Covered by</string>
+                                                            </property>
+                                                        </widget>
+                                                    </hbox>
+                                                </widget>
+                                                <widget class="QLayoutWidget" row="3" column="0">
+                                                    <property name="name">
+                                                        <cstring>layout20</cstring>
+                                                    </property>
+                                                    <grid>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QLayoutWidget" row="0" column="0">
+                                                            <property name="name">
+                                                                <cstring>layout135</cstring>
+                                                            </property>
+                                                            <hbox>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <property name="margin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="spacing">
+                                                                    <number>6</number>
+                                                                </property>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>DisjointLinPonButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>disjointLinPon.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="on">
+                                                                        <bool>false</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Disjoint </string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>WithinLinPonButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>containLinPon.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Within</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>TouchLinPonButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>touchLinPon.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Touch</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </hbox>
+                                                        </widget>
+                                                        <spacer row="0" column="2">
+                                                            <property name="name">
+                                                                <cstring>spacer3</cstring>
+                                                            </property>
+                                                            <property name="orientation">
+                                                                <enum>Horizontal</enum>
+                                                            </property>
+                                                            <property name="sizeType">
+                                                                <enum>Expanding</enum>
+                                                            </property>
+                                                            <property name="sizeHint">
+                                                                <size>
+                                                                    <width>81</width>
+                                                                    <height>21</height>
+                                                                </size>
+                                                            </property>
+                                                        </spacer>
+                                                        <widget class="QLayoutWidget" row="0" column="1">
+                                                            <property name="name">
+                                                                <cstring>Layout15</cstring>
+                                                            </property>
+                                                            <hbox>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <property name="margin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="spacing">
+                                                                    <number>6</number>
+                                                                </property>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>DisjointPonPolButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>disjointPonPol.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Disjoint </string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>TouchPonPolButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>touchPonPol.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Point touch the boundary polygon</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>ContainPonPolButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>isContainPonPol.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Contain</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </hbox>
+                                                        </widget>
+                                                    </grid>
+                                                </widget>
+                                                <widget class="QLayoutWidget" row="2" column="0">
+                                                    <property name="name">
+                                                        <cstring>layout72</cstring>
+                                                    </property>
+                                                    <hbox>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QLayoutWidget">
+                                                            <property name="name">
+                                                                <cstring>layout134</cstring>
+                                                            </property>
+                                                            <hbox>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <property name="margin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="spacing">
+                                                                    <number>6</number>
+                                                                </property>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>DisjointLinButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>disjointLin.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="on">
+                                                                        <bool>false</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Disjoint </string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>EqualLinButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>equalLin.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Equal</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>OverlapLinButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>overlapLin.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Overlap</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>TouchLinButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>touchLin.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Touch</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>ContainLinButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>isContainLin.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Contain</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>WithinLinButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>containLin.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Within</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>CrossLinButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>crossLin.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Cross</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </hbox>
+                                                        </widget>
+                                                        <spacer>
+                                                            <property name="name">
+                                                                <cstring>spacer2</cstring>
+                                                            </property>
+                                                            <property name="orientation">
+                                                                <enum>Horizontal</enum>
+                                                            </property>
+                                                            <property name="sizeType">
+                                                                <enum>Expanding</enum>
+                                                            </property>
+                                                            <property name="sizeHint">
+                                                                <size>
+                                                                    <width>38</width>
+                                                                    <height>21</height>
+                                                                </size>
+                                                            </property>
+                                                        </spacer>
+                                                    </hbox>
+                                                </widget>
+                                                <widget class="QLayoutWidget" row="1" column="0">
+                                                    <property name="name">
+                                                        <cstring>layout73</cstring>
+                                                    </property>
+                                                    <hbox>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QLayoutWidget">
+                                                            <property name="name">
+                                                                <cstring>layout16</cstring>
+                                                            </property>
+                                                            <hbox>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <property name="margin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="spacing">
+                                                                    <number>6</number>
+                                                                </property>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>DisjointLinPolButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>disjointLinPol.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Disjoint </string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>OverlapLinPolButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>isContainLinPol.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Overlap</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>TouchLinPolButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>touchLinPol.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Touch</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>WithinLinPolButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>containLinPol.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Within</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>CoveredByLinPolButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>coverLinPol.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Covered by</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton">
+                                                                    <property name="name">
+                                                                        <cstring>CrossLinPolButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string></string>
+                                                                    </property>
+                                                                    <property name="pixmap">
+                                                                        <pixmap>crossLinPol.bmp</pixmap>
+                                                                    </property>
+                                                                    <property name="toggleButton">
+                                                                        <bool>true</bool>
+                                                                    </property>
+                                                                    <property name="toolTip" stdset="0">
+                                                                        <string>Cross</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </hbox>
+                                                        </widget>
+                                                        <spacer>
+                                                            <property name="name">
+                                                                <cstring>spacer1</cstring>
+                                                            </property>
+                                                            <property name="orientation">
+                                                                <enum>Horizontal</enum>
+                                                            </property>
+                                                            <property name="sizeType">
+                                                                <enum>Expanding</enum>
+                                                            </property>
+                                                            <property name="sizeHint">
+                                                                <size>
+                                                                    <width>78</width>
+                                                                    <height>31</height>
+                                                                </size>
+                                                            </property>
+                                                        </spacer>
+                                                    </hbox>
+                                                </widget>
+                                            </grid>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer13</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>61</width>
+                                            <height>41</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </hbox>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout76</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLineEdit" row="1" column="0">
+                                    <property name="name">
+                                        <cstring>explicacaoLineEdit</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="frameShape">
+                                        <enum>LineEditPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>Sunken</enum>
+                                    </property>
+                                    <property name="lineWidth">
+                                        <number>0</number>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>nomeLineEdit</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="frameShape">
+                                        <enum>LineEditPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>Sunken</enum>
+                                    </property>
+                                    <property name="lineWidth">
+                                        <number>0</number>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </vbox>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer14</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout68</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer16</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>31</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>newQueryButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;New Query</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+N</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer52</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>16</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>addToQueryButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Add Query</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+A</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer53</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>16</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>refineQueryButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Filter Query</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+F</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer54</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>16</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>SairPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Cancel</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer55</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>16</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>addToQueryButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>AddQuerySlot()</slot>
+    </connection>
+    <connection>
+        <sender>CheckthemaCor_2_2</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>enableVisThemeSlot(bool)</slot>
+    </connection>
+    <connection>
+        <sender>ContainLinButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>ContainLinButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>ContainPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>ContainPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>ContainPonPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>ContainPonPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>CoveredByLinPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>CoveredByLinPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>CoveredByPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>CoveredByPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>CoversPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>CoversPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>CrossLinButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>CrossLinButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>CrossLinPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>CrossLinPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>DisjointLinButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>DisjointLinButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>DisjointLinPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>DisjointLinPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>DisjointLinPonButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>DisjointLinPonButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>DisjointPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>DisjointPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>DisjointPonPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>DisjointPonPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>EqualLinButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>EqualLinButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>EqualPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>EqualPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>newQueryButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>NewQuerySlot()</slot>
+    </connection>
+    <connection>
+        <sender>OverlapLinButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>OverlapLinButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>OverlapLinPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>OverlapLinPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>OverlapPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>OverlapPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>SairPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>sairSlot()</slot>
+    </connection>
+    <connection>
+        <sender>TouchLinButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>TouchLinButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>TouchLinPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>TouchLinPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>TouchLinPonButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>TouchLinPonButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>TouchPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>TouchPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>TouchPonPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>TouchPonPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>WithinLinButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>WithinLinButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>WithinLinPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>WithinLinPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>WithinLinPonButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>WithinLinPonButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>WithinPolButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>WithinPolButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>ComboBox1_2</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>changeVisThemeSlot(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>refineQueryButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>RefineQuerySlot()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatialQueryWindow</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>TemaLineEdit</tabstop>
+    <tabstop>CheckthemaCor_2_2</tabstop>
+    <tabstop>ComboBox1_2</tabstop>
+    <tabstop>LineEdit3_2</tabstop>
+    <tabstop>DisjointPolButton</tabstop>
+    <tabstop>EqualPolButton</tabstop>
+    <tabstop>OverlapPolButton</tabstop>
+    <tabstop>TouchPolButton</tabstop>
+    <tabstop>ContainPolButton</tabstop>
+    <tabstop>WithinPolButton</tabstop>
+    <tabstop>CoversPolButton</tabstop>
+    <tabstop>CoveredByPolButton</tabstop>
+    <tabstop>DisjointLinPolButton</tabstop>
+    <tabstop>OverlapLinPolButton</tabstop>
+    <tabstop>TouchLinPolButton</tabstop>
+    <tabstop>WithinLinPolButton</tabstop>
+    <tabstop>CoveredByLinPolButton</tabstop>
+    <tabstop>CrossLinPolButton</tabstop>
+    <tabstop>DisjointLinButton</tabstop>
+    <tabstop>EqualLinButton</tabstop>
+    <tabstop>OverlapLinButton</tabstop>
+    <tabstop>TouchLinButton</tabstop>
+    <tabstop>ContainLinButton</tabstop>
+    <tabstop>WithinLinButton</tabstop>
+    <tabstop>CrossLinButton</tabstop>
+    <tabstop>DisjointLinPonButton</tabstop>
+    <tabstop>WithinLinPonButton</tabstop>
+    <tabstop>TouchLinPonButton</tabstop>
+    <tabstop>DisjointPonPolButton</tabstop>
+    <tabstop>TouchPonPolButton</tabstop>
+    <tabstop>ContainPonPolButton</tabstop>
+    <tabstop>nomeLineEdit</tabstop>
+    <tabstop>explicacaoLineEdit</tabstop>
+    <tabstop>newQueryButton</tabstop>
+    <tabstop>addToQueryButton</tabstop>
+    <tabstop>refineQueryButton</tabstop>
+    <tabstop>SairPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">TeDatabase.h</include>
+    <include location="global" impldecl="in declaration">TeBox.h</include>
+    <include location="global" impldecl="in declaration">TeDataTypes.h</include>
+    <include location="global" impldecl="in declaration">TeQtViewsListView.h</include>
+    <include location="global" impldecl="in declaration">TeQtGrid.h</include>
+    <include location="global" impldecl="in implementation">qapplication.h</include>
+    <include location="global" impldecl="in implementation">TeCoord2D.h</include>
+    <include location="global" impldecl="in implementation">TeAppTheme.h</include>
+    <include location="global" impldecl="in implementation">TeView.h</include>
+    <include location="global" impldecl="in implementation">TeQtCanvas.h</include>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="global" impldecl="in implementation">terraViewBase.h</include>
+    <include location="global" impldecl="in implementation">TeGeometryAlgorithms.h</include>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="local" impldecl="in implementation">spatialQuery.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TeAppTheme;</forward>
+    <forward>class TeView;</forward>
+    <forward>class TeQtCanvas;</forward>
+    <forward>class TerraViewBase;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable>TerraViewBase* mainWindow_;</variable>
+    <variable>int relate_;</variable>
+    <variable>TeGeomRep repVis_;</variable>
+    <variable>TeBox box_;</variable>
+    <variable>TeDatabase* db_;</variable>
+    <variable>TeView* curview_;</variable>
+    <variable>TeAppTheme * curtheme_;</variable>
+    <variable>TeQtCanvas* canvas_;</variable>
+    <variable>TeAppTheme* vistheme_;</variable>
+    <variable>TeGeomRep repCur_;</variable>
+    <variable>bool newquery_;</variable>
+    <variable>bool addquery_;</variable>
+    <variable>bool refinequery_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<signals>
+    <signal>putColorSignal(int)</signal>
+</signals>
+<slots>
+    <slot>Init()</slot>
+    <slot>enableLinPolButtons( bool en )</slot>
+    <slot>enablePolPolButtons( bool en )</slot>
+    <slot>enableLinLinButtons( bool en )</slot>
+    <slot>enableLinPonButtons( bool en )</slot>
+    <slot>enablePonPolButtons( bool en )</slot>
+    <slot>offButtonsSlot()</slot>
+    <slot>changeVisThemeSlot( const QString &amp; themeName )</slot>
+    <slot>enableVisThemeSlot( bool checked )</slot>
+    <slot>DisjointPolButtonSlot()</slot>
+    <slot>EqualPolButtonSlot()</slot>
+    <slot>OverlapPolButtonSlot()</slot>
+    <slot>TouchPolButtonSlot()</slot>
+    <slot>WithinPolButtonSlot()</slot>
+    <slot>ContainPolButtonSlot()</slot>
+    <slot>CoveredByPolButtonSlot()</slot>
+    <slot>CoversPolButtonSlot()</slot>
+    <slot>DisjointLinPolButtonSlot()</slot>
+    <slot>CrossLinPolButtonSlot()</slot>
+    <slot>OverlapLinPolButtonSlot()</slot>
+    <slot>TouchLinPolButtonSlot()</slot>
+    <slot>WithinLinPolButtonSlot()</slot>
+    <slot>CoveredByLinPolButtonSlot()</slot>
+    <slot>DisjointLinButtonSlot()</slot>
+    <slot>EqualLinButtonSlot()</slot>
+    <slot>TouchLinButtonSlot()</slot>
+    <slot>WithinLinButtonSlot()</slot>
+    <slot>ContainLinButtonSlot()</slot>
+    <slot>CrossLinButtonSlot()</slot>
+    <slot>OverlapLinButtonSlot()</slot>
+    <slot>DisjointLinPonButtonSlot()</slot>
+    <slot>WithinLinPonButtonSlot()</slot>
+    <slot>TouchLinPonButtonSlot()</slot>
+    <slot>DisjointPonPolButtonSlot()</slot>
+    <slot>ContainPonPolButtonSlot()</slot>
+    <slot>TouchPonPolButtonSlot()</slot>
+    <slot returnType="TeDatabase *">getDatabaseSlot()</slot>
+    <slot returnType="TeTheme *">getCurThemeSlot()</slot>
+    <slot returnType="TeTheme *">getVisThemeSlot()</slot>
+    <slot>sairSlot()</slot>
+    <slot>NewQuerySlot()</slot>
+    <slot>AddQuerySlot()</slot>
+    <slot>RefineQuerySlot()</slot>
+    <slot>ExecuteSlot()</slot>
+    <slot>enableRepSlot( TeGeomRep rep1, TeGeomRep rep2 )</slot>
+    <slot>getGeomIdsSlot( const string &amp; objId, const string &amp; geomTable, TeKeys &amp; geomIds )</slot>
+    <slot>plotGeomResult( TeGeometryVect &amp; geomVect )</slot>
+    <slot>plotGeomResult( TeKeys &amp; IdsOut )</slot>
+    <slot>helpPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function>show()</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

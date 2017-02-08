@@ -1,0 +1,183 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>TerraView</title>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+<div align="justify"><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family:"Arial","sans-serif";'>
+  <p><strong>TerraView</strong></p>
+  <p align=right>
+    <a href="taxas_bayesianas_empiricas.htm">&lt;&lt; Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> 
+    | <a href="kernelWindow.htm">Next &gt;&gt;</a> </p></span> </font>
+  <hr size=2 width="100%" align=center>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><strong><u> 
+    <span style='font-size: 13.5pt;font-family:Arial'>Areas Regionalization: The 
+    Skater Method</span> </u></strong> </font></p>
+  <div align="justify"><span style="font-family:Arial"><font face="Arial, Helvetica, sans-serif">
+    <p>TerraView provides a tool for area regionalization to group small areas 
+      (such as municipalities and neighborhoods) in larger contiguous areas where 
+      associated attributes are similar to the small areas (such as homicides 
+      and kidnappings). TerraView tool for this task is the SKATER tool. </p>
+    <p>Skater is a cluster analysis that considers the spatial localization of objects. 
+      It is applied when a map is partitioned in areas, each one with a given 
+      geographic localization, and areas with similar characteristics must be 
+      part of the same spatial grouping. The characteristics are obtained by values 
+      of measured variables.</p>
+    <p>When a spatial pattern is visualized, it is useful to make objective considerations 
+      such as: if the observed pattern is random or if there is a cluster defined. 
+      Also if the distribution is associated to measurable causes or if there 
+      are clusters different patterns in the study region. </p>
+    <p>This method may be applied, for instance, to define geographic areas that 
+      are relatively homogeneous for a given type of crimes by aggregating municipalities 
+      in larger groups. These groups of municipalities may be affected by public 
+      policies targeting regional problems. In addition to the direct observations 
+      and actions that crimes regionalization allow, it is also an important tool 
+      for the analysis of related social and economic factors related to crimes 
+      distribution. Therefore, the identification of spatial patterns in the incidence 
+      of homicides leads immediately to the reflection of causal factors responsible 
+      for this spatial allocation.</p>
+    <p>The figure below presents Minas Gerais State divided in eleven spatial clusters 
+      shaped by homicides homogeneity. The legend allows the identification of 
+      the average rate of homicides in each region and the number of municipalities 
+      included in each cluster (inside parentheses).</p>
+  <p align=center><img border=0 src="terraViewBase_arquivos/mapa_bhzonte.png"></p>
+    <p>The regionalization was executed considering homogeneity criteria and contiguity 
+      restrictions through statistics methods based on regression trees and minimum 
+      spanning trees. </p>
+    <p>SKATER generates spatial clusters that are disjoint subsets of one or more areas, 
+      in such way that an area that is contained in a given cluster is neighbor 
+      of, at least, another area of the same cluster. Two regions are neighbors 
+      if they share geographic boundaries. Some databases may contain areas with 
+      neighborhood identification problems and the analysis is not viable. In 
+      such case the following error message is displayed: Select a connected graph. </p>
+    <p>BH.mdb database presents the problem described above (except for UPs), as can be 
+      seen in the Figure below, which presents an area selected from Batalhões 
+      theme.</p>
+  <p align=center><img border=0 id="_x0000_i1034" src="terraViewBase_arquivos/bancoBH_mdb.png"></p>
+  <p>Zooming in the selected region, it is possible to see that the polygon boundaries are 
+     not identifiable and SKATER cannot create the clusters. </p>
+  <p align=center><img border=0 src="terraViewBase_arquivos/skater.png"></p>
+  <p>To be able to execute the analysis, Ups will be used. A UP (Planning Unit) 
+     corresponds to the grouping of areas as utilized by Belo Horizonte prefecture. </p>
+  <p>SKATER method allows the use of various social-economic characteristics 
+      simultaneously in the regionalization process, in a similar way to a composed 
+      indicator. This indicator type is used to delimit health risk areas. The 
+      indicator corresponds to measures associating various different social-economic 
+      and environmental variables to a synthetic indicator used to analyze the 
+      characteristics of population groups living in given geographic areas. </p>
+   <p>Activate UP theme of data BH.mdb database to create a map where the areas 
+      (the UPs), are clustered accordingly to values of variables of columns: 
+      banheiro_p, densidade_p agua_p, esgoto_p, lixo_p, and rendamedia_p.</p>
+   <p>Description of the variables:</p>
+
+  <ol>
+      <li>
+        banheiro (bathroom): proportion of households with 4 or more bathrooms 
+        in relation to households that have a bathroom. </li>
+      <li> 
+        densidade: expected number of residents per household. </li>
+	  <li>
+        água: proportion of individual permanent households with water supply 
+        from the network. </li>
+      <li>
+        esgoto: proportion of individual permanent households with bathroom 
+        or toilet - domestic sewage - connected to sewage or pluvial network. </li>
+      <li>
+        lixo: proportion of individual permanent households - garbage destination 
+        -  collected by garbage service.</li>
+      <li>
+        rendamedia: the average income of the head of the household.</li>
+  </ol>
+      <p>The variables are standardized (banheiro_p...) due to the impact different 
+        scales may have in the dissimilarity function and in the sum of squares 
+        in the clusters. For instance, a variable hold the same information either 
+        it is measured as percentage or as proportion. However, values difference 
+        of this hypothetic variable is 100 times. Therefore, it is advisable that 
+        all variables to be used for regionalization to have a standard scale 
+        with mean zero and standard deviation one. This requirement can be checked 
+        by activating the popup menu of any variable label and selecting the Statistics 
+        option. The standardization can be obtained by subtracting the original 
+        value by the average and dividing by the standard deviation.</p>
+      <p>To build the regionalized map use the spatial statistics tool SKATER from 
+        Analysis option in TerraView main menu. Description of the SKATER interface 
+        is given below: </p>
+      <p>1. Choose the criteria to define the number of larger regions (groups) to 
+        be created in Aggregation Method field. Groups option allows the definition 
+        of a fixed number and Population option allows the definition of a minimum 
+        population for each group. For minimum population, inform where data is 
+        in Population Data Selection field. Select Groups and type in 10 as the 
+        population value. </p>
+      <p>2. Choose which theme will be grouped in Theme Selection field. Select UP 
+        theme.</p>
+      <p>3. In Results field, define the table and the column name where the cluster 
+        a region belongs to. Standard option is ska, but it can be changed. </p>
+      <p>4. In Attribute Selection field, select the information to be used to calculate 
+        similarity among areas, such as number of homicides by area, mean income 
+        by area, etc. Theme Attributes list displays all allowed attributes (numeric) 
+        and Attributes Selected list displays the selected attributes fro clustering. 
+        Select UP.rendamedia_p, UP.banheiro_p, UP.água_p, UP.densidade_p, UP.esgoto_p, 
+        and UP.lixo_p.</p>
+      <p>5. Execute the procedure to create the larger regions.</p>
+  <p align=center><img border=0 src="terraViewBase_arquivos/arvore_geradora.png"></p>
+  <p>Observe that a new column ska was created in UP table with the group that each area 
+    belongs to. A graph displaying queda de desvios is also created automatically 
+    and is shown in Figure below. To visualize the areas in the active map, a 
+    thematic map using unique value on the new column must be created. </p>
+  <p align=center> <span style="font-family:Arial"><font size="3" face="Arial, Helvetica, sans-serif"><img border=0 id="_x0000_i1031" src="terraViewBase_arquivos/arvore_geradora_minima.png"> 
+    </font></span></p>
+  <p>Analysis of reduction of desvio interno indicates the best number of clusters to be 
+    created. There is a large reduction at the start when the number is small. 
+    From a given point the reduction becomes smaller, indicating that the creation 
+    of more clusters does not increase significantly the internal homogeneity 
+    of each cluster.</p>
+   <p><strong>Results Visualization</strong> </p>
+   <p>Figures presents the procedure that creates the visualization of UP map clustered 
+    by values of columns: banheiro_p , densidade_p, água_p, esgoto_p, lixo_p, 
+    and rendamedia_p. . Os procedimentos serão os seguintes: </p>
+  <ul>
+    <li>1. Activate UP theme menu popup;</li>
+    <li>2. Select<em> Edit Legend </em>option; </li>
+    <li>3. Select Unique Value in grouping parameters mode a; </li>
+    <li>4. Select table UP column UP.ska as attribute; </li>
+    <li>5. Use all attributes as input; </li>
+    <li>6. <em>Execute</em> the procedure.</li>
+  </ul>
+  <p align=center><img border=0 src="terraViewBase_arquivos/valor_unico.png"></p>
+  <p><strong>Data Usage</strong> </p> 
+  <p>To create cluster with the same variables as before, but using as aggregation 
+  method a minimum population of 100,000 inhabitants for each group, execute the 
+  following procedure. </p>
+  <p>Click <strong>Analysis &gt; Skater</strong> and: </p>
+  <ul>
+    <li>1. In Aggregation Method field, select Population and type in 100000 as value; </li>
+    <li>2. Select where population data is in Population Data Selection field. Select 
+    “POP_2000” in Column field; </li>
+    <li>3. Type in skapop in Column Name field; </li>
+    <li>4. In Attributes Selection, choose: banheiro_p, densidade_p, água_p, esgoto_p, lixo_p, and rendamedia_p. </li>
+  </ul>
+  <p align=center><img border=0 src="terraViewBase_arquivos/up.png"> </p>
+  <p>Visualize the result by executing a procedure that creates the display of the UP map clustered 
+  in function of the columns: banheiro_p , densidade_p, água_p, esgoto_p, lixo_p, 
+  and rendamedia_p. </p>
+  <p align=center> <span style="font-family:Arial"><font size="3" face="Arial, Helvetica, sans-serif"><img border=0 id="_x0000_i1028" src="terraViewBase_arquivos/dado_populac.png"> 
+    </font></span></p>
+  <p><strong>Results Export</strong> </p>
+  <p>To visualize the displayed image in print format, save the draw area by using: 
+    File &gt; Save Display Contents. A figure in .bmp format will be saved and 
+    it can be inserted in other programs. The figure below shows the image created 
+    here: </p>
+  <p align=center><img border=0 src="terraViewBase_arquivos/dado_populac1.png"></p>
+  <p>The legend values of this Figure present the cluster created 
+    by the method and between parentheses, the number of areas in each cluster. </p> 
+  <hr size=2 width="100%" align=center>
+  <p align=right> <a href="taxas_bayesianas_empiricas.htm">&lt;&lt; 
+    Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="kernelWindow.htm">Next 
+    &gt;&gt;</a></p>
+</font></span>
+	</div>
+
+</div></body>
+
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>StatisticWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>StatisticWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>423</width>
+            <height>429</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Statistic</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>11</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout68</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout5</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>objectsTextLabel</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Objects:</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QComboBox">
+                            <item>
+                                <property name="text">
+                                    <string>All</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Pointed</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Not Pointed</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Queried</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Not Queried</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Grouped</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Not Grouped</string>
+                                </property>
+                            </item>
+                            <property name="name">
+                                <cstring>objectsComboBox</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>120</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>summaryTextLabel</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Summary by:</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QComboBox">
+                            <property name="name">
+                                <cstring>summaryComboBox</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>120</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QTable" row="1" column="0">
+                    <property name="name">
+                        <cstring>statisticTable</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>280</width>
+                            <height>285</height>
+                        </size>
+                    </property>
+                    <property name="resizePolicy">
+                        <enum>Default</enum>
+                    </property>
+                    <property name="numRows">
+                        <number>16</number>
+                    </property>
+                    <property name="numCols">
+                        <number>2</number>
+                    </property>
+                </widget>
+                <spacer row="2" column="0">
+                    <property name="name">
+                        <cstring>spacer53</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget" row="3" column="0">
+                    <property name="name">
+                        <cstring>layout4</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <spacer>
+                            <property name="name">
+                                <cstring>Spacer5</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>47</width>
+                                    <height>16</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>savePushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Save...</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+S</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>Spacer7</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>47</width>
+                                    <height>16</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>cancelPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Cancel</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer6</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>40</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>Spacer6</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>47</width>
+                                    <height>16</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </hbox>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>StatisticWindow</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>savePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>StatisticWindow</receiver>
+        <slot>savePushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>objectsComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>StatisticWindow</receiver>
+        <slot>objectsComboBox_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>summaryComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>StatisticWindow</receiver>
+        <slot>summaryComboBox_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>StatisticWindow</receiver>
+        <slot>reject()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>objectsComboBox</tabstop>
+    <tabstop>summaryComboBox</tabstop>
+    <tabstop>statisticTable</tabstop>
+    <tabstop>savePushButton</tabstop>
+    <tabstop>cancelPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in implementation">terraViewBase.h</include>
+    <include location="global" impldecl="in implementation">qapplication.h</include>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="global" impldecl="in implementation">TeQtGrid.h</include>
+    <include location="global" impldecl="in implementation">TeAppTheme.h</include>
+    <include location="global" impldecl="in implementation">qfiledialog.h</include>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="global" impldecl="in declaration">string</include>
+    <include location="global" impldecl="in declaration">vector</include>
+    <include location="global" impldecl="in declaration">set</include>
+    <include location="local" impldecl="in implementation">statistic.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>using namespace std;</forward>
+    <forward>class Help;</forward>
+    <forward>class TeTheme;</forward>
+</forwards>
+<variables>
+    <variable access="private">QString summary_;</variable>
+    <variable access="private">int input_;</variable>
+    <variable>TerraViewBase* mainWindow_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot>init()</slot>
+    <slot>summaryComboBox_activated( int )</slot>
+    <slot>objectsComboBox_activated( int )</slot>
+    <slot>calculateStatistic( string fieldname )</slot>
+    <slot>savePushButton_clicked()</slot>
+    <slot>helpPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function>getValues( string &amp; sel, string &amp; fieldname, int offset )</function>
+    <function>getValues( string &amp; sel, vector&lt;string&gt; &amp; inVec, string &amp; fieldname, int offset )</function>
+    <function>getValues( string &amp; sel, vector&lt;string&gt; &amp; inVec, string &amp; resumoVal, string &amp; fieldname, int offset )</function>
+    <function>statisticCalc( vector&lt;double&gt; &amp; vd, double sum, double sm2, double sm3, double sm4, int nulos, set&lt;string&gt; &amp; oidSet, string &amp; fieldname, int offset )</function>
+    <function returnType="vector&lt;string&gt;">getSumaryVec( TeTheme * theme, string resumo, vector&lt;string&gt; inVec )</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

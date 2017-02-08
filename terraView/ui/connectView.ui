@@ -1,0 +1,222 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>ConnectView</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>ConnectView</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>293</width>
+            <height>115</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Connect View</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout8</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>connectCheckBox</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Connect View</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>viewComboBox</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>170</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="2" column="0">
+            <property name="name">
+                <cstring>layout9</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>okPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;OK</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+O</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>cancelPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Cancel</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+C</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>helpPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Help</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+H</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="1" column="0">
+            <property name="name">
+                <cstring>layout10</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer5</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>disconnectCheckBox</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Disconnect</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer6</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>connectCheckBox</sender>
+        <signal>clicked()</signal>
+        <receiver>ConnectView</receiver>
+        <slot>connectCheckBox_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>disconnectCheckBox</sender>
+        <signal>clicked()</signal>
+        <receiver>ConnectView</receiver>
+        <slot>disconnectCheckBox_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>ConnectView</receiver>
+        <slot>okPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>ConnectView</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>ConnectView</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>connectCheckBox</tabstop>
+    <tabstop>viewComboBox</tabstop>
+    <tabstop>disconnectCheckBox</tabstop>
+    <tabstop>okPushButton</tabstop>
+    <tabstop>cancelPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in implementation">TeDatabase.h</include>
+    <include location="global" impldecl="in implementation">TeView.h</include>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="local" impldecl="in implementation">connectView.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TeView;</forward>
+    <forward>class TerraViewBase;</forward>
+    <forward>class TeDatabase;</forward>
+    <forward>class DisplayWindow;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable>TerraViewBase* mainWindow_;</variable>
+    <variable>TeView* view_;</variable>
+    <variable>TeDatabase* db_;</variable>
+    <variable>DisplayWindow* displayWindow_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot>init()</slot>
+    <slot>connectCheckBox_clicked()</slot>
+    <slot>disconnectCheckBox_clicked()</slot>
+    <slot>okPushButton_clicked()</slot>
+    <slot>helpPushButton_clicked()</slot>
+</slots>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,121 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>InsertTextWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>InsertTextWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>306</width>
+            <height>46</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>7</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>Insert Text</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>11</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>Layout5</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>insertTextLabel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Text:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>insertLineEdit</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>250</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>insertLineEdit</sender>
+        <signal>returnPressed()</signal>
+        <receiver>InsertTextWindow</receiver>
+        <slot>insertLineEdit_returnPressed()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>insertLineEdit</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">insertText.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+</forwards>
+<variables>
+    <variable access="public">bool cancel_;</variable>
+    <variable>TerraViewBase* mainWindow_;</variable>
+</variables>
+<slots>
+    <slot access="protected">init()</slot>
+    <slot>insertLineEdit_returnPressed()</slot>
+    <slot>closeEvent( QCloseEvent * )</slot>
+</slots>
+<functions>
+    <function>show()</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

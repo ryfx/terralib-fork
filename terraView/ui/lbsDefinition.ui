@@ -1,0 +1,845 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>LBSDefinition</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>LBSDefinition</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>482</width>
+            <height>511</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Configure layer as reference for geocoding</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <property name="modal">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="1" column="0">
+            <property name="name">
+                <cstring>layout107</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>helpPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Help</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+H</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>This option opens a new window with a detailed help.</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer77</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>210</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout106</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>confirmPushButton</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Confirm</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                            <property name="on">
+                                <bool>false</bool>
+                            </property>
+                            <property name="default">
+                                <bool>true</bool>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>This option enables the infolayer to be used for address geocoding.</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>cancelPushButton</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Remove</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+R</string>
+                            </property>
+                            <property name="default">
+                                <bool>false</bool>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>This option disable the infolayer to be used for address geocoding.</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>closePushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Cl&amp;ose</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+O</string>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Close this window.</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QFrame" row="0" column="0">
+            <property name="name">
+                <cstring>frame23</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>GroupBoxPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout21</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout19</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>layerTextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&amp;Infolayer:</string>
+                                    </property>
+                                    <property name="buddy" stdset="0">
+                                        <cstring>layerComboBox</cstring>
+                                    </property>
+                                </widget>
+                                <widget class="QComboBox">
+                                    <property name="name">
+                                        <cstring>layerComboBox</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="toolTip" stdset="0">
+                                        <string>Please, select the infolayer to be used as base for address geocoding.</string>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout18</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLabel1</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&amp;Attribute Table:</string>
+                                    </property>
+                                    <property name="buddy" stdset="0">
+                                        <cstring>layerTableComboBox</cstring>
+                                    </property>
+                                </widget>
+                                <widget class="QComboBox">
+                                    <property name="name">
+                                        <cstring>layerTableComboBox</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QGroupBox" row="1" column="0">
+                    <property name="name">
+                        <cstring>columnTableGroupBox</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="title">
+                        <string>Reference Fields dor Address Location</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel" row="1" column="0">
+                            <property name="name">
+                                <cstring>leftEndTextLabel_3_2</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Select the complete name or enter with a new column name:</string>
+                            </property>
+                            <property name="alignment">
+                                <set>WordBreak|AlignVCenter</set>
+                            </property>
+                            <property name="buddy" stdset="0">
+                                <cstring>completeLocationNameComboBox</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout29</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout25</cstring>
+                                    </property>
+                                    <vbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout38</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>leftBeginTextLabel_4_2</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Location type:</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>WordBreak|AlignVCenter</set>
+                                                    </property>
+                                                    <property name="buddy" stdset="0">
+                                                        <cstring>locationTypeComboBox</cstring>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>locationTypeComboBox</cstring>
+                                                    </property>
+                                                    <property name="minimumSize">
+                                                        <size>
+                                                            <width>200</width>
+                                                            <height>0</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="toolTip" stdset="0">
+                                                        <string>Please, select the field containing the location type (Avenue, street, ...).</string>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout37</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>leftBeginTextLabel_4_4</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Location preposition name:</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>WordBreak|AlignVCenter</set>
+                                                    </property>
+                                                    <property name="buddy" stdset="0">
+                                                        <cstring>locationPrepositionComboBox</cstring>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>locationPrepositionComboBox</cstring>
+                                                    </property>
+                                                    <property name="toolTip" stdset="0">
+                                                        <string>Please, select the field containing the location preposition name (dos, das, des...).</string>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                    </vbox>
+                                </widget>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout28</cstring>
+                                    </property>
+                                    <vbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout39</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>leftBeginTextLabel_4_3</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Location title:</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>WordBreak|AlignVCenter</set>
+                                                    </property>
+                                                    <property name="buddy" stdset="0">
+                                                        <cstring>locationTitleComboBox</cstring>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>locationTitleComboBox</cstring>
+                                                    </property>
+                                                    <property name="minimumSize">
+                                                        <size>
+                                                            <width>200</width>
+                                                            <height>0</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="toolTip" stdset="0">
+                                                        <string>Please, select the field containing the location title (General, Doctor...).</string>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout10</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>leftEndTextLabel_3</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Location Name:</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>WordBreak|AlignVCenter</set>
+                                                    </property>
+                                                    <property name="buddy" stdset="0">
+                                                        <cstring>locationComboBox</cstring>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>locationComboBox</cstring>
+                                                    </property>
+                                                    <property name="toolTip" stdset="0">
+                                                        <string>Please, select the field containing the location name.</string>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                    </vbox>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <widget class="QLayoutWidget" row="3" column="0">
+                            <property name="name">
+                                <cstring>layout30</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout26</cstring>
+                                    </property>
+                                    <vbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout2</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>leftBeginTextLabel</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Initial odd address:</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>WordBreak|AlignVCenter</set>
+                                                    </property>
+                                                    <property name="buddy" stdset="0">
+                                                        <cstring>leftBeginComboBox</cstring>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>leftBeginComboBox</cstring>
+                                                    </property>
+                                                    <property name="toolTip" stdset="0">
+                                                        <string>Please, select the field containing the location initial left address number. (Sometimes called initial left)</string>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout35</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>leftBeginTextLabel_4</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Final odd address:</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>WordBreak|AlignVCenter</set>
+                                                    </property>
+                                                    <property name="buddy" stdset="0">
+                                                        <cstring>leftEndComboBox</cstring>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>leftEndComboBox</cstring>
+                                                    </property>
+                                                    <property name="toolTip" stdset="0">
+                                                        <string>Please, select the field containing the location final left address number. (Sometimes called final left)</string>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout11</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>leftEndTextLabel_4</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Location left neighborhood:</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>WordBreak|AlignVCenter</set>
+                                                    </property>
+                                                    <property name="buddy" stdset="0">
+                                                        <cstring>bairroLeftComboBox</cstring>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>bairroLeftComboBox</cstring>
+                                                    </property>
+                                                    <property name="toolTip" stdset="0">
+                                                        <string>Please, select the field containing the location left neighbohood.</string>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout11_2</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>leftEndTextLabel_4_2</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Location left zipcode:</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>WordBreak|AlignVCenter</set>
+                                                    </property>
+                                                    <property name="buddy" stdset="0">
+                                                        <cstring>CEPLeftComboBox</cstring>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>CEPLeftComboBox</cstring>
+                                                    </property>
+                                                    <property name="toolTip" stdset="0">
+                                                        <string>Please, select the field containing the location left zipcode.</string>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                    </vbox>
+                                </widget>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout27</cstring>
+                                    </property>
+                                    <vbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout2_2</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>leftBeginTextLabel_2</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Initial even address:</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>WordBreak|AlignVCenter</set>
+                                                    </property>
+                                                    <property name="buddy" stdset="0">
+                                                        <cstring>rightBeginComboBox</cstring>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>rightBeginComboBox</cstring>
+                                                    </property>
+                                                    <property name="toolTip" stdset="0">
+                                                        <string>Please, select the field containing the location initial even address number. (Sometimes called initial right)</string>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout36</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>leftBeginTextLabel_2_2</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Final even address:</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>WordBreak|AlignVCenter</set>
+                                                    </property>
+                                                    <property name="buddy" stdset="0">
+                                                        <cstring>rightEndComboBox</cstring>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>rightEndComboBox</cstring>
+                                                    </property>
+                                                    <property name="toolTip" stdset="0">
+                                                        <string>Please, select the field containing the location final right address number. (Sometimes called final right)</string>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout12</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>leftEndTextLabel_5</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Location right neighborhood:</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>WordBreak|AlignVCenter</set>
+                                                    </property>
+                                                    <property name="buddy" stdset="0">
+                                                        <cstring>bairroRightComboBox</cstring>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>bairroRightComboBox</cstring>
+                                                    </property>
+                                                    <property name="toolTip" stdset="0">
+                                                        <string>Please, select the field containing the location right neighbohood.</string>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout12_2</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>leftEndTextLabel_5_2</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Location right zipcode:</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>WordBreak|AlignVCenter</set>
+                                                    </property>
+                                                    <property name="buddy" stdset="0">
+                                                        <cstring>CEPRightComboBox</cstring>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>CEPRightComboBox</cstring>
+                                                    </property>
+                                                    <property name="toolTip" stdset="0">
+                                                        <string>Please, select the field containing the location right zipcode.</string>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                    </vbox>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <widget class="QLayoutWidget" row="2" column="0">
+                            <property name="name">
+                                <cstring>layout31</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QComboBox">
+                                    <property name="name">
+                                        <cstring>completeLocationNameComboBox</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>200</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="editable">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="toolTip" stdset="0">
+                                        <string>Please, select the field containing the location name.</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>completeLocationNameLineEdit</cstring>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                    </grid>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>closePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>LBSDefinition</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>layerComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>LBSDefinition</receiver>
+        <slot>layerComboBox_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>confirmPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>LBSDefinition</receiver>
+        <slot>confirmPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>LBSDefinition</receiver>
+        <slot>cancelPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>LBSDefinition</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>layerTableComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>LBSDefinition</receiver>
+        <slot>layerTableComboBox_activated(int)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>layerComboBox</tabstop>
+    <tabstop>layerTableComboBox</tabstop>
+    <tabstop>locationTypeComboBox</tabstop>
+    <tabstop>locationTitleComboBox</tabstop>
+    <tabstop>locationPrepositionComboBox</tabstop>
+    <tabstop>locationComboBox</tabstop>
+    <tabstop>completeLocationNameComboBox</tabstop>
+    <tabstop>completeLocationNameLineEdit</tabstop>
+    <tabstop>leftBeginComboBox</tabstop>
+    <tabstop>rightBeginComboBox</tabstop>
+    <tabstop>leftEndComboBox</tabstop>
+    <tabstop>rightEndComboBox</tabstop>
+    <tabstop>bairroLeftComboBox</tabstop>
+    <tabstop>bairroRightComboBox</tabstop>
+    <tabstop>CEPLeftComboBox</tabstop>
+    <tabstop>CEPRightComboBox</tabstop>
+    <tabstop>helpPushButton</tabstop>
+    <tabstop>confirmPushButton</tabstop>
+    <tabstop>cancelPushButton</tabstop>
+    <tabstop>closePushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="global" impldecl="in implementation">qapplication.h</include>
+    <include location="global" impldecl="in implementation">terraViewBase.h</include>
+    <include location="global" impldecl="in implementation">TeLayer.h</include>
+    <include location="global" impldecl="in implementation">TeDatabase.h</include>
+    <include location="global" impldecl="in implementation">TeAddressLocator.h</include>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="local" impldecl="in implementation">lbsDefinition.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>class TeDatabase;</forward>
+    <forward>class TeLayer;</forward>
+    <forward>class TeAddressLocator;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable access="private">TeLayer* currentLayer_;</variable>
+    <variable access="private">TeDatabase* db_;</variable>
+    <variable access="private">TerraViewBase* mainWindow_;</variable>
+    <variable access="private">TeAddressLocator* addressLocator_;</variable>
+    <variable access="private">int currentTable_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot>layerComboBox_activated( int index )</slot>
+    <slot>confirmPushButton_clicked()</slot>
+    <slot>cancelPushButton_clicked()</slot>
+    <slot>helpPushButton_clicked()</slot>
+    <slot>layerTableComboBox_activated( int index )</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function access="private" specifier="non virtual">destroy()</function>
+    <function returnType="TeLayer *">getLayer()</function>
+    <function>listLayers( const unsigned int &amp; layerId )</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

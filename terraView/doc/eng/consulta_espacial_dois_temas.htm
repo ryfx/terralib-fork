@@ -1,0 +1,95 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>TerraView</title>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+<div class=Section1> 
+  <p> <font size="3" face="Arial, Helvetica, sans-serif"><strong> <span style='font-family:"Arial","sans-serif";'> 
+    TerraView</span> </strong> </font></p>
+  <p align=right> <font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family:Arial'> 
+    <a href="consulta_espacial_unico_tema.htm">&lt;&lt; Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> 
+    | <a href="operacoes_geograficas.htm">Next &gt;&gt;</a> </span> </font></p>
+  <hr size=2 width="100%" align=center>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><strong><u> 
+    <span style='font-size: 13.5pt;font-family:Arial'>Spatial Query with Two Themes</span></u></strong></font></p>
+  <div align="justify"> <font size="3" face="Arial, Helvetica, sans-serif">
+    <p>Queries that associate objects from two different themes are the most interesting 
+    in TerraView. It is possible to define, for example, the crimes committed 
+    in a neighborhood, the census tract of the neighborhood or the streets that 
+    connect two neighborhoods. For this, the spatial query must have an active 
+    theme, where the queried objects are selected and another theme where the 
+    objects to be associated with are. </p>
+    <p><strong>Associating Polygons and Points</strong> </p>
+    <p>To select all the crimes committed in Centro and Savassi neighborhoods (called 
+    Savassi region) in 2003: </p>
+    <p>1. Set Bairros and Crimes2003 themes as visible and activate Bairros theme. 
+    Select Centro and Savassi neighborhoods. </p> 
+  <p align="center"> <img border=0 id="_x0000_i1031" src="terraViewBase_arquivos/relacionando_polig_pontos.png"></p>
+    <p>2. Activate popup menu from Bairros theme and choose <strong>Spatial Query</strong> 
+      option. </p>
+  <p align="center"> <img border=0 id="_x0000_i1030" src="terraViewBase_arquivos/consulta_espacial.png"></p>
+  <p>3. Set the Theme option as visible and choose Crimes2003 theme. This selects 
+    the theme where the queried crimes are. </p>	
+  <p>4. Mark Contain option in Topological Relations field. The lower part of the 
+    spatial query screen will display all selected items in the query. In this 
+    particular case, the selected items are all the crimes committed in 2003, 
+    in the two neighborhoods selected in step 1. </p>
+    <p>5. Press <em>New Query</em> button. 
+    <p align="center"><img src="terraViewBase_arquivos/consulta_espacial_dois_temas.png
+	"></p>
+  <p>Note: In case Disjoint option 
+  was chosen <img border=0 id="_x0000_i1028" src="terraViewBase_arquivos/botao_disjunto.png"> 
+  all crimes that do not intersect with the selected neighborhoods would be selected. 
+  Touch option <img border=0 id="_x0000_i1027" src="terraViewBase_arquivos/botao_opcao_toca.png"> 
+  would select all crimes that were committed exactly in the neighborhoods borders. <br>
+  <p><strong>Other relationship types</strong> </p>
+  <p>Depending on the object types, the active theme and the visible theme selected, 
+  the available spatial operations change. Bellow there is a summary of possible 
+  combinations: </p>
+  </font> </div>
+  <div align=center>
+  <table width="70%" border="1" cellspacing="0" cellpadding="0" bordercolor="#000000" style="border-left: 1px; border-right: 1px; border-top: 1px; border-bottom: thin;">
+    <tr> 
+      <td width="25%" align="center"><font size="3" face="Arial, Helvetica, sans-serif"><strong><span style='font-size: 11.5pt;font-family:Arial'>Active</strong></font></td>
+      <td width="25%" align="center"><font size="3" face="Arial, Helvetica, sans-serif"><strong><span style='font-size: 11.5pt;font-family:Arial'>Visible</strong></font></td>
+      <td width="50%" align="center"><font size="3" face="Arial, Helvetica, sans-serif"><strong><span style='font-size: 11.5pt;font-family:Arial'>Operations</strong></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Polygons</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Polygons</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>The 
+        same previously presented for operations with polygons only</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Polygons</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Line</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Disjoint, 
+        Overlap, Touch, Crosses, Within, Covered by</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Line</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Line</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>The 
+        same previously presented for operations with lines only</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Line</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Point</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>Disjoint, 
+        Within, Touch</span></font></td>
+    </tr>
+  </table></div>
+  
+  <hr size=2 width="100%" align=center>
+  <p align=right> <font size="3" face="Arial, Helvetica, sans-serif"><a href="consulta_espacial_unico_tema.htm">&lt;&lt; 
+    Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="operacoes_geograficas.htm">Next 
+    &gt;&gt;</a> </font></p>
+</div>
+
+</body>
+
+</html>
+

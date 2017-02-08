@@ -1,0 +1,11 @@
+Makefile
+*.o
+*.obj
+*.dsp
+*.dsw
+*.opt
+*.plg
+*.ncb
+*.pdb
+Debug
+Release

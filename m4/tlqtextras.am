@@ -1,0 +1,42 @@
+################################################################################
+#
+# EXTRA RULES TO ALLOW QT BASED CODE TO BE COMPILED BY THE GNU BUILD SYSTEM
+#
+################################################################################
+
+SUFIXES = .ui .uic .h .cc .qrc .moc
+
+################################################################################
+# This is the case where there is a interface file (UI) and, optionaly, an user
+# implmentation file (UI.H - automatically included into the generated cc)
+# In this case file.h and file.ccp are generated from file.ui and
+# only the generated file.cc must be compiled.
+.ui.h:	
+	$(UIC) $< -o $@	
+
+.ui.uic: .h	
+	$(MOC) $(QT_CPPFLAGS) $(EXTRA_CPPFLAGS) $*.h -o $@  
+	$(UIC) -impl $(*F).h $< >> $@
+
+.uic.cc:	
+	cp $< $@
+
+################################################################################
+# This is the case where there is a QT derived class and there is no interface 
+# file (UI) and no user implmentation file (UI.H)
+# In this case only the generated file.cc (C++ file) must be compiled, since
+# it is is generated from file.h and file.cpp
+
+.h.moc:	.cpp
+	$(MOC) $(QT_CPPFLAGS) $(EXTRA_CPPFLAGS) $< -o $@	
+	if [ -f $*.cpp ]; then cat $*.cpp >> $@ ; fi	
+
+.moc.cc:	
+	cp $< $@
+
+################################################################################
+
+.qrc.cc:
+	$(RCC) -name `echo "$<" | sed 's|^.*/\(.*\)\.qrc$$|\1|'` $< -o $@
+
+

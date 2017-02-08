@@ -1,0 +1,193 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Aggregation operation</title>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+
+<div class=Section1>
+
+<p align=center>
+	<strong><u>
+		<span style='font-size: 13.5pt;font-family:Arial'>Aggregation operation</span>
+	</u></strong>
+</p>
+
+<p>
+	<span style='font-family:Arial'><font face="Arial, Helvetica, sans-serif"> 
+  <font size="3">Aggregation operation us</font>es <i>n</i> </font>input objects 
+  to create an output object. Each new object has a unique record in the attributes 
+  table and is represented usually by many geometries. <br>
+  <br>
+The operation is executed on themes with only one type of vector representation. Therefore, the theme may have only geometric representations of type: polygons only, lines only, points only, or cells only.
+<br><br>
+The operation resulting layer has geometries and attributes table created based on one or more &quot;aggregator&quot; attributes selected from the input theme. This operation creates an object for each individual value of these attributes and each created object has a summary of the input theme attributes.
+<br><br>
+  The operation resulting geometries are created through the fusion of the input 
+  theme geometries. The fusion is based on &quot;aggregator&quot; attributes. 
+  All geometries with the same value in the &quot;aggregator&quot; attributes 
+  are fused to represent a unique geographic object. <br>
+  <br>
+Usually the &quot;aggregator&quot; attributes are selected by choosing fields of one of the theme tables, but a legend of the input theme can be selected as the &quot;aggregator&quot; attribute. In this case, the aggregation is based on a previously created grouping on the input theme and the number of created objects is equal to the number of groups in the legend.
+<br><br>
+The new attributes table has three automatically created fields and others additional user selected ones. The fields are:
+<ul>
+	<li>objects identification field</li>
+	<li>concatenation of aggregator attributes field</li>
+	<li>aggregated objects count field</li>
+	<li>additional user selected fields</li>
+</ul>
+Additional user selected fields are built from aggregation of fields in the input theme tables. 
+<br><br>
+Aggregation rules for numeric type fields are:
+<br><br>
+<table border="1" cellspacing="0" cellpadding="0" bordercolor="#000000" style="border-left: 1px; border-right: 1px; border-top: 1px; border-bottom: thin;">
+<tr>
+	  <td align="center"><strong><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;Aggregation 
+        Function&nbsp;&nbsp;</strong></td>
+	<td align="center"><strong><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;Meaning&nbsp;&nbsp;</strong></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeMINVALUE&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;minimum value&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeMAXVALUE&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;maximum value&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeMEAN&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;mean&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeSUM&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;values sum&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeCOUNT&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;total number of values&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeVALIDCOUNT&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;total number of non nil values&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeSTANDARDDEVIATION&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;standard deviation&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeKERNEL&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;kernel&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeVARIANCE&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;variance&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeSKEWNESS&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;third order mean momentum&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeKURTOSIS&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;fourth order mean momentum&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeAMPLITUDE&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;difference between maximum and minimum values&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeMEDIAN&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;median&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeVARCOEFF&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;coeficient of variation&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeMODE&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;most frequent value&nbsp;&nbsp;</span></td>
+</tr>
+</table>
+<br><br>
+Aggregation functions for non-numeric attributes are:
+<br><br>
+<table border="1" cellspacing="0" cellpadding="0" bordercolor="#000000" style="border-left: 1px; border-right: 1px; border-top: 1px; border-bottom: thin;">
+<tr>
+	  <td align="center"><strong><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;Aggregation 
+        Function&nbsp;&nbsp;</strong></td>
+	<td align="center"><strong><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;Meaning&nbsp;&nbsp;</strong></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeMINVALUE&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;minimum value&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeMAXVALUE&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;maximum value&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeCOUNT&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;total number of values&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;TeVALIDCOUNT&nbsp;&nbsp;</span></td>
+	<td><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;&nbsp;total number of non nil values&nbsp;&nbsp;</span></td>
+</tr>
+</table>
+<br><br>
+The new layer geometries are copies of the input geometries. Usually the objects identifiers change, except for polygons type geometries. In this case the spatial clusters are fused to create a new polygon.
+<br><br>
+Figure 1 shows all municipalities of Acre, Amazonas, and Rondônia states selected by a query. It also shows the aggregation on these municipalities using SIGLAUF attribute (&quot;aggregator&quot; attribute), the state initials.
+<p align=center>
+<img id="_x0000_i1026" src="geoOpAggregation_arquivos/image001.png">
+<br>
+Figure 1 - Aggregation of objects using SIGLAUF attribute.
+</p>
+In this example, the selected additional attributes were: rural population mean, population mean, sum of population, and minimum urban population. Observe that the resulting attributes are the summary of the attributes for the municipalities of each state. Observe also that the new objects do not longer represent municipalities and they now represent states with attributes related to states.
+<br><br>
+The example columns represent:
+<ul>
+<li>object_id_: new object identifier</li>
+<li>SIGLAUF: used &quot;aggregator&quot; attribute</li>
+<li>agreg_count_: number of aggregated municipalities</li>
+<li>POPRURAL_MEAN: mean rural population by state</li>
+<li>POPULACA_MEAN: mean population by state</li>
+<li>POPULACA_SUM: sum of population by state</li>
+<li>POURBAN_MINVALUE: minimum urban population value of a state minicipality</li>
+</ul>
+In the example, the aggregation was executed on queried objects, but it can also be executed on all objects, or on pointed objects only.
+<br><br>
+<strong>Objects Aggregation Interface</strong>
+<br><br>
+  The objects aggregation operation interface is shown in Figure 2 and to activate 
+  it use the context menu on a View and select <strong>Geoprocessing - Aggregation</strong>. 
+  In addition to the selection of one of the view themes the interface allows 
+  the choice of using all objects, pointed objects only, or queried objects only 
+  through <i>Input Theme box</i>. 
+  <p align=center>
+<img src="geoOpAggregation_arquivos/image003.png" width="506" height="435" id="_x0000_i1025">
+<br>
+Figure 2 - Objects aggregation interface.
+</p>
+In <i>Aggregation Attributes box</i>, select the aggregator attributes from the theme attributes and the current legend.
+<br><br>
+<i>Output Layer Name</i> box is automatically filled in by the interface, but it can be edited to create the layer with another name.
+<br><br>
+<i>Output Attributes field </i> lists the theme attributes and statistics, and they can be selected and unselected individually. Two buttons are available to quickly select all functions on theme attributes, such as all maximum, minimum, and sum, and to unselect all of them.
+<br><br>
+<i>OK</i> button applies the aggregation operation.
+<br><br>
+<i>Cancel</i> button disables the interface.
+<br><br>
+<i>Help</i> button activates the help interface.
+
+</p>
+
+<hr size=2 width="100%" align=center>
+</div>
+
+</body>
+
+</html>

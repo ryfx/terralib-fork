@@ -1,0 +1,454 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>InsertPoint</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>InsertPoint</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>306</width>
+            <height>218</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Insert Point</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>layout1</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLineEdit" row="0" column="1">
+                    <property name="name">
+                        <cstring>objectIdLineEdit</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>150</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="1" column="0">
+                    <property name="name">
+                        <cstring>objTemporalInstanceTextLabel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Object Temporal Instance:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>objectIdTextLabel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Object Identifier:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="1" column="1">
+                    <property name="name">
+                        <cstring>objectTemporalLineEdit</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>150</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QLayoutWidget" row="5" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>layout2</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>okPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;OK</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+O</string>
+                    </property>
+                    <property name="default">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>cancelPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Cancel</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+C</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>helpPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Help</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+H</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <spacer row="1" column="1">
+            <property name="name">
+                <cstring>spacer6</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>16</width>
+                    <height>10</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QButtonGroup" row="2" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>coordButtonGroup</cstring>
+            </property>
+            <property name="title">
+                <string>Coordinates</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer row="0" column="4">
+                    <property name="name">
+                        <cstring>spacer7</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>16</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <spacer row="0" column="0">
+                    <property name="name">
+                        <cstring>spacer8</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>16</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <spacer row="0" column="2">
+                    <property name="name">
+                        <cstring>spacer6_2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>16</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QRadioButton" row="0" column="1">
+                    <property name="name">
+                        <cstring>planeRadioButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Plane</string>
+                    </property>
+                    <property name="checked">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="0" column="3">
+                    <property name="name">
+                        <cstring>geographicalRadioButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Geographical</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QLayoutWidget" row="3" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>layout4</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>xTextLabel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>X:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>xLineEdit</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>100</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer4</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>yTextLabel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Y:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>yLineEdit</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>100</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <spacer row="4" column="0">
+            <property name="name">
+                <cstring>spacer5</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>16</width>
+                    <height>16</height>
+                </size>
+            </property>
+        </spacer>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>InsertPoint</receiver>
+        <slot>okPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>InsertPoint</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>coordButtonGroup</sender>
+        <signal>clicked(int)</signal>
+        <receiver>InsertPoint</receiver>
+        <slot>coordButtonGroup_clicked(int)</slot>
+    </connection>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>InsertPoint</receiver>
+        <slot>reject()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>objectIdLineEdit</tabstop>
+    <tabstop>objectTemporalLineEdit</tabstop>
+    <tabstop>planeRadioButton</tabstop>
+    <tabstop>xLineEdit</tabstop>
+    <tabstop>yLineEdit</tabstop>
+    <tabstop>okPushButton</tabstop>
+    <tabstop>cancelPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">TeCoord2D.h</include>
+    <include location="global" impldecl="in declaration">TeTable.h</include>
+    <include location="global" impldecl="in implementation">TeQtGrid.h</include>
+    <include location="global" impldecl="in implementation">TeLayer.h</include>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="global" impldecl="in implementation">TeDatabase.h</include>
+    <include location="global" impldecl="in implementation">TeAppTheme.h</include>
+    <include location="global" impldecl="in implementation">qapplication.h</include>
+    <include location="global" impldecl="in implementation">terraViewBase.h</include>
+    <include location="global" impldecl="in implementation">TeQtCanvas.h</include>
+    <include location="global" impldecl="in implementation">TeDatabaseUtils.h</include>
+    <include location="global" impldecl="in implementation">display.h</include>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="local" impldecl="in implementation">insertPoint.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>class TeAppTheme;</forward>
+    <forward>class TeQtGrid;</forward>
+    <forward>class TeDatabase;</forward>
+    <forward>class TeQtCanvas;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable>TeAttrTableVector externalTableVec_;</variable>
+    <variable>TeTable temporalTable_;</variable>
+    <variable>TeTable eventTable_;</variable>
+    <variable>TeAttrTableVector staticTableVec_;</variable>
+    <variable>TeQtCanvas* canvas_;</variable>
+    <variable>TeCoord2D p_;</variable>
+    <variable>TeDatabase* db_;</variable>
+    <variable>TeQtGrid* grid_;</variable>
+    <variable access="public">bool themeHasEvent_;</variable>
+    <variable access="public">bool layerHasEvent_;</variable>
+    <variable access="public">bool themeHasExternal_;</variable>
+    <variable access="public">bool themeHasTemporal_;</variable>
+    <variable access="public">bool themeHasStatic_;</variable>
+    <variable access="public">bool layerHasTemporal_;</variable>
+    <variable access="public">bool layerHasStatic_;</variable>
+    <variable>TerraViewBase* mainWindow_;</variable>
+    <variable>TeAppTheme* theme_;</variable>
+    <variable access="public">bool plane_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot>coordButtonGroup_clicked( int i )</slot>
+    <slot>okPushButton_clicked()</slot>
+    <slot>helpPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function>init()</function>
+    <function returnType="bool">init( TeCoord2D pt )</function>
+    <function returnType="bool">longValidator( const QString str, double &amp; val )</function>
+    <function returnType="bool">latValidator( const QString str, double &amp; val )</function>
+    <function returnType="bool">xValidator( QString str, double &amp; val )</function>
+    <function returnType="bool">yValidator( QString str, double &amp; val )</function>
+    <function>show()</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

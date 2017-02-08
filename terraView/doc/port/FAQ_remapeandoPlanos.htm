@@ -1,0 +1,48 @@
+<HTML> <HEAD> <TITLE> TerraView - Perguntas mais frequentes  </TITLE> </HEAD>
+
+<BODY>
+	
+<p align="center"> <big><b><font size="4" face="Arial, Helvetica, sans-serif">TerraView 
+  -  </font></b></big><font size="4" face="Arial, Helvetica, sans-serif"> 
+   <b>Perguntas mais frequentes</b> </font> </p>
+
+	
+<hr>
+<p align="justify"><strong>Como remapear um plano de informa&ccedil;&atilde;o 
+  de uma proje&ccedil;&atilde;o para outra?</strong></p>
+<hr>
+<p align="justify">Cada plano de informação com objetos com representação vetorial 
+  está associado a uma projeção geográfica, que permite localizar geograficamente 
+  seus objetos. Ao se criar um tema associado a um plano de informação, em uma 
+  determinada vista, é possível que esta vista possua uma projeção geográfica 
+  diferente da projeção do plano.</p>
+<p align="justify"> Ao desenhar um tema na área de visualização, o <em>TerraView</em> 
+  recalcula as coordenadas dos objetos do plano, que estão na projeção do plano, 
+  para coordenadas na projeção da vista do tema, quando ambas são diferentes. 
+  Este recálculo pode ser computacionalmente oneroso, quando o plano/tema possui 
+  muitos objetos e está sendo frequentemente redesenhado. Neste caso, é interessante 
+  remapear o plano de informação para a mesma projeção com que ele é visualizado, 
+  recalculando as coordenadas do objeto uma única vez. </p>
+<p align="justify"> O procedimento para remapear um plano de informação P, que 
+  tem um tema associado T, de uma projeção para outra envolve criar um outro plano 
+  na projeção de destino (no caso igual à da vista), conforme os passos: </p>
+<div align="justify">
+  <ol>
+    <li>Acionando o menu popup do tema T, selecione a opção <strong>Criar Plano 
+      a partir do Tema</strong>... Será apresentada uma interface para capturar 
+      informações sobre o Plano resultante;</li>
+    <li>No quadro à esquerda, <strong>Seleção de Objetos</strong>, a opção usual 
+      neste caso é a opção <strong>Coleção</strong>, pois todos os objetos do 
+      tema T serão usados para gerar o novo plano;</li>
+    <li>No quadro à direita, <strong>Novo Plano de Informação</strong>, são informados 
+      o nome do plano a ser gerado, e a projeção deste plano, com seus respectivos 
+      parâmetros. A projeção pode ser definida como igual à da vista associada 
+      ao tema T, que é o caso normal deste caso, ou uma outra projeção qualquer;</li>
+  </ol>
+  No caso da motivação exposta acima para o remapeamento, não esqueça de criar 
+  um tema associado ao novo plano, na mesma vista usada para visualização. </div>
+<p align="justify"></p>
+<hr>
+			
+</BODY>
+</HTML>

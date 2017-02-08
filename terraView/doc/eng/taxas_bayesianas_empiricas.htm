@@ -1,0 +1,95 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>TerraView</title>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+
+<div class=Section1>
+
+  <p> <strong> <span style='font-family:"Arial","sans-serif";'> <font face="Arial, Helvetica, sans-serif">TerraView</font></span> 
+    </strong> </p>
+  <p align=right> <font face="Arial, Helvetica, sans-serif"><span style='font-family:Arial'> 
+    <a href="criando_graficos_tortas_mapa.htm">&lt;&lt; Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> 
+    | <a href="metodo_skater.htm">Next &gt;&gt;</a> </span> </font></p>
+  <hr size=2 width="100%" align=center>
+  <p align=center> <font face="Arial, Helvetica, sans-serif"><strong><u> <span style='font-size: 13.5pt;font-family:Arial'>Bayesian 
+    Empirical Ratios</span> </u></strong> </font></p>
+  <p> 
+  <div align="justify"><span style="font-family:Arial"><font face="Arial, Helvetica, sans-serif">
+    <p>In this section, ratios from attributes of map objects will be created. 
+      The first step calculates the gross ratio of homicides in the year 2000 
+      for Belo Horizonte neighborhoods. Next, use Global Bayes Empirical tool 
+      to adjust the ratios. </p>
+    <p>Gross ratio is the ratio between a numerator (number of homicides, kidnappings, 
+      deaths) and a denominator (usually population at risk). Gross ratio presents 
+      high instability for regions with small population at risk, that is, regions 
+      with small population are more susceptible to variations in the ratios due 
+      to few random events than regions with larger population. Global Bayesian 
+      empirical ratio is based on the use of information from other regions of 
+      the study area to reduce the instability not associated to the occurrence 
+      of risk event.</p>
+    <p> The first TerraView requirement to calculate Bayesian ratios is that the 
+      denominator (population at risk) does not have values equal or smaller than 
+      zero. If there are missing population data for some Belo Horizonte neighborhoods, 
+      a layer with neighborhoods with data must be created. </p>
+    <p><strong>Gross ratio calculation</strong></p>
+    
+  <p>To calculate gross ratio, create a new column in neighborhoods table (Bairros 
+    Theme) and update this column data. To create a new column, use the popup 
+    menu from a <strong>column</strong> header in the grid area and select <strong>Add 
+    Column </strong>option. </p>
+  <p align=center> <img border=0 src="terraViewBase_arquivos/adicionar_coluna_tabela.png"></p>
+  <p>After creating a column named Ratio, use this column popup menu from and change its data:</p>
+  <p align=center><img border=0 src="terraViewBase_arquivos/alterar_dados.png"></p>
+  <p> Apply the operation where the numerator is the number of homicides in the year 2000 
+      and the denominator is the population of BH neighborhoods in the same year. 
+      Multiply it by 100,000 to standardize the values. </p>
+  <p align=center> <img border=0 src="terraViewBase_arquivos/alterar_dados_coluna.png"> </p>
+  <p><strong>Bayesian empirical ratio calculation</strong></p> 
+  <p>
+      Next, create a column with global Bayesian empirical ratio to adjust the 
+      ratios for municipalities with a small population. To create it, use Analysis 
+      menu and Global Empirical Bayes. An interface to set the parameters will 
+      be displayed as below</p>
+    <p>  Set the following parameters: </p>
+    <p>1. Select Bairros theme in Theme field. </p>
+    <p>2. In Population in Risk field, select the table and the column with population 
+      data: Bairros and POP2000. </p>
+    <p>3. In Number of Cases field, select the table and the column with the ratio 
+      numerator data (homicides in 2000): Bairros and HOM2000. </p>
+    <p>4. Select 100000 in Multiplicative Rate Correction field. </p>
+    
+  <p>5. Apply to create the new column named GEBayes. If required, change the 
+    name in <em>New Column Name</em> field. </p>
+  <p align=center><img border=0 src="terraViewBase_arquivos/taxa_basyana.png"></p>
+    <p><strong>Gross and Bayesian empirical ratios comparison</strong></p>
+    <p>The figure below presents a graph with X axis displaying the gross ratio 
+      values and the Y axis displaying the global Bayesian ratio values that were 
+      calculated in the previous step. Observe that there is a strong association 
+      between the values, however it is important to point out that the scales 
+      are different.</p>
+  <p align=center><img border=0 src="terraViewBase_arquivos/compara_taxa_basyana.png"></p>
+    <p><strong>Thematic maps creation from ratios</strong> </p>
+    <p>Finally, draw the maps based on gross ratios and on Bayesian ratios. A comparison 
+      between the maps will be possible and the differences will be observed. 
+      With an active theme (Bairros), use Edit Legend option in its popup menu 
+      to create a thematic map of Quantil (4 slices). The figure below presents 
+      the municipalities according to gross ratio by 100 mil people groups.</p>
+  <p align=center> <img border=0 src="terraViewBase_arquivos/mapa_taxa.png"></p>
+  <p>Create a map with the same characteristics of the previous map, but using information 
+  from Global Bayesian Empirical ratio. Although the maps look similar, observe 
+  that the map scale changes. </p>
+  <p align=center> <img border=0 src="terraViewBase_arquivos/mapa_taxa1.png"></p>
+  <hr size=2 width="100%" align=center>
+  <p align=right> <a href="criando_graficos_tortas_mapa.htm">&lt;&lt; 
+    Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="metodo_skater.htm">Next 
+    &gt;&gt;</a></p>
+</font></span>
+	</div>
+
+</body>
+
+</html>

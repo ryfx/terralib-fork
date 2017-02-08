@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Visual</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<font face="Arial, Helvetica, sans-serif" size="4">
+<table width="100%">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><b>Notes on Visual</b><br>
+      <hr>
+      <p>When a map is created, it is drawn with the default visual, which can be changed 
+        at any time. In TerraView, the default visual can be changed by user choice. 
+        TerraView allows changing the default visual of polygons (or cells), lines, points, 
+        and text. <br>
+        The default visual defines the visual characteristics of a map when no analysis 
+        has been executed, that is, it is a map where all polygons, lines, points 
+        and texts are drawn with the visual of their representations. 
+        The most simple type of object highlighting is to define a own visual to an object. <br>
+        In TerraView, own visuals are defined over the representations using 
+        default visual. This means that own visual has higher priority than default visual. 
+        Therefore, an object with own visual will be drawn with its own visual instead of 
+        being drawn with the default visual. Once the own visual is removed, 
+        representations will be drawn with the default visual. 
+        This feature is relevant if the user wants to highlight objects with an important 
+        characteristic.<br>
+        The next visual in priority order in TerraView is the grouping visual. 
+        This visual overwrites own visual and default visual. In TerraView, every time 
+        a grouping is executed, own visual are lost temporaly. Own visuals exist only when there is no 
+        grouping (legend). When objects are ungrouped, their representations recover their 
+        default visual or own visual for drawing. 
+        <br>
+        Query visual is used to highlight objects selected by the query module. 
+        Query visual changes only the color of selected objects. Objects are drawn keeping the 
+        same style, size, and type of the representations. 
+        Therefore, if a selected object is drawn in default visual 
+        by a crosshatched polygon, this polygon will be drawn using the same crosshatch with 
+        the color defined by the query visual. If an object is drawn using grouping visual, 
+        this object will be drawn using the style, size, and type defined by the grouping 
+        visual, with the color changed to the color of the query visual. The concept is to allow 
+        the user to be able to visualize which objects satisfy the restriction, independent 
+        from the fact of the object being grouped or not. <br>
+        Highlighting is also applied to the lines of the table in order to enable the user 
+        to verify the attributes of objects selected by the query. <br>
+        Removal of the query will make the map to be drawn using the visuals of the object 
+        previous to the query. That is, TerraView retrieves the map as it was drawn before 
+        the query. The table will also be drawn as it was before the query. <br>
+        Pointing visual changes only the color of the pointed object and keeps other previous 
+        characteristics. In this case, it does not matter if the 
+        pointed object was drawn using the default, own, grouping, or query visual. 
+        The concept is to allow the user to visualize the pointed 
+        object. <br>
+        Pointing can be made from table to map and from map to table. 
+        In the first case, by pointing to the characteristics on the table, 
+        the user can find out where the object is located on the map and discover 
+        its shape, neighborhood, etc. In the second case, 
+        by pointing to a representation on the map, the user 
+        can discover, on the table, which are its characteristics. 
+        <br>
+        Finally, TerraView defines a visual to distinguish where the intersections 
+        between pointing and query at the same time are. That is, which are the objects that are 
+        selected by a query and pointed at the same time. 
+        <br>
+        Every object, independent of the executed query, will have its 
+        line in the grid (table) highlighted, with the same color of the representation 
+        (polygon, line, point) being used in the Draw Area.</p>
+      </td>
+  </tr>
+  <tr>
+  </tr>
+</table>
+</font> 
+</body>
+</html>

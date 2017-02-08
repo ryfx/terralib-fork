@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>TerraView</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<p><font size="3" face="Arial"><strong>TerraView  </strong> </font></p>
+<p align="right"><font face="Arial"><a href="modificando_legenda.htm">&lt;&lt; 
+  Anterior</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">In&iacute;cio</a> | <a href="criando_graficos_tortas_mapa.htm">Próximo 
+  &gt;&gt;</a><font face="Arial"> </font> </font></p>
+<hr>
+<font face="Arial"> 
+<p align="center"><font size="4" face="Arial"><strong><u><strong>Criando Gr&aacute;ficos 
+  de Barras no Mapa</strong></u></strong></font></p>
+</font><p>&nbsp;</p>
+      <p  ><font face="Arial">O Editor de Legenda tamb&eacute;m 
+        permite associar gr&aacute;ficos &agrave;s &aacute;reas do mapa, ilustrando 
+        alguns de seus atributos. Est&atilde;o dispon&iacute;veis gr&aacute;ficos 
+        de barras e gr&aacute;ficos de torta, nos quais diversos atributos podem 
+        ser visualizados simultaneamente.</font></p>
+      <p  ><font face="Arial"> Os gr&aacute;ficos de barra s&atilde;o 
+        apropriados para analisar a diferen&ccedil;a em valores absolutos, enquanto 
+        os gr&aacute;ficos de torta permitem analisar propor&ccedil;&otilde;es 
+        em cada uma das &aacute;reas. </font></p>
+      <p  ><font face="Arial">Abra o banco de dados BH.mdb. Desative 
+        todos os temas da vista BH, exceto SetoresCensitarios. Com este tema selecionado, 
+        pressione o bot&atilde;o Desenhar <img src="terraViewBase_arquivos/botao_desenhar.png" width="20" height="20">. 
+        Se os pol&iacute;gonos do mapa estiverem transparentes, use o menu popup 
+        do tema SetoresCensitarios e escolha Visual &gt; Default; escolha Estilo 
+        como S&oacute;lido e pressione Executar. </font></p>
+      <p  ><font face="Arial">Vamos ent&atilde;o analisar como foi 
+        a evolu&ccedil;&atilde;o do n&uacute;mero de crimes em cada um dos setores 
+        censit&aacute;rios de Belo Horizonte nos anos de 2000 e 2001.</font></p>
+      <p  ><font face="Arial"> Torne o tema SetoresCensitarios ativo.</font></p>
+        
+        <p  ><font face="Arial">1. Ative o menu popup do tema SetoresCensitarios.</font></p>
+        
+<p  ><font face="Arial">2. Selecione <strong>Editar Legenda</strong>.</font></p>
+        <p  ><font face="Arial">3</font><font face="Arial">. No 
+          Editor de Legendas escolha Gr&aacute;fico de Barras e Tortas.</font></p>
+        <p  ><font face="Arial">4</font><font face="Arial">. No 
+          campo Tipo escolha Gr&aacute;fico de Barras.</font></p>
+        <p  ><font face="Arial">5</font><font face="Arial">. N&atilde;o 
+          &eacute; necess&aacute;rio modificar os campos de Altura e Largura.</font></p>
+        <p  ><font face="Arial">6. No campo Atributo escolha Setores.HOM_2000.</font></p>
+        <p  ><font face="Arial">7</font><font face="Arial">. Clique 
+          em Inserir. Note que o atributo &eacute; representado na grade lateral.</font></p>
+        <p  ><font face="Arial">8. Novamente no campo Atributo escolha 
+          agora Setores.HOM_2001 e clique em Inserir.</font></p>
+        
+<p  ><font face="Arial"> 9. Clique no bot&atilde;o <strong>Executar</strong>. 
+  </font></p>
+       
+      <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/legenda.png" width="497" height="382" border="1"> 
+        </font></p>
+      <p  ><font face="Arial">Agora, para cada setor censit&aacute;rio 
+        de Belo Horizonte, h&aacute; duas barras representando os homic&iacute;dios 
+        nos anos de 2000 e 2001. Note que os par&acirc;metros do gr&aacute;fico 
+        foram inseridos na &Aacute;rvore de Vistas, sob o tema SetoresCensitarios.</font></p>
+      <p  ><font face="Arial"><strong>Modificando a legenda</strong></font></p>
+      <p  ><font face="Arial">Para modificar sua legenda voc&ecirc; 
+        tem duas op&ccedil;&otilde;es:</font></p>
+        
+        
+<p  ><font face="Arial">1. Ative o menu popup do tema SetoresCensit&aacute;rios 
+  e escolha a op&ccedil;&atilde;o <strong>Editar Legenda</strong> e em seguida 
+  <strong>Gr&aacute;fico de Barras e Tortas</strong>.</font></p>
+        
+<p  ><font face="Arial">2. Ative o menu popup da legenda (Gr&aacute;fico de Barras) 
+  exibida junto ao tema SetoresCensitarios e escolha a op&ccedil;&atilde;o <strong>Editar 
+  Gr&aacute;fico de Barras / Torta.</strong></font></p>
+       
+      <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/modificando_legenda3.png" border="1"></font></p>
+      <p  ><font face="Arial">Escolhendo qualquer uma das op&ccedil;&otilde;es 
+        acima, a janela do Editor de Legenda ser&aacute; aberta.</font></p>
+      <p  >&nbsp;</p>
+      <p  ><font face="Arial"><strong>Modificando os r&oacute;tulos 
+        da legenda</strong></font></p>
+      <p  ><font face="Arial">Os r&oacute;tulos exibidos s&atilde;o 
+        os nomes com as cores das colunas que voc&ecirc; escolheu como atributo. 
+        Para alter&aacute;-los voc&ecirc; deve: </font></p>
+        
+        <p  ><font face="Arial">4. Clique com o bot&atilde;o direito 
+          sobre o r&oacute;tulo (barra) que voc&ecirc; quer alterar.</font></p>
+        <p  ><font face="Arial">Voc&ecirc; tamb&eacute;m pode alterar 
+          o nome e a cor das barras da seguinte forma:</font></p>
+        <p  ><font face="Arial">5. Clique com o bot&atilde;o direito 
+          sobre a barra que voc&ecirc; quer alterar.</font></p>
+        
+<p  ><font face="Arial">6. Escolha a op&ccedil;&atilde;o <strong>Definir Alias</strong>.</font></p>
+        <p  ><font face="Arial">7. Defina o novo nome da barra e 
+          tecle Enter.</font></p>
+        
+<p  ><font face="Arial">8. Para recuperar o nome anterior escolha a op&ccedil;&atilde;o 
+  <strong>Remover Alias</strong>.</font></p>
+        
+<p  ><font face="Arial">9. Para modificar a cor do grupo escolha a op&ccedil;&atilde;o 
+  <strong>Alterar Cor</strong>.<br>
+          </font></p>
+       
+      <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/modificando_rotulo_legenda.png" width="254" height="208" border="1"> 
+        </font></p>
+      <p  ><font face="Arial">N&atilde;o &eacute; poss&iacute;vel 
+        manter mais de um gr&aacute;fico sobre o mesmo tema. A cria&ccedil;&atilde;o 
+        de um novo gr&aacute;fico ir&aacute; sobreescrever o anterior. Por&eacute;m, 
+        &eacute; poss&iacute;vel manter um mapa tem&aacute;tico e um gr&aacute;fico 
+        para o mesmo tema.</font></p>
+      <p  ><font face="Arial"><strong>Excluindo o gr&aacute;fico</strong></font></p>
+      
+<p  ><font face="Arial">Ative o menu popup da legenda Gr&aacute;fico de Barras 
+  exibida junto ao tema SetoresCensitarios e escolha a op&ccedil;&atilde;o <strong>Remover 
+  Gr&aacute;fico de Barras / Torta.</strong></font></p>
+   <p>&nbsp;</p>
+       
+    <hr>
+<p align="right"><font face="Arial"><a href="modificando_legenda.htm">&lt;&lt; 
+  Anterior</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">In&iacute;cio</a> | <a href="criando_graficos_tortas_mapa.htm">Próximo 
+  &gt;&gt;</a><font face="Arial"> </font></font></p>
+<font face="Arial"><p  ><font face="Arial"> </font></p>
+</font><font face="Arial"></font> 
+</body>
+</html>

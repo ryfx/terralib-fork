@@ -1,0 +1,45 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>WMSPopupWidget</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>WMSPopupWidget</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>516</width>
+            <height>294</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+</widget>
+<includes>
+    <include location="local" impldecl="in implementation">WMSPopupWidget.ui.h</include>
+</includes>
+<forwards>
+    <forward>class TeQtThemeItem;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable access="private">TeQtThemeItem* themeItem_;</variable>
+    <variable access="private">Help* help_;</variable>
+</variables>
+<slots>
+    <slot>showProperties()</slot>
+    <slot>removeItem()</slot>
+    <slot>showLegend()</slot>
+    <slot>hideLegend()</slot>
+    <slot>showHelp()</slot>
+    <slot>associateSLDURL()</slot>
+    <slot>associateSLDFile()</slot>
+    <slot>clearSLD()</slot>
+</slots>
+<functions>
+    <function specifier="non virtual">init( TeQtThemeItem * themeItem, const int &amp; x, const int &amp; y )</function>
+    <function>destroy()</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

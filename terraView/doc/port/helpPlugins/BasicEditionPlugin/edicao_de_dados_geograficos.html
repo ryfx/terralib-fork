@@ -1,0 +1,233 @@
+<html>
+<head>
+<title>Edi&ccedil;&atilde;o de Dados Vetoriais</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" >
+<font face="Arial, Helvetica, sans-serif" size="4">
+<table width="100%">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><b>Edi&ccedil;&atilde;o de Dados Vetoriais</b><br>
+      <hr>
+      <br />
+      Esta funcionalidade permite editar um plano de informação vetorial com informação geográfica nas 
+	  representações geométricas do tipo linha, polígono e/ou ponto.<br />
+      <p>As ferramentas de edição vetorial que serão habilitadas são específicas para a representação do tema ativo, 
+      por exemplo, ponto, linha ou polígono. Quando o tema possuir mais de uma representação, 
+      o usuário deverá selecionar através da lista de representações do tema mostrada em 
+      <img src="BasicEditionPlugin/imagens/icone63.png"> <b>Representação Geométrica</b>, com qual representação deseja trabalhar.
+      <br />
+	  <p>Além da edição das geometrias, é possível a edição dos  dados alfanuméricos associados ao tema em edição.<br /><br />
+       <b>Ferramentas Disponíveis para Edição</b>    <br />
+     
+<br />
+      <div align="center">
+	  <table width="80%" border="1" align="center">
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone21.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Selecionar</b>: habilita o cursor para selecionar 
+            geometrias na &aacute;rea de visualiza&ccedil;&atilde;o. O usu&aacute;rio 
+            poder&aacute; selecionar v&aacute;rias geometrias por apontamento 
+            (estando com a tecla <i>CTRL</i> pressionada).</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone30.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Criar ponto</b>: habilita o cursor para criar um 
+            ponto.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone29.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Criar linha ponto a ponto</b>: habilita o cursor 
+            para criar uma linha ponto a ponto. Para finalizar a linha, o usu&aacute;rio 
+            dever&aacute; clicar com o bot&atilde;o direito do mouse.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone44.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Criar linha cont&iacute;nua</b>: habilita o cursor 
+            para criar uma linha de forma cont&iacute;nua. Para finalizar a linha, 
+            o usu&aacute;rio dever&aacute; clicar com o bot&atilde;o direito do 
+            mouse.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone45.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Criar Pol&iacute;gono Ponto a Ponto</b>: habilita 
+            o cursor para criar um pol&iacute;gono ponto a ponto. Para finalizar 
+            o pol&iacute;gono, o usu&aacute;rio dever&aacute; clicar com o bot&atilde;o 
+            direito do mouse, fazendo com que o &uacute;ltimo ponto seja automaticamente 
+            ligado ao ponto inicial.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone46.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Criar Pol&iacute;gono Cont&iacute;nuo</b>: habilita 
+            o cursor para criar um pol&iacute;gono de forma cont&iacute;nua. Para 
+            finalizar o pol&iacute;gono, o usu&aacute;rio dever&aacute; clicar 
+            com o bot&atilde;o direito do mouse, fazendo com que o &uacute;ltimo 
+            ponto seja automaticamente ligado ao ponto inicial.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone47.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Inserir V&eacute;rtices</b>: habilita o cursor para 
+            inserir v&eacute;rtices em uma linha ou em um pol&iacute;gono selecionado.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone48.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Remover V&eacute;rtices</b>: habilita o cursor para 
+            remover v&eacute;rtices de uma linha ou de um pol&iacute;gono selecionado.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone49.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Mover V&eacute;rtices</b>: habilita o cursor para 
+            mover v&eacute;rtices das geometrias selecionadas.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone50.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Juntar linhas</b>: habilita o cursor para juntar 
+            as linhas que estão selecionadas, fazendo com que estas possuam 
+            uma extremidade em comum. Cada uma das linhas continuar&aacute; existindo.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone51.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Agregar Área</b>: Agrega área ao polígono já existente. 
+          Para a utilização dessa ferramenta, selecione um polígono, em seguida selecione a ferramenta Agregar Área, desenhe a área a ser agregada passando 
+          pelo polígono selecionado e, para finalizar, clique com o botão direito do mouse. </td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone52.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Subtrair Área</b>: Remove área do polígono já existente. Para a utilização dessa ferramenta selecione um polígono, em seguida selecione a ferramenta Subtrair Área, 
+          desenhe a área a ser removida passando pelo polígono selecionado e, para finalizar, clique com o botão direito do mouse.
+          </td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone53.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Mover geometria</b>: habilita o cursor para mover 
+            as geometrias selecionadas.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone54.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Remover Geometrias</b>: remove as geometrias selecionadas.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone55.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Desfazer</b>: desfaz a &uacute;ltima a&ccedil;&atilde;o 
+            de edi&ccedil;&atilde;o realizada.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone56.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Refazer</b>: refaz a a&ccedil;&atilde;o de edi&ccedil;&atilde;o 
+            desfeita anteriormente.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone57.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Salvar</b>: salva no banco de dados as geometrias que foram criadas 
+            e/ou editadas.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone58.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Cancelar todas as Edi&ccedil;&otilde;es</b>: cancela 
+            todas as a&ccedil;&otilde;es de edi&ccedil;&atilde;o efetuadas que 
+            ainda n&atilde;o foram salvas no banco de dados.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone63.png"></div>
+          </td>
+          <td width="90%"> <b>Representa&ccedil;&atilde;o Geom&eacute;trica</b>: 
+            representa o tipo de geometria que ser&aacute; editado. Ao ser alterado 
+            pelo usu&aacute;rio, ser&atilde;o habilitadas somente as ferramentas 
+            que podem ser utilizadas para o tipo de geometria escolhido.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone59.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Snap</b>: estando ligado (cor verde), ser&aacute; 
+            mostrado o ponto mais pr&oacute;ximo da posi&ccedil;&atilde;o do cursor 
+            do mouse, o qual ser&aacute; capturado e utilizado pela ferramenta 
+            em uso caso o bot&atilde;o do mouse seja pressionado.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone60.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Verificar Topologia antes de salvar</b>: Imp&otilde;e a verifica&ccedil;&atilde;o 
+            da topologia impedindo o salvamento em caso de erros.</td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone61.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Exibir Erros de Topologia</b>: Verifica a existência de erros de topologia, sinalizando em amarelo os objetos novos que se sobrepõem a objetos novos ou objetos já salvos no banco de dados. </td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone62.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Mostrar Atributos</b>: Exibe a janela Atributos com 
+            os dados do objeto selecionado e permite a sua altera&ccedil;&atilde;o. 
+          </td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone72.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Preferências</b>: permite que o usuário configure opções que afetam o processo de edição. 
+          </td>
+        </tr>
+        <tr> 
+          <td width="10%"> 
+            <div align="center"><img src="BasicEditionPlugin/imagens/icone73.png" width="30" height="30"></div>
+          </td>
+          <td width="90%"><b>Ajuda</b>: exibe a janela de ajuda. 
+          </td>
+        </tr>
+        
+      </table>
+	  </div>
+      
+    </td>
+  </tr>
+
+</table>
+</font> 
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>GraphicWindow</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>GraphicWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>555</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Graphic Display</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+</widget>
+<toolbars>
+</toolbars>
+<includes>
+    <include location="global" impldecl="in implementation">qcombobox.h</include>
+    <include location="global" impldecl="in implementation">TeQtGrid.h</include>
+    <include location="global" impldecl="in implementation">TeAppTheme.h</include>
+    <include location="global" impldecl="in implementation">TeDatabase.h</include>
+    <include location="global" impldecl="in implementation">graphicParams.h</include>
+    <include location="global" impldecl="in implementation">terraViewBase.h</include>
+    <include location="global" impldecl="in implementation">qapplication.h</include>
+    <include location="global" impldecl="in implementation">qlineedit.h</include>
+    <include location="global" impldecl="in implementation">qcheckbox.h</include>
+    <include location="global" impldecl="in implementation">qpopupmenu.h</include>
+    <include location="global" impldecl="in declaration">qwt_double_rect.h</include>
+    <include location="global" impldecl="in declaration">TeQwtPlot.h</include>
+    <include location="global" impldecl="in declaration">set</include>
+    <include location="global" impldecl="in declaration">string</include>
+    <include location="global" impldecl="in declaration">vector</include>
+    <include location="global" impldecl="in declaration">TeDataTypes.h</include>
+    <include location="global" impldecl="in declaration">TePDIHistogram.hpp</include>
+    <include location="global" impldecl="in declaration">qwt_symbol.h</include>
+    <include location="global" impldecl="in declaration">TeMatrix.h</include>
+    <include location="local" impldecl="in implementation">graphic.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TePlotWidget;</forward>
+    <forward>class TeCoord2D;</forward>
+    <forward>class GraphicParams;</forward>
+    <forward>class TeDatabase;</forward>
+    <forward>class TeAppTheme;</forward>
+    <forward>class TeQtGrid;</forward>
+    <forward>class TerraViewBase;</forward>
+    <forward>class QPopupMenu;</forward>
+    <forward>class TeQwtPlotCurve;</forward>
+    <forward>class TeQwtPlotZoomer;</forward>
+    <forward>class QToolButton;</forward>
+    <forward>class QwtPlotGrid;</forward>
+    <forward>class QwtPlotMarker;</forward>
+    <forward>using namespace std;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable>Help* help_;</variable>
+    <variable access="public">QColor pointingColor_;</variable>
+    <variable access="public">QColor defaultColor_;</variable>
+    <variable access="public">QFont verticalAxisFont_;</variable>
+    <variable access="public">QFont horizontalAxisFont_;</variable>
+    <variable access="public">QColor backgroundColor_;</variable>
+    <variable access="public">QPen minorLinePen_;</variable>
+    <variable access="public">QPen majorLinePen_;</variable>
+    <variable access="public">bool verticalMajorVisible_;</variable>
+    <variable access="public">bool verticalMinorVisible_;</variable>
+    <variable>QwtPlotGrid* plotGrid_;</variable>
+    <variable>string title_;</variable>
+    <variable>string labelBottom_;</variable>
+    <variable>string labelLeft_;</variable>
+    <variable>bool zoomInit_;</variable>
+    <variable>QwtPlotMarker* markerHH_;</variable>
+    <variable>QToolButton *zoomToolButton_;</variable>
+    <variable>double moranVy_[2];</variable>
+    <variable>double moranVx_[2];</variable>
+    <variable>double moranHy_[2];</variable>
+    <variable>double moranHx_[2];</variable>
+    <variable>bool moran_;</variable>
+    <variable>double ymaxaxis_;</variable>
+    <variable>int rxaxis_;</variable>
+    <variable>int ryaxis_;</variable>
+    <variable>double xmaxaxis_;</variable>
+    <variable>double yminaxis_;</variable>
+    <variable>double xminaxis_;</variable>
+    <variable>TerraViewBase* mainWindow_;</variable>
+    <variable>enum { Histogram, NormalProbability, Dispersion, RasterHistogram, Skater, Semivariogram };</variable>
+    <variable>double EPS_;</variable>
+    <variable>int ITMAX_;</variable>
+    <variable access="public">int gploted_;</variable>
+    <variable>string yaxis_;</variable>
+    <variable>string xaxis_;</variable>
+    <variable>bool mleaved_;</variable>
+    <variable>int mpressy_;</variable>
+    <variable>int mpressx_;</variable>
+    <variable>int ch_;</variable>
+    <variable>int cw_;</variable>
+    <variable>bool shiftPress_;</variable>
+    <variable>double stdev_;</variable>
+    <variable>double mean_;</variable>
+    <variable>double* my_;</variable>
+    <variable>double* mx_;</variable>
+    <variable>double* ny_;</variable>
+    <variable>double* nx_;</variable>
+    <variable>double* y_;</variable>
+    <variable>double* x_;</variable>
+    <variable>vector&lt;double&gt; vmy_;</variable>
+    <variable>vector&lt;double&gt; vmx_;</variable>
+    <variable>vector&lt;double&gt; vny_;</variable>
+    <variable>vector&lt;double&gt; vnx_;</variable>
+    <variable>vector&lt;double&gt; vy_;</variable>
+    <variable>vector&lt;double&gt; vx_;</variable>
+    <variable>long double ymax_;</variable>
+    <variable>long double ymin_;</variable>
+    <variable>long double xmax_;</variable>
+    <variable>long double xmin_;</variable>
+    <variable>GraphicParams* graphicParams_;</variable>
+    <variable>TeDatabase* db_;</variable>
+    <variable>TeAppTheme* theme_;</variable>
+    <variable>TeQtGrid* grid_;</variable>
+    <variable>int graphicType_;</variable>
+    <variable>int slices_;</variable>
+    <variable>string attributeX_;</variable>
+    <variable>string attributeY_;</variable>
+    <variable>TeSelectedObjects selectedObjects_;</variable>
+    <variable>TeQwtPlot *plot_;</variable>
+    <variable>TeQwtPlotCurve *dataSelCurve_;</variable>
+    <variable>TeQwtPlotZoomer *zoomer_;</variable>
+    <variable>QToolButton *nextToolButton_;</variable>
+    <variable>QToolButton *previousToolButton_;</variable>
+    <variable>TeQwtPlotCurve* dataCurve_;</variable>
+    <variable>QwtPlotMarker* markerLL_;</variable>
+    <variable>QwtPlotMarker* markerLH_;</variable>
+    <variable>QwtPlotMarker* markerHL_;</variable>
+    <variable>QwtPlotMarker* marker_;</variable>
+    <variable>QToolButton *promoteToolButton_;</variable>
+    <variable access="public">QwtSymbol dispersionSymbol_;</variable>
+    <variable access="public">QPen histogramPen_;</variable>
+    <variable access="public">QPen rasterHistogramPen_;</variable>
+    <variable access="public">QBrush rasterHistogramBrush_;</variable>
+    <variable access="public">QPen normalCurvePen_;</variable>
+    <variable access="public">QPen normalProbCurvePen_;</variable>
+    <variable access="public">bool horizontalMinorVisible_;</variable>
+    <variable access="public">bool horizontalMajorVisible_;</variable>
+    <variable access="public">QPen skaterPen_;</variable>
+    <variable access="public">QPen semivarCurvePen_;</variable>
+    <variable access="public">QPen semivarAdjustCurvePen_;</variable>
+</variables>
+<signals>
+    <signal>mousePressedSignal(int)</signal>
+</signals>
+<slots>
+    <slot access="protected">init()</slot>
+    <slot specifier="non virtual" returnType="float">erf( float x )</slot>
+    <slot specifier="non virtual" returnType="float">gammln( float xx )</slot>
+    <slot specifier="non virtual" returnType="float">gammp( float a, float x )</slot>
+    <slot specifier="non virtual">gcf( float * gammcf, float a, float x, float * gln )</slot>
+    <slot specifier="non virtual">getHistogramValues()</slot>
+    <slot specifier="non virtual">getNormalValues()</slot>
+    <slot specifier="non virtual">getProbNormalValues()</slot>
+    <slot specifier="non virtual">getScatterValues()</slot>
+    <slot specifier="non virtual">getSelTabScatterValues()</slot>
+    <slot specifier="non virtual">gser( float * gamser, float a, float x, float * gln )</slot>
+    <slot specifier="non virtual">plotGraphic()</slot>
+    <slot specifier="non virtual">plotSelTable()</slot>
+    <slot specifier="non virtual">applyGraphic()</slot>
+    <slot access="protected">closeEvent( QCloseEvent * )</slot>
+    <slot specifier="non virtual">hide()</slot>
+    <slot specifier="non virtual">show()</slot>
+    <slot specifier="non virtual">getGraphicParamsSlot()</slot>
+    <slot specifier="non virtual" returnType="double">ymaxaxis()</slot>
+    <slot specifier="non virtual" returnType="double">xmaxaxis()</slot>
+    <slot specifier="non virtual" returnType="double">xminaxis()</slot>
+    <slot specifier="non virtual" returnType="double">yminaxis()</slot>
+    <slot specifier="non virtual" returnType="int">rxaxis()</slot>
+    <slot specifier="non virtual" returnType="int">ryaxis()</slot>
+    <slot specifier="non virtual">print()</slot>
+    <slot>mousePressedSlot( int buttom, int state, QwtDoubleRect dr )</slot>
+    <slot>zoomToggledSlot( bool b )</slot>
+    <slot>previousZoomSlot()</slot>
+    <slot>nextZoomSlot()</slot>
+    <slot>previousZoomEnableSlot( bool b )</slot>
+    <slot>nextZoomEnableSlot( bool b )</slot>
+    <slot>graphicCursorActivatedSlot( bool b )</slot>
+    <slot>putColorOnObjectSlot( TeAppTheme *, set&lt;string&gt; &amp; )</slot>
+    <slot>promoteToggledSlot( bool b )</slot>
+    <slot>plotRasterHistogram( TePDIHistogram hist )</slot>
+    <slot>configurationSlot()</slot>
+    <slot>helpSlot()</slot>
+</slots>
+<functions>
+    <function>setSkaterValues( vector&lt;double&gt; &amp; setX, vector&lt;double&gt; &amp; setY )</function>
+    <function>setSemiVariogramValues( TeMatrix &amp; mx, TeMatrix &amp; mod )</function>
+    <function>setAttributeTitle( const string &amp; name )</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

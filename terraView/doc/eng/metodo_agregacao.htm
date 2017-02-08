@@ -1,0 +1,59 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>TerraView</title>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+<div class=Section1> 
+  <p> <font size="3" face="Arial, Helvetica, sans-serif"><strong> <span style='font-family:"Arial","sans-serif";'> 
+    TerraView</span> </strong> </font></p>
+  <p align=right> <font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family:Arial'> 
+    <a href="operacoes_geograficas.htm">&lt;&lt; Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> 
+    | <a href="metodo_soma.htm">Next &gt;&gt;</a> </span> </font></p>
+  <hr size=2 width="100%" align=center>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><strong><u> 
+    <span style='font-size: 13.5pt;font-family:Arial'>Aggregation Method</span></u></strong></font></p>
+  <p> 
+  <div align="justify"><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family:Arial'> 
+    <p>Aggregation operation uses n objects as input to create one object in the 
+    output. Every new object has only one record in the attributes table and is 
+    usually presented by many geometries. For instance, a map of Brazil represented 
+    by its 5505 municipalities (excluding islands) can be used to create a map 
+    with states by aggregating municipality polygons and obtaining the 27 Brazilian 
+    states. </p>
+    <p>The layer resulting from the operation (states map) has geometries and table 
+    attributes created from an aggregating attribute (column with states identification 
+    in a municipalities table) selected in the input theme. This operation creates 
+    one object (polygon representing one state) for each distinct value of this 
+    attribute and each created object contains the summary of the attributes in 
+    the input theme.</p>
+    <p>In the example below, UP (Planning Units for Belo Horizonte city) theme will 
+    be transformed in a new theme representing Administrative Districts of the 
+    city. UP table has 62 lines, each line corresponding to one of the 62 polygons 
+    representing Planning Units. The table has also a column named Id_Dist that 
+    represents the identification for each Administrative District. Belo Horizonte 
+    city has 9 Administrative Districts, each one containing a given number of 
+    Planning Units.</p>
+    <p>Aggregation geographic operation will create a new theme that can be used 
+    to visualize how Belo Horizonte city is divided in Administrative Districts. 
+    An important characteristic of aggregation procedure is that the user can 
+    choose attributes and how these attributes will be available in the output 
+    theme table. </p>
+  <p align=center><img border=0 id="_x0000_i1028" src="terraViewBase_arquivos/criar_plano_agregado.png"> </p>
+  <p>1. Define the theme with attributes to be aggregated;</p>
+  <p>2. Define table attribute with the information used for aggregation;</p>
+  <p>3. Select the name of the theme created by the aggregation;</p>
+  <p>4. Select the attributes to be transferred to aggregated table and the aggregation operation (sum, mean, median, count, etc...)</p>
+  <p>The maps below illustrate the aggregation procedure.</p>
+  <p align=center> <img border=0 id="_x0000_i1027" src="terraViewBase_arquivos/mapa_tematico.png"></p>
+  <hr size=2 width="100%" align=center>
+  <p align=right> <font size="3" face="Arial, Helvetica, sans-serif"><a href="operacoes_geograficas.htm">&lt;&lt; 
+    Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="metodo_soma.htm">Next 
+    &gt;&gt;</a> </font></p>
+  </span> </div>
+
+</body>
+
+</html>

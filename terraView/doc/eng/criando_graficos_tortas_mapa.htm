@@ -1,0 +1,62 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>TerraView</title>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+<div align="justify"><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family:"Arial","sans-serif";'> 
+  <p><strong>TerraView</strong></p>
+  <p align=right> <font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family:Arial'> 
+    <a href="criando_graficos_barras_mapa.htm">&lt;&lt; Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> 
+    | <a href="taxas_bayesianas_empiricas.htm">Next &gt;&gt;</a> </span> </font></p>
+  <hr size=2 width="100%" align=center>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><strong><u> 
+    <span style='font-size: 13.5pt;font-family:Arial'>Creating Pie Chart on the 
+    Map</span> </u></strong> </font></p>
+    <p>Homicides in the years 2000 and 2001 can be analyzed by another approach: 
+      by checking the proportion between the total of homicides in the two years 
+      for each census tracts. A pie chart is used for this type of analysis.</p>
+    <p>Create a new column called Total00_01 in SetoresCensitarios theme by using the 
+      popup menu from the column header in the Grid area, selecting Add Column 
+      option, and choosing Setores table. </p>
+    
+  <p>Once the column is created, it must be filled in with the sum of homicides 
+    in the years 2000 and 2001 provided by HOM_2000 and HOM_2001 columns, respectively. 
+    To fill in, right click on the column label and select <strong>Change Column 
+    Data</strong>. </p>
+
+  <p align=center> <img border=0 src="terraViewBase_arquivos/alterar_dados_coluna.png"> </p>
+  <p>Then create a thematic map with Equal Steps by using Setores.Total00_01 attribute 
+    to color municipalities based on homicides total in the years 2000 and 2001. 
+    (Select 5 intervals). </p>
+  <p align=center> <img border=0 src="terraViewBase_arquivos/alterar_dados_coluna1.png"> </p>
+  <p>Finally, to create a legend by Pie Charts, which allows the analysis of the homicides 
+  proportion in each year, execute the following steps: </p>
+  <p>1. Activate the popup menu of SetoresCensitarios theme. </p>
+  <p>2. Select <strong>Edit Bar or Pie Chart.</strong> </p>
+  <p>3. In Type field, select <em>Pie Chart</em>. </p>
+  <p>4. In Attribute field, select Setores.HOM_2000. </p>
+  <p>5. Click Insert. Observe that the attribute is represented in the grid. </p>
+  <p>6. In Attribute field again, select Setores.HOM_2001, and click Insert. </p>
+  <p>7. Select Fixed Size to keep the graphic size when the map scale is changed.</p> 
+  <p>8. Click <em>OK</em> button. </p>
+  <p align=center> <span style="font-family:Arial"><font size="3" face="Arial, Helvetica, sans-serif"><img border=0 id="_x0000_i1028" src="terraViewBase_arquivos/alterar_dados_coluna2.png"> 
+    </font></span></p>
+  <span style="font-family:Arial"><font size="3" face="Arial, Helvetica, sans-serif">
+  <div align="justify">Observe that the map, in addition to being colored by the 
+    total number of homicides, presents the proportion between the years 2000 
+    and 2001 for each municipality. </div>
+  </font> </span>
+  <p align=center> <span style="font-family:Arial"><font size="3" face="Arial, Helvetica, sans-serif"><img border=0 id="_x0000_i1027" src="terraViewBase_arquivos/grafico_torta.png"> 
+    </font></span></p>
+  <hr size=2 width="100%" align=center>
+  <p align=right> <span style="font-family:Arial"><font size="3" face="Arial, Helvetica, sans-serif"><a href="criando_graficos_barras_mapa.htm">&lt;&lt; 
+    Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="taxas_bayesianas_empiricas.htm">Next 
+    &gt;&gt;</a> </font></span></p>
+  </font></div>
+
+</body>
+
+</html>

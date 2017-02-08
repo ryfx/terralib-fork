@@ -1,0 +1,160 @@
+This is TerraView WMS Client Plugin 
+===================================
+         (version 0.1.3)
+
+TerraView Client WMS is a multiplatform C++ plugin
+for OGC Web Map Service.
+
+The version 0.1.3 fix some bux in 0.1.2 version.
+Please, see the file CHANGES
+
+The TerraView Client WMS Plugin 0.1.3 series is binary
+compatible with the 3.2.0 series of TerraView and TerraLib.
+
+If you want to use TerraView Client WMS Plugin 0.1.3 on
+an unsupported version of Unix or Linux, please contact us
+at gribeiro@dpi.inpe.br that we
+can assist you.
+
+How to get TerraView Client WMS Plugin 0.1.3:
+---------------------------------------------
+
+- Windows binary version:
+http://www.dpi.inpe.br/~gribeiro/sig/terralib/wmsplugin-0.1.3-bin-win32.zip
+
+- Linux binary version:
+http://www.dpi.inpe.br/~gribeiro/sig/terralib/wmsplugin-0.1.3-bin-linux.zip
+
+- Source-code from CVS:
+Get the source code from TerraLib CVS:
+* cvs -d :pserver:anonymous@cvs.dpi.inpe.br:/home/newterraLib login
+* Type <enter> for the password as anonymous
+* cvs -d :pserver:anonymous@cvs.dpi.inpe.br:/home/newterraLib co terraViewPlugins
+* The plugin source is under the directory terraViewPlugins/wmsclient
+
+INSTALL:
+--------
+
+- Windows binary version:
+This package comes with a automatic installer,
+as any other windows applucation. Just execute the installer!
+
+PLATFORMS:
+----------
+
+We have tested this plugin in the following plataforms:
+* Windows XP
+* Linux - Mandriva 2007
+
+DOCUMENTATION:
+--------------
+
+The TerraView Client WMS Plugin 0.1.3
+has an HTML and PDF User's Guide, avaible at:
+http://www.dpi.inpe.br/~gribeiro/sig/terralib/terraview.php.
+
+After installation, you can access the plugins User's Guide
+in TerraView's plugins directory: under TerraView
+installation directory (plugins/doc/port/wmsclient).
+
+If you have downloaded the source code,
+look at the folder: terraViewPlugins/wmsclient/doc/help.
+
+BUILDING:
+---------
+
+This section explains how you can build
+the plugin from the source code.
+
+Be sure to have downloaded the following
+source code tree (under wmsclient directory):
+
+Directories:
+./build		    Platform/compiler and configuration files.
+./doc		    Plugin documentation in HTML format.
+./qtlinguistic  Qt translation file (only for Portuguese at the moment).
+./lib		    This directory will be created in building phase (not in CVS).
+./src		    Plugin source code.
+
+- Building on Windows:
+In the moment, the only type of project avaible
+is the Visual C++ for .net 2003. You will need the third-party
+libraries and the terraOGC module. Be sure that they
+are in a folder in the same level as TerraLib src,
+terralibw, terraView and terraViewPlugins. You must
+have the following structure for third-party libraries
+and the terraOGC module:
+/src
+/terralibw
+/terraView
+/terraViewPlugins
+/terraViewPlugins/wmsclient
+/extensions/terraOGC
+/extensions/terraManager
+/extensions/thirdparty
+
+In order to build, enter the directory
+build/win32-msvc.net-2003, open the solution file
+wmsclient.sln and build it. 
+
+- Build on Linux:
+Be sure to install the following libraries in your
+Linux system (their devel package):
+* xerces-c-2.7.0
+* libCurl
+You will need the terraOGC module. Be sure that it
+is in a folder in the same level as TerraLib src,
+terralibw, terraView and terraViewPlugins. You must
+have the following structure for the terraOGC module:
+/src
+/terralibw
+/terraView
+/terraViewPlugins
+/terraViewPlugins/wmsclient
+/extensions/terraOGC
+/extensions/terraManager
+
+Enter the directory build/linux,
+type qmake in order to create a
+Linux Makefile. Then type make.
+The plugin will be copied to
+the terraView's plugins folder.
+
+
+CHANGES
+=============
+
+This is the first release version of this plugin,
+so in the future, see this section for news!
+
+LICENCE
+=======
+
+This file is part of WMS Client Plugin for TerraView.
+WMS Client Plugin for TerraView is free software;
+you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+You should have received a copy of the GNU General Public License
+along with WMS Client Plugin for TerraView (in TerraView main dir: gpl.txt).
+The authors reassure the license terms regarding the warranties.
+They specifically disclaim any warranties, including, but not limited to,
+the implied warranties of merchantability and fitness for a particular purpose.
+The software provided hereunder is on an "as is" basis, and the authors have no
+obligation to provide maintenance, support, updates, enhancements, or modifications.
+In no event shall the authors held liable to any party for direct,
+indirect, special, incidental, or consequential damages arising out of the use of
+this program and its documentation.
+
+
+REPORTING PROBLEMS
+==================
+
+Send bugs (errors) and sugestions in TerraView
+Client WMS Plugin 0.1.3 to: gribeiro@dpi.inpe.br.
+
+
+Thanks for using WMS Client Plugin for TerraView, Gilberto Ribeiro de Queiroz!
+

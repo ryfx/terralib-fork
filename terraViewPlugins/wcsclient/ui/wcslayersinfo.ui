@@ -1,0 +1,398 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>WCSLayersInfo</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>WCSLayersInfo</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>532</width>
+            <height>451</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>WCS layers information</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout14</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupBox12</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Service Title</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel" row="0" column="0">
+                            <property name="name">
+                                <cstring>serv_url_lbl_</cstring>
+                            </property>
+                            <property name="text">
+                                <string>service url....</string>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout22</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QButtonGroup">
+                            <property name="name">
+                                <cstring>buttonGroup1</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>250</width>
+                                    <height>193</height>
+                                </size>
+                            </property>
+                            <property name="title">
+                                <string>Layers</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QListView" row="0" column="0">
+                                    <column>
+                                        <property name="text">
+                                            <string>Layer title</string>
+                                        </property>
+                                        <property name="clickable">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="resizable">
+                                            <bool>true</bool>
+                                        </property>
+                                    </column>
+                                    <property name="name">
+                                        <cstring>layers_lst_</cstring>
+                                    </property>
+                                    <property name="rootIsDecorated">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>groupBox13</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>250</width>
+                                    <height>193</height>
+                                </size>
+                            </property>
+                            <property name="title">
+                                <string>Layer information</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QListView" row="0" column="0">
+                                    <column>
+                                        <property name="text">
+                                            <string>Attribute</string>
+                                        </property>
+                                        <property name="clickable">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="resizable">
+                                            <bool>true</bool>
+                                        </property>
+                                    </column>
+                                    <property name="name">
+                                        <cstring>layer_info_lst_</cstring>
+                                    </property>
+                                    <property name="rootIsDecorated">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QButtonGroup">
+                    <property name="name">
+                        <cstring>buttonGroup2</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Layer settings</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout13</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout19</cstring>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>textLabel2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Choose image format:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QComboBox">
+                                            <property name="name">
+                                                <cstring>img_frm_cbb_</cstring>
+                                            </property>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout19_2</cstring>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>textLabel2_2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Choose image CRS:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QComboBox">
+                                            <property name="name">
+                                                <cstring>img_crs_cbb_</cstring>
+                                            </property>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                                <widget class="QGroupBox">
+                                    <property name="name">
+                                        <cstring>groupBox3</cstring>
+                                    </property>
+                                    <property name="title">
+                                        <string>Bounding rect of interest</string>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLayoutWidget" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>layout12</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLayoutWidget">
+                                                    <property name="name">
+                                                        <cstring>layout10</cstring>
+                                                    </property>
+                                                    <hbox>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QLayoutWidget">
+                                                            <property name="name">
+                                                                <cstring>layout6</cstring>
+                                                            </property>
+                                                            <hbox>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <widget class="QLabel">
+                                                                    <property name="name">
+                                                                        <cstring>textLabel1</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>x1 :</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QLineEdit">
+                                                                    <property name="name">
+                                                                        <cstring>bx1_lne_</cstring>
+                                                                    </property>
+                                                                    <property name="frameShape">
+                                                                        <enum>LineEditPanel</enum>
+                                                                    </property>
+                                                                    <property name="frameShadow">
+                                                                        <enum>Sunken</enum>
+                                                                    </property>
+                                                                </widget>
+                                                            </hbox>
+                                                        </widget>
+                                                        <widget class="QLayoutWidget">
+                                                            <property name="name">
+                                                                <cstring>layout6_3</cstring>
+                                                            </property>
+                                                            <hbox>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <widget class="QLabel">
+                                                                    <property name="name">
+                                                                        <cstring>textLabel1_3</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>x2 :</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QLineEdit">
+                                                                    <property name="name">
+                                                                        <cstring>bx2_lne_</cstring>
+                                                                    </property>
+                                                                </widget>
+                                                            </hbox>
+                                                        </widget>
+                                                    </hbox>
+                                                </widget>
+                                                <widget class="QLayoutWidget">
+                                                    <property name="name">
+                                                        <cstring>layout11</cstring>
+                                                    </property>
+                                                    <hbox>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QLayoutWidget">
+                                                            <property name="name">
+                                                                <cstring>layout6_2</cstring>
+                                                            </property>
+                                                            <hbox>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <widget class="QLabel">
+                                                                    <property name="name">
+                                                                        <cstring>textLabel1_2</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>y1 :</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QLineEdit">
+                                                                    <property name="name">
+                                                                        <cstring>by1_lne_</cstring>
+                                                                    </property>
+                                                                    <property name="frameShape">
+                                                                        <enum>LineEditPanel</enum>
+                                                                    </property>
+                                                                    <property name="frameShadow">
+                                                                        <enum>Sunken</enum>
+                                                                    </property>
+                                                                </widget>
+                                                            </hbox>
+                                                        </widget>
+                                                        <widget class="QLayoutWidget">
+                                                            <property name="name">
+                                                                <cstring>layout6_4</cstring>
+                                                            </property>
+                                                            <hbox>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <widget class="QLabel">
+                                                                    <property name="name">
+                                                                        <cstring>textLabel1_4</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>y2 :</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QLineEdit">
+                                                                    <property name="name">
+                                                                        <cstring>by2_lne_</cstring>
+                                                                    </property>
+                                                                </widget>
+                                                            </hbox>
+                                                        </widget>
+                                                    </hbox>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                            </vbox>
+                        </widget>
+                    </grid>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>layers_lst_</sender>
+        <signal>selectionChanged(QListViewItem*)</signal>
+        <receiver>WCSLayersInfo</receiver>
+        <slot>layerChanged(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>img_crs_cbb_</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>WCSLayersInfo</receiver>
+        <slot>projectiontChanged(const QString&amp;)</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in declaration">vector</include>
+    <include location="local" impldecl="in declaration">string</include>
+    <include location="local" impldecl="in implementation">wcslayersinfo.ui.h</include>
+</includes>
+<forwards>
+    <forward>namespace TeOGC { class TeWCSCoverageDescriptions; };</forward>
+</forwards>
+<variables>
+    <variable>std::vector&lt;std::string&gt; oids_;</variable>
+    <variable>QString serv_url_;</variable>
+    <variable>QString curLayerId_;</variable>
+    <variable>QString curCrs_;</variable>
+    <variable>TeOGC::TeWCSCoverageDescriptions* coverDescs_;</variable>
+</variables>
+<slots>
+    <slot>layerChanged( QListViewItem * item )</slot>
+    <slot>init()</slot>
+    <slot>destroy()</slot>
+    <slot>projectiontChanged( const QString &amp; )</slot>
+</slots>
+<functions>
+    <function>setServerURL( const QString &amp; url )</function>
+    <function>setLayerOids( const std::vector&lt;std::string&gt; &amp; ids )</function>
+    <function>connectToServer( const QString &amp; )</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

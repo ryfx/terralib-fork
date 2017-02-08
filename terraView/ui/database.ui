@@ -1,0 +1,1001 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>DatabaseWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>DatabaseWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>4</x>
+            <y>2</y>
+            <width>288</width>
+            <height>381</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>0</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>Database</string>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>11</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <property name="resizeMode">
+            <enum>Fixed</enum>
+        </property>
+        <widget class="QLayoutWidget" row="2" column="0">
+            <property name="name">
+                <cstring>Layout17</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>Spacer25</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>portTextLabel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Port:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>portLineEdit</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>50</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>50</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="3" column="0">
+            <property name="name">
+                <cstring>layout34</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>Spacer5</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>60</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout33</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout32</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>userTextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>User:</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>passwordTextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Password:</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout31</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>userLineEdit</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>100</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="frameShape">
+                                        <enum>LineEditPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>Sunken</enum>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>passwordLineEdit</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>100</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="echoMode">
+                                        <enum>Password</enum>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                    </hbox>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="4" column="0">
+            <property name="name">
+                <cstring>layout16</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>Spacer17</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>16</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>directoryPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Select Database...</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>dbComboBox</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>7</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>130</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="5" column="0">
+            <property name="name">
+                <cstring>layout39</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer19</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>databaseNameTextLabel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Database Name:</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>databaseNameLineEdit</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>130</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QButtonGroup" row="0" column="0">
+            <property name="name">
+                <cstring>operationButtonGroup</cstring>
+            </property>
+            <property name="title">
+                <string>Operation</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>11</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>Layout17</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <property name="spacing">
+                            <number>6</number>
+                        </property>
+                        <spacer>
+                            <property name="name">
+                                <cstring>Spacer19</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>31</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QRadioButton">
+                            <property name="name">
+                                <cstring>connectRadioButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Connect</string>
+                            </property>
+                            <property name="checked">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>Spacer23</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QRadioButton">
+                            <property name="name">
+                                <cstring>createRadioButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Create</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>Spacer18_2</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>31</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </hbox>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QLayoutWidget" row="1" column="0">
+            <property name="name">
+                <cstring>layout30</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>Spacer2_2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>68</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout29</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout28</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>databaseTypeTextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Database Type:</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>hostTextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Host:</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout27</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QComboBox">
+                                    <property name="name">
+                                        <cstring>databaseTypeComboBox</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>100</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>hostLineEdit</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>100</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="frameShape">
+                                        <enum>LineEditPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>Sunken</enum>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                    </hbox>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="7" column="0">
+            <property name="name">
+                <cstring>layout717</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer608</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>16</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>dbConsistencyCheckBox</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Check Consistency in the Database</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer609</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="6" column="0">
+            <property name="name">
+                <cstring>layout16</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer13</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>51</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>txlEncoding</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Encoding</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <item>
+                        <property name="text">
+                            <string></string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>BIG5</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>EUC_CN</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>EUC_JP</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>EUC_KR</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>EUC_TW</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>GB18030</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>GBK</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>ISO_8859_5</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>ISO_8859_6</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>ISO_8859_7</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>ISO_8859_8</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>JOHAB</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>KOI8</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>LATIN1</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>LATIN10</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>LATIN2</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>LATIN3</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>LATIN4</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>LATIN5</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>LATIN6</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>LATIN7</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>LATIN8</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>LATIN9</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>MULE_INTERNAL</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>SJIS</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>SQL_ASCII</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>UHC</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>UTF8</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>WIN1250</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>WIN1251</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>WIN1252</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>WIN1256</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>WIN1258</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>WIN866</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>WIN874</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>cmbEncoding</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>130</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <spacer row="8" column="0">
+            <property name="name">
+                <cstring>Spacer16</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>16</width>
+                    <height>16</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QLayoutWidget" row="9" column="0">
+            <property name="name">
+                <cstring>Layout12</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>okPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;OK</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+O</string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                    <property name="default">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>cancelPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Cancel</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+C</string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>helpPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Help</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+H</string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>DatabaseWindow</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>DatabaseWindow</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>directoryPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>DatabaseWindow</receiver>
+        <slot>directoryPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>operationButtonGroup</sender>
+        <signal>clicked(int)</signal>
+        <receiver>DatabaseWindow</receiver>
+        <slot>operationButtonGroup_clicked(int)</slot>
+    </connection>
+    <connection>
+        <sender>databaseTypeComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>DatabaseWindow</receiver>
+        <slot>databaseTypeComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>DatabaseWindow</receiver>
+        <slot>okPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>dbComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>DatabaseWindow</receiver>
+        <slot>dbComboBox_activated(const QString&amp;)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>connectRadioButton</tabstop>
+    <tabstop>createRadioButton</tabstop>
+    <tabstop>databaseTypeComboBox</tabstop>
+    <tabstop>hostLineEdit</tabstop>
+    <tabstop>portLineEdit</tabstop>
+    <tabstop>userLineEdit</tabstop>
+    <tabstop>passwordLineEdit</tabstop>
+    <tabstop>directoryPushButton</tabstop>
+    <tabstop>dbComboBox</tabstop>
+    <tabstop>databaseNameLineEdit</tabstop>
+    <tabstop>cmbEncoding</tabstop>
+    <tabstop>dbConsistencyCheckBox</tabstop>
+    <tabstop>okPushButton</tabstop>
+    <tabstop>cancelPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">vector</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+    <include location="global" impldecl="in implementation">qfiledialog.h</include>
+    <include location="global" impldecl="in implementation">qapplication.h</include>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="global" impldecl="in implementation">terraViewBase.h</include>
+    <include location="global" impldecl="in implementation">TeLayer.h</include>
+    <include location="global" impldecl="in implementation">TeDatabase.h</include>
+    <include location="global" impldecl="in implementation">TeQtDatabasesListView.h</include>
+    <include location="global" impldecl="in implementation">TeQtDatabaseItem.h</include>
+    <include location="global" impldecl="in implementation">TeQtLayerItem.h</include>
+    <include location="global" impldecl="in implementation">TeWaitCursor.h</include>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="global" impldecl="in implementation">qsettings.h</include>
+    <include location="local" impldecl="in implementation">database.ui.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>class TeQtListView;</forward>
+    <forward>class TeQtDatabasesListView;</forward>
+    <forward>class TeLayer;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable>TerraViewBase *mainWindow_;</variable>
+    <variable>TeQtDatabasesListView *databasesListView_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot>init()</slot>
+    <slot>operationButtonGroup_clicked( int buttonId )</slot>
+    <slot>databaseTypeComboBox_activated( const QString &amp; )</slot>
+    <slot>directoryPushButton_clicked()</slot>
+    <slot>dbComboBox_activated( const QString &amp; dbName )</slot>
+    <slot>okPushButton_clicked()</slot>
+    <slot>helpPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function access="private">setLastConnection()</function>
+    <function access="private">getLastConnection()</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

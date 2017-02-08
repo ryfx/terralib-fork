@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>TerraView</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<p><font size="3" face="Arial"><strong>TerraView  </strong> </font></p>
+<p align="right"><font face="Arial"><a href="metodo_skater.htm">&lt;&lt; Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">First</a> 
+  | <a href="spatializationWindow.htm">Next &gt;&gt;</a><font face="Arial"> 
+  </font> </font></p>
+<hr>
+<font face="Arial"> 
+<p align="center"><font size="4" face="Arial"><strong><u><strong>Kernel Map</strong></u></strong></font></p>
+</font><p>&nbsp;</p>
+        
+<p><font face="Arial">A Kernel map is an alternative method to analyze the behavior of points 
+  pattern. Essentially the Kernel map provides through interpolation the punctual density of 
+  the process in the whole study region. Therefore, a general view of the process intensity in 
+  the whole study region is obtained. Check Lesson 8 of TerraView tutorial for additional information 
+  on Kernel estimator.<br>
+          <br>
+          Visualize Bairros and Crimes2000 themes of the active Belo Horizonte database. 
+          Do not forget that crime points will be visible if they are drawn over neighborhoods 
+          or if neighborhoods polygons are transparent.</font></p>
+        <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/mapa_kernel.png" border="1"></font></p>
+          
+            
+<p><font face="Arial">1. Select <strong>Kernel Map</strong> option in <strong>Analysis</strong> 
+   menu.</font></p>
+         
+        <p><font face="Arial"><br>
+  The interface shown below will be displayed and is used to define the kernel map parameters.</font></p>
+        <p></p>
+        <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/mapa_kernel1.png"></font></p>
+          
+          <p><font face="Arial"><br>
+  2. Select <em>Grid over events</em> option in <b>Support Region</b> field.</font></p>
+         
+        <p><font face="Arial">This option creates a rectangle bounding all points of the selected 
+        theme and this rectangle may go beyond the boundaries of the study region.</font></p>
+        
+<p><font face="Arial">For a region with one polygon only, for instance Limite theme, the 
+  <b>Grid over region</b> option creates a grid that does not go beyond the boundaries of this 
+  region. If the selected region contains more than one polygon, for instance Bairros theme, 
+  the rectangle to be created contains all polygons.</font></p>
+<p  ><font face="Arial"><b>No grid</b> option considers the grid to be the selected theme polygons. 
+  This option associates to the theme a legend similar to the one created for thematic maps.</font></p>
+<p><font face="Arial">3. Columns Number option in <b>Grid Options</b> field defines map smoothing. 
+  Default value of 50 usually generates good results.</font></p>
+<p><font face="Arial"> 4. <b>Layer name</b> field defines the name of the new layer (Kcrimes2000) 
+  where the kernel map information will be stored.</font></p>
+<p><font face="Arial"> 5. Select Point option in <b>Events</b> field and select crimes2000 theme in Theme field.</font></p>
+          
+<p><font face="Arial"> 6. No changes are required in the fields related to <b>Algorithm</b> since the 
+  <b>Function</b> and <b>Compute</b> defined by default are typical ones.</font></p>
+          
+<p><font face="Arial"> 7. Select <b>Adaptive</b> option to calculate radius automatically. </font></p>
+          
+<p><font face="Arial"> 8. Click on <b>OK</b>. </font></p>
+         
+        
+<p ><font face="Arial">A new layer and a new theme are automatically created with the name defined 
+   in step 4. The display of the Kernel Map in the Draw Area is also automatic.</font></p>
+        
+<p  ><font face="Arial"> The figure below shows the Kernel Map created with the themes and attributes 
+  selected above:</font></p>
+        <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/mapa_kernel3.png" width="349" height="375" border="1"></font></p>
+        <p  ><font face="Arial">Since there is a large number of points in Belo Horizonte central 
+        region, the Kernel Map indicates a strong concentration of crimes in only one point of the 
+        city and it hardly considers other criminality areas, hindering the visualization. </font></p>
+        <p><font face="Arial">Remove Kcrimes2000 theme.</font></p>
+        <p><font face="Arial">To create a Kernel map with homicides themes in 2000:</font></p>
+        <p><font face="Arial">Visualize Bairros and Crimes2000 themes of Belo Horizonte database. 
+        Do not forget that crime points will be visible if they are drawn over neighborhoods or 
+        if neighborhoods polygons are transparent.</font></p>
+          
+          
+<p><font face="Arial">1. Activate Crimes2000 theme contect menu.</font></p>
+          
+<p><font face="Arial"> 2. Select Attribute <strong>Query</strong> option.</font></p>
+          
+<p><font face="Arial"> 3. Select DESCRI&Ccedil;&Atilde;O option in <b>Attribute</b> field.</font></p>
+          
+<p><font face="Arial"> 4. Select <b>operator</b> =.</font></p>
+          
+<p  ><font face="Arial"> 5. Activate <b>Attribute Values</b> and select HOMICIO CONSUMADO option.</font></p>
+          
+<p><font face="Arial"> 6. Click on <b>New Query</b>.</font></p>
+         
+        <p><font face="Arial">This query selects only crimes with homicídio consumado (completed 
+        homicide) description.</font></p>
+          
+          <p><font face="Arial">7. Create a new layer with queried items and create a view 
+          called homicidios2000 from this new layer. </font></p>
+         
+        
+<p><font face="Arial"> After visualizing Bairros and homicidios2000 themes, execute 
+  the following steps to create the Kernel Map:</font></p>
+          
+          
+<p  ><font face="Arial">1. Select <strong>Kernel Map</strong> option in <strong>Analysis</strong>.</font></p>
+          
+<p  ><font face="Arial"> 2. Select <b>Grid over events</b> option in <b>Support Region</b> field.</font></p>
+          
+<p><font face="Arial"> 3. Define map smoothing by setting <b>Columns Number</b> in 
+  <b>Grid Options</b> field. Default value 50 produces good results.</font></p>
+          
+<p><font face="Arial"> 4. Define the new layer name (Khomicidio2000) where kernel map 
+  information will be stored using <b>Layer name</b> field.</font></p>
+          
+<p><font face="Arial"> 5. Select <b>Point</b> option in <b>Events</b> field and select 
+  homicidio2000 theme in Theme field.</font></p>
+          
+<p  ><font face="Arial"> 6. No changes are required in the fields related to <b>Algorithm</b> 
+  since the <b>Function</b> and <b>Compute</b> defined by default are typical ones.</font></p>
+          
+<p><font face="Arial"> 7. Select <b>Adaptive</b> option to calculate radius automatically.</font></p>
+          
+<p><font face="Arial"> 8. Click on <b>OK</b>.</font></p>
+        <p><font face="Arial">
+  The figure below shows the maps created with grid over events and with grid over region, 
+  using Bairros (with transparent Visual) and Limite themes, respectively. The second map 
+  layer name is Khomicidio2000_2.<br>
+  Before creating maps with support region grid over region or no grid, check if data use 
+  the same projection of the events view and theme.</font></p>
+        <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/mapa_kernel5.png" width="615" height="416" border="1"></font></p>
+        <p><font face="Arial"><strong>Legend Display on Map 
+          de Kernel</strong></font></p>
+        
+<p><font face="Arial">When a Kernel Map is created, it is automatically displayed in the 
+  Draw Area. However, its legend is not and to display the legend with the map follow these 
+  steps:</font></p>
+          
+          
+<p><font face="Arial">1. Activate the context menu on the Khomicidio2000 theme, which was 
+created automatically by the program.</font></p>
+          
+<p><font face="Arial"> 2. Select <strong> Representation Visibility</strong> option.</font></p>
+          
+<p><font face="Arial"> 3. In Theme Visibility interface, check <b>Legend</b> option.</font></p>
+         
+        <p><font face="Arial">
+          The legend will be displayed in the left upper corner of the Draw Area. 
+          Click on <b>Edit Theme</b> button to move the legend to a new position.</font></p>
+        <p><font face="Arial"><strong>Other relevant notes</strong></font></p>
+          
+          <p><font face="Arial"><font face="Arial"> <b>1. Sobre Conjunto de Dados</b></font></font></p>
+          <p><font face="Arial"><b>Point</b> type events are related to punctual data; therefore 
+            all themes of an active view with point data will be available to be chosen as 
+            Theme.</font></p>
+          
+<p><font face="Arial">Weights can be assigned to events by enabling <b>With Attribute</b> 
+  option and choosing the table and the column where weights are stored.</font></p>
+          
+<p><font face="Arial"><b>Area</b> type events are related to aggregate data, such as count. 
+  Any theme with area data is available to be chosen as Theme. An example is the use 
+  of Bairros theme and selecting pop2000 column as Bairros table attribute. To create 
+  this map, select Kb as the Layer name. Observe the Figure on the left.<br>
+            </font></p>
+         
+      <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/mapa_kernel6.png" width="616" height="352" border="1"></font></p>
+        
+
+          
+<p><font face="Arial">If a kernel map is created using Bairros with no attribute, weight 
+  one will be assigned to each area and the map will show the concentration in the 
+  neighborhoods of Belo Horizonte city. To create the second map, select Kb2 as the Layer 
+  name. Observe the Figure on the righ.</font></p>
+          <p><font face="Arial"><strong>2. About the Algorithm</strong></font></p>
+          <p><font face="Arial">In the algorithm fields, the user selects the function to be 
+            used in the calculation, what will be calculated, and the radius to be used.</font></p>
+          <p><font face="Arial">Typical options in Kernel maps, and TerraView defaults, 
+            are Quartic Function and Compute Density.</font></p>
+          <p><font face="Arial">The three options for Compute are:</font></p>
+            
+            <p><font face="Arial">-<strong> Density</strong>: calculates density of crimes per area unit.</font></p>
+            <p><font face="Arial"> -<strong> Spatial Moving Average</strong>: 
+              calculates the expected number of crimes per area unit.</font></p>
+            <p><font face="Arial"> -<strong> Probability</strong>: calculates the probability 
+              of an already executed crime to be located in a given area.</font></p>
+           
+          
+<p><font face="Arial">Figures below present the difference between density (left figure) 
+  and spatial moving average (right figure) for a kernel map with no grid on homicidio2000 
+  points of Bairros theme. To create the second map, create another theme from Bairros 
+  layer defining the name as Bairros2.</font></p>
+         
+      <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/mapa_kernel7.png" width="650" height="380" border="1"></font></p>
+        
+     
+          <p><font face="Arial"><font face="Arial"><b>3. About Radius</b></font></font></p>
+          <p><font face="Arial">Radius is an important parameter to create a Kernel map and 
+            requires the user to understand about crimes and the study region.</font></p>
+          <p><font face="Arial">TerraView facilitates the definition task by allowing the 
+            creation of Adaptive Kernel map. Adaptive option calculates a radius 
+            automatically based on the number of events and the area. Results of maps 
+            created with adaptive radius are reasonably good.</font></p>
+          <p><font face="Arial">However, Adaptive option can be unselected and the user 
+            can select radius by three methods:</font></p>
+            
+            <p><font face="Arial">1. Definition of a specific value in the same unit of 
+              visualized data. Information box provides width and height of the rectangle 
+              bounding the events to be used in this definition</font></p>
+            <p><font face="Arial"> 2. Selection of a value through a slider that keeps 
+              height (or width, depending on which is larger for the region) proportion, in 10 percent steps.</font></p>
+           
+         
+      <p></p>
+      <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/adaptivo.png" width="289" height="119" border="1"></font></p>
+        
+          
+          
+            <p><font face="Arial">3. Draw on the map by keeping the mouse button and <b>Ctrl</b> 
+              key down <img src="terraViewBase_arquivos/botao_ctrl.png" width="22" height="21">. 
+              The drawn circle radius is transferred automatically to <b>Radius</b> field . 
+              </font></p>
+           
+         
+      <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/caixa_raio.png" border="1"></font></p>
+      
+<p>&nbsp;</p>
+ 
+<p>&nbsp;</p>
+       
+    <hr>
+<p align="right"><font face="Arial"><a href="metodo_skater.htm">&lt;&lt; Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">First</a> 
+  | <a href="spatializationWindow.htm">Next &gt;&gt;</a><font face="Arial"> 
+  </font></font></p>
+<font face="Arial"><p  ><font face="Arial"> </font></p>
+</font><font face="Arial"></font> 
+</body>
+</html>

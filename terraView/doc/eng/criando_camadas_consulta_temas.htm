@@ -1,0 +1,68 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>TerraView</title>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+
+<div align="justify">
+
+  <p> <strong> <span style='font-family:"Arial","sans-serif";'> TerraView</span> 
+    </strong> </p>
+
+<p align=right>
+	<span style='font-family:Arial'>
+		<a href="criando_temas_subconjunto_objetos.htm">&lt;&lt; Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a
+href="removendo_colunas_camadas_temas_criados.htm">Next &gt;&gt;</a>
+	</span>
+</p>
+
+<hr size=2 width="100%" align=center>
+
+<p align=center>
+	<strong><u>
+		<span style='font-size: 13.5pt;font-family:Arial'>Creating layers from themes query</span></u></strong>
+</p>
+
+  <div align="justify"> <span style="font-family:Arial"> 
+  <p>A layer can be created from a query executed on a theme. 
+    The new layer can be used to create different themes, avoiding the need to 
+    re-execute the query. For instance, to analyze only slums (“favelas”) with 
+    area over 9875 square meters, execute the following steps: </p>
+ 
+  <p>1. Activate Favelas theme, select the popup menu of a cell, and choose <strong>Calculate 
+    Area</strong> option. </p>
+  <p>2. Check that there are no queries from Favelas theme (if there is, execute 
+  the procedure to remove the visualization of queried objects). </p>
+  <p>3. Query the desired objects (AREA &gt; 9875). </p>
+  <p>4. Activate the popup menu of the theme and select <strong>Create Layer From 
+    Theme</strong> option.</p> 
+  <p align="center"> <span style="font-family:Arial"><img border=0 id="_x0000_i1030" src="terraViewBase_arquivos/criar_plano_tema.png"> 
+    </span></p>
+  <p>Create Layer From Theme window will be displayed and use it to define: </p>
+  <p>1. Selection of Objects type to specify the objects of the new Layer. Select 
+    <em>Queried</em>. <br>
+  <p>2. Name of the new Layer: Favelas_1. </p>
+  <p>3. Select View. The projection of the layer must be set. </p>
+  <p align="center"><img border=0 id="_x0000_i1029" src="terraViewBase_arquivos/criar_plano_tema1.png"></p>
+  <p>After executing the creation, the new layer 
+     will be shown in Databases tree and can be used to create Themes.</p>
+  <p align="center"><img border=0 id="_x0000_i1028" src="terraViewBase_arquivos/criar_plano_tema2.png"></p>
+  <p>Create a new Theme Favelas_1 from the new Layer 
+  by clicking on <img border=0 src="terraViewBase_arquivos/botao_tema.png"> 
+  button and add it to the View the theme should belong to. The visualization 
+  of slums with area over 9875 square meters is now possible. </p>
+  <p>Creation of layers from themes can also be used to re-project data and to create 
+  themes from pointed objects. </p>
+  <hr size=2 width="100%" align=center>
+  <p align=right> <a href="criando_temas_subconjunto_objetos.htm">&lt;&lt; 
+    Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | 
+	<a href="removendo_colunas_camadas_temas_criados.htm">Next &gt;&gt;</a></p>
+</span>
+	</div>
+
+</body>
+
+</html>

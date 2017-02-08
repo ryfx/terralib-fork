@@ -1,0 +1,26 @@
+/* XPM */
+static const char *infolayer_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 4 1",
+"  c black",
+". c green",
+"X c #808080",
+"o c #c0c0c0",
+/* pixels */
+"oooooooooooooooo",
+"oooooooooooooooo",
+"oooooooooooooooo",
+"oooooooooooooooo",
+"ooooooo         ",
+"oooooX ........ ",
+"ooooX ........ X",
+"oooX ........ XX",
+"ooX ........ XXo",
+"oX ........ XXoo",
+"X ........ XXooo",
+" ........ XXoooo",
+"         XXooooo",
+"XXXXXXXXXXoooooo",
+"oooooooooooooooo",
+"oooooooooooooooo"
+};

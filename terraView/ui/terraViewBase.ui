@@ -1,0 +1,1914 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>TerraViewBase</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>TerraViewBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>751</width>
+            <height>1288</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>TerraView 4.2.0</string>
+    </property>
+    <property name="icon">  
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+</widget>
+<menubar>
+    <property name="name">
+        <cstring>menubar</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>751</width>
+            <height>31</height>
+        </rect>
+    </property>
+    <item text="&amp;File" name="fileMenu">
+        <action name="openDatabaseAction"/>
+        <action name="closeDatabaseAction"/>
+	   <action name="dropDatabaseAction"/>
+        <separator/>
+        <action name="importDataAction"/>
+        <separator/>
+        <action name="importRasterSimpleAction"/>
+        <action name="importRasterAction"/>
+        <separator/>
+        <action name="importTableAction"/>
+        <action name="importTablePointsAction"/>
+        <separator/>
+        <action name="vectorialExportAction"/>
+        <action name="infolayerMultiLayer_Vectorial_ExportAction"/>
+        <separator/>
+        <action name="addressGeocodingAction"/>
+        <separator/>
+        <action name="saveDisplayContentsAction"/>
+        <item text="Save &amp;Display Contents" name="saveDisplayContentsMenu" accel="">
+            <action name="saveDisplayWithPrinterAction"/>
+            <action name="saveDisplayAsFileAction"/>
+        </item>
+        <separator/>
+        <action name="exitAction"/>
+    </item>
+    <item text="&amp;Show" name="showMenu">
+        <action name="showToolBarAction"/>
+        <action name="showStatusBarAction"/>
+        <separator/>
+        <action name="databasesTreeAction"/>
+        <action name="viewsTreeAction"/>
+        <action name="gridAction"/>
+        <action name="displayAction"/>
+        <action name="graphicAction"/>
+    </item>
+    <item text="&amp;Infolayer" name="infoLayerMenu">
+        <action name="createCellsAction"/>
+        <action name="infolayerUpdate_MetadataAction"/>
+    </item>
+    <item text="&amp;View" name="viewMenu">
+        <action name="addViewAction"/>
+    </item>
+    <item text="&amp;Theme" name="themeMenu">
+        <action name="addThemeAction"/>
+    </item>
+    <item text="&amp;Analysis" name="analysisMenu">
+        <action name="proximityMatrixAction"/>
+        <item text="&amp;Proximity Matrix" name="proximityMatrixMenu" accel="">
+            <action name="createProxMatrixAction"/>
+            <action name="selectProxMatrixAction"/>
+        </item>
+        <separator/>
+        <action name="spatialStatisticsAction"/>
+        <separator/>
+        <action name="kernelMapAction"/>
+        <action name="kernelRatioAction"/>
+        <separator/>
+        <action name="skaterAction"/>
+        <separator/>
+        <action name="globalEmpiricalBayesAction"/>
+        <action name="localEmpiricalBayesAction"/>
+        <separator/>
+        <action name="semivarAction"/>
+        <separator/>
+        <action name="generateSamplePointsAction"/>
+    </item>
+    <item text="&amp;Operation" name="operationMenu">
+        <action name="tileWindowsAction"/>
+        <separator/>
+        <action name="pointerCursorAction"/>
+        <action name="zoomCursorAction"/>
+        <action name="zoomInAction"/>
+        <action name="zoomOutAction"/>
+        <action name="panCursorAction"/>
+        <action name="graphicCursorAction"/>
+        <action name="distanceMeterAction"/>
+        <action name="infoCursorAction"/>
+        <separator/>
+        <action name="enableEditAction"/>
+        <separator/>
+        <action name="drawAction"/>
+        <action name="nextDisplayAction"/>
+        <action name="previousDisplayAction"/>
+        <action name="resetAction"/>
+        <separator/>
+        <action name="invertSelectionAction"/>
+        <action name="unselectObjectsAction"/>
+    </item>
+    <item text="&amp;Plugins" name="pluginsMenu">
+    </item>
+    <item text="&amp;Help" name="helpMenu">
+        <action name="helpManualAction"/>
+        <action name="faqAction"/>
+        <separator/>
+        <action name="helpAboutAction"/>
+    </item>
+</menubar>
+<toolbars>
+    <toolbar dock="2">
+        <property name="name">
+            <cstring>toolBar</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>720</width>
+                <height>25</height>
+            </rect>
+        </property>
+        <property name="label">
+            <string></string>
+        </property>
+        <action name="openDatabaseAction"/>
+        <action name="importDataAction"/>
+        <action name="addViewAction"/>
+        <action name="addThemeAction"/>
+        <separator/>
+        <action name="databasesTreeAction"/>
+        <action name="viewsTreeAction"/>
+        <action name="gridAction"/>
+        <action name="displayAction"/>
+        <action name="graphicAction"/>
+        <separator/>
+        <action name="tileWindowsAction"/>
+        <separator/>
+        <action name="pointerCursorAction"/>
+        <action name="zoomCursorAction"/>
+        <action name="zoomInAction"/>
+        <action name="zoomOutAction"/>
+        <action name="panCursorAction"/>
+        <action name="graphicCursorAction"/>
+        <action name="distanceMeterAction"/>
+        <action name="infoCursorAction"/>
+        <separator/>
+        <action name="enableEditAction"/>
+        <separator/>
+        <action name="drawAction"/>
+        <action name="previousDisplayAction"/>
+        <action name="nextDisplayAction"/>
+        <action name="resetAction"/>
+        <separator/>
+        <action name="invertSelectionAction"/>
+        <action name="unselectObjectsAction"/>
+        <separator/>
+        <widget class="QComboBox">
+            <property name="name">
+                <cstring>scaleComboBox</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>80</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="editable">
+                <bool>true</bool>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>reduction factor</string>
+            </property>
+        </widget>
+    </toolbar>
+</toolbars>
+<actions>
+    <action>
+        <property name="name">
+            <cstring>exitAction</cstring>
+        </property>
+        <property name="menuText">
+            <string>&amp;Exit</string>
+        </property>
+        <property name="statusTip">
+            <string>Exit from the application</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpAboutAction</cstring>
+        </property>
+        <property name="menuText">
+            <string>&amp;About...</string>
+        </property>
+        <property name="statusTip">
+            <string>Informations about the application</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>openDatabaseAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>database.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>&amp;Open Database...</string>
+        </property>
+        <property name="toolTip">
+            <string>Database</string>
+        </property>
+        <property name="statusTip">
+            <string>Connect or create a database</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>importDataAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>import.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>&amp;Import Data...</string>
+        </property>
+        <property name="toolTip">
+            <string>Import Data</string>
+        </property>
+        <property name="statusTip">
+            <string>Import a file (*.shp,*.mif,*.geo)</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>databasePropertiesAction</cstring>
+        </property>
+        <property name="menuText">
+            <string>&amp;Database Properties...</string>
+        </property>
+        <property name="statusTip">
+            <string>Show the current database properties</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>closeDatabaseAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>closeDB.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>&amp;Close Database</string>
+        </property>
+        <property name="statusTip">
+            <string>Close the current database</string>
+        </property>
+    </action>
+     <action>
+        <property name="name">
+            <cstring>dropDatabaseAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>drop_database.png</iconset>
+        </property>
+        <property name="menuText">
+            <string>&amp;Drop Database</string>
+        </property>
+        <property name="statusTip">
+            <string>Drop databases</string>
+        </property>
+    </action>	
+    <action>
+        <property name="name">
+            <cstring>showToolBarAction</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="on">
+            <bool>true</bool>
+        </property>
+        <property name="menuText">
+            <string>&amp;ToolBar</string>
+        </property>
+        <property name="toolTip">
+            <string></string>
+        </property>
+        <property name="statusTip">
+            <string>Show or hide the ToolBar</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>showStatusBarAction</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="on">
+            <bool>true</bool>
+        </property>
+        <property name="menuText">
+            <string>&amp;StatusBar</string>
+        </property>
+        <property name="toolTip">
+            <string></string>
+        </property>
+        <property name="statusTip">
+            <string>Show or hide the StatusBar</string>
+        </property>
+    </action>
+    <actiongroup>
+        <property name="name">
+            <cstring>cursorActionGroup</cstring>
+        </property>
+        <property name="usesDropDown">
+            <bool>false</bool>
+        </property>
+        <action>
+            <property name="name">
+                <cstring>zoomCursorAction</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="on">
+                <bool>false</bool>
+            </property>
+            <property name="iconSet">
+                <iconset>zoomCursor.bmp</iconset>
+            </property>
+            <property name="menuText">
+                <string>&amp;Zoom Cursor</string>
+            </property>
+            <property name="toolTip">
+                <string>Zoom Cursor</string>
+            </property>
+            <property name="statusTip">
+                <string>Enable the zoom cursor on the display area</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>pointerCursorAction</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="on">
+                <bool>true</bool>
+            </property>
+            <property name="iconSet">
+                <iconset>pointer.bmp</iconset>
+            </property>
+            <property name="menuText">
+                <string>Pointer &amp;Cursor</string>
+            </property>
+            <property name="toolTip">
+                <string>Pointer Cursor</string>
+            </property>
+            <property name="statusTip">
+                <string>Enable the pointer cursor on the display area</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>panCursorAction</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="iconSet">
+                <iconset>panCursor.bmp</iconset>
+            </property>
+            <property name="menuText">
+                <string>&amp;Pan Cursor</string>
+            </property>
+            <property name="toolTip">
+                <string>Pan Cursor</string>
+            </property>
+            <property name="statusTip">
+                <string>Enable the pan cursor on the display area</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>zoomInAction</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="iconSet">
+                <iconset>zoomIn.bmp</iconset>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+            <property name="menuText">
+                <string>Zoom &amp;In</string>
+            </property>
+            <property name="toolTip">
+                <string>Zoom In</string>
+            </property>
+            <property name="statusTip">
+                <string>Execute the Zoom In operation on canvas</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>zoomOutAction</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="iconSet">
+                <iconset>zoomOut.bmp</iconset>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+            <property name="menuText">
+                <string>Zoom &amp;Out</string>
+            </property>
+            <property name="toolTip">
+                <string>Zoom Out</string>
+            </property>
+            <property name="statusTip">
+                <string>Execute the Zoom Out operation on canvas</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>graphicCursorAction</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="iconSet">
+                <iconset>graphicCursor.bmp</iconset>
+            </property>
+            <property name="menuText">
+                <string>&amp;Graphic Cursor</string>
+            </property>
+            <property name="toolTip">
+                <string>Graphic Cursor</string>
+            </property>
+            <property name="statusTip">
+                <string>Show the graphic cursor on the graphic window</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>distanceMeterAction</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="iconSet">
+                <iconset>distMeter.bmp</iconset>
+            </property>
+            <property name="menuText">
+                <string>Distance &amp;Meter</string>
+            </property>
+            <property name="toolTip">
+                <string>Distance Meter</string>
+            </property>
+            <property name="statusTip">
+                <string>Enable Distance Meter</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>infoCursorAction</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="iconSet">
+                <iconset>infoCursor.bmp</iconset>
+            </property>
+            <property name="menuText">
+                <string>In&amp;formation Cursor</string>
+            </property>
+            <property name="toolTip">
+                <string>Information Cursor</string>
+            </property>
+            <property name="statusTip">
+                <string>Enable the Information Cursor</string>
+            </property>
+        </action>
+    </actiongroup>
+    <action>
+        <property name="name">
+            <cstring>drawAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>draw.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>&amp;Draw</string>
+        </property>
+        <property name="toolTip">
+            <string>Draw</string>
+        </property>
+        <property name="statusTip">
+            <string>Execute the draw operation on canvas</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>resetAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>reset.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>&amp;Reset</string>
+        </property>
+        <property name="toolTip">
+            <string>Reset</string>
+        </property>
+        <property name="statusTip">
+            <string>Execute the reset operation on canvas</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>tileWindowsAction</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>false</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>tileWindows.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>Tile &amp;Windows</string>
+        </property>
+        <property name="toolTip">
+            <string>Tile Windows</string>
+        </property>
+        <property name="statusTip">
+            <string>Tile the windows</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>databasesTreeAction</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="on">
+            <bool>true</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>databasesTree.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>Data&amp;bases Tree</string>
+        </property>
+        <property name="toolTip">
+            <string>Databases Tree</string>
+        </property>
+        <property name="statusTip">
+            <string>Show or hide the databases tree</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>gridAction</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="on">
+            <bool>true</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>grid.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>&amp;Grid</string>
+        </property>
+        <property name="toolTip">
+            <string>Grid</string>
+        </property>
+        <property name="statusTip">
+            <string>Show or hide the grid</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>displayAction</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="on">
+            <bool>true</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>display.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>&amp;Display</string>
+        </property>
+        <property name="toolTip">
+            <string>Display</string>
+        </property>
+        <property name="statusTip">
+            <string>Show or hide the display window</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>previousDisplayAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>previousDisplay.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>Previous Displa&amp;y</string>
+        </property>
+        <property name="toolTip">
+            <string>Previous Display</string>
+        </property>
+        <property name="statusTip">
+            <string>View the previous display</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>nextDisplayAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>nextDisplay.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>&amp;Next Display</string>
+        </property>
+        <property name="toolTip">
+            <string>Next Display</string>
+        </property>
+        <property name="statusTip">
+            <string>Show the next display</string>
+        </property>
+    </action>
+    <actiongroup>
+        <property name="name">
+            <cstring>editTableActionGroup</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="menuText">
+            <string>Edit &amp;Table</string>
+        </property>
+        <property name="toolTip">
+            <string>Edit Table</string>
+        </property>
+        <property name="statusTip">
+            <string>Edit attribute table</string>
+        </property>
+        <property name="usesDropDown">
+            <bool>true</bool>
+        </property>
+        <action>
+            <property name="name">
+                <cstring>verticalEditionAction</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>false</bool>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="menuText">
+                <string>&amp;Vertical  Direction</string>
+            </property>
+            <property name="statusTip">
+                <string>Edit table in the vertical direction</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>horizontalEditionAction</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>false</bool>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="menuText">
+                <string>&amp;Horizontal Direction</string>
+            </property>
+            <property name="statusTip">
+                <string>Edit table in the horizontal direction</string>
+            </property>
+        </action>
+    </actiongroup>
+    <action>
+        <property name="name">
+            <cstring>viewsTreeAction</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="on">
+            <bool>true</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>viewsTree.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>&amp;Views Tree</string>
+        </property>
+        <property name="toolTip">
+            <string>Views Tree</string>
+        </property>
+        <property name="statusTip">
+            <string>Show or hide the views tree</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>addViewAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>view.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>&amp;Add...</string>
+        </property>
+        <property name="toolTip">
+            <string>Add View</string>
+        </property>
+        <property name="statusTip">
+            <string>Add a new view</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>addThemeAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>theme.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>&amp;Add...</string>
+        </property>
+        <property name="toolTip">
+            <string>Add Theme</string>
+        </property>
+        <property name="statusTip">
+            <string>Add  a new theme</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>graphicAction</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>graphic.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>G&amp;raphic Display</string>
+        </property>
+        <property name="toolTip">
+            <string>Graphic Display</string>
+        </property>
+        <property name="statusTip">
+            <string>Show the graphic display</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>createCellsAction</cstring>
+        </property>
+        <property name="menuText">
+            <string>&amp;Create Cells...</string>
+        </property>
+        <property name="statusTip">
+            <string>Create an infolayer containing cells</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>importRasterAction</cstring>
+        </property>
+        <property name="menuText">
+            <string>&amp;Raster Import...</string>
+        </property>
+        <property name="toolTip">
+            <string>&amp;Raster Import...</string>
+        </property>
+        <property name="statusTip">
+            <string>Import Raster</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>vectorialExportAction</cstring>
+        </property>
+        <property name="menuText">
+            <string>&amp;Vectorial Export...</string>
+        </property>
+        <property name="statusTip">
+            <string>Export Vectorial</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>saveDisplayContentsAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="menuText">
+            <string>Save &amp;Display Contents</string>
+        </property>
+        <property name="statusTip">
+            <string>Save Display Contents</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>saveDisplayWithPrinterAction</cstring>
+        </property>
+        <property name="menuText">
+            <string>&amp;Printer...</string>
+        </property>
+        <property name="statusTip">
+            <string>Save display contents using a printer</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>saveDisplayAsFileAction</cstring>
+        </property>
+        <property name="menuText">
+            <string>&amp;File...</string>
+        </property>
+        <property name="statusTip">
+            <string>Save display as a bmp file</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>saveGraphicContentsAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="menuText">
+            <string>Save &amp;Graphic Contents</string>
+        </property>
+        <property name="statusTip">
+            <string>Save Graphic Contents</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>saveGraphicWithPrinterAction</cstring>
+        </property>
+        <property name="menuText">
+            <string>&amp;Printer...</string>
+        </property>
+        <property name="statusTip">
+            <string>Save the graphic using the printer</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>saveGraphicAsFileAction</cstring>
+        </property>
+        <property name="menuText">
+            <string>&amp;File...</string>
+        </property>
+        <property name="statusTip">
+            <string>Save the graphic as a bmp file</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>importTableAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>table.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>Import &amp;Table...</string>
+        </property>
+        <property name="statusTip">
+            <string>Import Table</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>spatialStatisticsAction</cstring>
+        </property>
+        <property name="menuText">
+            <string>Spa&amp;tial Statistics....</string>
+        </property>
+        <property name="statusTip">
+            <string>Make a Spatial Statistics Analysis</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>kernelMapAction</cstring>
+        </property>
+        <property name="menuText">
+            <string>Kernel &amp;Map...</string>
+        </property>
+        <property name="statusTip">
+            <string>Make a Kernel Map Analysis</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>removeTableAction</cstring>
+        </property>
+        <property name="menuText">
+            <string>&amp;Remove Table...</string>
+        </property>
+        <property name="toolTip">
+            <string>Remove Table</string>
+        </property>
+        <property name="statusTip">
+            <string>Remove table</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>textVisualAction</cstring>
+        </property>
+        <property name="text">
+            <string>textVisualAction</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Text...</string>
+        </property>
+        <property name="toolTip">
+            <string>Text Visual</string>
+        </property>
+        <property name="statusTip">
+            <string>Set text visual</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>importTablePointsAction</cstring>
+        </property>
+        <property name="menuText">
+            <string>Import Table of &amp;Points...</string>
+        </property>
+        <property name="statusTip">
+            <string>Import a table of points</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpManualAction</cstring>
+        </property>
+        <property name="menuText">
+            <string>&amp;Manual...</string>
+        </property>
+        <property name="toolTip">
+            <string></string>
+        </property>
+        <property name="statusTip">
+            <string>Manual</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>faqAction</cstring>
+        </property>
+        <property name="menuText">
+            <string>&amp;FAQ...</string>
+        </property>
+        <property name="toolTip">
+            <string></string>
+        </property>
+        <property name="statusTip">
+            <string>FAQ</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>importRasterSimpleAction</cstring>
+        </property>
+        <property name="text">
+            <string>&amp;Simple Raster Import...</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Simple Raster Import...</string>
+        </property>
+        <property name="toolTip">
+            <string>Simple Import of the Raster</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>addressGeocodingAction</cstring>
+        </property>
+        <property name="text">
+            <string></string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Address Geocoding...</string>
+        </property>
+        <property name="toolTip">
+            <string>Address Geocoding</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>operationnew_itemAction</cstring>
+        </property>
+        <property name="text">
+            <string>new item</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>unselectObjectsAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>unselect.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>&amp;Unselect Objects</string>
+        </property>
+        <property name="toolTip">
+            <string>Unselect Objects</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>invertSelectionAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>invertSelection.bmp</iconset>
+        </property>
+        <property name="menuText">
+            <string>In&amp;vert Selection</string>
+        </property>
+        <property name="toolTip">
+            <string>Invert Selection</string>
+        </property>
+        <property name="statusTip">
+            <string>Invert Selection of the Objects</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>enableEditAction</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>nonEdit.xpm</iconset>
+        </property>
+        <property name="text">
+            <string></string>
+        </property>
+        <property name="menuText">
+            <string>Theme &amp;Edition</string>
+        </property>
+        <property name="toolTip">
+            <string>Enable Theme Edition</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>semivarAction</cstring>
+        </property>
+        <property name="text">
+            <string></string>
+        </property>
+        <property name="menuText">
+            <string>Semi&amp;variogram...</string>
+        </property>
+        <property name="toolTip">
+            <string>Semivariogram</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>skaterAction</cstring>
+        </property>
+        <property name="text">
+            <string>&amp;Skater...</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Skater...</string>
+        </property>
+        <property name="toolTip">
+            <string>Skater</string>
+        </property>
+        <property name="statusTip">
+            <string>Skater</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>globalEmpiricalBayesAction</cstring>
+        </property>
+        <property name="text">
+            <string>&amp;Global Empirical Bayes...</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Global Empirical Bayes...</string>
+        </property>
+        <property name="toolTip">
+            <string>Bayes</string>
+        </property>
+        <property name="statusTip">
+            <string>Global Empirical Bayes</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>localEmpiricalBayesAction</cstring>
+        </property>
+        <property name="text">
+            <string>&amp;Local Empirical Bayes...</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>kernelRatioAction</cstring>
+        </property>
+        <property name="text">
+            <string>Kernel &amp;Ratio....</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>proximityMatrixAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="text">
+            <string>Proximity Matrix</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Proximity Matrix</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>selectProxMatrixAction</cstring>
+        </property>
+        <property name="text">
+            <string>&amp;Select Proximity Matrix...</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Select Proximity Matrix...</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>createProxMatrixAction</cstring>
+        </property>
+        <property name="text">
+            <string>&amp;Create Proximity Matrix...</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Create Proximity Matrix...</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>generateSamplePointsAction</cstring>
+        </property>
+        <property name="text">
+            <string>Generate Sample Points...</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>infolayerMultiLayer_Vectorial_ExportAction</cstring>
+        </property>
+        <property name="text">
+            <string>MultiLayer Vectorial Export...</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>infolayerUpdate_MetadataAction</cstring>
+        </property>
+        <property name="text">
+            <string>Update Metadata...</string>
+        </property>
+    </action>
+</actions>
+<connections>
+    <connection>
+        <sender>addViewAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>addViewAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>closeDatabaseAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>closeDatabaseAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>dropDatabaseAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>dropDatabaseAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>createCellsAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>createCellsAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>cursorActionGroup</sender>
+        <signal>selected(QAction*)</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>cursorActionGroup_selected(QAction*)</slot>
+    </connection>
+    <connection>
+        <sender>databasesTreeAction</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>databasesTreeAction_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>displayAction</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>displayAction_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>drawAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>drawAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>exitAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>graphicAction</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>graphicAction_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>gridAction</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>gridAction_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>importRasterAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>importRasterAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>importTableAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>importTableAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>nextDisplayAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>nextDisplayAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>openDatabaseAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>openDatabaseAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>previousDisplayAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>previousDisplayAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>resetAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>resetAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>saveDisplayAsFileAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>saveDisplayAsFileAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>saveDisplayWithPrinterAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>saveDisplayWithPrinterAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>showToolBarAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>showToolBarAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>tileWindowsAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>tileWindowsAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>viewsTreeAction</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>viewsTreeAction_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>addThemeAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>addThemeAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>kernelMapAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>kernelMapAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>importTablePointsAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>importTablePointsAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>helpManualAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>helpManualAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>faqAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>faqAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>showStatusBarAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>showStatusBarAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>importDataAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>importDataAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>spatialStatisticsAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>spatialStatisticsAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>vectorialExportAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>vectorialExportAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>importRasterSimpleAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>importRasterSimpleAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>addressGeocodingAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>addressGeocodingAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>unselectObjectsAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>unselectObjectsAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>invertSelectionAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>invertSelectionAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>enableEditAction</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>enableEditAction_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>semivarAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>semivarAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>scaleComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>scaleComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>skaterAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>skaterAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>localEmpiricalBayesAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>localEmpiricalBayesAction_actived()</slot>
+    </connection>
+    <connection>
+        <sender>kernelRatioAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>kernelRatioAction_actived()</slot>
+    </connection>
+    <connection>
+        <sender>helpAboutAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>about()</slot>
+    </connection>
+    <connection>
+        <sender>createProxMatrixAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>createProxMatrixAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>selectProxMatrixAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>selectProxMatrixAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>globalEmpiricalBayesAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>globalEmpiricalBayesAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>generateSamplePointsAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>generateSamplePointsAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>infolayerMultiLayer_Vectorial_ExportAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>infolayerMultiLayer_Vectorial_ExportAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>infolayerUpdate_MetadataAction</sender>
+        <signal>activated()</signal>
+        <receiver>TerraViewBase</receiver>
+        <slot>infolayerUpdate_MetadataAction_activated()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in declaration">TeBox.h</include>
+    <include location="global" impldecl="in declaration">map</include>
+    <include location="global" impldecl="in declaration">vector</include>
+    <include location="global" impldecl="in declaration">TeVisual.h</include>
+    <include location="global" impldecl="in declaration">TeDataTypes.h</include>
+    <include location="global" impldecl="in declaration">TeAttribute.h</include>
+    <include location="global" impldecl="in declaration">TeTable.h</include>
+    <include location="global" impldecl="in declaration">set</include>
+    <include location="global" impldecl="in declaration">addressLocatorWindow.h</include>
+    <include location="global" impldecl="in declaration">PluginsManager.h</include>
+    <include location="global" impldecl="in declaration">PluginParameters.h</include>
+    <include location="global" impldecl="in declaration">qapplication.h</include>
+    <include location="global" impldecl="in implementation">qworkspace.h</include>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="global" impldecl="in implementation">qvbox.h</include>
+    <include location="global" impldecl="in implementation">TeQtGrid.h</include>
+    <include location="global" impldecl="in implementation">database.h</include>
+    <include location="global" impldecl="in implementation">TeQtDatabasesListView.h</include>
+    <include location="global" impldecl="in implementation">TeDatabase.h</include>
+    <include location="global" impldecl="in implementation">TeQtCanvas.h</include>
+    <include location="global" impldecl="in implementation">display.h</include>
+    <include location="global" impldecl="in implementation">import.h</include>
+    <include location="global" impldecl="in implementation">qstatusbar.h</include>
+    <include location="global" impldecl="in implementation">TeWaitCursor.h</include>
+    <include location="global" impldecl="in implementation">anaesp.h</include>
+    <include location="global" impldecl="in implementation">spatialQuery.h</include>
+    <include location="global" impldecl="in implementation">TeQtShowMedia.h</include>
+    <include location="global" impldecl="in implementation">qpopupmenu.h</include>
+    <include location="global" impldecl="in implementation">linkExtTable.h</include>
+    <include location="global" impldecl="in implementation">importTblPoints.h</include>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="global" impldecl="in declaration">PluginMetadata.h</include>
+    <include location="local" impldecl="in implementation">terraViewBase.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+    <include location="global" impldecl="in declaration">TeAppTheme.h</include>
+</includes>
+<forwards>
+    <forward>class QWorkspace;</forward>
+    <forward>class TeQtCanvas;</forward>
+    <forward>class TeQtGrid;</forward>
+    <forward>class TeQtDatabasesListView;</forward>
+    <forward>class TeDatabase;</forward>
+    <forward>class TeQtCanvas;</forward>
+    <forward>class DisplayWindow;</forward>
+    <forward>class TeDatabase;</forward>
+    <forward>class TeLayer;</forward>
+    <forward>class TeDatabasePortal;</forward>
+    <forward>class DatabaseProperties;</forward>
+    <forward>class LayerProperties;</forward>
+    <forward>class TeQtViewsListView;</forward>
+    <forward>class TeView;</forward>
+    <forward>class QListViewItem;</forward>
+    <forward>class TeQtLayerItem;</forward>
+    <forward>class QCheckListItem;</forward>
+    <forward>class TeQtDatabaseItem;</forward>
+    <forward>class TeQtViewItem;</forward>
+    <forward>class TeQtThemeItem;</forward>
+    <forward>class ViewProperties;</forward>
+    <forward>class ThemeProperties;</forward>
+    <forward>class TeQtCheckListItem;</forward>
+    <forward>class TeLegendEntry;</forward>
+    <forward>using namespace std;</forward>
+    <forward>class LegendEditor;</forward>
+    <forward>class QueryWindow;</forward>
+    <forward>class GraphicWindow;</forward>
+    <forward>class TeQtProgress;</forward>
+    <forward>class GraphicParams;</forward>
+    <forward>class Anaesp;</forward>
+    <forward>class SpatialQueryWindow;</forward>
+    <forward>class TeQtShowMedia;</forward>
+    <forward>class QPopupMenu;</forward>
+    <forward>class LinkExtTable;</forward>
+    <forward>class KernelWindow;</forward>
+    <forward>struct RepMap;</forward>
+    <forward>class TeTheme;</forward>
+    <forward>class AddressLocatorWindow;</forward>
+    <forward>class QRadioButton;</forward>
+    <forward>class KernelRatioWindow;</forward>
+    <forward>class Help;</forward>
+    <forward>class CreateProxMatrix;</forward>
+    <forward>class SelectProxMatrix;</forward>
+    <forward>class Graphic3DWindow;</forward>
+    <forward>class Semivar;</forward>
+</forwards>
+<variables>
+    <variable>Semivar* semivar_;</variable>
+    <variable access="public">QApplication* qapplication_ptr_;</variable>
+    <variable>LayerProperties* layerProp_;</variable>
+    <variable access="public">PluginsManager plugins_manager_;</variable>
+    <variable access="public">int cvContentsH_;</variable>
+    <variable access="public">int cvContentsW_;</variable>
+    <variable>CreateProxMatrix* createProxMatrix_;</variable>
+    <variable access="public">void* myRpointer_;</variable>
+    <variable>Help* help_;</variable>
+    <variable>KernelRatioWindow* kernelRatio_;</variable>
+    <variable>QRadioButton* MChannelRadioButton;</variable>
+    <variable>bool origDecimalSepIsPoint_;</variable>
+    <variable access="public">map&lt;int, RepMap&gt; layerId2RepMap_;</variable>
+    <variable>KernelWindow *kernel_;</variable>
+    <variable>LinkExtTable* linkTable_;</variable>
+    <variable>TeQtShowMedia* showMediaWindow_;</variable>
+    <variable>enum { Histogram, NormalProbability, Dispersion };</variable>
+    <variable>int gridColumn_;</variable>
+    <variable>TeQtProgress* progress_;</variable>
+    <variable>TeAppTheme *currentTheme_;</variable>
+    <variable>TeView *currentView_;</variable>
+    <variable>Graphic3DWindow* graphic3DWindow_;</variable>
+    <variable>int curBoxIndex_;</variable>
+    <variable>vector&lt;TeBox&gt; boxesVector_;</variable>
+    <variable>TeQtCanvas *canvas_;</variable>
+    <variable>DisplayWindow *displayWindow_;</variable>
+    <variable>QWorkspace *ws_;</variable>
+    <variable>QDockWindow *databasesDock_;</variable>
+    <variable>QDockWindow *gridDock_;</variable>
+    <variable>TeQtDatabasesListView *databasesListView_;</variable>
+    <variable>TeQtGrid *grid_;</variable>
+    <variable>TeDatabase *currentDatabase_;</variable>
+    <variable>TeLayer *currentLayer_;</variable>
+    <variable>DatabaseProperties *databaseProp_;</variable>
+    <variable>QDockWindow *viewsDock_;</variable>
+    <variable>TeQtViewsListView *viewsListView_;</variable>
+    <variable>ViewProperties *viewProp_;</variable>
+    <variable>ThemeProperties *themeProp_;</variable>
+    <variable>QueryWindow *query_;</variable>
+    <variable>GraphicWindow *graphic_;</variable>
+    <variable>TeBox bgAndBoxChanged_;</variable>
+    <variable>string showTooltip_;</variable>
+    <variable>int columnTooltip_;</variable>
+    <variable>GraphicParams *graphicParams_;</variable>
+    <variable>string mediaId_;</variable>
+    <variable>QPopupMenu* popupTable_;</variable>
+    <variable>QPopupMenu* popupTooltip_;</variable>
+    <variable access="public">string countingPrefix_;</variable>
+    <variable>AddressLocatorWindow* addressLocatorWindow_;</variable>
+    <variable>QAction* cursorSelected_;</variable>
+    <variable>int newVariable;</variable>
+    <variable>QRadioButton* LUTRadioButton;</variable>
+    <variable>QRadioButton* RChannelRadioButton;</variable>
+    <variable>QRadioButton* GChannelRadioButton;</variable>
+    <variable>QRadioButton* BChannelRadioButton;</variable>
+    <variable>QRadioButton* detailsRadioButton;</variable>
+    <variable>SelectProxMatrix* selectProxMatrix_;</variable>
+    <variable access="public">QString lastOpenDir_;</variable>
+    <variable access="public">bool printWithDisplayResolution_;</variable>
+    <variable access="public">int printFileResolution_;</variable>
+    <variable access="public">bool pluginMetadataSetted_;</variable>
+    <variable access="public">PluginMetadata currentPluginMetadata_;</variable>
+    <variable>QString appCaption_;</variable>
+</variables>
+<signals>
+    <signal>layerChanged(int layerId);</signal>
+    <signal>themeChanged(int themeId);</signal>
+    <signal>viewChanged(int viewId);</signal>
+    <signal>dbChanged(QString databaseName);</signal>
+    <signal>graphicCursorActivated(bool);</signal>
+    <signal>queryChangedSignal();</signal>
+    <signal>groupChangedSignal();</signal>
+</signals>
+<slots>
+    <slot access="protected">execPopupFromDatabasesListViewSlot()</slot>
+    <slot access="protected">execPopupFromViewsListViewSlot()</slot>
+    <slot>popupHorizHeaderSlot( int itemCol )</slot>
+    <slot>popupVertHeaderSlot( int rowPointed )</slot>
+    <slot>popupVerticalHeaderDblClickSlot( int row )</slot>
+    <slot>popupViewportSlot()</slot>
+    <slot specifier="non virtual">closeDatabaseAction_activated()</slot>
+    <slot specifier="non virtual">dropDatabaseAction_activated()</slot>
+    <slot access="protected" specifier="non virtual">closeEvent( QCloseEvent * ce )</slot>
+    <slot specifier="non virtual">cursorActionGroup_selected( QAction * action )</slot>
+    <slot>enableEditAction_toggled( bool b )</slot>
+    <slot specifier="non virtual">openDatabaseAction_activated()</slot>
+    <slot>popupDatabaseProperties()</slot>
+    <slot>importDataAction_activated()</slot>
+    <slot>showToolBarAction_activated()</slot>
+    <slot specifier="non virtual">showStatusBarAction_activated()</slot>
+    <slot>popupRenameDatabasesListViewItem()</slot>
+    <slot>popupThemeRemoveAllAlias()</slot>
+    <slot>popupRemoveAliasViewsListViewItem()</slot>
+    <slot>popupRenameViewsListViewItem()</slot>
+    <slot>itemRenamed( QListViewItem * item, int, const QString &amp; newName )</slot>
+    <slot>popupRemoveDatabasesListViewItem()</slot>
+    <slot>popupRemoveViewsListViewItem()</slot>
+    <slot>popupExportThemesViewListViewItem()</slot>
+    <slot>removeItem( TeQtCheckListItem * checkItem )</slot>
+    <slot>popupLayerLoadMemory()</slot>
+    <slot>popupLayerClearMemory()</slot>
+    <slot>layerProperties()</slot>
+    <slot>viewProperties()</slot>
+    <slot>themeProperties()</slot>
+    <slot specifier="non virtual">drawAction_activated()</slot>
+    <slot specifier="non virtual">previousDisplayAction_activated()</slot>
+    <slot specifier="non virtual">nextDisplayAction_activated()</slot>
+    <slot specifier="non virtual">resetAction_activated()</slot>
+    <slot specifier="non virtual">tileWindowsAction_activated()</slot>
+    <slot specifier="non virtual">databasesTreeAction_toggled( bool isVisible )</slot>
+    <slot specifier="non virtual">viewsTreeAction_toggled( bool isVisible )</slot>
+    <slot specifier="non virtual">gridAction_toggled( bool isVisible )</slot>
+    <slot specifier="non virtual">displayAction_toggled( bool isVisible )</slot>
+    <slot specifier="non virtual">itemChanged( QListViewItem * item )</slot>
+    <slot>attributesQuery()</slot>
+    <slot>spatialQuery()</slot>
+    <slot>popupPromoteSlot( int i )</slot>
+    <slot specifier="non virtual">popupGridColumnsSlot( int i )</slot>
+    <slot>popupRemovePointingColor()</slot>
+    <slot>removePointingColor()</slot>
+    <slot>popupRemoveQueryColor()</slot>
+    <slot>removeQueryColor()</slot>
+    <slot>removeQueryColor( TeAppTheme * appTheme )</slot>
+    <slot>popupScrollGridSlot( int i )</slot>
+    <slot>popupEditInVerticalDirection()</slot>
+    <slot specifier="non virtual">addViewAction_activated()</slot>
+    <slot>popupViewProjection()</slot>
+    <slot>addThemeAction_activated()</slot>
+    <slot>popupDefaultVisual()</slot>
+    <slot>popupPointingVisual()</slot>
+    <slot>popupQueryVisual()</slot>
+    <slot>popupPointingQueryVisual()</slot>
+    <slot>textVisual()</slot>
+    <slot>checkListItemVisChanged( QCheckListItem * checkListItem, bool visible )</slot>
+    <slot>updateThemesPriority( TeQtThemeItem * pressedThemeItem, TeQtViewItem * pressedViewItem, TeQtViewItem * dropViewItem )</slot>
+    <slot>textRepresentation()</slot>
+    <slot>editLegend()</slot>
+    <slot>editPieBarChart()</slot>
+    <slot specifier="non virtual">popupChangeLegendVisualSlot()</slot>
+    <slot>popupChangeChartColorSlot()</slot>
+    <slot>popupLegendOrChartPropertiesSlot()</slot>
+    <slot>popupThemeVisibility()</slot>
+    <slot>setCurrentThemeVisibility()</slot>
+    <slot>graphicAction_toggled( bool status )</slot>
+    <slot>setGraphicParams()</slot>
+    <slot>createCellsAction_activated()</slot>
+    <slot>popupStatisticSlot()</slot>
+    <slot>popupHistogramSlot( int i )</slot>
+    <slot>popupNormalProbSlot( int i )</slot>
+    <slot>popupDispersionSlot( int i )</slot>
+    <slot>popupTooltipSlot( int i )</slot>
+    <slot>popupAddColumnSlot()</slot>
+    <slot>popupDeleteColumnSlot()</slot>
+    <slot>popupChangeColumnDataSlot()</slot>
+    <slot>popupChangeColumnNameSlot()</slot>
+    <slot>popupChangeColumnTypeSlot()</slot>
+    <slot>popupAdjustColumnWidthSlot()</slot>
+    <slot>popupShowDefaultMediaSlot()</slot>
+    <slot>popupInsertMediaSlot()</slot>
+    <slot>popupInsertURLSlot()</slot>
+    <slot>popupDefaultMediaDescriptionSlot()</slot>
+    <slot>popupAttributesAndMediaSlot()</slot>
+    <slot>importRasterAction_activated()</slot>
+    <slot>vectorialExportAction_activated()</slot>
+    <slot>saveDisplayAsFileAction_activated()</slot>
+    <slot>saveDisplayWithPrinterAction_activated()</slot>
+    <slot>importTableAction_activated()</slot>
+    <slot>importTablePointsAction_activated()</slot>
+    <slot>createProxMatrixAction_activated()</slot>
+    <slot>selectProxMatrixAction_activated()</slot>
+    <slot>spatialStatisticsAction_activated()</slot>
+    <slot>kernelMapAction_activated()</slot>
+    <slot>selectThemeTables()</slot>
+    <slot>createLayerTable()</slot>
+    <slot>popupRemoveExternalTable()</slot>
+    <slot>deleteLayerTable()</slot>
+    <slot>linkExternalTable()</slot>
+    <slot>popupUnlinkExternalTableSlot()</slot>
+    <slot>autoPromoteSlot()</slot>
+    <slot>createCountLegends( TeAppTheme * appTheme, string table, string field )</slot>
+    <slot>popupAddCentroidRepDatabasesListViewItem()</slot>
+    <slot>popupCreateCentroidLayerDatabasesListViewItem()</slot>
+    <slot>popupCreateCountLayerDatabasesListViewItem()</slot>
+    <slot>popupExportTableSlot()</slot>
+    <slot>popupExportTableAsTxtSlot()</slot>
+    <slot>clearGridInformationSlot()</slot>
+    <slot>displayGridInformationSlot( QString info )</slot>
+    <slot>popupCalculateAreaSlot()</slot>
+    <slot>popupCalculatePerimeterSlot()</slot>
+    <slot>popupCalculateCountSlot( int item )</slot>
+    <slot>helpManualAction_activated()</slot>
+    <slot>faqAction_activated()</slot>
+    <slot>popupCreateLayerFromTheme()</slot>
+    <slot>popupImageContrast()</slot>
+    <slot>popupShowGridInformationSlot()</slot>
+    <slot specifier="non virtual">importRasterSimpleAction_activated()</slot>
+    <slot>popupLayerProjection()</slot>
+    <slot>addressGeocodingAction_activated()</slot>
+    <slot>popupLocateAddress()</slot>
+    <slot>popupViewConnect()</slot>
+    <slot>unselectObjectsAction_activated()</slot>
+    <slot>invertSelectionAction_activated()</slot>
+    <slot>popupGeoprocessingSlot( int i )</slot>
+    <slot>semivarAction_activated()</slot>
+    <slot>scaleComboBox_activated( const QString &amp; v )</slot>
+    <slot>skaterAction_activated()</slot>
+    <slot>globalEmpiricalBayesAction_activated()</slot>
+    <slot specifier="non virtual">showRasterDisplayProperties()</slot>
+    <slot>checkParamsPassing()</slot>
+    <slot>popupCreateThemeFromTheme()</slot>
+    <slot>localEmpiricalBayesAction_actived()</slot>
+    <slot>kernelRatioAction_actived()</slot>
+    <slot>popupDatabaseRefreshSlot()</slot>
+    <slot>about()</slot>
+    <slot>popupRasterHistogramSlot()</slot>
+    <slot access="protected" specifier="non virtual">popuRasterTransparencySlot()</slot>
+    <slot>popupInsertFileDatabaseInfo()</slot>
+    <slot>popupInsertURLDatabaseInfo()</slot>
+    <slot>popupRetrieveDatabaseInfo()</slot>
+    <slot>popupRemoveDatabaseInfo()</slot>
+    <slot>popupInsertFileLayerInfo()</slot>
+    <slot>popupInsertURLLayerInfo()</slot>
+    <slot>popupRetrieveLayerInfo()</slot>
+    <slot>popupRemoveLayerInfo()</slot>
+    <slot>printFileResolutionFunc( const QString &amp; filename )</slot>
+    <slot>pluginsMenuSelected( int id )</slot>
+    <slot>popupDispersion3DSlot()</slot>
+    <slot>generateSamplePointsAction_activated()</slot>
+    <slot>zoomAreaSlot()</slot>
+    <slot>loadPluginsSlot()</slot>
+    <slot specifier="non virtual">popupSaveThemeToFile()</slot>
+    <slot>groupChanged()</slot>
+    <slot>popupRasterDisplaySlot()</slot>
+    <slot>infolayerMultiLayer_Vectorial_ExportAction_activated()</slot>
+    <slot>infolayerUpdate_MetadataAction_activated()</slot>
+</slots>
+<functions>
+    <function access="protected" specifier="non virtual">init()</function>
+    <function>databaseProperties( TeQtDatabaseItem * dbItem )</function>
+    <function returnType="bool">createTheme( string themeName, TeView * view, TeLayer * layer, string whereClause, TeAttrTableVector &amp; tablesVector )</function>
+    <function>showObjectInformation( string objId )</function>
+    <function specifier="non virtual" returnType="TeQtDatabasesListView *">getDatabasesListView()</function>
+    <function specifier="non virtual" returnType="TeQtViewsListView *">getViewsListView()</function>
+    <function specifier="non virtual">loadViewsTree( TeDatabase * database )</function>
+    <function>updateThemeItemInterface( TeQtThemeItem * themeItem )</function>
+    <function specifier="non virtual" returnType="TeDatabase *">currentDatabase()</function>
+    <function specifier="non virtual" returnType="TeLayer *">currentLayer()</function>
+    <function specifier="non virtual" returnType="TeView *">currentView()</function>
+    <function specifier="non virtual" returnType="TeAppTheme *">currentTheme()</function>
+    <function>setCurrentAppTheme( TeAppTheme * appTheme )</function>
+    <function specifier="non virtual" returnType="TeQtGrid *">getGrid()</function>
+    <function>checkWidgetEnabling()</function>
+    <function>removePointingColor( TeTheme * theme )</function>
+    <function specifier="non virtual" returnType="TeQtCanvas *">getCanvas()</function>
+    <function>setDefaultVisual( TeQtThemeItem * themeItem )</function>
+    <function>setPointingVisual( TeQtThemeItem * themeItem )</function>
+    <function>setQueryVisual( TeQtThemeItem * themeItem )</function>
+    <function>setPointingQueryVisual( TeQtThemeItem * themeItem )</function>
+    <function>changeLegendVisual( TeLegendEntry * leg )</function>
+    <function>themeVisibility( TeQtThemeItem * themeItem )</function>
+    <function returnType="bool">editionIsActivated()</function>
+    <function returnType="bool">graphicCursorIsActivated()</function>
+    <function returnType="TeBox &amp;">getChangedBox()</function>
+    <function>deleteSelectedColumns()</function>
+    <function>kernelEnableControl( bool b )</function>
+    <function>resetBoxesVector()</function>
+    <function returnType="DisplayWindow *">getDisplayWindow()</function>
+    <function>updateBoxesVector( TeBox b )</function>
+    <function returnType="string">getTooltip()</function>
+    <function returnType="int">gridColumn()</function>
+    <function returnType="TeQtProgress *">getProgress()</function>
+    <function returnType="GraphicParams *">getGraphicParams()</function>
+    <function returnType="GraphicWindow *">getGraphicWindow()</function>
+    <function>setMediaId( string id )</function>
+    <function>changeCurrentThemeSlot( TeAppTheme * curTheme )</function>
+    <function>mountLayerRepMap( TeLayer * layer )</function>
+    <function>cursorRestore()</function>
+    <function returnType="AddressLocatorWindow *">getAddressLocatorWindow()</function>
+    <function>origDecimalSepIsPoint( bool flag )</function>
+    <function returnType="Graphic3DWindow *">getGraphic3DWindow()</function>
+    <function>setQApplicationPointer( QApplication * qapp_ptr )</function>
+    <function returnType="QApplication *">getQApplicationPointer()</function>
+    <function returnType="PluginParameters">getPluginParameters()</function>
+    <function>queryChanged()</function>
+    <function>setPluginMetadata(const PluginMetadata &amp; pluginMetadata)</function>
+    <function access="protected">showTabwinHelp()</function>
+	<function>layerProperties(TeQtLayerItem* layerItem)</function>
+	<function>viewProperties(TeQtViewItem* viewItem)</function>
+	<function>themeProperties(TeQtThemeItem* themeItem)</function>
+	<function>viewProjection(TeQtViewItem* viewItem)</function>
+	<function>layerProjection(TeQtLayerItem* layerItem)</function>
+	<function>removeExternalTable(TeQtDatabaseItem* dbItem)</function>
+	<function>getLayerMenu(QPopupMenu* popupMenu)</function>
+	<function>getViewMenu(QPopupMenu* popupMenu)</function>
+	<function>getThemeMenu(QPopupMenu* popupMenu)</function>
+  <function>setAppCaption(const QString&amp;)</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

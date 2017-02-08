@@ -1,0 +1,233 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>TeFlowWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>TeFlowWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>293</width>
+            <height>201</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Flow Window</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="resizeMode">
+            <enum>Fixed</enum>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout7</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout3</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout1</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel" row="2" column="0">
+                                    <property name="name">
+                                        <cstring>textLabel3</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Current Theme</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel" row="1" column="0">
+                                    <property name="name">
+                                        <cstring>textLabel2</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Current Layer</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>textLabel1</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Current Database</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QLayoutWidget" row="0" column="1">
+                            <property name="name">
+                                <cstring>layout2</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLineEdit" row="2" column="0">
+                                    <property name="name">
+                                        <cstring>themeLineEdit</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>150</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="frameShape">
+                                        <enum>LineEditPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>Sunken</enum>
+                                    </property>
+                                    <property name="readOnly">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit" row="1" column="0">
+                                    <property name="name">
+                                        <cstring>layerLineEdit</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>150</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="readOnly">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>databaseLineEdit</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>150</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="readOnly">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QLayoutWidget" row="1" column="0">
+                    <property name="name">
+                        <cstring>layout6</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton" row="2" column="0">
+                            <property name="name">
+                                <cstring>classifyPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Classify Data Flow...</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="1" column="0">
+                            <property name="name">
+                                <cstring>networkPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Generate Flow Network...</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="0">
+                            <property name="name">
+                                <cstring>generatePushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Generate Flow Diagram...</string>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>generatePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>TeFlowWindow</receiver>
+        <slot>generatePushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>networkPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>TeFlowWindow</receiver>
+        <slot>networkPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>classifyPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>TeFlowWindow</receiver>
+        <slot>classifyPushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>databaseLineEdit</tabstop>
+    <tabstop>layerLineEdit</tabstop>
+    <tabstop>themeLineEdit</tabstop>
+    <tabstop>generatePushButton</tabstop>
+    <tabstop>networkPushButton</tabstop>
+    <tabstop>classifyPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">PluginParameters.h</include>
+    <include location="global" impldecl="in declaration">flowDataClassify.h</include>
+    <include location="global" impldecl="in declaration">flowDiagramGeneration.h</include>
+    <include location="local" impldecl="in implementation">TeFlowWindow.ui.h</include>
+</includes>
+<variables>
+    <variable>PluginParameters * plug_pars_ptr_;</variable>
+    <variable>FlowClassify* classify_;</variable>
+    <variable>FlowDiagramGeneration* generate_;</variable>
+</variables>
+<slots>
+    <slot>generatePushButton_clicked()</slot>
+    <slot>networkPushButton_clicked()</slot>
+    <slot>classifyPushButton_clicked()</slot>
+    <slot>merPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function>init( PluginParameters * plug_pars_ptr )</function>
+    <function>destroy()</function>
+    <function returnType="bool">updateInterface( PluginParameters * plug_pars_ptr )</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

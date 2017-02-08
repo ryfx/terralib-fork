@@ -1,0 +1,264 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Legend Editor</title>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+
+<div class=Section1>
+
+<p align=center>
+	<strong><u>
+		<span style='font-size: 13.5pt;font-family:Arial'>Legend Editor</span>
+	</u></strong>
+</p>
+
+<p>
+	<span style='font-family:Arial'>
+	Legend editor interface, shown in Figure 1, is used to create a new grouping or to import a grouping from another theme.
+<p align=center>
+<img id="_x0000_i1037" src="legendWindow_arquivos/legendWindow1.png">
+<br>
+Fig. 1 – Legend Editor interface.
+</p>
+Import is used to retrieve grouping used by other themes and is executed by checking 
+  <em>Import</em>. Figure 2 shows the Import option unchecked and Figure 3 shows 
+  the interface after Import is enabled. 
+  <p align=center>
+<img id="_x0000_i1036" src="legendWindow_arquivos/import1.png">
+<br>
+Fig. 2 – Interface with Grouping Import unchecked.
+<br><br>
+<img id="_x0000_i1035" src="legendWindow_arquivos/import2.png">
+<br>
+Fig. 3 - Interface with Grouping Import enabled.
+</p>
+To import a grouping, enable <em>Import</em> check box and select the theme with 
+  the grouping. When <em>Import</em> button is clicked, the selected theme grouping 
+  parameters are retrieved. <br>
+  <br>
+Note: The list of available themes to import is filtered in such a way that only themes with grouping by equal steps and quantil are displayed. Themes grouped by standard deviation and unique value cannot be imported.
+<br><br>
+Import is executed even if the themes are not from the same layer. If the current theme does not have the same name of attribute in the imported theme, a warning message is displayed. In this case, everything is imported but the attribute name.
+<br><br>
+  After importing, do not change the parameters in <em>Grouping Parameters</em> 
+  box shown in Figure 4. Any change in the grouping parameters cancels the retrieved 
+  legend. To apply the imported legend, click <em>Apply</em> button in the bottom 
+  of the interface. 
+  <p align=center>
+<img id="_x0000_i1034" src="legendWindow_arquivos/groupingParameters.png">
+<br>
+Fig. 4 - Grouping Parameters to create legend.
+</p>
+<strong>New Legend Creation</strong>
+<br><br>
+To create a new legend it is necessary to configure parameters shown in Figure 4.
+<br><br>
+  <em>Mode</em> field presents a list with available grouping methods: 
+  <ul>
+	  1. <a href="#passos_iguais">equal steps</a><br><br>
+	  2. <a href="#quantil">quantil</a><br><br>
+	  3. <a href="#desvio_padrao">standard deviation</a> and<br><br>
+	  4. <a href="#valor_unico">unique value</a>.
+	</ul>
+  <em>Attribute</em> field presents a list with all attributes of the theme. <br>
+  <br>
+  <em>Slices</em> field is used in equal steps and quantil methods to create legend 
+  with up to 200 groups. <br>
+  <br>
+  <em>Standard deviation</em> field is used in grouping by standard deviation 
+  to create groups divided by: 
+  <ul>
+	1 standard deviation,<br><br>
+	1/2 standard deviation or<br><br>
+	1/4 standard deviation.<br><br>
+	</ul>
+
+  <em>Precision</em> field defines the significant number of digits to create a 
+  legend. <br>
+  <br>
+  <em>Function</em> field defines which <a href="#funcao_agregacao">aggregation 
+  function</a> is used when a attribute requires one such function. <br>
+  <br>
+Parameters related to temporal data (Chronon, Chronon Interval, and Date/Time) are disabled in this version.
+<br><br>
+  These parameters are used to calculate and display a legend in the bottom part 
+  of the interface. These parameters are applied when <em>Apply</em> button is 
+  clicked. <br>
+  <br>
+<strong>Color Definition</strong>
+<br><br>
+  Once the legend is displayed, colors can be adjusted through <em>Colors</em> 
+  region shown in Figure 5. 
+  <p align=center>
+<img border=0 id="_x0000_i1033" src="legendWindow_arquivos/colors1.png">
+<br>
+Fig. 5 – Legend colors adjustment.
+</p>
+Legend colors are defined by a <a href="colorBar.htm">color bar</a>.
+<br><br>
+Legend colors are generated following the selected colors sequence.
+<br><br>
+  <em>Clear</em> button removes colors from the bar and &quot;Invert&quot; button 
+  inverts colors sequence in the bar. <br>
+  <br>
+  <em>Save</em> button allows the user to create a custom color bar and to save 
+  it in the database. <br>
+  <br>
+  <em>Equal Space</em> button equally spaces the colors presented in the bar. 
+  <br>
+  <br>
+  <em>Load Color Bar</em> field lists color bars that can be retrieved from the 
+  database. <br>
+  <br>
+Note: Visual style in not changed by this module. The used visual style is the style of the theme default visual.
+<br><br>
+<strong>Legend Manual Edition</strong>
+<br><br>
+Manual edition is executed in the legend shown in bottom part of the interface using the mouse and the keyboard.
+<br><br>
+During and after an edition do not change the configuration in &quot;Grouping Parameters&quot; region. Any change in these parameters cancels the edition by erasing the displayed legend. Also do not click &quot;Apply&quot; button since apply implies that a new legend is calculated and created.
+<br><br>
+Colors can be adjusted at any time without clearing the edit.
+<br><br>
+  After the edition is finished, click <em>OK</em> button to save and to draw 
+  the theme. <br>
+  <br>
+  Note: When edition is executed, <em>Count</em> field will not be updated until 
+  &quot;OK&quot; button is clicked. <br>
+  <br>
+<strong>Other Grouping Methods</strong>
+<br><br>
+  When none of the available methods is suitable, a new legend can be created 
+  using manual edition. In such case, apply equal steps grouping selecting attribute 
+  and slices. Then, edit the displayed legend, adjust colors, and click <em>Apply</em> 
+  button. <br>
+  <br>
+<strong>Notes on grouping methods</strong>
+<br><br>
+<a name="passos_iguais"></a><strong>Equal steps</strong> grouping method creates a values interval for each group. For instance, if minimum value of an attribute is 0, maximum value is 20, and number of slices is 5, the module calculates the values range of each group using:
+	<ul>
+	<li>range = vmax - vmin / Slices</li>
+	</ul>
+	replacing the variables, range is given by:
+	<ul>
+	<li>range = 20 - 0 / 5 = 4</li>
+	</ul>
+
+Therefore, each group has values interval of 4 and the groups are:
+<ul>
+group 1: 0 ~ 4 (note that the interval is 4 - 0 = 4)
+<br><br>
+group 2: 4 ~ 8 (note that the interval is 8 - 4 = 4)
+<br><br>
+group 3: 8 ~12 (note that the interval is 12 - 8 = 4)
+<br><br>
+group 4: 12 ~16 (note that the interval is 16 - 12 = 4)
+<br><br>
+group 5: 16 ~20 (note that the interval is 20 - 16 = 4)
+</ul>
+Figure 6 shows a legend created by this example grouping.
+<p align=center>
+<img border=0 id="_x0000_i1032" src="legendWindow_arquivos/equal.png">
+<br>
+Fig. 6 – Result of an equal steps grouping.
+</p>
+<strong>Notes on legend presentation and application</strong>
+<br><br>
+In the legend, in name of simplicity, the mathematical symbols of inclusion and exclusion are not shown.
+<br><br>
+From the first to the one from the last group, intervals are defined from inclusive to exclusive. Therefore, in the previous example, the intervals are:
+<ul>
+0 &lt;= v &lt; 4 (values between 0 and 4, where 0 is inclusive and 4 is exclusive)
+<br><br>
+4 &lt;= v &lt; 8 (values between 4 and 8, where 4 is inclusive and 8 is exclusive)
+<br><br>
+8 &lt;= v &lt; 12 (values between 8 and 12, where 8 is inclusive and 12 is exclusive)
+<br><br>
+12 &lt;= v &lt; 16 (values between 12 and 16, where 12 is inclusive and 16 is exclusive)
+<br><br>
+In the last group, intervals are defined from inclusive to inclusive, that is:
+<br><br>
+16 &lt;= v &lt;= 20 (values between 16 and 20, where 12 is inclusive and 20 is also inclusive)
+</ul>
+<a name=quantil></a><strong>Quantil</strong> grouping method tries to assign the same number of objects for each group. Therefore, values interval is not constant. The number of objects is the invariable number for each group. This grouping method allows data visualization in percentile distribution. Figure 7 shows the result of a quantil grouping as created by the module.
+<p align=center>
+<img border=0 id="_x0000_i1031" src="legendWindow_arquivos/quantil.png">
+<br>
+Fig. 7 - Result of a quantil grouping.
+</p>
+Observe in Figure 7 that objects Count is close to 58 for each group.
+<br><br>
+<a name="desvio_padrao"></a><b>Standard deviation</b> grouping method defines intervals based on the standard deviation of the mean. In this method, slices depend on theme data. This grouping method allows analysis of data behavior around the mean. Figure 8 shows the result of a standard deviation grouping as created by the module.
+<p align=center>
+<img border=0 id="_x0000_i1030" src="legendWindow_arquivos/stdDev1Cor.png">
+<br>
+Fig. 8 - Result of a standard deviation grouping.
+</p>
+<strong>Standard deviation</strong> grouping method creates an additional legend line to display the mean value. Observe that each interval, below and above the mean, is equal to the value of the standard deviation portion selected in the interface: 1, ½, or 1/4.
+<br><br>
+Colors in this type of grouping are arranged is such a way that enhances the difference between objects near the mean and the objects that are away from the mean. Notice that colors are stronger as the group is farther from the mean. The used color bar is shown in Figure 9.
+<p align=center>
+<img border=0 id="_x0000_i1029" src="legendWindow_arquivos/colorsSTD.png">
+<br>
+Fig. 9 – Color bar used by a standard deviation grouping.
+</p>
+Upper bar defines colors of legends below the mean and lower bar defines colors for legends above the mean. In the example of Figure 7, colors do not differentiate between objects above and below the mean. By changing bar colors, legends that allow the differentiation can be created. Figure 9 shows the same legend but created using the color bar presented in Figure 10.
+<p align=center>
+<img border=0 id="_x0000_i1028" src="legendWindow_arquivos/stdDev2Cor.png">
+<br>
+Fig. 10 - Result of a standard deviation grouping using blue and red.
+<br><br>
+<img border=0 id="_x0000_i1027" src="legendWindow_arquivos/colorsSTD2.png">
+<br>
+Fig. 11 - Color bar used by a standard deviation grouping using blue and red.
+</p>
+The same legends can be created using inverted colors by clicking &quot;Invert&quot; button in &quot;Colors&quot; region.
+<br><br>
+Grouping by standard deviation is graphically presented in Figure 12. This graph shows a typical normal distribution curve with mean and one standard deviation interval. In the grouping, intervals can be set to 1, ½, and ¼, with each interval drawn in a color.
+<p align=center>
+<img border=0 id="_x0000_i1026" src="legendWindow_arquivos/normal.png">
+<br>
+Fig. 12 – Typical normal distribution curve presenting the mean and one standard deviation intervals.
+</p>
+<a name="valor_unico"></a><b>Unique value</b> grouping method is used for any type of attribute (INTEGER, REAL, STRING, TIME, etc).
+This type of grouping is used when a visual different is required for each attribute value and is used to present qualitative data. Examples of this type of data are variety of soy and soil type. These values are not large nor in large numbers. Usually the method should not be used for quantitative data since they will create a large number of legends. An example of qualitative data is population.
+<br><br>
+Figure 13 shows the result of a unique value grouping as created by the module.
+<p align=center>
+<img border=0 id="_x0000_i1025" src="legendWindow_arquivos/unique.png">
+<br>
+Fig. 13 - Result of a unique value grouping.
+</p>
+The maximum number of groups in a legend is 200. When this number of groups is reached, a warning message is displayed and the legend is not created.
+<br><br>
+<a name="funcao_agregacao"></a><b>Aggregation function</b>
+<br><br>
+Aggregation function is used to summarize data and is used in the module when the selected attribute for grouping source is an external or temporal table. In these cases, each object may have more than one value and is summarized by a statistics function. Valid functions are:
+<ul>
+MIN (minimum)
+<br><br>
+MAX (maximum)
+<br><br>
+SUM (sum)
+<br><br>
+AVG (mean) and
+<br><br>
+COUNT (count)
+</ul>
+<strong>Missing Data</strong>
+<br><br>
+  Objects with unknown values are grouped in the &quot;Missing data&quot; group. 
+  This group is automatically created when there is a unknown value in the attribute 
+  used for grouping. &quot;Missing data&quot; group is always presented by default 
+  using white color and is the last group in the legend. </p> 
+  <hr size=2 width="100%" align=center>
+
+</span>
+
+</div>
+
+</body>
+
+</html>

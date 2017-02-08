@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Importar Tabela</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<font face="Arial, Helvetica, sans-serif" size="4">
+<table width="100%">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><b>Importar Tabela</b><br>
+      <hr>
+      <p>Ao importar um shapefile voc&ecirc; gerou um Plano de Informa&ccedil;&atilde;o  contendo objetos, geometrias (no arquivo &ldquo;.shp&rdquo;) e atributos descritivos (no  arquivo &ldquo;.dbf&rdquo;) e uma &uacute;nica tabela de atributos descritivos. Mas para esses  mesmos objetos podem existir outros atributos descritivos em outros arquivos de  tabelas. Essa se&ccedil;&atilde;o mostra como importar tabelas de atributos para um Plano de  Informa&ccedil;&atilde;o j&aacute; existente em um banco de dados TerraView.</p>
+      <h3>Tabelas Est&aacute;ticas</h3>
+      <p>Por exemplo, suponha que existem atributos  s&oacute;cio-econ&ocirc;micos dos distritos de S&atilde;o Paulo. Eles est&atilde;o no arquivo <u>SOC_ECONOMY.dbf</u>.  N&oacute;s sabemos a liga&ccedil;&atilde;o entre cada distrito e sua geometria foi dada pelo campo  ID e a tabela <u>SOC_ ECONOMY.dbf</u> possui um campo chamado <u>DIST</u> que  possui valores iguais aos do campo <u>ID</u>. Como cada registro da tabela <u>SOC_ECONOMY.dbf</u> refere-se a um &uacute;nico distrito e essa informa&ccedil;&atilde;o n&atilde;o varia no tempo, essa tabela  &eacute; chamada de est&aacute;tica. O Plano de Informa&ccedil;&atilde;o pode ter mais de uma tabela de  atributos est&aacute;tica. Vamos, portanto, importar a tabela de dados  s&oacute;cio-econ&ocirc;micos como mais uma tabela de atributos do plano de informa&ccedil;&atilde;o dos  distritos. Acesse a op&ccedil;&atilde;o <strong>Arquivo <font size="4" face="Arial, Helvetica, sans-serif">- </font> Importar Tabela...</strong> para obter a tela como a mostrada na Figura abaixo.</p>
+      <p>&nbsp;</p><center>
+        <p><img src="terraViewBase_arquivos/importar_tabela.png"> </p>
+        <p>Tela de importa&ccedil;&atilde;o de tabelas.</p>
+      </center>
+      <p>Siga os seguintes passos:</p>
+      <ol start="1" type="1">
+        <li>Clique       no bot&atilde;o <strong>Arquivo...</strong> e selecione       a tabela <u>SOC_ECONOMY.dbf</u>. Observe uma amostra da tabela na &aacute;rea       apropriada. Observe que o TerraView reconhece no arquivo DBF o nome e o       tipo de cada coluna. Clicando em cada coluna a interface mostra suas       informa&ccedil;&otilde;es no campo <strong>Defini&ccedil;&otilde;es das       Colunas</strong>. Essas defini&ccedil;&otilde;es n&atilde;o       podem ser alteradas uma vez que fazem parte do DBF. <strong></strong></li>
+        <li>Selecione       o <strong>Tipo</strong> de tabela <strong>Est&aacute;tico</strong>.</li>
+        <li>Selecione       a qual <strong>Plano </strong>de informa&ccedil;&atilde;o a       tabela de atributos est&aacute;tica est&aacute; associada. Nesse caso ao plano de       distritos.</li>
+        <li>Selecione       qual coluna/atributo deve ser usado para fazer a liga&ccedil;&atilde;o com as geometrias       dos distritos. Nesse caso o campo <u>DIST</u>.</li>
+        <li>Selecione       o nome para essa nova tabela. Observe que o TerraView lhe oferece uma       op&ccedil;&atilde;o <em>default</em>.</li>
+        <li>Clique       em <strong>Executar.</strong></li>
+      </ol>
+      <p>Agora o plano de distritos possui duas tabelas de atributos  alfanum&eacute;ricos ou descritivos: uma &eacute; parte do arquivo original Shapefile e a  segunda importada do arquivo DBF. Portanto os Temas gerados para este Plano de  Informa&ccedil;&atilde;o podem definir qual tabela est&aacute;tica ficar&aacute; vis&iacute;vel. Clique com o  bot&atilde;o direito do mouse sobre o Tema de distritos e escolha a op&ccedil;&atilde;o <strong>Selecionar Tabelas do Tema...</strong> para  obter a interface mostrada na Figura abaixo.</p>
+      <p>&nbsp;</p><center>
+        <p><img src="terraViewBase_arquivos/importar_tabela1.png"> </p>
+        <p>Interface de seleção de tabelas do tema.</p>
+        
+      </center>
+      <p>Observe na interface:
+      </p>
+      <ol>
+      <li>O lado esquerdo da tela mostra a lista das tabelas que pertencem ao Plano de Informação que deu origem ao Tema;</li>
+      <li>O lado direito mostra quais as tabelas que o Tema está correntemente usando;</li>
+      <li>As setas permitem que você transfira a tabela de um lado para o outro;</li>
+      <li>Transfira a tabela <em>SOC_ECONOMY</em> para o campo Tabelas do Tema e clique em <strong>Executar</strong>.</li>
+      </ol>
+        <p>Observe na Figura abaixo que agora a Área de grade mostra os atributos das duas tabelas. Observe que quando existe coincidência no nome dos atributos a interface explicita de qual tabela a coluna faz parte. Como exemplo, observe o atributo ID.
+          
+      </p>
+      </p>
+      <p>O TerraView permite a importa&ccedil;&atilde;o das tabelas de  atributos est&aacute;ticas tamb&eacute;m em formato ASCII-CSV. O procedimento &eacute; o mesmo como  descrito para o formato DBF. A diferen&ccedil;a &eacute; que voc&ecirc; deve informar quais os  tipos das colunas.</p>
+      <p><strong>Observa&ccedil;&otilde;es</strong>:</p>
+      <ul>
+        <li>Uma tabela est&aacute;tica sempre est&aacute; associada a um  Plano de Informa&ccedil;&atilde;o previamente importado para o banco, que possui geometrias e  atributos de algum objeto.</li>
+        <li>Uma tabela est&aacute;tica cont&eacute;m atributos dos mesmos  objetos descritos no Plano ao qual pertence. Cada registro do arquivo <u>SOCIO_ECONOMY.dbf</u> cont&eacute;m atributos de um distrito. E por isso essa tabela serve como mais uma  tabela est&aacute;tica do plano de distritos.</li>
+        <li>A tabela est&aacute;tica deve possuir uma coluna com  valores iguais ao atributo usado para ligar as geometrias e atributos.</li>
+      </ul>
+      <h3>Tabelas Externas</h3>
+      <p>Tabelas externas n&atilde;o est&atilde;o associadas a objetos representados  em um Plano de Informa&ccedil;&atilde;o j&aacute; existente. Por exemplo, a tabela <u>HOSPITALS.dbf</u> cont&eacute;m atributos de alguns hospitais da cidade de S&atilde;o Paulo. Existem apenas  atributos descritivos, ou seja, n&atilde;o existe a geometria dos hospitais, portanto,  n&atilde;o &eacute; poss&iacute;vel criar o Plano de hospitais. Observando os atributos existentes  na tabela, vemos que para cada hospital foi anotado o distrito no qual ele est&aacute;  localizado. E essa informa&ccedil;&atilde;o poderia ser usada para ligar os hospitais aos  distritos. Essa tabela &eacute; um exemplo das chamadas tabelas externas. Estas abelas  que cont&ecirc;m apenas atributos descritivos e que n&atilde;o pertencem a nenhum plano de  informa&ccedil;&atilde;o, por&eacute;m podem ser ligadas aos temas existentes por meio de algum de  seus atributos.<br>
+        Para importar uma tabela externa v&aacute; ao item <strong>Arquivo</strong><strong> &#124; Importar  Tabela... </strong>&nbsp;e prossiga com a  importa&ccedil;&atilde;o como com outros tipos de tabela. Apenas certifique-se de  informar que o tipo da tabela &eacute; uma tabela EXTERNA,  como mostrado abaixo.  &Eacute; muito importante que voc&ecirc; informe a coluna que pode ser usada como <strong>Chave Prim&aacute;ria</strong> nas tabelas, ou, se voc&ecirc;  desejar, o TerraView criar&aacute; uma. Neste exemplo, escolha a op&ccedil;&atilde;o <strong>criar</strong> para que ele crie automaticamente uma nova coluna para ser usada como Chave  Prim&aacute;ria.</p>
+     
+  <center>
+        <p><img src="terraViewBase_arquivos/importar_tabela2.png"> </p>
+        <p>Importação de tabelas externas.</p>
+        
+      </center>
+      <p>Após a importação a tabela HOSPITAIS pertence ao banco de dados e não a um Plano de Informação em particular. Tabelas externas podem ser ligadas a um ou mais Temas, com os quais exista algum atributo comum. </p>
+      <h3>Ligando Tabelas Externas</h3>
+      <p>Para ligar uma tabela externa a um Tema  existente clique sobre o tema e com o bot&atilde;o direito do mouse escolha a op&ccedil;&atilde;o <strong>Conectar Tabela Externa...</strong>.
+      </p>
+      <center>
+        <p><img src="terraViewBase_arquivos/importar_tabela3.png"> </p>
+        <p>Ligação de tabelas externas.</p>
+        <p>&nbsp;</p>
+        
+      </center>
+       Siga os seguintes passos:
+      <ol>
+      <li>Escolha uma das tabelas externas disponíveis na lista de Tabelas Externas. Neste caso a única tabela disponível é a HOSPITAIS.</li>
+      <li>Observe na área de amostra quais são os atributos (colunas) da tabela externa e na área de grade os atributos das tabelas estáticas do tema.</li>
+      <li>Veja que o atributo DISTRITO da tabela externa contém o nome do distrito onde o hospital está localizado e que essa informação coincide com os nomes dos distritos no atributo DENO do Tema. Essas colunas serão usadas para ligar as duas tabelas.</li>
+      <li>Marque a coluna da tabela externa (DISTRITO) e com o botão esquerdo do mouse pressionado arraste-a e solte sobre a coluna (DENO) correspondente no Tema.</li>
+      
+      </ol>
+      </td>
+      
+  </tr>
+  <tr>
+  </tr>
+</table>
+</font> 
+</body>
+</html>

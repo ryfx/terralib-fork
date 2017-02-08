@@ -1,0 +1,139 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Plotagem de gráficos</title>
+</head>
+<body lang=PT-BR link=blue vlink=blue>
+<div class=Section1>
+
+  <p align=center> <strong><u> <span style='font-size: 13.5pt;font-family:Arial'><font face="Arial, Helvetica, sans-serif">Graphic 
+    Plot</font></span> </u></strong> </p>
+  <p> <font size="3" face="Arial, Helvetica, sans-serif">Graphic plot is executed 
+    in the interface shown Figure 1. TerraView uses QWT library for graphic plot. 
+    <br>
+    <br>
+    Types of graphics plotted by TerraView are: </font>
+  <ul>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">histogram,</font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">raster histogram,</font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">dispersion,</font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">diagrama de espalhamento 
+      de Moran e</font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">normal probability.</font></li>
+  </ul>
+  <font size="3" face="Arial, Helvetica, sans-serif"><strong>Brushing</strong> 
+  <br>
+  <br>
+  Brushing is selected by activating <strong>Spatial Selection</strong> mode. 
+  The selection is executed through the tool bar in the TerraView main interface. 
+  Figure 2 shows the tool bar and the activation button is pointed by a red arrow. 
+  </font> 
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><img id="_x0000_i1029" src="graphic_arquivos/fig2.png"> 
+    <br>
+    Fig. 2 - TerraView tool bar with the button to activate the &quot;Spatial 
+    Selection&quot; mode. </font></p>
+  <font size="3" face="Arial, Helvetica, sans-serif">Brushing operates on histogram 
+  and dispersion graphics to select objects through cursor. In histogram graphic 
+  the brushing cursor has the shape shown in Figure 3 and selects objects with 
+  values between xMin and xMax. </font> 
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><img id="_x0000_i1028" src="graphic_arquivos/fig3.png"> 
+    <br>
+    Fig. 3 - Brushing cursor for histogram graphics. </font></p>
+  <font size="3" face="Arial, Helvetica, sans-serif">In dispersion graphic the 
+  brushing cursor has the rectangular shape shown in Figure 4 and selects objects 
+  with values within xMin, xMax and yMin, yMax. </font> 
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><img id="_x0000_i1027" src="graphic_arquivos/fig4.png"> 
+    <br>
+    Fig. 4 – Brushing cursor dispersion graphics. </font></p>
+  <font size="3" face="Arial, Helvetica, sans-serif">Objects are selected by the 
+  mouse left button. <br>
+  <br>
+  Selected objects are drawn (highlighted) on the 3 data presentation modules: 
+  </font> 
+  <ul>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">map display,</font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">attribute table, and</font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">graphics window.</font></li>
+  </ul>
+  <font size="3" face="Arial, Helvetica, sans-serif"><strong>Keys to control the 
+  brushing cursor</strong> </font> 
+  <ul>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">&quot;ALT&quot; key 
+      resizes the cursor.</font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">&quot;SHIFT&quot; key 
+      adds the new selection to the already selected set.</font></li>
+  </ul>
+  <font size="3" face="Arial, Helvetica, sans-serif"><strong>Tool Bar</strong> 
+  <br>
+  <br>
+  Tool bar is shown in Figure 5. </font> 
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><img id="_x0000_i1026" src="graphic_arquivos/fig5.png"> 
+    <br>
+    Fig. 5 – Graphic display tool bar. </font></p>
+  <font size="3" face="Arial, Helvetica, sans-serif">The tool bar contains toggle 
+  and push buttons. Toggle buttons are used to select an operation mode and push 
+  buttons are used to execute a task. <br>
+  <br>
+  Toggle buttons are: </font> 
+  <ul>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">&quot;Promote&quot; 
+      and</font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">&quot;Zoom&quot;.</font></li>
+  </ul>
+  <font size="3" face="Arial, Helvetica, sans-serif">These buttons are highlighted 
+  to show that they are activated. Figure 6 shows activated &quot;Promote&quot; 
+  and &quot;Zoom&quot; buttons, indicating that promote and zoom operations are 
+  selected. </font> 
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><img id="_x0000_i1025" src="graphic_arquivos/fig6.png"> 
+    <br>
+    Fig. 6 - Graphic display tool bar with activated &quot;Promote&quot; and &quot;Zoom&quot; 
+    buttons. </font></p>
+  <font size="3" face="Arial, Helvetica, sans-serif">&quot;Promote&quot; operate 
+  the attributes table module and, when active, selects the automatic promote 
+  mode of objects pointed by the mouse (selected). <br>
+  <br>
+  &quot;Zoom&quot; button, when active, allows the cursor on graphics window to 
+  execute zoom. Zoom has higher priority than brushing; therefore, to return to 
+  brushing mode, the &quot;Zoom&quot; button must be deactivated. <br>
+  <br>
+  <strong>Pan on graphic window</strong> <br>
+  <br>
+  &quot;Zoom&quot; button must be active to execute pan operation. Pan is controlled 
+  by the arrow keys. <br>
+  <br>
+  Push button are: </font> 
+  <ul>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">&quot;Previous&quot;,</font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">&quot;Next&quot;,</font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">&quot;Config&quot;,</font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">&quot;Print&quot;, 
+      and</font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif">&quot;Help&quot;.</font></li>
+  </ul>
+  <font size="3" face="Arial, Helvetica, sans-serif">Previous&quot; and &quot;Next&quot; 
+  buttons are enabled when zoom is active. They are used to forward and backward 
+  zooms and pans executed in the graphics window. <br>
+  <br>
+  &quot;Config&quot; button activates the configuration interface to change the 
+  visualization of: </font> 
+  <ul>
+    <li><font size="3" face="Arial, Helvetica, sans-serif"><a href="graphicConfigurationWindow_Histogram.htm">histograma</a></font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif"><a href="graphicConfigurationWindow_RasterHistogram.htm">raster 
+      histograma</a></font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif"><a href="graphicConfigurationWindow_Dispersion.htm">dispersion</a></font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif"><a href="graphicConfigurationWindow_NormalProbability.htm">normal 
+      probability</a></font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif"><a href="graphicConfigurationWindow_Grid.htm">grid</a></font></li>
+    <li><font size="3" face="Arial, Helvetica, sans-serif"><a href="graphicConfigurationWindow_Fonts.htm">font 
+      of x and y axis</a></font></li>
+  </ul>
+  <font size="3" face="Arial, Helvetica, sans-serif">&quot;Print&quot; button 
+  activates the print window. <br>
+  <br>
+  &quot;Help&quot; button shows this help window.&nbsp; </p> </font> 
+  <hr size=2 width="100%" align=center>
+</div>
+
+</body>
+
+</html>

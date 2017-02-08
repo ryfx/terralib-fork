@@ -1,0 +1,236 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>LinkExtTable</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>LinkExtTable</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>397</width>
+            <height>310</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Linking an External Table</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout119</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer5</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>externalTablesTextLabel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>External Tables:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>externalTablesComboBox</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>7</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>200</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer6</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>helpPushButton</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>60</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Help</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+H</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer6_2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+        <widget class="TeQtTable" row="1" column="0">
+            <property name="name">
+                <cstring>externalTable</cstring>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>TeQtTable</class>
+        <header location="global">TeQtTable.h</header>
+        <sizehint>
+            <width>200</width>
+            <height>150</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="45">789cd3d7528808f055d0d2e72a2e492cc94c5648ce482c52d04a29cdcdad8c8eb5ade6523250004143a55a6b2e0026630c4f</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>externalTablesComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>LinkExtTable</receiver>
+        <slot>externalTablesComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>LinkExtTable</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>externalTablesComboBox</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">string</include>
+    <include location="global" impldecl="in declaration">vector</include>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="global" impldecl="in implementation">TeDatabase.h</include>
+    <include location="global" impldecl="in implementation">TeLayer.h</include>
+    <include location="global" impldecl="in implementation">TeAppTheme.h</include>
+    <include location="global" impldecl="in implementation">qapplication.h</include>
+    <include location="global" impldecl="in implementation">TeQtGrid.h</include>
+    <include location="global" impldecl="in implementation">terraViewBase.h</include>
+    <include location="global" impldecl="in implementation">TeWaitCursor.h</include>
+    <include location="global" impldecl="in implementation">qdragobject.h</include>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="local" impldecl="in implementation">linkExtTable.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TeDatabase;</forward>
+    <forward>class TeAppTheme;</forward>
+    <forward>class TeLayer;</forward>
+    <forward>class TerraViewBase;</forward>
+    <forward>class TeQtGrid;</forward>
+    <forward>using namespace std;</forward>
+    <forward>class QTableItem;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable>TeQtGrid* grid_;</variable>
+    <variable>TerraViewBase* mainWindow_;</variable>
+    <variable>TeDatabase* db_;</variable>
+    <variable>TeAppTheme* theme_;</variable>
+    <variable>TeLayer* layer_;</variable>
+    <variable>vector&lt;QTableItem*&gt; tiVec_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot specifier="non virtual" returnType="bool">init( TeAppTheme * theme )</slot>
+    <slot>externalTablesComboBox_activated( const QString &amp; tab )</slot>
+    <slot>mousePressedOnHorizontalHeaderSlot( int col )</slot>
+    <slot>contextMenu( int, int, const QPoint &amp; p )</slot>
+    <slot>popupPropertiesSlot()</slot>
+    <slot>popupSaveAscSlot()</slot>
+    <slot>linkTable( string dragTableName, string dragField, string dropField )</slot>
+    <slot>closeEvent( QCloseEvent * )</slot>
+    <slot>helpPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function>init()</function>
+    <function>show()</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

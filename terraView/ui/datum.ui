@@ -1,0 +1,281 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>DatumWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>DatumWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>284</width>
+            <height>277</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Datum</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="resizeMode">
+            <enum>Fixed</enum>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout29</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="3" column="0">
+                    <property name="name">
+                        <cstring>layout28</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton" row="0" column="2">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Help</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="1">
+                            <property name="name">
+                                <cstring>cancelPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Cancel</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="0">
+                            <property name="name">
+                                <cstring>okPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Ok</string>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QButtonGroup" row="2" column="0">
+                    <property name="name">
+                        <cstring>shiftButtonGroup</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Shift (relation to WGS84)</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout9</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>layout7</cstring>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel" row="1" column="0">
+                                            <property name="name">
+                                                <cstring>dyTextLabel</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Dy:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="2" column="0">
+                                            <property name="name">
+                                                <cstring>dzTextLabel</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Dz:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>dxTextLabel</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Dx:</string>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                                <widget class="QLayoutWidget" row="0" column="1">
+                                    <property name="name">
+                                        <cstring>layout8</cstring>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLineEdit" row="1" column="0">
+                                            <property name="name">
+                                                <cstring>dyLineEdit</cstring>
+                                            </property>
+                                            <property name="frameShape">
+                                                <enum>LineEditPanel</enum>
+                                            </property>
+                                            <property name="frameShadow">
+                                                <enum>Sunken</enum>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLineEdit" row="2" column="0">
+                                            <property name="name">
+                                                <cstring>dzLineEdit</cstring>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLineEdit" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>dxLineEdit</cstring>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QButtonGroup" row="0" column="0">
+                    <property name="name">
+                        <cstring>datumNameButtonGroup</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Name</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLineEdit" row="0" column="0">
+                            <property name="name">
+                                <cstring>datumNameLineEdit</cstring>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QLayoutWidget" row="1" column="0">
+                    <property name="name">
+                        <cstring>layout10</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QButtonGroup" row="0" column="0">
+                            <property name="name">
+                                <cstring>radiusButtonGroup</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Radius</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLineEdit" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>radiusLineEdit</cstring>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QButtonGroup" row="0" column="1">
+                            <property name="name">
+                                <cstring>flatteningButtonGroup</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Flattening</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLineEdit" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>flatteningLineEdit</cstring>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </grid>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>DatumWindow</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>DatumWindow</receiver>
+        <slot>okPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>DatumWindow</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>datumNameLineEdit</tabstop>
+    <tabstop>radiusLineEdit</tabstop>
+    <tabstop>flatteningLineEdit</tabstop>
+    <tabstop>dxLineEdit</tabstop>
+    <tabstop>dyLineEdit</tabstop>
+    <tabstop>dzLineEdit</tabstop>
+    <tabstop>okPushButton</tabstop>
+    <tabstop>cancelPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">TeDatum.h</include>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="global" impldecl="in implementation">terraViewBase.h</include>
+    <include location="local" impldecl="in implementation">datum.ui.h</include>
+</includes>
+<forwards>
+    <forward>class Help;</forward>
+    <forward>class TerraViewBase;</forward>
+</forwards>
+<variables>
+    <variable>TeDatum datum_;</variable>
+    <variable>Help* help_;</variable>
+    <variable>TerraViewBase* mainWindow_;</variable>
+    <variable>bool editMode_;</variable>
+</variables>
+<slots>
+    <slot>okPushButton_clicked()</slot>
+    <slot>helpPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function>loadDatum( const TeDatum &amp; datum )</function>
+    <function returnType="TeDatum">getDatum()</function>
+    <function>init()</function>
+    <function>setEditMode()</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

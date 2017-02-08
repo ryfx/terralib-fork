@@ -1,0 +1,278 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>HidroOptimizedEditionWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>HidroOptimizedEditionWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>304</width>
+            <height>233</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Edition</string>
+    </property>
+    <property name="icon">
+        <pixmap>hidroIcon.bmp</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout2</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QGroupBox" row="0" column="0">
+                    <property name="name">
+                        <cstring>groupBox6</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Selected</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLineEdit" row="0" column="0">
+                            <property name="name">
+                                <cstring>objSelectedLineEdit</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="frameShape">
+                                <enum>LineEditPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QGroupBox" row="3" column="0">
+                    <property name="name">
+                        <cstring>groupBox5</cstring>
+                    </property>
+                    <property name="title">
+                        <string></string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel" row="0" column="0">
+                            <property name="name">
+                                <cstring>resTextLabel</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignCenter</set>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QFrame" row="2" column="0">
+                    <property name="name">
+                        <cstring>frame5</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton" row="1" column="2">
+                            <property name="name">
+                                <cstring>rightPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="1" column="0">
+                            <property name="name">
+                                <cstring>leftPushButton</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="1">
+                            <property name="name">
+                                <cstring>upPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="2" column="1">
+                            <property name="name">
+                                <cstring>downPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="2">
+                            <property name="name">
+                                <cstring>upRightPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="0">
+                            <property name="name">
+                                <cstring>upLeftPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="2" column="0">
+                            <property name="name">
+                                <cstring>downLeftPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="2" column="2">
+                            <property name="name">
+                                <cstring>downRightPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>upPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroOptimizedEditionWindow</receiver>
+        <slot>upPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>rightPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroOptimizedEditionWindow</receiver>
+        <slot>rightPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>downPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroOptimizedEditionWindow</receiver>
+        <slot>downPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>leftPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroOptimizedEditionWindow</receiver>
+        <slot>leftPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>upRightPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroOptimizedEditionWindow</receiver>
+        <slot>upRightPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>downRightPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroOptimizedEditionWindow</receiver>
+        <slot>downRightPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>downLeftPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroOptimizedEditionWindow</receiver>
+        <slot>downLeftPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>upLeftPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroOptimizedEditionWindow</receiver>
+        <slot>upLeftPushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>objSelectedLineEdit</tabstop>
+    <tabstop>upPushButton</tabstop>
+    <tabstop>upRightPushButton</tabstop>
+    <tabstop>rightPushButton</tabstop>
+    <tabstop>downRightPushButton</tabstop>
+    <tabstop>downPushButton</tabstop>
+    <tabstop>downLeftPushButton</tabstop>
+    <tabstop>leftPushButton</tabstop>
+    <tabstop>upLeftPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">TeCoord2D.h</include>
+    <include location="global" impldecl="in declaration">qpoint.h</include>
+    <include location="global" impldecl="in declaration">PluginParameters.h</include>
+    <include location="global" impldecl="in declaration">TeAppTheme.h</include>
+    <include location="global" impldecl="in declaration">HidroOptimizedEdition.h</include>
+    <include location="local" impldecl="in implementation">HidroOptimizedEditionWindow.ui.h</include>
+</includes>
+<variables>
+    <variable>PluginParameters* _params;</variable>
+    <variable>TeAppTheme* _vertexTheme;</variable>
+    <variable>TeAppTheme* _edgeTheme;</variable>
+    <variable>string _graphName;</variable>
+    <variable>string _baseName;</variable>
+    <variable>string _newName;</variable>
+    <variable>int _count;</variable>
+    <variable>bool _createAttr;</variable>
+    <variable>string _currentPoint;</variable>
+    <variable>TeCoord2D _currentPointCoord;</variable>
+    <variable>HidroOptEditionDirections _optDir;</variable>
+</variables>
+<slots>
+    <slot>upPushButton_clicked()</slot>
+    <slot>rightPushButton_clicked()</slot>
+    <slot>downPushButton_clicked()</slot>
+    <slot>leftPushButton_clicked()</slot>
+    <slot>upRightPushButton_clicked()</slot>
+    <slot>downRightPushButton_clicked()</slot>
+    <slot>downLeftPushButton_clicked()</slot>
+    <slot>upLeftPushButton_clicked()</slot>
+    <slot>getMouseClicked( TeCoord2D &amp; coord, int, QPoint &amp; )</slot>
+    <slot access="protected" specifier="non virtual">closeEvent( QCloseEvent * ce )</slot>
+</slots>
+<functions>
+    <function>init( PluginParameters * parameters )</function>
+    <function>setGraphName( string graphName )</function>
+    <function>setBaseName( string baseName )</function>
+    <function>setVertexTheme( TeAppTheme * vertexTheme )</function>
+    <function>setEdgeTheme( TeAppTheme * edgeTheme )</function>
+    <function>createAutoAttributes( bool createAuto )</function>
+    <function>checkDirections( )</function>
+    <function>disableDirections( )</function>
+    <function>createObject( string objName )</function>
+</functions>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

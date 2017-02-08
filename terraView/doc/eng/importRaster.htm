@@ -1,0 +1,98 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>TerraView </title>
+</head>
+<body>
+<p><font size="3" face="Arial"><strong>TerraView  </strong> </font></p>
+<p align="right"><font face="Arial"><a href="importRasterSimple.htm">&lt;&lt; 
+  Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="ImportTblPoints.htm">Next 
+  &gt;&gt;</a></font></p>
+<hr>
+	
+
+<p align="center"><font face="Arial"><font size="4"><strong><u>Raster Import</u></strong></font></font></p>
+<div align="justify">
+  <p>&nbsp;</p>
+  <p><font face="Arial, Helvetica, sans-serif">A raster is composed by a set of points, called &quot;pixels&quot;, organized 
+        as rows and columns. A scanner captures an image and assigns a row, a column, and a color value 
+        (black and white, gray level, or color) to each point. Satellite images and aerial 
+        photographs are examples of raster data.<br>
+        TerraView imports the following file types: TIF, JPG, RAW, and TXT. To import, execute 
+        these steps:</font></p>
+  <font face="Arial, Helvetica, sans-serif">
+<p>1. Click on the menu <b>File - Raster Import</b> as shown in the Figure below.</p>
+<p align="center"><img src="terraViewBase_arquivos/importar_raster.png"> <BR>
+  <i>Access to raster import through the Menu</i></p>
+<p>2. The <b>Raster Import</b> interface will be displayed as shown in the Figure below.</p>
+<p align="center"><img src="terraViewBase_arquivos/importar_raster1.png"> <BR>
+  <i>Initial Raster Import interface</i></p>
+<p>3. Use <b>File</b> button to indicate where the image is stored and click on <b>Open</b> button.</p>
+<p>4. Once the raster image to be imported is selected, the number of <b>Rows</b> and 
+  <b>Columns</b> will be presented. </p>
+<p align="center"><img src="terraViewBase_arquivos/importar_raster2.png"> <br>
+    <i>Interface after choosing the image input file</i></p>
+<p><b>Dummy</b> parameter is optional and, if defined, indicates the pixel value considered 
+  to be transparent, that is, no information is attached to it. During import, 
+  the pixel value will be mapped to the output <b>Dummy</b> value, the one considered 
+  transparent in the image stored in the database. Pixels with this value will not be drawn 
+  in the Draw Area.</p>
+<p>5. Click on <b>Next</b> button to move to the next window, as shown in the Figure below.</p>
+<p align="center"><img src="terraViewBase_arquivos/importar_raster3.png"><br />
+  <i>Geographical Characteristics interface</i></p>
+<p>6. This window presents information extracted from the input raster file, and also after 
+      having changed the projection, as explained below.</p>
+<blockquote>
+  <p><i> -  The projection information may sometimes not be the one of the image in the input 
+    file. If possible, get the correct projection information from the image provider.</i></p>
+</blockquote>
+<p>7. If the presented projection is not the correct one, change it by clicking on <b>Projection</b>,
+    providing the correct parameters of the projection and clicking on OK to return to the Geographical 
+	Characteristics interface.</p>
+<p>8. When the projection is correct, click on <b>Next</b> button. The interface in the Figure 
+  below will be shown.</p>
+<p align="center"><img src="terraViewBase_arquivos/importar_raster4.png"><br /> 
+  <i>Storage Characteristics interface</i></p>
+<p>9. Fill in other items as presented in the sequence:</p>
+<p> -  <b>Name</b>: if a new layer is going to be created, its name must be typed in. If the 
+  layer already exists, select it from the presented list of layers. The last case occurs when 
+  a mosaic is beeing create using a second file;</p>
+<p> -  <b>Object Id</b>: currently this field must not be filled in;</p>
+<p> -  <b>Compression</b>: to be applied before data is stored to reduce the physical space 
+  and can be: none, zlib, or jpeg. Jpeg compression is the most efficient, although it can not 
+  be applied to pallete type images;<br>
+</p>
+<p> -  <b>Width and Height</b> define the size of data block used in storage; recommended 
+  value is 512 x 512;</p>
+<p> - <b>Dummy</b>: defines the transparent value, as mentioned before. This value is 
+  suggested by the import interface using the same value defined for the input image, 
+  presented in the interface shown in step 4, and detailed in the text that follows the 
+  figure;</p>
+<p> -  <b>Expansible</b>: must be used when various files create one image, that is, when a 
+  mosaic is being created and this is the first imported file.</p>
+<p>10. Click on <b>Next</b>, to proceed to the next step regarding multiresolution, 
+  or click on <b>Finish</b> button to start the import.</p>
+<p>11. The optional multiresolution step intends to enhance image visualization performance, by using  
+      a pyramid with several images obtained from the original image using different resolutions, the higher 
+	  the resolution the closer to the bottom of the it.
+	  The highest resolution corresponds to the original image in the input file, which will be 
+	  always imported at the bottom of the pyramid (level 0).</p>
+<p>The following parameters about pyramid must be set:</p>
+<p> -  <b>Number of </b>(additional resolution)<b> Levels</b> to be used in the pyramid. This value depends on the application and 
+  visualization scale usually used. If the scale is much smaller than the image original one, 
+  this value must be high (for instance, 10);</p>
+<p> - Select the additional levels in the list at right: initially the list is shown with the provided number of levels already
+      selected, which are consecutive and starting from level 1. This choice is recommended, but it is possible to select any levels,
+	  even if they are not consecutive and in a quantity which is different from the number provided before.
+<p align="center"><img src="terraViewBase_arquivos/importar_raster5.png"><br />
+  <i>Multi Resolution Characteristcs</i></p>
+</font>
+<hr>
+  <p align="right"><font face="Arial"><font face="Arial"><font face="Arial"><font face="Arial"><font face="Arial"><a href="importRasterSimple.htm">&lt;&lt; 
+    Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="ImportTblPoints.htm">Next 
+    &gt;&gt;</a></font> </font> </font></font> </font></p>
+<font face="Arial"><p  ><font face="Arial"> </font></p>
+</font><font face="Arial"></font> 
+</div>
+</body>
+</html>

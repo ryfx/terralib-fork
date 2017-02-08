@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>TerraView</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<p><font size="3" face="Arial"><strong>TerraView  </strong> </font></p>
+<p align="right"><font face="Arial"><a href="spatializationWindow.htm">&lt;&lt; Anterior</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">In&iacute;cio</a></font></p>
+<hr>
+<font face="Arial"> 
+<p align="center"><font size="5" face="Arial"><u><strong>Integra&ccedil;&atilde;o 
+  do TabWin com o TerraView</strong></u></font></p>
+</font><p>&nbsp;</p>
+		 <p><font face="Arial, Helvetica, sans-serif">O TerraView pode ser acionado a partir do software TabWin,
+						do DATASUS, para realizar análise e visualiza&ccedil;&atilde;o de dados referentes a unidades geográficas,
+						que est&atilde;o carregados na área de trabalho deste último.</p>
+		 <p><font face="Arial, Helvetica, sans-serif">Ap&oacute;s receber os dados da tabela correntemente em uso no TabWin, além
+						de  outras informa&ccedil;&otilde;es como o nível das unidades geográficas correspondentes aos dados da tabela, e a 
+				        localiza&ccedil;&atilde;o do Banco de Dados que contém um mapa referente àquelas unidades, o TerraView
+						importa a tabela recebida como uma tabela de atributos adicional, associada ao plano com o mapa correspondente,
+						mostrando na área de visualização os dados do plano e na grade tanto os dados da tabela de atributos original como
+						os da tabela recebida do TabWin.
+						</p>
+		<p><font face="Arial, Helvetica, sans-serif">Abaixo segue um roteiro com os procedimentos que devem ser usados
+		                para, inicialmente, preparar o banco de dados TerraView/TerraLib que será usado de forma integrada
+						com o TabWin, e, numa segunda etapa, acionar o TerraView a partir do TabWin.
+						</p>
+
+ 
+ <h3><font size="4" face="Arial, Helvetica, sans-serif">ETAPA 1: Prepara&ccedil;&atilde;o dos bancos de dados TerraView
+                       com os mapas equivalentes aos usados no TabWin
+                       </font></h3>
+		 <p><font face="Arial, Helvetica, sans-serif">Os mapas territoriais usados no TabWin estão disponíveis para
+		               <u>download</u> no site do DATASUS (http://www2.datasus.gov.br/DATASUS), atrav&eacute;s da
+					   seguinte navega&ccedil;&atilde;o via menus: Sistemas e Aplicativos > Cadastros Nacionais > 
+					   UNID. TERRITORIAIS > Mapas TabWin.</p>			   
+		<p><font face="Arial, Helvetica, sans-serif">Eles se encontram no formato MAP, usado internamente pelo TabWin.
+                	Existem mapas que abrangem um único estado (UF), e mapas que abrangem todo o país. Os mapas podem 
+					mostrar níveis diferentes de unidades geográficas, desde município, microrregião, mesorregião, 
+					regional de saúde, macrorregional de saúde, UF e macrorregião geográfica, conforme pode ser visto 
+					na Figura 1.</p>
+		<table align=center>
+         <tr><td>
+              <div align="center"><img src="terraViewBase_arquivos/tabwin_mapasparadownload.png" 
+			                          border=1></div>
+			 </td>
+         </tr>
+         <tr><td> 
+              <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+                1 - Detalhe de mapas dispon&iacute;veis para download no site do DATASUS</font></div>
+             </td>
+         </tr>
+        </table>
+		<p><font face="Arial, Helvetica, sans-serif"><b>1.a)</b> Efetue o download do arquivo que contém o mapa 
+		            desejado e o descompacte para obter os arquivos de mapas (com extensão <b>.MAP</b>) nele contidos. 
+					No exemplo, selecione o arquivo <i>mapbr.zip</i>, com 7.900 Kbytes.</font></p>	
+		<p><font face="Arial, Helvetica, sans-serif"><b>1.b)</b> Utilizando o TabWin, abra o arquivo de mapa desejado, 
+		            por exemplo, <i>br.map</i>, que mostra todos os municípios do Brasil, usando a op&ccedil;&atilde;o de
+					menu <b>Arquivo | Abrir/importar mapa</b>. Em seguida, ative o mapa usando a op&ccedil;&atilde;o de menu <b>Gráfico |
+					Mapa</b>. Com isso, o mapa será plotado na área de desenho do TabWin.</font></p>
+		<p><font face="Arial, Helvetica, sans-serif"><b>1.c)</b> Ainda no TabWin, use a op&ccedil;&atilde;o de menu <b> Arquivo | Exportar 
+		            mapa base</b>, para salvar o mapa ativo no formato <b>Atlas GIS (BNA)</b>, que será importado a seguir pelo 
+					TerraView. No caso do mapa <i>br.map</i>, sugere-se que o nome do arquivo seja <i>br.bna</i>.</font></p>
+		
+		<p><font face="Arial, Helvetica, sans-serif"><b>1.d)</b> Dispare o TerraView para criar um banco de dados com um 
+		            plano de informa&ccedil;&atilde;o que corresponde ao mapa de municípios do Brasil. Siga o roteiro abaixo:</font></p>
+			<ul>
+				<li>Ao iniciar o TerraView, escolha a op&ccedil;&atilde;o de menu  <b>Arquivo | Banco de Dados</b>, informando
+				a opera&ccedil;&atilde;o <b>Criar</b>,
+				o Access como tipo de banco de dados, e o diretório e o nome do banco de dados a ser criado – sugere-se usar como nome: 
+				<i>br.mdb</i>;</li>
+				<li>Importe o mapa BNA, gerado em <b>1.c</b>, através da op&ccedil;&atilde;o de menu <b>Arquivo | Importar Dados</b>. Informe 
+				<i>munic</i> como o nome do plano a ser criado, selecione como coluna de liga&ccedil;&atilde;o o atributo <i>IBGE_CODE</i> e responda
+				<i>SIM</i> à pergunta “Deseja visualizar os dados?”;</li>
+				<li>Renomeie a vista criada automaticamente para <i>view_br</i>, usando no menu popup da vista 
+				a op&ccedil;&atilde;o <b>Renomear</b>;</li>
+
+			</ul>
+        <p> 
+		
+	 <h3><font size="4" face="Arial, Helvetica, sans-serif">ETAPA 2: Utiliza&ccedil;&atilde;o efetiva do TerraView a partir do TabWin				</font></h3>
+        <p><font face="Arial, Helvetica, sans-serif">Os passos abaixo mostram como se pode, a partir do TabWin, acionar
+		            o TerraView para visualizar os dados da tabela ativa do TabWin. Para isso, vamos antes carregar no
+					TabWin uma tabela com dados de saúde referentes a municípios.</p>
+
+		<p><font face="Arial, Helvetica, sans-serif"><b>2.a)</b>Efetue o download da tabela com os dados de interesse,
+         		que pode ser baixada no site do DATASUS (http://www2.datasus.gov.br/DATASUS),
+				através da seguinte navega&ccedil;&atilde;o: Informações de Saúde > Estatísticas Vitais - Mortalidade
+				e Nascidos Vivos > Óbitos Fetais > Abrangência Geográfica: Brasil por Município (período de 2008).
+				Seu título é “Óbitos fetais – Dados preliminares – Brasil” e subtítulo “Óbitos p/Residênc segundo
+				Município - 2008”. Ao fazer o download ela recebeu o nome A183158200_144_100_2.tab. Não foi feita
+				nenhuma restri&ccedil;&atilde;o adicional, assim como nenhuma agrega&ccedil;&atilde;o, ou seja, ela contém uma linha para cada
+				município, contendo a identifica&ccedil;&atilde;o do município e o valor correspondente para “Óbitos fetais p/ 
+				Residênc segundo Município”. </font></p>	
+		<p><font face="Arial, Helvetica, sans-serif"><b>2.b)</b>Utilizando o TabWin, abra o arquivo baixado em <b>2.a</b>
+		       , usando a op&ccedil;&atilde;o de menu <b>Arquivo | Abrir tabela</b>. Em seguida, ative
+			   o mapa usando a op&ccedil;&atilde;o de menu <b>Gráfico | Mapa</b> e apontando para o arquivo usado no item <b>1.b</b> acima:
+     		   <i>br.map</i>. O mapa será plotado na área de desenho do TabWin, conforme mostra a Figura 2.</font></p>	
+		
+		<table align=center>
+          <tr>  <td>
+               <div align="center"> <img src="terraViewBase_arquivos/tabwin_aciona_terraview.png" border=1></div>
+            </td>
+          </tr>
+          <tr> <td> 
+                <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+					2 - Acionamento do TerraView pelo TabWin</font></div>
+				</td>
+          </tr>
+		</table>
+        <p><font face="Arial, Helvetica, sans-serif"><b>2.c)</b> Uma vez plotado o mapa no TabWin, o usuário deve acionar
+				o TerraView. O primeiro passo para isso é clicar no botão assinalado na Figura 2. Após isto, e antes que 
+				o TerraView seja de fato acionado, o usuário terá que informar ao TabWin, conforme a Figura 3, qual banco
+				de dados deverá ser aberto pelo TerraView, ou seja, aquele que já contém o mapa correspondente ao mapa 
+				sendo visualizado pelo TabWin: <i>br.mdb</i>, com o plano <i>munic</i> que contém todos os municípios do Brasil.
+				 </font></p>
+
+		<table align=center>
+          <tr>  <td>
+               <div align="center"> <img src="terraViewBase_arquivos/tabwin_informe_bd.png" border=1></div>
+            </td>
+          </tr>
+          <tr> <td> 
+                <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+					3 - Interface do TabWin para informar o Banco de Dados TerraView a ser usado</font></div>
+				</td>
+          </tr>
+		</table>
+		<p><font face="Arial, Helvetica, sans-serif">Finalmente a tela inicial do TerraView será exibida, conforme a 
+		        Figura 4. </font></p>
+		<table align=center>
+          <tr>  <td>
+               <div align="center"> <img src="terraViewBase_arquivos/tabwin_terraview_chamado.png" border=1></div>
+            </td>
+          </tr>
+          <tr> <td> 
+                <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+					4 - TerraView com dados adicionais passados pelo TabWin</font></div>
+				</td>
+          </tr>
+		</table>
+		
+		<p><font face="Arial, Helvetica, sans-serif">Algumas observações sobre a Figura 4 podem ser feitas:
+		</font></p>
+
+	<ul>
+	
+		<li>As 2 primeiras colunas da grade são relativas ao mapa de municípios, carregado previamente no TerraView
+		durante o passo <b>1.d</b>.</li> 
+		
+		<li>As outras 3 colunas da grade, destacadas em azul, são informações que vieram do TabWin no passo <b>2.c</b>,
+		pois estavam na tabela de Óbitos por Residência, aberta pelo TabWin no início da etapa 2 
+		(itens <b>2.a</b> e <b>2.b</b>). Para mostrá-las na grade, o TerraView importou a tabela 
+		com dados de óbitos passada pelo TabWin como uma tabela estática do plano <i>munic</i>, e também a 
+		associou ao tema <i>munic</i>.</li>
+
+		<li>Caso o mesmo banco de dados <i>br.mdb</i> volte a ser utilizado, através do acionamento via TabWin, passando
+		outra tabela com dados de municípios, as colunas dessa nova tabela ser&atilde;o mostradas na grade, à direita
+		das colunas da primeira tabela estática. As tabelas estáticas criadas dessa forma serão nomeadas sequencialmente:
+        <i>tabela, tabela2, tabela3,</i> etc. É possível selecionar quais tabelas do plano devem estar associadas ao
+		tema, de forma que apenas apareçam na grade as colunas das
+		tabelas de fato desejadas: para isso use a op&ccedil;&atilde;o do menu popup do tema <b>Selecionar Tabelas do Tema...</b>.
+		É também possível remover tabelas estáticas de um plano através da op&ccedil;&atilde;o
+		<b>Remover Tabela do Plano...</b>, existente no menu popup deste plano, que aparece na área de Bancos
+		de Dados.</li>
+	</ul>
+	 
+<h3><font size="4" face="Arial, Helvetica, sans-serif">REGRAS PARA O BANCO DE DADOS TERRAVIEW</font></h3>
+        <p><font face="Arial, Helvetica, sans-serif">Existem duas regras a observar para que a integração possa funcionar, 
+		            no que diz respeito ao passo de preparação antecipada (<b>1.d</b>) do banco do TerraView:</p>
+		<ol>
+			<li>O nome do plano que receberá a tabela estática passada pelo TabWin depende do nível geográfico 
+		         dos elementos que constituem o mapa, conforme abaixo:<br>
+				<ul>
+					<li><i>munic</i>, para munic&iacute;pios;</li>
+					<li><i>mic</i>, para microrregi&otilde;es;</li>
+					<li><i>meso</i>, para mesorregi&otilde;es;</li>
+					<li><i>reg</i>, para macrorregi&otilde;es;</li>
+					<li><i>uf</i>, para UF (unidades da federa&ccedil;&atilde;o);</li>
+				</ul>
+			</li>
+			<li>O nome da vista que contém o tema associado ao plano que receberá a tabela estática passada 
+			      pelo TabWin (<i>munic, mic, meso, reg ou uf</i>) deve ter o nome <i>view_nomeDoBanco</i>, onde <i>nomeDoBanco</i> 
+				  representa o nome do banco de dados sem a extens&atilde;o <i>.mdb</i>. No exemplo mostrado na Figura 4, 
+				  o banco <i>br.mdb</i> possui a vista <i>view_br</i> com o tema <i>munic</i>, referente ao plano <i>munic</i>.
+			</li>
+		</ol>
+		        <p><font face="Arial, Helvetica, sans-serif">Nestas regras o tipo de letras, maiúsculas ou minúsculas, não é importante.</p>
+
+<h3><font size="4" face="Arial, Helvetica, sans-serif">REGRAS PARA A TABELA DO TABWIN PASSADA PARA O TERRAVIEW</font></h3>
+        <p><font face="Arial, Helvetica, sans-serif">Existem duas regras a observar quanto à tabela que o TabWin transfere para o TerraView:</p>
+		<ol>
+			<li> A tabela deve possuir uma coluna denominada <i>CODIGO</i>, ou <i>codigo</i>, que será usada para associar as linhas da tabela com os elementos do mapa;</li>
+			<li> Deve haver uma correspondência <b>um para um</b> entre as linhas da tabela e os elementos existentes no mapa. 
+			     Assim, por exemplo, uma tabela com dados referentes a municípios deve ter no máximo uma linha referente a cada município.</li>
+		</ol>
+    <hr>
+<p align="right"><font face="Arial"><a href="spatializationWindow.htm">&lt;&lt; Anterior</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">In&iacute;cio</a></font></p>
+<font face="Arial"><p  ><font face="Arial"> </font></p>
+</font><font face="Arial"></font> 
+</body>
+</html>

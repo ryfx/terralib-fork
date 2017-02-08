@@ -1,0 +1,744 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>FileTheme</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>FileTheme</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>556</width>
+            <height>430</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Shapefile Theme</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="resizeMode">
+            <enum>Fixed</enum>
+        </property>
+        <widget class="QWidgetStack" row="0" column="0">
+            <property name="name">
+                <cstring>shpWidgetStack</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>0</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget" row="0" column="0">
+                        <property name="name">
+                            <cstring>layout6</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="Line" row="1" column="0">
+                                <property name="name">
+                                    <cstring>line1</cstring>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>HLine</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="0">
+                                <property name="name">
+                                    <cstring>textLabel1</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Allow to select a shapefile from a local file...</string>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QLayoutWidget" row="4" column="0">
+                        <property name="name">
+                            <cstring>layout2</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="Line" row="0" column="0">
+                                <property name="name">
+                                    <cstring>line2</cstring>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>HLine</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QLayoutWidget" row="1" column="0">
+                                <property name="name">
+                                    <cstring>layout1</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QPushButton" row="0" column="3">
+                                        <property name="name">
+                                            <cstring>previewPushButton</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Pre&amp;view</string>
+                                        </property>
+                                        <property name="accel">
+                                            <string>Alt+V</string>
+                                        </property>
+                                    </widget>
+                                    <spacer row="0" column="1">
+                                        <property name="name">
+                                            <cstring>spacer1</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>61</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <widget class="QPushButton" row="0" column="4">
+                                        <property name="name">
+                                            <cstring>cancelPushButton</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Cancel</string>
+                                        </property>
+                                        <property name="accel">
+                                            <string>Alt+C</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QPushButton" row="0" column="2">
+                                        <property name="name">
+                                            <cstring>okPushButton</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Ok</string>
+                                        </property>
+                                        <property name="accel">
+                                            <string>Alt+O</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QPushButton" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>helpPushButton</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Help</string>
+                                        </property>
+                                        <property name="accel">
+                                            <string>Alt+H</string>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <spacer row="1" column="0">
+                        <property name="name">
+                            <cstring>spacer2</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Vertical</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>20</width>
+                                <height>16</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <spacer row="3" column="0">
+                        <property name="name">
+                            <cstring>spacer3</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Vertical</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>20</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QLayoutWidget" row="2" column="0">
+                        <property name="name">
+                            <cstring>layout20</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <spacer>
+                                <property name="name">
+                                    <cstring>spacer22</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>20</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout19</cstring>
+                                </property>
+                                <vbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QGroupBox">
+                                        <property name="name">
+                                            <cstring>groupBox1</cstring>
+                                        </property>
+                                        <property name="title">
+                                            <string>File Selection</string>
+                                        </property>
+                                        <vbox>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLayoutWidget">
+                                                <property name="name">
+                                                    <cstring>layout4</cstring>
+                                                </property>
+                                                <grid>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QLineEdit" row="0" column="1">
+                                                        <property name="name">
+                                                            <cstring>fileNameLineEdit</cstring>
+                                                        </property>
+                                                        <property name="minimumSize">
+                                                            <size>
+                                                                <width>240</width>
+                                                                <height>0</height>
+                                                            </size>
+                                                        </property>
+                                                        <property name="frameShape">
+                                                            <enum>LineEditPanel</enum>
+                                                        </property>
+                                                        <property name="frameShadow">
+                                                            <enum>Sunken</enum>
+                                                        </property>
+                                                    </widget>
+                                                    <widget class="QPushButton" row="0" column="0">
+                                                        <property name="name">
+                                                            <cstring>filePushButton</cstring>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>&amp;File</string>
+                                                        </property>
+                                                        <property name="accel">
+                                                            <string>Alt+F</string>
+                                                        </property>
+                                                    </widget>
+                                                </grid>
+                                            </widget>
+                                            <widget class="QLayoutWidget">
+                                                <property name="name">
+                                                    <cstring>layout3</cstring>
+                                                </property>
+                                                <grid>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QLineEdit" row="0" column="1">
+                                                        <property name="name">
+                                                            <cstring>projLineEdit</cstring>
+                                                        </property>
+                                                        <property name="frameShape">
+                                                            <enum>LineEditPanel</enum>
+                                                        </property>
+                                                        <property name="frameShadow">
+                                                            <enum>Sunken</enum>
+                                                        </property>
+                                                    </widget>
+                                                    <widget class="QPushButton" row="0" column="0">
+                                                        <property name="name">
+                                                            <cstring>projPushButton</cstring>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>&amp;Projection</string>
+                                                        </property>
+                                                        <property name="accel">
+                                                            <string>Alt+P</string>
+                                                        </property>
+                                                    </widget>
+                                                </grid>
+                                            </widget>
+                                        </vbox>
+                                    </widget>
+                                    <widget class="QGroupBox">
+                                        <property name="name">
+                                            <cstring>groupBox17</cstring>
+                                        </property>
+                                        <property name="title">
+                                            <string>New Theme</string>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLayoutWidget" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>layout17</cstring>
+                                                </property>
+                                                <vbox>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QLabel">
+                                                        <property name="name">
+                                                            <cstring>textLabel2</cstring>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>View:</string>
+                                                        </property>
+                                                    </widget>
+                                                    <widget class="QLabel">
+                                                        <property name="name">
+                                                            <cstring>textLabel1_3</cstring>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Name:</string>
+                                                        </property>
+                                                    </widget>
+                                                </vbox>
+                                            </widget>
+                                            <widget class="QLayoutWidget" row="0" column="1">
+                                                <property name="name">
+                                                    <cstring>layout18</cstring>
+                                                </property>
+                                                <vbox>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QComboBox">
+                                                        <property name="name">
+                                                            <cstring>viewComboBox</cstring>
+                                                        </property>
+                                                    </widget>
+                                                    <widget class="QLineEdit">
+                                                        <property name="name">
+                                                            <cstring>shpThemeNameLineEdit</cstring>
+                                                        </property>
+                                                    </widget>
+                                                </vbox>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                </vbox>
+                            </widget>
+                            <spacer>
+                                <property name="name">
+                                    <cstring>spacer21</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>30</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                        </hbox>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>1</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget" row="0" column="0">
+                        <property name="name">
+                            <cstring>layout14</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget" row="1" column="0">
+                                <property name="name">
+                                    <cstring>layout13</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QGroupBox" row="0" column="1">
+                                        <property name="name">
+                                            <cstring>groupBox4</cstring>
+                                        </property>
+                                        <property name="title">
+                                            <string>Preview</string>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QFrame" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>themeFrame</cstring>
+                                                </property>
+                                                <property name="minimumSize">
+                                                    <size>
+                                                        <width>220</width>
+                                                        <height>205</height>
+                                                    </size>
+                                                </property>
+                                                <property name="paletteBackgroundColor">
+                                                    <color>
+                                                        <red>255</red>
+                                                        <green>255</green>
+                                                        <blue>255</blue>
+                                                    </color>
+                                                </property>
+                                                <property name="frameShape">
+                                                    <enum>StyledPanel</enum>
+                                                </property>
+                                                <property name="frameShadow">
+                                                    <enum>Raised</enum>
+                                                </property>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                    <widget class="QGroupBox" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>groupBox3</cstring>
+                                        </property>
+                                        <property name="title">
+                                            <string>Infomation</string>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QTable" row="0" column="0">
+                                                <column>
+                                                    <property name="text">
+                                                        <string>Name</string>
+                                                    </property>
+                                                </column>
+                                                <column>
+                                                    <property name="text">
+                                                        <string>Attribute</string>
+                                                    </property>
+                                                </column>
+                                                <property name="name">
+                                                    <cstring>themePropTable</cstring>
+                                                </property>
+                                                <property name="maximumSize">
+                                                    <size>
+                                                        <width>32767</width>
+                                                        <height>205</height>
+                                                    </size>
+                                                </property>
+                                                <property name="numRows">
+                                                    <number>15</number>
+                                                </property>
+                                                <property name="numCols">
+                                                    <number>2</number>
+                                                </property>
+                                                <property name="readOnly">
+                                                    <bool>true</bool>
+                                                </property>
+                                                <property name="selectionMode">
+                                                    <enum>NoSelection</enum>
+                                                </property>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QLayoutWidget" row="2" column="0">
+                                <property name="name">
+                                    <cstring>layout2_2</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="Line" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>line2_2</cstring>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>HLine</enum>
+                                        </property>
+                                        <property name="frameShadow">
+                                            <enum>Sunken</enum>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLayoutWidget" row="1" column="0">
+                                        <property name="name">
+                                            <cstring>layout1_2</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QPushButton" row="0" column="3">
+                                                <property name="name">
+                                                    <cstring>okPrevPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Ok</string>
+                                                </property>
+                                                <property name="accel">
+                                                    <string>Alt+O</string>
+                                                </property>
+                                            </widget>
+                                            <spacer row="0" column="1">
+                                                <property name="name">
+                                                    <cstring>spacer1_2</cstring>
+                                                </property>
+                                                <property name="orientation">
+                                                    <enum>Horizontal</enum>
+                                                </property>
+                                                <property name="sizeType">
+                                                    <enum>Expanding</enum>
+                                                </property>
+                                                <property name="sizeHint">
+                                                    <size>
+                                                        <width>61</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                            </spacer>
+                                            <widget class="QPushButton" row="0" column="4">
+                                                <property name="name">
+                                                    <cstring>cancelPushButton_2</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Cancel</string>
+                                                </property>
+                                                <property name="accel">
+                                                    <string>Alt+C</string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QPushButton" row="0" column="2">
+                                                <property name="name">
+                                                    <cstring>previousPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Previous</string>
+                                                </property>
+                                                <property name="accel">
+                                                    <string>Alt+P</string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QPushButton" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>helpPushButton_2</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Help</string>
+                                                </property>
+                                                <property name="accel">
+                                                    <string>Alt+H</string>
+                                                </property>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QLayoutWidget" row="0" column="0">
+                                <property name="name">
+                                    <cstring>layout6_2</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="Line" row="1" column="0">
+                                        <property name="name">
+                                            <cstring>line1_2</cstring>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>HLine</enum>
+                                        </property>
+                                        <property name="frameShadow">
+                                            <enum>Sunken</enum>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>textLabel1_2</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Allow to select a shapefile from a local file...</string>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                        </grid>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>FileTheme</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>filePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>FileTheme</receiver>
+        <slot>filePushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>projPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>FileTheme</receiver>
+        <slot>projPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>previewPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>FileTheme</receiver>
+        <slot>previewPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>FileTheme</receiver>
+        <slot>okPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>okPrevPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>FileTheme</receiver>
+        <slot>okPrevPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>previousPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>FileTheme</receiver>
+        <slot>previousPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>cancelPushButton_2</sender>
+        <signal>clicked()</signal>
+        <receiver>FileTheme</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>FileTheme</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton_2</sender>
+        <signal>clicked()</signal>
+        <receiver>FileTheme</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in declaration">string</include>
+    <include location="global" impldecl="in declaration">TeCommunicator.h</include>
+    <include location="global" impldecl="in declaration">vector</include>
+    <include location="local" impldecl="in implementation">FileTheme.ui.h</include>
+</includes>
+<forwards>
+    <forward>class TeDatabase;</forward>
+    <forward>class TeFileTheme;</forward>
+    <forward>class TeAbstractTheme;</forward>
+    <forward>class TeQtCanvas;</forward>
+    <forward>class PluginParameters;</forward>
+    <forward>class QAction</forward>
+</forwards>
+<variables>
+    <variable>TeQtCanvas* canvas_;</variable>
+    <variable>int viewId_;</variable>
+    <variable>TeDatabase* currentDatabase_;</variable>
+    <variable>TeFileTheme* fileTheme_;</variable>
+    <variable access="public">PluginParameters* plugPars_;</variable>
+</variables>
+<slots>
+    <slot specifier="non virtual">init()</slot>
+    <slot specifier="non virtual">destroy()</slot>
+    <slot>filePushButton_clicked()</slot>
+    <slot>projPushButton_clicked()</slot>
+    <slot>previewPushButton_clicked()</slot>
+    <slot>okPushButton_clicked()</slot>
+    <slot>okPrevPushButton_clicked()</slot>
+    <slot>previousPushButton_clicked()</slot>
+    <slot>updateForm( PluginParameters * pparams )</slot>
+    <slot>helpPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function specifier="non virtual" returnType="TeAbstractTheme*">getCreatedTheme() const</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

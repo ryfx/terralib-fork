@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+	<meta content="text/html; charset=ISO-8859-1"             http-equiv="content-type"/>
+	<meta content="TerraView - documentacion help"            name="Description"/>
+	<meta content="geoprocessing,terraview,terralib,dpi,inpe" name="KeyWords"/>
+		
+	<title>Opera&ccedil;&atilde;o de Agrega&ccedil;&atilde;o</title>
+	
+	<style>
+	</style>
+
+</head>
+
+<body>
+
+<center>
+  <h2><font face="Arial, Helvetica, sans-serif"><b><u>Opera&ccedil;&atilde;o de Agrega&ccedil;&atilde;o</u></b></font></h2>
+</center>
+<div align="justify">
+   <p><font face="Arial, Helvetica, sans-serif">A opera&ccedil;&atilde;o de agrega&ccedil;&atilde;o 
+    usa <i>n</i> objetos de entrada para gerar um objeto de sa&iacute;da. Cada 
+    novo objeto possui um &uacute;nico registro na tabela de atributos e &eacute; 
+    representado, normalmente, por v&aacute;rias geometrias. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">A opera&ccedil;&atilde;o 
+  &eacute; aplicada a temas que possuem apenas um tipo de representa&ccedil;&atilde;o 
+  vetorial. Portanto, o tema pode ter apenas representa&ccedil;&otilde;es geom&eacute;tricas 
+  do tipo: somente pol&iacute;gonos, ou somente linhas, ou somente pontos ou somente 
+  c&eacute;lulas. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">O plano de informa&ccedil;&atilde;o 
+  resultante da opera&ccedil;&atilde;o possui geometria e tabela de atributos 
+  gerados em fun&ccedil;&atilde;o de um ou mais atributos "agregadores" que s&atilde;o 
+  selecionados sobre o tema de entrada. Esta opera&ccedil;&atilde;o gera um objeto 
+  para cada valor distinto desses atributos e, cada objeto gerado, cont&eacute;m 
+  um sum&aacute;rio dos atributos do tema de entrada. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">As geometrias resultantes 
+  da opera&ccedil;&atilde;o s&atilde;o criadas a partir da fus&atilde;o das geometrias 
+  do tema de entrada. A fus&atilde;o &eacute; feita em fun&ccedil;&atilde;o dos 
+  atributos "agregadores". Todas as geometrias que possuem o mesmo valor, sobre 
+  os atributos "agregadores", s&atilde;o fundidas para representar um &uacute;nico 
+  objeto geogr&aacute;fico. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">Normalmente, os 
+  atributos "agregadores" s&atilde;o selecionados atrav&eacute;s da escolha dos 
+  campos de uma das tabelas do tema de entrada. Tamb&eacute;m pode-se escolher 
+  a legenda do tema de entrada para servir de atributo "agregador". Neste caso, 
+  a agrega&ccedil;&atilde;o &eacute; feita em fun&ccedil;&atilde;o do agrupamento 
+  previamente efetuado sobre o tema de entrada gerando-se um n&uacute;mero de 
+  objetos igual &#224; quantidade de grupos existentes na legenda. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">A nova tabela de 
+  atributos &eacute; formada por tr&ecirc;s campos gerados automaticamente e outros 
+  adicionais selecionados pelo usu&aacute;rio. Os campos s&atilde;o: </font> 
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif"> campo de identifica&ccedil;&atilde;o 
+    de objetos </font>
+  <li><font face="Arial, Helvetica, sans-serif"> campo com a concatena&ccedil;&atilde;o 
+    dos atributos agregadores </font>
+  <li><font face="Arial, Helvetica, sans-serif"> campo de contagem de objetos 
+    agregados </font>
+  <li><font face="Arial, Helvetica, sans-serif"> campos adicionais selecionados 
+    pelo usu&aacute;rio. </font>
+</ul>
+<p></p>
+<p  > <font face="Arial, Helvetica, sans-serif">Os campos adicionais, 
+  selecionados pelo usu&aacute;rio, s&atilde;o formados a partir da sumariza&ccedil;&atilde;o 
+  aplicada aos campos das tabelas do tema de entrada. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">As regras de sumariza&ccedil;&atilde;o 
+  para campos do tipo num&eacute;rico s&atilde;o: </font></p>
+<center>
+  <table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt; mso-padding-alt:0cm 3.5pt 0cm 3.5pt;mso-border-insideh:.5pt solid windowtext; mso-border-insidev:.5pt solid windowtext'>
+    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt; mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'> 
+        <font face="Arial, Helvetica, sans-serif"><b>Fun&ccedil;&atilde;o de Sumariza&ccedil;&atilde;o</b> 
+        </font></td>
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt; border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:  solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'> 
+        <font face="Arial, Helvetica, sans-serif"><b>Significado</b> </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:1;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeMINVALUE </font></td>
+      <td width=237 valign=top style='width:177.45pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        valor m&iacute;nimo </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:2;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeMAXVALUE </font></td>
+      <td width=237 valign=top style='width:177.45pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        valor m&aacute;ximo </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:3;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeMEAN </font></td>
+      <td width=237 valign=top style='width:177.45pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        m&eacute;dia </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:4;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeSUM </font></td>
+      <td width=237 valign=top style='width:177.45pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        soma de valores </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:5;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeCOUNT </font></td>
+      <td width=237 valign=top style='width:177.45pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        n&uacute;mero total de valores </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:6;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeVALIDCOUNT </font></td>
+      <td width=237 valign=top style='width:177.45pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        n&uacute;mero total de valores não nulos </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:7;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeSTANDARDDEVIATION </font></td>
+      <td width=237 valign=top style='width:177.45pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        desvio padr&atilde;o </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:8;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeKERNEL </font></td>
+      <td width=237 valign=top style='width:177.45pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        kernel </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:9;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeVARIANCE </font></td>
+      <td width=237 valign=top style='width:177.45pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        vari&acirc;ncia </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:10;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeSKEWNESS </font></td>
+      <td width=237 valign=top style='width:177.45pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        momento de terceira ordem da m&eacute;dia </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:11;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeKURTOSIS </font></td>
+      <td width=237 valign=top style='width:177.45pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        momento de quarta ordem da m&eacute;dia </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:12;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeAMPLITUDE </font></td>
+      <td width=237 valign=top style='width:177.45pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        valor m&aacute;ximo menos o valor m&iacute;nimo </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:13;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeMEDIAN </font></td>
+      <td width=237 valign=top style='width:177.45pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        Mediana </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:14;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeVARCOEFF </font></td>
+      <td width=237 valign=top style='width:177.45pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        coeficiente de varia&ccedil;&atilde;o </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:15;mso-yfti-lastrow:yes;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.45pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeMODE </font></td>
+      <td width=237 valign=top style='width:177.45pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        valor mais frequente </font></td>
+    </tr>
+  </table>
+</center>
+<p  >&nbsp; </p>
+<p  ><font face="Arial, Helvetica, sans-serif">As regras de sumariza&ccedil;&atilde;o 
+  para campos do tipo n&atilde;o num&eacute;rico s&atilde;o: </font></p>
+<center>
+  <table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt; mso-padding-alt:0cm 3.5pt 0cm 3.5pt;mso-border-insideh:.5pt solid windowtext; mso-border-insidev:.5pt solid windowtext'>
+    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.5pt;border:solid windowtext 1.0pt; mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        Fun&ccedil;&atilde;o de Sumariza&ccedil;&atilde;o </font></td>
+      <td width=240 valign=top style='width:180.0pt;border:solid windowtext 1.0pt;  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:  solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        Significado </font></td>
+    </tr>
+    <tr	style='mso-yfti-irow:1;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.5pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeMINVALUE </font></td>
+      <td width=240 valign=top style='width:180.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        valor m&iacute;nimo </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:2;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.5pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeMAXVALUE </font></td>
+      <td width=240 valign=top style='width:180.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        valor m&aacute;ximo </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:3;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.5pt;border:solid windowtext 1.0pt;  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeCOUNT </font></td>
+      <td width=240 valign=top style='width:180.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        n&uacute;mero total de valores </font></td>
+    </tr>
+    <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes;height:22.7pt'> 
+      <td width=237 valign=top style='width:177.5pt;border:solid windowtext 1.0pt; border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;  padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        TeVALIDCOUNT </font></td>
+      <td width=240 valign=top style='width:180.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;  mso-border-alt:solid windowtext .5pt;padding:0cm 3.5pt 0cm 3.5pt;height:22.7pt'><font face="Arial, Helvetica, sans-serif"> 
+        n&uacute;mero total de valores não nulos </font></td>
+    </tr>
+  </table>
+</center>
+<p  >&nbsp; </p>
+<p  ><font face="Arial, Helvetica, sans-serif">As geometrias do 
+  novo plano de informa&ccedil;&atilde;o s&atilde;o formadas por c&oacute;pias 
+  das geometrias de entrada. Normalmente, o que mudam s&atilde;o os identificadores 
+  dos objetos. A exce&ccedil;&atilde;o ocorre para geometrias do tipo pol&iacute;gonos. 
+  Neste caso, os agrupamentos espaciais (clusters) s&atilde;o fundidos para gerar 
+  um &uacute;nico pol&iacute;gono. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">&nbsp;A Figura 1 
+  mostra, selecionados por consulta, todos os munic&iacute;pios dos Estados do 
+  Acre, Amazonas e Rond&ocirc;nia. Mostra, tamb&eacute;m, a agrega&ccedil;&atilde;o 
+  efetuada somente sobre esses munic&iacute;pios usando o atributo SIGLAUF (atributo 
+  "agregador") que &eacute; a sigla do Estado. </font></p>
+<center>
+  <font face="Arial, Helvetica, sans-serif"><img src="geoOpAggregation_arquivos/image001.png"><br />
+  <medium>Figura 1 - Agrega&ccedil;&atilde;o de objetos a partir do atributo SIGLAUF</medium> 
+  </font> 
+</center>
+<p  > <font face="Arial, Helvetica, sans-serif">Neste exemplo os 
+  atributos adicionais selecionados foram: m&eacute;dia da popula&ccedil;&atilde;o 
+  rural, m&eacute;dia da popula&ccedil;&eacute;o geral, soma da popula&ccedil;&atilde;o 
+  geral e m&iacute;nimo da popula&ccedil;&atilde;o urbana. Note que os atributos 
+  resultantes desta opera&ccedil;&atilde;o representam um sum&aacute;rio dos atributos 
+  relativos aos munic&iacute;pios de cada Estado. Note, tamb&eacute;m, que os 
+  novos objetos n&atilde;o mais representam munic&iacute;pios. Agora, os objetos 
+  representam Estados e mostram atributos relativos a Estados. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">As colunas do exemplo 
+  mostram o seguinte: </font> 
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif"> object_id_: identificador do 
+    novo objeto </font>
+  <li><font face="Arial, Helvetica, sans-serif"> SIGLAUF: atributo "agregador" 
+    utilizado </font>
+  <li><font face="Arial, Helvetica, sans-serif"> agreg_count_: n&uacute;mero de 
+    munic&iacute;pios agregados </font>
+  <li><font face="Arial, Helvetica, sans-serif"> POPRURAL_MEAN: popula&ccedil;&atilde;o 
+    rural m&eacute;dia por Estados </font>
+  <li><font face="Arial, Helvetica, sans-serif"> POPULACA_MEAN: popula&ccedil;&atilde;o 
+    m&eacute;dia por Estados </font>
+  <li><font face="Arial, Helvetica, sans-serif"> POPULACA_SUM: soma da popula&ccedil;&atilde;o 
+    por Estados </font>
+  <li><font face="Arial, Helvetica, sans-serif"> POURBAN_MINVALUE: menor valor 
+    de popula&ccedil;&atilde;o urbana de uma cidade do estado </font>
+</ul>
+<p></p>
+<p  > <font face="Arial, Helvetica, sans-serif">No exemplo acima 
+  a agrega&ccedil;&atilde;o &eacute; feita sobre os objetos selecionados por consulta, 
+  contudo, por op&ccedil;&atilde;o do usu&aacute;rio, pode-se tamb&eacute;m faze-la 
+  sobre todos os objetos ou somente sobre os objetos selecionados por apontamento. 
+  </font></p>
+<div align="left">
+  <p><h3><font face="Arial, Helvetica, sans-serif"><br />
+    </font> <font face="Arial, Helvetica, sans-serif"><b>Interface de Agrega&ccedil;&atilde;o 
+    de Objetos</b></font></h3>
+  <p><font face="Arial, Helvetica, sans-serif"><br />
+    </font> </p>
+</div>
+  <p  > <font face="Arial, Helvetica, sans-serif">A interface de opera&ccedil;&atilde;o 
+    de agrega&ccedil;&atilde;o de objetos, mostrada na Figura 2, para acess&aacute;-la 
+    utilize o menu de contexto sobre a Vista, na op&ccedil;&atilde;o <strong>Opera&ccedil;&otilde;es 
+    Geogr&aacute;ficas - Agrega&ccedil;&atilde;o</strong>. Al&eacute;m de permitir 
+    a escolha de um dos temas da vista, essa interface permite tamb&eacute;m, 
+    selecionar a execu&ccedil;&atilde;o sobre todos os objetos ou somente sobre 
+    os apontados ou somente sobre os selecionados pela consulta, atrav&eacute;s 
+    da caixa <i>Tema de entrada</i>.</font></p>
+<center>
+  <p><font face="Arial, Helvetica, sans-serif"><img src="geoOpAggregation_arquivos/image003.png"> 
+    <br />
+    </font></p>
+  <font face="Arial, Helvetica, sans-serif"><b><medium> </medium></b><medium>Figura 
+  2 - Interface de agrega&ccedil;&atilde;o de objetos. </medium> </font> 
+</center>
+<p  > <font face="Arial, Helvetica, sans-serif">Na caixa <i>Atributos 
+  de Agrega&ccedil;&atilde;o</i>, s&atilde;o selecionados os atributos agregadores, 
+  que al&eacute;m dos atributos do tema tem-se entre eles a legenda corrente. 
+  </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">A caixa <i>Nome 
+  do Plano de Sa&iacute;da &eacute;</i> automaticamente preenchida pela interface, 
+  entretanto, pode-se edit&aacute;-la a fim de criar o plano com o nome desejado. 
+  </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">A caixa <i>Atributos 
+  de Sa&iacute;da</i> possui uma lista que permite marcar ou desmarcar, individualmente, 
+  qualquer estat&iacute;stica desejada de qualquer atributo do tema. Ela tamb&eacute;m 
+  possui dois combos que permitem selecionar rapidamente, por exemplo, todos os 
+  m&aacute;ximos, ou m&iacute;nimos, ou somas etc. de todos os atributos do tema. 
+  </font></p>
+  <p  > <font face="Arial, Helvetica, sans-serif">O bot&atilde;o <i>Executar</i> 
+    efetua a opera&ccedil;&atilde;o de agrega&ccedil;&atilde;o. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">O bot&atilde;o <i>Cancelar</i> 
+  inibe a interface. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">O bot&atilde;o <i>Ajuda</i> 
+  ativa a interface de ajuda. </font></p>
+  </div>
+
+</body>
+</html>

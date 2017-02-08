@@ -1,0 +1,191 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>WCSClientMainWin</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>WCSClientMainWin</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>560</width>
+            <height>393</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>WCS client</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout4</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QWidgetStack">
+                    <property name="name">
+                        <cstring>wid_stck_</cstring>
+                    </property>
+                    <widget class="QWidget">
+                        <property name="name">
+                            <cstring>WStackPage</cstring>
+                        </property>
+                        <attribute name="id">
+                            <number>0</number>
+                        </attribute>
+                    </widget>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout3</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>help_btn_</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer16</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>110</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>prev_btn_</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Previous</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+P</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>next_btn_</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Next</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+N</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>save_btn_</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Save...</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+S</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>close_btn_</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Close</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>help_btn_</sender>
+        <signal>clicked()</signal>
+        <receiver>WCSClientMainWin</receiver>
+        <slot>help_btn_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>prev_btn_</sender>
+        <signal>clicked()</signal>
+        <receiver>WCSClientMainWin</receiver>
+        <slot>prev_btn_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>next_btn_</sender>
+        <signal>clicked()</signal>
+        <receiver>WCSClientMainWin</receiver>
+        <slot>next_btn_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>close_btn_</sender>
+        <signal>clicked()</signal>
+        <receiver>WCSClientMainWin</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>save_btn_</sender>
+        <signal>clicked()</signal>
+        <receiver>WCSClientMainWin</receiver>
+        <slot>save_btn_clicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">wcsclientmainwin.ui.h</include>
+</includes>
+<forwards>
+    <forward>class QListViewItem</forward>
+</forwards>
+<variables>
+    <variable>int currentDlg_;</variable>
+    <variable>QString serv_version_;</variable>
+</variables>
+<slots>
+    <slot>help_btn_clicked()</slot>
+    <slot>prev_btn_clicked()</slot>
+    <slot>next_btn_clicked()</slot>
+    <slot access="protected">init()</slot>
+    <slot access="protected">destroy()</slot>
+    <slot>save_btn_clicked()</slot>
+    <slot>showServInfo()</slot>
+    <slot>selectedLayerChanged(QListViewItem*)</slot>
+</slots>
+<functions>
+    <function access="protected">checkWidget( const int &amp; )</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

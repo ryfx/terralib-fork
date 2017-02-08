@@ -1,0 +1,290 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Geocodificação de Endereços</title>
+<meta content="TerraView - documentacion help" name=Description>
+<meta content="geoprocessing,terraview,terralib,dpi,inpe" name=KeyWords>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+
+<div class=Section1>
+  <p> <strong> <span style='font-family:"Arial","sans-serif";'> <font face="Arial, Helvetica, sans-serif">TerraView</font></span> 
+    </strong> </p>
+  <p align=right> <font face="Arial, Helvetica, sans-serif"><span style='font-family:Arial'> 
+    <a href="kernelWindow.htm">&lt;&lt; Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> 
+    </span> </font></p>
+  <hr size=2 width="100%" align=center>
+
+<p align=center>
+	<strong><u>
+		<span style='font-size: 13.5pt;font-family:Arial'>Address Geocoding</span>
+	</u></strong>
+</p>
+
+<p>
+	<span style='font-family:Arial'>
+<strong>What is Geocoding?</strong>
+<br><br>
+The purpose of Geocoding is to locate point data in a Geographic Information System (SIG). Geocoding is the procedure that associates a geographic coordinate to an event based on a layer (data layer with geographic information, which is with geometry and attributes) with addresses to be found. Once an address is associated to a location, the address can be used to visualize events on a map and for analysis.
+<br><br>
+TerraLib method to compute the location is based on addresses interpolation and follow the steps presented below:
+<ol>
+<li>The location is defined from the layer with street segments containing the range of addresses on each side of the segment.
+</li>
+<li>When the segment with the address number is found, its location is estimated based on the segment length. The percentage an address number represents in the range of number for the segment defines its location (Figure 1).
+</li>
+</ol>
+<p align=center>
+<img  id="_x0000_i1040" src="spatializationWindow_arquivos/gc1.png">
+<br>
+Figure 1 - Addresses Interpolation.
+</p>
+
+<strong>How to geocode addresses in a table using TerraView</strong>
+<br><br>
+Geocoding of addresses table (Figure 2) is one method to spatialize table information by creating a layer with a geographic location (represented by points) associated to attributes table with addresses.
+<p align=center>
+<img id="_x0000_i1039" src="spatializationWindow_arquivos/gc2.png">
+<br>
+Figure 2 - A use table with addresses to geocode.
+</p>
+<p><font face="Arial, Helvetica, sans-serif"><a name="spatializationStack1"></a>To geocode a table, execute the following steps: </font></p><font face="Arial, Helvetica, sans-serif">
+<ol>
+<li>In &quot;File&quot; menu, select &quot;Address Geocoding...&quot; option (Figure 3).
+<p align=center><br>
+<img id="_x0000_i1038" src="spatializationWindow_arquivos/gc3.png">
+<br>
+Figure 3 - Menu to select tables geocoding.
+<br><br>
+</p>
+</li>
+<li>In the next interface (Figure 4), select the layer to be used as reference for geocoding, that is, select the layer with streets (or street segments). In the first step, verify if the layer has been previously configured to be presented in the items list. If not, configure the layer using &quot;Configure...&quot; button.
+<p align=center><br>
+<img id="_x0000_i1037" src="spatializationWindow_arquivos/gc4.png">
+<br>
+Figure 4 - Selection of the layer to be used as reference for geocoding
+<br><br>
+</p>
+</li>
+<li><font face="Arial, Helvetica, sans-serif"><a name="lbsDefinition"></a>Configuration step presents a new interface (Figure 5) where the following parameters are selected:
+<br><br>
+	<strong>a.</strong> Table fields with attributes that correspond to the initial and final number of segments;
+	<br><br>
+	<strong>b.</strong> Structure of segment address, which may be divided in more than one table field, for instance, in fields TYPE (type: Avenue, Street, Lane...), TITLE (title: Sir, Doctor...), PREPOSITION (preposition: of...) and NOME (name: MARIA CLARA, JOAO GILBERTO...).
+	<br><br>
+	<strong>c.</strong> Field with full name of the segment (the system will ask if the user wants to convert field characters to capital letters <a name=fntref1></a> <a href="#fnt1">[1]</a>. If there is no such field, it can be created by providing a name. The new column will be composed by the values of the fields with segment address.
+	<br><br>
+	<strong>d.</strong> Two additional fields, one with neighborhoods (sectors, districts...) and another with postal codes.
+	<br><br>
+	Click &quot;Confirm&quot; button after the fields are selected. Fields can be changed and will be updated by clicking the same
+button. To remove the reference layer, click &quot;Remove&quot; button.
+	<br><br>
+	Once a layer is configured, the previous steps are not required when using the same layer in new geocodings, even if the geocoding interface or TerraView is closed).
+	<br><br>
+	<p align=center>
+	<img border=0 id="_x0000_i1036" src="spatializationWindow_arquivos/gc5.png">
+	<br>
+	Figure 5 - Configuration of a layer as reference for geocoding.
+	<br><br>
+	</p>
+</font></li><font face="Arial, Helvetica, sans-serif">
+<li><font face="Arial, Helvetica, sans-serif"><a name="spatializationStack2"></a>After the reference layer has been selected, click &quot;Next&quot; button to inform the table with addresses to be geocoded and the address fields in the table (Figure 6).
+<br><br>
+	<p align=center>
+	<img border=0 src="spatializationWindow_arquivos/gc6.png">
+	<br>
+	Figure 6 - Configuration of the table to be geocoded.
+	<br><br>
+<ul>
+It is not required that all the fields are present as they are in the reference layer, however it is advisable that the segment name has &quot;similar&quot;<a name=fntref2></a> format <a href="#fnt2">[2]</a>.
+<br><br>
+In addition to tables that are already in the database (BD), tables can be imported tables into the database. If the table is in the
+BD and does not appear in the list, select the table in database import interface and select another name for it.
+<br><br>
+</ul>
+</font></li><font face="Arial, Helvetica, sans-serif">
+<li><font face="Arial, Helvetica, sans-serif"><a name="spatializationStack3"></a>A dictionary may be used during addresses search in the segments set (Figure 7). The contents of the dictionary must be words in the segments set that are typed in a different way in the addresses table.
+<br>
+<ul><br>
+Example: Addresses table may contain the following expression: RUA CÔNEGO CASSIANO and segments set contains R CON. CASSIANO. If there 
+         are dictionary entries with words RUA and R, and CÔNEGO and CON., the search will be more precise.
+<br><br>
+The dictionary, in ASCII format, has the following structure:
+	<ul>
+		&quot;AV&quot;, &quot;AV.&quot;, &quot;AVN&quot; ,&quot;AVENIDA&quot;
+		<br><br>
+		&quot;CON.&quot;, &quot;CÔNEGO&quot;
+		<br><br>
+		&quot;PALAVRA&quot;, &quot;PAL.&quot;, &quot;PALAVR&quot;,&quot;PLVR&quot;
+		<br><br>
+		&quot;R&quot;, &quot;RUA&quot;, &quot;R.&quot;
+	</ul>
+<br>
+The first word will be used as reference to the other words in the line. In the example above, occurrences of &quot;RUA&quot; and &quot;R.&quot; could be <a name=fntref3></a> <a href="#fnt3">[3]</a> replaced by &quot;R&quot; in the search.
+<p align=center><br>
+<img border=0 id="_x0000_i1035" src="spatializationWindow_arquivos/gc7.png">
+<br>
+Figure 7 - Search dictionary.
+<br><br>
+</p>
+</ul>
+<li><font face="Arial, Helvetica, sans-serif"><a name="spatializationStack4"></a>The next window (Figure 8) allows the replacement of special characters in the input to be used when segments set does not contain them.
+<br><br>
+<p align=center>
+<img border=0 id="_x0000_i1034" src="spatializationWindow_arquivos/gc8.png">
+<br>
+Figure 8 - Special characters replacement.
+<br><br>
+</p>
+</font></li><font face="Arial, Helvetica, sans-serif">
+<li><font face="Arial, Helvetica, sans-serif"><a name="spatializationStack5"></a>Next, choose a layer with objects containing centroids that will be used to define the geocoded points when the search is unsuccessful (Figure 9). The window also defines if a exhaustive search, which will take more time, is enabled <a href="#fnt4">[4]</a>
+<p align=center><br>
+<img border=0 id="_x0000_i1033" src="spatializationWindow_arquivos/gc9.png">
+<br>
+Figure 9 - Centroid use and exhaustive search.
+<br><br>
+</p>
+</font></li><font face="Arial, Helvetica, sans-serif">
+<li><font face="Arial, Helvetica, sans-serif"><a name="spatializationStack6"></a>Finally, inform the name of the new layer resulting from the geocoding procedure (Figure 10), and the directory and the name of the file with geocoding full report (Figure 11).
+<p align=center>
+<img border=0 id="_x0000_i1032" src="spatializationWindow_arquivos/gc10.png">
+<br>
+Figure 10 - Name of the new layer with geocoded points.
+<br><br>
+<p><font face="Arial, Helvetica, sans-serif"><a name="spatializationStack7"></a></font></p>
+<p align=center><img border=0 id="_x0000_i1031" src="spatializationWindow_arquivos/gc11.png">
+<br>
+Figure 11 - Name geocoding report.
+<br><br>
+</p>
+<li>The report presents for each searched address: geocoding process code, address line id, and, if successful, the found location. The codes are presented in the following list:
+<br><br>
+<ul>
+<strong>0:</strong> Database connection problem
+<br>
+<strong>1:</strong> Address not found
+<br>
+<strong>2:</strong> Empty full name
+<br>
+<strong>3:</strong> Database query error
+<br>
+<strong>4:</strong> Address found by name and number
+<br>
+<strong>5:</strong> Multiple addresses found by name and number
+<br>
+<strong>6:</strong> Address found by name and no number
+<br>
+<strong>7:</strong> Multiple addresses found by name and no number
+<br>
+<strong>8:</strong> Address found by similarity
+<br>
+<strong>9:</strong> Address found by neighborhood or postal code
+<br>
+<strong>10:</strong> Address found by name, number, and no type
+<br>
+<strong>11:</strong> Multiple addresses found by name, number, and no type
+<br>
+<strong>12:</strong> Address found by name, no number, and no type
+<br>
+<strong>13:</strong> Multiple addresses found by name, no number, and no type
+<br>
+<strong>14:</strong> Address found by name, number, no type, and no title
+<br>
+<strong>15:</strong> Multiple addresses found by name, number, no type, and no title
+<br>
+<strong>16:</strong> Address found by name, no number, no type, and no title
+<br>
+<strong>17:</strong> Multiple addresses found by name, no number, no type, and no title
+<br>
+<strong>18:</strong> Address found by name, number, no type, no title, and no preposition
+<br>
+<strong>19:</strong> Multiple addresses found by name, number, no type, no title, and no preposition
+<br>
+<strong>20:</strong> Address found by name, no number, no type, no title, and no preposition
+<br>
+<strong>21:</strong> Multiple addresses found by name, no number, no type, no title, and no preposition
+<br><br>
+</ul>
+</li>
+<li>At the process end, a layer with geolocated points is created (Figure 12).
+<p align=center><br>
+<img border=0 id="_x0000_i1030" src="spatializationWindow_arquivos/gc12.png">
+<br>
+Figure 12 - Theme created from a layer resulting of geocoding procedure.
+<br><br>
+</p>
+</li>
+</font></font></font></font></font></font></ol><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif">
+<strong>How to locate an address with TerraView</strong>
+<br><br>
+<ol>
+<li>Select a theme<a name=fntref5></a><a href="#fnt5">[5]</a> segments information (Figure 13):
+<br><br>
+<ul>
+<strong>a.</strong> This theme must have an attributes table with segment address information (Type, Title, and/or Preposition and Name) and initial and final numbers on each side (left and right) of the segments.
+<br><br>
+<strong>b.</strong> Optionally, this attributes table may have information about neighborhood and postal code.
+<br><br>
+</ul>
+</li>
+<li>Right click on active theme and select &quot;Locate Address...&quot; option (Figure 14).
+<p align=center>
+<br>
+<img border=0 id="_x0000_i1029" src="spatializationWindow_arquivos/gc13.png"><br>
+Figure 13 - Theme with segments information of Taubaté city.
+<br><br>
+<img border=0 id="_x0000_i1028" src="spatializationWindow_arquivos/gc14.png"><br>
+Figure 14 - Menu with locate address option.
+<br><br>
+</p>
+</li>
+<li>If the source layer is not configured as a reference layer for geocoding, a warning message is displayed (Figure 15).
+<p align=center>
+<br>
+<img border=0 id="_x0000_i1027" src="spatializationWindow_arquivos/gc15.png">
+<br>
+Figure 15 - Warning message displayed if streets layer is not configured as reference layer for geocoding.
+<br><br>
+</p>
+</li>
+<li><font face="Arial, Helvetica, sans-serif"><a name="addressLocatorWindow"></a>In Address Location interface (Figure 16), choose &quot;Configure...&quot; option if the theme layer is not configured. A new interface will be displayed to configure as reference layer for geocoding&quot; (as seen in Figure 5 of the previous section).
+<p align=center>
+<br>
+<img border=0 id="_x0000_i1026" src="spatializationWindow_arquivos/gc16.png">
+<br>
+Figure 16 - Address Location interface.
+<br><br>
+</p>
+</font></li><font face="Arial, Helvetica, sans-serif">
+<li>
+After a layer has been configured, return to the interface shown in Figure 16 to type in the desired address. When &quot;OK&quot; button is pressed, a point will be drawn on the map at the found location.
+</font></ol><font face="Arial, Helvetica, sans-serif">
+<hr size=2 width="100%" align=center>
+<a name=fnt1></a>
+<a href="#fntref1">[1]</a> The original table will be written with the new values, therefore the user must be careful at this step.
+<br><br>
+<a name=fnt2></a><a href="#fntref2">[2]</a> Similar means that the streets layer has the fields type+title+preposition+name. The table with addresses may have the same structure, but even if the structure is a composition of the fields, just select a compatible structure. Ex: A layer configured as type+title+preposition+name and a table with type+name only, where “name” contains title+preposition+name can be used.
+<br><br>
+<a name=fnt3></a><a href="#fntref3">[3]</a> If replacement is required.
+<br><br>
+<a name=fnt4></a><a href="#fntref4">[4]</a> Exhaustive search includes methods with code number from 10 upwards.
+<br><br>
+<a name=fnt5></a><a href="#fntref5">[5]</a> The theme layer with segments is named reference layer for geocoding.
+
+<p></p>
+
+<hr size=2 width="100%" align=center>
+
+  <p align=right> <font face="Arial, Helvetica, sans-serif"><span style='font-family:Arial'> 
+    <a href="kernelWindow.htm">&lt;&lt; Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a></span> 
+    </font></p>
+
+</font></font></font></font></font></font></font></font></span>
+
+</div>
+
+</body>
+
+</html>

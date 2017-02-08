@@ -1,0 +1,168 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Plotagem de gráfico de dispersão 3D</title>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+<div class=Section1> 
+  <p> <font size="3" face="Arial, Helvetica, sans-serif"><strong> <span style='font-family:"Arial","sans-serif";'> 
+    TerraView</span> </strong></font></p>
+  <p align="right"><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family:Arial'><a href="fazendo_graficos_probabilidade_normal.htm">&lt;&lt; 
+    Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="criando_mapas_tematicos.htm">Next 
+    &gt;&gt;</a> </span> </font></p>
+  <hr size=2 width="100%" align=center>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><strong><u> 
+    <span style='font-size: 13.5pt;font-family:Arial'>Plotting Dispersion 3D Graphics</span></u></strong> </font></p>
+  <div align="justify"><font size="3" face="Arial, Helvetica, sans-serif"> 
+    <p>The interface is activated through the grid area. At least three variables must be selected 
+    in the grid to enable &quot;Dispersion 3D&quot; option in the context menu 
+    of the grid viewport. The context menu is shown in Figure 1. </p>
+  <p align=center> <img src="graphic3DWindow_arquivos/Figura1.png"> 
+    <br>
+    Fig. 1 - Context menu to activate the dispersion 3D graphic. </p>
+  <p>Selected columns are assigned x, y, and z axis, respectively. To change the assignments, 
+    swapping of the grid columns must be executed before activating the 3D graphic 
+    plot interface. </p>
+  <p>The dispersion 3D graphic interface is shown in Figure 2. TerraView uses QT 
+    and opengl libraries to plot the graphic. </font> </div>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><img src="graphic3DWindow_arquivos/Figura2.png"> 
+    <br>
+    Fig. 2 - Interface to plot a dispersion 3D graphic. </font></p>
+  <div align="justify"><font size="3" face="Arial, Helvetica, sans-serif">
+   <p>The interface has four drawing areas. The main area displays the data plotted 
+    in three dimensions. The remaining drawing areas display the same data plotted 
+    in bi-dimensional planes. </p>
+   <p>The operation is similar to dispersion 2D graphic. Data representing <i>non 
+    pointed objects</i> are drawn using theme default color. Data representing 
+    <i>pointed objects are drawn</i> using theme pointing color. </p>
+   <p>&quot;Viewing Control&quot; box contains commands to change the visualization 
+    mode of 3D data. Displaying tri-dimensional data in a bi-dimensional area 
+    requires controls to visualize data at different angles and positions. </p>
+   <p>&quot;Show Axis&quot; controls the display of x, y, and z axes. Figure 3 shows 
+    the interface without axes display. </font> </div>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><img src="graphic3DWindow_arquivos/Figura3.png"> 
+    <br>
+    Fig. 3 - X, y, and z axes removed. </font></p>
+  <div align="justify"><font size="3" face="Arial, Helvetica, sans-serif"><p>&quot;Quality&quot; 
+    slider controls the quality of 3D points plot. Since each point is represented 
+    by a sphere, this slider controls the quality of a sphere drawing. The worst 
+    the quality is, the faster the plot is. </p>
+ 
+    <p>&quot;Zoom&quot; slider controls the zoom. Figure 4 shows data display with 
+    zoom. </font> </div>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><img src="graphic3DWindow_arquivos/Figura4.png"> 
+    <br>
+    Fig. 4 - 3D data zoom. </font></p>
+  <div align="justify"><font size="3" face="Arial, Helvetica, sans-serif">
+   <p>Zoom can also be executed through the mouse the middle button or the roller. Drag 
+    the mouse upwards to decrease zoom. Drag the mouse downwards to increase zoom.</p>
+   <p>The illumination considers the light sources: front or back. Figure 5 is similar 
+    to Figure 4, but the illumination is from behind.</p> </font> </div>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><img src="graphic3DWindow_arquivos/Figura5.png"> 
+    <br>
+    Fig. 5 - Illumination from behind. </font></p>
+  <font size="3" face="Arial, Helvetica, sans-serif">&quot;Rotation&quot; box 
+  contains X, Y, and Z sliders to control rotations in x, y, and z, respectively. 
+  Figure 6 shows 3D data plot with rotation. </font> 
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><img src="graphic3DWindow_arquivos/Figura6.png"> 
+    <br>
+    Fig. 6 - 3D data plot with rotation. </font></p>
+  <div align="justify"><font size="3" face="Arial, Helvetica, sans-serif">
+   <p>Rotation can also be executed by mouse. Press alt key and left button to control rotation 
+    in x and y.Press control key and left button to control rotation in z. If 
+    LINUX is used, Alt key must be used with Control key simultaneously. </p>
+    <p>&quot;Selection Control&quot; box controls the origin and the size of selection 
+    hexagon. Selection hexagon is displayed with magenta color. </p>
+   <p>&quot;Offset&quot; and &quot;Size&quot; boxes contain sliders to control the 
+    origin and the size of the hexagon in x, y, and z. Figure 7 shows the hexagon 
+    in a new location. <p></font> </div>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><img src="graphic3DWindow_arquivos/Figura7.png"> 
+    <br>
+    Fig. 7 - Selection hexagon in a new location. </font></p>
+  <p align="justify"><font size="3" face="Arial, Helvetica, sans-serif">Selection 
+    control can also be executed by mouse using the three bi-dimensional plane 
+    drawing areas. Place the mouse cursor at the center of the rectangle of each 
+    drawing area and drag the rectangle to its new location. Place the cursor 
+    near the edges to control the rectangle size (hexagon). Figure 8 shows the 
+    rectangle being dragged and Figure 9 shows the rectangle being resized. </font> 
+  </p>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><img src="graphic3DWindow_arquivos/Figura8.png"> 
+    <br>
+    Fig. 8 - Selection rectangle being dragged (relocated). <br>
+    <br>
+    <img src="graphic3DWindow_arquivos/Figura9.png"> <br>
+    Fig. 9 - Selection rectangle being resized. </font></p>
+  <div align="justify"><font size="3" face="Arial, Helvetica, sans-serif">
+   <p>Selection is executed every time the hexagon changes either size or position. Figure 
+    10 shows the hexagon located on a 3D points cloud. Figure 11 shows the same 
+    data in zoom. </p>
+    <p>Every time the selection rectangle is changed, a query is executed to search 
+    for all objects inside the hexagon. However, when the hexagon is changed by 
+    mouse, there is an option to only relocate without a query. Use Control key 
+    to use this option. To add the new selection to the current one, use Shift 
+    key. </p></font> </div>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><img src="graphic3DWindow_arquivos/Figura10.png"> 
+    <br>
+    Fig. 10 - Hexagon located on a 3D points cloud. <br>
+    <br>
+    <img src="graphic3DWindow_arquivos/Figura11.png"> <br>
+    Fig. 11 - Hexagon with zoom located on a 3D points cloud. </font></p>
+  <div align="justify"><font size="3" face="Arial, Helvetica, sans-serif">
+   <p>Almost all commands by mouse are available in the interface and only the 3D data 
+    translation command is executed exclusively by mouse. Translation is executed 
+    by dragging the mouse on the 3D drawing area with the left button pressed 
+    down. </p>
+    <p>The module allows also the analysis of a subset of data, using: </p>
+	<ul>
+    <li> all data,</li>
+    <li> queried only,</li>
+    <li> non queried only,</li>
+    <li> grouped only, and</li>
+    <li> non grouped only.</li>
+	</ul>
+
+   <p>Figure 12 shows the list of input data.</p> 
+  <p align=center><img src="graphic3DWindow_arquivos/Figura12.png"> <br>
+    Fig. 12 - List with input data options.</p>
+  <p>In addition, the module allows 
+  the analysis of data with 1 to n cardinality. When grouping is not used, all 
+  grid data are plotted in the interface. When data is grouped, they are summarized 
+  by:</p>
+  <ul>
+  <li>MIN,</li>
+  <li>MAX,</li>
+  <li>AVG,</li>
+  <li>SUM, and</li>
+  <li>COUNT.</li>
+  </ul>
+  Figure 13 shows the list with summary option (grouping functions). </font> 
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><img src="graphic3DWindow_arquivos/Figura13.png"> 
+    <br>
+    Fig. 13 - List with grouping functions options. </font></p>
+  <div align="justify"><font size="3" face="Arial, Helvetica, sans-serif">
+  <p><strong>Observations on 1 to n cardinality.</strong></p>
+
+  <p>The module considers that an object is pointed if at least one of its attributes 
+    lines is pointed. Therefore, its graphic representation is drawn on the map 
+    using the theme pointing color. Other modules, such as histogram, dispersion, 
+    and dispersion 3D, draw objects according to: </p>
+  <p>- When there is no grouping function, all table values are used to plot the 
+    graphic. In this case, only points or bars related to the attributes pointed 
+    on the grid are drawn using the theme pointing color. </p>
+  <p>- When a grouping function is used, the summarized values for each object 
+    are used to plot the graphic. Therefore, by pointing to a line of its attributes, 
+    an object is considered as pointed. Similarly, by satisfying a line of its 
+    attributes in a query, an object is considered as queried. </p>
+  <p>- These observations are important when the input data is filtered by queried, 
+    not queried, grouped, and not grouped. </p> </font> </div>
+  <hr size=2 width="100%" align=center>
+  <div align="right"><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family:Arial'><a href="fazendo_graficos_probabilidade_normal.htm">&lt;&lt; 
+    Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="criando_mapas_tematicos.htm">Next 
+    &gt;&gt;</a> </span></font></div>
+</div>
+
+</body>
+
+</html>

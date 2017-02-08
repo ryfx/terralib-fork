@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<title>Plugin Tema de Arquivo</title>
+</head>
+<body>
+<h1>Temas de Arquivos Shapefile</h1>
+<p>O objetivo desse plugin é permitir que o usuário do TerraView crie um tema a 
+partir de um arquivo de dados vetorias em formato Shapefile, sem que se faça a 
+importação para o banco de dados. Esse tema terá funcionalidades limitadas.</p>
+<p>Para criar um tema de arquivo faça acesse a interface principal do <b>Plugin</b> através
+do menu Plugin como mostra a Figura 1.</p>
+<center><img alt="ft_fig1 (2K) Acesso ao Plugin de temas de arquivos" src="fileTheme_arquivos/ft_fig1.png" height="63" width="219" /></center>
+<center><p><small><b>Figura 1</b> - Acesso ao Plugin de temas de arquivos.</small></p></center>
+<p>A interface principal do Plugin de Temas de Arquivos é mostrada na Figura 2.</p>
+<center><img alt="ft_fig2 (39K) Interface principal do Plugin de temas de arquivos" src="fileTheme_arquivos/ft_fig2.png" height="458" width="791" />
+</center><center><p><small><b>Figura 2</b> - Interface principal do Plugin de temas de arquivos.</small></p></center>
+<p>Nessa interface faça:</p>
+<ol>
+<li>Clique no botão <b>Arquivo</b> e escolha um shapefile em seu sistema de arquivos;</li>
+<li>Caso exista a informação de projeção ela será descrita no campo. Caso não exista, 
+você deve clicar no botão <b>Projeção</b> e informá-la manualmente. Caso não o faça,
+o Tema estará associado com uma projeção não geográfica ("NoProjection");</li>
+<li>Escolha a <b>Vista</b> na qual o Tema será inserido;</li>
+<li>Escolha um <b>nome</b> para o novo Tema;</li>
+<li>Clique no botão <b>Ok</b> para finalizar a criação do Tema, ou</li>
+<li>Clique no botão <b>Visualizar</b> para obter na interface do Plugin alguns metadados
+e o desenho da componente geográfica antes de criar o Tema</li>
+</ol>
+<p>Caso você clique no botão Visualizar, você vai obter a interface mostrada na Figura 3.</p>
+<center><img alt="ft_fig3 (17K) Verificação do conteúdo de um shapefile" src="fileTheme_arquivos/ft_fig3.png" height="377" width="555" /></center>
+<center><small><b>Figura 3</b> - Verificação do conteúdo de um shapefile.</small></center>
+<p>Para efetivar a criação do Tema clique no botão <b>Ok</b>. Observe que o Tema de shapefile
+aparece na árvore de Temas do TerraView (Figura 4), e suas geometrias são mostradas na área
+de desenho.</p>
+<center><img alt="ft_fig4 (33K) TerraView com um Tema de shapefile" src="fileTheme_arquivos/ft_fig4.png" height="539" width="742" /></center>
+<center><small><b>Figura 4</b> - TerraView com um Tema de shapefile.</small></center>
+<p>Para visualizar os atributos dos objetos contidos no shapefile selecione o curso de
+informação (<img alt="ft_fig5 (1K)" src="fileTheme_arquivos/ft_fig5.png" height="17" width="20" />)e clique sobre
+o objeto. Uma tabela com seus atributos será mostrada (ver Figura 5).</p>
+<center><img alt="ft_fig6 (41K) Atributos dos objetos do Tema de shapefile" src="fileTheme_arquivos/ft_fig6.png" height="538" width="741" /></center>
+<center><small><b>Figura 5</b> - Atributos dos objetos do Tema de shapefile.</small></center>
+<p>Um tema de arquivos tem funcionalidades limitadas, que são mostradas no meu obtido
+clicando-se com o botão direito sobre o Tema (Figura 6). Você pode alterar o visual
+de apresentação default ou de apontamento, renomear ou remover o tema, definir quais as representações
+estão visíveis, ou ainda verificar
+suas propriedades (Figura 7) </p>
+<center><img alt="ft_fig7 (10K) Opções do Tema de Arquivos" src="fileTheme_arquivos/ft_fig7.png" height="195" width="489" /></center>
+<center><small><b>Figura 6</b> - Opções do Tema de Arquivos.</small></center><br />
+<br />
+
+<center><img alt="ft_fig8 (10K) Propriedades do Tema de Arquivos" src="fileTheme_arquivos/ft_fig8.png" height="224" width="393" /></center>
+<center><small><b>Figura 8</b> - Propriedades do Tema de Arquivos.</small></center>
+<p>Se um Tema faz referência a um arquivo e esse é removido, o Tema ficará inválido, não
+podendo ser visualizado e o munu obtido com o botão direito mostrará apenas as opções de
+remover o Tema ou ver suas propriedades.</p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>KmlPopupWidget</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>KmlPopupWidget</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+</widget>
+<includes>
+    <include location="local" impldecl="in implementation">KmlPopupWidget.ui.h</include>
+</includes>
+<forwards>
+    <forward>class TeQtThemeItem;</forward>
+    <forward>class TerraViewBase;</forward>
+</forwards>
+<variables>
+    <variable>TerraViewBase* _tViewBase;</variable>
+    <variable>TeQtThemeItem* _themeItem;</variable>
+</variables>
+<slots>
+    <slot>init( TerraViewBase * tViewBase, TeQtThemeItem * themeItem, const int &amp; x, const int &amp; y )</slot>
+    <slot>remove()</slot>
+    <slot>rename()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

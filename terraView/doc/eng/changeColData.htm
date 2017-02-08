@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>Change Column Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<font face="Arial, Helvetica, sans-serif" size="4">
+<table width="100%">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+ 
+      <td><b><font size="4" face="Arial, Helvetica, sans-serif">Change Column Data</font></b><br>
+      <hr>
+
+<body link=blue vlink=blue>
+
+<div class=Section1>
+<br>
+  <p> <span style='font-family:"Arial","sans-serif";'> The module to change column 
+    data is activated through a grid from TerraView. To activate the module the 
+    column name to be changed needs to be visible on the grid. Next, to activate 
+    the module, place the mouse on the column name and right click to select the 
+    item <strong>Change Column Data</strong>. The interface of Figure 1 is activated. 
+    </span> </p>
+
+<p align=center>
+	<img id="_x0000_i1025" src="changeColData_arquivos/changeColData.png">
+	<br><br>
+	<span style='font-family:"Arial","sans-serif";'>
+	Fig.1 - Interface to change column data.
+	</span>
+</p>
+
+<p>
+	<span style='font-family:"Arial","sans-serif";'>
+	The module shows on the upper part of the interface the name of the column that will receive new data.
+	<br><br>
+  <em>Modify</em> box allows the user to choose the range of table lines to be 
+  altered. By default it is set as “All”. <br>
+  <br>
+  <em>Operation</em> box has a combo with the names of theme attributes. It is 
+  used to help typing the attribute name correctly. Every time a combo or one 
+  of the operations button is clicked a copy is made for the edition area. A copy 
+  is pasted on a previously selected selection or put on the cursor of the edition 
+  area. <br>
+  <br>
+  <em>OK</em> button executes the change. <br>
+  <br>
+  <em>Cancel</em> button deactivates the module. <br>
+  <br>
+  <em>Help</em> button displays the help screen. <br>
+  <br>
+	<strong>Final Considerations</strong>
+	<br><br>
+	<strong>Type =</strong>
+	<br><br>
+  Do not type '=' in the edition area. To insert, for example, the value 5 on 
+  the table lines, type only 5 in the edition area and click <em>OK</em>. The 
+  table lines will receive the value 5. <br>
+  <br>
+	<strong>Attributes Operation</strong>
+	<br><br>
+  A column can receive the result of an operation between attributes, for example, 
+  the sum of two attributes. For this, select the first attribute in the combo, 
+  next press “+” button, then select the second attribute in the combo. Make sure 
+  all the selected attributes are numerical types so that the sum becomes possible. 
+  Click <em>OK</em> button. The column lines will receive the sum of the values 
+  from these two fields. <br>
+  <br>
+	OBS: This operation can work even with string type attributes as long as all the lines are of numerical values. When this does not occur, depending on the database manager, it will not execute the operation or these situations might occur:
+	<ul>
+		<li>Calculate the lines where both attributes have numerical values and</li>
+		<li>Display a zero where this does not occur.</li>
+	</ul>
+	<br>
+	<strong>Operation with Zero Value Attributes</strong>
+	<br><br> 
+	The result of the operation when the attribute does not have a value is nil. In the previous example, the result of a field is nil when one of the attributes is nil.
+	<br><br>
+	<strong>Operation with an Undetermined Result</strong>
+	<br><br>
+	When the result of an operation is undetermined, like the division of two attributes where the divisor is zero, the result is nil.
+	<br><br>
+	<strong>Operation Using Mathematical Functions</strong>
+	<br><br>
+	The use of functions like, log, sin, cos, etc is possible and it depends on the database manager. When this operation ends in undetermined values like log (0) for example the result is nil.
+	<strong>NOTE</strong>
+	<br><br>
+	Some database managers do not assign any value when there is an invalid result. In this case a WHERE clause can be used to filter only the lines with valid results.
+	<br><br>
+	<strong>To Attribute a Nil Value</strong>
+	<br><br>
+  To attribute a nil value, type null in the edition area and click <em>OK</em>. 
+  <br>
+  <br>
+	<strong>OBS:</strong> Some database managers require a cast to attribute a nil value. For example, in POSTGRESQL type: <em>null::float8</em> or <em>null::integer</em> or <em>null::varchar</em> according to the type of the field.
+	<br><br>
+	<strong>Cardinality 1 to n Theme</strong>
+	<br><br>
+	In cases where the cardinality is 1 to n, it is possible to obtain the result of an aggregation using the functions: MIN, MAX, AVG, SUM and COUNT. This is possible as long as the selected column belongs to a static table and is receiving the aggregated values from an external table.
+	<br><br>
+	To illustrate, suppose there is a theme of municipalities linked to the external table <i>escolas (schools)</i> and each municipality has n schools. To discover how many schools there are in each municipality follow these steps:
+	<br><br>
+	COUNT(nome_escola)
+	<br><br>
+	Note that without the use of aggregation it becomes impossible for a static table column to receive the data from an external table column, because in this particular case, there are many data lines for each line of a static table. The aggregation function reduces these values to a value alone and it assigns it to a correspondent object.
+	<br><br>
+	It is also possible to use mathematical functions based on an aggregation function, for example:
+	<br><br>
+	log(AVG(num_professores)) + 12
+	<br><br>
+	However, it is not possible to execute an aggregation over the result of a mathematical function, for example:
+	<br><br>
+	MAX(log(num_professores)) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..... ERROR
+	<br><br>
+	<strong>Use of WHERE Clause</strong>
+	<br><br>
+	After formulating the operation it is possible to add a WHERE clause. This procedure causes the alteration only where there are certain characteristics defined by the WHERE clause.
+	<br><br>
+	OBS: the module executes one AND from WHERE clause with the option chosen from &quot;Modify&quot; box.
+	<br><br>
+	To give an example, let’s return to the case of number of schools by municipality. To calculate this number using municipalities where the population is over 100000 inhabitants the following procedure is taken:
+	<br><br>
+	Select option &quot;All&quot; in &quot;Modify&quot; box and use the following operation:
+	<br><br>
+	COUNT(nome_escola) WHERE pop_municipio &gt; 100000
+	<br><br>
+	The same result can be obtained through the following steps:
+	<ul>
+		First: exit this module.<br><br>
+		Second: activate the <a href="query.htm">attributes query module</a>
+		<br><br>
+		Third: select all municipalities with over 100000 inhabitants.
+		<br><br>
+		Fourth: exit query module and return to change column data module.
+		<br><br>
+    Fifth: select option &quot;<em>Queried</em>&quot; in &quot;<em>Modify</em>&quot; 
+    box. <br>
+    <br>
+		Sixth: apply the following operation:
+		<ul>
+			COUNT(nome_escola)
+		</ul>
+		The result is the same.
+		<br><br>
+		These two ways of filtering lines are extremely useful because some database managers do not execute the operation when there is an invalid operation, such as, division by zero, etc.<br><br>
+		The lines excluded from the operation do not suffer any modification.
+		<br><br>
+		Unchangeable Columns
+		<br><br>
+		Columns that are keys or that are used as a link to other tables cannot be altered and are protected by TerraView.
+	</ul>
+	
+	</span>
+</p>
+
+</div>
+
+</body>
+
+</html>

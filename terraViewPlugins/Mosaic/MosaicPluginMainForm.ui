@@ -1,0 +1,414 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>MosaicPluginMainForm</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>MosaicPluginMainForm</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>1</y>
+            <width>640</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>0</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>21</width>
+            <height>26</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>640</width>
+            <height>480</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Mosaic Plugin</string>
+    </property>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>groupBox1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>0</y>
+                <width>620</width>
+                <height>110</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Global Parameters</string>
+        </property>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel2_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>60</y>
+                    <width>120</width>
+                    <height>25</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Blending Type</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>30</y>
+                    <width>120</width>
+                    <height>25</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Mosaic Type</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>q_dummy_</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>472</x>
+                    <y>62</y>
+                    <width>140</width>
+                    <height>29</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+            <property name="inputMask">
+                <string></string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>The dummy value to be used</string>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string>The dummy value to be used</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>q_force_dummy_</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>330</x>
+                    <y>60</y>
+                    <width>120</width>
+                    <height>27</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Force Dummy</string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Select this to force the use of a defined dummy value</string>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string>Select this to force the use of a defined dummy value</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>q_auto_equalize_</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>330</x>
+                    <y>30</y>
+                    <width>130</width>
+                    <height>27</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Auto-equalize</string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Select this to force the use of a defined dummy value</string>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string>Select this to force the use of a defined dummy value</string>
+            </property>
+        </widget>
+        <widget class="QComboBox">
+            <property name="name">
+                <cstring>qblending_type_</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>140</x>
+                    <y>60</y>
+                    <width>150</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string></string>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QComboBox">
+            <item>
+                <property name="text">
+                    <string>GeoMosaic</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>qmosaic_type_</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>140</x>
+                    <y>30</y>
+                    <width>150</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string></string>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string></string>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel2_2_2_2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>120</y>
+                <width>260</width>
+                <height>25</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Input Rasters</string>
+        </property>
+    </widget>
+    <widget class="QListBox">
+        <property name="name">
+            <cstring>qinput_bands_</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>280</y>
+                <width>280</width>
+                <height>84</height>
+            </rect>
+        </property>
+        <property name="selectionMode">
+            <enum>Extended</enum>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel2_2_2_2_2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>250</y>
+                <width>280</width>
+                <height>25</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Input Bands</string>
+        </property>
+    </widget>
+    <widget class="QListBox">
+        <property name="name">
+            <cstring>qinput_rasters_</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>150</y>
+                <width>280</width>
+                <height>84</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="QLineEdit">
+        <property name="name">
+            <cstring>qoutput_raster_name_</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>400</y>
+                <width>280</width>
+                <height>30</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>close_button_</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>540</x>
+                <y>410</y>
+                <width>90</width>
+                <height>37</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Close</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>ok_button_</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>440</x>
+                <y>410</y>
+                <width>90</width>
+                <height>37</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>OK</string>
+        </property>
+    </widget>
+    <widget class="QTabWidget">
+        <property name="name">
+            <cstring>mosaic_params_tab_</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>300</x>
+                <y>120</y>
+                <width>330</width>
+                <height>280</height>
+            </rect>
+        </property>
+        <property name="font">
+            <font>
+                <family>Times</family>
+                <pointsize>12</pointsize>
+            </font>
+        </property>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>tab</cstring>
+            </property>
+            <attribute name="title">
+                <string>GeoMosaic</string>
+            </attribute>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>40</x>
+                        <y>90</y>
+                        <width>250</width>
+                        <height>60</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>No specific parâmeters needed</string>
+                </property>
+                <property name="alignment">
+                    <set>WordBreak|AlignCenter</set>
+                </property>
+            </widget>
+        </widget>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel2_2_2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>370</y>
+                <width>140</width>
+                <height>25</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Output Raster Layer</string>
+        </property>
+    </widget>
+</widget>
+<toolbars>
+</toolbars>
+<connections>
+    <connection>
+        <sender>close_button_</sender>
+        <signal>clicked()</signal>
+        <receiver>MosaicPluginMainForm</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>ok_button_</sender>
+        <signal>clicked()</signal>
+        <receiver>MosaicPluginMainForm</receiver>
+        <slot>OkButtonPressed()</slot>
+    </connection>
+    <connection>
+        <sender>qmosaic_type_</sender>
+        <signal>activated(int)</signal>
+        <receiver>mosaic_params_tab_</receiver>
+        <slot>setCurrentPage(int)</slot>
+    </connection>
+    <connection>
+        <sender>q_force_dummy_</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>q_dummy_</receiver>
+        <slot>setEnabled(bool)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>qmosaic_type_</tabstop>
+    <tabstop>qblending_type_</tabstop>
+    <tabstop>qoutput_raster_name_</tabstop>
+    <tabstop>qinput_rasters_</tabstop>
+    <tabstop>qinput_bands_</tabstop>
+    <tabstop>ok_button_</tabstop>
+    <tabstop>close_button_</tabstop>
+    <tabstop>mosaic_params_tab_</tabstop>
+    <tabstop>q_force_dummy_</tabstop>
+    <tabstop>q_dummy_</tabstop>
+</tabstops>
+<slots>
+    <slot>OkButtonPressed()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

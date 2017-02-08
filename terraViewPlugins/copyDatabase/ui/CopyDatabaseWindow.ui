@@ -1,0 +1,1229 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>CopyDatabaseWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>CopyDatabaseWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>442</width>
+            <height>463</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Copy Database</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QWidgetStack" row="0" column="0">
+            <property name="name">
+                <cstring>copyDatabaseWidgetStack</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>0</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget" row="0" column="0">
+                        <property name="name">
+                            <cstring>layout26</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget" row="0" column="0">
+                                <property name="name">
+                                    <cstring>layout54</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>textLabel1_2</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Create a new database to copy data...</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="Line" row="1" column="0">
+                                        <property name="name">
+                                            <cstring>line32_2</cstring>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>HLine</enum>
+                                        </property>
+                                        <property name="frameShadow">
+                                            <enum>Sunken</enum>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QLayoutWidget" row="3" column="0">
+                                <property name="name">
+                                    <cstring>layout56</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLayoutWidget" row="1" column="0">
+                                        <property name="name">
+                                            <cstring>layout129_2</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QPushButton" row="0" column="4">
+                                                <property name="name">
+                                                    <cstring>closeConnectPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Close</string>
+                                                </property>
+                                                <property name="accel">
+                                                    <string>Alt+C</string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QPushButton" row="0" column="3">
+                                                <property name="name">
+                                                    <cstring>nextConnectPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Next</string>
+                                                </property>
+                                                <property name="accel">
+                                                    <string>Alt+N</string>
+                                                </property>
+                                            </widget>
+                                            <spacer row="0" column="1">
+                                                <property name="name">
+                                                    <cstring>spacer60_2</cstring>
+                                                </property>
+                                                <property name="orientation">
+                                                    <enum>Horizontal</enum>
+                                                </property>
+                                                <property name="sizeType">
+                                                    <enum>Expanding</enum>
+                                                </property>
+                                                <property name="sizeHint">
+                                                    <size>
+                                                        <width>100</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                            </spacer>
+                                            <widget class="QPushButton" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>helpConnectPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Help</string>
+                                                </property>
+                                                <property name="accel">
+                                                    <string>Alt+H</string>
+                                                </property>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                    <widget class="Line" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>line31_2</cstring>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>HLine</enum>
+                                        </property>
+                                        <property name="frameShadow">
+                                            <enum>Sunken</enum>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QFrame" row="1" column="0">
+                                <property name="name">
+                                    <cstring>frame7</cstring>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>StyledPanel</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Raised</enum>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <spacer row="1" column="2">
+                                        <property name="name">
+                                            <cstring>spacer24</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>MinimumExpanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>170</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <spacer row="2" column="1">
+                                        <property name="name">
+                                            <cstring>spacer22_2</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Vertical</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Minimum</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>20</width>
+                                                <height>16</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <spacer row="1" column="0">
+                                        <property name="name">
+                                            <cstring>spacer25</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>MinimumExpanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>170</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <spacer row="0" column="1">
+                                        <property name="name">
+                                            <cstring>spacer22</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Vertical</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Minimum</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>20</width>
+                                                <height>16</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <widget class="QFrame" row="1" column="1">
+                                        <property name="name">
+                                            <cstring>fraConnect</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>3</hsizetype>
+                                                <vsizetype>3</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>StyledPanel</enum>
+                                        </property>
+                                        <property name="frameShadow">
+                                            <enum>Raised</enum>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                        </grid>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>1</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget" row="0" column="0">
+                        <property name="name">
+                            <cstring>layout31</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QButtonGroup" row="2" column="0">
+                                <property name="name">
+                                    <cstring>buttonGroup3</cstring>
+                                </property>
+                                <property name="title">
+                                    <string>Options</string>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLayoutWidget" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>layout25</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QRadioButton" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>copyCurrentViewsRadioButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Copy Views from Current User</string>
+                                                </property>
+                                                <property name="checked">
+                                                    <bool>true</bool>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLayoutWidget" row="1" column="0">
+                                                <property name="name">
+                                                    <cstring>layout23</cstring>
+                                                </property>
+                                                <grid>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QCheckBox" row="0" column="1">
+                                                        <property name="name">
+                                                            <cstring>changeUserNameCheckBox</cstring>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Set View User as destination Database User</string>
+                                                        </property>
+                                                        <property name="checked">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                    <spacer row="0" column="0">
+                                                        <property name="name">
+                                                            <cstring>spacer14</cstring>
+                                                        </property>
+                                                        <property name="orientation">
+                                                            <enum>Horizontal</enum>
+                                                        </property>
+                                                        <property name="sizeType">
+                                                            <enum>Expanding</enum>
+                                                        </property>
+                                                        <property name="sizeHint">
+                                                            <size>
+                                                                <width>101</width>
+                                                                <height>20</height>
+                                                            </size>
+                                                        </property>
+                                                    </spacer>
+                                                </grid>
+                                            </widget>
+                                            <widget class="QRadioButton" row="2" column="0">
+                                                <property name="name">
+                                                    <cstring>copyAllViewsRadioButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Copy Views from All Users</string>
+                                                </property>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QLayoutWidget" row="0" column="0">
+                                <property name="name">
+                                    <cstring>layout44</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="Line" row="1" column="0">
+                                        <property name="name">
+                                            <cstring>line32_2_2</cstring>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>HLine</enum>
+                                        </property>
+                                        <property name="frameShadow">
+                                            <enum>Sunken</enum>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>textLabel1_2_2</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Select the copy mode...</string>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QLayoutWidget" row="1" column="0">
+                                <property name="name">
+                                    <cstring>layout29</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QButtonGroup" row="1" column="1">
+                                        <property name="name">
+                                            <cstring>buttonGroup1</cstring>
+                                        </property>
+                                        <property name="title">
+                                            <string>Operation</string>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLayoutWidget" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>layout34</cstring>
+                                                </property>
+                                                <grid>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QRadioButton" row="0" column="0">
+                                                        <property name="name">
+                                                            <cstring>copyDatabaseRadioButton</cstring>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Copy database</string>
+                                                        </property>
+                                                        <property name="checked">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                    <widget class="QRadioButton" row="1" column="0">
+                                                        <property name="name">
+                                                            <cstring>copyLayersRadioButton</cstring>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Copy layers</string>
+                                                        </property>
+                                                    </widget>
+                                                </grid>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                    <spacer row="1" column="2">
+                                        <property name="name">
+                                            <cstring>spacer22_3</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>130</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <spacer row="0" column="1">
+                                        <property name="name">
+                                            <cstring>spacer19</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Vertical</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>20</width>
+                                                <height>117</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <spacer row="1" column="0">
+                                        <property name="name">
+                                            <cstring>spacer22_3_2</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>130</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <spacer row="2" column="1">
+                                        <property name="name">
+                                            <cstring>spacer19_2</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Vertical</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>20</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                </grid>
+                            </widget>
+                            <widget class="QLayoutWidget" row="3" column="0">
+                                <property name="name">
+                                    <cstring>layout39</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLayoutWidget" row="1" column="0">
+                                        <property name="name">
+                                            <cstring>layout38</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QPushButton" row="0" column="2">
+                                                <property name="name">
+                                                    <cstring>previousOperationPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Previous</string>
+                                                </property>
+                                                <property name="accel">
+                                                    <string>Alt+P</string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QPushButton" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>helpOperationPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Help</string>
+                                                </property>
+                                                <property name="accel">
+                                                    <string>Alt+H</string>
+                                                </property>
+                                            </widget>
+                                            <spacer row="0" column="1">
+                                                <property name="name">
+                                                    <cstring>spacer60_2_2</cstring>
+                                                </property>
+                                                <property name="orientation">
+                                                    <enum>Horizontal</enum>
+                                                </property>
+                                                <property name="sizeType">
+                                                    <enum>Expanding</enum>
+                                                </property>
+                                                <property name="sizeHint">
+                                                    <size>
+                                                        <width>40</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                            </spacer>
+                                            <widget class="QPushButton" row="0" column="4">
+                                                <property name="name">
+                                                    <cstring>closeOperationPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Close</string>
+                                                </property>
+                                                <property name="accel">
+                                                    <string>Alt+C</string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QPushButton" row="0" column="3">
+                                                <property name="name">
+                                                    <cstring>nextOperationPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Next</string>
+                                                </property>
+                                                <property name="accel">
+                                                    <string>Alt+N</string>
+                                                </property>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                    <widget class="Line" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>line31_2_2</cstring>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>HLine</enum>
+                                        </property>
+                                        <property name="frameShadow">
+                                            <enum>Sunken</enum>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                        </grid>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>2</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget" row="0" column="0">
+                        <property name="name">
+                            <cstring>layout49</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget" row="0" column="0">
+                                <property name="name">
+                                    <cstring>layout44_2</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="Line" row="1" column="0">
+                                        <property name="name">
+                                            <cstring>line32_2_2_2</cstring>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>HLine</enum>
+                                        </property>
+                                        <property name="frameShadow">
+                                            <enum>Sunken</enum>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>textLabel1_2_2_2</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Select the layers to be copied...</string>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QButtonGroup" row="2" column="0">
+                                <property name="name">
+                                    <cstring>buttonGroup2</cstring>
+                                </property>
+                                <property name="title">
+                                    <string>Options</string>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLayoutWidget" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>layout47</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <spacer row="0" column="2">
+                                                <property name="name">
+                                                    <cstring>spacer26</cstring>
+                                                </property>
+                                                <property name="orientation">
+                                                    <enum>Horizontal</enum>
+                                                </property>
+                                                <property name="sizeType">
+                                                    <enum>Expanding</enum>
+                                                </property>
+                                                <property name="sizeHint">
+                                                    <size>
+                                                        <width>131</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                            </spacer>
+                                            <widget class="QPushButton" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>selectAllLayersPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Select all</string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QPushButton" row="0" column="1">
+                                                <property name="name">
+                                                    <cstring>unselectAllLayersPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Unselect all</string>
+                                                </property>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QLayoutWidget" row="3" column="0">
+                                <property name="name">
+                                    <cstring>layout39_2</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLayoutWidget" row="1" column="0">
+                                        <property name="name">
+                                            <cstring>layout38_2</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QPushButton" row="0" column="2">
+                                                <property name="name">
+                                                    <cstring>previousLayersPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Previous</string>
+                                                </property>
+                                                <property name="accel">
+                                                    <string>Alt+P</string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QPushButton" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>helpLayersPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Help</string>
+                                                </property>
+                                                <property name="accel">
+                                                    <string>Alt+H</string>
+                                                </property>
+                                            </widget>
+                                            <spacer row="0" column="1">
+                                                <property name="name">
+                                                    <cstring>spacer60_2_2_2</cstring>
+                                                </property>
+                                                <property name="orientation">
+                                                    <enum>Horizontal</enum>
+                                                </property>
+                                                <property name="sizeType">
+                                                    <enum>Expanding</enum>
+                                                </property>
+                                                <property name="sizeHint">
+                                                    <size>
+                                                        <width>40</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                            </spacer>
+                                            <widget class="QPushButton" row="0" column="4">
+                                                <property name="name">
+                                                    <cstring>closeLayersPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Close</string>
+                                                </property>
+                                                <property name="accel">
+                                                    <string>Alt+C</string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QPushButton" row="0" column="3">
+                                                <property name="name">
+                                                    <cstring>nextLayersPushButton</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Next</string>
+                                                </property>
+                                                <property name="accel">
+                                                    <string>Alt+N</string>
+                                                </property>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                    <widget class="Line" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>line31_2_2_2</cstring>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>HLine</enum>
+                                        </property>
+                                        <property name="frameShadow">
+                                            <enum>Sunken</enum>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QListView" row="1" column="0">
+                                <property name="name">
+                                    <cstring>layersListView</cstring>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>3</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget" row="1" column="0">
+                        <property name="name">
+                            <cstring>layout56_2</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget" row="1" column="0">
+                                <property name="name">
+                                    <cstring>layout129_2_3</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QPushButton" row="0" column="4">
+                                        <property name="name">
+                                            <cstring>closeStatusPushButton</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Close</string>
+                                        </property>
+                                        <property name="accel">
+                                            <string>Alt+C</string>
+                                        </property>
+                                    </widget>
+                                    <spacer row="0" column="1">
+                                        <property name="name">
+                                            <cstring>spacer60_2_3</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>100</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <widget class="QPushButton" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>helpStatusPushButton</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Help</string>
+                                        </property>
+                                        <property name="accel">
+                                            <string>Alt+H</string>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="Line" row="0" column="0">
+                                <property name="name">
+                                    <cstring>line31_2_3</cstring>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>HLine</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QLayoutWidget" row="0" column="0">
+                        <property name="name">
+                            <cstring>layout11</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QGroupBox" row="1" column="0">
+                                <property name="name">
+                                    <cstring>groupBox5</cstring>
+                                </property>
+                                <property name="title">
+                                    <string>Copy Feedback</string>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QTable" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>feedbackTable</cstring>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>200</width>
+                                                <height>200</height>
+                                            </size>
+                                        </property>
+                                        <property name="numRows">
+                                            <number>0</number>
+                                        </property>
+                                        <property name="numCols">
+                                            <number>0</number>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QLayoutWidget" row="0" column="0">
+                                <property name="name">
+                                    <cstring>layout10</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLayoutWidget" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>layout8</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLabel" row="0" column="1">
+                                                <property name="name">
+                                                    <cstring>copyStepTextLabel</cstring>
+                                                </property>
+                                                <property name="minimumSize">
+                                                    <size>
+                                                        <width>100</width>
+                                                        <height>0</height>
+                                                    </size>
+                                                </property>
+                                                <property name="text">
+                                                    <string></string>
+                                                </property>
+                                                <property name="alignment">
+                                                    <set>AlignVCenter|AlignLeft</set>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>textLabel1</cstring>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                        <bold>1</bold>
+                                                    </font>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Copy Step:</string>
+                                                </property>
+                                                <property name="alignment">
+                                                    <set>AlignVCenter|AlignRight</set>
+                                                </property>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                    <widget class="QLayoutWidget" row="0" column="1">
+                                        <property name="name">
+                                            <cstring>layout8_2</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLabel" row="0" column="1">
+                                                <property name="name">
+                                                    <cstring>copyStepNameTextLabel</cstring>
+                                                </property>
+                                                <property name="minimumSize">
+                                                    <size>
+                                                        <width>100</width>
+                                                        <height>0</height>
+                                                    </size>
+                                                </property>
+                                                <property name="text">
+                                                    <string></string>
+                                                </property>
+                                                <property name="alignment">
+                                                    <set>AlignVCenter|AlignLeft</set>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>textLabel1_3</cstring>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                        <bold>1</bold>
+                                                    </font>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Copy Step Name:</string>
+                                                </property>
+                                                <property name="alignment">
+                                                    <set>AlignVCenter|AlignRight</set>
+                                                </property>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                </grid>
+                            </widget>
+                        </grid>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>helpConnectPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>helpConnectPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>nextConnectPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>nextConnectPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>closeConnectPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>closeConnectPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>helpStatusPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>helpStatusPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>closeStatusPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>closeStatusPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>helpOperationPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>helpOperationPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>previousOperationPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>previousOperationPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>nextOperationPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>nextOperationPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>closeOperationPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>closeOperationPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>selectAllLayersPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>selectAllLayersPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>unselectAllLayersPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>unselectAllLayersPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>helpLayersPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>helpLayersPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>previousLayersPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>previousLayersPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>nextLayersPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>nextLayersPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>closeLayersPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>closeLayersPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>copyCurrentViewsRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>copyCurrentViewsRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>copyAllViewsRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CopyDatabaseWindow</receiver>
+        <slot>copyAllViewsRadioButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>nextConnectPushButton</tabstop>
+    <tabstop>closeConnectPushButton</tabstop>
+    <tabstop>helpConnectPushButton</tabstop>
+    <tabstop>copyDatabaseRadioButton</tabstop>
+    <tabstop>previousOperationPushButton</tabstop>
+    <tabstop>nextOperationPushButton</tabstop>
+    <tabstop>closeOperationPushButton</tabstop>
+    <tabstop>helpOperationPushButton</tabstop>
+    <tabstop>layersListView</tabstop>
+    <tabstop>selectAllLayersPushButton</tabstop>
+    <tabstop>unselectAllLayersPushButton</tabstop>
+    <tabstop>previousLayersPushButton</tabstop>
+    <tabstop>nextLayersPushButton</tabstop>
+    <tabstop>closeLayersPushButton</tabstop>
+    <tabstop>helpLayersPushButton</tabstop>
+    <tabstop>feedbackTable</tabstop>
+    <tabstop>closeStatusPushButton</tabstop>
+    <tabstop>helpStatusPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">TeCommunicator.h</include>
+    <include location="global" impldecl="in declaration">set</include>
+    <include location="global" impldecl="in declaration">string</include>
+    <include location="local" impldecl="in implementation">CopyDatabaseWindow.ui.h</include>
+</includes>
+<forwards>
+    <forward>class TeDatabase;</forward>
+    <forward>class PluginParameters;</forward>
+    <forward>class PluginsSignal;</forward>
+    <forward>class Help;</forward>
+    <forward>class DatabaseDialog;</forward>
+</forwards>
+<variables>
+    <variable>TeDatabase* _dbIn;</variable>
+    <variable>TeDatabase* _dbOut;</variable>
+    <variable access="public">TeCommunicator&lt; PluginsSignal &gt; comm_;</variable>
+    <variable access="public">PluginParameters* pluginParameters_;</variable>
+    <variable access="public">Help* help_;</variable>
+    <variable access="public">DatabaseDialog* databaseDialog;</variable>
+    <variable>std::set &lt; std::string &gt; _setLayersToIgnore;</variable>
+</variables>
+<slots>
+    <slot>updateForm( PluginParameters * pluginParameters )</slot>
+    <slot>helpConnectPushButton_clicked()</slot>
+    <slot>nextConnectPushButton_clicked()</slot>
+    <slot>closeConnectPushButton_clicked()</slot>
+    <slot>helpStatusPushButton_clicked()</slot>
+    <slot>closeStatusPushButton_clicked()</slot>
+    <slot>helpOperationPushButton_clicked()</slot>
+    <slot>previousOperationPushButton_clicked()</slot>
+    <slot>nextOperationPushButton_clicked()</slot>
+    <slot>closeOperationPushButton_clicked()</slot>
+    <slot>selectAllLayersPushButton_clicked()</slot>
+    <slot>unselectAllLayersPushButton_clicked()</slot>
+    <slot>helpLayersPushButton_clicked()</slot>
+    <slot>previousLayersPushButton_clicked()</slot>
+    <slot>nextLayersPushButton_clicked()</slot>
+    <slot>closeLayersPushButton_clicked()</slot>
+    <slot>copyData()</slot>
+    <slot>closeWindow()</slot>
+    <slot>copyCurrentViewsRadioButton_clicked()</slot>
+    <slot>copyAllViewsRadioButton_clicked()</slot>
+</slots>
+<functions>
+    <function>init()</function>
+    <function>destroy()</function>
+    <function specifier="non virtual">initFromPluginParameters()</function>
+</functions>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

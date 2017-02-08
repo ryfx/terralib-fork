@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Local Empirical Bayes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<font face="Arial, Helvetica, sans-serif" size="4">
+<table width="100%">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><b>Local Empirical Bayes</b><br>
+      <hr>
+      <br />
+       The Local Empirical Bayes estimator includes spatial effects, calculates the rate locally by 
+       using only the geographic neighbors of the area where the rate is to be estimated, and converges 
+       to a local mean. 
+       Corrected rates are less unstable since their calculation considers not only area information, 
+       but also neighborhood information. If a location has a sizable population, the rate will have 
+       small variability and will be almost identical to the gross rate. 
+       On the other hand, if a location has a small population, the gross rate estimation will have a 
+       large variance and a small weight will be assigned to this unstable rate; therefore the bayes rate 
+       will become closer to the value expected for a randomly selected area in the region.
+      <br />
+      It is also possible to adjust the rates based on the neighborhood information only.<br />
+      <br />
+      To estimate, use the <b>Analysis - Local Empirical Bayes</b> option. The Local Empirical Bayes 
+      window will be displayed to define the input parameters:
+<ol>
+        <li>In <b>Theme</b> field, select UP theme.</li>
+        <li>In <b>Population in Risk</b> field, select the table and the column with population data: 
+          UP and POP_2000.</li>
+        <li>In <b>Number of Cases</b> field, select the table and the column with data of numerator rate 
+          (in this cas, homicides in 2000): hom_2000_Collect and Crimes2000.</li>
+        <li>In <b>Multiplicative Rate Correction</b> field, select 1.</li>
+        <li>Click on <b>OK</b> to create the new column, to be called LEBayes. If you wish, change 
+          its name by typing in the <b>New Column Name</b> field.</li>
+      </ol>
+      
+       <center>
+           <img src="terraViewBase_arquivos/bayes_local.png" /><br />
+          
+           </center><br /><br />
+      In table UP, a new column will be presented: LEBayes, with the values of Local Bayes Rates for 
+      each UP.</td>
+  </tr>
+  <tr>
+  </tr>
+</table>
+</font> 
+</body>
+</html>

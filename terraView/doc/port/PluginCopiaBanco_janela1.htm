@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Plugin C&oacute;pia de Banco de Dados</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<font face="Arial, Helvetica, sans-serif" size="4">
+<table width="100%">
+  <tr>
+    <td>
+      <div align="right"><font face="Arial"><a href="PluginCopiaBanco_janela2.htm">Próximo 
+        &gt;&gt;</a></font></div>
+    </td>
+  </tr>
+  <tr>
+      <td><b>Plugin C&oacute;pia de Banco de Dados</b> 
+      <hr>
+      <p>O Plugin C&oacute;pia de Banco de Dados cria um banco de dados com a 
+        c&oacute;pia do banco de dados ativo no TerraView. Isso permite que um 
+        banco de dados seja convertido para um outro tipo de banco mantendo todas 
+        as suas informa&ccedil;&otilde;es, como planos de informa&ccedil;&atilde;o, 
+        vistas, temas, tabelas est&aacute;ticas e externas. Antes de acessar esse 
+        plugin, deve-se ent&atilde;o abrir o banco de origem que possui os dados 
+        a serem copiados.</p>
+      <p>A figura abaixo mostra a primeira janela do Plugin de C&oacute;pia de 
+        Banco de Dados. Nessa janela &eacute; habilitada somente a op&ccedil;&atilde;o 
+        <b>Criar</b>, pois o plugin criar&aacute; um banco e depois converter&aacute; 
+        os dados do banco ativo para o banco criado. Para o banco Oracle e SQL 
+        Server &eacute; necess&aacute;rio que o usu&aacute;rio crie previamente 
+        um banco de dados vazio, uma vez que esses tipos de bancos requerem que 
+        a cria&ccedil;&atilde;o seja feita pelo DBA ou administrador do banco.</p>
+      <p align="center"><img src="PluginCopiaBanco_arquivos/copiabanco_janela1.png" width="600" height="410"></p>
+      <p>Siga os o procedimento abaixo para o preenchimento dos <b>Par&acirc;metros 
+        de Conex&atilde;o</b> com o banco de dados:</p>
+      <p><font face="Arial">1. Selecione o SGDB na lista <b>Tipo do Banco</b>. 
+        Observe que a interface se altera conforme o SGDB escolhido:</font></p>
+      <p><font face="Arial">a) No caso do Access, clique no bot&atilde;o <b>Diret&oacute;rio</b> 
+        para localizar onde o novo banco de dados ser&aacute; armazenado.</font></p>
+      <p>b) Para o caso dos outros SGBD's que possuem uma arquitetura cliente/servidor, 
+        &eacute; necess&aacute;rio informar a localiza&ccedil;&atilde;o do servidor 
+        (campos <b>Servidor</b> ou <b>Nome do Servi&ccedil;o</b> e <b>Porta</b>) 
+        e quais os par&acirc;metros de acesso (campos <b>Usu&aacute;rio</b> e 
+        <b>Senha</b>). Ainda nesse caso, clicando no bot&atilde;o <b>Listar</b> 
+        podemos informar a <b>Codifica&ccedil;&atilde;o</b> desejada para o banco 
+        de dados (UTF8 ou LATIN1 por exemplo).</p>
+      <p>2. No campo <b>Nome do Banco</b> informe o nome do banco de dados a ser 
+        criado.</p>
+      <p>3. Clique no bot&atilde;o <b>Pr&oacute;ximo</b>.</p>
+      <p>Criar um banco de dados significa criar tabelas e relacionamentos que 
+        ser&atilde;o futuramente usados pelo TerraView. Ap&oacute;s criar um banco 
+        ele fica automaticamente conectado ou aberto e pronto para o pr&oacute;ximo 
+        passo da c&oacute;pia de dados.</p>
+      </td>
+</tr>
+  
+</table>
+</font> 
+</body>
+</html>

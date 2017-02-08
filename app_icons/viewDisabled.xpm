@@ -1,0 +1,25 @@
+/* XPM */
+static char *viewDisabled[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 3 1",
+"  c black",
+". c #808080",
+"X c #C0C0C0",
+/* pixels */
+"XXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXX",
+"XX.  XXXXX  .XXX",
+"XX.  .XXX.  .XXX",
+"XXX   XXX   XXXX",
+"XXX.  XXX  .XXXX",
+"XXX.  .X.  .XXXX",
+"XXXX  .X.  XXXXX",
+"XXXX.  X  .XXXXX",
+"XXXX.  .  .XXXXX",
+"XXXXX     XXXXXX",
+"XXXXX.   .XXXXXX",
+"XXXXX.   .XXXXXX",
+"XXXXXX   XXXXXXX",
+"XXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXX"
+};

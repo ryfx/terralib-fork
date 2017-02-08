@@ -1,0 +1,27 @@
+/* XPM */
+static char *nonEdit_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 5 1",
+"  c black",
+". c #FF7F7F",
+"X c #808080",
+"o c #C0C0C0",
+"O c gray100",
+/* pixels */
+"XXooooOOOOOoXXXX",
+"XoooOOOOOOOO XXX",
+"XooOO......   XX",
+"XoOOO.....   OOX",
+"XoOOO..OO   OOOX",
+"XOOOO..O   OOOOO",
+"XOOOO..   .OOOOO",
+"XOOOO.   ..OOOOO",
+"XOOOO   OOOOOOOO",
+"XoOO   OOOOOOOOX",
+"XoO   ......OOOX",
+"Xoo  .......OOXX",
+"XoooOOOOOOOOOXXX",
+"XXooooOOOOOXXXXX",
+"XXXXXXXXXXXXXXXX",
+"OOOOOOOOOOOOOOOO"
+};

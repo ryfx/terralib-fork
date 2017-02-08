@@ -1,0 +1,504 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>kfunction</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>kfunction</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>578</width>
+            <height>234</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>K Function</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout4</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout2</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QButtonGroup">
+                            <property name="name">
+                                <cstring>analisysButtonGroup</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Analysis</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QRadioButton" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>univariateRadioButton</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="text">
+                                        <string>Univariate</string>
+                                    </property>
+                                    <property name="checked">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                                <widget class="QRadioButton" row="1" column="0">
+                                    <property name="name">
+                                        <cstring>IndepenRadioButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Independence</string>
+                                    </property>
+                                    <property name="checked">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>1</number>
+                                    </property>
+                                </widget>
+                                <widget class="QRadioButton" row="2" column="0">
+                                    <property name="name">
+                                        <cstring>LabelRadioButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Random
+Labelling</string>
+                                    </property>
+                                    <property name="checked">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>2</number>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>inputGroupBox</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>280</width>
+                                    <height>108</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>32767</width>
+                                    <height>400</height>
+                                </size>
+                            </property>
+                            <property name="title">
+                                <string>Input</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>textLabel2</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Max. Radius:</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit" row="0" column="1">
+                                    <property name="name">
+                                        <cstring>maxRadiusLineEdit</cstring>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy>
+                                            <hsizetype>3</hsizetype>
+                                            <vsizetype>0</vsizetype>
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>80</width>
+                                            <height>32767</height>
+                                        </size>
+                                    </property>
+                                    <property name="frameShape">
+                                        <enum>LineEditPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>Sunken</enum>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel" row="1" column="0">
+                                    <property name="name">
+                                        <cstring>textLabel3</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Num. Radius:</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit" row="1" column="1">
+                                    <property name="name">
+                                        <cstring>numRadiusLineEdit</cstring>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy>
+                                            <hsizetype>3</hsizetype>
+                                            <vsizetype>0</vsizetype>
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>80</width>
+                                            <height>32767</height>
+                                        </size>
+                                    </property>
+                                    <property name="frameShape">
+                                        <enum>LineEditPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>Sunken</enum>
+                                    </property>
+                                </widget>
+                                <widget class="QComboBox" row="2" column="3">
+                                    <property name="name">
+                                        <cstring>functionComboBox</cstring>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy>
+                                            <hsizetype>3</hsizetype>
+                                            <vsizetype>0</vsizetype>
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel" row="2" column="2">
+                                    <property name="name">
+                                        <cstring>textLabel1_4</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Function Type:</string>
+                                    </property>
+                                </widget>
+                                <widget class="QButtonGroup" row="0" column="2" rowspan="2" colspan="2">
+                                    <property name="name">
+                                        <cstring>numSimulationsButtonGroup</cstring>
+                                    </property>
+                                    <property name="title">
+                                        <string>Number of Simulations</string>
+                                    </property>
+                                    <property name="exclusive">
+                                        <bool>true</bool>
+                                    </property>
+                                    <widget class="QRadioButton">
+                                        <property name="name">
+                                            <cstring>_99RadioButton</cstring>
+                                        </property>
+                                        <property name="geometry">
+                                            <rect>
+                                                <x>18</x>
+                                                <y>20</y>
+                                                <width>34</width>
+                                                <height>19</height>
+                                            </rect>
+                                        </property>
+                                        <property name="text">
+                                            <string>99</string>
+                                        </property>
+                                        <property name="checked">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="buttonGroupId">
+                                            <number>0</number>
+                                        </property>
+                                    </widget>
+                                    <widget class="QRadioButton">
+                                        <property name="name">
+                                            <cstring>_999RadioButton</cstring>
+                                        </property>
+                                        <property name="geometry">
+                                            <rect>
+                                                <x>79</x>
+                                                <y>20</y>
+                                                <width>40</width>
+                                                <height>19</height>
+                                            </rect>
+                                        </property>
+                                        <property name="text">
+                                            <string>999</string>
+                                        </property>
+                                        <property name="buttonGroupId">
+                                            <number>1</number>
+                                        </property>
+                                    </widget>
+                                </widget>
+                                <widget class="QCheckBox" row="2" column="0" rowspan="1" colspan="2">
+                                    <property name="name">
+                                        <cstring>LFunctionCheckBox</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>L Function</string>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout3</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>groupBox6</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Point Pattern</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>textLabel1</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Theme 1:</string>
+                                    </property>
+                                </widget>
+                                <widget class="QComboBox" row="0" column="1">
+                                    <property name="name">
+                                        <cstring>themeComboBox1</cstring>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy>
+                                            <hsizetype>3</hsizetype>
+                                            <vsizetype>0</vsizetype>
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>200</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>groupBox7</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Point Pattern</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>textLabel1_2</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Theme 2:</string>
+                                    </property>
+                                </widget>
+                                <widget class="QComboBox" row="0" column="1">
+                                    <property name="name">
+                                        <cstring>themeComboBox2</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy>
+                                            <hsizetype>3</hsizetype>
+                                            <vsizetype>0</vsizetype>
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>200</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout1</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>okPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>OK</string>
+                            </property>
+                            <property name="accel">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer2</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>CancelButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Cancel</string>
+                            </property>
+                            <property name="accel">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer1</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Help</string>
+                            </property>
+                            <property name="accel">
+                                <string></string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>IndepenRadioButton</sender>
+        <signal>pressed()</signal>
+        <receiver>kfunction</receiver>
+        <slot>Enable_Theme2Slot()</slot>
+    </connection>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>kfunction</receiver>
+        <slot>kfunctionButtonClickSlot()</slot>
+    </connection>
+    <connection>
+        <sender>univariateRadioButton</sender>
+        <signal>pressed()</signal>
+        <receiver>kfunction</receiver>
+        <slot>Enable_Theme1Slot()</slot>
+    </connection>
+    <connection>
+        <sender>CancelButton</sender>
+        <signal>clicked()</signal>
+        <receiver>kfunction</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>themeComboBox1</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>kfunction</receiver>
+        <slot>tema1ComboBoxClickSlot()</slot>
+    </connection>
+    <connection>
+        <sender>themeComboBox2</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>kfunction</receiver>
+        <slot>tema2ComboBoxClickSlot(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>LabelRadioButton</sender>
+        <signal>pressed()</signal>
+        <receiver>kfunction</receiver>
+        <slot>Enable_Theme2Slot()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>kfunction</receiver>
+        <slot>helpButtonSlot()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>Enable_Theme2Slot()</slot>
+    <slot>tema1ComboBoxClickSlot()</slot>
+    <slot>Enable_Theme_MarkSlot()</slot>
+    <slot>kfunctionButtonClickSlot()</slot>
+    <slot>table1ComboBoxClickSlot(const QString&amp;)</slot>
+    <slot>tema2ComboBoxClickSlot(const QString&amp;)</slot>
+    <slot>Enable_Theme1Slot()</slot>
+    <slot>table2ComboBoxClickSlot(const QString&amp;)</slot>
+    <slot>helpButtonSlot()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

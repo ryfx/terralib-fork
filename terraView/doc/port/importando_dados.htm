@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>TerraView</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<p><font size="3" face="Arial"><strong>TerraView  </strong> </font></p>
+<p align="right"><font face="Arial"><a href="navegando_mapa.htm">&lt;&lt; Anterior</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">In&iacute;cio</a> 
+  | <a href="importRasterSimple.htm">Próximo &gt;&gt;</a></font></p>
+<hr>
+<font face="Arial"> 
+<p align="center"><font size="4"><strong><u><font face="Arial"><font size="4" face="Arial"><strong><font face="Arial"><font face="Arial"><strong>Importando 
+  Dados Geogr&aacute;ficos</strong></font></font></strong></font></font></u> </strong></font></p>
+<p align="center">&nbsp;</p>
+</font> 
+
+  
+  <p  ><font face="Arial">1. Depois de criar um banco TerraView, 
+    voc&ecirc; poder&aacute; importar dados geogr&aacute;ficos, constitu&iacute;dos 
+    de mapas e tabelas. Na barra de ferramentas, selecione o atalho representado 
+    pelo &iacute;cone <img src="terraViewBase_arquivos/botao_importar.png" width="23" height="21"> 
+    para importar dados geogr&aacute;ficos. Voc&ecirc; pode realizar a mesma opera&ccedil;&atilde;o 
+    ativando o comando do menu <strong>Arquivo &gt; Importar Dados</strong>. A 
+    janela Importa&ccedil;&atilde;o ser&aacute; aberta</font></p>
+ 
+<p align="center"><font face="Arial"><img src="terraViewBase_arquivos/importar.png" border="1"></font></p>
+  
+  <p  ><font face="Arial">2. Escolha a op&ccedil;&atilde;o Arquivo 
+    para acessar o arquivo onde est&atilde;o os dados que voc&ecirc; quer importar. 
+    Uma janela para navega&ccedil;&atilde;o nos diret&oacute;rios de sua m&aacute;quina 
+    ser&aacute; aberta.</font></p>
+  
+<p  ><font face="Arial"> 3. Escolha o arquivo a ser importado. &Eacute; poss&iacute;vel 
+  importar dados nos formatos do ArcView (Shape files), do MapInfo (MID files) 
+  e do SPRING (SPRING-Geo files). V&aacute; at&eacute; o diret&oacute;rio Dados, 
+  selecione o tipo Shape file (*.shp) e selecione o arquivo Bairros.shp . Pressione 
+  o bot&atilde;o <em>Abrir</em>.</font></p>
+  
+<p  ><font face="Arial"> 4. Voc&ecirc; vai perceber que o TerraView volta &agrave; 
+  janela Importa&ccedil;&atilde;o, para que seja definida a proje&ccedil;&atilde;o 
+  cartogr&aacute;fica dos dados importados. Pressione o bot&atilde;o<em> Proje&ccedil;&atilde;o</em>.</font></p>
+  
+<p  ><font face="Arial"> 5. A janela Proje&ccedil;&atilde;o, onde ser&atilde;o 
+  definidos a Proje&ccedil;&atilde;o, o Datum e os Par&acirc;metros geogr&aacute;ficos 
+  dos dados geogr&aacute;ficos importados. Entre com os valores UTM (Universal 
+  Transverso de Mercator), SAD69, Zona 23 e pressione <em>Executar</em>.</font></p>
+ 
+<p align="center"><font face="Arial"><img src="terraViewBase_arquivos/importar_projecao.png" border="1"></font></p>
+  
+  <p  ><font face="Arial">6. Selecione a coluna de liga&ccedil;&atilde;o 
+    com atributos. Essa coluna pode ser gerada automaticamente pelo TerraView. 
+    Neste caso, voc&ecirc; pode deixar que o TerraView, gere automaticamente uma 
+    coluna de liga&ccedil;&atilde;o.</font></p>
+    
+     <p  ><font face="Arial">
+    <b>Nota:</b> O campo Encoding, quando habilitado, permite que seja especificada uma codificação de caracteres no plano
+    a ser criado no banco de dados, que é diferente da codificação padrão (a qual depende do ambiente onde o servidor de banco 
+    de dados foi instalado). Este campo só será habilitado no caso de criação do banco de dados, mas apenas para alguns 
+    gerenciadores, como p.ex. PostgreSQL e PostGIS.
+   
+    </font></p>
+
+    
+  
+<p  ><font face="Arial"> 7. O sistema volta para janela Importa&ccedil;&atilde;o. 
+  Pressione o bot&atilde;o <em>Executar</em> para que os dados sejam importados 
+  para o banco de dados, criando uma novo Plano de Informa&ccedil;&atilde;o, p.ex.: 
+  Bairros. O sistema perguntar&aacute; se voc&ecirc; deseja a cria&ccedil;&atilde;o 
+  autom&aacute;tica de identificador, numa janela de di&aacute;logo. Responda<em> 
+  Sim</em>. </font></p>
+ 
+<p><font face="Arial">O TerraView tamb&eacute;m perguntar&aacute; se voc&ecirc; 
+  deseja visualizar os dados importados:</font></p>
+<p align="center"><font face="Arial"><img src="terraViewBase_arquivos/mensagem.png" width="274" height="119"></font></p>
+<p  ><font face="Arial">Se voc&ecirc; responder que n&atilde;o, 
+  o Plano de Informa&ccedil;&atilde;o ser&aacute; criado e inserida na &Aacute;rvore 
+  de Bancos, mas ainda n&atilde;o poder&aacute; ser visualizada. Responda Sim. 
+  O TerraView cria automaticamente uma nova Vista &quot;VistaBairros&quot; e um 
+  novo Tema &quot;Tema_Bairros&quot;. Dessa forma, voc&ecirc; poder&aacute; visualizar 
+  seus dados na Tela de Visualiza&ccedil;&atilde;o. Caso para visualizar os dados 
+  seja &quot;n&atilde;o&quot;, a Vista ser&aacute; criada mas n&atilde;o mostrar&aacute; 
+  o tema, para adicion&aacute;-lo dever&aacute; clicar no bota Tema e solicitar 
+  que seja adicionado aquela Vista.</font></p>
+<p  ><font face="Arial">Repita o procedimento de importa&ccedil;&atilde;o 
+  de dados geogr&aacute;ficos para os arquivos do tipo Shape files, com as mesmas 
+  proje&ccedil;&otilde;es da camada Bairros. Com todas as importa&ccedil;&otilde;es 
+  realizadas, voc&ecirc; ter&aacute; &agrave; sua frente uma janela como abaixo:<br>
+  </font></p>
+<div align="center"> 
+  <p><font face="Arial"><img src="terraViewBase_arquivos/vista_bairros.png" border="1"> 
+    </font></p>
+</div>
+<font face="Arial"> 
+<p  ><font face="Arial"> </font></p>
+</font> 
+<hr>
+<p align="right"><font face="Arial"><a href="navegando_mapa.htm">&lt;&lt; Anterior</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">In&iacute;cio</a> 
+  | <a href="importRasterSimple.htm">Próximo &gt;&gt;</a><font face="Arial"> </font></font></p>
+<font face="Arial"><p  ><font face="Arial"> </font></p>
+</font><font face="Arial"></font> 
+</body>
+</html>

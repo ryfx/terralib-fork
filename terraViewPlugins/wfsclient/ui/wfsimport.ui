@@ -1,0 +1,245 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>WFSImport</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>WFSImport</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>553</width>
+            <height>412</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>WFS Import Data</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout13</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="1" column="0">
+                    <property name="name">
+                        <cstring>layout11</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <spacer row="0" column="0">
+                            <property name="name">
+                                <cstring>spacer4</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>40</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton" row="0" column="1">
+                            <property name="name">
+                                <cstring>sve_btn_</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Save</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+S</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="2">
+                            <property name="name">
+                                <cstring>cancel_btn_</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Cancel</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout9</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="1">
+                            <property name="name">
+                                <cstring>layout8</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <spacer row="3" column="0">
+                                    <property name="name">
+                                        <cstring>spacer3</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Vertical</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>150</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QCheckBox" row="2" column="0">
+                                    <property name="name">
+                                        <cstring>checkBox1</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Do not import geometries.</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLayoutWidget" row="1" column="0">
+                                    <property name="name">
+                                        <cstring>layout4</cstring>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>New layer name :</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLineEdit" row="0" column="1">
+                                            <property name="name">
+                                                <cstring>tname_lne_</cstring>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                                <widget class="QLayoutWidget" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>layout3</cstring>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLineEdit" row="0" column="1">
+                                            <property name="name">
+                                                <cstring>proj_lne_</cstring>
+                                            </property>
+                                            <property name="enabled">
+                                                <bool>false</bool>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel1</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Projection :</string>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QGroupBox" row="0" column="0">
+                            <property name="name">
+                                <cstring>groupBox2</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Attributes to import</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QListView" row="0" column="0">
+                                    <column>
+                                        <property name="text">
+                                            <string>Attribute</string>
+                                        </property>
+                                        <property name="clickable">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="resizable">
+                                            <bool>true</bool>
+                                        </property>
+                                    </column>
+                                    <property name="name">
+                                        <cstring>atts_lst_</cstring>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </grid>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>cancel_btn_</sender>
+        <signal>clicked()</signal>
+        <receiver>WFSImport</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>sve_btn_</sender>
+        <signal>clicked()</signal>
+        <receiver>WFSImport</receiver>
+        <slot>saveClicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in declaration">vector</include>
+    <include location="global" impldecl="in declaration">TeAttribute.h</include>
+    <include location="local" impldecl="in implementation">wfsimport.ui.h</include>
+</includes>
+<forwards>
+    <forward>namespace TeOGC { class TeWFSTheme; }</forward>
+    <forward>class TeProjection</forward>
+    <forward>class TeDatabase</forward>
+</forwards>
+<variables>
+	<variable access="protected">TeDatabase* db_</variable>
+</variables>
+<slots>
+    <slot access="protected">init()</slot>
+    <slot access="protected">saveClicked()</slot>
+</slots>
+<functions>
+    <function>setTheme( TeOGC::TeWFSTheme * )</function>
+    <function>setDatabase( TeDatabase * )</function>
+    <function returnType="QString">getThemeName() const</function>
+    <function returnType="std::vector&lt;std::string&gt;">getAttributes() const</function>
+    <function>setThemeAttributes( const TeAttributeList&amp; )</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

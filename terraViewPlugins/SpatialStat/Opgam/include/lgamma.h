@@ -1,0 +1,1 @@
+double lgamma(int x);

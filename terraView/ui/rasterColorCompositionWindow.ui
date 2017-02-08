@@ -1,0 +1,396 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>RasterColorCompositionWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>RasterColorCompositionWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>372</width>
+            <height>186</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Color Composition</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="resizeMode">
+            <enum>Fixed</enum>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout12</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QFrame" row="0" column="0">
+                    <property name="name">
+                        <cstring>frame3</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Raised</enum>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout11</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QGroupBox" row="0" column="1">
+                                    <property name="name">
+                                        <cstring>groupBox2</cstring>
+                                    </property>
+                                    <property name="title">
+                                        <string>Color</string>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLayoutWidget" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>layout10</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLayoutWidget">
+                                                    <property name="name">
+                                                        <cstring>layout6</cstring>
+                                                    </property>
+                                                    <hbox>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QLabel">
+                                                            <property name="name">
+                                                                <cstring>R_textLabel</cstring>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>R:</string>
+                                                            </property>
+                                                            <property name="alignment">
+                                                                <set>AlignVCenter|AlignRight</set>
+                                                            </property>
+                                                        </widget>
+                                                        <widget class="QComboBox">
+                                                            <property name="name">
+                                                                <cstring>R_comboBox</cstring>
+                                                            </property>
+                                                        </widget>
+                                                    </hbox>
+                                                </widget>
+                                                <widget class="QLayoutWidget">
+                                                    <property name="name">
+                                                        <cstring>layout7</cstring>
+                                                    </property>
+                                                    <hbox>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QLabel">
+                                                            <property name="name">
+                                                                <cstring>G_textLabel</cstring>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>G:</string>
+                                                            </property>
+                                                            <property name="alignment">
+                                                                <set>AlignVCenter|AlignRight</set>
+                                                            </property>
+                                                        </widget>
+                                                        <widget class="QComboBox">
+                                                            <property name="name">
+                                                                <cstring>G_comboBox</cstring>
+                                                            </property>
+                                                        </widget>
+                                                    </hbox>
+                                                </widget>
+                                                <widget class="QLayoutWidget">
+                                                    <property name="name">
+                                                        <cstring>layout8</cstring>
+                                                    </property>
+                                                    <hbox>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QLabel">
+                                                            <property name="name">
+                                                                <cstring>B_textLabel</cstring>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>B:</string>
+                                                            </property>
+                                                            <property name="alignment">
+                                                                <set>AlignVCenter|AlignRight</set>
+                                                            </property>
+                                                        </widget>
+                                                        <widget class="QComboBox">
+                                                            <property name="name">
+                                                                <cstring>B_comboBox</cstring>
+                                                            </property>
+                                                        </widget>
+                                                    </hbox>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                                <widget class="QGroupBox" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>groupBox1</cstring>
+                                    </property>
+                                    <property name="title">
+                                        <string>Mono</string>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLayoutWidget" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>layout10</cstring>
+                                            </property>
+                                            <grid>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <spacer row="1" column="0">
+                                                    <property name="name">
+                                                        <cstring>spacer11</cstring>
+                                                    </property>
+                                                    <property name="orientation">
+                                                        <enum>Vertical</enum>
+                                                    </property>
+                                                    <property name="sizeType">
+                                                        <enum>Expanding</enum>
+                                                    </property>
+                                                    <property name="sizeHint">
+                                                        <size>
+                                                            <width>20</width>
+                                                            <height>21</height>
+                                                        </size>
+                                                    </property>
+                                                </spacer>
+                                                <widget class="QLayoutWidget" row="0" column="0">
+                                                    <property name="name">
+                                                        <cstring>layout5</cstring>
+                                                    </property>
+                                                    <hbox>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QLabel">
+                                                            <property name="name">
+                                                                <cstring>M_textLabel</cstring>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>M:</string>
+                                                            </property>
+                                                            <property name="alignment">
+                                                                <set>AlignVCenter|AlignRight</set>
+                                                            </property>
+                                                        </widget>
+                                                        <widget class="QComboBox">
+                                                            <property name="name">
+                                                                <cstring>M_comboBox</cstring>
+                                                            </property>
+                                                        </widget>
+                                                    </hbox>
+                                                </widget>
+                                            </grid>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QLayoutWidget" row="1" column="0">
+                    <property name="name">
+                        <cstring>layout6</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>okPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;OK</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+O</string>
+                            </property>
+                            <property name="default">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>Spacer9</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>16</width>
+                                    <height>16</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>cancelPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Cancel</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>Spacer10</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>16</width>
+                                    <height>16</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>RasterColorCompositionWindow</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>RasterColorCompositionWindow</receiver>
+        <slot>okPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>RasterColorCompositionWindow</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>M_comboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>RasterColorCompositionWindow</receiver>
+        <slot>M_comboBox_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>R_comboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>RasterColorCompositionWindow</receiver>
+        <slot>R_comboBox_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>G_comboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>RasterColorCompositionWindow</receiver>
+        <slot>G_comboBox_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>B_comboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>RasterColorCompositionWindow</receiver>
+        <slot>B_comboBox_activated(int)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>M_comboBox</tabstop>
+    <tabstop>R_comboBox</tabstop>
+    <tabstop>G_comboBox</tabstop>
+    <tabstop>B_comboBox</tabstop>
+    <tabstop>okPushButton</tabstop>
+    <tabstop>cancelPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="local" impldecl="in implementation">rasterColorCompositionWindow.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>class TeAppTheme;</forward>
+    <forward>class TeQtThemeItem;</forward>
+    <forward>class TeRaster;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable>TerraViewBase *mainWindow_;</variable>
+    <variable>TeAppTheme* theme_;</variable>
+    <variable>TeRaster* raster_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot>okPushButton_clicked()</slot>
+    <slot specifier="non virtual">init( TeQtThemeItem * themeItem )</slot>
+    <slot>helpPushButton_clicked()</slot>
+    <slot>M_comboBox_activated( int )</slot>
+    <slot>R_comboBox_activated( int )</slot>
+    <slot>G_comboBox_activated( int )</slot>
+    <slot>B_comboBox_activated( int )</slot>
+</slots>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

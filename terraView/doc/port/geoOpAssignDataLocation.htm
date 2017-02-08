@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+	<meta content="text/html; charset=ISO-8859-1"             http-equiv="content-type"/>
+	<meta content="TerraView - documentacion help"            name="Description"/>
+	<meta content="geoprocessing,terraview,terralib,dpi,inpe" name="KeyWords"/>
+		
+	<title>Opera&ccedil;&atilde;o de Atribui&ccedil;&atilde;o de Dados por Localiza&ccedil;&atilde;o</title>
+	
+	<style>
+	</style>
+
+</head>
+
+<body>
+<center>
+  <H2><font face="Arial, Helvetica, sans-serif"><b><u>Opera&ccedil;&atilde;o 
+    de Atribui&ccedil;&atilde;o de Dados por Localiza&ccedil;&atilde;o</u></b></font></H2>
+</center>
+<div align="justify">
+<font face="Arial, Helvetica, sans-serif"><br />
+</font>
+<p  > <font face="Arial, Helvetica, sans-serif">A opera&ccedil;&atilde;o 
+  de atribui&ccedil;&atilde;o de dados por localiza&ccedil;&atilde;o &eacute; 
+  executada entre dois temas selecionados. Ela consiste em adicionar os atributos 
+  de um tema X a um outro tema Y, baseado na rela&ccedil;&atilde;o espacial entre 
+  os objetos geogr&aacute;ficos desses temas. Essa opera&ccedil;&atilde;o cria 
+  uma nova tabela de atributos contendo os atributos de X e a associa ao tema 
+  Y. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">H&aacute; duas estrat&eacute;gias 
+  para essa opera&ccedil;&atilde;o: Distribui&ccedil;&atilde;o e Coleta. Considerando 
+  dois temas, tema X que fornece os atributos e o tema Y que recebe os atributos, 
+  as duas estrat&eacute;gias podem ser explicadas abaixo: </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">A estrat&eacute;gia 
+  de Distribui&ccedil;&atilde;o consiste em distribuir os atributos de cada objeto 
+  geogr&aacute;fico do tema X a todos os objetos do tema Y que possuem uma determinada 
+  rela&ccedil;&atilde;o espacial. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">A estrat&eacute;gia 
+  de Coleta consiste em, para cada objeto geogr&aacute;fico do tema Y, coletar 
+  ou agrupar os atributos de todos os objetos geogr&aacute;ficos do tema X que 
+  possuem uma determinada rela&ccedil;&atilde;o espacial. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">Por exemplo, considerando 
+  dois temas MUNICIPIOS e ESTADOS, onde um representa os munic&iacute;pios (representa&ccedil;&atilde;o 
+  geom&eacute;trica pol&iacute;gono) e o outro os estados do Brasil (representa&ccedil;&atilde;o 
+  geom&eacute;trica pol&iacute;gono), ilustrado na Figura 1. Cada munic&iacute;pio 
+  tem os seguintes atributos: NOME, POPULACAO e ESTADO. E cada estado tem os atributos: 
+  NOME e AREA. A seguir ser&aacute; mostrado o resultado de cada estrat&eacute;gia 
+  de atribui&ccedil;&atilde;o de dados utilizando esses dois temas. </font></p>
+<center>
+  <font face="Arial, Helvetica, sans-serif"><IMG src="geoOpAssignDataLocation_arquivos/image002.PNG" border="0"> 
+  <br />
+  <medium>Figura 1 - Temas ESTADOS e MUNICIPIOS</medium> </font> 
+</center>
+<H3><font face="Arial, Helvetica, sans-serif">Distribui&ccedil;&atilde;o</font></H3>
+<p  > <font face="Arial, Helvetica, sans-serif">&nbsp;Um exemplo 
+  de distribui&ccedil;&atilde;o de dados por localiza&ccedil;&atilde;o sobre os 
+  temas ESTADOS e MUNICIPIOS &eacute;: distribuir os atributos de cada estado 
+  aos munic&iacute;pios que est&atilde;o dentro dele. Nesse exemplo a rela&ccedil;&atilde;o 
+  espacial usada &eacute; "est&aacute; contido" ou "dentro". Essa opera&ccedil;&atilde;o 
+  gera uma tabela de atributos associada ao tema MUNICIPIOS, mostrada na Figura 
+  2. </font></p>
+<center>
+  <font face="Arial, Helvetica, sans-serif"><IMG src="geoOpAssignDataLocation_arquivos/image003.PNG" border="0"> 
+  <br />
+  <medium>Figura 2 - Tabela de atributos resultante - Distribui&ccedil;&atilde;o 
+  </medium><b><medium> </medium></b> </font> 
+</center>
+<p  > <font face="Arial, Helvetica, sans-serif">Na estrat&eacute;gia 
+  de distribui&ccedil;&atilde;o, o tema que recebe os atributos pode ter representa&ccedil;&atilde;o 
+  geom&eacute;trica: Ponto, Linha, Pol&iacute;gono ou C&eacute;lula. E o tema 
+  que fornece os atributos pode ter representa&ccedil;&atilde;o geom&eacute;trica: 
+  Pol&iacute;gono, C&eacute;lula ou Linha. As representa&ccedil;&otilde;es geom&eacute;tricas 
+  dos temas e a rela&ccedil;&atilde;o espacial considerada em cada combina&ccedil;&atilde;o 
+  s&atilde;o mostradas na tabela abaixo: </font></p>
+<table border="0" width="100%">
+  <tr> 
+    <td align="center" >&nbsp;</td>
+    <td colspan="3"  bgcolor="#CCCCCC"><b>
+      <center>
+        <font face="Arial, Helvetica, sans-serif">Tema que fornece atributos</font>
+      </center>
+      </b></td>
+  </tr>
+  <tr> 
+    <td align="center"  bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif"><B>Tema 
+      que recebe atributos</B></font></td>
+    <td align="center" bgcolor="#E5E5E5" ><b>
+      <center>
+        <font face="Arial, Helvetica, sans-serif">Pol&iacute;gono</font>
+      </center>
+      </b></td>
+    <td align="center" bgcolor="#E5E5E5" ><b>
+      <center>
+        <font face="Arial, Helvetica, sans-serif">C&eacute;lula</font>
+      </center>
+      </b></td>
+    <td align="center" bgcolor="#E5E5E5" ><b>
+      <center>
+        <font face="Arial, Helvetica, sans-serif">Linhas</font>
+      </center>
+      </b></td>
+  </tr>
+  <tr> 
+    <td align="center" bgcolor="#E5E5E5"><b>
+      <center>
+        <font face="Arial, Helvetica, sans-serif">Ponto</font>
+      </center>
+      </b></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">est&aacute; 
+      contido</font></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">est&aacute; 
+      contido</font></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">-</font></td>
+  </tr>
+  <tr> 
+    <td align="center" bgcolor="#E5E5E5"><b>
+      <center>
+        <font face="Arial, Helvetica, sans-serif">Linha</font>
+      </center>
+      </b></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">est&aacute; 
+      contido</font></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">est&aacute; 
+      contido</font></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">intercepta</font></td>
+  </tr>
+  <tr> 
+    <td align="center" bgcolor="#E5E5E5"><b>
+      <center>
+        <font face="Arial, Helvetica, sans-serif">Pol&iacute;gono</font>
+      </center>
+      </b></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">est&aacute; 
+      contido ou coberto por</font></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">est&aacute; 
+      contido ou coberto por</font></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">-</font></td>
+  </tr>
+  <tr> 
+    <td align="center" bgcolor="#E5E5E5"><b>
+      <center>
+        <font face="Arial, Helvetica, sans-serif">C&eacute;lula</font>
+      </center>
+      </b></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">est&aacute; 
+      contido ou coberto por</font></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">est&aacute; 
+      contido ou coberto por</font></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">-</font></td>
+  </tr>
+</table>
+<font face="Arial, Helvetica, sans-serif"><br />
+</font>
+<H3><font face="Arial, Helvetica, sans-serif"> Coleta</font></H3>
+<font face="Arial, Helvetica, sans-serif"><BR />
+</font>
+<p  > <font face="Arial, Helvetica, sans-serif">Um exemplo de coletas 
+  de dados por localiza&ccedil;&atilde;o sobre os temas ESTADOS e MUNICIPIOS &eacute;: 
+  coletar ou agrupar os atributos de todos os munic&iacute;pios que est&atilde;o 
+  dentro de cada estado. Nesse exemplo a rela&ccedil;&atilde;o espacial usada 
+  &eacute; "est&aacute; contido" ou "dentro" e os atributos foram agrupados usando 
+  fun&ccedil;&otilde;es de sumariza&ccedil;&atilde;o. Para o atributo NOME foi 
+  utilizado o menor valor em ordem alfab&eacute;tica (fun&ccedil;&atilde;o de 
+  sumariza&ccedil;&atilde;o M&iacute;nimo) e para o atributo POPULACAO foi utilizado 
+  a soma de todas as popula&ccedil;&otilde;es dos munic&iacute;pios de cada estado 
+  (fun&ccedil;&atilde;o de sumariza&ccedil;&atilde;o Soma). Essa opera&ccedil;&atilde;o 
+  gera uma tabela de atributos associada ao tema ESTADOS, mostrada na Figura 3. 
+  </font></p>
+<center>
+  <font face="Arial, Helvetica, sans-serif"><IMG src="geoOpAssignDataLocation_arquivos/image004.PNG" width="506" height="66" border="0"> 
+  <br />
+  <medium>Figura 3 - Tabela de atributos resultante - Coleta </medium> </font> 
+</center>
+<p  > <font face="Arial, Helvetica, sans-serif">Na estrat&eacute;gia 
+  de coleta, o tema que recebe os atributos pode ter representa&ccedil;&atilde;o 
+  geom&eacute;trica: Pol&iacute;gono ou C&eacute;lula. E o tema que fornece os 
+  atributos pode ter representa&ccedil;&atilde;o geom&eacute;trica: Ponto, Linha, 
+  Pol&iacute;gono ou C&eacute;lula. As representa&ccedil;&otilde;es geom&eacute;tricas 
+  dos temas e a rela&ccedil;&atilde;o espacial considerada em cada combina&ccedil;&atilde;o 
+  s&atilde;o mostradas na tabela a seguir: </font></p>
+<table border="0" width="100%">
+  <tr> 
+    <td align="center" >&nbsp;</td>
+    <td colspan="3"  bgcolor="#CCCCCC"><b>
+      <center>
+        <font face="Arial, Helvetica, sans-serif">Tema que fornece atributos</font>
+      </center>
+      </b></td>
+  </tr>
+  <tr> 
+    <td align="center"  bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif"><B>Tema 
+      que recebe atributos</B></font></td>
+    <td align="center" bgcolor="#E5E5E5" ><b>
+      <center>
+        <font face="Arial, Helvetica, sans-serif">Pol&iacute;gono</font>
+      </center>
+      </b></td>
+    <td align="center" bgcolor="#E5E5E5" ><b>
+      <center>
+        <font face="Arial, Helvetica, sans-serif">C&eacute;lula</font>
+      </center>
+      </b></td>
+  </tr>
+  <tr> 
+    <td align="center" bgcolor="#E5E5E5"><b>
+      <center>
+        <font face="Arial, Helvetica, sans-serif">Ponto</font>
+      </center>
+      </b></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">est&aacute; 
+      contido</font></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">est&aacute; 
+      contido</font></td>
+  </tr>
+  <tr> 
+    <td align="center" bgcolor="#E5E5E5"><b>
+      <center>
+        <font face="Arial, Helvetica, sans-serif">Linha</font>
+      </center>
+      </b></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">est&aacute; 
+      contido/ intercepta/ cruza </font></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">est&aacute; 
+      contido/ intercepta/ cruza </font></td>
+  </tr>
+  <tr> 
+    <td align="center" bgcolor="#E5E5E5"><b>
+      <center>
+        <font face="Arial, Helvetica, sans-serif">Pol&iacute;gono</font>
+      </center>
+      </b></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">estest&aacute; 
+      ou coberto por/ intercepta</font></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">estest&aacute; 
+      ou coberto por/ intercepta</font></td>
+  </tr>
+  <tr> 
+    <td align="center" bgcolor="#E5E5E5"><b>
+      <center>
+        <font face="Arial, Helvetica, sans-serif">C&eacute;lula</font>
+      </center>
+      </b></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">estest&aacute; 
+      ou coberto por/ intercepta</font></td>
+    <td align="center" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">estest&aacute; 
+      ou coberto por/ intercepta</font></td>
+  </tr>
+</table>
+<p  > <font face="Arial, Helvetica, sans-serif">As fun&ccedil;&otilde;es 
+  de sumariza&ccedil;&atilde;o para atributos do tipo num&eacute;rico s&atilde;o: 
+  </font></p>
+<CENTER>
+  <TABLE WIDTH=474 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=5 CELLSPACING=0>
+    <COL WIDTH=226> <COL WIDTH=226> 
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=19> <font face="Arial, Helvetica, sans-serif"><B>Fun&ccedil;&atilde;o 
+        de Sumariza&ccedil;&atilde;o</B> </font></TD>
+      <TD WIDTH=226> <font face="Arial, Helvetica, sans-serif"><B>Significado</B> 
+        </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeMINVALUE 
+        </font></TD>
+      <TD WIDTH=226><font face="Arial, Helvetica, sans-serif"> valor m&iacute;nimo 
+        </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeMAXVALUE 
+        </font></TD>
+      <TD WIDTH=226><font face="Arial, Helvetica, sans-serif"> valor m&aacute;ximo 
+        </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeMEAN 
+        </font></TD>
+      <TD WIDTH=226><font face="Arial, Helvetica, sans-serif"> m&eacute;dia </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeSUM 
+        </font></TD>
+      <TD WIDTH=226><font face="Arial, Helvetica, sans-serif"> soma de valores 
+        </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeCOUNT 
+        </font></TD>
+      <TD WIDTH=226><font face="Arial, Helvetica, sans-serif"> n&uacute;mero total 
+        de valores </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeVALIDCOUNT 
+        </font></TD>
+      <TD WIDTH=226><font face="Arial, Helvetica, sans-serif"> n&uacute;mero total 
+        de valores n&atilde;o nulos </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeSTANDARDDEVIATION 
+        </font></TD>
+      <TD WIDTH=226><font face="Arial, Helvetica, sans-serif"> desvio padr&atilde;o 
+        </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeKERNEL 
+        </font></TD>
+      <TD WIDTH=226><font face="Arial, Helvetica, sans-serif"> kernel </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeVARIANCE 
+        </font></TD>
+      <TD WIDTH=226><font face="Arial, Helvetica, sans-serif"> vari&acirc;ncia 
+        </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeSKEWNESS 
+        </font></TD>
+      <TD WIDTH=226><font face="Arial, Helvetica, sans-serif"> momento de terceira 
+        ordem da m&eacute;dia </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeKURTOSIS 
+        </font></TD>
+      <TD WIDTH=226><font face="Arial, Helvetica, sans-serif"> momento de quarta 
+        ordem da m&eacute;dia </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeAMPLITUDE 
+        </font></TD>
+      <TD WIDTH=226><font face="Arial, Helvetica, sans-serif"> valor m&aacute;ximo 
+        menos o valor m&iacute;nimo </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeMEDIAN 
+        </font></TD>
+      <TD WIDTH=226><font face="Arial, Helvetica, sans-serif"> Mediana </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeVARCOEFF 
+        </font></TD>
+      <TD WIDTH=226><font face="Arial, Helvetica, sans-serif"> coeficiente de 
+        varia&ccedil;&atilde;o </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=19><font face="Arial, Helvetica, sans-serif"> TeMODE 
+        </font></TD>
+      <TD WIDTH=226><font face="Arial, Helvetica, sans-serif"> valor mais frequente 
+        </font></TD>
+    </TR>
+  </TABLE>
+</CENTER>
+<p  >&nbsp;</p>
+<p  ><font face="Arial, Helvetica, sans-serif">As fun&ccedil;&otilde;es 
+  de sumariza&ccedil;&atilde;o para atributos do tipo n&atilde;o num&eacute;rico 
+  s&atilde;o: </font></p>
+<CENTER>
+  <TABLE WIDTH=477 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=5 CELLSPACING=0>
+    <COL WIDTH=226> <COL WIDTH=230> 
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=19> <font face="Arial, Helvetica, sans-serif"><B>Fun&ccedil;&atilde;o 
+        de Sumariza&ccedil;&atilde;o</B> </font></TD>
+      <TD WIDTH=230> <font face="Arial, Helvetica, sans-serif"><B>Significado</B> 
+        </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeMINVALUE 
+        </font></TD>
+      <TD WIDTH=230><font face="Arial, Helvetica, sans-serif"> valor m&iacute;nimo 
+        </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeMAXVALUE 
+        </font></TD>
+      <TD WIDTH=230><font face="Arial, Helvetica, sans-serif"> valor m&aacute;ximo 
+        </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=20><font face="Arial, Helvetica, sans-serif"> TeCOUNT 
+        </font></TD>
+      <TD WIDTH=230><font face="Arial, Helvetica, sans-serif"> n&uacute;mero total 
+        de valores </font></TD>
+    </TR>
+    <TR VALIGN=TOP> 
+      <TD WIDTH=226 HEIGHT=19><font face="Arial, Helvetica, sans-serif"> TeVALIDCOUNT 
+        </font></TD>
+      <TD WIDTH=230><font face="Arial, Helvetica, sans-serif"> n&uacute;mero total 
+        de valores n&atilde;o nulos </font></TD>
+    </TR>
+  </TABLE>
+</CENTER>
+<font face="Arial, Helvetica, sans-serif"><br />
+<br />
+</font>
+<H3><font face="Arial, Helvetica, sans-serif">Interface de Distribui&ccedil;&atilde;o 
+  de Dados entre Temas</font></H3>
+<font face="Arial, Helvetica, sans-serif"><br />
+</font> 
+<p  > <font face="Arial, Helvetica, sans-serif">A interface de distribui&ccedil;&atilde;o 
+  de dados entre temas &eacute; mostrada na Figura 4, para acess&aacute;-la utilize 
+  o menu de contexto sobre a Vista, na op&ccedil;&atilde;o <strong>Opera&ccedil;&otilde;es 
+  Geogr&aacute;ficas - Atribuir Dado por Localiza&ccedil;&atilde;o - Distribuir.</strong> 
+  Nessa interface o usu&aacute;rio escolhe dois temas, o que ir&aacute; fornecer 
+  e o que ir&aacute; receber os atributos, atrav&eacute;s das caixas <i>Selecionar 
+  Tema para Atribuir Dados para</i> e <i>Selecionar Tema para Atribuir Dados de</i>.</font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">Al&eacute;m disso, 
+  o usu&aacute;rio escolhe a rela&ccedil;&atilde;o espacial que ser&aacute; considerada 
+  na opera&ccedil;&atilde;o. As rela&ccedil;&otilde;es espaciais s&atilde;o habilitadas 
+  de acordo com a representa&ccedil;&atilde;o geom&eacute;trica dos temas escolhidos 
+  anteriormente.</font></p>
+<center>
+  <font face="Arial, Helvetica, sans-serif"><IMG src="geoOpAssignDataLocation_arquivos/image005.PNG" border="0"> 
+  <br />
+  <medium>Figura 4 - Interface de distribui&ccedil;&atilde;o de dados por localiza&ccedil;&atilde;o</medium> 
+  </font> 
+</center>
+<p  > <font face="Arial, Helvetica, sans-serif">A caixa <i>Criar 
+  e Atribuir Dados para Tabela</i> cont&eacute;m o nome da tabela de atributos 
+  que ser&aacute; gerada e &eacute; automaticamente preenchida pela interface. 
+  Portanto, pode-se edit&aacute;-la a fim de criar uma tabela com um nome desejado. 
+  </font></p>
+<p  ><font face="Arial, Helvetica, sans-serif">A caixa <i>Atributos 
+  a serem distribu&iacute;dos </i> possui uma lista que permite marcar ou desmarcar, 
+  individualmente, qualquer atributo desejado do tema para realizar a distribui&ccedil;&atilde;o. 
+  Ela tamb&eacute;m possui dois bot&otilde;es que permitem selecionar rapidamente 
+  todos os atributos do tema ou nenhum atributo.</font> </p>
+<p  ><font face="Arial, Helvetica, sans-serif">O bot&atilde;o <i>Executar</i> 
+  efetua a opera&ccedil;&atilde;o de adi&ccedil;&atilde;o. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">O bot&atilde;o <i>Cancelar</i> 
+  inibe a interface. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">O bot&atilde;o <i>Ajuda</i> 
+  ativa a interface de ajuda.</font></p>
+<p  >&nbsp;</p>
+<H3><font face="Arial, Helvetica, sans-serif">Interface de Coleta de Dados entre 
+  Temas</font></H3>
+<font face="Arial, Helvetica, sans-serif"><br />
+</font> 
+<p  > <font face="Arial, Helvetica, sans-serif">A interface de coleta de dados 
+  entre temas &eacute; mostrada na Figura 5, para acess&aacute;-la utilize o menu 
+  de contexto sobre a Vista, na op&ccedil;&atilde;o <strong>Opera&ccedil;&otilde;es 
+  Geogr&aacute;ficas - Atribuir Dado por Localiza&ccedil;&atilde;o - Coletar</strong>. 
+  Nessa interface o usu&aacute;rio escolhe dois temas, o que ir&aacute; fornecer 
+  e o que ir&aacute; receber os atributos, atrav&eacute;s das caixas <i>Selecionar 
+  Tema para Atribuir Dados para</i> e <i>Selecionar Tema para Atribuir Dados de</i>. 
+  </font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif"><img src="geoOpAssignDataLocation_arquivos/image006.PNG" border="0"> 
+  <br />
+  <medium>Figura 5 - Interface de coleta de dados por localiza&ccedil;&atilde;o</medium> 
+  </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">A caixa <i>Criar 
+  e Atribuir Dados para Tabela</i> cont&eacute;m o nome da tabela de atributos 
+  que ser&aacute; gerada e &eacute; automaticamente preenchida pela interface. 
+  Portanto, pode-se edit&aacute;-la a fim de criar uma tabela com um nome desejado. 
+  </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">Al&eacute;m disso, 
+  o usu&aacute;rio escolhe a rela&ccedil;&atilde;o espacial que ser&aacute; considerada 
+  na opera&ccedil;&atilde;o. As rela&ccedil;&otilde;es espaciais s&atilde;o habilitadas 
+  de acordo com a representa&ccedil;&atilde;o geom&eacute;trica dos temas escolhidos 
+  anteriormente. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">A caixa <i>Atributos 
+  de Sa&iacute;da</i> possui uma lista que permite marcar ou desmarcar, individualmente, 
+  qualquer estat&iacute;stica desejada de qualquer atributo do tema. Ela tamb&eacute;m 
+  possui dois combos que permitem selecionar rapidamente, por exemplo, todos os 
+  m&aacute;ximos, ou m&iacute;nimos, ou somas etc. de todos os atributos do tema. 
+  </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">O bot&atilde;o <i>Executar</i> 
+  efetua a opera&ccedil;&atilde;o de adi&ccedil;&atilde;o. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">O bot&atilde;o <i>Cancelar</i> 
+  inibe a interface. </font></p>
+<p  > <font face="Arial, Helvetica, sans-serif">O bot&atilde;o <i>Ajuda</i> 
+  ativa a interface de ajuda </font></p>
+<center>
+</center>
+<div>
+</body>
+</html>

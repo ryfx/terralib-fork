@@ -1,0 +1,1577 @@
+﻿<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>SpatializationWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>SpatializationWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>567</width>
+            <height>429</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Address Geocoding</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <property name="modal">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QWidgetStack" row="0" column="0">
+            <property name="name">
+                <cstring>spatializationStack</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>0</number>
+                </attribute>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>configPushButton</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>true</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>300</x>
+                            <y>40</y>
+                            <width>90</width>
+                            <height>26</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Configure...</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+C</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Select this button if the layer that you want to use is not present in the current list</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>attributeTableComboBox</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>110</y>
+                            <width>368</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>layerComboBox</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>21</x>
+                            <y>44</y>
+                            <width>268</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Please, select the infolayer that will be used as base for address geocoding.</string>
+                    </property>
+                </widget>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>frame10_2_2_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>140</y>
+                            <width>510</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="frameShape">
+                        <enum>HLine</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                </widget>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>frame10_2_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>160</x>
+                            <y>160</y>
+                            <width>20</width>
+                            <height>160</height>
+                        </rect>
+                    </property>
+                    <property name="frameShape">
+                        <enum>VLine</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>pixmapLabel4</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>180</x>
+                            <y>150</y>
+                            <width>360</width>
+                            <height>180</height>
+                        </rect>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>addressReferenceLayer.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1_3_2_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>160</y>
+                            <width>140</width>
+                            <height>160</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>The base infolayer must contain the location segments and descriptions.&lt;br&gt;&lt;br&gt;
+
+The infolayers already configured will be shown in the list.&lt;br&gt;&lt;br&gt;If your layer doesn't appear there, press the Configure button.</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignTop</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>tableComboBox</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1_4</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>70</y>
+                            <width>368</width>
+                            <height>32</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Choose the layer attribute table that will be used as reference for the geocoding process:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignVCenter</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>tableComboBox</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1_3</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>16</y>
+                            <width>268</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Base infolayer for geocoding:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignVCenter</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>tableComboBox</cstring>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>1</number>
+                </attribute>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>frame10_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>170</x>
+                            <y>10</y>
+                            <width>16</width>
+                            <height>300</height>
+                        </rect>
+                    </property>
+                    <property name="frameShape">
+                        <enum>VLine</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>pixmapLabel1</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>190</x>
+                            <y>20</y>
+                            <width>345</width>
+                            <height>285</height>
+                        </rect>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>addressTable.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1_3_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>20</y>
+                            <width>160</width>
+                            <height>290</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>In the next form you should choose the table that contains addresses to be geocoded.&lt;br&gt;&lt;br&gt;
+
+This table may be in the database or you can import it in the next form.&lt;br&gt;&lt;br&gt;
+
+For this table you will have to inform the fields with address descriptions, like name, number, zipcode and neighborhood.</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignTop</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>tableComboBox</cstring>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>2</number>
+                </attribute>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>locationNameColumnComboBox</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>270</x>
+                            <y>150</y>
+                            <width>230</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>leftEndTextLabel_4_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>270</x>
+                            <y>56</y>
+                            <width>230</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Select the location title field:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignBottom</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>leftEndComboBox</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>leftEndTextLabel_4_3</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>116</y>
+                            <width>230</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Select the location preposition name field:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignBottom</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>leftEndComboBox</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>locationTypeColumnComboBox</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>90</y>
+                            <width>230</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>leftEndTextLabel_4</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>70</y>
+                            <width>230</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Select the type location field:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignVCenter</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>leftEndComboBox</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>locationPrepositionColumnComboBox</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>150</y>
+                            <width>230</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>180</y>
+                            <width>230</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Select the location number field:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>numberColumnComboBox</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>locationTitleColumnComboBox</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>270</x>
+                            <y>90</y>
+                            <width>230</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>numberColumnComboBox</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>200</y>
+                            <width>230</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>leftEndTextLabel</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>270</x>
+                            <y>130</y>
+                            <width>230</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Select the location name field:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignVCenter</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>leftEndComboBox</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>20</y>
+                            <width>240</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Table to geocode:</string>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>tableComboBox</cstring>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>importTablePushButton</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>true</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>270</x>
+                            <y>38</y>
+                            <width>230</width>
+                            <height>26</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Import Table...</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+I</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Select this button if the layer that you want to use is not present in the current list</string>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                        <string>Open a dialog to enable import of a table.</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>tableComboBox</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>40</y>
+                            <width>230</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Select the table that you want to geocode:</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>zipCodeColumnComboBox</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>270</x>
+                            <y>250</y>
+                            <width>230</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>leftEndTextLabel_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>270</x>
+                            <y>230</y>
+                            <width>210</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Select the zipcode field:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignVCenter</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>leftEndComboBox</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>leftEndTextLabel_3</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>230</y>
+                            <width>210</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Select the neighborhood field:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignVCenter</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>leftEndComboBox</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>neighborhoodColumnComboBox</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>250</y>
+                            <width>230</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>3</number>
+                </attribute>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>clearDictionaryPushButton</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>380</x>
+                            <y>36</y>
+                            <width>82</width>
+                            <height>26</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Clear</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+C</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>dictionaryLineEdit</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>70</x>
+                            <y>39</y>
+                            <width>210</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>dictionaryPushButton</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>290</x>
+                            <y>36</y>
+                            <width>82</width>
+                            <height>26</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Dictionary...</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+D</string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>pixmapLabel1_3</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>120</x>
+                            <y>70</y>
+                            <width>300</width>
+                            <height>255</height>
+                        </rect>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>addressDictionary.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel15</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>70</x>
+                            <y>7</y>
+                            <width>400</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>In order to enhance the geocoding process, you may decide to use a dictionary for common terms. You only need to select a dictionary file.</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignVCenter</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>tableComboBox</cstring>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>4</number>
+                </attribute>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>specialCharsCheckBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>60</y>
+                            <width>160</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Replace</string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel15_2_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>20</y>
+                            <width>480</width>
+                            <height>40</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>If your table with address to geocode has special characters and the base table for geocoding doesn't have, you can replace the special characters by default ones.</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignVCenter</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>tableComboBox</cstring>
+                    </property>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupBox1</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>100</y>
+                            <width>450</width>
+                            <height>160</height>
+                        </rect>
+                    </property>
+                    <property name="title">
+                        <string>Examples</string>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel15_2_2_2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>30</y>
+                                <width>260</width>
+                                <height>101</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>- Praça =&gt; Praca&lt;br&gt;&lt;br&gt;- José Bonifácio =&gt; Jose Bonifacio&lt;br&gt;&lt;br&gt;- Nélio Branches =&gt; Nelio Branches&lt;br&gt;&lt;br&gt;- João Batista =&gt; Joao Batista</string>
+                        </property>
+                        <property name="alignment">
+                            <set>WordBreak|AlignVCenter</set>
+                        </property>
+                        <property name="buddy" stdset="0">
+                            <cstring>tableComboBox</cstring>
+                        </property>
+                    </widget>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>5</number>
+                </attribute>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>alternativeFieldComboBox</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>140</y>
+                            <width>230</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>leftEndTextLabel_4_3_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>70</y>
+                            <width>230</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Select the base layer:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignBottom</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>leftEndComboBox</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>alternativeLayerComboBox</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>90</y>
+                            <width>230</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>alternativeAttrTableComboBox</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>280</x>
+                            <y>90</y>
+                            <width>230</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1_2_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>280</x>
+                            <y>70</y>
+                            <width>230</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Select the attribute table:</string>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>numberColumnComboBox</cstring>
+                    </property>
+                </widget>
+                <widget class="QButtonGroup">
+                    <property name="name">
+                        <cstring>buttonGroup1</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>280</x>
+                            <y>130</y>
+                            <width>230</width>
+                            <height>34</height>
+                        </rect>
+                    </property>
+                    <property name="title">
+                        <string>Field type</string>
+                    </property>
+                    <widget class="QRadioButton">
+                        <property name="name">
+                            <cstring>zipRadioButton</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>137</x>
+                                <y>12</y>
+                                <width>84</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Zipcode</string>
+                        </property>
+                    </widget>
+                    <widget class="QRadioButton">
+                        <property name="name">
+                            <cstring>neighborRadioButton</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>16</x>
+                                <y>12</y>
+                                <width>120</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Neighborhood</string>
+                        </property>
+                        <property name="checked">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>leftEndTextLabel_2_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>120</y>
+                            <width>210</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Select the field:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignVCenter</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>leftEndComboBox</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel15_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>20</y>
+                            <width>480</width>
+                            <height>50</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>You can choose an alternative infolayer with the zip code or neighborhood where the centroid geometry can be used for the addresses that couldn't be found.</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignVCenter</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>tableComboBox</cstring>
+                    </property>
+                </widget>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>frame10_3</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>180</y>
+                            <width>480</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="frameShape">
+                        <enum>HLine</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1_5</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>200</y>
+                            <width>420</width>
+                            <height>50</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>It may be possible to do a exaustive search using partial names, do you want try this kind of search? Execution time will be increased.</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignVCenter</set>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>exaustiveSearchCheckBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>250</y>
+                            <width>460</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Yes</string>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>6</number>
+                </attribute>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>layerNameLineEdit</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>80</x>
+                            <y>50</y>
+                            <width>370</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>pixmapLabel1_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>60</x>
+                            <y>80</y>
+                            <width>420</width>
+                            <height>255</height>
+                        </rect>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>addressLayer.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel2_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>80</x>
+                            <y>10</y>
+                            <width>370</width>
+                            <height>40</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>After the geocoding process, a new infolayer will be generated containing points for the address found. Please, enter a name for this layer:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignVCenter</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>layerNameLineEdit</cstring>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>7</number>
+                </attribute>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>locateDirPushButton</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>380</x>
+                            <y>180</y>
+                            <width>82</width>
+                            <height>26</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Directory...</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+D</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>reportNameLineEdit</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>80</x>
+                            <y>152</y>
+                            <width>290</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>reportDirectoryLineEdit</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>80</x>
+                            <y>182</y>
+                            <width>290</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>80</x>
+                            <y>112</y>
+                            <width>280</width>
+                            <height>40</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Enter the name and path for the report file that will be generated during the geocoding process:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignBottom</set>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>8</number>
+                </attribute>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>resultLayerTextLabel</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>70</y>
+                            <width>480</width>
+                            <height>60</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignVCenter</set>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>resultReportTextLabel</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>130</y>
+                            <width>480</width>
+                            <height>160</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignVCenter</set>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>resultGeocodingTextLabel</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>30</y>
+                            <width>480</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignVCenter</set>
+                    </property>
+                </widget>
+            </widget>
+        </widget>
+        <widget class="QLayoutWidget" row="1" column="0">
+            <property name="name">
+                <cstring>layout112</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>frame10</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>HLine</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout108</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer48</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>110</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>previousPushButton</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="text">
+                                <string>&lt; &amp;Previous</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+P</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>nextPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Next &gt;</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+N</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer102</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>closePushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Cl&amp;ose</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+O</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>closePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatializationWindow</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>nextPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatializationWindow</receiver>
+        <slot>nextPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>previousPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatializationWindow</receiver>
+        <slot>previousPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>layerComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>SpatializationWindow</receiver>
+        <slot>layerComboBox_activated()</slot>
+    </connection>
+    <connection>
+        <sender>configPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatializationWindow</receiver>
+        <slot>configPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>tableComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>SpatializationWindow</receiver>
+        <slot>tableComboBox_activated()</slot>
+    </connection>
+    <connection>
+        <sender>importTablePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatializationWindow</receiver>
+        <slot>importTablePushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>dictionaryPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatializationWindow</receiver>
+        <slot>dictionaryPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>clearDictionaryPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatializationWindow</receiver>
+        <slot>clearDictionaryPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>alternativeLayerComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>SpatializationWindow</receiver>
+        <slot>alternativeLayerComboBox_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>alternativeAttrTableComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>SpatializationWindow</receiver>
+        <slot>alternativeAttrTableComboBox_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>alternativeFieldComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>SpatializationWindow</receiver>
+        <slot>alternativeFieldComboBox_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>locateDirPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatializationWindow</receiver>
+        <slot>locateDirPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SpatializationWindow</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>layerComboBox</tabstop>
+    <tabstop>configPushButton</tabstop>
+    <tabstop>attributeTableComboBox</tabstop>
+    <tabstop>helpPushButton</tabstop>
+    <tabstop>previousPushButton</tabstop>
+    <tabstop>nextPushButton</tabstop>
+    <tabstop>closePushButton</tabstop>
+    <tabstop>locationNameColumnComboBox</tabstop>
+    <tabstop>locationTypeColumnComboBox</tabstop>
+    <tabstop>neighborhoodColumnComboBox</tabstop>
+    <tabstop>locationPrepositionColumnComboBox</tabstop>
+    <tabstop>locationTitleColumnComboBox</tabstop>
+    <tabstop>numberColumnComboBox</tabstop>
+    <tabstop>zipCodeColumnComboBox</tabstop>
+    <tabstop>importTablePushButton</tabstop>
+    <tabstop>tableComboBox</tabstop>
+    <tabstop>clearDictionaryPushButton</tabstop>
+    <tabstop>dictionaryLineEdit</tabstop>
+    <tabstop>dictionaryPushButton</tabstop>
+    <tabstop>specialCharsCheckBox</tabstop>
+    <tabstop>alternativeFieldComboBox</tabstop>
+    <tabstop>alternativeLayerComboBox</tabstop>
+    <tabstop>alternativeAttrTableComboBox</tabstop>
+    <tabstop>neighborRadioButton</tabstop>
+    <tabstop>layerNameLineEdit</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">string</include>
+    <include location="global" impldecl="in declaration">vector</include>
+    <include location="global" impldecl="in implementation">TeLayer.h</include>
+    <include location="global" impldecl="in implementation">TeDatabase.h</include>
+    <include location="global" impldecl="in implementation">TeAddressLocator.h</include>
+    <include location="global" impldecl="in implementation">string</include>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="global" impldecl="in implementation">terraViewBase.h</include>
+    <include location="global" impldecl="in implementation">qapplication.h</include>
+    <include location="global" impldecl="in implementation">vector</include>
+    <include location="global" impldecl="in implementation">qfiledialog.h</include>
+    <include location="global" impldecl="in implementation">TeQtDatabasesListView.h</include>
+    <include location="global" impldecl="in implementation">lbsDefinition.h</include>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="local" impldecl="in implementation">spatializationWindow.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>class TeDatabase;</forward>
+    <forward>class TeLayer;</forward>
+    <forward>class TeAddressLocator;</forward>
+    <forward>using namespace std;</forward>
+    <forward>struct TeCentroidAddressMetadata;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable access="private">TeCentroidAddressMetadata* cMetadata_;</variable>
+    <variable access="private">vector&lt;int&gt; currentGeocodingTables_;</variable>
+    <variable access="private">TerraViewBase* mainWindow_;</variable>
+    <variable access="private">TeDatabase* db_;</variable>
+    <variable access="private">TeAddressLocator* addressLocator_;</variable>
+    <variable access="private">vector&lt;int&gt; currentLayerIds_;</variable>
+    <variable access="private">vector&lt;int&gt; currentTableIds_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot>nextPushButton_clicked()</slot>
+    <slot>previousPushButton_clicked()</slot>
+    <slot>layerComboBox_activated()</slot>
+    <slot>attributeTableComboBox_activated()</slot>
+    <slot>tableComboBox_activated()</slot>
+    <slot>configPushButton_clicked()</slot>
+    <slot>importTablePushButton_clicked()</slot>
+    <slot>dictionaryPushButton_clicked()</slot>
+    <slot>alternativeLayerComboBox_clicked()</slot>
+    <slot>alternativeAttrTableComboBox_clicked()</slot>
+    <slot>alternativeFieldComboBox_clicked()</slot>
+    <slot>clearDictionaryPushButton_clicked()</slot>
+    <slot>locateDirPushButton_clicked()</slot>
+    <slot>helpPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function>init()</function>
+    <function>selectTable()</function>
+    <function>selectColumns()</function>
+    <function>selectReport()</function>
+    <function returnType="bool">findLocations()</function>
+    <function>destroy()</function>
+    <function>listLayers( const int &amp; currentLayerId )</function>
+    <function>listGeocodingTables( const string &amp; defaultTable )</function>
+    <function>listAlternativeLayers()</function>
+    <function>show()</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

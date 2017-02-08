@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="PostGISAdapter"
+	ProjectGUID="{B661A53A-E3EB-4DCF-9F00-92B4736C1983}">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="..\..\Debug\plugins\"
+			IntermediateDirectory="..\..\Debug\plugins\obj\PostGISAdapter\"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				Optimization="1"
+				AdditionalIncludeDirectories="..\..\src\terralib\kernel;.;..\..\terraViewPlugins\base;..\..\terraView;..\..\terraView\ui;..\..\ui\terraView;..\..\ui\appUtils;..\..\src\libspl;..\..\src\terralib\functions;..\..\src\terralib\drivers\qt;..\..\src\terralib\drivers\spl;..\..\src\appUtils;..\..\ui;include;&quot;$(QTDIR)\include&quot;;src\ui\;ui;src\moc\"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,NDEBUG,WIN32,QT_DLL,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				ExceptionHandling="TRUE"
+				RuntimeLibrary="2"
+				BufferSecurityCheck="TRUE"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="..\..\Release\plugins\obj\PostGISAdapter\"
+				ObjectFile="..\..\Release\plugins\obj\PostGISAdapter\"
+				ProgramDataBaseFileName="..\..\Release\plugins\obj\PostGISAdapter\"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="0"
+				DisableSpecificWarnings="4100"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt.lib libspl.lib terralib.lib te_apputils.lib terraViewCore.lib te_spl.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile="..\Release\win32-msvc\PostGISAdapter.dll"
+				Version="3.61"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="../../Release/terralib,../../Release/terralib,../../Release/te_apputils,../../Release/libspl,../../Release/te_spl,../../Release/terraViewCore,$(QTDIR)\lib"
+				DelayLoadDLLs="comdlg32.dll,oleaut32.dll,winmm.dll,wsock32.dll,winspool.dll"
+				ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
+				SubSystem="2"
+				BaseAddress="0x39D00000"
+				ImportLibrary="$(OutDir)/$(ProjectName).lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="if not exist plugins mkdir plugins
+copy  &quot;$(TargetPath)&quot; &quot;plugins&quot;
+copy  *.qm &quot;plugins&quot;
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="..\..\Debug\plugins\"
+			IntermediateDirectory="..\..\Debug\plugins\obj\PostGISAdapter\"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				Optimization="4"
+				AdditionalIncludeDirectories="..\..\src\terralib\kernel;.;..\..\terraViewPlugins\base;..\..\terraView;..\..\terraView\ui;..\..\ui\terraView;..\..\ui\appUtils;..\..\src\libspl;..\..\src\terralib\functions;..\..\src\terralib\drivers\qt;..\..\src\terralib\drivers\spl;..\..\src\appUtils;..\..\ui;include;&quot;$(QTDIR)\include&quot;;src\ui\;ui;src\moc\"
+				PreprocessorDefinitions="_WINDOWS,_DEBUG,WIN32,QT_DLL,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				MinimalRebuild="TRUE"
+				ExceptionHandling="TRUE"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				BufferSecurityCheck="TRUE"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="..\..\Debug\plugins\obj\PostGISAdapter\"
+				ObjectFile="..\..\Debug\plugins\obj\PostGISAdapter\"
+				ProgramDataBaseFileName="..\..\Debug\plugins\obj\PostGISAdapter\"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="3"
+				DisableSpecificWarnings="4100"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt.lib libspl.lib terralib.lib te_apputils.lib terraViewCore.lib te_spl.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile="..\..\Debug\plugins\PostGISAdapter.dll"
+				Version=""
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="../../Debug/terralib,../../Debug/terralib,../../Debug/te_apputils,../../Debug/libspl,../../Debug/te_spl,../../Debug/terraViewCore,$(QTDIR)\lib"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
+				SubSystem="2"
+				BaseAddress="0x39D00000"
+				ImportLibrary="$(OutDir)/$(ProjectName).lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="if not exist plugins mkdir plugins
+copy  &quot;$(TargetPath)&quot; &quot;plugins&quot;
+copy  *.qm &quot;plugins&quot;
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="src\postgisadapter.cpp">
+			</File>
+			<File
+				RelativePath="src\postgisadapterPluginCode.cpp">
+			</File>
+			<File
+				RelativePath="ui\PostGISAdapterWindow.ui.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath="include\postgisadapter.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing include\postgisadapter.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe include\postgisadapter.h -o src\moc\moc_postgisadapter.cpp"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="src\moc\moc_postgisadapter.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing include\postgisadapter.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe include\postgisadapter.h -o src\moc\moc_postgisadapter.cpp"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="src\moc\moc_postgisadapter.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\postgisadapterPluginCode.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated MOC Files"
+			Filter="cpp;c;cxx;moc">
+			<File
+				RelativePath="src\moc\moc_postgisadapter.cpp">
+			</File>
+			<File
+				RelativePath="src\moc\moc_PostGISAdapterWindow.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated UI Files"
+			Filter="cpp;c;cxx;h;hpp;hxx;">
+			<File
+				RelativePath="src\ui\PostGISAdapterWindow.cpp">
+			</File>
+			<File
+				RelativePath="src\ui\PostGISAdapterWindow.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Forms"
+			Filter="ui"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="ui\PostGISAdapterWindow.ui">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ui\PostGISAdapterWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ui\PostGISAdapterWindow.ui -o src\ui\PostGISAdapterWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ui\PostGISAdapterWindow.ui -i PostGISAdapterWindow.h -o src\ui\PostGISAdapterWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe src\ui\PostGISAdapterWindow.h -o src\moc\moc_PostGISAdapterWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="src\ui\PostGISAdapterWindow.h;src\ui\PostGISAdapterWindow.cpp;src\moc\moc_PostGISAdapterWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ui\PostGISAdapterWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ui\PostGISAdapterWindow.ui -o src\ui\PostGISAdapterWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ui\PostGISAdapterWindow.ui -i PostGISAdapterWindow.h -o src\ui\PostGISAdapterWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe src\ui\PostGISAdapterWindow.h -o src\moc\moc_PostGISAdapterWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="src\ui\PostGISAdapterWindow.h;src\ui\PostGISAdapterWindow.cpp;src\moc\moc_PostGISAdapterWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Translations Files"
+			Filter="ts"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="postgisadapter_pt.ts">
+			</File>
+			<File
+				RelativePath="postgisadapter_sp.ts">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

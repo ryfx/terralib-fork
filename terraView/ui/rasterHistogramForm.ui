@@ -1,0 +1,364 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>rasterHistogramForm</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>rasterHistogramForm</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>1</y>
+            <width>400</width>
+            <height>350</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>0</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>400</width>
+            <height>350</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>400</width>
+            <height>350</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>TerraView - Raster Histogram Generation</string>
+    </property>
+    <widget class="QButtonGroup">
+        <property name="name">
+            <cstring>BGHistType</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>210</width>
+                <height>70</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Histogram Type</string>
+        </property>
+        <widget class="QRadioButton">
+            <property name="name">
+                <cstring>RBHistType_2</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>130</x>
+                    <y>30</y>
+                    <width>70</width>
+                    <height>25</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Other</string>
+            </property>
+        </widget>
+        <widget class="QRadioButton">
+            <property name="name">
+                <cstring>RBHistType</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>30</y>
+                    <width>90</width>
+                    <height>25</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Interpolated</string>
+            </property>
+            <property name="checked">
+                <bool>true</bool>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Generates a level-ordered interpolated histogram.</string>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QFrame">
+        <property name="name">
+            <cstring>FIntHist</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>140</y>
+                <width>380</width>
+                <height>160</height>
+            </rect>
+        </property>
+        <property name="frameShape">
+            <enum>Box</enum>
+        </property>
+        <property name="frameShadow">
+            <enum>Sunken</enum>
+        </property>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>20</y>
+                    <width>110</width>
+                    <height>27</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Levels Number :</string>
+            </property>
+        </widget>
+        <widget class="QSpinBox">
+            <property name="name">
+                <cstring>SBIntHistLevels</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>260</x>
+                    <y>20</y>
+                    <width>100</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="buttonSymbols">
+                <enum>PlusMinus</enum>
+            </property>
+            <property name="maxValue">
+                <number>10000</number>
+            </property>
+            <property name="value">
+                <number>256</number>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>The number of interpolated levels.</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>CBIntHistDiscritize</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>90</y>
+                    <width>300</width>
+                    <height>25</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Discretize levels</string>
+            </property>
+            <property name="checked">
+                <bool>true</bool>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Round the histogram levels to the near integer. </string>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>CBIntHistAutoGuess</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>140</x>
+                    <y>20</y>
+                    <width>110</width>
+                    <height>25</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Auto Guess</string>
+            </property>
+            <property name="checked">
+                <bool>true</bool>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>If checked, the number of levels will be automaticlly found by using level step with value one.</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>CBIntHistZeroExp</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>60</y>
+                    <width>300</width>
+                    <height>25</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Zero Expansion</string>
+            </property>
+            <property name="checked">
+                <bool>true</bool>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>If checked, the histograma will be expanded until it contains value zero.</string>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel1_2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>100</y>
+                <width>110</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Raster Band</string>
+        </property>
+    </widget>
+    <widget class="QSpinBox">
+        <property name="name">
+            <cstring>SBRasterBand</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>120</x>
+                <y>100</y>
+                <width>100</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property name="buttonSymbols">
+            <enum>PlusMinus</enum>
+        </property>
+        <property name="maxValue">
+            <number>0</number>
+        </property>
+        <property name="value">
+            <number>0</number>
+        </property>
+        <property name="toolTip" stdset="0">
+            <string>The raster band (starting from zero )</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>PBgenerate</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>220</x>
+                <y>310</y>
+                <width>82</width>
+                <height>32</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Generate</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>PBclose</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>310</x>
+                <y>310</y>
+                <width>82</width>
+                <height>32</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Close</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>PBclose</sender>
+        <signal>clicked()</signal>
+        <receiver>rasterHistogramForm</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>RBHistType</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>FIntHist</receiver>
+        <slot>setShown(bool)</slot>
+    </connection>
+    <connection>
+        <sender>CBIntHistAutoGuess</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>SBIntHistLevels</receiver>
+        <slot>setDisabled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>PBgenerate</sender>
+        <signal>clicked()</signal>
+        <receiver>rasterHistogramForm</receiver>
+        <slot>PBgenerateClick()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>RBHistType</tabstop>
+    <tabstop>SBRasterBand</tabstop>
+    <tabstop>CBIntHistAutoGuess</tabstop>
+    <tabstop>SBIntHistLevels</tabstop>
+    <tabstop>CBIntHistZeroExp</tabstop>
+    <tabstop>CBIntHistDiscritize</tabstop>
+    <tabstop>PBgenerate</tabstop>
+    <tabstop>PBclose</tabstop>
+</tabstops>
+<slots>
+    <slot>PBgenerateClick()</slot>
+</slots>
+<includes>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<exportmacro>TVIEW_DLL</exportmacro>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

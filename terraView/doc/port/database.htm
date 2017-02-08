@@ -1,0 +1,172 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta content="text/html; charset=ISO-8859-1"             http-equiv="content-type"/>
+	<meta content="TerraView - documentacion help"            name="Description"/>
+	<meta content="geoprocessing,terraview,terralib,dpi,inpe" name="KeyWords"/>
+	<title> Manipula&ccedil;&atilde;o de Banco de Dados</title>
+</head>
+<body>
+<center>
+<h1><font face="Arial, Helvetica, sans-serif">Manipulação de Banco de Dados</font></h1>
+</center>
+<p><font face="Arial, Helvetica, sans-serif">A cada sessão de trabalho do TerraView 
+  é necessário haver pelo menos um Banco de Dados ativo. A Figura 1 mostra a interface 
+  que controla a manipulação de bancos de dados accessados pelo TerraView.</font></p>
+<h2><font face="Arial, Helvetica, sans-serif">Criando um Banco de Dados</font></h2>
+<center>
+  <table>
+    <tr> 
+      <td>
+        <div align="center"><font face="Arial, Helvetica, sans-serif"><img src="database_arquivos/figura1.png" width="320" height="388" border=0> 
+          </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td>
+        <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 1 
+          - Interface de manipulação de bancos de dados. </font></div>
+      </td>
+    </tr>
+  </table>
+</center>
+<ol>
+  <li><font face="Arial, Helvetica, sans-serif">Para criar um novo banco é necessário 
+    escolher a opção <em>Criar </em>na divisão <em>Operação </em>da interface 
+    Banco de Dados. </font></li>
+  <li><font face="Arial, Helvetica, sans-serif">No combo <em>Tipo de Banco de 
+    Dados</em> escolha o gerenciador que será usado para armazenar seu banco. 
+    Dependendo do gerenciador escolhido, a interface habilitará ou desabilitará 
+    outros itens (ver Figura 2): </font></li>
+     
+    <center>
+      <table>
+        <tr> 
+          <td><font face="Arial, Helvetica, sans-serif"><img src="database_arquivos/figura2.png" width="320" height="388" border=0> 
+            </font></td>
+        </tr>
+        <tr> 
+          <td>
+            <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+              2 - Escolha do gerenciador. </font></div>
+          </td>
+        </tr>
+      </table>
+    </center>
+  <li><font face="Arial, Helvetica, sans-serif"> O <u>gerenciador ACCESS</u> exige 
+    que se escolha no botão <em>Diretório</em> onde o banco será criado. </font></li>
+	
+  <li><font face="Arial, Helvetica, sans-serif">Os <u>outros gerenciadores</u> 
+    como o SQL Server, OracleSpatial, OracleAdo, MySQL, PostgreSQL e PostGIS, 
+    por serem servidores de bancos de dados, exigem que sejam preenchidos outros 
+    parâmetros (como mostra a Figura 3). </font></li>
+    
+    <center>
+      <table>
+        <tr> 
+          <td>
+            <div align="center"><font face="Arial, Helvetica, sans-serif"><img src="database_arquivos/figura3.png" width="320" height="388" border=0> 
+              </font></div>
+          </td>
+        </tr>
+        <tr> 
+          <td>
+            <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+              3 - Parâmetros do servidor de banco de dados. </font></div>
+          </td>
+        </tr>
+      </table>
+    </center>
+    <font face="Arial, Helvetica, sans-serif">Os campos a serem preenchidos 
+      nesse caso são: </font>
+    <ul>
+      <li><font face="Arial, Helvetica, sans-serif"><b>Servidor:</b> nome ou endereço 
+        da computador onde o servidor está instalado.</font></li>
+      <li><font face="Arial, Helvetica, sans-serif"><b>Porta:</b> número da porta 
+        pela qual será feita a conexão.</font></li>
+      <li><font face="Arial, Helvetica, sans-serif"><b>Usuário:</b> nome do usuário 
+        que acessa o servidor.</font></li>
+      <li><font face="Arial, Helvetica, sans-serif"><b>Senha:</b> senha de acesso 
+        do usuário ao servidor.</font></li>
+    </ul>
+  </li>
+  <li><font face="Arial, Helvetica, sans-serif">Defina o nome para o novo banco 
+    no campo <em>Nome do Banco de Dados.</em></font></li>
+  <li><font face="Arial, Helvetica, sans-serif">O campo <b>Encoding</b>, quando habilitado, permite que seja
+  especificada uma codificação de caracteres no banco de dados a ser criado que é diferente da codificação padrão (a qual depende do
+  ambiente onde o servidor de banco de dados foi instalado). Este campo só será habilitado no caso de criação do banco de dados, mas apenas para
+  alguns gerenciadores, como p.ex. PostgreSQL e PostGIS. </font></li>	
+  <li><font face="Arial, Helvetica, sans-serif">Clique em <em>Executar</em><b>.</b></font></li>
+</ol>
+<font face="Arial, Helvetica, sans-serif">Após a sua criação, o banco de dados 
+  de dados é automaticamente conectado.</font>
+<h2><font face="Arial, Helvetica, sans-serif">Abrindo uma conexão a um Banco de 
+  Dados previamente criado</font></h2>
+<ol>
+  <li><font face="Arial, Helvetica, sans-serif">Para acessar um banco previamente 
+    criado é necessário escolher a opção <em>Conectar</em> na divisão <em>Operação</em> 
+    da interface <em>Banco de Dados</em> (ver Figura 4). </font> 
+    <center>
+      <table>
+        <tr> 
+          <td>
+            <div align="center"><font face="Arial, Helvetica, sans-serif"><img src="database_arquivos/figura4.png" border=0> 
+              </font></div>
+          </td>
+        </tr>
+        <tr> 
+          <td>
+            <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+              4 - Conexão a um banco de dados previamente existente. </font></div>
+          </td>
+        </tr>
+      </table>
+    <p>&nbsp;</p></center>
+		
+  <li><font face="Arial, Helvetica, sans-serif">No combo <em>Tipo de Banco de 
+    Dados</em> escolha o gerenciador usado para armazenar seu banco.</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Dependendo do gerenciador, ou 
+    tipo do banco de dados, preencha os outros campos da interface: </font>
+    <ul>
+      <li><font face="Arial, Helvetica, sans-serif">Gerenciador ACCESS: clique 
+        no botão <em>Selecionar Banco de Dados</em> e aponte para o arquivo <i>.mdb</i> 
+        que contém seu banco TerraLib. Veja que o nome do banco aparecerá no campo 
+        a frente.</font></li>
+      <li><font face="Arial, Helvetica, sans-serif">Outros gerenciadores: </font>
+        <ul>
+          <li><font face="Arial, Helvetica, sans-serif">Preencha os campos <em>Servidor, 
+            Porta, Usuário e Senha</em> conforme explicado no item sobre a criação 
+            de um banco de dados novo.</font></li>
+          <li><font face="Arial, Helvetica, sans-serif">Clique no botão <em>Selecionar 
+            Banco de Dados</em>. O combo à frente será preenchido com os bancos 
+            disponíveis nesse servidor.</font></li>
+          <li><font face="Arial, Helvetica, sans-serif">Selecione nesse combo 
+            qual dos bancos disponíveis no servidor deseja se conectar. </font></li>
+        </ul>
+    </ul>
+  <li><font face="Arial, Helvetica, sans-serif">Clique em <em>Executar.</em></font></li>
+</ol>
+<font face="Arial, Helvetica, sans-serif"><b>OBS</b>: se ao conectar o banco de 
+dados o item <b>Verificar Consistência no Banco de Dados</b> estiver selecionado, 
+o TerraView irá varrer o banco de dados e eliminar inconsistências e tabelas perdidas.</font> 
+<font face="Arial, Helvetica, sans-serif">Os bancos de dados conectados aparecem 
+na área de banco de dados da interface principal como mostra a Figura 5. </font> 
+<center>
+  <table>
+    <tr> 
+      <td>
+        <div align="center"><font face="Arial, Helvetica, sans-serif"><img src="database_arquivos/figura5.png" width="196" height="189"> 
+          </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td>
+        <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 5 
+          - Área de banco de dados da interface principal. </font></div>
+      </td>
+    </tr>
+  </table>
+</center>
+
+</body>
+</html>

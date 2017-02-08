@@ -1,0 +1,25 @@
+/* XPM */
+static char *importDisabled[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 3 1",
+"  c black",
+". c blue",
+"X c #C0C0C0",
+/* pixels */
+"XXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXX",
+"XXX          XXX",
+"XXX ........ XXX",
+"XXX ........ XXX",
+"XXX    ..    XXX",
+"XXXXXX .. XXXXXX",
+"XXXXXX .. XXXXXX",
+"XXXXXX .. XXXXXX",
+"XXXXXX .. XXXXXX",
+"XXX    ..    XXX",
+"XXX ........ XXX",
+"XXX ........ XXX",
+"XXX          XXX",
+"XXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXX"
+};

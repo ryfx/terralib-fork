@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="oracleSpatialAdapter"
+	ProjectGUID="{e374103a-a794-4414-87c4-5611fb05863c}">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="..\..\Debug\plugins\"
+			IntermediateDirectory="..\..\Debug\plugins\obj\oracleSpatialAdapter\"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				Optimization="0"
+				AdditionalIncludeDirectories="..\..\src\terralib\kernel,.,..\..\terraViewPlugins\base,..\..\terraView,..\..\terraView\ui,..\..\ui\terraView,..\..\src\libspl,..\..\src\terralib\kernel,..\..\src\terralib\functions,..\..\src\terralib\drivers\qt,..\..\src\terralib\drivers\spl,..\..\src\appUtils,..\..\ui,include,$(QTDIR)\include,src\ui\,ui,D:\funcate\tview_dll_plg_final\terralib\terraViewPlugins\oracleSpatialAdapter,src\moc\,C:\Qt\3.2.0\mkspecs\win32-msvc.net"
+				PreprocessorDefinitions="_WINDOWS,_DEBUG,WIN32,QT_DLL,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				MinimalRebuild="TRUE"
+				ExceptionHandling="TRUE"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				BufferSecurityCheck="TRUE"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="..\..\Debug\plugins\obj\oracleSpatialAdapter\"
+				ObjectFile="..\..\Debug\plugins\obj\oracleSpatialAdapter\"
+				ProgramDataBaseFileName="../../Debug/plugins/obj/oracleSpatialAdapter/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="3"
+				DisableSpecificWarnings="4100"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mt320.lib libspl.lib terralib.lib te_apputils.lib terraViewCore.lib te_spl.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile="..\..\Debug\plugins\oracleSpatialAdapter.dll"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="../../Debug/terralib,../../Debug/terralib,../../Debug/te_apputils,../../Debug/libspl,../../Debug/te_spl,../../Debug/terraViewCore,$(QTDIR)\lib"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
+				SubSystem="2"
+				BaseAddress="0x39D00000"
+				ImportLibrary="$(OutDir)/$(ProjectName).lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Copy translations..."
+				CommandLine="if not exist plugins mkdir plugins
+copy  &quot;$(TargetPath)&quot; &quot;plugins&quot;
+copy  *.qm &quot;plugins&quot;
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="."
+			IntermediateDirectory="..\..\Release\plugins\obj\oracleSpatialAdapter\"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				Optimization="2"
+				AdditionalIncludeDirectories="..\..\src\terralib\kernel,.,..\..\terraViewPlugins\base,..\..\terraView,..\..\terraView\ui,..\..\ui\terraView,..\..\src\libspl,..\..\src\terralib\kernel,..\..\src\terralib\functions,..\..\src\terralib\drivers\qt,..\..\src\terralib\drivers\spl,..\..\src\appUtils,..\..\ui,include,$(QTDIR)\include,src\ui\,ui,D:\funcate\tview_dll_plg_final\terralib\terraViewPlugins\oracleSpatialAdapter,src\moc\,C:\Qt\3.2.0\mkspecs\win32-msvc.net"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,NDEBUG,WIN32,QT_DLL,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				ExceptionHandling="TRUE"
+				RuntimeLibrary="2"
+				BufferSecurityCheck="TRUE"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="..\..\Release\plugins\obj\oracleSpatialAdapter\"
+				ObjectFile="..\..\Release\plugins\obj\oracleSpatialAdapter\"
+				ProgramDataBaseFileName="../../Release/plugins/obj/oracleSpatialAdapter/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="0"
+				DisableSpecificWarnings="4100"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mt320.lib libspl.lib terralib.lib te_apputils.lib terraViewCore.lib te_spl.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile="..\..\Release\plugins\oracleSpatialAdapter.dll"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="../../Release/terralib,../../Release/terralib,../../Release/te_apputils,../../Release/libspl,../../Release/te_spl,../../Release/terraViewCore,$(QTDIR)\lib"
+				DelayLoadDLLs="comdlg32.dll,oleaut32.dll,winmm.dll,wsock32.dll,winspool.dll"
+				ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
+				SubSystem="2"
+				BaseAddress="0x39D00000"
+				ImportLibrary="$(OutDir)/$(ProjectName).lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Copy translations..."
+				CommandLine="copy  &quot;$(TargetPath)&quot; &quot;..\..\Release\plugins&quot;
+copy  *.qm &quot;..\..\Release\plugins&quot;
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="src\oraclespatialadapterPlugin.cpp">
+			</File>
+			<File
+				RelativePath="src\oraclespatialadapterPluginCode.cpp">
+			</File>
+			<File
+				RelativePath="ui\OracleSpatialAdapterWindow.ui.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath="include\oraclespatialadapterPlugin.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing include\oraclespatialadapterPlugin.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe include\oraclespatialadapterPlugin.h -o src\moc\moc_oraclespatialadapterPlugin.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="src\moc\moc_oraclespatialadapterPlugin.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing include\oraclespatialadapterPlugin.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe include\oraclespatialadapterPlugin.h -o src\moc\moc_oraclespatialadapterPlugin.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="src\moc\moc_oraclespatialadapterPlugin.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\oraclespatialadapterPluginCode.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated MOC Files"
+			Filter="cpp;c;cxx;moc">
+			<File
+				RelativePath="src\moc\moc_oraclespatialadapterPlugin.cpp">
+			</File>
+			<File
+				RelativePath="src\moc\moc_OracleSpatialAdapterWindow.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated UI Files"
+			Filter="cpp;c;cxx;h;hpp;hxx;">
+			<File
+				RelativePath="src\ui\OracleSpatialAdapterWindow.cpp">
+			</File>
+			<File
+				RelativePath="src\ui\OracleSpatialAdapterWindow.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Forms"
+			Filter="ui"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="ui\OracleSpatialAdapterWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ui\OracleSpatialAdapterWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ui\OracleSpatialAdapterWindow.ui -o src\ui\OracleSpatialAdapterWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ui\OracleSpatialAdapterWindow.ui -i OracleSpatialAdapterWindow.h -o src\ui\OracleSpatialAdapterWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe src\ui\OracleSpatialAdapterWindow.h -o src\moc\moc_OracleSpatialAdapterWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="src\ui\OracleSpatialAdapterWindow.h;src\ui\OracleSpatialAdapterWindow.cpp;src\moc\moc_OracleSpatialAdapterWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ui\OracleSpatialAdapterWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ui\OracleSpatialAdapterWindow.ui -o src\ui\OracleSpatialAdapterWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ui\OracleSpatialAdapterWindow.ui -i OracleSpatialAdapterWindow.h -o src\ui\OracleSpatialAdapterWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe src\ui\OracleSpatialAdapterWindow.h -o src\moc\moc_OracleSpatialAdapterWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="src\ui\OracleSpatialAdapterWindow.h;src\ui\OracleSpatialAdapterWindow.cpp;src\moc\moc_OracleSpatialAdapterWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Translations Files"
+			Filter="ts"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="oracleSpatialAdapter_es.ts">
+			</File>
+			<File
+				RelativePath="oracleSpatialAdapter_pt.ts">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

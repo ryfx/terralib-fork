@@ -1,0 +1,48 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KmlPlugin", "KmlPlugin.vcproj", "{A63CB6F1-A3FD-4220-97D9-27B0BD97C5F5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EB972B3B-38F1-3C73-8D33-72EB8742BDD9} = {EB972B3B-38F1-3C73-8D33-72EB8742BDD9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terralib", "..\..\build\win32-msvc2003\terralib\terralib.vcproj", "{1253197A-5710-4924-9706-6449C0C32FE9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogccommon", "..\..\..\terraogc\build\win32-msvc.net-2003\common\terraogccommon.vcproj", "{9B8D57FF-9D89-3687-A5CC-4D2C2253EAAC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1253197A-5710-4924-9706-6449C0C32FE9} = {1253197A-5710-4924-9706-6449C0C32FE9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogcxml", "..\..\..\terraogc\build\win32-msvc.net-2003\xml\terraogcxml.vcproj", "{EB972B3B-38F1-3C73-8D33-72EB8742BDD9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9B8D57FF-9D89-3687-A5CC-4D2C2253EAAC} = {9B8D57FF-9D89-3687-A5CC-4D2C2253EAAC}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A63CB6F1-A3FD-4220-97D9-27B0BD97C5F5}.Debug.ActiveCfg = Debug|Win32
+		{A63CB6F1-A3FD-4220-97D9-27B0BD97C5F5}.Debug.Build.0 = Debug|Win32
+		{A63CB6F1-A3FD-4220-97D9-27B0BD97C5F5}.Release.ActiveCfg = Release|Win32
+		{A63CB6F1-A3FD-4220-97D9-27B0BD97C5F5}.Release.Build.0 = Release|Win32
+		{1253197A-5710-4924-9706-6449C0C32FE9}.Debug.ActiveCfg = Debug|Win32
+		{1253197A-5710-4924-9706-6449C0C32FE9}.Debug.Build.0 = Debug|Win32
+		{1253197A-5710-4924-9706-6449C0C32FE9}.Release.ActiveCfg = Release|Win32
+		{1253197A-5710-4924-9706-6449C0C32FE9}.Release.Build.0 = Release|Win32
+		{9B8D57FF-9D89-3687-A5CC-4D2C2253EAAC}.Debug.ActiveCfg = Debug|Win32
+		{9B8D57FF-9D89-3687-A5CC-4D2C2253EAAC}.Debug.Build.0 = Debug|Win32
+		{9B8D57FF-9D89-3687-A5CC-4D2C2253EAAC}.Release.ActiveCfg = Release|Win32
+		{9B8D57FF-9D89-3687-A5CC-4D2C2253EAAC}.Release.Build.0 = Release|Win32
+		{EB972B3B-38F1-3C73-8D33-72EB8742BDD9}.Debug.ActiveCfg = Debug|Win32
+		{EB972B3B-38F1-3C73-8D33-72EB8742BDD9}.Debug.Build.0 = Debug|Win32
+		{EB972B3B-38F1-3C73-8D33-72EB8742BDD9}.Release.ActiveCfg = Release|Win32
+		{EB972B3B-38F1-3C73-8D33-72EB8742BDD9}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

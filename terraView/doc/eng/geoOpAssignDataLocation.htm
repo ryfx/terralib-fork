@@ -1,0 +1,445 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Assign data by location operation</title>
+<meta content="TerraView - documentacion help" name=Description>
+<meta content="geoprocessing,terraview,terralib,dpi,inpe" name=KeyWords>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+
+<div class=Section1>
+
+<p align=center>
+	<strong><u>
+		<span style='font-size: 13.5pt;font-family:Arial'>Assign data by location operation</span>
+	</u></strong>
+</p>
+
+<p>
+	
+	Assign data by location operation is executed between the two selected themes. The operation adds attributes of X theme to Y theme, based on the spatial relation between geographic objects of the themes. This operation creates a new attributes table with attributes of X and associates it to Y theme.
+<br><br>
+There are two strategies for the operation: Distribute and Collect. Considering two themes, X theme providing the attributes and Y theme receiving the attributes, the two strategies are explained below.
+<br><br>
+Distribute strategy distributes attributes of each geographic object of X theme to all objects of Y theme that have a given spatial relation.
+<br><br>
+Collect strategy collects or aggregates for each geographic object of Y theme the attributes of all geographic objects of X theme that have a given spatial relation.
+<br><br>
+For instance, consider two themes, MUNICIPIOS and ESTADOS, shown in Figure 1, and one representing municipalities (polygon geometric representation) and the other representing Brazil states (polygon geometric representation). Each municipality has the following attributes: NOME, POPULACAO and ESTADO. Each state has the following attributes: NOME and AREA. The result of each data assignment strategy using the two themes is presented next.
+<p align=center>
+<img id="_x0000_i1029" src="geoOpAssignDataLocation_arquivos/image002.PNG">
+<br>
+Figure 1 - ESTADOS and MUNICIPIOS themes
+</p>
+<strong>Distribute</strong>
+<br><br>
+An example of distribute data by location using ESTADOS and MUNICIPIOS themes is: distribute each state attributes to all municipalities inside the state. The spatial relation used here is &quot;contained&quot; or &quot;inside&quot;. This operation creates an attributes table associated to MUNICIPIOS theme, shown in Figure 2.
+<p align=center>
+<img id="_x0000_i1028" src="geoOpAssignDataLocation_arquivos/image003.PNG">
+<br>
+Figure 2 - Attributes table resulting from distribute strategy
+</p>
+In distribute strategy the theme receiving attributes may have geometric representations of type: Point, Line, Polygon, or Cell. The theme providing the attributes may have geometric representations of type: Polygon, Cell, or Line. The geometric representations of the themes and the spatial relation considered for each combination is shown in the table below:
+<br><br>
+<table border="0" cellpadding="0" align="center">
+	<tr>
+		<td></td>
+		<td colspan=3 style='background:#CCCCCC;' align="center">
+		<strong>Theme providing attributes</strong>
+		</td>
+	</tr>
+ <tr>
+  <td style='background:#CCCCCC;' align="center">
+  <strong>Theme receiving attributes</strong>
+  </td>
+  <td style='background:#E5E5E5;' align="center">
+  <strong>Polygon</strong>
+  </td>
+  <td style='background:#E5E5E5;' align="center">
+  <strong>Cell</strong>
+  </td>
+  <td style='background:#E5E5E5;' align="center">
+  <strong>Linhas</strong>
+  </td>
+ </tr>
+ <tr>
+  <td style='background:#E5E5E5;' align="center">
+  <strong>Point</strong>
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  contained
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  contained
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+ -
+  </td>
+ </tr>
+ <tr>
+  <td style='background:#E5E5E5;' align="center">
+  <strong>Line</strong>
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  contained
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  contained
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  intercepts
+  </td>
+ </tr>
+ <tr>
+  <td style='background:#E5E5E5;' align="center">
+  <strong>Polygon</strong>
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  contained or covered by
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  contained or covered by
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  -
+  </td>
+ </tr>
+ <tr>
+  <td style='background:#E5E5E5;' align="center">
+ <strong>Cell</strong>
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  contained or covered by
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  contained or covered by
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  -
+  </td>
+ </tr>
+</table>
+<br><br>
+<strong>Collect</strong>
+<br><br>
+An example of collect data by location using ESTADOS and MUNICIPIOS themes is: collect or aggregate the attributes of all municipalities inside each state. The spatial relation used here is &quot;contained&quot; or &quot;inside&quot; and the attributes are collected using aggregation functions. For the NOME attribute the smaller value in alphabetic order was used (aggregation function Minimum) and for POPULACAO attribute the sum of population in all municipalities in each state was used (aggregation function Sum). This operation creates an attributes table associated to ESTADOS theme and is shown in Figure 3.
+<p align=center>
+<img id="_x0000_i1027" src="geoOpAssignDataLocation_arquivos/image004.PNG">
+<br>
+Figure 3 - Attributes table resulting from collect strategy
+</p>
+In collect strategy the theme receiving attributes may have geometric representations of type: Polygon or Cell. The theme providing attributes may have geometric representations of type: Point, Line, Polygon or Cell. The geometric representations of the themes and the spatial relation considered for each combination is shown in the table below:
+<br>
+
+<table border="0" cellpadding="0" align="center">
+ <tr>
+  <td>
+  </td>
+  <td colspan=2 style='background:#CCCCCC;' align="center">
+  <strong>Theme que fornece attributes</strong>
+  </td>
+ </tr>
+ <tr>
+  <td style='background:#CCCCCC;' align="center">
+  <strong>Theme que recebe attributes</strong>
+  </td>
+  <td style='background:#E5E5E5;' align="center">
+  <strong>Polygon</strong>
+  </td>
+  <td style='background:#E5E5E5;' align="center">
+  <strong>Cell</strong>
+  </td>
+ </tr>
+ <tr>
+  <td style='background:#E5E5E5;' align="center">
+  <strong>Point</strong>
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  contained
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  contained
+  </td>
+ </tr>
+ <tr>
+  <td style='background:#E5E5E5;' align="center">
+  <strong>Line</strong>
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  contained/ intercepts/ crosses
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  contained/ intercepts/ crosses
+  </td>
+ </tr>
+ <tr>
+  <td style='background:#E5E5E5;' align="center">
+  <strong>Polygon</strong>
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  inside or covered by/ intercepts
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  inside or covered by/ intercepts
+  </td>
+ </tr>
+ <tr>
+  <td style='background:#E5E5E5;' align="center">
+  <strong>Cell</strong>
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  inside or covered by/ intercepts
+  </td>
+  <td style='background:#F2F2F2;' align="center">
+  inside or covered by/ intercepts
+  </td>
+ </tr>
+</table>
+<br>
+Aggregation functions for numeric type attributes are:
+<br><br>
+<table border=1 cellspacing=0 cellpadding=0 align="center" >
+ <tr>
+  <td height="25" align="center" style="border:inset black 1.0pt">
+  <strong>Aggregation function</strong>
+  </td>
+  <td align="center" style="border:inset black 1.0pt">
+  <strong>Meaning</strong>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:inset black 1.0pt" height="25">
+  TeMINVALUE
+  </td>
+  <td style="border:inset black 1.0pt">
+  minimum value 
+  </td>
+ </tr>
+ <tr>
+  <td style="border:inset black 1.0pt" height="25">
+  TeMAXVALUE
+  </td>
+  <td style="border:inset black 1.0pt">
+  maximum value
+  </td>
+ </tr>
+ <tr>
+  <td style="border:inset black 1.0pt" height="25">
+  TeMEAN
+  </td>
+  <td style="border:inset black 1.0pt">
+  mean
+  </td>
+ </tr>
+ <tr>
+  <td style="border:inset black 1.0pt" height="25">
+  TeSUM
+  </td>
+  <td style="border:inset black 1.0pt">
+  values sum
+  </td>
+ </tr>
+ <tr>
+  <td style="border:inset black 1.0pt" height="25">
+  TeCOUNT
+  </td>
+  <td style="border:inset black 1.0pt">
+  total number of values
+  </td>
+ </tr>
+ <tr>
+  <td style="border:inset black 1.0pt" height="25">
+  TeCOUNT
+  </td>
+  <td style="border:inset black 1.0pt">
+  total number of values
+  </td>
+ </tr>
+ <tr>
+  <td style="border:inset black 1.0pt" height="25">
+  TeVALIDCOUNT
+  </td>
+  <td style="border:inset black 1.0pt">
+  total number of non nil values
+  </td>
+ </tr>
+ <tr>
+  <td style="border:inset black 1.0pt" height="25">
+  TeSTANDARDDEVIATION
+  </td>
+  <td style="border:inset black 1.0pt">
+  standard deviation
+  </td>
+ </tr>
+ <tr>
+  <td style="border:inset black 1.0pt" height="25">
+  TeKERNEL 
+  </td>
+  <td style="border:inset black 1.0pt">
+  kernel
+  </td>
+ </tr>
+ <tr>
+  <td style="border:inset black 1.0pt" height="25">
+  TeVARIANCE
+  </td>
+  <td style="border:inset black 1.0pt">
+ variance
+  </td>
+ </tr>
+ <tr>
+  <td style="border:inset black 1.0pt" height="25">
+  TeSKEWNESS
+  </td>
+  <td style="border:inset black 1.0pt">
+ third order mean momentum
+  </td>
+ </tr>
+ <tr>
+  <td style="border:inset black 1.0pt" height="25">
+  TeKURTOSIS
+  </td>
+  <td style="border:inset black 1.0pt">
+ fourth order mean momentum
+  </td>
+ </tr>
+ <tr>
+  <td style="border:inset black 1.0pt" height="25">
+  TeAMPLITUDE
+  </td>
+  <td style="border:inset black 1.0pt">
+ difference between maximum and minimum values
+  </td>
+ </tr>
+ <tr>
+  <td style="border:inset black 1.0pt" height="25">
+  TeMEDIAN
+  </td>
+  <td style="border:inset black 1.0pt">
+ median
+  </td>
+ </tr>
+ <tr>
+  <td style="border:inset black 1.0pt" height="25">
+  TeVARCOEFF
+  </td>
+  <td style="border:inset black 1.0pt">
+ coeficient of variation
+  </td>
+ </tr>
+ <tr>
+  <td style="border:inset black 1.0pt" height="25">
+  TeMODE
+  </td>
+  <td style="border:inset black 1.0pt">
+ most frequent value
+  </td>
+ </tr>
+</table>
+<br><br>
+Aggregation functions for non-numeric attributes are:
+<br><br>
+
+<table border=1 cellspacing=0 cellpadding=0 align="center" style='border:outset black 1.0pt;'>
+	<tr>
+		<td height="25" align="center" style="border:inset black 1.0pt">
+		<strong>Aggregation function</strong>
+		</td>
+		<td height="25" align="center" style="border:inset black 1.0pt">
+		<strong>Meaning</strong>
+		</td>
+	</tr>
+	<tr>
+		<td height="25" style="border:inset black 1.0pt">
+		TeMINVALUE
+		</td>
+		<td height="25" style="border:inset black 1.0pt">
+		minimum value
+		</td>
+	</tr>
+	<tr>
+		<td height="25" style="border:inset black 1.0pt">
+		TeMAXVALUE
+		</td>
+		<td height="25" style="border:inset black 1.0pt">
+		maximum value
+		</td>
+	</tr>
+	<tr>
+		<td height="25" style="border:inset black 1.0pt">
+		TeCOUNT
+		</td>
+		<td height="25" style="border:inset black 1.0pt">
+		total number of values
+		</td>
+	</tr>
+	<tr>
+		<td height="25" style="border:inset black 1.0pt">
+		TeVALIDCOUNT
+		</td>
+		<td height="25" style="border:inset black 1.0pt">
+		total number of non nil values
+		</td>
+	</tr>
+ </table>
+<br><br>
+<strong>Distribute Data Interface</strong>
+<br><br>
+  The interface to distribute data is shown in Figure 4 and to activate it use 
+  the context menu on a View, and select <strong>Geoprocessing – Assign Data by 
+  Location - Distribute</strong>. Choose the two themes, the one receiving and 
+  the one providing the attributes, through <i>Select a Theme to Assign Data to 
+  </i>and <i>Select a Theme to Assign Data from fields</i>. <br>
+  <br>
+In addition, choose the spatial relation to be considered in the operation. Spatial relations are enabled accordingly to the geometric representations of the chosen themes.
+<p align="center">
+<img id="_x0000_i1026" src="geoOpAssignDataLocation_arquivos/image005.PNG">
+<br>
+Figure 4 - Distribute data by location interface
+</p>
+<i>Create and Assign Data to Table</i> field is automatically filled in by the interface, but it can be edited to create the table with another name.
+<br><br>
+<i>Attributes to distribute field</i> lists the theme attributes and they can be selected and unselected individually to be
+distributed. Two buttons are available to quick select all theme attributes and to unselect all of them.
+<br><br>
+<i>OK</i> button applies the distribute operation.
+<br><br>
+<i>Cancel</i> button disables the interface.
+<br><br>
+<i>Help</i> button activates the help interface.
+<br><br>
+<strong>Collect Data Interface</strong>
+<br><br>
+  The interface to collect data is shown in Figure 5 and to activate it use the 
+  context menu on a View, and select <strong>Geoprocessing – Assign Data by Location 
+  - Collect</strong>. Choose the two themes, the one receiving and the one providing 
+  the attributes, through <i>Select a Theme to Assign Data to </i>and <i>Select 
+  a Theme to Assign Data from fields</i>. 
+  <p align="center">
+<img id="_x0000_i1025" src="geoOpAssignDataLocation_arquivos/image006.PNG">
+<br>
+Figure 5 - Collect data by location interface
+</p>
+<i>Create and Assign Data to Table</i> field is automatically filled in by the interface, but it can be edited to create the table with another name.
+<br><br>
+In addition, choose the spatial relation to be considered in the operation. Spatial relations are enabled accordingly to the geometric representations of the chosen themes.
+<br><br>
+<i>Output Attributes field</i> lists the theme attributes and they can be selected and unselected individually to be
+distributed. Two buttons are available to quickly select all theme attributes and to unselect all of them, with the aggregation functions, such as all maximum, minimum, and sum.
+<br><br>
+  <i>OK</i> button applies the distribute operation. <br>
+  <br>
+<i>Cancel</i> button disables the interface.
+<br><br>
+<i>Help </i> button activates the help interface.
+</p>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+</body>
+
+</html>

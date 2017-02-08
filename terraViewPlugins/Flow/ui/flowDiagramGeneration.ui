@@ -1,0 +1,463 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>FlowDiagramGeneration</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>FlowDiagramGeneration</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>352</width>
+            <height>338</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Generate Flow Diagram</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="1" column="0">
+            <property name="name">
+                <cstring>layout112</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>frame10</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>HLine</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout108</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer48</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>110</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>generatePushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Generate</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+G</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>closePushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Close</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout18</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupBox1</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Flow Data Table Parameters</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout14</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>layout27</cstring>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout10</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>textLabel1</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Flow Data Table</string>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>flowDataTableComboBox</cstring>
+                                                    </property>
+                                                    <property name="enabled">
+                                                        <bool>false</bool>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout25</cstring>
+                                            </property>
+                                            <hbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLayoutWidget">
+                                                    <property name="name">
+                                                        <cstring>layout21</cstring>
+                                                    </property>
+                                                    <vbox>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <spacer>
+                                                            <property name="name">
+                                                                <cstring>spacer10</cstring>
+                                                            </property>
+                                                            <property name="orientation">
+                                                                <enum>Vertical</enum>
+                                                            </property>
+                                                            <property name="sizeType">
+                                                                <enum>Expanding</enum>
+                                                            </property>
+                                                            <property name="sizeHint">
+                                                                <size>
+                                                                    <width>20</width>
+                                                                    <height>20</height>
+                                                                </size>
+                                                            </property>
+                                                        </spacer>
+                                                        <widget class="QPushButton">
+                                                            <property name="name">
+                                                                <cstring>importTablePushButton</cstring>
+                                                            </property>
+                                                            <property name="enabled">
+                                                                <bool>true</bool>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>&amp;Import Table...</string>
+                                                            </property>
+                                                            <property name="accel">
+                                                                <string>Alt+I</string>
+                                                            </property>
+                                                            <property name="toolTip" stdset="0">
+                                                                <string>Select this button if the layer that you want to use is not present in the current list</string>
+                                                            </property>
+                                                            <property name="whatsThis" stdset="0">
+                                                                <string>Open a dialog to enable import of a table.</string>
+                                                            </property>
+                                                        </widget>
+                                                    </vbox>
+                                                </widget>
+                                            </hbox>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                                <widget class="QLayoutWidget" row="2" column="0">
+                                    <property name="name">
+                                        <cstring>layout8</cstring>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout7</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>textLabel1_2</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Origin Column Name</string>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>originComboBox</cstring>
+                                                    </property>
+                                                    <property name="enabled">
+                                                        <bool>false</bool>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout6</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>textLabel1_3</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Destiny Column Name</string>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QComboBox">
+                                                    <property name="name">
+                                                        <cstring>destinyComboBox</cstring>
+                                                    </property>
+                                                    <property name="enabled">
+                                                        <bool>false</bool>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                                <widget class="QLayoutWidget" row="1" column="0">
+                                    <property name="name">
+                                        <cstring>layout13</cstring>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <spacer row="0" column="1">
+                                            <property name="name">
+                                                <cstring>spacer4</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>20</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QLabel" row="0" column="2">
+                                            <property name="name">
+                                                <cstring>textLabel1_4</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Code Size</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLineEdit" row="0" column="3">
+                                            <property name="name">
+                                                <cstring>codSizeLineEdit</cstring>
+                                            </property>
+                                        </widget>
+                                        <widget class="QCheckBox" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>tabWinCheckBox</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>TabWin Table</string>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupBox4</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Link Column Name from Reference Theme</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QComboBox" row="0" column="0">
+                            <property name="name">
+                                <cstring>objectIdComboBox</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupBox7</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Output Layer Name</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLineEdit" row="0" column="0">
+                            <property name="name">
+                                <cstring>newLayerLineEdit</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>LineEditPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>closePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>FlowDiagramGeneration</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>flowDataTableComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>FlowDiagramGeneration</receiver>
+        <slot>flowDataTableComboBox_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>importTablePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>FlowDiagramGeneration</receiver>
+        <slot>importTablePushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>generatePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>FlowDiagramGeneration</receiver>
+        <slot>generatePushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>flowDataTableComboBox</tabstop>
+    <tabstop>importTablePushButton</tabstop>
+    <tabstop>tabWinCheckBox</tabstop>
+    <tabstop>codSizeLineEdit</tabstop>
+    <tabstop>originComboBox</tabstop>
+    <tabstop>destinyComboBox</tabstop>
+    <tabstop>objectIdComboBox</tabstop>
+    <tabstop>newLayerLineEdit</tabstop>
+    <tabstop>helpPushButton</tabstop>
+    <tabstop>generatePushButton</tabstop>
+    <tabstop>closePushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">string</include>
+    <include location="global" impldecl="in declaration">PluginParameters.h</include>
+    <include location="global" impldecl="in declaration">TeSharedPtr.h</include>
+    <include location="global" impldecl="in declaration">TeTheme.h</include>
+    <include location="global" impldecl="in declaration">TeView.h</include>
+    <include location="local" impldecl="in implementation">flowDiagramGeneration.ui.h</include>
+</includes>
+<forwards>
+    <forward>class TeThemeApplication;</forward>
+    <forward>class TeDatabase;</forward>
+    <forward>using namespace std;</forward>
+    <forward>class TeLayer;</forward>
+    <forward>class TeFlowDataGenerator;</forward>
+    <forward>class TeFlowUtils;</forward>
+</forwards>
+<variables>
+    <variable>TeTheme* currentTheme_;</variable>
+    <variable>PluginParameters * plug_pars_ptr_;</variable>
+    <variable>TeSharedPtr&lt; TeDatabase &gt; local_db_ptr_;</variable>
+    <variable>TeView* currentView_;</variable>
+</variables>
+<slots>
+    <slot>flowDataTableComboBox_activated( int index )</slot>
+    <slot>importTablePushButton_clicked()</slot>
+    <slot>generatePushButton_clicked()</slot>
+    <slot returnType="bool">updateTableFromTabWin()</slot>
+</slots>
+<functions>
+    <function>init( PluginParameters * plug_pars_ptr )</function>
+    <function>listFlowDataTables( const string &amp; defaultTable )</function>
+    <function>listColumnLinkName()</function>
+    <function returnType="string">getNewThemeName( string name )</function>
+    <function returnType="bool">isValidName( QString s )</function>
+    <function>updateInterface( PluginParameters * plug_pars_ptr )</function>
+</functions>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

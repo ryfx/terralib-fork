@@ -1,0 +1,153 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Plotagem de gráfico de dispersão 3D</title>
+</head>
+<body lang=PT-BR link=blue vlink=blue>
+<div class=Section1>
+<p align=center>
+	<strong><u>
+		<span style='font-size: 13.5pt;font-family:Arial'>Dispersion 3D Graphic Plot</span>
+	</u></strong>
+</p>
+<p>
+	<span style='font-family:Arial'>
+	The interface is activated through grid area. At least three variables must be selected in the grid to enable &quot;Dispersion 3D&quot; option in the context menu of the grid viewport. The context menu is shown in Figure 1.
+<p align=center>
+<img id="_x0000_i1037" src="graphic3DWindow_arquivos/Figura1.png">
+<br>
+Fig. 1 – Context menu to activate the dispersion 3D graphic.
+</p>
+Selected columns are assigned x, y, and z axis, respectively. To change the assignments, swapping of the grid columns must be executed before activating the 3D graphic plot interface.
+<br><br>
+The dispersion 3D graphic interface is shown in Figure 2. TerraView uses QT and opengl libraries to plot the graphic.
+<p align=center>
+<img id="_x0000_i1036" src="graphic3DWindow_arquivos/Figura2.png">
+<br>
+Fig. 2 – Interface to plot a dispersion 3D graphic.
+</p>
+The interface has four drawing areas. The main area displays the data plotted in three dimensions. The remaining drawing areas display the same data plotted in bi-dimensional planes.
+<br><br>
+The operation is similar to dispersion 2D graphic. Firstly data representing <i>not pointed objects</i> are drawn using theme default color. Data representing <i>pointed objects are drawn</i> using theme pointing color.
+<br><br>
+&quot;Viewing Control&quot; box contains commands to change the visualization mode of 3D data. Displaying tri-dimensional data in a bi-dimensional area requires controls to visualize data at different angles and positions.
+<br><br>
+&quot;Show Axis&quot; controls the display of axis x, y, and z axis. Figure 3 shows the interface without axis display.
+<p align=center>
+<img id="_x0000_i1035" src="graphic3DWindow_arquivos/Figura3.png">
+<br>
+Fig. 3 - X, y, and z axis removed.
+</p>
+&quot;Quality&quot; slider controls the quality of 3D points plot. Since each point is represented by a sphere, this slider controls the quality of a sphere drawing. The worst the quality, the faster the plot.
+<br><br>
+&quot;Zoom&quot; slider controls the zoom. Figure 4 shows data display with zoom.
+<p align=center>
+<img id="_x0000_i1034" src="graphic3DWindow_arquivos/Figura4.png">
+<br>
+Fig. 4 - 3D data zoom.
+</p>
+Zoom can also be executed through the mouse the middle button or the roller. Drag the mouse upwards to decrease zoom. Drag the mouse downwards to increase zoom.
+<br><br>
+The illumination considers the light sources: front or back. Figure 5 is similar to Figure 4, but the illumination is from behind.
+<p align=center>
+<img id="_x0000_i1033" src="graphic3DWindow_arquivos/Figura5.png">
+<br>
+Fig. 5 – Illumination from behind.
+</p>
+&quot;Rotation&quot; box contains X, Y, and Z sliders to control rotations in x, y, and z, respectively. Figure 6 shows 3D data plot with rotation.
+<p align=center>
+<img id="_x0000_i1032" src="graphic3DWindow_arquivos/Figura6.png">
+<br>
+Fig. 6 - 3D data plot with rotation.
+</p>
+Rotation can also be executed by mouse. Press alt key and left button to control rotation in x and y. Press control key and left button to control rotation in z. If LINUX is used, Alt key must be used with Control key simultaneously.
+<br><br>
+&quot;Selection Control&quot; box controls the origin and the size of selection hexagon. Selection hexagon is displayed with magenta color.
+<br><br>
+&quot;Offset&quot; and &quot;Size&quot; boxes contain sliders to control the origin and the size of the hexagon in x, y, and z. Figure 7 shows the hexagon in a new location.
+<p align=center>
+<img id="_x0000_i1031" src="graphic3DWindow_arquivos/Figura7.png">
+<br>
+Fig. 7 – Selection hexagon in a new location.
+</p>
+Selection control can also be executed by mouse using the three bi-dimensional plane drawing areas. Place the mouse cursor at the center of the rectangle of each drawing area and drag the rectangle to its new location. Place the cursor near the edges to control the rectangle size (hexagon). Figure 8 shows the rectangle being dragged and Figure 9 shows the rectangle being resized.
+<p align=center>
+<img id="_x0000_i1030" src="graphic3DWindow_arquivos/Figura8.png">
+<br>
+Fig. 8 – Selection rectangle being dragged (relocated).
+</p>
+<p align=center>
+<img id="_x0000_i1029" src="graphic3DWindow_arquivos/Figura9.png">
+<br>
+Fig. 9 – Selection rectangle being resized.
+</p>
+Selection is executed every time the hexagon changes either size or position. Figure 10 shows the hexagon located on a 3D points cloud. Figure 11 shows the same data in zoom.
+<br><br>
+Every time the selection rectangle is changed, a query is executed to search for all objects inside the hexagon. However, when the hexagon is changed by mouse, there is an option to only relocate without a query. Use Control key to use this option. To add the new selection to the current one, use Shift key.
+<p align=center>
+<img id="_x0000_i1028" src="graphic3DWindow_arquivos/Figura10.png">
+<br>
+Fig. 10 - Hexagon located on a 3D points cloud.
+</p>
+<p align=center>
+<img id="_x0000_i1027" src="graphic3DWindow_arquivos/Figura11.png">
+<br>
+Fig. 11 - Hexagon with zoom located on a 3D points cloud.
+</p>
+Almost all commands by mouse are available in the interface and only the 3D data translation command is executed exclusively by mouse. Translation is executed by dragging the mouse on the 3D drawing area with the left button pressed down.
+<br><br>
+The module allows also the analysis of a subset of data, using:
+<br><br>
+- all data,
+<br>
+- queried only,
+<br>
+- not queried only,
+<br>
+- grouped only, and
+<br>
+- not grouped only.
+<br><br>
+Figure 12 shows the list of input data.
+<p align=center>
+<img id="_x0000_i1026" src="graphic3DWindow_arquivos/Figura12.png">
+<br>
+Fig. 12 – List with input data options.
+</p>
+In addition, the module allows the analysis of data with 1 to n cardinality. When grouping is not used, all grid data are plotted in the interface. When data is grouped, they are summarized by:
+<br><br>
+- MIN,
+<br>
+- MAX,
+<br>
+- AVG,
+<br>
+- SUM, and
+<br>
+- COUNT.
+<br><br>
+Figure 13 shows the list with summary option (grouping functions).
+<p align=center>
+<img id="_x0000_i1025" src="graphic3DWindow_arquivos/Figura13.png">
+<br>
+Fig. 13 – List with grouping functions options.
+</p>
+Observations on 1 to n cardinality.
+<br><br>
+The module considers that an object is pointed if at least one of its attributes lines is pointed. Therefore, its graphic representation is drawn on the map using the theme pointing color. Other modules, such as histogram, dispersion, and dispersion 3D, draw objects according to:
+<br><br>
+- When there is no grouping function, all table values are used to plot the graphic. In this case, only points or bars related to the attributes pointed on the grid are drawn using the theme pointing color.
+<br><br>
+- When a grouping function is used, the summarized values for each object are used to plot the graphic. Therefore, by pointing to a line of its attributes, an object is considered as pointed. Similarly, by satisfying a line of its attributes in a query, an object is considered as queried.
+<br><br>
+These observations are important when the input data is filtered by queried, not queried, grouped, and not grouped.
+
+</p>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+</body>
+
+</html>

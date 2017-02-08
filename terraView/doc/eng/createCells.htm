@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>TerraView</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<font face="Arial, Helvetica, sans-serif" size="4">
+<table width="100%">
+  <tr>
+ 
+  </tr>
+  <tr> 
+    <td><b><font size="4" face="Arial, Helvetica, sans-serif">Create Cells Layer</font></b><br>
+      <hr>
+      <p>A layer of cells is created from another layer. TerraView has two strategies 
+        to create cells depending on the type of spatial data of the input layer. If the type 
+        is raster or another geometry that is not polygonal, the cells will be created 
+        from the bounding box of the layer. In this case, cells will cover the whole extents 
+        of the layer, in a way similar to a raster data, with a constant number of cells in 
+        each row and column of the layer. If the type of the data is polygonal, the 
+        cells will be created in a way that covers the polygons, but cells will be created only 
+        where there is an intersection between a polygon and a created cell. </p>
+      <p> When menu item <b>Layer</b> - <b>Create Cells</b> is clicked or the context menu 
+        on the layer name is clicked and the Create Cells option is selected, the interface shown 
+        in the figure below will be displayed.</p>
+      <p align="center"><img src="terraViewBase_arquivos/criar_celulas.png" width="355" height="374"></p>
+      <p>1. Select the reference <b>Layer</b> or <b>Theme</b> to create the cells layer. Observe 
+        that the interface ticks the <b>Polygons</b> option if it finds out that the selected 
+        layer has this representation.</p>
+      <p>2. The fields related to <b>Bounding Box</b> are filled in based on the dimension of 
+        the selected layer or theme.</p>
+      <p>3. In <b>New Layer</b> field, fill in <b>Res. X</b> and <b>Res. Y</b> based on 
+        the reference layer scale and on the number and size of the cells to be created. 
+        Type in a <b>Name</b> for the new cells layer.</p>
+      <p>4. Click on <b>OK</b>. A warning message will be displayed to inform the number of columns 
+        and of rows of the cells layer to be created. Click on <b>Yes</b> to confirm. 
+        This operation may take a long time  depending on the selected layer size and the number 
+        of cells to be created.</p>
+      <p>When the operation is finished, the new layer with cells has been created. Create a 
+        theme using this layer to visualize it in the Draw Area.</p>
+      <p>Figure below presents the difference between the use of polygonal and raster data when 
+        creating a cells layer.
+      </p>
+      <p align="center"><img src="terraViewBase_arquivos/criar_celulas1.png" width="531" height="369" border="1"></p>
+	  <p>&nbsp;</p>
+    </td>
+  </tr>
+  <tr>
+  </tr>
+</table>
+</font> 
+</body>
+</html>

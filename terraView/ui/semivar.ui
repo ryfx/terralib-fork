@@ -1,0 +1,914 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>Semivar</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Semivar</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>301</width>
+            <height>451</height>
+        </rect>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>32767</width>
+            <height>32767</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Measure Of Spatial Variability</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout72</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout71</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>variableTextLabel</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Variable :</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignLeft</set>
+                            </property>
+                        </widget>
+                        <widget class="QComboBox">
+                            <property name="name">
+                                <cstring>variableComboBox</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>160</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>160</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer45</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>21</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </hbox>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer44</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QButtonGroup">
+                    <property name="name">
+                        <cstring>statisticsButtonGroup</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>246</width>
+                            <height>195</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>1000</width>
+                            <height>195</height>
+                        </size>
+                    </property>
+                    <property name="title">
+                        <string>Statistics</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="1" column="0">
+                            <property name="name">
+                                <cstring>layout9</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer1_2</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>40</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>okPushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&amp;OK</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+O</string>
+                                    </property>
+                                    <property name="autoDefault">
+                                        <bool>false</bool>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer1</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>40</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </hbox>
+                        </widget>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout66</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout64</cstring>
+                                    </property>
+                                    <vbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>choiceTextLabel</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Choice:</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>AlignVCenter|AlignRight</set>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>nLagTextLabel</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>No. Lag :</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>AlignVCenter|AlignRight</set>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>incrementTextLabel</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Increment :</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>AlignVCenter|AlignRight</set>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>directionTextLabel</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Direction :</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>AlignVCenter|AlignRight</set>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>angularTolTextLabel</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Angular Tolerance:</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>AlignVCenter|AlignRight</set>
+                                            </property>
+                                        </widget>
+                                    </vbox>
+                                </widget>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout65</cstring>
+                                    </property>
+                                    <vbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QComboBox">
+                                            <property name="name">
+                                                <cstring>choiceComboBox</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>160</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>160</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLineEdit">
+                                            <property name="name">
+                                                <cstring>nLagLineEdit</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>85</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>85</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                            <property name="frameShape">
+                                                <enum>LineEditPanel</enum>
+                                            </property>
+                                            <property name="frameShadow">
+                                                <enum>Sunken</enum>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLineEdit">
+                                            <property name="name">
+                                                <cstring>incrementLineEdit</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>85</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>85</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLineEdit">
+                                            <property name="name">
+                                                <cstring>directionLineEdit</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>85</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>85</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                            <property name="frameShape">
+                                                <enum>LineEditPanel</enum>
+                                            </property>
+                                            <property name="frameShadow">
+                                                <enum>Sunken</enum>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLineEdit">
+                                            <property name="name">
+                                                <cstring>angularTolLineEdit</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>85</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>85</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </widget>
+                                    </vbox>
+                                </widget>
+                            </hbox>
+                        </widget>
+                    </grid>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer43</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QButtonGroup">
+                    <property name="name">
+                        <cstring>adjustButtonGroup</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>246</width>
+                            <height>136</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>1000</width>
+                            <height>136</height>
+                        </size>
+                    </property>
+                    <property name="title">
+                        <string>Adjust</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="1">
+                            <property name="name">
+                                <cstring>layout68</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QComboBox">
+                                    <property name="name">
+                                        <cstring>modelComboBox</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>160</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>160</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </widget>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout21</cstring>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QSlider">
+                                            <property name="name">
+                                                <cstring>pepitaEffectSlider</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>85</width>
+                                                    <height>16</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>85</width>
+                                                    <height>16</height>
+                                                </size>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>9999</number>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLineEdit">
+                                            <property name="name">
+                                                <cstring>pepitaEffectLineEdit</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>35</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>35</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                            <property name="frameShape">
+                                                <enum>LineEditPanel</enum>
+                                            </property>
+                                            <property name="frameShadow">
+                                                <enum>Sunken</enum>
+                                            </property>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout22</cstring>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QSlider">
+                                            <property name="name">
+                                                <cstring>contributionSlider</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>85</width>
+                                                    <height>16</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>85</width>
+                                                    <height>16</height>
+                                                </size>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>9999</number>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLineEdit">
+                                            <property name="name">
+                                                <cstring>contributionLineEdit</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>35</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>35</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout67</cstring>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QSlider">
+                                            <property name="name">
+                                                <cstring>rangeSlider</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>85</width>
+                                                    <height>16</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>85</width>
+                                                    <height>16</height>
+                                                </size>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>9999</number>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLineEdit">
+                                            <property name="name">
+                                                <cstring>rangeLineEdit</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>35</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>35</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                            </vbox>
+                        </widget>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout69</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>modelTextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Model :</string>
+                                    </property>
+                                    <property name="textFormat">
+                                        <enum>PlainText</enum>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>pepitaEffectTextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Pepita Effect :</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>contributionTextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Contribution :</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>rangeTextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Range :</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                    </grid>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer42</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout60</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer3_3</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>18</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>cancelPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Cancel</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer3</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>19</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>variableComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>Semivar</receiver>
+        <slot>variableComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>choiceComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>Semivar</receiver>
+        <slot>choiceComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>Semivar</receiver>
+        <slot>okPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>modelComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>Semivar</receiver>
+        <slot>modelComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>pepitaEffectSlider</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>Semivar</receiver>
+        <slot>pepitaEffectSlider_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>pepitaEffectLineEdit</sender>
+        <signal>returnPressed()</signal>
+        <receiver>Semivar</receiver>
+        <slot>pepitaEffectLineEdit_returnPressed()</slot>
+    </connection>
+    <connection>
+        <sender>contributionLineEdit</sender>
+        <signal>returnPressed()</signal>
+        <receiver>Semivar</receiver>
+        <slot>contributionLineEdit_returnPressed()</slot>
+    </connection>
+    <connection>
+        <sender>rangeSlider</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>Semivar</receiver>
+        <slot>rangeSlider_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>rangeSlider</sender>
+        <signal>sliderMoved(int)</signal>
+        <receiver>Semivar</receiver>
+        <slot>rangeSlider_sliderMoved(int)</slot>
+    </connection>
+    <connection>
+        <sender>rangeLineEdit</sender>
+        <signal>returnPressed()</signal>
+        <receiver>Semivar</receiver>
+        <slot>rangeLineEdit_returnPressed()</slot>
+    </connection>
+    <connection>
+        <sender>pepitaEffectSlider</sender>
+        <signal>sliderMoved(int)</signal>
+        <receiver>Semivar</receiver>
+        <slot>pepitaEffectSlider_sliderMoved(int)</slot>
+    </connection>
+    <connection>
+        <sender>contributionSlider</sender>
+        <signal>sliderMoved(int)</signal>
+        <receiver>Semivar</receiver>
+        <slot>contributionSlider_sliderMoved(int)</slot>
+    </connection>
+    <connection>
+        <sender>contributionSlider</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>Semivar</receiver>
+        <slot>contributionSlider_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>Semivar</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>Semivar</receiver>
+        <slot>reject()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>variableComboBox</tabstop>
+    <tabstop>choiceComboBox</tabstop>
+    <tabstop>nLagLineEdit</tabstop>
+    <tabstop>incrementLineEdit</tabstop>
+    <tabstop>directionLineEdit</tabstop>
+    <tabstop>angularTolLineEdit</tabstop>
+    <tabstop>okPushButton</tabstop>
+    <tabstop>modelComboBox</tabstop>
+    <tabstop>pepitaEffectSlider</tabstop>
+    <tabstop>pepitaEffectLineEdit</tabstop>
+    <tabstop>contributionSlider</tabstop>
+    <tabstop>contributionLineEdit</tabstop>
+    <tabstop>rangeSlider</tabstop>
+    <tabstop>rangeLineEdit</tabstop>
+    <tabstop>cancelPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">TeMatrix.h</include>
+    <include location="global" impldecl="in declaration">TeMSVFactory.h</include>
+    <include location="global" impldecl="in implementation">qapplication.h</include>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="local" impldecl="in implementation">semivar.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>class TeAppTheme;</forward>
+    <forward>class TeLayer;</forward>
+    <forward>class TeDatabase;</forward>
+    <forward>class TeSTElementSet;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable access="private">bool MVEpressexec_;</variable>
+    <variable access="private">double MVEvariancia_;</variable>
+    <variable access="private">double MVEalcance_;</variable>
+    <variable access="private">double MVEcontribuicao_;</variable>
+    <variable access="private">double MVEefeitopepita_;</variable>
+    <variable access="private">TeMatrix MVEmodel_;</variable>
+    <variable access="private">TeSTElementSet* elementSet_;</variable>
+    <variable access="private">TeMatrix MVEgraph_;</variable>
+    <variable access="private">TeMSVParams MSVParams_;</variable>
+    <variable access="public">bool erro_;</variable>
+    <variable access="private">TerraViewBase* mainWindow_;</variable>
+    <variable access="private">TeAppTheme* theme_;</variable>
+    <variable access="private">TeDatabase* db_;</variable>
+    <variable access="private">TeLayer* layer_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot>variableComboBox_activated( const QString &amp; variavel )</slot>
+    <slot>choiceComboBox_activated( const QString &amp; )</slot>
+    <slot>okPushButton_clicked()</slot>
+    <slot>modelComboBox_activated( const QString &amp; modelo )</slot>
+    <slot>pepitaEffectSlider_valueChanged( int i )</slot>
+    <slot>pepitaEffectLineEdit_returnPressed()</slot>
+    <slot>contributionLineEdit_returnPressed()</slot>
+    <slot>rangeSlider_valueChanged( int i )</slot>
+    <slot>rangeSlider_sliderMoved( int i )</slot>
+    <slot>rangeLineEdit_returnPressed()</slot>
+    <slot>pepitaEffectSlider_sliderMoved( int i )</slot>
+    <slot>clearPushButton_clicked()</slot>
+    <slot>contributionSlider_sliderMoved( int i )</slot>
+    <slot>contributionSlider_valueChanged( int i )</slot>
+    <slot access="protected">closeEvent( QCloseEvent * )</slot>
+    <slot>helpPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function>init()</function>
+    <function specifier="non virtual">fill_MVEmatrix()</function>
+    <function>fill_MVEmatrixDiag()</function>
+    <function specifier="non virtual">calculaVariancia()</function>
+    <function>show()</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

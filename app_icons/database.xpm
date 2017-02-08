@@ -1,0 +1,27 @@
+/* XPM */
+static const char *database_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 5 1",
+"  c black",
+". c #808000",
+"X c yellow",
+"o c #808080",
+"O c #c0c0c0",
+/* pixels */
+"OOOO        OOOO",
+"OO  ........  OO",
+"O XX.......... O",
+" XXXX.......... ",
+"  XXX.........  ",
+" X  XX......  . ",
+" XXX        ... ",
+"  XXX........   ",
+" X  XX.....  .. ",
+" XXX       .... ",
+"  XXX........   ",
+" X  XX.....  .. ",
+" XXX      ..... ",
+"  XXX........   ",
+"OO  XX.....  ooo",
+"OOOO       oooOO"
+};

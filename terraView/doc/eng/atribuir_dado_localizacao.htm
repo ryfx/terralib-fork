@@ -1,0 +1,65 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>TerraView</title>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+<div class=Section1> 
+  <p> <font size="3" face="Arial, Helvetica, sans-serif"><strong> <span style='font-family:"Arial","sans-serif";'> 
+    TerraView</span> </strong> </font></p>
+  
+<p align=right> <font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family: "Arial","sans-serif";'> 
+  </span><span style='font-family: "Arial","sans-serif";'><a href="metodo_intersecao.htm">&lt;&lt; 
+  Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="createBuffersWindow.htm">Next 
+  &gt;&gt;</a> </span> </font></p>
+  <hr size=2 width="100%" align=center>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><strong><u> 
+    <span style='font-size:13.5pt;font-family:"Arial","sans-serif";'> Assign Data 
+    by Location</span></u></strong><br>
+    </font></p>
+  
+<div align="justify"><font size="3" face="Arial, Helvetica, sans-serif"> 
+  <p>The operation of assigning data by location is executed between two selected 
+    themes. It consists of adding a theme X attributes to a theme Y, based on 
+    the spatial relationship between these two geographic objects. This operation 
+    creates a new table of attributes consisting of the X attributes and it associates 
+    X to the Y theme. There are two strategies for this operation: Distribute 
+    and Collect. This operation takes into consideration two themes, theme X, 
+    which provides the attributes and theme Y, which receives the attributes. 
+  <p><strong>Distribute</strong> </p>
+  <p>The distribution strategy consists of assigning attributes of each geographic 
+    object of theme X to all objects of theme Y, which have a particular spatial 
+    relationship. 
+  <p><strong>Collect</strong></p>
+  <p>Another very useful geographic operation comes from the need of generating 
+    information from two distinct geographic objects. Imagine a situation in which 
+    there is a map of Belo Horizonte divided into neighborhoods and overlaid upon 
+    this map the point location of crimes committed in the year 2000. The desired 
+    information is the number of crimes in each one of the neighborhoods, that 
+    is, the count of how many point objects, which represent the crimes in 2000, 
+    are inside each one of the polygons representing the neighborhoods.</p>
+  <p>In this case, choose the <strong>Geographic</strong> Option <strong>&gt; 
+    Assign Data by Location &gt; Collect</strong>. A window, like the one bellow, 
+    will open up:</p>
+  <p>1. Select a theme to assign data to.</p>
+  <p>2. Select a theme to assign data from.</p>
+  <p>3. Create and assign data to table.</p>
+  <p>4. Choose the assign type, in this case, the number of crimes in 2000.</p>
+  <p>5. Click <em>OK</em>.</p>
+  <p align=center><img border=0 id="_x0000_i1028" src="terraViewBase_arquivos/atribuir_coleta.png"></p>
+  <p align="justify"> In the Grid Area of the figure bellow, a new column was 
+    generated from this procedure (crimes2000_object_) and it represents the count 
+    of crimes in the year 2000 for each one of the neighborhoods in Belo Horizonte.</p>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><img border=0 id="_x0000_i1027" src="terraViewBase_arquivos/crimes_2000.png"> 
+    </font></p>
+  <hr size=2 width="100%" align=center>
+  <p align=right><font size="3" face="Arial, Helvetica, sans-serif"> <span style='font-family: "Arial","sans-serif";'><a href="metodo_intersecao.htm">&lt;&lt; 
+    Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="createBuffersWindow.htm">Next 
+    &gt;&gt;</a> </span> </font></p>
+  </font></div>
+
+</body>
+
+</html>

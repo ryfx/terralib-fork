@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>TerraView</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<p><font size="3" face="Arial"><strong>TerraView  </strong> </font></p>
+<p align="right"><font face="Arial"><a href="metodo_skater.htm">&lt;&lt; Anterior</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">In&iacute;cio</a> 
+  | <a href="spatializationWindow.htm">Próximo &gt;&gt;</a><font face="Arial"> 
+  </font> </font></p>
+<hr>
+<font face="Arial"> 
+<p align="center"><font size="4" face="Arial"><strong><u><strong>Mapa de Kernel</strong></u></strong></font></p>
+</font><p>&nbsp;</p>
+        
+<p><font face="Arial">O Mapa de Kernel &eacute; uma alternativa para analisar 
+  o comportamento de padr&otilde;es de pontos. Basicamente o Mapa de Kernel fornece, 
+  por meio de interpola&ccedil;&atilde;o, a intensidade pontual do processo em 
+  toda a regi&atilde;o de estudo. Assim temos uma vis&atilde;o geral da intensidade 
+  do processo em todas as regi&otilde;es do mapa. Para mais informa&ccedil;&otilde;es 
+  sobre o Mapa de Kernel, consulte a Aula 8 do tutorial do TerraView.<br>
+          <br>
+          Com o banco de dados de Belo Horizonte aberto, torne vis&iacute;veis 
+          os temas Bairros e Crimes2000. Lembre-se de que voc&ecirc; s&oacute; 
+          ver&aacute; os pontos de crimes se os mesmo forem desenhados sobre os 
+          bairros, ou se os pol&iacute;gonos dos bairros estiverem transparentes.</font></p>
+        <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/mapa_kernel.png" border="1"></font></p>
+          
+            
+<p><font face="Arial">1. No menu <strong>An&aacute;lise</strong> escolha a op&ccedil;&atilde;o 
+  <strong>Mapa de Kernel</strong>.</font></p>
+         
+        <p><font face="Arial"><br>
+  A tela baixo aparecer&aacute; e nela devem ser definidos os par&acirc;metros 
+  para fazer o Mapa de Kernel.</font></p>
+        <p></p>
+        <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/mapa_kernel1.png"></font></p>
+          
+          <p><font face="Arial"><br>
+  2. No campo <b>Regi&atilde;o de Suporte</b> escolha a op&ccedil;&atilde;o <em>Grade 
+  sobre os Eventos</em>.</font></p>
+         
+        <p><font face="Arial">Esta op&ccedil;&atilde;o criar&aacute; 
+          um ret&acirc;ngulo envolvendo todos os pontos do tema selecionado, este 
+          ret&acirc;ngulo pode ultrapassar o limite da sua regi&atilde;o de estudo.</font></p>
+        
+<p><font face="Arial">Com a op&ccedil;&atilde;o <b>Grade sobre a Regi&atilde;o</b>, 
+  se a regi&atilde;o escolhida possuir apenas um pol&iacute;gono, por exemplo 
+  o tema Limite, ser&aacute; criada uma grade que n&atilde;o ultrapassa o limite 
+  desta regi&atilde;o. Caso a regi&atilde;o escolhida possua mais de um pol&iacute;gono, 
+  como &eacute; o caso do tema Bairros, ser&aacute; criado um ret&acirc;ngulo 
+  que envolva todos os pol&iacute;gonos de uma s&oacute; vez.</font></p>
+<p  ><font face="Arial">A op&ccedil;&atilde;o <b>Sem grade</b> considera como 
+  grade os pr&oacute;prios pol&iacute;gonos do tema escolhido. Esta op&ccedil;&atilde;o 
+  associa ao tema uma legenda semelhante &agrave; criada nos mapas tem&aacute;ticos.</font></p>
+<p><font face="Arial">3. No campo <b>Op&ccedil;&otilde;es da Grade</b> 
+  a op&ccedil;&atilde;o N&uacute;meros de Colunas define a suaviza&ccedil;&atilde;o 
+  do mapa. O valor padr&atilde;o de 50 produz bons resultados.</font></p>
+<p><font face="Arial"> 4. No campo <b>Nome do Plano</b> defina o nome da nova 
+  camada onde ser&atilde;o guardadas as informa&ccedil;&otilde;es do Mapa de Kernel 
+  (Kcrimes2000).</font></p>
+<p><font face="Arial"> 5. No campo <b>Eventos</b> escolha a op&ccedil;&atilde;o 
+  Pontos e selecione o tema Crimes2000 no campo Tema.</font></p>
+          
+<p><font face="Arial"> 6. Nos campos reservados ao <b>Algoritmo</b>, n&atilde;o 
+  &eacute; necess&aacute;rio fazer modifica&ccedil;&otilde;es. A <b>Fun&ccedil;&atilde;o</b> 
+  e o <b>C&aacute;lculo</b> definidos como padr&atilde;o pelo programa s&atilde;o 
+  os tradicionalmente utilizados.</font></p>
+          
+<p><font face="Arial"> 7. Com a op&ccedil;&atilde;o <b>Adaptativo</b> selecionada, 
+  o raio &eacute; calculado automaticamente. </font></p>
+          
+<p><font face="Arial"> 8. Clique em <b>Executar</b>. </font></p>
+         
+        
+<p ><font face="Arial">Agora uma nova camada e um novo tema ser&atilde;o automaticamente 
+  criados com o nome que voc&ecirc; definiu no passo 4. A exibi&ccedil;&atilde;o 
+  do Mapa de Kernel na tela de visualiza&ccedil;&atilde;o tamb&eacute;m &eacute; 
+  autom&aacute;tica.</font></p>
+        
+<p  ><font face="Arial"> A figura abaixo representa o Mapa de Kernel criado com 
+  os temas e atributos escolhidos acima:</font></p>
+        <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/mapa_kernel3.png" width="349" height="375" border="1"></font></p>
+        <p  ><font face="Arial">Devido a grande quantidade de pontos 
+          na regi&atilde;o central de Belo Horizonte, o Mapa de Kernel indica 
+          uma forte concentra&ccedil;&atilde;o de crimes em um &uacute;nico ponto 
+          da cidade e praticamente desconsidera outras &aacute;reas de criminalidade, 
+          comprometendo a visualiza&ccedil;&atilde;o. </font></p>
+        <p><font face="Arial">Remova o tema Kcrimes2000.</font></p>
+        <p><font face="Arial">Faremos, ent&atilde;o, um mapa com 
+          temas de homic&iacute;dios em 2000:</font></p>
+        <p><font face="Arial">Com o banco de dados de Belo Horizonte 
+          aberto, torne vis&iacute;veis os temas Bairros e Crimes2000. Lembre-se 
+          de que voc&ecirc; s&oacute; ver&aacute; os pontos de crimes se os mesmo 
+          forem desenhados sobre os bairros, ou se os pol&iacute;gonos dos bairros 
+          estiverem transparentes.</font></p>
+          
+          
+<p><font face="Arial">1. Ative o menu de contexto do tema Crimes2000.</font></p>
+          
+<p><font face="Arial"> 2. Escolha a op&ccedil;&atilde;o <strong>Consulta por 
+  Atributo</strong>.</font></p>
+          
+<p><font face="Arial"> 3. No campo <b>Atributo</b> escolha a op&ccedil;&atilde;o 
+  DESCRI&Ccedil;&Atilde;O.</font></p>
+          
+<p><font face="Arial"> 4. Escolha o <b>operador</b> =.</font></p>
+          
+<p  ><font face="Arial"> 5. Ative <b>Valores do Atributo</b> e escolha a op&ccedil;&atilde;o 
+  HOMICIO CONSUMADO.</font></p>
+          
+<p><font face="Arial"> 6. Clique em <b>Nova Consulta</b>.</font></p>
+         
+        <p><font face="Arial">Voc&ecirc; acabou de consultar somente 
+          os crimes com descri&ccedil;&atilde;o de homic&iacute;dio consumado. 
+          </font></p>
+          
+          <p><font face="Arial">7. Crie uma nova camada com os 
+            itens consultados e depois crie uma vista com essa nova camada chamada 
+            homicidios2000. </font></p>
+         
+        
+<p><font face="Arial"> Com os temas Bairros e homicidios2000 vis&iacute;veis, 
+  fa&ccedil;a os procedimentos para criar o Mapa de Kernel:</font></p>
+          
+          
+<p  ><font face="Arial">1. No menu <strong>An&aacute;lise</strong> escolha a op&ccedil;&atilde;o 
+  <strong>Mapa de Kernel.</strong></font></p>
+          
+<p  ><font face="Arial"> 2. No campo <b>Regi&atilde;o de Suporte</b> escolha a 
+  op&ccedil;&atilde;o <b>Grade sobre Evento</b>.</font></p>
+          
+<p><font face="Arial"> 3. No campo <b>Op&ccedil;&otilde;es da Grade</b> a op&ccedil;&atilde;o 
+  <b>N&uacute;meros de Colunas</b> define a suaviza&ccedil;&atilde;o do mapa. 
+  O valor padr&atilde;o de 50 produz bons resultados.</font></p>
+          
+<p><font face="Arial"> 4. No campo <b>Nome do Plano</b> defina o nome 
+  da nova camada onde ser&atilde;o guardadas as informa&ccedil;&otilde;es do mapa 
+  de kernel (Khomicidio2000).</font></p>
+          
+<p><font face="Arial"> 5. No campo <b>Eventos</b> escolha a op&ccedil;&atilde;o 
+  <b>Pontos</b> e selecione o tema homicidio2000 no campo Tema.</font></p>
+          
+<p  ><font face="Arial"> 6. Nos campos reservados ao <b>Algoritmo</b>, n&atilde;o 
+  &eacute; necess&aacute;rio fazer modifica&ccedil;&otilde;es. A <b>Fun&ccedil;&atilde;o</b> 
+  e o <b>C&aacute;lculo</b> definidos como padr&atilde;o pelo programa s&atilde;o 
+  os tradicionalmente utilizados.</font></p>
+          
+<p><font face="Arial"> 7. Com a op&ccedil;&atilde;o <b>Adaptativo</b> 
+  selecionada, o raio &eacute; calculado automaticamente.</font></p>
+          
+<p><font face="Arial"> 8. Clique em <b>Executar</b>.</font></p>
+        <p><font face="Arial">
+  A figura abaixo mostra os mapas feitos com grade sobre os eventos e com grade 
+  sobre a regi&atilde;o, escolhendo os temas Bairros (com o Visual transparente) 
+  e Limite, respectivamente. O segundo mapa tem o Nome do Plano Khomicidio2000_2.<br>
+  Para criar mapas com a regi&atilde;o de suporte Grade sobre a regi&atilde;o 
+  ou Sem grade, &eacute; necess&aacute;rio verificar se os bancos de informa&ccedil;&otilde;es 
+  est&atilde;o na mesma proje&ccedil;&atilde;o que a vista e o tema de eventos.</font></p>
+        <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/mapa_kernel5.png" width="615" height="416" border="1"></font></p>
+        <p><font face="Arial"><strong>Exibindo a Legenda no Mapa 
+          de Kernel</strong></font></p>
+        
+<p><font face="Arial">Quando fazemos um Mapa de Kernel ele &eacute; exibido automaticamente 
+  na tela de visualiza&ccedil;&atilde;o, mas com a legenda n&atilde;o &eacute; 
+  assim. Para exibir a legenda junto ao mapa voc&ecirc; deve seguir os seguintes 
+  passos:</font></p>
+          
+          
+<p><font face="Arial">1. Ative o menu de contexto do tema Khomicidio2000 que foi 
+  criado automaticamente pelo programa.</font></p>
+          
+<p><font face="Arial"> 2. Escolha a op&ccedil;&atilde;o <strong>Visibilidade 
+  das Representa&ccedil;&otilde;es</strong>.</font></p>
+          
+<p><font face="Arial"> 3. Na janela Visibilidade do Tema marque a op&ccedil;&atilde;o 
+  <b>Legenda</b>.</font></p>
+         
+        <p><font face="Arial">
+          A legenda aparecer&aacute; no canto superior esquerdo da tela de visualiza&ccedil;&atilde;o. 
+          Clique no bot&atilde;o <b>Edi&ccedil;&atilde;o do Tema </b>para que voc&ecirc; 
+          possa mover a legenda para a posi&ccedil;&atilde;o que desejar.</font></p>
+        <p><font face="Arial"><strong>Outras informa&ccedil;&otilde;es 
+          importantes</strong></font></p>
+          
+          <p><font face="Arial"><font face="Arial"> <b>1. Sobre Conjunto de Dados</b></font></font></p>
+          <p><font face="Arial">Eventos do tipo Ponto se referem a dados pontuais, 
+            portanto todos os temas da vista ativa que possu&iacute;rem dados 
+            pontuais estar&atilde;o dispon&iacute;veis para serem escolhidos como 
+            Tema.</font></p>
+          
+<p><font face="Arial">&Eacute; poss&iacute;vel ainda atribuir &quot;pesos&quot; 
+  aos eventos, habilitando a op&ccedil;&atilde;o <b>Com Atributo</b> e escolhendo a tabela 
+  e a coluna onde est&atilde;o localizados os pesos.</font></p>
+          
+<p><font face="Arial">Eventos do tipo <b>&Aacute;rea</b> se referem a dados agregados, 
+  normalmente uma contagem. Todos os temas que possuem dados de &aacute;rea poder&atilde;o 
+  ser escolhidos como Tema. Um exemplo seria escolher o tema Bairros e usar a 
+  coluna de pop2000 como atributo da tabela Bairros. Para esse mapa, escolha o 
+  Nome do Plano Kb. Veja a figura &agrave; esquerda.<br>
+            </font></p>
+         
+      <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/mapa_kernel6.png" width="616" height="352" border="1"></font></p>
+        
+
+          
+<p><font face="Arial">Caso execute um Mapa de Kernel por Bairros sem nenhum atributo, 
+  ser&aacute; atribu&iacute;do peso um a todos os bairros e o mapa revelar&aacute; 
+  a concentra&ccedil;&atilde;o de bairros em Belo Horizonte. Nesse segundo mapa 
+  escolha Nome do Plano Kb2. Veja a figura &agrave; direita.</font></p>
+          <p><font face="Arial"><strong>2. Sobre o Algoritmo</strong></font></p>
+          <p><font face="Arial">Na parte reservada ao algoritmo o usu&aacute;rio 
+            tem a op&ccedil;&atilde;o de escolher a Fun&ccedil;&atilde;o que ser&aacute; 
+            utilizada para fazer os c&aacute;lculos, o que ser&aacute; calculado 
+            e o raio a ser utilizado.</font></p>
+          <p><font face="Arial">A op&ccedil;&atilde;o que normalmente &eacute; 
+            utilizada nos mapas de Kernel, e que o defaut do TerraView &eacute; 
+            a Fun&ccedil;&atilde;o Qu&aacute;rtico e C&aacute;lculo Densidade.</font></p>
+          <p><font face="Arial">Temos tr&ecirc;s op&ccedil;&otilde;es para C&aacute;lculo:</font></p>
+            
+            <p><font face="Arial">-<strong> Densidade</strong>: retorna a densidade 
+              de crimes por unidade de &aacute;rea.</font></p>
+            <p><font face="Arial"> -<strong> M&eacute;dia M&oacute;vel Espacial</strong>: 
+              retorna o n&uacute;mero esperado de crimes por unidade de &aacute;rea.</font></p>
+            <p><font face="Arial"> -<strong> Probabilidade</strong>: retorna a 
+              probabilidade de um crime, que j&aacute; ocorreu, estar localizado 
+              em determinada &aacute;rea.</font></p>
+           
+          
+<p><font face="Arial">As figuras abaixo representam a diferen&ccedil;a entre o 
+  c&aacute;lculo da densidade (figura &agrave; esquerda) e o c&aacute;lculo da 
+  m&eacute;dia m&oacute;vel espacial (figura &agrave; direita) para o Mapa de 
+  Kernel sem grade para pontos de homicidio2000, do tema Bairros. Para o segundo 
+  mapa, crie outro tema da camada Bairros com o nome de Bairros2.</font></p>
+         
+      <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/mapa_kernel7.png" width="650" height="380" border="1"></font></p>
+        
+     
+          <p><font face="Arial"><font face="Arial"><b>3. Sobre o Raio</b></font></font></p>
+          <p><font face="Arial">O raio &eacute; um par&acirc;metro muito importante 
+            na hora de fazer um mapa e sua defini&ccedil;&atilde;o exige do usu&aacute;rio 
+            um bom conhecimento dos crimes e da regi&atilde;o do estudo.</font></p>
+          <p><font face="Arial">O TerraView facilita essa tarefa ao permitir a 
+            utiliza&ccedil;&atilde;o do Kernel Adaptativo. A op&ccedil;&atilde;o 
+            Adaptativo calcula automaticamente um raio considerando o n&uacute;mero 
+            de eventos e a &aacute;rea. Os resultados obtidos usando o raio adaptativo 
+            s&atilde;o bastante razo&aacute;veis.</font></p>
+          <p><font face="Arial">Entretanto desmarcando a op&ccedil;&atilde;o Adaptativo 
+            voc&ecirc; poder&aacute; selecionar um raio de tr&ecirc;s formas distintas:</font></p>
+            
+            <p><font face="Arial">1. Definindo um valor espec&iacute;fico, que 
+              deve ser dado na mesma medida dos dados visualizados. O painel Informa&ccedil;&otilde;es 
+              mostra a largura e a altura do ret&acirc;ngulo que envolve os eventos, 
+              para servir como guia nessa sele&ccedil;&atilde;o.</font></p>
+            <p><font face="Arial"> 2. Selecionando o valor atrav&eacute;s do slider 
+              que mant&eacute;m propor&ccedil;&atilde;o da altura (ou largura 
+              da regi&atilde;o se essa for maior), em divis&otilde;es de 10 em 
+              10 por cento.</font></p>
+           
+         
+      <p></p>
+      <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/adaptivo.png" width="289" height="119" border="1"></font></p>
+        
+          
+          
+            <p><font face="Arial">3. Pressionando o bot&atilde;o segure o bot&atilde;o 
+              <b>Ctrl</b> <img src="terraViewBase_arquivos/botao_ctrl.png" width="22" height="21"> 
+              do teclado e trace no mapa o raio desejado, o valor desse raio ser&aacute; 
+              transcrito automaticamente na caixa <b>Raio</b> que est&aacute; ativa. 
+              </font></p>
+           
+         
+      <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/caixa_raio.png" border="1"></font></p>
+      
+<p>&nbsp;</p>
+ 
+<p>&nbsp;</p>
+       
+    <hr>
+<p align="right"><font face="Arial"><a href="metodo_skater.htm">&lt;&lt; Anterior</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">In&iacute;cio</a> 
+  | <a href="spatializationWindow.htm">Próximo &gt;&gt;</a><font face="Arial"> 
+  </font></font></p>
+<font face="Arial"><p  ><font face="Arial"> </font></p>
+</font><font face="Arial"></font> 
+</body>
+</html>

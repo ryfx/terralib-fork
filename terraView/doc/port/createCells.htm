@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>TerraView</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<font face="Arial, Helvetica, sans-serif" size="4">
+<table width="100%">
+  <tr>
+ 
+  </tr>
+  <tr> 
+    <td><b><font size="4" face="Arial, Helvetica, sans-serif">Criar Plano de C&eacute;lulas</font></b><br>
+      <hr>
+      <p>Um plano de c&eacute;lulas &eacute; criado a partir de um outro plano 
+        de informa&ccedil;&atilde;o. O TerraView possui duas estrat&eacute;gias 
+        para criar c&eacute;lulas, dependendo do tipo do dado espacial do plano 
+        de informa&ccedil;&atilde;o de entrada. Caso seja usado um dado matricial, 
+        ou alguma geometria que n&atilde;o seja poligonal, as c&eacute;lulas ser&atilde;o 
+        criadas a partir do ret&acirc;ngulo envolvente do plano de informa&ccedil;&atilde;o. 
+        Desta forma, as c&eacute;lulas cobrir&atilde;o toda a extens&atilde;o 
+        do plano de informa&ccedil;&atilde;o, de forma semelhante a um dado matricial, 
+        com um n&uacute;mero constante de c&eacute;lulas em cada linha e em cada 
+        coluna do plano. Caso seja selecionado um conjunto de dados poligonal, 
+        as c&eacute;lulas ser&atilde;o criadas de forma a preencher todo o espa&ccedil;o 
+        dos pol&iacute;gonos, mas ser&atilde;o criadas c&eacute;lulas apenas onde 
+        houver interse&ccedil;&atilde;o espacial entre algum pol&iacute;gono e 
+        a c&eacute;lula a ser criada. </p>
+      <p> Ao clicar em no menu <b>Plano</b> - <b>Criar C&eacute;lulas</b> ou no 
+        menu de contexto sobre o nome do Plano - Criar C&eacute;lulas, ser&aacute; 
+        exibida uma nova janela, conforme mostra a figura abaixo.</p>
+      <p align="center"><img src="terraViewBase_arquivos/criar_celulas.png" width="355" height="374"></p>
+      <p>1. Selecione o <b>Plano de Informa&ccedil;&atilde;o</b> ou o <b>Tema</b> 
+        de Refer&ecirc;ncia para criar o plano de c&eacute;lulas. Observe que 
+        a interface marca a op&ccedil;&atilde;o <b>Pol&iacute;gonos</b> caso identifique 
+        que o plano selecionado possua essa representa&ccedil;&atilde;o.</p>
+      <p>2. Os campos referentes ao <b>Ret&acirc;ngulo Envolvente</b> s&atilde;o 
+        preenchidos de acordo com a dimens&atilde;o do plano ou tema selecionados.</p>
+      <p>3. Na &aacute;rea <b>Novo Plano de Informa&ccedil;&atilde;o</b>, preencha 
+        os campo <b>Res. X</b> e <b>Res. Y </b>de acordo com a escala do plano 
+        de refer&ecirc;ncia e dependendo do n&uacute;mero e dimens&atilde;o das 
+        c&eacute;lulas que deseja criar. Preencha um <b>Nome</b> para o plano 
+        de c&eacute;lulas que ser&aacute; criado.</p>
+      <p>4. Clique em <b>Executar</b>. Ser&aacute; exibida uma mensagem informando 
+        ao usu&aacute;rio o n&uacute;mero de colunas x n&uacute;mero de linhas 
+        do plano de c&eacute;lulas que ser&aacute; criado. Clique em <b>Sim</b> para 
+        confirmar. Essa opera&ccedil;&atilde;o poder&aacute; ser demorada dependendo 
+        do tamanho do plano de informa&ccedil;&atilde;o selecionado e do n&uacute;mero 
+        de c&eacute;lulas que ser&atilde;o criadas.</p>
+      <p>Ao final da opera&ccedil;&atilde;o ser&aacute; criado um plano de informa&ccedil;&atilde;o 
+        com as c&eacute;lulas. Crie um tema utilizando esse plano de informa&ccedil;&atilde;o 
+        para visualiz&aacute;-lo na Tela de Visualiza&ccedil;&atilde;o.</p>
+      <p>A figura abaixo mostra a diferen&ccedil;a entre o uso de dados poligonais 
+        e n&atilde;o-poligonais na cria&ccedil;&atilde;o de um plano de c&eacute;lulas.
+      </p>
+      <p align="center"><img src="terraViewBase_arquivos/criar_celulas1.png" width="531" height="369" border="1"></p>
+	  <p>&nbsp;</p>
+    </td>
+  </tr>
+  <tr>
+  </tr>
+</table>
+</font> 
+</body>
+</html>

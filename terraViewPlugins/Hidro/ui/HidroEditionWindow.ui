@@ -1,0 +1,1762 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>HidroEditionWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>HidroEditionWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>565</width>
+            <height>497</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Hydrologic Edition</string>
+    </property>
+    <property name="icon">
+        <pixmap>hidroIcon.bmp</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="resizeMode">
+            <enum>Fixed</enum>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout87</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="2" column="0">
+                    <property name="name">
+                        <cstring>layout2</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="1" column="0">
+                            <property name="name">
+                                <cstring>layout1</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <spacer row="0" column="1">
+                                    <property name="name">
+                                        <cstring>spacer1</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>361</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QPushButton" row="0" column="2">
+                                    <property name="name">
+                                        <cstring>closePushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&amp;Close</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+C</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>helpPushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&amp;Help</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+H</string>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="Line" row="0" column="0">
+                            <property name="name">
+                                <cstring>line1</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>HLine</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QFrame" row="1" column="0">
+                    <property name="name">
+                        <cstring>frame3</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Raised</enum>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QToolBox" row="0" column="0">
+                            <property name="name">
+                                <cstring>toolBox1</cstring>
+                            </property>
+                            <property name="currentIndex">
+                                <number>1</number>
+                            </property>
+                            <widget class="QWidget">
+                                <property name="name">
+                                    <cstring>page1</cstring>
+                                </property>
+                                <property name="backgroundMode">
+                                    <enum>PaletteBackground</enum>
+                                </property>
+                                <attribute name="label">
+                                    <string>Graph Selection</string>
+                                </attribute>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLayoutWidget" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>layout86</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="Line" row="1" column="0">
+                                                <property name="name">
+                                                    <cstring>line11</cstring>
+                                                </property>
+                                                <property name="frameShape">
+                                                    <enum>HLine</enum>
+                                                </property>
+                                                <property name="frameShadow">
+                                                    <enum>Sunken</enum>
+                                                </property>
+                                                <property name="orientation">
+                                                    <enum>Horizontal</enum>
+                                                </property>
+                                            </widget>
+                                            <widget class="QGroupBox" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>groupBox7</cstring>
+                                                </property>
+                                                <property name="title">
+                                                    <string>Hidro Graph Name</string>
+                                                </property>
+                                                <grid>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QComboBox" row="0" column="0">
+                                                        <property name="name">
+                                                            <cstring>graphNameComboBox</cstring>
+                                                        </property>
+                                                    </widget>
+                                                </grid>
+                                            </widget>
+                                            <widget class="QGroupBox" row="2" column="0">
+                                                <property name="name">
+                                                    <cstring>groupBox8</cstring>
+                                                </property>
+                                                <property name="title">
+                                                    <string>Hidro Graph Vertex</string>
+                                                </property>
+                                                <grid>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QLayoutWidget" row="0" column="0">
+                                                        <property name="name">
+                                                            <cstring>layout81</cstring>
+                                                        </property>
+                                                        <grid>
+                                                            <property name="name">
+                                                                <cstring>unnamed</cstring>
+                                                            </property>
+                                                            <widget class="QLayoutWidget" row="0" column="0">
+                                                                <property name="name">
+                                                                    <cstring>layout80</cstring>
+                                                                </property>
+                                                                <grid>
+                                                                    <property name="name">
+                                                                        <cstring>unnamed</cstring>
+                                                                    </property>
+                                                                    <widget class="QLabel" row="1" column="0">
+                                                                        <property name="name">
+                                                                            <cstring>textLabel1_3</cstring>
+                                                                        </property>
+                                                                        <property name="text">
+                                                                            <string>Theme:</string>
+                                                                        </property>
+                                                                        <property name="alignment">
+                                                                            <set>AlignVCenter|AlignRight</set>
+                                                                        </property>
+                                                                    </widget>
+                                                                    <widget class="QLabel" row="0" column="0">
+                                                                        <property name="name">
+                                                                            <cstring>textLabel2</cstring>
+                                                                        </property>
+                                                                        <property name="text">
+                                                                            <string>Layer:</string>
+                                                                        </property>
+                                                                        <property name="alignment">
+                                                                            <set>AlignVCenter|AlignRight</set>
+                                                                        </property>
+                                                                    </widget>
+                                                                </grid>
+                                                            </widget>
+                                                            <widget class="QLayoutWidget" row="0" column="1">
+                                                                <property name="name">
+                                                                    <cstring>layout79</cstring>
+                                                                </property>
+                                                                <grid>
+                                                                    <property name="name">
+                                                                        <cstring>unnamed</cstring>
+                                                                    </property>
+                                                                    <widget class="QLineEdit" row="0" column="0">
+                                                                        <property name="name">
+                                                                            <cstring>vertexLayerLineEdit</cstring>
+                                                                        </property>
+                                                                        <property name="enabled">
+                                                                            <bool>false</bool>
+                                                                        </property>
+                                                                    </widget>
+                                                                    <widget class="QComboBox" row="1" column="0">
+                                                                        <property name="name">
+                                                                            <cstring>hidroVertexThemeComboBox</cstring>
+                                                                        </property>
+                                                                    </widget>
+                                                                </grid>
+                                                            </widget>
+                                                        </grid>
+                                                    </widget>
+                                                </grid>
+                                            </widget>
+                                            <widget class="QGroupBox" row="3" column="0">
+                                                <property name="name">
+                                                    <cstring>groupBox9</cstring>
+                                                </property>
+                                                <property name="title">
+                                                    <string>Hidro Graph Edge</string>
+                                                </property>
+                                                <grid>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QLayoutWidget" row="0" column="0">
+                                                        <property name="name">
+                                                            <cstring>layout85</cstring>
+                                                        </property>
+                                                        <grid>
+                                                            <property name="name">
+                                                                <cstring>unnamed</cstring>
+                                                            </property>
+                                                            <widget class="QLayoutWidget" row="0" column="1">
+                                                                <property name="name">
+                                                                    <cstring>layout84</cstring>
+                                                                </property>
+                                                                <grid>
+                                                                    <property name="name">
+                                                                        <cstring>unnamed</cstring>
+                                                                    </property>
+                                                                    <widget class="QComboBox" row="1" column="0">
+                                                                        <property name="name">
+                                                                            <cstring>hidroEdgeThemeComboBox</cstring>
+                                                                        </property>
+                                                                    </widget>
+                                                                    <widget class="QLineEdit" row="0" column="0">
+                                                                        <property name="name">
+                                                                            <cstring>edgeLayerLineEdit</cstring>
+                                                                        </property>
+                                                                        <property name="enabled">
+                                                                            <bool>false</bool>
+                                                                        </property>
+                                                                    </widget>
+                                                                </grid>
+                                                            </widget>
+                                                            <widget class="QLayoutWidget" row="0" column="0">
+                                                                <property name="name">
+                                                                    <cstring>layout83</cstring>
+                                                                </property>
+                                                                <grid>
+                                                                    <property name="name">
+                                                                        <cstring>unnamed</cstring>
+                                                                    </property>
+                                                                    <widget class="QLabel" row="0" column="0">
+                                                                        <property name="name">
+                                                                            <cstring>textLabel3</cstring>
+                                                                        </property>
+                                                                        <property name="text">
+                                                                            <string>Layer:</string>
+                                                                        </property>
+                                                                        <property name="alignment">
+                                                                            <set>AlignVCenter|AlignRight</set>
+                                                                        </property>
+                                                                    </widget>
+                                                                    <widget class="QLabel" row="1" column="0">
+                                                                        <property name="name">
+                                                                            <cstring>textLabel3_2</cstring>
+                                                                        </property>
+                                                                        <property name="text">
+                                                                            <string>Theme:</string>
+                                                                        </property>
+                                                                        <property name="alignment">
+                                                                            <set>AlignVCenter|AlignRight</set>
+                                                                        </property>
+                                                                    </widget>
+                                                                </grid>
+                                                            </widget>
+                                                        </grid>
+                                                    </widget>
+                                                </grid>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QWidget">
+                                <property name="name">
+                                    <cstring>page2</cstring>
+                                </property>
+                                <property name="backgroundMode">
+                                    <enum>PaletteBackground</enum>
+                                </property>
+                                <attribute name="label">
+                                    <string>Graph Edition</string>
+                                </attribute>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QTabWidget" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>editTabWidget</cstring>
+                                        </property>
+                                        <widget class="QWidget">
+                                            <property name="name">
+                                                <cstring>tab</cstring>
+                                            </property>
+                                            <attribute name="title">
+                                                <string>Add Vertex</string>
+                                            </attribute>
+                                            <grid>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLayoutWidget" row="0" column="0">
+                                                    <property name="name">
+                                                        <cstring>layout60</cstring>
+                                                    </property>
+                                                    <grid>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QButtonGroup" row="0" column="0">
+                                                            <property name="name">
+                                                                <cstring>buttonGroup1</cstring>
+                                                            </property>
+                                                            <property name="title">
+                                                                <string>Add  Vertex</string>
+                                                            </property>
+                                                            <grid>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <widget class="QLayoutWidget" row="0" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>layout160</cstring>
+                                                                    </property>
+                                                                    <grid>
+                                                                        <property name="name">
+                                                                            <cstring>unnamed</cstring>
+                                                                        </property>
+                                                                        <widget class="QLayoutWidget" row="0" column="3">
+                                                                            <property name="name">
+                                                                                <cstring>layout159</cstring>
+                                                                            </property>
+                                                                            <grid>
+                                                                                <property name="name">
+                                                                                    <cstring>unnamed</cstring>
+                                                                                </property>
+                                                                                <widget class="QLabel" row="0" column="0">
+                                                                                    <property name="name">
+                                                                                        <cstring>textLabel1_2</cstring>
+                                                                                    </property>
+                                                                                    <property name="text">
+                                                                                        <string>Y:</string>
+                                                                                    </property>
+                                                                                </widget>
+                                                                                <widget class="QLineEdit" row="0" column="1">
+                                                                                    <property name="name">
+                                                                                        <cstring>addVertexYCoordLineEdit</cstring>
+                                                                                    </property>
+                                                                                    <property name="enabled">
+                                                                                        <bool>false</bool>
+                                                                                    </property>
+                                                                                </widget>
+                                                                            </grid>
+                                                                        </widget>
+                                                                        <widget class="QRadioButton" row="0" column="1">
+                                                                            <property name="name">
+                                                                                <cstring>addVertexByCoordRadioButton</cstring>
+                                                                            </property>
+                                                                            <property name="text">
+                                                                                <string>By Coord</string>
+                                                                            </property>
+                                                                        </widget>
+                                                                        <widget class="QRadioButton" row="0" column="0">
+                                                                            <property name="name">
+                                                                                <cstring>addVertexByClickRadioButton</cstring>
+                                                                            </property>
+                                                                            <property name="text">
+                                                                                <string>By Click</string>
+                                                                            </property>
+                                                                        </widget>
+                                                                        <widget class="QLayoutWidget" row="0" column="2">
+                                                                            <property name="name">
+                                                                                <cstring>layout158</cstring>
+                                                                            </property>
+                                                                            <grid>
+                                                                                <property name="name">
+                                                                                    <cstring>unnamed</cstring>
+                                                                                </property>
+                                                                                <widget class="QLabel" row="0" column="0">
+                                                                                    <property name="name">
+                                                                                        <cstring>textLabel1_2_2</cstring>
+                                                                                    </property>
+                                                                                    <property name="text">
+                                                                                        <string>X:</string>
+                                                                                    </property>
+                                                                                </widget>
+                                                                                <widget class="QLineEdit" row="0" column="1">
+                                                                                    <property name="name">
+                                                                                        <cstring>addVertexXCoordLineEdit</cstring>
+                                                                                    </property>
+                                                                                    <property name="enabled">
+                                                                                        <bool>false</bool>
+                                                                                    </property>
+                                                                                </widget>
+                                                                            </grid>
+                                                                        </widget>
+                                                                    </grid>
+                                                                </widget>
+                                                            </grid>
+                                                        </widget>
+                                                        <widget class="QLayoutWidget" row="2" column="0">
+                                                            <property name="name">
+                                                                <cstring>layout59</cstring>
+                                                            </property>
+                                                            <grid>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <spacer row="0" column="1">
+                                                                    <property name="name">
+                                                                        <cstring>spacer2</cstring>
+                                                                    </property>
+                                                                    <property name="orientation">
+                                                                        <enum>Horizontal</enum>
+                                                                    </property>
+                                                                    <property name="sizeType">
+                                                                        <enum>Expanding</enum>
+                                                                    </property>
+                                                                    <property name="sizeHint">
+                                                                        <size>
+                                                                            <width>187</width>
+                                                                            <height>20</height>
+                                                                        </size>
+                                                                    </property>
+                                                                </spacer>
+                                                                <widget class="QPushButton" row="0" column="2">
+                                                                    <property name="name">
+                                                                        <cstring>addVertexPushButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>Add...</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton" row="0" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>enterAttrVertexPushButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>Enter Attr...</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </grid>
+                                                        </widget>
+                                                        <widget class="QGroupBox" row="1" column="0">
+                                                            <property name="name">
+                                                                <cstring>groupBox4</cstring>
+                                                            </property>
+                                                            <property name="title">
+                                                                <string>Vertex Attributes</string>
+                                                            </property>
+                                                            <grid>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <widget class="QLayoutWidget" row="0" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>layout195</cstring>
+                                                                    </property>
+                                                                    <grid>
+                                                                        <property name="name">
+                                                                            <cstring>unnamed</cstring>
+                                                                        </property>
+                                                                        <widget class="QTable" row="0" column="0">
+                                                                            <property name="name">
+                                                                                <cstring>addVertexAttrTable</cstring>
+                                                                            </property>
+                                                                            <property name="numRows">
+                                                                                <number>0</number>
+                                                                            </property>
+                                                                            <property name="numCols">
+                                                                                <number>0</number>
+                                                                            </property>
+                                                                        </widget>
+                                                                        <widget class="QLayoutWidget" row="1" column="0">
+                                                                            <property name="name">
+                                                                                <cstring>layout194</cstring>
+                                                                            </property>
+                                                                            <grid>
+                                                                                <property name="name">
+                                                                                    <cstring>unnamed</cstring>
+                                                                                </property>
+                                                                                <widget class="QLineEdit" row="0" column="1">
+                                                                                    <property name="name">
+                                                                                        <cstring>vertexNameLineEdit</cstring>
+                                                                                    </property>
+                                                                                </widget>
+                                                                                <widget class="QLabel" row="0" column="0">
+                                                                                    <property name="name">
+                                                                                        <cstring>textLabel1_4</cstring>
+                                                                                    </property>
+                                                                                    <property name="text">
+                                                                                        <string>Vertex Name:</string>
+                                                                                    </property>
+                                                                                </widget>
+                                                                            </grid>
+                                                                        </widget>
+                                                                    </grid>
+                                                                </widget>
+                                                            </grid>
+                                                        </widget>
+                                                    </grid>
+                                                </widget>
+                                            </grid>
+                                        </widget>
+                                        <widget class="QWidget">
+                                            <property name="name">
+                                                <cstring>tab</cstring>
+                                            </property>
+                                            <attribute name="title">
+                                                <string>Remove Vertex</string>
+                                            </attribute>
+                                            <grid>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLayoutWidget" row="0" column="0">
+                                                    <property name="name">
+                                                        <cstring>layout74</cstring>
+                                                    </property>
+                                                    <grid>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <spacer row="1" column="0">
+                                                            <property name="name">
+                                                                <cstring>spacer6</cstring>
+                                                            </property>
+                                                            <property name="orientation">
+                                                                <enum>Vertical</enum>
+                                                            </property>
+                                                            <property name="sizeType">
+                                                                <enum>Expanding</enum>
+                                                            </property>
+                                                            <property name="sizeHint">
+                                                                <size>
+                                                                    <width>20</width>
+                                                                    <height>129</height>
+                                                                </size>
+                                                            </property>
+                                                        </spacer>
+                                                        <widget class="QButtonGroup" row="0" column="0">
+                                                            <property name="name">
+                                                                <cstring>buttonGroup1_2</cstring>
+                                                            </property>
+                                                            <property name="title">
+                                                                <string>Remove Vertex</string>
+                                                            </property>
+                                                            <grid>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <widget class="QLayoutWidget" row="0" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>layout73</cstring>
+                                                                    </property>
+                                                                    <grid>
+                                                                        <property name="name">
+                                                                            <cstring>unnamed</cstring>
+                                                                        </property>
+                                                                        <widget class="QRadioButton" row="0" column="0">
+                                                                            <property name="name">
+                                                                                <cstring>removeVertexByClickRadioButton</cstring>
+                                                                            </property>
+                                                                            <property name="text">
+                                                                                <string>By Click</string>
+                                                                            </property>
+                                                                        </widget>
+                                                                        <widget class="QRadioButton" row="0" column="1">
+                                                                            <property name="name">
+                                                                                <cstring>removeVertexByIdentRadioButton</cstring>
+                                                                            </property>
+                                                                            <property name="text">
+                                                                                <string>By Identification</string>
+                                                                            </property>
+                                                                        </widget>
+                                                                        <widget class="QLineEdit" row="0" column="2">
+                                                                            <property name="name">
+                                                                                <cstring>removeVertexIdentLineEdit</cstring>
+                                                                            </property>
+                                                                            <property name="enabled">
+                                                                                <bool>false</bool>
+                                                                            </property>
+                                                                            <property name="frameShape">
+                                                                                <enum>LineEditPanel</enum>
+                                                                            </property>
+                                                                            <property name="frameShadow">
+                                                                                <enum>Sunken</enum>
+                                                                            </property>
+                                                                        </widget>
+                                                                    </grid>
+                                                                </widget>
+                                                            </grid>
+                                                        </widget>
+                                                        <widget class="QLayoutWidget" row="2" column="0">
+                                                            <property name="name">
+                                                                <cstring>layout10_2</cstring>
+                                                            </property>
+                                                            <grid>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <spacer row="0" column="2">
+                                                                    <property name="name">
+                                                                        <cstring>spacer3_2</cstring>
+                                                                    </property>
+                                                                    <property name="orientation">
+                                                                        <enum>Horizontal</enum>
+                                                                    </property>
+                                                                    <property name="sizeType">
+                                                                        <enum>Expanding</enum>
+                                                                    </property>
+                                                                    <property name="sizeHint">
+                                                                        <size>
+                                                                            <width>171</width>
+                                                                            <height>20</height>
+                                                                        </size>
+                                                                    </property>
+                                                                </spacer>
+                                                                <spacer row="0" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>spacer2_2</cstring>
+                                                                    </property>
+                                                                    <property name="orientation">
+                                                                        <enum>Horizontal</enum>
+                                                                    </property>
+                                                                    <property name="sizeType">
+                                                                        <enum>Expanding</enum>
+                                                                    </property>
+                                                                    <property name="sizeHint">
+                                                                        <size>
+                                                                            <width>171</width>
+                                                                            <height>20</height>
+                                                                        </size>
+                                                                    </property>
+                                                                </spacer>
+                                                                <widget class="QPushButton" row="0" column="1">
+                                                                    <property name="name">
+                                                                        <cstring>removeVertexPushButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>Remove...</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </grid>
+                                                        </widget>
+                                                    </grid>
+                                                </widget>
+                                            </grid>
+                                        </widget>
+                                        <widget class="QWidget">
+                                            <property name="name">
+                                                <cstring>TabPage</cstring>
+                                            </property>
+                                            <attribute name="title">
+                                                <string>Add Edge</string>
+                                            </attribute>
+                                            <grid>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLayoutWidget" row="0" column="0">
+                                                    <property name="name">
+                                                        <cstring>layout92</cstring>
+                                                    </property>
+                                                    <grid>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QButtonGroup" row="0" column="0">
+                                                            <property name="name">
+                                                                <cstring>buttonGroup1_3</cstring>
+                                                            </property>
+                                                            <property name="title">
+                                                                <string>Add  Edge - Vertex From</string>
+                                                            </property>
+                                                            <grid>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <widget class="QRadioButton" row="0" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>addEdgeFromByClickRadioButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>By Click</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QRadioButton" row="0" column="1">
+                                                                    <property name="name">
+                                                                        <cstring>addEdgeFromByIdentRadioButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>By Identification</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QLineEdit" row="1" column="0" rowspan="1" colspan="2">
+                                                                    <property name="name">
+                                                                        <cstring>addEdgeFromIdentLineEdit</cstring>
+                                                                    </property>
+                                                                    <property name="enabled">
+                                                                        <bool>false</bool>
+                                                                    </property>
+                                                                </widget>
+                                                            </grid>
+                                                        </widget>
+                                                        <widget class="QLayoutWidget" row="2" column="0" rowspan="1" colspan="2">
+                                                            <property name="name">
+                                                                <cstring>layout61</cstring>
+                                                            </property>
+                                                            <grid>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <widget class="QPushButton" row="0" column="2">
+                                                                    <property name="name">
+                                                                        <cstring>addEdgePushButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>Add...</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QPushButton" row="0" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>enterAttrEdgePushButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>Enter Attr...</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <spacer row="0" column="1">
+                                                                    <property name="name">
+                                                                        <cstring>spacer2_3</cstring>
+                                                                    </property>
+                                                                    <property name="orientation">
+                                                                        <enum>Horizontal</enum>
+                                                                    </property>
+                                                                    <property name="sizeType">
+                                                                        <enum>Expanding</enum>
+                                                                    </property>
+                                                                    <property name="sizeHint">
+                                                                        <size>
+                                                                            <width>187</width>
+                                                                            <height>20</height>
+                                                                        </size>
+                                                                    </property>
+                                                                </spacer>
+                                                            </grid>
+                                                        </widget>
+                                                        <widget class="QButtonGroup" row="0" column="1">
+                                                            <property name="name">
+                                                                <cstring>buttonGroup1_3_2</cstring>
+                                                            </property>
+                                                            <property name="title">
+                                                                <string>Add  Edge - Vertex To</string>
+                                                            </property>
+                                                            <grid>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <widget class="QRadioButton" row="0" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>addEdgeToByClickRadioButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>By Click</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QLineEdit" row="1" column="0" rowspan="1" colspan="2">
+                                                                    <property name="name">
+                                                                        <cstring>addEdgeToIdentLineEdit</cstring>
+                                                                    </property>
+                                                                    <property name="enabled">
+                                                                        <bool>false</bool>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QRadioButton" row="0" column="1">
+                                                                    <property name="name">
+                                                                        <cstring>addEdgeToByIdentRadioButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>By Identification</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </grid>
+                                                        </widget>
+                                                        <widget class="QGroupBox" row="1" column="0" rowspan="1" colspan="2">
+                                                            <property name="name">
+                                                                <cstring>groupBox4_2</cstring>
+                                                            </property>
+                                                            <property name="title">
+                                                                <string>Edge Attributes</string>
+                                                            </property>
+                                                            <grid>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <widget class="QLayoutWidget" row="0" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>layout197</cstring>
+                                                                    </property>
+                                                                    <grid>
+                                                                        <property name="name">
+                                                                            <cstring>unnamed</cstring>
+                                                                        </property>
+                                                                        <widget class="QLayoutWidget" row="1" column="0">
+                                                                            <property name="name">
+                                                                                <cstring>layout194_2</cstring>
+                                                                            </property>
+                                                                            <grid>
+                                                                                <property name="name">
+                                                                                    <cstring>unnamed</cstring>
+                                                                                </property>
+                                                                                <widget class="QLineEdit" row="0" column="1">
+                                                                                    <property name="name">
+                                                                                        <cstring>edgeNameLineEdit</cstring>
+                                                                                    </property>
+                                                                                </widget>
+                                                                                <widget class="QLabel" row="0" column="0">
+                                                                                    <property name="name">
+                                                                                        <cstring>textLabel1_4_2</cstring>
+                                                                                    </property>
+                                                                                    <property name="text">
+                                                                                        <string>Edge Name:</string>
+                                                                                    </property>
+                                                                                </widget>
+                                                                            </grid>
+                                                                        </widget>
+                                                                        <widget class="QTable" row="0" column="0">
+                                                                            <property name="name">
+                                                                                <cstring>addEdgeAttrTable</cstring>
+                                                                            </property>
+                                                                            <property name="minimumSize">
+                                                                                <size>
+                                                                                    <width>0</width>
+                                                                                    <height>100</height>
+                                                                                </size>
+                                                                            </property>
+                                                                            <property name="numRows">
+                                                                                <number>0</number>
+                                                                            </property>
+                                                                            <property name="numCols">
+                                                                                <number>0</number>
+                                                                            </property>
+                                                                        </widget>
+                                                                    </grid>
+                                                                </widget>
+                                                            </grid>
+                                                        </widget>
+                                                    </grid>
+                                                </widget>
+                                            </grid>
+                                        </widget>
+                                        <widget class="QWidget">
+                                            <property name="name">
+                                                <cstring>TabPage</cstring>
+                                            </property>
+                                            <attribute name="title">
+                                                <string>Change Edge</string>
+                                            </attribute>
+                                            <grid>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLayoutWidget" row="0" column="0">
+                                                    <property name="name">
+                                                        <cstring>layout64</cstring>
+                                                    </property>
+                                                    <grid>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QLayoutWidget" row="4" column="0">
+                                                            <property name="name">
+                                                                <cstring>layout10_3_2</cstring>
+                                                            </property>
+                                                            <grid>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <spacer row="0" column="2">
+                                                                    <property name="name">
+                                                                        <cstring>spacer3_3_2</cstring>
+                                                                    </property>
+                                                                    <property name="orientation">
+                                                                        <enum>Horizontal</enum>
+                                                                    </property>
+                                                                    <property name="sizeType">
+                                                                        <enum>Expanding</enum>
+                                                                    </property>
+                                                                    <property name="sizeHint">
+                                                                        <size>
+                                                                            <width>171</width>
+                                                                            <height>20</height>
+                                                                        </size>
+                                                                    </property>
+                                                                </spacer>
+                                                                <spacer row="0" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>spacer2_3_2</cstring>
+                                                                    </property>
+                                                                    <property name="orientation">
+                                                                        <enum>Horizontal</enum>
+                                                                    </property>
+                                                                    <property name="sizeType">
+                                                                        <enum>Expanding</enum>
+                                                                    </property>
+                                                                    <property name="sizeHint">
+                                                                        <size>
+                                                                            <width>171</width>
+                                                                            <height>20</height>
+                                                                        </size>
+                                                                    </property>
+                                                                </spacer>
+                                                                <widget class="QPushButton" row="0" column="1">
+                                                                    <property name="name">
+                                                                        <cstring>edgeChangePushButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>Change...</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </grid>
+                                                        </widget>
+                                                        <widget class="QButtonGroup" row="2" column="0">
+                                                            <property name="name">
+                                                                <cstring>buttonGroup1_2_3</cstring>
+                                                            </property>
+                                                            <property name="title">
+                                                                <string>Vertex</string>
+                                                            </property>
+                                                            <grid>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <widget class="QLayoutWidget" row="0" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>layout63</cstring>
+                                                                    </property>
+                                                                    <grid>
+                                                                        <property name="name">
+                                                                            <cstring>unnamed</cstring>
+                                                                        </property>
+                                                                        <widget class="QRadioButton" row="0" column="0">
+                                                                            <property name="name">
+                                                                                <cstring>edgeChangeVertexByClickRadioButton</cstring>
+                                                                            </property>
+                                                                            <property name="text">
+                                                                                <string>By Click</string>
+                                                                            </property>
+                                                                        </widget>
+                                                                        <widget class="QRadioButton" row="0" column="1">
+                                                                            <property name="name">
+                                                                                <cstring>edgeChangeVertexByIdentRadioButton</cstring>
+                                                                            </property>
+                                                                            <property name="text">
+                                                                                <string>By Indetification</string>
+                                                                            </property>
+                                                                        </widget>
+                                                                        <widget class="QLineEdit" row="0" column="2">
+                                                                            <property name="name">
+                                                                                <cstring>edgeChangeVertexIdentLineEdit</cstring>
+                                                                            </property>
+                                                                            <property name="enabled">
+                                                                                <bool>false</bool>
+                                                                            </property>
+                                                                        </widget>
+                                                                    </grid>
+                                                                </widget>
+                                                            </grid>
+                                                        </widget>
+                                                        <widget class="QButtonGroup" row="0" column="0">
+                                                            <property name="name">
+                                                                <cstring>buttonGroup1_3_3</cstring>
+                                                            </property>
+                                                            <property name="title">
+                                                                <string>Edge Selection</string>
+                                                            </property>
+                                                            <grid>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <widget class="QLayoutWidget" row="0" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>layout21_4</cstring>
+                                                                    </property>
+                                                                    <grid>
+                                                                        <property name="name">
+                                                                            <cstring>unnamed</cstring>
+                                                                        </property>
+                                                                        <widget class="QRadioButton" row="0" column="0">
+                                                                            <property name="name">
+                                                                                <cstring>edgeChangeSelectionByClickRadioButton</cstring>
+                                                                            </property>
+                                                                            <property name="text">
+                                                                                <string>By Click</string>
+                                                                            </property>
+                                                                        </widget>
+                                                                        <widget class="QRadioButton" row="0" column="1">
+                                                                            <property name="name">
+                                                                                <cstring>edgeChangeSelectionByIdentRadioButton</cstring>
+                                                                            </property>
+                                                                            <property name="text">
+                                                                                <string>By Identification</string>
+                                                                            </property>
+                                                                        </widget>
+                                                                        <widget class="QLineEdit" row="0" column="2">
+                                                                            <property name="name">
+                                                                                <cstring>edgeChangeSelectionIdentLineEdit</cstring>
+                                                                            </property>
+                                                                            <property name="enabled">
+                                                                                <bool>false</bool>
+                                                                            </property>
+                                                                        </widget>
+                                                                    </grid>
+                                                                </widget>
+                                                            </grid>
+                                                        </widget>
+                                                        <spacer row="3" column="0">
+                                                            <property name="name">
+                                                                <cstring>spacer17</cstring>
+                                                            </property>
+                                                            <property name="orientation">
+                                                                <enum>Vertical</enum>
+                                                            </property>
+                                                            <property name="sizeType">
+                                                                <enum>Expanding</enum>
+                                                            </property>
+                                                            <property name="sizeHint">
+                                                                <size>
+                                                                    <width>20</width>
+                                                                    <height>21</height>
+                                                                </size>
+                                                            </property>
+                                                        </spacer>
+                                                        <widget class="QButtonGroup" row="1" column="0">
+                                                            <property name="name">
+                                                                <cstring>buttonGroup1_3_3_2</cstring>
+                                                            </property>
+                                                            <property name="title">
+                                                                <string>Vertex Selection</string>
+                                                            </property>
+                                                            <grid>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <widget class="QLayoutWidget" row="0" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>layout32</cstring>
+                                                                    </property>
+                                                                    <grid>
+                                                                        <property name="name">
+                                                                            <cstring>unnamed</cstring>
+                                                                        </property>
+                                                                        <widget class="QRadioButton" row="0" column="0">
+                                                                            <property name="name">
+                                                                                <cstring>edgeChangeVertexFromRadioButton</cstring>
+                                                                            </property>
+                                                                            <property name="text">
+                                                                                <string>Vertex From</string>
+                                                                            </property>
+                                                                        </widget>
+                                                                        <widget class="QRadioButton" row="0" column="1">
+                                                                            <property name="name">
+                                                                                <cstring>edgeChangeVertexToRadioButton</cstring>
+                                                                            </property>
+                                                                            <property name="text">
+                                                                                <string>Vertex To</string>
+                                                                            </property>
+                                                                        </widget>
+                                                                    </grid>
+                                                                </widget>
+                                                            </grid>
+                                                        </widget>
+                                                    </grid>
+                                                </widget>
+                                            </grid>
+                                        </widget>
+                                        <widget class="QWidget">
+                                            <property name="name">
+                                                <cstring>TabPage</cstring>
+                                            </property>
+                                            <attribute name="title">
+                                                <string>Remove Edge</string>
+                                            </attribute>
+                                            <grid>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLayoutWidget" row="0" column="0">
+                                                    <property name="name">
+                                                        <cstring>layout76</cstring>
+                                                    </property>
+                                                    <grid>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QButtonGroup" row="0" column="0">
+                                                            <property name="name">
+                                                                <cstring>buttonGroup1_2_2</cstring>
+                                                            </property>
+                                                            <property name="title">
+                                                                <string>Remove Edge</string>
+                                                            </property>
+                                                            <grid>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <widget class="QLayoutWidget" row="0" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>layout75</cstring>
+                                                                    </property>
+                                                                    <grid>
+                                                                        <property name="name">
+                                                                            <cstring>unnamed</cstring>
+                                                                        </property>
+                                                                        <widget class="QRadioButton" row="0" column="1">
+                                                                            <property name="name">
+                                                                                <cstring>removeEdgeByIdentRadioButton</cstring>
+                                                                            </property>
+                                                                            <property name="text">
+                                                                                <string>By Identification</string>
+                                                                            </property>
+                                                                        </widget>
+                                                                        <widget class="QRadioButton" row="0" column="0">
+                                                                            <property name="name">
+                                                                                <cstring>removeEdgeByClickRadioButton</cstring>
+                                                                            </property>
+                                                                            <property name="text">
+                                                                                <string>By Click</string>
+                                                                            </property>
+                                                                        </widget>
+                                                                        <widget class="QLineEdit" row="0" column="2">
+                                                                            <property name="name">
+                                                                                <cstring>removeEdgeIdentLineEdit</cstring>
+                                                                            </property>
+                                                                            <property name="enabled">
+                                                                                <bool>false</bool>
+                                                                            </property>
+                                                                        </widget>
+                                                                    </grid>
+                                                                </widget>
+                                                            </grid>
+                                                        </widget>
+                                                        <widget class="QLayoutWidget" row="2" column="0">
+                                                            <property name="name">
+                                                                <cstring>layout10_2_2</cstring>
+                                                            </property>
+                                                            <grid>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <spacer row="0" column="2">
+                                                                    <property name="name">
+                                                                        <cstring>spacer3_2_2</cstring>
+                                                                    </property>
+                                                                    <property name="orientation">
+                                                                        <enum>Horizontal</enum>
+                                                                    </property>
+                                                                    <property name="sizeType">
+                                                                        <enum>Expanding</enum>
+                                                                    </property>
+                                                                    <property name="sizeHint">
+                                                                        <size>
+                                                                            <width>171</width>
+                                                                            <height>20</height>
+                                                                        </size>
+                                                                    </property>
+                                                                </spacer>
+                                                                <spacer row="0" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>spacer2_2_2</cstring>
+                                                                    </property>
+                                                                    <property name="orientation">
+                                                                        <enum>Horizontal</enum>
+                                                                    </property>
+                                                                    <property name="sizeType">
+                                                                        <enum>Expanding</enum>
+                                                                    </property>
+                                                                    <property name="sizeHint">
+                                                                        <size>
+                                                                            <width>171</width>
+                                                                            <height>20</height>
+                                                                        </size>
+                                                                    </property>
+                                                                </spacer>
+                                                                <widget class="QPushButton" row="0" column="1">
+                                                                    <property name="name">
+                                                                        <cstring>removeEdgePushButton</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>Remove...</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </grid>
+                                                        </widget>
+                                                        <spacer row="1" column="0">
+                                                            <property name="name">
+                                                                <cstring>spacer6_2</cstring>
+                                                            </property>
+                                                            <property name="orientation">
+                                                                <enum>Vertical</enum>
+                                                            </property>
+                                                            <property name="sizeType">
+                                                                <enum>Expanding</enum>
+                                                            </property>
+                                                            <property name="sizeHint">
+                                                                <size>
+                                                                    <width>20</width>
+                                                                    <height>135</height>
+                                                                </size>
+                                                            </property>
+                                                        </spacer>
+                                                    </grid>
+                                                </widget>
+                                            </grid>
+                                        </widget>
+                                        <widget class="QWidget">
+                                            <property name="name">
+                                                <cstring>TabPage</cstring>
+                                            </property>
+                                            <attribute name="title">
+                                                <string>Optimized</string>
+                                            </attribute>
+                                            <grid>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QFrame" row="0" column="0">
+                                                    <property name="name">
+                                                        <cstring>frame8</cstring>
+                                                    </property>
+                                                    <property name="frameShape">
+                                                        <enum>StyledPanel</enum>
+                                                    </property>
+                                                    <property name="frameShadow">
+                                                        <enum>Raised</enum>
+                                                    </property>
+                                                    <grid>
+                                                        <property name="name">
+                                                            <cstring>unnamed</cstring>
+                                                        </property>
+                                                        <widget class="QLayoutWidget" row="0" column="0">
+                                                            <property name="name">
+                                                                <cstring>layout42</cstring>
+                                                            </property>
+                                                            <grid>
+                                                                <property name="name">
+                                                                    <cstring>unnamed</cstring>
+                                                                </property>
+                                                                <widget class="QLabel" row="2" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>textLabel4</cstring>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>* Optimized Edition is only used in case of regular grids.</string>
+                                                                    </property>
+                                                                </widget>
+                                                                <widget class="QLayoutWidget" row="0" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>layout41</cstring>
+                                                                    </property>
+                                                                    <grid>
+                                                                        <property name="name">
+                                                                            <cstring>unnamed</cstring>
+                                                                        </property>
+                                                                        <widget class="QCheckBox" row="1" column="0">
+                                                                            <property name="name">
+                                                                                <cstring>autoAttrCheckBox</cstring>
+                                                                            </property>
+                                                                            <property name="text">
+                                                                                <string>Create automatic attributes</string>
+                                                                            </property>
+                                                                            <property name="checked">
+                                                                                <bool>true</bool>
+                                                                            </property>
+                                                                        </widget>
+                                                                        <widget class="QLayoutWidget" row="0" column="0">
+                                                                            <property name="name">
+                                                                                <cstring>layout39</cstring>
+                                                                            </property>
+                                                                            <grid>
+                                                                                <property name="name">
+                                                                                    <cstring>unnamed</cstring>
+                                                                                </property>
+                                                                                <widget class="QLabel" row="0" column="0">
+                                                                                    <property name="name">
+                                                                                        <cstring>textLabel5</cstring>
+                                                                                    </property>
+                                                                                    <property name="text">
+                                                                                        <string>Base Name:</string>
+                                                                                    </property>
+                                                                                </widget>
+                                                                                <widget class="QLineEdit" row="0" column="1">
+                                                                                    <property name="name">
+                                                                                        <cstring>baseNameLineEdit</cstring>
+                                                                                    </property>
+                                                                                </widget>
+                                                                            </grid>
+                                                                        </widget>
+                                                                        <widget class="Line" row="2" column="0">
+                                                                            <property name="name">
+                                                                                <cstring>line5</cstring>
+                                                                            </property>
+                                                                            <property name="frameShape">
+                                                                                <enum>HLine</enum>
+                                                                            </property>
+                                                                            <property name="frameShadow">
+                                                                                <enum>Sunken</enum>
+                                                                            </property>
+                                                                            <property name="orientation">
+                                                                                <enum>Horizontal</enum>
+                                                                            </property>
+                                                                        </widget>
+                                                                        <widget class="QLayoutWidget" row="3" column="0">
+                                                                            <property name="name">
+                                                                                <cstring>layout40</cstring>
+                                                                            </property>
+                                                                            <grid>
+                                                                                <property name="name">
+                                                                                    <cstring>unnamed</cstring>
+                                                                                </property>
+                                                                                <spacer row="0" column="0">
+                                                                                    <property name="name">
+                                                                                        <cstring>spacer13</cstring>
+                                                                                    </property>
+                                                                                    <property name="orientation">
+                                                                                        <enum>Horizontal</enum>
+                                                                                    </property>
+                                                                                    <property name="sizeType">
+                                                                                        <enum>Expanding</enum>
+                                                                                    </property>
+                                                                                    <property name="sizeHint">
+                                                                                        <size>
+                                                                                            <width>61</width>
+                                                                                            <height>20</height>
+                                                                                        </size>
+                                                                                    </property>
+                                                                                </spacer>
+                                                                                <spacer row="0" column="2">
+                                                                                    <property name="name">
+                                                                                        <cstring>spacer14</cstring>
+                                                                                    </property>
+                                                                                    <property name="orientation">
+                                                                                        <enum>Horizontal</enum>
+                                                                                    </property>
+                                                                                    <property name="sizeType">
+                                                                                        <enum>Expanding</enum>
+                                                                                    </property>
+                                                                                    <property name="sizeHint">
+                                                                                        <size>
+                                                                                            <width>60</width>
+                                                                                            <height>20</height>
+                                                                                        </size>
+                                                                                    </property>
+                                                                                </spacer>
+                                                                                <widget class="QPushButton" row="0" column="1">
+                                                                                    <property name="name">
+                                                                                        <cstring>openOptEdPushButton</cstring>
+                                                                                    </property>
+                                                                                    <property name="text">
+                                                                                        <string>Optmized Edition</string>
+                                                                                    </property>
+                                                                                </widget>
+                                                                            </grid>
+                                                                        </widget>
+                                                                    </grid>
+                                                                </widget>
+                                                                <spacer row="1" column="0">
+                                                                    <property name="name">
+                                                                        <cstring>spacer15</cstring>
+                                                                    </property>
+                                                                    <property name="orientation">
+                                                                        <enum>Vertical</enum>
+                                                                    </property>
+                                                                    <property name="sizeType">
+                                                                        <enum>Expanding</enum>
+                                                                    </property>
+                                                                    <property name="sizeHint">
+                                                                        <size>
+                                                                            <width>20</width>
+                                                                            <height>71</height>
+                                                                        </size>
+                                                                    </property>
+                                                                </spacer>
+                                                            </grid>
+                                                        </widget>
+                                                    </grid>
+                                                </widget>
+                                            </grid>
+                                        </widget>
+                                    </widget>
+                                </grid>
+                            </widget>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout3</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel" row="0" column="0">
+                            <property name="name">
+                                <cstring>textLabel1</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>1</bold>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Allow edition over hydrologic Graphs...</string>
+                            </property>
+                        </widget>
+                        <widget class="Line" row="1" column="0">
+                            <property name="name">
+                                <cstring>line2</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>HLine</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>graphNameComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>graphNameComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>addVertexByClickRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>addVertexByClickRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>addVertexByCoordRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>addVertexByCoordRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>addVertexPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>addVertexPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>removeVertexByClickRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>removeVertexByClickRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>removeVertexByIdentRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>removeVertexByIdentRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>removeVertexPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>removeVertexPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>addEdgeFromByClickRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>addEdgeFromByClickRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>addEdgeFromByIdentRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>addEdgeFromByIdentRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>addEdgeToByClickRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>addEdgeToByClickRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>addEdgeToByIdentRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>addEdgeToByIdentRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>addEdgePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>addEdgePushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>edgeChangeSelectionByClickRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>edgeChangeSelectionByClickRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>edgeChangeSelectionByIdentRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>edgeChangeSelectionByIdentRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>edgeChangeVertexByClickRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>edgeChangeVertexByClickRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>edgeChangeVertexByIdentRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>edgeChangeVertexByIdentRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>edgeChangePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>edgeChangePushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>removeEdgeByClickRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>removeEdgeByClickRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>removeEdgeByIdentRadioButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>removeEdgeByIdentRadioButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>removeEdgePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>removeEdgePushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>closePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>enterAttrVertexPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>enterAttrVertexPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>enterAttrEdgePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>enterAttrEdgePushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>hidroVertexThemeComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>hidroVertexThemeComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>hidroEdgeThemeComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>hidroEdgeThemeComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>openOptEdPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroEditionWindow</receiver>
+        <slot>openOptEdPushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>graphNameComboBox</tabstop>
+    <tabstop>vertexLayerLineEdit</tabstop>
+    <tabstop>edgeLayerLineEdit</tabstop>
+    <tabstop>editTabWidget</tabstop>
+    <tabstop>addVertexByClickRadioButton</tabstop>
+    <tabstop>addVertexByCoordRadioButton</tabstop>
+    <tabstop>addVertexAttrTable</tabstop>
+    <tabstop>addVertexPushButton</tabstop>
+    <tabstop>removeVertexByClickRadioButton</tabstop>
+    <tabstop>removeVertexByIdentRadioButton</tabstop>
+    <tabstop>removeVertexIdentLineEdit</tabstop>
+    <tabstop>removeVertexPushButton</tabstop>
+    <tabstop>addEdgeFromByClickRadioButton</tabstop>
+    <tabstop>addEdgeFromByIdentRadioButton</tabstop>
+    <tabstop>addEdgeFromIdentLineEdit</tabstop>
+    <tabstop>addEdgeToByClickRadioButton</tabstop>
+    <tabstop>addEdgeToByIdentRadioButton</tabstop>
+    <tabstop>addEdgeToIdentLineEdit</tabstop>
+    <tabstop>addEdgeAttrTable</tabstop>
+    <tabstop>addEdgePushButton</tabstop>
+    <tabstop>edgeChangeSelectionByClickRadioButton</tabstop>
+    <tabstop>edgeChangeSelectionByIdentRadioButton</tabstop>
+    <tabstop>edgeChangeSelectionIdentLineEdit</tabstop>
+    <tabstop>edgeChangeVertexFromRadioButton</tabstop>
+    <tabstop>edgeChangeVertexToRadioButton</tabstop>
+    <tabstop>edgeChangeVertexByClickRadioButton</tabstop>
+    <tabstop>edgeChangeVertexByIdentRadioButton</tabstop>
+    <tabstop>edgeChangeVertexIdentLineEdit</tabstop>
+    <tabstop>edgeChangePushButton</tabstop>
+    <tabstop>removeEdgeByClickRadioButton</tabstop>
+    <tabstop>removeEdgeByIdentRadioButton</tabstop>
+    <tabstop>removeEdgeIdentLineEdit</tabstop>
+    <tabstop>removeEdgePushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+    <tabstop>closePushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">PluginParameters.h</include>
+    <include location="global" impldecl="in declaration">TeCoord2D.h</include>
+    <include location="global" impldecl="in declaration">qpoint.h</include>
+    <include location="global" impldecl="in declaration">TeAppTheme.h</include>
+    <include location="global" impldecl="in declaration">HidroOptimizedEditionWindow.h</include>
+    <include location="local" impldecl="in implementation">HidroEditionWindow.ui.h</include>
+</includes>
+<variables>
+    <variable>bool _removeEdge;</variable>
+    <variable>bool _changeEdgeVertex;</variable>
+    <variable>bool _changeEdge;</variable>
+    <variable>bool _addEdgeVertexTo;</variable>
+    <variable>bool _addEdgeVertexFrom;</variable>
+    <variable>bool _removeVertex;</variable>
+    <variable>bool _addVertex;</variable>
+    <variable>PluginParameters* _parameters;</variable>
+    <variable>TeAppTheme* _vertexTheme;</variable>
+    <variable>TeAppTheme* _edgeTheme;</variable>
+    <variable>HidroOptimizedEditionWindow* _optEdWindow;</variable>
+</variables>
+<slots>
+    <slot>graphNameComboBox_activated( const QString &amp; value )</slot>
+    <slot>addVertexByClickRadioButton_clicked()</slot>
+    <slot>addVertexByCoordRadioButton_clicked()</slot>
+    <slot>addVertexPushButton_clicked()</slot>
+    <slot>removeVertexByClickRadioButton_clicked()</slot>
+    <slot>removeVertexByIdentRadioButton_clicked()</slot>
+    <slot>removeVertexPushButton_clicked()</slot>
+    <slot>addEdgeFromByClickRadioButton_clicked()</slot>
+    <slot>addEdgeFromByIdentRadioButton_clicked()</slot>
+    <slot>addEdgeToByClickRadioButton_clicked()</slot>
+    <slot>addEdgeToByIdentRadioButton_clicked()</slot>
+    <slot>addEdgePushButton_clicked()</slot>
+    <slot>edgeChangeSelectionByClickRadioButton_clicked()</slot>
+    <slot>edgeChangeSelectionByIdentRadioButton_clicked()</slot>
+    <slot>edgeChangeVertexByClickRadioButton_clicked()</slot>
+    <slot>edgeChangeVertexByIdentRadioButton_clicked()</slot>
+    <slot>edgeChangePushButton_clicked()</slot>
+    <slot>removeEdgeByClickRadioButton_clicked()</slot>
+    <slot>removeEdgeByIdentRadioButton_clicked()</slot>
+    <slot>removeEdgePushButton_clicked()</slot>
+    <slot>getMouseClicked( TeCoord2D &amp; coord, int, QPoint &amp; )</slot>
+    <slot>enterAttrVertexPushButton_clicked()</slot>
+    <slot>enterAttrEdgePushButton_clicked()</slot>
+    <slot>hidroVertexThemeComboBox_activated( const QString &amp; value )</slot>
+    <slot>hidroEdgeThemeComboBox_activated( const QString &amp; value )</slot>
+    <slot>openOptEdPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function returnType="bool">init( PluginParameters * parameters )</function>
+    <function>destroy()</function>
+    <function access="protected">listGraphs()</function>
+    <function access="protected">listThemes()</function>
+    <function access="protected">releaseTools()</function>
+</functions>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

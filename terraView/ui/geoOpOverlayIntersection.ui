@@ -1,0 +1,423 @@
+﻿<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>GeoOpOverlayIntersection</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>GeoOpOverlayIntersection</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>344</width>
+            <height>340</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Create Layer by Overlay Intersection</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout6</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QButtonGroup">
+                    <property name="name">
+                        <cstring>buttonGroup1</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Select Input Theme to be Clipped by Intersection</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QComboBox" row="0" column="0">
+                            <property name="name">
+                                <cstring>themeInputComboBox</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget" row="1" column="0">
+                            <property name="name">
+                                <cstring>layout4</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer3</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QRadioButton">
+                                    <property name="name">
+                                        <cstring>allRadioButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>All</string>
+                                    </property>
+                                    <property name="checked">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                                <widget class="QRadioButton">
+                                    <property name="name">
+                                        <cstring>pointedRadioButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Pointed</string>
+                                    </property>
+                                </widget>
+                                <widget class="QRadioButton">
+                                    <property name="name">
+                                        <cstring>queriedRadioButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Queried</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer4</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </hbox>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QButtonGroup">
+                    <property name="name">
+                        <cstring>buttonGroup4</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Select a Overlay Polygon´s Theme</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QComboBox" row="0" column="0">
+                            <property name="name">
+                                <cstring>themeOverlayComboBox</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget" row="1" column="0">
+                            <property name="name">
+                                <cstring>layout5</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer5</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>21</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QRadioButton">
+                                    <property name="name">
+                                        <cstring>allTrimRadioButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>All</string>
+                                    </property>
+                                    <property name="checked">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                                <widget class="QRadioButton">
+                                    <property name="name">
+                                        <cstring>pointedTrimRadioButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Pointed</string>
+                                    </property>
+                                </widget>
+                                <widget class="QRadioButton">
+                                    <property name="name">
+                                        <cstring>queriedTrimRadioButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Queried</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer6</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </hbox>
+                        </widget>
+                        <widget class="QCheckBox" row="2" column="0">
+                            <property name="name">
+                                <cstring>putOverlayThemeAttributesCheckBox</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Put Overlay Theme Attributes</string>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupBox7</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Specify the Output Layer Name</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLineEdit" row="0" column="0">
+                            <property name="name">
+                                <cstring>layerNameLineEdit</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>LineEditPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget" row="1" column="0">
+                            <property name="name">
+                                <cstring>layout7</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>backValueTextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Background Value</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>backValueLineEdit</cstring>
+                                    </property>
+                                    <property name="frameShape">
+                                        <enum>LineEditPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>Sunken</enum>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer5_2</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>21</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </hbox>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout13</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>OKPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;OK</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+O</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>cancelPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Cancel</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>themeInputComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>GeoOpOverlayIntersection</receiver>
+        <slot>themeInputComboBox_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>OKPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>GeoOpOverlayIntersection</receiver>
+        <slot>OKPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>GeoOpOverlayIntersection</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>GeoOpOverlayIntersection</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>themeOverlayComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>GeoOpOverlayIntersection</receiver>
+        <slot>themeOverlayComboBox_activated(int)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>themeInputComboBox</tabstop>
+    <tabstop>allRadioButton</tabstop>
+    <tabstop>pointedRadioButton</tabstop>
+    <tabstop>queriedRadioButton</tabstop>
+    <tabstop>themeOverlayComboBox</tabstop>
+    <tabstop>allTrimRadioButton</tabstop>
+    <tabstop>pointedTrimRadioButton</tabstop>
+    <tabstop>queriedTrimRadioButton</tabstop>
+    <tabstop>putOverlayThemeAttributesCheckBox</tabstop>
+    <tabstop>layerNameLineEdit</tabstop>
+    <tabstop>OKPushButton</tabstop>
+    <tabstop>cancelPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">string</include>
+    <include location="global" impldecl="in declaration">TeTheme.h</include>
+    <include location="global" impldecl="in implementation">qapplication.h</include>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="global" impldecl="in implementation">TeAppTheme.h</include>
+    <include location="global" impldecl="in implementation">TeDatabase.h</include>
+    <include location="local" impldecl="in implementation">geoOpOverlayIntersection.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>class TeDatabase;</forward>
+    <forward>class TeAppTheme;</forward>
+    <forward>using namespace std;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable access="public">bool erro_;</variable>
+    <variable>TerraViewBase* mainWindow_;</variable>
+    <variable>TeAppTheme* theme_;</variable>
+    <variable>TeAppTheme* themeTrim_;</variable>
+    <variable>TeDatabase* db_;</variable>
+    <variable>bool intersect_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot>themeInputComboBox_activated( int )</slot>
+    <slot>themeOverlayComboBox_activated( int )</slot>
+    <slot>OKPushButton_clicked()</slot>
+    <slot>reject()</slot>
+    <slot>helpPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function>init()</function>
+    <function access="protected" returnType="string">getNewLayerName( TeLayer * layer )</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

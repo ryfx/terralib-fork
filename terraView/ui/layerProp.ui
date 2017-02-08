@@ -1,0 +1,100 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>LayerProperties</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>LayerProperties</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>311</width>
+            <height>702</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Infolayer Properties</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>11</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="TeQtTable" row="0" column="0">
+            <property name="name">
+                <cstring>layerPropertiesTable</cstring>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>TeQtTable</class>
+        <header location="global">TeQtTable.h</header>
+        <sizehint>
+            <width>200</width>
+            <height>150</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="45">789cd3d7528808f055d0d2e72a2e492cc94c5648ce482c52d04a29cdcdad8c8eb5ade6523250004143a55a6b2e0026630c4f</data>
+    </image>
+</images>
+<includes>
+    <include location="global" impldecl="in implementation">terraViewBase.h</include>
+    <include location="global" impldecl="in implementation">TeQtLayerItem.h</include>
+    <include location="local" impldecl="in implementation">layerProp.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>class TeQtLayerItem;</forward>
+    <forward>class TeLayer;</forward>
+</forwards>
+<variables>
+    <variable>int col_;</variable>
+    <variable>int row_;</variable>
+    <variable>bool edit_;</variable>
+    <variable>TerraViewBase* mainWindow_;</variable>
+    <variable>TeLayer* layer_;</variable>
+</variables>
+<slots>
+    <slot access="protected">init()</slot>
+    <slot>mousePressedSlot( int row, int col, int button, const QPoint &amp; )</slot>
+    <slot>mouseDoubleClickedSlot( int row, int col, int button, const QPoint &amp; )</slot>
+    <slot>valueChangedSlot( int row, int col )</slot>
+    <slot>contextMenuSlot(int, int, const QPoint&amp; p)</slot>
+    <slot>saveTxtSlot()</slot>
+</slots>
+<functions>
+    <function>init( TeQtLayerItem * layerItem )</function>
+    <function>updateMetadata( int row, int col )</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>TeQtTable.h</includehint>
+</includehints>
+</UI>

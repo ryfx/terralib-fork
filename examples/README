@@ -1,0 +1,143 @@
+TerraLib Examples
+=================
+
+Each one of the items below corresponds to a directory that contains the  source files that
+implement some operation using TerraLib. 
+
+The data used in the examples can be found in the "data" directory.
+
+Each directory also has some compilation/linking files. 
+
+For Windows users these files are Microsoft Visual .NET 2003 solution and project files (*.sln, *.vcproj).
+The executables are generated in the directory Release/Debug
+
+For Linux users there are Makefiles and .pro files used by qmake. The executables are generated in each directory 
+that contains the example.
+
+Some of the examples depend on the execution of others. So we recommend that they
+should be run in the order proposed bellow.
+
+1. createDatabase
+Illustrates how to create a TerraLib database, creating all of the tables that
+make up the TerraLib data model.
+
+2. createLayer
+Illustrates how to create a layer with vector data in memory and save it in a
+TerraLib database already created.
+
+3. createTable
+Illustrates how to create an attribute table in memory and save it in a TerraLib
+database already created.
+
+4. importMIDMIF
+Illustrates how to import a vector data file in the MapInfo format(MID/MIF)for a
+TerraLib database already created.
+Source Data: Distritos.mid, Distritos.mif
+
+5. importShape
+Illustrates how to import a vector data file in the Shapefile format for a TerraLib
+database already created.
+Source Data: EstadosBrasil.shp, EstadosBrasil.shx, EstadosBrasil.dbf
+
+6. importDBF
+Illustrates how to import an attribute table in the DBF format as an external table
+for a TerraLib database already created.
+Source Data: SOCEC.dbf
+
+7. importJPEG
+Illustrates how to import an image in the JPEG format for a TerraLib database already
+created.
+Source Data: sampa.jpg
+
+8. copyLayer
+Illustrates how to copy a layer of a TerraLib database changing the projection of its
+geometries.
+It depends on the layer created in the item 4 (importMIDMIF).
+
+9. importGeoTab
+Illustrates how to import a vector data file in the SPRING format for a TerraLib
+database already created.
+Source Data: Cadastro_Escolas.geo, Cadastro_Escolas.tab
+
+10. convertCoordinates
+Illustrates how to use the TeProjection class to make the conversion between two
+different projections.
+
+11. databaseQuery
+It illustrates how to use the TeDatabase class to submit queries on geometries tables
+of a TerraLib database.
+It depends on the layer created in the item 4 (importMIDMIF).
+
+12. databaseSQLQuery
+Illustrates how to query geometries tables through explicit SQL queries on a TerraLib
+database.
+It depends on the layer created in the item 4 (importMIDMIF).
+
+13. spatialQuery
+Illustrates how to make spatial queries on the layers of a TerraLib database.
+Imports the shapefiles Mada_Distritos_SP, Mapa_Drenagem_SP and Mapa_Industrias_SP.
+
+14. addGeomRepresentation
+Illustrates how to add a point representation (centroids) to a layer with polygon
+representation.
+It depends on the layer created in the item 4 (importMIDMIF).
+
+15. createTheme
+Illustrates how to create views and themes from layers of a Terralib database,
+without restriction and with restriction on its attributes.
+It depends on the layer created in the item 4 (importMIDMIF).
+
+16. themeGrouping
+Illustrates how to create a grouping on a theme created in a TerraLib database.
+It depends on the theme created in the item 15 (createTheme).
+
+17. createSTElementSet
+Illustrates how to create a Spatial Temporal Element Set, out of a theme created
+in a TerraLib database.
+It depends on the theme created in the item 15 (createTheme).
+
+18. mosaicTIFFImages
+Illustrates how to import two TIFF files to the same layer in a TerraLib database,
+generating a mosaic of images.
+It depends on the files nat1.tif and nat2.tif.
+
+19. importCSV
+Illustrates how to import a MIF / MIF file to a new layer in a TerraLib database
+and how to import a second attribute table from a CSV file.
+It depends on the files BairrosRecife.MIF BairrosRecife.MID and BairrosRecife2.csv
+
+20. importGridData
+Illustrates how to import grid data in raw format for a TerraLib database already
+created.
+Source Data: elevation.raw
+
+21. rasterSlicing
+Illustrates how to group the values of a raster data in a set of classes.
+It depends on the layer created in example 20 (importGridData).
+
+22. querierFromTheme
+Illustrates how to use a querier from theme.
+It depends on the theme created in the item 15 (createTheme).
+
+23.proxMatrixAndSpatialStatistics
+Illustrates how to build a proximity matrix and how to calculate some spatial analysis index.
+It depends on the layer created in the item 4 (importMIDMIF)
+
+24. spatialQueryAndBuffer
+Illustrates how to do some spatial queries involving objects with points, lines and polygon geometries,
+and to generate a buffer operation.
+It depends on the layers create in the item 13 (spatialQuery).
+
+25. querierFromLayer
+Illustrates how to use a querier from layer.
+Requires the layer CadastroEscolas created in the item 9 (importGeoTab).
+
+26. createSTElementSetFromLayer
+Illustrates how to create a new Spatial Temporal Element Set (STElementSet) from a layer. 
+It uses the same input files used in the item 5 (importShape).
+ 
+27. image_processing
+This directory contains a set of testing routines for image processing
+algorithms from TerraLib - LibPDI ( image_processing ).
+This routines can be used as examples for using the tested classes.
+

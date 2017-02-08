@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Utilizando Plugin Preenchimento de Célula</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<font face="Arial, Helvetica, sans-serif" size="4">
+<table width="100%">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><b>Utilizando o Plugin Preenchimento de Células </b><br>
+       <p align="right">
+             <a href="visualizacao_plano_celula.html">Anterior </a>||<a href="informacoes.html"> Próximo </a>||<a href="../../fillCell.html"> Página Inicial</a>
+            </p>
+            <hr>
+             <ol>
+               <li>Para a utilização dessa ferramenta selecione a opção de menu <b>Plugins -
+                        Preenchimento de Células</b> na barra de menu do TerraView.</li>
+               <li>Será apresentada na sequência a janela inicial do plugin de Preenchimento de
+                    Células</li>
+                    <center><img src="imagens/Figura4.png" /></center>
+               <li>Em Parâmetros de Entrada deve ser informado no campo <b>Tema</b> o nome do tema
+                    onde estão os dados de entrada (exemplo censopop2000_bd).</li>
+               <li>Observe que de acordo com o plano escolhido no item anterior o quadro
+                    Representação Geométrica é alterado, ou seja, o quadro Representação
+                    Geométrica representa o tipo de geometria do Tema. Selecione Polígono.</li>
+               <li>A escolha do tipo de operação a ser realizada no quadro Operação irá definir se
+                    os quadros Atributo Vetorial e Atributo Raster serão habilitados. Neste caso
+                    escolha Valor Máximo e observe que o quadro Atributo Vetorial é habilitado
+                    para a escolha dos campos Tabela e Atributo. Selecione respectivamente
+                    censopop200_bd e DENS_POP. Diferentes operações aceitam diferentes tipos de
+                     atributos como parâmetro (por exemplo, a operação Valor Mínimo aceita somente
+                    os atributos do tipo inteiro e real), portanto é necessário escolher primeiramente a
+                    operação, de forma que o plugin habilitará apenas os atributos válidos. Se o tema
+                    for um dado matricial, a área Atributo Vetorial será desabilitada e a área
+                    Atributo Raster será habilitada, sendo que a opção Valor de Dummy pode ser
+                    ou não usada, e serve para ignorar um determinado valor do processamento, toda
+                    vez que este for encontrado. Este valor está tipicamente associado a valores de
+                    transparência em imagens. </li>  
+               <li>Clique no botão <b>Próximo.</b></li>        
+                   <center><img src="imagens/Figura3.png" /></center>
+               <li>O próximo passo é definir o plano de informação onde o resultado será
+                    armazenado. Este PI deve ser obrigatoriamente do tipo celular, e ter sido
+                    criado anteriormente, segundo descrito no item 15.1.1
+                    (celDensidadePopulacao).</li>    
+               <li>Defina se uma nova tabela do tipo temporal será criada para armazenar o
+                    resultado, ou se será usada uma tabela já existente. Se desejar criar uma nova
+                    tabela, o nome desta deverá ser indicado. Se optar por uma tabela já existente,
+                    ela deve ser selecionada na lista. Selecione a opção Selecionar Tabela,
+                    escolhendo a tabela celDensidadePopulacao.</li>
+               <li>Deve ser indicado se será criado um novo atributo, ou usado um atributo já
+                    existente no caso da tabela também já existir. Se optar por criar um novo
+                    atributo é necessário selecionar no quadro Atributo o item Criar Atributo e
+                    indicar o nome que será utilizado para o mesmo. Se optar por utilizar um
+                    atributo já existente, deve selecionar o quadro Atributo o item Usar Atributo e
+                    selecionar o atributo desejado na lista de atributos existentes. Note que usar
+                    um atributo existente implica em sobrescrever os seus valores, a menos que o
+                    dado seja temporal e um novo tempo esteja sendo adicionado. Neste caso
+                    selecione no quadro Atributo o item Criar Atributo e no campo Nome
+                    escrever DENS_POP e no campo "Valor de Dummy' escrever -10. Valor de
+                    dummy serve para indicar o valor de preenchimento quando não for possível
+                    obter um valor através do tema de entrada.</li>
+                <li>Clique em <b>OK.</b></li>
+                <li>Finalizada a execução ative e visualize o tema celular
+                    (celDensidadePopulacao) e veja na área de grade a nova coluna criada
+                    "DENS_POP" e seus respectivos valores.</li>
+                <center><img src="imagens/Figura5.png" /></center>
+                <li>O próximo passo é necessário somente para tabelas temporais. Se uma tabela
+                    temporal for usada, é preciso indicar se será criado um novo tempo ou usado
+                    um tempo existente (somente nos casos em que algum atributo já exista). Se
+                    optar por criar um novo atributo, o seu nome deve ser indicado, além dos
+                    tempos inicial e final, o formato do dado, o índice AM-PM e o separador do
+                    dado. Se optar por utilizar um atributo já existente, deve selecionar o atributo
+                    desejado na lista de atributos existentes.</li>
+                    <center><img src="imagens/Figura6.png" /></center>
+                <li>Clique em <b>Próximo</b> para definir os novos formatos.</li>
+                <center><img src="imagens/Figura7.png" /></center>
+                <li>Após preencher os parâmetros para a formatação de data/hora, clique no botão
+                    Ok para a finalização.</li>
+                <li>Podemos definir assim, dentro desse mesmo plano de células, vários atributos
+                    com cálculos diferentes</li>
+                <center><img src="imagens/Figura11.png" /></center>
+                                
+         </ol>
+       <hr><br /><br />
+      </td>
+  </tr>
+  
+</table>
+</font> 
+</body>
+</html>

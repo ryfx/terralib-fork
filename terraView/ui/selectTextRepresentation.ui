@@ -1,0 +1,133 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>SelectTextRepresentation</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>SelectTextRepresentation</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>280</width>
+            <height>75</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Select Text Representation</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QPushButton" row="1" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>OKPushButton</cstring>
+            </property>
+            <property name="text">
+                <string>&amp;OK</string>
+            </property>
+            <property name="accel">
+                <string>Alt+O</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="1" column="2">
+            <property name="name">
+                <cstring>cancelPushButton</cstring>
+            </property>
+            <property name="text">
+                <string>&amp;Cancel</string>
+            </property>
+            <property name="accel">
+                <string>Alt+C</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="1" column="3">
+            <property name="name">
+                <cstring>HelpPushButton</cstring>
+            </property>
+            <property name="text">
+                <string>&amp;Help</string>
+            </property>
+            <property name="accel">
+                <string>Alt+H</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>textLabel2</cstring>
+            </property>
+            <property name="text">
+                <string>Table:</string>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="0" column="1" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>tableComboBox</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>150</width>
+                    <height>0</height>
+                </size>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>OKPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SelectTextRepresentation</receiver>
+        <slot>OKPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SelectTextRepresentation</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>HelpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SelectTextRepresentation</receiver>
+        <slot>HelpPushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>tableComboBox</tabstop>
+    <tabstop>OKPushButton</tabstop>
+    <tabstop>cancelPushButton</tabstop>
+    <tabstop>HelpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">selectTextRepresentation.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>class TeAppTheme;</forward>
+    <forward>class TeLayer;</forward>
+    <forward>class TeDatabase;</forward>
+</forwards>
+<variables>
+    <variable>TerraViewBase* mainWindow_;</variable>
+    <variable>TeAppTheme* theme_;</variable>
+    <variable>TeLayer* layer_;</variable>
+    <variable>TeDatabase* db_;</variable>
+</variables>
+<slots>
+    <slot>OKPushButton_clicked()</slot>
+    <slot>reject()</slot>
+    <slot>HelpPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function>init()</function>
+    <function>show()</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,98 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>WCSServInfo</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>WCSServInfo</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>443</width>
+            <height>334</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>WCS service information</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout18</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer7</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Preferred</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QListView">
+                    <column>
+                        <property name="text">
+                            <string>Capabilities</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <property name="name">
+                        <cstring>serv_info_lst_</cstring>
+                    </property>
+                    <property name="resizePolicy">
+                        <enum>Default</enum>
+                    </property>
+                    <property name="rootIsDecorated">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer8</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Preferred</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+    </grid>
+</widget>
+<includes>
+    <include location="local" impldecl="in implementation">wcsservinfo.ui.h</include>
+</includes>
+<slots>
+    <slot>serviceChanged( const QString &amp; )</slot>
+    <slot>init( )</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

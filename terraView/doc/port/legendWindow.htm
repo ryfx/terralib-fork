@@ -1,0 +1,316 @@
+<html>
+<head>
+<title>Gera&ccedil;&atilde;o de Legenda</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<div align="justify">
+  <H2 align="center"><font face="Arial, Helvetica, sans-serif"><u>Gera&ccedil;&atilde;o de Legenda</u></font></H2>
+<p><font face="Arial, Helvetica, sans-serif">A interface de gera&ccedil;&atilde;o 
+  de legenda, mostrada na Figura 1, permite criar um novo ou importar um agrupamento 
+  de outro tema.</font></p>
+<p align="center"><img src="legendWindow_arquivos/legendWindow1.png" width="508" height="540"></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif">Fig. 1 - Interface 
+  de gera&ccedil;&atilde;o de legenda.</font></p>
+  <p><font face="Arial, Helvetica, sans-serif">A importa&ccedil;&atilde;o serve 
+    para recuperar valores de agrupamento usados em outros temas. Ela &eacute; 
+    feita ativando-se o check box <em>Importar</em>. A Figura 2 mostra a caixa 
+    de importa&ccedil;&atilde;o desativada e a Figura 3 mostra a caixa depois 
+    da ativa&ccedil;&atilde;o do check box.</font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif"><img src="legendWindow_arquivos/import1.png" width="384" height="89"></font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif">Fig. 2 - Caixa de 
+  importa&ccedil;&atilde;o de agrupamento desativada.</font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif"><img src="legendWindow_arquivos/import2.png" width="384" height="89"></font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif">Fig. 3 - Caixa de 
+  importa&ccedil;&atilde;o de agrupamento ativada.</font></p>
+  <p><font face="Arial, Helvetica, sans-serif">Para importar, ative o check box 
+    <em>Importar</em> e selecione o tema desejado. Ao pressionar o bot&atilde;o 
+    <em>Importar</em> os par&acirc;metros de agupamento do tema selecionado s&atilde;o 
+    recuperados pelo m&oacute;dulo.</font></p>
+<p><font face="Arial, Helvetica, sans-serif">OBS: A lista de temas 
+  para importa&ccedil;&atilde;o &eacute; filtrada de modo que mostre apenas temas 
+  com agrupamento por passos iguais ou quantil. Temas agrupados por desvio padr&atilde;o 
+  ou valor &uacute;nico n&atilde;o s&atilde;o poss&iacute;veis de serem importados.</font></p>
+<p><font face="Arial, Helvetica, sans-serif">A importa&ccedil;&atilde;o 
+  &eacute; feita mesmo que os temas n&atilde;o usem o mesmo plano de informa&ccedil;&atilde;o. 
+  Caso o tema corrente n&atilde;o possua o mesmo nome do atributo do tema importado, 
+  &eacute; enviada uma mensagem de aviso. Neste caso, tudo &eacute; recuperado 
+  menos o nome do atributo.</font></p>
+  <p><font face="Arial, Helvetica, sans-serif"> Ap&oacute;s a importa&ccedil;&atilde;o, 
+    n&atilde;o mude os par&acirc;metros da caixa <em>Par&acirc;metros de Agrupamento</em> 
+    mostrada na Figura 4. Qualquer mudan&ccedil;a nos par&acirc;metros de agrupamento 
+    anula a legenda recuperada. Para finalizar a legenda importada pressione o 
+    bot&atilde;o <em>Executar</em> na parte inferior da interface.</font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif"><img src="legendWindow_arquivos/groupingParameters.png" width="552" height="142"></font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif">Fig. 4 - Par&acirc;metros 
+  de agrupamento para criar legenda.</font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>Criar nova legenda</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif">Para criar uma legenda 
+  &eacute; necess&aacute;rio configurar os par&acirc;metros da Figura 4.</font></p>
+<p><font face="Arial, Helvetica, sans-serif">O combo &quot;Modo&quot; 
+  tem uma lista com os tipos de agrupamento dispon&iacute;veis que s&atilde;o:</font></p>
+<ol>
+  <ol>
+    <li><font face="Arial, Helvetica, sans-serif"><a href="#passos_iguais">passos 
+      iguais</a></font></li>
+    <li><font face="Arial, Helvetica, sans-serif"><a href="#quantil">quantil</a></font></li>
+    <li><font face="Arial, Helvetica, sans-serif"><a href="#desvio_padrao">desvio 
+      padr&atilde;o</a> e</font></li>
+    <li><font face="Arial, Helvetica, sans-serif"><a href="#valor_unico">valor 
+      &uacute;nico</a>.</font></li>
+  </ol>
+</ol>
+  <p><font face="Arial, Helvetica, sans-serif">O combo <em>Atributo</em> tem uma 
+    lista com todos os atributos do tema. </font></p>
+  <p><font face="Arial, Helvetica, sans-serif">O combo <em>N&uacute;mero de Fatias</em>, 
+    utilizado em passos iguais e quantil, possibilita gerar legenda com at&eacute; 
+    200 grupos. </font></p>
+  <p><font face="Arial, Helvetica, sans-serif">O combo <em>Desvio Padr&atilde;o</em>, 
+    utilizado em agrupamento por desvio padr&atilde;o, permite gerar grupos separados 
+    por:</font></p>
+  <ul>
+  <li><font face="Arial, Helvetica, sans-serif">1 desvio padr&atilde;o,</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">1/2 desvio padr&atilde;o ou</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">1/4 desvio padr&atilde;o.</font></li>
+  </ul>
+ 
+  <p><font face="Arial, Helvetica, sans-serif">O combo <em>Precis&atilde;o</em> 
+    define o n&uacute;mero de casas decimais para gera&ccedil;&atilde;o da legenda.</font></p>
+  <p><font face="Arial, Helvetica, sans-serif">O combo <em>Fun&ccedil;&atilde;o</em> 
+    &eacute; aplicado quando o atributo necessita de uma <a href="#funcao_agregacao">fun&ccedil;&atilde;o 
+    de agrega&ccedil;&atilde;o</a>.</font></p>
+<p><font face="Arial, Helvetica, sans-serif">Os par&acirc;metros referentes a 
+  dados temporais (Crono, Intervalo de Crono e Data/Tempo) encontram-se desativados 
+  nesta vers&atilde;o.</font></p>
+  <p><font face="Arial, Helvetica, sans-serif">Esses par&acirc;metros, uma vez 
+    configurados, s&atilde;o utilizados para calcular e mostrar a legenda na parte 
+    inferior da interface. A aplica&ccedil;&atilde;o desses par&acirc;metros &eacute; 
+    feito pelo bot&atilde;o <em>Aplicar</em>.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial, Helvetica, sans-serif"><b>Defini&ccedil;&atilde;o 
+  das cores</b></font></p>
+  <p><font face="Arial, Helvetica, sans-serif">Uma vez mostrada a legenda, pode-se 
+    ajustar as cores atrav&eacute;s da caixa <em>Cores</em> mostrada na Figura 
+    5.</font></p>
+<p align="center"><img src="legendWindow_arquivos/colors1.png" width="594" height="131"></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif">Fig. 5 - configura&ccedil;&atilde;o 
+  de cores da legenda.</font></p>
+<p><font face="Arial, Helvetica, sans-serif">As cores da legenda 
+  s&atilde;o definidas a partir da <a href="colorBar.htm">barras de cores</a>. 
+  </font></p>
+<p><font face="Arial, Helvetica, sans-serif">De acordo com a sequ&ecirc;ncia 
+  das cores selecionadas s&atilde;o produzidas as cores da legenda.</font></p>
+  <p><font face="Arial, Helvetica, sans-serif">O bot&atilde;o <em>Limpar</em> 
+    retira as corers da barra e o bot&atilde;o <em>Inverter</em> inverte a sequencia 
+    de cores da barra.</font></p>
+  <p><font face="Arial, Helvetica, sans-serif">O bot&atilde;o <em>Salvar</em> 
+    permite que o usuário crie sua própria barra de cores e a salve no banco de 
+    dados.</font></p>
+  <p><font face="Arial, Helvetica, sans-serif">O bot&atilde;o <em>Intervalos iguais</em> 
+    espaça igualmente as cores presentes na barra.</font></p>
+  <p><font face="Arial, Helvetica, sans-serif">A lista no quadro <em>Carregar 
+    barra de cores</em> permite recuperar uma das barras salvas.</font></p>
+<p><font face="Arial, Helvetica, sans-serif">Nota: O estilo do visual 
+  n&atilde;o &eacute; alterado neste m&oacute;dulo. O visual utilizado contem 
+  o estilo do visual default do tema.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial, Helvetica, sans-serif"><b>Edi&ccedil;&atilde;o 
+  manual da legenda</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif">A edi&ccedil;&atilde;o 
+  manual deve ser feita sobre a legenda mostrada na parte inferior da interface 
+  com o aux&iacute;lio do mouse e do teclado.</font></p>
+  <p><font face="Arial, Helvetica, sans-serif">Durante e ap&oacute;s a edi&ccedil;&atilde;o 
+    n&atilde;o mude a configura&ccedil;&atilde;o da caixa <em>Par&acirc;metros 
+    de Agrupamento</em>. Qualquer altera&ccedil;&atilde;o nos par&acirc;metros 
+    faz perder a edi&ccedil;&atilde;o porque isso apaga a legenda mostrada. Tamb&eacute;m 
+    n&atilde;o pressione o bot&atilde;o <em>Aplicar</em> porque isso recalcula 
+    e gera uma nova legenda.</font></p>
+<p><font face="Arial, Helvetica, sans-serif">O ajuste de cores pode 
+  ser feito a qualquer momento sem que haja perda de edi&ccedil;&atilde;o.</font></p>
+  <p><font face="Arial, Helvetica, sans-serif">Ap&oacute;s concluida a edi&ccedil;&atilde;o 
+    pressione o bot&atilde;o <em>Executar</em> para salvar e desenhar o tema.</font></p>
+  <p><font face="Arial, Helvetica, sans-serif">Nota: Quando &eacute; feito uma 
+    edi&ccedil;&atilde;o, o campo <em>Contagem</em> fica desatualizado at&eacute; 
+    que bot&atilde;o <em>Executar</em> seja pressionado.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial, Helvetica, sans-serif"><b>Outros modos de agrupamento</b></font></p>
+  <p><font face="Arial, Helvetica, sans-serif">Quando nenhum dos modos aqui implementados 
+    s&atilde;o desejados, pode-se criar uma nova legenda atrav&eacute;s da edi&ccedil;&atilde;o 
+    manual. Neste caso, aplique um agrupamento por passos iguais selecionando 
+    o atributo e o n&uacute;mero de fatias. Em seguida fa&ccedil;a as edi&ccedil;&otilde;es 
+    sobre a legenda mostrada na parte inferior da interface. Por fim, ajuste as 
+    cores e pressione o bot&atilde;o <em>Executar</em>.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial, Helvetica, sans-serif"><b>Considera&ccedil;&otilde;es sobre 
+  as formas de agrupamento </b></font></p>
+  <p><font face="Arial, Helvetica, sans-serif"><a name="passos_iguais"></a>O modo<b> 
+    </b>de agrupamento por <em>passos iguais</em> produz o mesmo intervalo de 
+    valores em cada grupo. Para exemplificar, caso o valor m&iacute;nimo de um 
+    atributo seja 0, o valor m&aacute;ximo 20 e o n&uacute;mero de fatias 5, o 
+    m&oacute;dulo calcula o range de valores em cada grupo da seguinte forma:</font></p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">range = vmax - vmin / N&uacute;mero 
+    de fatias</font></li>
+</ul>
+<p><font face="Arial, Helvetica, sans-serif">substituindo, temos:</font></p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">range = 20 - 0 / 5 = 4</font></li>
+</ul>
+<p><font face="Arial, Helvetica, sans-serif">Ent&atilde;o, neste exemplo, cada 
+  grupo tem intervalo de valores igual a 4. Portanto, resulta em:</font></p>
+<p><font face="Arial, Helvetica, sans-serif">grupo 1: 0 ~ 4 (note que o intervalo 
+  &eacute; 4 - 0 = 4)</font></p>
+<p><font face="Arial, Helvetica, sans-serif">grupo 2: 4 ~ 8 (note que o intervalo 
+  &eacute; 8 - 4 = 4)</font></p>
+<p><font face="Arial, Helvetica, sans-serif">grupo 3: 8 ~12 (note que o intervalo 
+  &eacute; 12 - 8 = 4)</font></p>
+<p><font face="Arial, Helvetica, sans-serif">grupo 4: 12 ~16 (note que o intervalo 
+  &eacute; 16 - 12 = 4)</font></p>
+<p><font face="Arial, Helvetica, sans-serif">grupo 5: 16 ~20 (note que o intervalo 
+  &eacute; 20 - 16 = 4)</font></p>
+<p><font face="Arial, Helvetica, sans-serif">A Figura 6 mostra a legenda criada 
+  por esse agrupamento.</font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif"><img src="legendWindow_arquivos/equal.png" width="277" height="122"> 
+  </font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif">Fig. 6 - Resultado 
+  de um agrupamento por passos iguais.</font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b>Considera&ccedil;&otilde;es sobre 
+  a forma de apresenta&ccedil;&atilde;o e execu&ccedil;&atilde;o da legenda</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif">Na legenda, a fim de simplificar, 
+  n&atilde;o s&atilde;o mostrados os sinais matem&aacute;ticos de inclus&atilde;o 
+  e exclus&atilde;o. </font></p>
+<p><font face="Arial, Helvetica, sans-serif">Do primeiro ao pen&uacute;ltimo grupo 
+  os intervalos considerados v&atilde;o de inclusive a exclusive. Assim, neste 
+  exemplo temos:</font></p>
+  
+  <p><font face="Arial, Helvetica, sans-serif">0 &lt;= v &lt; 4 (valores entre 
+    0 e 4, onde 0 &eacute; inclusive e 4 &eacute; exclusive)</font></p>
+  <p><font face="Arial, Helvetica, sans-serif"> 4 &lt;= v &lt; 8 (valores entre 
+    4 e 8, onde 4 &eacute; inclusive e 8 &eacute; exclusive)</font></p>
+  <p><font face="Arial, Helvetica, sans-serif">8 &lt;= v &lt; 12 (valores entre 
+    8 e 12, onde 8 &eacute; inclusive e 12 &eacute; exclusive)</font></p>
+  <p><font face="Arial, Helvetica, sans-serif"> 12 &lt;= v &lt; 16 (valores entre 
+    12 e 16, onde 12 &eacute; inclusive e 16 &eacute; exclusive)</font></p>
+ 
+<p><font face="Arial, Helvetica, sans-serif">No &uacute;ltimo grupo os intervalos 
+  v&atilde;o de inclusive a inclusive, ou seja:</font></p>
+  
+  <p><font face="Arial, Helvetica, sans-serif">16 &lt;= v &lt;= 20 (valores entre 
+    16 e 20, onde 12 &eacute; inclusive e 20 tambem &eacute; inclusive)</font></p>
+ 
+<p>&nbsp;</p>
+  <p><font face="Arial, Helvetica, sans-serif"><a name="quantil"></a>O modo de 
+    agrupamento por <em>quantil</em> procura gerar a mesma quantidade de objetos 
+    em cada grupo. Dessa forma n&atilde;o &eacute; o intervalo de valores que 
+    &eacute; constante. O que deve ser mantido aqui &eacute; n&uacute;mero de 
+    objetos constante em cada grupo. Essa forma de agrupamento ajuda a visualizar 
+    como um dado &eacute; percentualmente distribuido. A Figura 7 mostra o resultado 
+    de um agrupamento por quantil efetuado pelo m&oacute;dulo.</font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif"><img src="legendWindow_arquivos/quantil.png" width="304" height="122"> 
+  </font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif">Fig. 7 - Resultado 
+  de um agrupamento por quantil.</font></p>
+<p> <font face="Arial, Helvetica, sans-serif">Na Figura 6 observa-se 
+  que a Contagem de objetos &eacute; pr&oacute;xima de 18 em cada grupo. </font></p>
+<p>&nbsp;</p>
+  <p><font face="Arial, Helvetica, sans-serif"><a name="desvio_padrao"></a>O modo 
+    de agrupamento por <em>desvio padr&atilde;o</em> produz os intervalos em fun&ccedil;&atilde;o 
+    do valor de desvio padr&atilde;o em torno da m&eacute;dia. Neste caso, o n&uacute;mero 
+    de fatias ou de grupos depende dos dados do tema. Essa forma de agrupamento 
+    ajuda a analizar o comportamento dos dados em torno da m&eacute;dia. A Figura 
+    8 mostra o resultado de um agrupamento por desvio padr&atilde;o efetuado pelo 
+    m&oacute;dulo.</font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif"><img src="legendWindow_arquivos/stdDev1Cor.png" width="308" height="163"> 
+  </font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif">Fig. 8 - Resultado 
+  de um agrupamento por desvio padr&atilde;o usando a cor laranja.</font></p>
+<p> <font face="Arial, Helvetica, sans-serif">No agrupamento por desvio 
+  padr&atilde;o, o m&oacute;dulo produz uma linha a mais em sua legenda para exibir 
+  o valor da m&eacute;dia. Observe que cada intervalo de valores, abaixo e acima 
+  da m&eacute;dia, &eacute; igual ao valor do desvio configurado na interface 
+  que pode ser: 1, 1/2 ou 1/4.</font></p>
+<p> <font face="Arial, Helvetica, sans-serif">Neste tipo de agrupamento 
+  as cores s&atilde;o dispostas de forma que possa distinguir quais s&atilde;o 
+  os objetos que est&atilde;o perto da m&eacute;dia e quais se afastam da m&eacute;dia. 
+  Note que, conforme se afasta da m&eacute;dia, a cor se torna cada vez mais clara. 
+  A barra de cores que produziu esse resultado &eacute; ilustrado na Figura 9.</font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif"><img src="legendWindow_arquivos/colorsSTD.png" width="408" height="118"></font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif">Fig. 9 - Barras de 
+  cores utilizadas no agrupamento por desvio padr&atilde;o.</font></p>
+<p> <font face="Arial, Helvetica, sans-serif">A barra superior configura 
+  as cores para definir as legendas que ficam abaixo da m&eacute;dia e a barra 
+  inferior para definir as legendas que ficam acima da m&eacute;dia. No exemplo 
+  da Figura 7 , em particular, n&atilde;o &eacute; possivel distinguir, pelas 
+  cores, quais objetos se afastam da m&eacute;dia para cima e da m&eacute;dia 
+  para baixo. Entretanto, alterando-se as cores das barras pode-se definir legendas 
+  de forma a produzir adequadamente essas distin&ccedil;&otilde;es. A Figura 9 
+  mostra a mesma legenda produzida pelas barras de cores da Figura 10. </font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif"><img src="legendWindow_arquivos/stdDev2Cor.png"></font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif">Fig. 10 - Resultado 
+  de um agrupamento por desvio padr&atilde;o usando a cor azul e vermelha.</font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif"><img src="legendWindow_arquivos/colorsSTD2.png" width="408" height="118"></font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif">Fig. 11 - Resultado 
+  de um agrupamento por desvio padr&atilde;o usando a cor azul e vermelha.</font></p>
+<p> <font face="Arial, Helvetica, sans-serif">As mesmas legendas pode 
+  ser gerada com as tonalidades invertidas. Isso &eacute; feito pressionando-se 
+  o bot&atilde;o &quot;Inverter&quot; da caixa &quot;Cores&quot;. A Figura 12 
+  mostra a legenda com as tonalidade invertidas.</font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif"><img src="legendWindow_arquivos/stdDevInv.png"></font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif">Fig. 12 - Legenda 
+  com as tonalidades invertidas.</font></p>
+<p><font face="Arial, Helvetica, sans-serif">O agrupamento por desvio padr&atilde;o 
+  &eacute; representado graficamente pela Figura 13. Esse gr&aacute;fico ilustra 
+  uma t&iacute;pica curva de distribui&ccedil;&atilde;o normal com m&eacute;dia 
+  e intervalos de desvio padr&atilde;o igua a 1. Os intervalos podem variar de 
+  1, 1/2 e 1/4, onde cada intervalo &eacute; pintado com uma cor.</font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif"><img src="legendWindow_arquivos/normal.png" width="642" height="225"></font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif">Fig. 13 - T&iacute;pica 
+  curva de distribui&ccedil;&atilde;o normal mostrando a m&eacute;dia e os intervalos 
+  de desvio padr&atilde;o.</font></p>
+<p>&nbsp;</p>
+  <p> <font face="Arial, Helvetica, sans-serif"><a name="valor_unico"></a>O modo 
+    de agrupamento por <em>valor &uacute;nico</em> &eacute; utilizado para qualquer 
+    tipo de atributo (INTEIRO, REAL, STRING, TEMPO, etc). Nesse tipo de agrupamento 
+    &eacute; dado um visual para cada valor distinto de atributo. Ele &eacute; 
+    usado, normalmente, para ilustrar um dado qualitativo. Por exemplo, tipo de 
+    soja, tipo de solo, ra&ccedil;a, etc. Enfim, valores que n&atilde;o s&atilde;o 
+    grandes em n&uacute;mero ou variedade. Geralmente, ele n&atilde;o deve ser 
+    usado em dados quantitativos porque podem produzir uma enorme quantidade de 
+    legendas. Por exemplo, popula&ccedil;&atilde;o, etc.</font></p>
+<p> <font face="Arial, Helvetica, sans-serif">A Figura 14 mostra o 
+  resultado de um agrupamento por valor &uacute;nico efetuado pelo m&oacute;dulo.</font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif"><img src="legendWindow_arquivos/unique.png" width="252" height="102"></font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif">Fig. 14 - Resultado 
+  de um agrupamento por valor &uacute;nico.</font></p>
+<p> <font face="Arial, Helvetica, sans-serif">O limite m&aacute;ximo 
+  para o n&uacute;mero de grupos em uma legenda &eacute; de 200 grupos. Quando 
+  esse n&uacute;mero &eacute; ultrapassado &eacute; enviado uma mensagem. Neste 
+  caso a legenda n&atilde;o &eacute; gerada.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial, Helvetica, sans-serif"><b><a name="funcao_agregacao"></a>Fun&ccedil;&atilde;o 
+  de agrega&ccedil;&atilde;o</b></font></p>
+<p> <font face="Arial, Helvetica, sans-serif">A Fun&ccedil;&atilde;o 
+  de agrega&ccedil;&atilde;o &eacute; utilizada na sumariza&ccedil;&atilde;o de 
+  dados. No m&oacute;dulo ela &eacute; ativada toda vez que o atributo utilizado 
+  no agrupamento vem de uma tabela externa ou temporal. Nesse caso, cada objeto 
+  pode ter v&aacute;rios valores e &eacute; sumarizado por uma fun&ccedil;&atilde;o 
+  estatistica. As fun&ccedil;&otilde;es v&aacute;lidas s&atilde;o:</font></p>
+  
+  <p><font face="Arial, Helvetica, sans-serif">MIN (m&iacute;nimo)</font></p>
+  <p><font face="Arial, Helvetica, sans-serif">MAX (m&aacute;ximo)</font></p>
+  <p><font face="Arial, Helvetica, sans-serif">SUM (soma)</font></p>
+  <p><font face="Arial, Helvetica, sans-serif">AVG (m&eacute;dia) e</font></p>
+  <p><font face="Arial, Helvetica, sans-serif">COUNT (contagem)</font></p>
+ 
+<p>&nbsp;</p>
+<p><font face="Arial, Helvetica, sans-serif"><b>Missing Data</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif">Objetos com valores 
+  desconhecidos s&atilde;o agrupados no grupo chamado &quot;Missing data&quot;. 
+  Esse grupo &eacute; automaticamente gerado quando existe algum valor desconhecido 
+  no atributo utilizado para fazer o agrupamento. Esse grupo &eacute; sempre representado, 
+  por default, com a cor branca e aparece em &uacute;ltimo na legenda.</font></p>
+
+</div>
+</body>
+</html>

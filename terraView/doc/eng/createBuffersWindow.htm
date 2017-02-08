@@ -1,0 +1,93 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Creation of Distance Zones or Buffers</title>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+
+<div align="justify"><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family:"Arial","sans-serif";'>
+  <p><strong>TerraView</strong></p>
+  <p align=right> <font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family:Arial'> 
+    <a href="atribuir_dado_localizacao.htm">&lt;&lt; Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> 
+    | <a href="grafico.htm">Next &gt;&gt;</a> </span> </font></p>
+  <hr size=2 width="100%" align=center>
+  <p align=center><strong><u><span style='font-size: 13.5pt;font-family:Arial'>Creation 
+    of Distance Zones or Buffers</span></u></strong> </p>
+  <p>A buffer or distance zone is an area around 
+  an object with a fixed distance from it. Some examples of buffer are shown in 
+  Figure 1.</p> 
+  <p align="center"> <img src="createBuffersWindow_arquivos/image001.png"> 
+    <br>
+    Figure 1 - Examples of distance zone or buffer </p>
+  <p>The interface to create buffers or distance zones is shown in Figure 2. This 
+    interface creates a new layer with all buffers created from the objects of 
+    an input theme and a given distance. To activate the interface, use the context 
+    menu on a View, and <strong>Geoprocessing – Create Buffers</strong> option. 
+  </p>
+  <p align="center"> <img src="createBuffersWindow_arquivos/image002.png"> 
+    <br>
+    Figure 2 - Create buffers interface </p>
+  <p>The interface has 6 parts: </p>
+  <p>1. <strong>Input</strong>: used to define the input theme and which theme objects 
+  are considered (all, pointed only, or queried only. </p>
+  <p>2. <strong>Distance</strong>: used to define a fixed distance for all objects 
+  or to select the numeric attribute which defines specific distances for each 
+  object. </p>
+  <p>IMPORTANT: the distance unit MUST be the same of the data. For instance, if 
+  data unit is decimal degrees, the distance must be also in decimal degrees; 
+  if the unit is meters, the distance must be in meters, and so on. To check which 
+  is the input theme unit, verify the base layer projection of the theme. </p>
+  <p>3. <strong>Multiple Levels</strong>: different buffer levels based on a distance 
+  <b><i>d</i></b> can be created. Therefore, each level <b><i>n</i></b> buffer 
+  corresponds to a distance buffer between <b><i>d*(n-1)</i></b> and <b><i>d*n</i></b>. 
+  In Figure 3, 3 buffer levels were created around Minas Gerais state borders, 
+  considering a 7000 meters distance. The first level is a 7000 meters buffer. 
+  The second level corresponds to a distance buffer between 7000 and 14000 meters. 
+  And finally, the third level corresponds to a distance buffer between 14000 
+  and 21000 meters. </p>
+  <p align="center"> <img id="_x0000_i1027" src="createBuffersWindow_arquivos/image003.png"> 
+    <br>
+    Figure 3 - Multiple levels </p>
+  <p>4. <strong>Dissolve Barriers Between Buffers</strong>: each computed buffer 
+  for each object of an input theme creates a new object in the output layer. 
+  Depending on the selected distance, the output layermay contain overlapping 
+  objects. If dissolve barriers between barriers option is selected, all overlapping 
+  objects in the output layer are joined in a single object. This operation is 
+  shown in Figure 4. </p>
+  <p align="center"> <img id="_x0000_i1026" src="createBuffersWindow_arquivos/image004.png"> 
+    <br>
+    Figure 4 - Dissolve barriers between buffers </p>
+  <p>The input theme is shown in Figure 4.a. The output layer created without dissolving 
+  barriers between buffers is shown in Figure 4.b. Observe that each buffer created 
+  one object in the output layer (buffer_1, buffer_2 and buffer_3) and that they 
+  overlap. The output layer created by dissolving barriers between buffers is 
+  shown in Figure 4.c. In this case, the output layer is created with one object 
+  only (buffer_1), resulting from the union of all created buffers. </p>
+  <p>5. <strong>Rule To Polygon Case</strong>: this part of the interface is enabled 
+  when the geometric representation of the input layer is polygonal. Three types 
+  of buffer can be selected: Only Inside, Inside and Outside, and Only Outside. 
+  Figure 5 shows each type of buffer. Figure 5.a shows a buffer created with only 
+  the inside region of Minas Gerais state, Figure 5.b shows a buffer created with 
+  only the outside region, and Figure 5.c shows a buffer created with inside and 
+  outside regions. </p>
+  <p align="center"> <img id="_x0000_i1025" src="createBuffersWindow_arquivos/image005.png"> <br>
+    Figure 5 - Buffer types </p>
+  <p>6. <strong>Output</strong>: used to define the output layer name.&nbsp;the created 
+  layer will contain the buffers and and a static table with distance and level 
+  of each buffer. </p>
+  <br>
+  <hr size=2 width="100%" align=center>
+  </span>
+  <div align="right"></div>
+  <div align="right"><span style="font-family:Arial"><font size="3" face="Arial, Helvetica, sans-serif"><a href="atribuir_dado_localizacao.htm">&lt;&lt; 
+    Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="grafico.htm">Next 
+    &gt;&gt;</a></font></span></div>
+  <span style='font-family:Arial'><br>
+  <br>
+  </span> </div>
+
+</body>
+
+</html>

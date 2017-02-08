@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>TerraView</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<font face="Arial, Helvetica, sans-serif" size="4">
+<table width="100%">
+  <tr>
+ 
+  </tr>
+  <tr> 
+    <td><b><font size="4" face="Arial, Helvetica, sans-serif">Spatial Statistics</font></b><br>
+      <hr>
+      <p><font face="Arial"><strong>Global Moran Index</strong></font></p>
+      <p>This index is used to identify the spatial correlation structure that best describes 
+        the data. The basic principle is to characterize the spatial dependency by showing how 
+        values are spatially correlated. In a general way, Moran index is useful to test if 
+        the null hypothesis is that there is spatial dependency; in this case the value is 
+        zero. Positive values (between 0 and +1) indicate a direct correlation and negative 
+        values (between 0 and -1) indicate inverse correlation. Once the index is calculate, 
+        it is important to statistically validate it. </p>
+      <p>Activate UP Theme with BH.mdb open. In the menu bar, select the <b>Analysis</b> - 
+        <b>Spatial Statistics</b>. 
+        The Spatial Statistics window will be displayed, as shown in the figure below.</p>
+      <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/estatistica_espacial.png" width="339" height="478"> 
+        </font></p>
+      <p><font face="Arial">1. Define the <b>Attribute</b> for which the presence of local 
+        spatial correlation must be tested. Select the attribute homicides in year 2003 (HOM_03).</font></p>
+      <p><font face="Arial">2. Activate the <b>Moran Index</b> option.</font></p>
+      <p><font face="Arial">3. To evaluate the significance of the index, select 99 permutations.</font></p>
+      <p><font face="Arial">4. Click on <b>OK</b> to execute the procedure.</font></p>
+      <p><font face="Arial">5. Test result will be shown in the <b>Index Value</b> and <b>p-value</b> 
+        fields.<br>
+        </font></p>
+      <p>It can be verified that there is no spatial autocorrelation in the Homicides in year 2003 
+        since the Moran index value is 0.105837, with 0.12 significance. A small index value and a 
+        significance value over 0.05, indicates that the hypothesis of no spatial autocorrelation can 
+        not be rejected.<br>
+        A visual analysis can also be executed using a Thematic Map. 
+        For instance, select five equal steps for the focus attribute in the <b>Edit Legend</b> 
+        option on the UP Theme popup menu.<br>
+      </p>
+	  <p align="center"><img src="terraViewBase_arquivos/estatistica_espacial1.png" width="501" height="405"></p>
+      <p>If there were spatial autocorrelation, it can be expected that, areas with greater 
+        (smaller) proportions of homicides were closer to each other. However, the map 
+        above shows that this does not happen, since no clear pattern can be observed.</p>
+      <p>To practice with an example where there is spatial autocorrelation, 
+        follow the steps above using the Mean Income (rendamedia) attribute.<br>
+        After the procedure is applied, it can be verified that there is spatial autocorrelation 
+        with the Mean Income attribute, since the Moran index value is 0.446818, with 
+        0.01 significance value.</p>
+      <p><font face="Arial"><strong>Local Moran Index - LISA</strong></font></p>
+      <p>Global autocorrelation indicators, such as Moran index, provide one value as 
+        the measure of spatial association for the whole study region dataset. 
+        However, in many cases it is desirable to analyze patterns in a scale with more 
+        details to verify if the hypothesis of stationarity of the process is valid locally.<br>
+        To verify the hypothesis, it is necessary to use spatial association indicators that can be 
+        associated to different location of a spatially distributed variable. 
+        This methodology uses the Local Moran Index to find spatial correlation in these areas. 
+        Given that it is a local indicator, there is a specific correlation value for each area.</p>
+      <p>Activate UP Theme with the BH.mdb database open. In the menu bar, select <b>Analysis</b> - 
+        <b>Spatial Statistics</b>. A new window will be displayed, as shown in 
+          the following figure.<br>
+      </p>
+      <p align="center"><img src="terraViewBase_arquivos/estatistica_espacial2.png" width="338" height="478"></p>
+      <p>1. Define the <b>Attribute</b> for which the presence of local spatial 
+        correlation must be tested. Select rendamedia (mean income).</p>
+      <p>2. Activate the <b>Local Moran Index (LISA)</b> option.</p>
+      <p>3. To test the significance of the index, select 99 permutations.</p>
+      <p>4. Insert the <b>Prefix of the column to be generated</b>. Type in RENDA.</p>
+      <p>5. Click on <b>OK</b> to execute the procedure.</p>
+      <p>The following columns are created:</p>
+      <p>- <b>Z</b>: Vector with observed deviations.<br>
+      </p>
+      <p>- <b>Wz</b>: Local weighted average vector.<br>
+      </p>
+      <p>- <b>MoranIndex</b>: Local Moran Index.<br>
+      </p>
+      <p>- <b>LISASig</b>: Value of the p statistics. In the given example, 
+        if the value is greater than 0.05 we may assume that there is no autocorrelation 
+        and it is significant.</p>
+      <p>- <b>BoxMap</b>: Presented values correspond to the relation between Z 
+        and Wz values in a Dispersion Plot divided by quadrants (Q). Values range 
+        from 1 to 4, where 1 corresponds to values in Q1 (high-high – high Z and 
+        Wz values), 2 (Q2, low-low), 3 (Q3, high-low), and 4 (Q4, low-high). 
+        In the study case, if the deviations vector (Z) and the averages vectors 
+        (Wz) are high – case of the Q1 quadrant - it may be assumed that it is an 
+        UP with high average income surrounded by other UPs in the same situation; 
+        and if it is Q2, the UP has low average income and is surrounded by UPs in 
+        the same situation.<br>
+        Cases Q3 and Q4 detect Ups with high and low incomes located near UPs with 
+        lower and higher incomes, respectively. 
+        Note that this type of study only divides UPs in two groups in relation to 
+        average income (high and low).</p>
+      <p>- <b>LISAMap</b>: This column values, ranging from 0 to 4, are created 
+        only if a level of significance is selected in the interface.<br>
+        During the creation of a LISAMap, local indices are classified as: 
+        non significant (0) or significant with confidence 95% (1, p=0.05), 99% (2, p=0.01) 
+        and 99,9% (3, p=0.001).</p>
+      <p>- <b>MoranMap</b>: This column values are generated only if a level of significance 
+        is selected in the interface. This result presents only regions where <i>Ii</i> values 
+        are significant (interval above 95%) while BoxMap does not consider significance. 
+        In this case, local indices <i>Ii</i> are associated to the Moran dispersion diagram.<br>
+        The values are: 0 (non significant), 1 – Q1 (high-high), 2 – Q2 (low-low), 
+        3 – Q3 (high-low), 4 – Q4 (low-high)..<br>
+        <br>
+        <font face="Arial"><strong>Local Mean</strong></font></p>
+      <p>Spatial Local Mean method examines the mean value <i>mi</i> of an attribute in 
+        the study region (first order).</p>
+      <p>Activate UP Theme with the BH.mdb database open. In the menu bar, select <b>Analysis</b> - 
+        <b>Spatial Statistics</b>. A new window will be displayed, as shown in 
+          the following figure: </p>
+      <p align="center"><img src="terraViewBase_arquivos/estatistica_espacial3.png" width="339" height="478"></p>
+	  <p>1. Define the <b>Attribute</b> for which the presence of local spatial correlation 
+	must be tested. Select the rendamedia attribute.</p>
+      <p>2. Activate the <b>Local Mean</b> option.</p>
+      <p>3. Evaluate the test significance by selecting 99 permutations.</p>
+      <p>4. Insert the <b>Prefix of the column to be generated</b>. Type in RendaMedia.</p>
+      <p>Create a legend using Quantil mode to produce a Thematic Map with the generated column.</p>
+      <p><font face="Arial"><strong>G and G* Functions</strong></font></p>
+      <p>G and G* functions are two local spatial autocorrelation indices that allow the 
+        test of hypotheses about the spatial clustering of the values sum, associated to 
+        the neighbors points to the considered one. <br>
+        Since this indicators are composed by the sum of attributes values, the observation 
+        of significant high values of Gi and Gi*  indicates that this attributes occur in 
+        high values, and the opposite indicates clustering of low values. <br>
+        The main difference between G and G* functions is that the former considers values 
+        of all neighbors while the later considers the region to calculate the index.<br>
+      </p>
+      <p>Activate UP Theme with BH.mdb database open. In the menu bar, select <b>Analysis</b> - 
+        <b>Spatial Statistics</b>. A new window will be displayed, as shown in the following figure:</p>
+      <p align="center"><img src="terraViewBase_arquivos/estatistica_espacial4.png" width="339" height="478"></p>
+      <p>1. Define the <b>Attribute</b> for which the presence of local spatial correlation 
+	must be tested. Select the rendamedia attribute.</p>
+      <p>2. Activate the <b>G</b> option.</p>
+      <p>3. To test the significance of the index, select 99 permutations.</p>
+      <p>4. Define a <b>Prefix of the column to be generated</b> by the G function (this is an 
+        optional step).</p>
+      <p>5. Click on <b>OK</b> to execute the procedure.</p>
+      <p>A new column will be created with the values of the G function. With this 
+        estimation, a Thematic Map can be created.<br>
+        Follow the steps presented above, but using the G* option. <br>
+      </p>
+      <p>For further details on Spatial Statistics, consult Lesson 8 of TerraView tutorials.<br>
+      </p>
+      <p>&nbsp;</p>
+    </td>
+  </tr>
+  <tr>
+  </tr>
+</table>
+</font> 
+</body>
+</html>

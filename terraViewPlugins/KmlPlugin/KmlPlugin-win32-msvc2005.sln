@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KmlPlugin", "KmlPlugin-msvc2005.vcproj", "{A63CB6F1-A3FD-4220-97D9-27B0BD97C5F5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A2DC9E23-F76C-44D8-9089-764BB411A4F6} = {A2DC9E23-F76C-44D8-9089-764BB411A4F6}
+		{F6D51778-EFCB-4ECE-B489-1C9A66CAC119} = {F6D51778-EFCB-4ECE-B489-1C9A66CAC119}
+		{1253197A-5710-4924-9706-6449C0C32FE9} = {1253197A-5710-4924-9706-6449C0C32FE9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terralib", "..\..\build\win32-msvc2005\terralib\terralib.vcproj", "{1253197A-5710-4924-9706-6449C0C32FE9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogccommon", "..\..\..\terraogc\build\win32-msvc.net-2005\terraogccommon\terraogccommon.vcproj", "{F6D51778-EFCB-4ECE-B489-1C9A66CAC119}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1253197A-5710-4924-9706-6449C0C32FE9} = {1253197A-5710-4924-9706-6449C0C32FE9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogcxml", "..\..\..\terraogc\build\win32-msvc.net-2005\terraogcxml\terraogcxml.vcproj", "{A2DC9E23-F76C-44D8-9089-764BB411A4F6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F6D51778-EFCB-4ECE-B489-1C9A66CAC119} = {F6D51778-EFCB-4ECE-B489-1C9A66CAC119}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A63CB6F1-A3FD-4220-97D9-27B0BD97C5F5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A63CB6F1-A3FD-4220-97D9-27B0BD97C5F5}.Debug|Win32.Build.0 = Debug|Win32
+		{A63CB6F1-A3FD-4220-97D9-27B0BD97C5F5}.Release|Win32.ActiveCfg = Release|Win32
+		{A63CB6F1-A3FD-4220-97D9-27B0BD97C5F5}.Release|Win32.Build.0 = Release|Win32
+		{1253197A-5710-4924-9706-6449C0C32FE9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1253197A-5710-4924-9706-6449C0C32FE9}.Debug|Win32.Build.0 = Debug|Win32
+		{1253197A-5710-4924-9706-6449C0C32FE9}.Release|Win32.ActiveCfg = Release|Win32
+		{1253197A-5710-4924-9706-6449C0C32FE9}.Release|Win32.Build.0 = Release|Win32
+		{F6D51778-EFCB-4ECE-B489-1C9A66CAC119}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F6D51778-EFCB-4ECE-B489-1C9A66CAC119}.Debug|Win32.Build.0 = Debug|Win32
+		{F6D51778-EFCB-4ECE-B489-1C9A66CAC119}.Release|Win32.ActiveCfg = Release|Win32
+		{F6D51778-EFCB-4ECE-B489-1C9A66CAC119}.Release|Win32.Build.0 = Release|Win32
+		{A2DC9E23-F76C-44D8-9089-764BB411A4F6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A2DC9E23-F76C-44D8-9089-764BB411A4F6}.Debug|Win32.Build.0 = Debug|Win32
+		{A2DC9E23-F76C-44D8-9089-764BB411A4F6}.Release|Win32.ActiveCfg = Release|Win32
+		{A2DC9E23-F76C-44D8-9089-764BB411A4F6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

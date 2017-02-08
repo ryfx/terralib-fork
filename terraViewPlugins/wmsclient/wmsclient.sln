@@ -1,0 +1,150 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wmsclient", "wmsclient.vcproj", "{4845ACFC-38B1-4DB2-BFA1-661AD2E26170}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23C75C16-18AE-4194-837F-516C1CFF9032} = {23C75C16-18AE-4194-837F-516C1CFF9032}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogccommon", "..\..\..\terraogc\build\win32-msvc.net-2003\common\terraogccommon.vcproj", "{F6D51778-EFCB-4ECE-B489-1C9A66CAC119}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogcxml", "..\..\..\terraogc\build\win32-msvc.net-2003\xml\terraogcxml.vcproj", "{A2DC9E23-F76C-44D8-9089-764BB411A4F6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F6D51778-EFCB-4ECE-B489-1C9A66CAC119} = {F6D51778-EFCB-4ECE-B489-1C9A66CAC119}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogcxsd", "..\..\..\terraogc\build\win32-msvc.net-2003\xsd\terraogcxsd.vcproj", "{998B2F50-CCE4-4CDE-91F5-05FCA8C2D900}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A2DC9E23-F76C-44D8-9089-764BB411A4F6} = {A2DC9E23-F76C-44D8-9089-764BB411A4F6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogcgml", "..\..\..\terraogc\build\win32-msvc.net-2003\gml\terraogcgml.vcproj", "{100BC7D2-776D-47DA-8A12-E58FA428DD55}"
+	ProjectSection(ProjectDependencies) = postProject
+		{998B2F50-CCE4-4CDE-91F5-05FCA8C2D900} = {998B2F50-CCE4-4CDE-91F5-05FCA8C2D900}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogcows", "..\..\..\terraogc\build\win32-msvc.net-2003\ows\terraogcows.vcproj", "{74B189CD-98F9-41B1-A77B-D361296D7193}"
+	ProjectSection(ProjectDependencies) = postProject
+		{100BC7D2-776D-47DA-8A12-E58FA428DD55} = {100BC7D2-776D-47DA-8A12-E58FA428DD55}
+		{F37DCFF4-65DE-3ED4-8273-E99561F74E8A} = {F37DCFF4-65DE-3ED4-8273-E99561F74E8A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogcfilter", "..\..\..\terraogc\build\win32-msvc.net-2003\filter\terraogcfilter.vcproj", "{F8D8E0F1-CDAD-4B2D-8B8A-C7A17D4E3F51}"
+	ProjectSection(ProjectDependencies) = postProject
+		{74B189CD-98F9-41B1-A77B-D361296D7193} = {74B189CD-98F9-41B1-A77B-D361296D7193}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogcwms", "..\..\..\terraogc\build\win32-msvc.net-2003\wms\terraogcwms.vcproj", "{7BB2E314-FB9C-480D-A122-6C10BA79632D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F8D8E0F1-CDAD-4B2D-8B8A-C7A17D4E3F51} = {F8D8E0F1-CDAD-4B2D-8B8A-C7A17D4E3F51}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogcse", "..\..\..\terraogc\build\win32-msvc.net-2003\se\terraogcse.vcproj", "{99199BB8-587F-4E9B-9A39-43119516521F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7BB2E314-FB9C-480D-A122-6C10BA79632D} = {7BB2E314-FB9C-480D-A122-6C10BA79632D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogcsld", "..\..\..\terraogc\build\win32-msvc.net-2003\sld\terraogcsld.vcproj", "{E7D0E53C-2551-4433-A469-0C06C61ED0B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{99199BB8-587F-4E9B-9A39-43119516521F} = {99199BB8-587F-4E9B-9A39-43119516521F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogcowsclient", "..\..\..\terraogc\build\win32-msvc.net-2003\owsclient\terraogcowsclient.vcproj", "{70E13255-E54C-49EC-9153-F055663C3AFB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E7D0E53C-2551-4433-A469-0C06C61ED0B3} = {E7D0E53C-2551-4433-A469-0C06C61ED0B3}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogcwmsclient", "..\..\..\terraogc\build\win32-msvc.net-2003\wmsclient\terraogcwmsclient.vcproj", "{ED010E5F-2947-4E1E-8E6E-7CBBF414CCA8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{70E13255-E54C-49EC-9153-F055663C3AFB} = {70E13255-E54C-49EC-9153-F055663C3AFB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogcowstheme", "..\..\..\terraogc\build\win32-msvc.net-2003\owstheme\terraogcowstheme.vcproj", "{2158910E-D780-409E-94F4-2A5957B3CB20}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED010E5F-2947-4E1E-8E6E-7CBBF414CCA8} = {ED010E5F-2947-4E1E-8E6E-7CBBF414CCA8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogcwmstheme", "..\..\..\terraogc\build\win32-msvc.net-2003\wmstheme\terraogcwmstheme.vcproj", "{23C75C16-18AE-4194-837F-516C1CFF9032}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2158910E-D780-409E-94F4-2A5957B3CB20} = {2158910E-D780-409E-94F4-2A5957B3CB20}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terraogcxacml", "..\..\..\terraogc\build\win32-msvc.net-2003\xacml\terraogcxacml.vcproj", "{F37DCFF4-65DE-3ED4-8273-E99561F74E8A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F6D51778-EFCB-4ECE-B489-1C9A66CAC119} = {F6D51778-EFCB-4ECE-B489-1C9A66CAC119}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4845ACFC-38B1-4DB2-BFA1-661AD2E26170}.Debug.ActiveCfg = Debug|Win32
+		{4845ACFC-38B1-4DB2-BFA1-661AD2E26170}.Debug.Build.0 = Debug|Win32
+		{4845ACFC-38B1-4DB2-BFA1-661AD2E26170}.Release.ActiveCfg = Release|Win32
+		{4845ACFC-38B1-4DB2-BFA1-661AD2E26170}.Release.Build.0 = Release|Win32
+		{F6D51778-EFCB-4ECE-B489-1C9A66CAC119}.Debug.ActiveCfg = Debug|Win32
+		{F6D51778-EFCB-4ECE-B489-1C9A66CAC119}.Debug.Build.0 = Debug|Win32
+		{F6D51778-EFCB-4ECE-B489-1C9A66CAC119}.Release.ActiveCfg = Release|Win32
+		{F6D51778-EFCB-4ECE-B489-1C9A66CAC119}.Release.Build.0 = Release|Win32
+		{A2DC9E23-F76C-44D8-9089-764BB411A4F6}.Debug.ActiveCfg = Debug|Win32
+		{A2DC9E23-F76C-44D8-9089-764BB411A4F6}.Debug.Build.0 = Debug|Win32
+		{A2DC9E23-F76C-44D8-9089-764BB411A4F6}.Release.ActiveCfg = Release|Win32
+		{A2DC9E23-F76C-44D8-9089-764BB411A4F6}.Release.Build.0 = Release|Win32
+		{998B2F50-CCE4-4CDE-91F5-05FCA8C2D900}.Debug.ActiveCfg = Debug|Win32
+		{998B2F50-CCE4-4CDE-91F5-05FCA8C2D900}.Debug.Build.0 = Debug|Win32
+		{998B2F50-CCE4-4CDE-91F5-05FCA8C2D900}.Release.ActiveCfg = Release|Win32
+		{998B2F50-CCE4-4CDE-91F5-05FCA8C2D900}.Release.Build.0 = Release|Win32
+		{100BC7D2-776D-47DA-8A12-E58FA428DD55}.Debug.ActiveCfg = Debug|Win32
+		{100BC7D2-776D-47DA-8A12-E58FA428DD55}.Debug.Build.0 = Debug|Win32
+		{100BC7D2-776D-47DA-8A12-E58FA428DD55}.Release.ActiveCfg = Release|Win32
+		{100BC7D2-776D-47DA-8A12-E58FA428DD55}.Release.Build.0 = Release|Win32
+		{74B189CD-98F9-41B1-A77B-D361296D7193}.Debug.ActiveCfg = Debug|Win32
+		{74B189CD-98F9-41B1-A77B-D361296D7193}.Debug.Build.0 = Debug|Win32
+		{74B189CD-98F9-41B1-A77B-D361296D7193}.Release.ActiveCfg = Release|Win32
+		{74B189CD-98F9-41B1-A77B-D361296D7193}.Release.Build.0 = Release|Win32
+		{F8D8E0F1-CDAD-4B2D-8B8A-C7A17D4E3F51}.Debug.ActiveCfg = Debug|Win32
+		{F8D8E0F1-CDAD-4B2D-8B8A-C7A17D4E3F51}.Debug.Build.0 = Debug|Win32
+		{F8D8E0F1-CDAD-4B2D-8B8A-C7A17D4E3F51}.Release.ActiveCfg = Release|Win32
+		{F8D8E0F1-CDAD-4B2D-8B8A-C7A17D4E3F51}.Release.Build.0 = Release|Win32
+		{7BB2E314-FB9C-480D-A122-6C10BA79632D}.Debug.ActiveCfg = Debug|Win32
+		{7BB2E314-FB9C-480D-A122-6C10BA79632D}.Debug.Build.0 = Debug|Win32
+		{7BB2E314-FB9C-480D-A122-6C10BA79632D}.Release.ActiveCfg = Release|Win32
+		{7BB2E314-FB9C-480D-A122-6C10BA79632D}.Release.Build.0 = Release|Win32
+		{99199BB8-587F-4E9B-9A39-43119516521F}.Debug.ActiveCfg = Debug|Win32
+		{99199BB8-587F-4E9B-9A39-43119516521F}.Debug.Build.0 = Debug|Win32
+		{99199BB8-587F-4E9B-9A39-43119516521F}.Release.ActiveCfg = Release|Win32
+		{99199BB8-587F-4E9B-9A39-43119516521F}.Release.Build.0 = Release|Win32
+		{E7D0E53C-2551-4433-A469-0C06C61ED0B3}.Debug.ActiveCfg = Debug|Win32
+		{E7D0E53C-2551-4433-A469-0C06C61ED0B3}.Debug.Build.0 = Debug|Win32
+		{E7D0E53C-2551-4433-A469-0C06C61ED0B3}.Release.ActiveCfg = Release|Win32
+		{E7D0E53C-2551-4433-A469-0C06C61ED0B3}.Release.Build.0 = Release|Win32
+		{70E13255-E54C-49EC-9153-F055663C3AFB}.Debug.ActiveCfg = Debug|Win32
+		{70E13255-E54C-49EC-9153-F055663C3AFB}.Debug.Build.0 = Debug|Win32
+		{70E13255-E54C-49EC-9153-F055663C3AFB}.Release.ActiveCfg = Release|Win32
+		{70E13255-E54C-49EC-9153-F055663C3AFB}.Release.Build.0 = Release|Win32
+		{ED010E5F-2947-4E1E-8E6E-7CBBF414CCA8}.Debug.ActiveCfg = Debug|Win32
+		{ED010E5F-2947-4E1E-8E6E-7CBBF414CCA8}.Debug.Build.0 = Debug|Win32
+		{ED010E5F-2947-4E1E-8E6E-7CBBF414CCA8}.Release.ActiveCfg = Release|Win32
+		{ED010E5F-2947-4E1E-8E6E-7CBBF414CCA8}.Release.Build.0 = Release|Win32
+		{2158910E-D780-409E-94F4-2A5957B3CB20}.Debug.ActiveCfg = Debug|Win32
+		{2158910E-D780-409E-94F4-2A5957B3CB20}.Debug.Build.0 = Debug|Win32
+		{2158910E-D780-409E-94F4-2A5957B3CB20}.Release.ActiveCfg = Release|Win32
+		{2158910E-D780-409E-94F4-2A5957B3CB20}.Release.Build.0 = Release|Win32
+		{23C75C16-18AE-4194-837F-516C1CFF9032}.Debug.ActiveCfg = Debug|Win32
+		{23C75C16-18AE-4194-837F-516C1CFF9032}.Debug.Build.0 = Debug|Win32
+		{23C75C16-18AE-4194-837F-516C1CFF9032}.Release.ActiveCfg = Release|Win32
+		{23C75C16-18AE-4194-837F-516C1CFF9032}.Release.Build.0 = Release|Win32
+		{F37DCFF4-65DE-3ED4-8273-E99561F74E8A}.Debug.ActiveCfg = Debug|Win32
+		{F37DCFF4-65DE-3ED4-8273-E99561F74E8A}.Debug.Build.0 = Debug|Win32
+		{F37DCFF4-65DE-3ED4-8273-E99561F74E8A}.Release.ActiveCfg = Release|Win32
+		{F37DCFF4-65DE-3ED4-8273-E99561F74E8A}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

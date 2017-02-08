@@ -1,0 +1,89 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<link rel=File-List href="geoOpDifference_files/filelist.xml">
+<link rel=Edit-Time-Data href="geoOpDifference_files/editdata.mso">
+<title>Operação de Diferença entre Temas</title>
+<link rel=themeData href="geoOpDifference_files/themedata.thmx">
+<link rel=colorSchemeMapping href="geoOpDifference_files/colorschememapping.xml">
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+
+<div class=Section1>
+
+  <p> <strong> <span style='font-family:"Arial","sans-serif";'> TerraView 3.3.1</span> 
+    </strong> </p>
+
+<hr size=2 width="100%" align=center>
+
+<p align=center>
+	<strong><u>
+		<span style='font-size: 13.5pt;font-family:Arial'>Difference operation between themes</span>
+	</u></strong>
+</p>
+
+<p>
+	<span style='font-family:Arial'> <font size="3" face="Arial, Helvetica, sans-serif">Difference operation is executed 
+  between themes with geometric representation of polygons type. It is used to 
+  remove whole objects or parts of its geometry. In the following example, input 
+  theme Tema1 representing Brazil municipalities and theme Tema2 with clip area 
+  are operated. The difference operation removes all municipalities contained 
+  in Tema2ellipsoidal region. Municipalities partially contained are not removed, 
+  but their geometries are clipped by the Tema2 ellipses. Figure 1 shows Tema2 
+  overlaid on Tema1, before the difference operation. </font>
+<p align=center>
+<img id="_x0000_i1029" src="geoOpDifference_arquivos/imagem1.png">
+<br>
+Figure 1 - Theme with Brazil municipalities to be clipped by Tema2.
+</p>
+Figure 2 shows the result of the difference operation.
+<p align=center>
+<img id="_x0000_i1028" src="geoOpDifference_arquivos/imagem2.png">
+<br>
+Figure 2 - Result of the difference operation.
+</p>
+This operation does not change any themes. The result is the creation of a new layer.
+<br><br>
+Figure 3 shows the overlay of a theme with Brazil states and the theme with São Paulo state municipalities. The difference operation will create a new theme with the difference between these themes. Figure 4 shows the result of the operation.
+<p align=center>
+<img id="_x0000_i1027" src="geoOpDifference_arquivos/imagem3.png">
+<br>
+Figure 3 – Overlay of the themes to be clipped.
+</p>
+<p align=center>
+<img id="_x0000_i1026" src="geoOpDifference_arquivos/imagem4.png">
+<br>
+Figure 4 - Result theme clip
+</p>
+<strong>Difference between themes interface</strong>
+<br><br>
+  The difference between themes interface is shown in Figure 5 and to activate 
+  it, use the context menu on a View, selecting<strong> Geoprocessing - Difference</strong>. 
+  In <i>Theme 1 (Original Theme)</i> box, select the theme to be clipped. 
+  <p align=center>
+<img id="_x0000_i1025" src="geoOpDifference_arquivos/imagem5.png">
+<br>
+Figure 5 – Difference between themes interface.
+</p>
+Use object selection box of original theme to set the objects to be clipped: all, pointed only, or queried only.
+<br><br>
+In <i>Theme 2 (Theme to be subtracted from the original)</i> box, select the theme to be used as overlay mask. Use object selection box to set the objects to be clipped: all, pointed only, or queried only.
+<br><br>
+In <i>Output Layer Name </i>box, type the name of the output layer to be created.
+<br><br>
+<i>OK</i> button applies the difference operation.
+<br><br>
+<i>Cancel</i> button disables the interface.
+<br><br>
+<i>Help </i>button activates the help interface.
+</p>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+</body>
+
+</html>

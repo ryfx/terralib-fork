@@ -1,0 +1,646 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>AddressChoiceWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>AddressChoiceWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>580</width>
+            <height>399</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Address Conflict</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="resizeMode">
+            <enum>Fixed</enum>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout68</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupBox2</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Location Searched</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel" row="2" column="0" rowspan="1" colspan="2">
+                            <property name="name">
+                                <cstring>textLabel3</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>5</hsizetype>
+                                    <vsizetype>5</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="text">
+                                <string>Neighborhood:</string>
+                            </property>
+                            <property name="scaledContents">
+                                <bool>false</bool>
+                            </property>
+                            <property name="buddy" stdset="0">
+                                <cstring>lineEdit3</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit" row="3" column="0" rowspan="1" colspan="3">
+                            <property name="name">
+                                <cstring>neighborhoodLineEdit</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="frameShape">
+                                <enum>LineEditPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Enter with the location neighboorhood!</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="2" column="3">
+                            <property name="name">
+                                <cstring>textLabel4</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Zipcode:</string>
+                            </property>
+                            <property name="buddy" stdset="0">
+                                <cstring>lineEdit4</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit" row="1" column="2">
+                            <property name="name">
+                                <cstring>prepositionLineEdit</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="frameShape">
+                                <enum>LineEditPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Enter with the location neighboorhood!</string>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit" row="1" column="1">
+                            <property name="name">
+                                <cstring>titleLineEdit</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="frameShape">
+                                <enum>LineEditPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Enter with the location neighboorhood!</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="0" column="1">
+                            <property name="name">
+                                <cstring>logType_2</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="text">
+                                <string>Title:</string>
+                            </property>
+                            <property name="buddy" stdset="0">
+                                <cstring>lineEdit1</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="0" column="0">
+                            <property name="name">
+                                <cstring>logType</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="text">
+                                <string>Type:</string>
+                            </property>
+                            <property name="buddy" stdset="0">
+                                <cstring>lineEdit1</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit" row="1" column="0">
+                            <property name="name">
+                                <cstring>typeLineEdit</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="frameShape">
+                                <enum>LineEditPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Enter with the location neighboorhood!</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="0" column="2">
+                            <property name="name">
+                                <cstring>logType_2_2</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="text">
+                                <string>Preposition:</string>
+                            </property>
+                            <property name="buddy" stdset="0">
+                                <cstring>lineEdit1</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="0" column="3">
+                            <property name="name">
+                                <cstring>textLabel1</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Location name:</string>
+                            </property>
+                            <property name="buddy" stdset="0">
+                                <cstring>lineEdit1</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit" row="3" column="3" rowspan="1" colspan="2">
+                            <property name="name">
+                                <cstring>zipCodeLineEdit</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="frameShape">
+                                <enum>LineEditPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Enter with the location zipcode!</string>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit" row="1" column="4">
+                            <property name="name">
+                                <cstring>numberLineEdit</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="frameShape">
+                                <enum>LineEditPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Enter with the location number (243, 876...)!</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="0" column="4">
+                            <property name="name">
+                                <cstring>textLabel2</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Number:</string>
+                            </property>
+                            <property name="buddy" stdset="0">
+                                <cstring>lineEdit2</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit" row="1" column="3">
+                            <property name="name">
+                                <cstring>locationNameLineEdit</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                            <property name="frameShape">
+                                <enum>LineEditPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Enter with the location name!</string>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupBox7</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="title">
+                        <string>Addresses Found - Choose Only One</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QTable" row="0" column="0">
+                            <column>
+                                <property name="text">
+                                    <string>Object Identifier</string>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Type</string>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Title</string>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Preposition</string>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Name</string>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Initial Left</string>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Final Left</string>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Initial Right</string>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Final Right</string>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Left Neighbohood</string>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Right Neighbohood</string>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Left Zipcode</string>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Right Zipcode</string>
+                                </property>
+                            </column>
+                            <property name="name">
+                                <cstring>addressTable</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>0</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="numRows">
+                                <number>0</number>
+                            </property>
+                            <property name="numCols">
+                                <number>13</number>
+                            </property>
+                            <property name="readOnly">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout66</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer60</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>40</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout10</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QCheckBox">
+                                    <property name="name">
+                                        <cstring>selectAllCheckBox</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Always select the first address</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer2</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>40</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </hbox>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer59</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>40</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </hbox>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer64</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout67</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer63</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>40</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>confirmPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;OK</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+O</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer36</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>closePushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Cancel</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer61</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>40</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer62</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>40</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>closePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>AddressChoiceWindow</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>confirmPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>AddressChoiceWindow</receiver>
+        <slot>confirmPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>AddressChoiceWindow</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>typeLineEdit</tabstop>
+    <tabstop>titleLineEdit</tabstop>
+    <tabstop>prepositionLineEdit</tabstop>
+    <tabstop>locationNameLineEdit</tabstop>
+    <tabstop>numberLineEdit</tabstop>
+    <tabstop>neighborhoodLineEdit</tabstop>
+    <tabstop>zipCodeLineEdit</tabstop>
+    <tabstop>addressTable</tabstop>
+    <tabstop>selectAllCheckBox</tabstop>
+    <tabstop>confirmPushButton</tabstop>
+    <tabstop>closePushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">TeAddressLocator.h</include>
+    <include location="global" impldecl="in implementation">TeAddressLocator.h</include>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="local" impldecl="in implementation">addressChoiceWindow.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable>int choosedAddress_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot>confirmPushButton_clicked()</slot>
+    <slot>helpPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function>init()</function>
+    <function>listFoundedAddressListBox( vector&lt;TeAddressDescription&gt; &amp; addresses )</function>
+    <function>listSearchedAddress( const TeAddress &amp; add )</function>
+    <function returnType="int">getChoosedAddress()</function>
+    <function>selectAllCheckBoxVisible( const bool &amp; visible )</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

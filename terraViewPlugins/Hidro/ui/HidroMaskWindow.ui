@@ -1,0 +1,284 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>HidroMaskWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>HidroMaskWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>366</width>
+            <height>242</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Mask Editor</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>2</number>
+        </property>
+        <property name="resizeMode">
+            <enum>Fixed</enum>
+        </property>
+        <widget class="QFrame" row="0" column="0">
+            <property name="name">
+                <cstring>frame4</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>5</number>
+                </property>
+                <property name="spacing">
+                    <number>2</number>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout3</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton" row="0" column="2">
+                            <property name="name">
+                                <cstring>deletePushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>delete.png</pixmap>
+                            </property>
+                        </widget>
+                        <widget class="Line" row="3" column="0" rowspan="1" colspan="5">
+                            <property name="name">
+                                <cstring>line1</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>HLine</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="1">
+                            <property name="name">
+                                <cstring>undoPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>undo.png</pixmap>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="3">
+                            <property name="name">
+                                <cstring>clearPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>clear.png</pixmap>
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget" row="4" column="0" rowspan="1" colspan="5">
+                            <property name="name">
+                                <cstring>layout2</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLineEdit" row="0" column="1">
+                                    <property name="name">
+                                        <cstring>layerNameLineEdit</cstring>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>textLabel1</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Layer Name:</string>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="Line" row="1" column="0" rowspan="1" colspan="5">
+                            <property name="name">
+                                <cstring>line1_2</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>HLine</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                        </widget>
+                        <widget class="QTable" row="2" column="0" rowspan="1" colspan="5">
+                            <column>
+                                <property name="text">
+                                    <string>ID</string>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>X</string>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Y</string>
+                                </property>
+                            </column>
+                            <property name="name">
+                                <cstring>tableMask</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>350</width>
+                                    <height>150</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>350</width>
+                                    <height>150</height>
+                                </size>
+                            </property>
+                            <property name="numRows">
+                                <number>0</number>
+                            </property>
+                            <property name="numCols">
+                                <number>3</number>
+                            </property>
+                            <property name="readOnly">
+                                <bool>true</bool>
+                            </property>
+                            <property name="selectionMode">
+                                <enum>SingleRow</enum>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="0">
+                            <property name="name">
+                                <cstring>selectPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>select.png</pixmap>
+                            </property>
+                            <property name="toggleButton">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="4">
+                            <property name="name">
+                                <cstring>okPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>ok.png</pixmap>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>selectPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroMaskWindow</receiver>
+        <slot>selectPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>undoPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroMaskWindow</receiver>
+        <slot>undoPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>deletePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroMaskWindow</receiver>
+        <slot>deletePushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>clearPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroMaskWindow</receiver>
+        <slot>clearPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>HidroMaskWindow</receiver>
+        <slot>okPushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>selectPushButton</tabstop>
+    <tabstop>undoPushButton</tabstop>
+    <tabstop>deletePushButton</tabstop>
+    <tabstop>clearPushButton</tabstop>
+    <tabstop>okPushButton</tabstop>
+    <tabstop>tableMask</tabstop>
+    <tabstop>layerNameLineEdit</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">TeGeometry.h</include>
+    <include location="global" impldecl="in declaration">PluginParameters.h</include>
+	<include location="global" impldecl="in declaration">TeCoord2D.h</include>	
+    <include location="local" impldecl="in implementation">HidroMaskWindow.ui.h</include>	
+</includes>
+<variables>
+    <variable>TeLine2D _line;</variable>
+    <variable>TePolygon _polygon;</variable>
+    <variable>PluginParameters * _parameters;</variable>
+</variables>
+<slots>
+    <slot>selectPushButton_clicked()</slot>
+    <slot>undoPushButton_clicked()</slot>
+    <slot>deletePushButton_clicked()</slot>
+    <slot>clearPushButton_clicked()</slot>
+    <slot>okPushButton_clicked()</slot>
+    <slot>getMouseClicked( TeCoord2D &amp; coord, int state, QPoint &amp; )</slot>
+    <slot>getMouseDoubleClicked( TeCoord2D &amp; coord, int state, QPoint &amp; )</slot>
+    <slot>closeEvent( QCloseEvent * ce)</slot>
+</slots>
+<functions>
+    <function>init( PluginParameters * parameters )</function>
+    <function>destroy( )</function>
+    <function>updateTablePoly( )</function>
+</functions>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="celulas"
+	ProjectGUID="{C1FD60E2-9F7A-4812-B51F-1A96FCF7E572}">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="."
+			IntermediateDirectory="Release\"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				Optimization="1"
+				AdditionalIncludeDirectories=".,..\..\terraViewPlugins\base,..\..\terraView,..\..\terraView\ui,..\..\src\libspl,..\..\src\terralib\kernel,..\..\src\terralib\functions,..\..\src\terralib\image_processing,..\..\src\terralib\drivers\MySQL,..\..\src\terralib\drivers\MySQL\include,..\..\src\terralib\drivers\Oracle,..\..\src\terralib\drivers\Oracle\OCI\include,..\..\src\terralib\drivers\PostgreSQL,..\..\src\terralib\drivers\PostgreSQL\includepg,..\..\src\terralib\utils,..\..\src\terralib\drivers\qt,..\..\src\terralib\stat,..\..\terralibw\ado,$(QTDIR)\include,Release\,C:\Users\funca\Desktop\Projetos\TerraView\terraViewPlugins\celulas,C:\Users\funca\Desktop\Projetos\TerraView\terraViewPlugins\celulas,Release\,C:\Qt\3.2.0\mkspecs\win32-msvc.net"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,QT_DLL,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				ExceptionHandling="TRUE"
+				RuntimeLibrary="2"
+				BufferSecurityCheck="FALSE"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="Release\"
+				ObjectFile="Release\"
+				ProgramDataBaseFileName=".\"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="0"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mt320.lib ..\..\Release\libspl\libspl.lib ..\..\Release\terralibpdi\terralibpdi.lib ..\..\Release\terralib\terralib.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile="..\..\terraView\windows\plugins\celulas.dll"
+				SuppressStartupBanner="TRUE"
+				AdditionalLibraryDirectories="$(QTDIR)\lib"
+				DelayLoadDLLs="comdlg32.dll,oleaut32.dll,winmm.dll,wsock32.dll,winspool.dll"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				BaseAddress="0x39D00000"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"
+				Description="Generate imagecollection"
+				CommandLine="$(QTDIR)\bin\uic.exe -embed celulas -f .imgcol -o Release\qmake_image_collection.cpp"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="CelulaPluginCode.cpp">
+			</File>
+			<File
+				RelativePath="celulasform.ui.h">
+			</File>
+			<File
+				RelativePath="CelulasWindow.cpp">
+			</File>
+			<File
+				RelativePath="help.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\terraView\PluginParameters.cpp">
+			</File>
+			<File
+				RelativePath="..\..\terraView\PluginsSignal.cpp">
+			</File>
+			<File
+				RelativePath="..\..\terraView\TeApplicationUtils.cpp">
+			</File>
+			<File
+				RelativePath="..\..\terraView\TeAppTheme.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\functions\TeCellAlgorithms.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\utils\TeColorUtils.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\functions\TeCoordAlgorithms.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeDecoderQtImage.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtCanvas.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtCheckListItem.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtDatabaseItem.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtDatabasesListView.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtGrid.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtViewsListView.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeWaitCursor.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath="CelulaPluginCode.h">
+			</File>
+			<File
+				RelativePath="CelulasWindow.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing CelulasWindow.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe CelulasWindow.h -o Release\moc_CelulasWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Release\moc_CelulasWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\terraViewPlugins\base\PluginBase.h">
+			</File>
+			<File
+				RelativePath="..\..\terraView\PluginParameters.h">
+			</File>
+			<File
+				RelativePath="..\..\terraView\PluginsSignal.h">
+			</File>
+			<File
+				RelativePath="..\..\terraView\TeApplicationUtils.h">
+			</File>
+			<File
+				RelativePath="..\..\terraView\TeAppTheme.h">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\utils\TeColorUtils.h">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeDecoderQtImage.h">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtCanvas.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\src\terralib\drivers\qt\TeQtCanvas.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\src\terralib\drivers\qt\TeQtCanvas.h -o Release\moc_TeQtCanvas.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Release\moc_TeQtCanvas.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtCheckListItem.h">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtDatabaseItem.h">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtDatabasesListView.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\src\terralib\drivers\qt\TeQtDatabasesListView.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\src\terralib\drivers\qt\TeQtDatabasesListView.h -o Release\moc_TeQtDatabasesListView.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Release\moc_TeQtDatabasesListView.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtGrid.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\src\terralib\drivers\qt\TeQtGrid.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\src\terralib\drivers\qt\TeQtGrid.h -o Release\moc_TeQtGrid.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Release\moc_TeQtGrid.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtViewsListView.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\src\terralib\drivers\qt\TeQtViewsListView.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\src\terralib\drivers\qt\TeQtViewsListView.h -o Release\moc_TeQtViewsListView.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Release\moc_TeQtViewsListView.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeWaitCursor.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated MOC Files"
+			Filter="cpp;c;cxx;moc">
+			<File
+				RelativePath="Release\moc_celulasform.cpp">
+			</File>
+			<File
+				RelativePath="Release\moc_CelulasWindow.cpp">
+			</File>
+			<File
+				RelativePath="Release\moc_help.cpp">
+			</File>
+			<File
+				RelativePath="Release\moc_TeQtCanvas.cpp">
+			</File>
+			<File
+				RelativePath="Release\moc_TeQtDatabasesListView.cpp">
+			</File>
+			<File
+				RelativePath="Release\moc_TeQtGrid.cpp">
+			</File>
+			<File
+				RelativePath="Release\moc_TeQtViewsListView.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated UI Files"
+			Filter="cpp;c;cxx;h;hpp;hxx;">
+			<File
+				RelativePath="Release\celulasform.cpp">
+			</File>
+			<File
+				RelativePath="Release\celulasform.h">
+			</File>
+			<File
+				RelativePath="Release\help.cpp">
+			</File>
+			<File
+				RelativePath="Release\help.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Forms"
+			Filter="ui"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="celulasform.ui">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing celulasform.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe celulasform.ui -o Release\celulasform.h &amp;&amp; $(QTDIR)\bin\uic.exe celulasform.ui -i celulasform.h -o Release\celulasform.cpp &amp;&amp; $(QTDIR)\bin\moc.exe Release\celulasform.h -o Release\moc_celulasform.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="Release\celulasform.h;Release\celulasform.cpp;Release\moc_celulasform.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="help.ui">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing help.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe help.ui -o Release\help.h &amp;&amp; $(QTDIR)\bin\uic.exe help.ui -i help.h -o Release\help.cpp &amp;&amp; $(QTDIR)\bin\moc.exe Release\help.h -o Release\moc_help.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="Release\help.h;Release\help.cpp;Release\moc_help.cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Translations Files"
+			Filter="ts"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="celulas_pt.ts">
+			</File>
+		</Filter>
+		<Filter
+			Name="Resources"
+			Filter="cpp;ico;png;jpg;jpeg;gif;xpm;bmp;rc;ts"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="images/nextDisplay.bmp">
+			</File>
+			<File
+				RelativePath="images/previousDisplay.bmp">
+			</File>
+			<File
+				RelativePath="images/reset.bmp">
+			</File>
+			<File
+				RelativePath="images/terralib.png">
+			</File>
+			<File
+				RelativePath="Release\qmake_image_collection.cpp">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

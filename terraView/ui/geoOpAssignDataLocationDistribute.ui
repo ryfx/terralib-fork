@@ -1,0 +1,454 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>GeoOpAssignDataLocationDistribute</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>GeoOpAssignDataLocationDistribute</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>463</width>
+            <height>326</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Assign Data by Location: Distribute</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <spacer row="1" column="0">
+            <property name="name">
+                <cstring>spacer14</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>16</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout16</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout15</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>groupBox1</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Select a Theme to Assign Data to</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QComboBox" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>toThemeComboBox</cstring>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>themeFromGroupBox</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Select a Theme to Assign Data from</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QComboBox" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>fromThemeComboBox</cstring>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QButtonGroup">
+                            <property name="name">
+                                <cstring>spatialOperationButtonGroup</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Spatial Relation</string>
+                            </property>
+                            <property name="exclusive">
+                                <bool>true</bool>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QRadioButton" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>insideRadioButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Inside</string>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>0</number>
+                                    </property>
+                                </widget>
+                                <widget class="QRadioButton" row="0" column="1">
+                                    <property name="name">
+                                        <cstring>insideOrCoveredByRadioButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Inside Or Covered By</string>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>1</number>
+                                    </property>
+                                </widget>
+                                <widget class="QRadioButton" row="1" column="0">
+                                    <property name="name">
+                                        <cstring>interceptsRadioButton</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="text">
+                                        <string>Intercepts</string>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>2</number>
+                                    </property>
+                                </widget>
+                                <widget class="QRadioButton" row="1" column="1">
+                                    <property name="name">
+                                        <cstring>nearestRadioButton</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="text">
+                                        <string>Nearest</string>
+                                    </property>
+                                    <property name="buttonGroupId">
+                                        <number>3</number>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>groupBox3</cstring>
+                            </property>
+                            <property name="title">
+                                <string>Create and Assign Data to Table</string>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLineEdit" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>tableNameLineEdit</cstring>
+                                    </property>
+                                    <property name="frameShape">
+                                        <enum>LineEditPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>Sunken</enum>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </vbox>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer10</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupBox7</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Attributes to distribute</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QListBox" row="1" column="0">
+                            <property name="name">
+                                <cstring>attribute_llistBox</cstring>
+                            </property>
+                            <property name="selectionMode">
+                                <enum>Multi</enum>
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout5</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>selAll_pushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Select all</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer8</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>21</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>unselAll_pushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Unselect all</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                    </grid>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="2" column="0">
+            <property name="name">
+                <cstring>layout13</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer12</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout2</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>okPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;OK</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+O</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pushButton3</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Cancel</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer11</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>21</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>toThemeComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>GeoOpAssignDataLocationDistribute</receiver>
+        <slot>toThemeComboBox_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>fromThemeComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>GeoOpAssignDataLocationDistribute</receiver>
+        <slot>fromThemeComboBox_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>pushButton3</sender>
+        <signal>clicked()</signal>
+        <receiver>GeoOpAssignDataLocationDistribute</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>GeoOpAssignDataLocationDistribute</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>GeoOpAssignDataLocationDistribute</receiver>
+        <slot>okPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>selAll_pushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>GeoOpAssignDataLocationDistribute</receiver>
+        <slot>selAll_pushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>unselAll_pushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>GeoOpAssignDataLocationDistribute</receiver>
+        <slot>unselAll_pushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>toThemeComboBox</tabstop>
+    <tabstop>fromThemeComboBox</tabstop>
+    <tabstop>insideRadioButton</tabstop>
+    <tabstop>nearestRadioButton</tabstop>
+    <tabstop>insideOrCoveredByRadioButton</tabstop>
+    <tabstop>tableNameLineEdit</tabstop>
+    <tabstop>okPushButton</tabstop>
+    <tabstop>pushButton3</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">string</include>
+    <include location="global" impldecl="in declaration">TeTheme.h</include>
+    <include location="global" impldecl="in implementation">qapplication.h</include>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="global" impldecl="in implementation">TeAppTheme.h</include>
+    <include location="global" impldecl="in implementation">TeDatabase.h</include>
+    <include location="local" impldecl="in implementation">geoOpAssignDataLocationDistribute.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>class TeDatabase;</forward>
+    <forward>class TeAppTheme;</forward>
+    <forward>using namespace std;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable access="public">bool erro_;</variable>
+    <variable>TerraViewBase* mainWindow_;</variable>
+    <variable>TeAppTheme* toTheme_;</variable>
+    <variable>TeAppTheme* fromTheme_;</variable>
+    <variable>TeDatabase* db_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot>toThemeComboBox_activated( int )</slot>
+    <slot>fromThemeComboBox_activated( int )</slot>
+    <slot>okPushButton_clicked()</slot>
+    <slot>reject()</slot>
+    <slot>helpPushButton_clicked()</slot>
+    <slot>selAll_pushButton_clicked()</slot>
+    <slot>unselAll_pushButton_clicked()</slot>
+</slots>
+<functions>
+    <function>init()</function>
+    <function access="protected" returnType="string">getNewTableName( string name )</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>TerraView</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<p><font size="3" face="Arial"><strong>TerraView  </strong> </font></p>
+<p align="right"><font face="Arial"><a href="operacoes_geograficas.htm">&lt;&lt; 
+  Anterior</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">In&iacute;cio</a> | <a href="metodo_soma.htm">Próximo 
+  &gt;&gt;</a><font face="Arial"> </font> </font></p>
+<hr>
+<font face="Arial"> 
+<p align="center"><font size="4" face="Arial"><strong><u><strong>M&eacute;todo 
+  de Agrega&ccedil;&atilde;o</strong></u></strong></font></p>
+</font><p>&nbsp;</p>
+      <p  ><font face="Arial">A opera&ccedil;&atilde;o de agrega&ccedil;&atilde;o 
+        usa n objetos de entrada para gerar um objeto de sa&iacute;da. Cada novo 
+        objeto possui um &uacute;nico registro na tabela de atributos e &eacute; 
+        representado, normalmente, por v&aacute;rias geometrias. Um bom exemplo 
+        &eacute; a situa&ccedil;&atilde;o em que voc&ecirc; teria um mapa do Brasil 
+        representado pelos seus 5505 munic&iacute;pios (retirando as ilhas) e 
+        necessitaria criar um mapa dos Estados agregando os pol&iacute;gonos de 
+        munic&iacute;pios de tal maneira que se tenha como resultado final os 
+        27 Estados brasileiros. </font></p>
+      <p  ><font face="Arial">O plano resultante da opera&ccedil;&atilde;o 
+        (mapa de Estados) possui geometria e tabela de atributos gerados em fun&ccedil;&atilde;o 
+        de um atributo agregador (tabela munic&iacute;pios, coluna identificadora 
+        de Estados) que &eacute; selecionado sobre o tema de entrada. Esta opera&ccedil;&atilde;o 
+        gera um objeto (pol&iacute;gono representando o Estado) para cada valor 
+        distinto desse atributo e, cada objeto gerado, cont&eacute;m um sum&aacute;rio 
+        dos atributos do tema de entrada.</font></p>
+      <p  ><font face="Arial">No exemplo oferecido a voc&ecirc;, 
+        tem-se a situa&ccedil;&atilde;o na qual o tema UP (unidades de planejamento 
+        da cidade de Belo Horizonte) ser&aacute; transformado em um novo tema 
+        representando os Distritos Administrativos da Prefeitura. Voc&ecirc; poder&aacute; 
+        verificar que a tabela UP apresenta 62 linhas, representando cada um dos 
+        62 pol&iacute;gonos que representam as Unidades de Planejamento. Ao mesmo 
+        tempo, nesta tabela voc&ecirc; tem uma coluna de nome Id_Dist, representando 
+        um identificador para os Distritos Administrativos. Ao todo, a cidade 
+        de Belo Horizonte apresenta 9 Distritos Administrativos, cada um englobando 
+        um certo n&uacute;mero de Unidades de Planejamento. </font></p>
+      <p  ><font face="Arial">A opera&ccedil;&atilde;o geogr&aacute;fica 
+        de agrega&ccedil;&atilde;o ir&aacute; construir um novo tema no qual poder-se-&aacute; 
+        visualizar como fica a cidade de Belo Horizonte dividida em Distritos 
+        Administrativos. Uma caracter&iacute;stica interessante neste procedimento 
+        de agrega&ccedil;&atilde;o &eacute; a possibilidade que o usu&aacute;rio 
+        tem de selecionar os atributos e a forma como estes atributos estar&atilde;o 
+        dispon&iacute;veis no tema final, dispostos na tabela. <br>
+        </font></p>
+      <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/criar_plano_agregado.png" width="572" height="344" border="1"> 
+        </font></p>
+        
+        <p  ><font face="Arial">1. Defina o tema cujos atributos 
+          ser&atilde;o agregados;</font></p>
+        <p  ><font face="Arial"> 2. Defina qual o atributo da tabela 
+          a ser agregada possui informa&ccedil;&otilde;es de agrega&ccedil;&atilde;o;</font></p>
+        <p  ><font face="Arial"> 3. Escolha o nome do tema gerado 
+          pela agrega&ccedil;&atilde;o;</font></p>
+        <p  ><font face="Arial"> 4. Escolha quais ser&atilde;o os 
+          atributos a serem mantidos na nova tabela agregada e qual o fator de 
+          agrega&ccedil;&atilde;o (soma, m&eacute;dia, mediana, contagem, etc...)</font></p>
+       
+      <p  ><font face="Arial">Os mapas abaixo ilustram o procedimento 
+        de agrega&ccedil;&atilde;o. </font></p>
+      <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/mapa_tematico.png" width="587" height="335"></font></p>
+  <hr>
+<p align="right"><font face="Arial"><a href="operacoes_geograficas.htm">&lt;&lt; 
+  Anterior</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">In&iacute;cio</a> | <a href="metodo_soma.htm">Próximo 
+  &gt;&gt;</a></font></p>
+<font face="Arial"><p  ><font face="Arial"> </font></p>
+</font><font face="Arial"></font> 
+</body>
+</html>

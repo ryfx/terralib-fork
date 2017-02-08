@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>TerraView</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<p><font size="3" face="Arial"><strong>TerraView  </strong> </font></p>
+<p align="right"><font face="Arial"><font face="Arial"><a href="importRaster.htm">&lt;&lt; 
+  Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="importando_tabelas_atributos.htm">Next  &gt;&gt;</a></font> </font></p>
+
+
+<hr>
+<font face="Arial"> 
+<p align="center"><font size="4"><strong><u>Importing Point Data</u></strong></font></p></font>
+<p  >&nbsp;</p>
+
+<font face="Arial, Helvetica, sans-serif" size="3">
+ <div>
+  <p align="justify"><font face="Arial">Geographic information about points may be available in table format. 
+    The geographic position of each points is defined by X and Y coordinates, and, for instance, 
+    may be gathered by GPS. It is required that each line of the table corresponds to a single point. </font></p>
+  <p align="justify"><font face="Arial">Tables of data points can be in DBF or text formats. 
+    In DBF format, the names and types of the columns are defined by the file which contains the table, 
+    on the other hand, in text format, they must be informed during the import. 
+    In the example below, a table of points is in text format, also known as CSV, which stands for 
+    &quot;Comma Separated Values&quot;. 
+    </font></p>
+  <p align="justify"><font face="Arial">To import this kind of table, choose the 
+    <strong>File &gt; Import Table of Points</strong> menu option. 
+    Fill in the necessary parameters in the displayed Import Table of Points window. </font></p>
+  <p align="center"><img src="terraViewBase_arquivos/import_dados_pontos.png"></p>
+</div>
+  
+  
+<div  > 
+  <p align="justify"><font face="Arial">Follow these steps:</font></p>
+  <ol>
+    <li><font face="Arial, Helvetica, sans-serif"> Select the file with the table of points. 
+      The available formats are DBF and CSV. Click on <strong>File</strong> and select the 
+      fire_spot_sp.csv file, available from TerraView tutorial (do not forget to change the 
+      file selection filter to show only those with &#8220;.csv&#8221; extension).</font></li> <br>
+    <li><font face="Arial, Helvetica, sans-serif"> Choose the separator character (of column 
+      values in each line) from the available ones in the interface, or another of your choice. 
+      In this case, Comma is the character.</font></li> <br>
+    <li><font face="Arial, Helvetica, sans-serif">Inform if the file first line is a header with the 
+      columns name. In this case, select <strong>Yes</strong>.</font></li>
+    <font face="Arial, Helvetica, sans-serif"><br>
+    <li> For each file column, choose its type, name, maximum number of characters (if the type is text), 
+      and format (if the type is date/time). Click on <strong>Apply</strong> button.</li>
+    <br>
+    <li> Choose the name of the layer to be created.</li>
+    <br>
+    <li> Inform the projection of the coordinates, if it is known. in this case, they are 
+      in LatLong projection with Datum WGS84.</li>
+    <br>
+    <li> Define in the <b>Geometry Information</b> field the columns corresponding to points coordinates. 
+      In this case, the Lon column contains the X coordinate and the Latitude column contains 
+      the Y coordinate. They are defined of Real type because they are in decimal degrees. If they were
+      in degrees, minutes and seconds, as are columns LatGMS and LonGMS in the same figure, they should be defined 
+      of Text type, in order to be correctly imported and be able to be used as points coordinates.  	  
+	  
+	  Values of both columns must use the "<b>.</b>" (<b>dot</b>) character as the 
+      decimal point separator between the integer and fraction parts.</li>
+	 	  
+    <br>
+    <li> Inform if any of the columns is used as the unique identifier of each object represented by 
+          the point. It will be used as the link between the attributes table and the objects (geometries). 
+          If there is no such column, use the <b>Automatic</b> option. In this example, use the Nr column.</li>
+    <br>
+    <li> Click on <strong>OK</strong> button to execute.</li>
+    </font><br>
+  </ol>
+</div>
+<hr>
+<p align="right"><font face="Arial"><font face="Arial"><font face="Arial"><font face="Arial"><font face="Arial"><a href="importRaster.htm">&lt;&lt; 
+  Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="importando_tabelas_atributos.htm">Next
+  &gt;&gt;</a></font> </font> </font></font> </font></p>
+<font face="Arial"><p  ><font face="Arial"> </font></p>
+</font><font face="Arial"></font> 
+
+</font></body>
+</html>

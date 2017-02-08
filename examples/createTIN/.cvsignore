@@ -1,0 +1,13 @@
+*.bak
+*.o
+*.obj
+*.dsp
+*.dsw
+*.opt
+*.plg
+*.ncb
+*.pdb
+*.sln
+*.suo
+Debug
+Release

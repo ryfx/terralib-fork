@@ -1,0 +1,26 @@
+/* XPM */
+static char *import[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 4 1",
+"  c black",
+". c #808080",
+"X c #C0C0C0",
+"o c gray100",
+/* pixels */
+"................",
+"................",
+"..XXXXXXXXXXXX..",
+"..XX      ooXX..",
+"..XX      ooXX..",
+"..XXXX  ooooXX..",
+"..XXXX  ooXXXX..",
+"..XXXX  ooXXXX..",
+"..XXXX  ooXXXX..",
+"..XXXX  ooXXXX..",
+"..XXXX  ooooXX..",
+"..XX      ooXX..",
+"..XX      ooXX..",
+"..XXXXXXXXXXXX..",
+"................",
+"................"
+};

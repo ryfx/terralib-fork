@@ -1,0 +1,114 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title> Manipulação de Banco de Dados</title>
+<meta content="TerraView - documentacion help" name=Description>
+<meta content="geoprocessing,terraview,terralib,dpi,inpe" name=KeyWords>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+
+<div class=Section1>
+
+<p align=center>
+	<strong><u>
+		<span style='font-size: 13.5pt;font-family:Arial'>Database Manipulation</span>
+	</u></strong>
+</p>
+
+<p>
+	<span style='font-family:Arial'> Every work session in TerraView requires 
+  that at least one Database to be active. Figure 1 shows the interface that controls 
+  database manipulation by TerraView. <br>
+  <br>
+<strong>Creating a Database</strong>
+<p align=center>
+<img id="_x0000_i1029" src="database_arquivos/figura1.png">
+<br>
+Figure 1 - Database manipulation interface.
+</p>
+1 - To create a new database, select <em>Create </em>option in the interface <em>Operation 
+  </em> box. <br>
+  <br>
+  2 - In <em>Database Type</em><b> </b> list, select the manager used to store 
+  the database. Depending on the selected manager the interface will enable and 
+  disable other interface items (see Figure 2): 
+  <p align=center>  
+<img id="_x0000_i1028" src="database_arquivos/figura2.png">
+<br>
+Figure 2 – Manager selection.
+</p>
+3 - <u>ACCESS manager</u> requires the selection of where the database will be 
+  created by clicking <em>Diretory</em><b> </b>button. <br>
+  <br>
+  4 - <u>Other managers</u> such as SQL Server, OracleSpatial, OracleAdo, MySQL, 
+  PostgreSQL, and PostGIS, given that they are database servers, require other 
+  parameters to be selected (as shown in Figure 3). 
+  <p align=center>
+<img id="_x0000_i1027" src="database_arquivos/figura3.png">
+<br>Figure 3 - Database server parameters.
+</p>
+The fields to be filled in :
+<ul>
+    <li><em>Host:</em> name or address of the computer where the server is installed.</li>
+    <li><em>Port:</em>port number to create the connection.</li>
+    <li><em>User:</em>user name to access the server.</li>
+    <li><em>Password:</em>user password to the server.</li>
+    <li>Define a name for the new database in <em>Database Name field</em>.</li>
+    <li>Click <em>OK</em>.</li>
+</ul>
+
+After a database is created it is automatically connected.
+<br><br>
+<strong>Opening a connection to a previously created Database</strong>
+<ul>
+    1 - To access a previously created database select <em>Connect</em> option 
+    in the interface <em>Operation</em> box (see Figure 4). 
+    <p align=center>  
+<img id="_x0000_i1026" src="database_arquivos/figura4.png"><br>
+Figure 4 - Connection to previously created database.
+</p>
+2 - In <em>Database Type</em> list select the manager used to store the database. 
+    <br>
+    <br>
+3 - Depending on the selected manager or database type fill in other interface fields:
+<ul>
+      <li>ACCESS Manager: click on <em>Select Database</em> button and select 
+        the <i>.mdb</i> file with the TerraLib database. Note that the database 
+        name will be shown in the near field.</li>
+
+<li>Other managers: 
+   <ul>
+          <li>Fill in Host, Port, User, and Password fields in a similar way to 
+            a new database creation.</li>
+          <li>Click Select Database button. The near list will be filled with 
+            the databases available in this server.</li>
+          <li>Select the database to connect. </li>
+	</ul>
+</li>
+</ul>
+3 - Click OK.
+</ul>
+
+Note: if the <em>Check Consistency in the Database </em>item is selected when 
+  a database is connected, TerraView will scan the database and remove inconsistencies 
+  and lost tables. <br>
+  <br>
+  Connected databases are shown in the database are of the main interface as shown 
+  in Figure 5. 
+  <p align=center>  
+<img id="_x0000_i1025" src="database_arquivos/figura5.png"><br>
+Figure 5 - Database area of the main interface.
+</p>
+</p>
+
+<hr size=2 width="100%" align=center>
+
+</span>
+
+</div>
+
+</body>
+
+</html>

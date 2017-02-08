@@ -1,0 +1,1183 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>QueryWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>QueryWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>434</width>
+            <height>389</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Attribute Query</string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>11</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="1" rowspan="4" colspan="1">
+            <property name="name">
+                <cstring>Layout14</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>Spacer14</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>122</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>Layout12</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <property name="spacing">
+                            <number>6</number>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>newQueryPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;New Query</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+N</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>addToQueryPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Add</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>filterQueryPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Filter</string>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>Spacer15</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>121</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>Layout13</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <property name="spacing">
+                            <number>6</number>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>cancelPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Cancel</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                            <property name="autoDefault">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                            <property name="autoDefault">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>Spacer16</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>122</height>
+                        </size>
+                    </property>
+                </spacer>
+            </vbox>
+        </widget>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout21</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>attributeTextLabel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Attribute:</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>attributeComboBox</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>7</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>180</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QGroupBox" row="1" column="0">
+            <property name="name">
+                <cstring>groupBox1</cstring>
+            </property>
+            <property name="title">
+                <string>Operators</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout13</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="2" column="0">
+                            <property name="name">
+                                <cstring>layout37</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>greatPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>&gt;</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>lessPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>&lt;</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>greatEqualPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>&gt;=</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>lessEqualpushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>&lt;=</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>differentPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>&lt;&gt;</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>equalPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>=</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <widget class="QLayoutWidget" row="3" column="0">
+                            <property name="name">
+                                <cstring>layout10</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer4</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>21</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>isNullPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>86</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                    <property name="accel">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer5</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>31</width>
+                                            <height>21</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>isNotNullPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>86</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                    <property name="accel">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer6</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>51</width>
+                                            <height>21</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </hbox>
+                        </widget>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout35</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>plusPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>+</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>minusPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>16</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>-</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>multiplyPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>16</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>*</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>dividePushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>/</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>openParPushButton</cstring>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy>
+                                            <hsizetype>0</hsizetype>
+                                            <vsizetype>0</vsizetype>
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>(</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>closeParPushButton</cstring>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy>
+                                            <hsizetype>0</hsizetype>
+                                            <vsizetype>0</vsizetype>
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>)</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <widget class="QLayoutWidget" row="1" column="0">
+                            <property name="name">
+                                <cstring>layout36</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>andPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>orPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>notPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>likePushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>plicPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>'</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>percentPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>44</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Lucida Sans</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>%</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <widget class="Line" row="4" column="0">
+                            <property name="name">
+                                <cstring>line3</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>HLine</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget" row="5" column="0">
+                            <property name="name">
+                                <cstring>layout11</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>undoPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>48</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                    <property name="accel">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>redoPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>48</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                    <property name="accel">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>delPushButton</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>48</width>
+                                            <height>26</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                    <property name="accel">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                    </grid>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QTextEdit" row="3" column="0">
+            <property name="name">
+                <cstring>queryTextEdit</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>250</width>
+                    <height>100</height>
+                </size>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="2" column="0">
+            <property name="name">
+                <cstring>layout19</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>attributeValuesCheckBox</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Attribute Values</string>
+                    </property>
+                    <property name="checked">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>attributeValuesComboBox</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>7</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>130</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="559">789c6d91cb0ac2301045f7f98ad0bb2bd2975814f113049782b898a6165d74a37521e2bf9b4c5e6d759a50eec9e46632c953793cec659a8bc740c34d4975a5bb4cdb67dfbf4ee7dd5b24e546eab19265b210492695842acc67a432f252d5545646362cdbb5aa38998cecbaf5b2a88d849526d8ea37c6183ae6182022f81587196a4afa8f11666aa7c9670c34d4044ae4b1cf25d845c640a0f60c026352ced4428f5db82d110767e7045749c47697ab04318289bf64f4cefe624c7be24f8e1d0ca54d5a157b88f9338c5e214b3e5bf105d04a80ca</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>attributeValuesCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>attributeValuesCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>attributeValuesComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>attributeValuesComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>attributeComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>attributeComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>addToQueryPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>addToQueryPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>filterQueryPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>filterQueryPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>newQueryPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>newQueryPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>plusPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>plusPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>minusPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>minusPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>dividePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>dividePushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>openParPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>openParPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>closeParPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>closeParPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>andPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>andPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>orPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>orPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>notPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>notPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>likePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>likePushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>plicPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>plicPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>percentPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>percentPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>greatPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>greatPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>lessPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>lessPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>lessEqualpushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>lessEqualpushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>greatEqualPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>greatEqualPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>differentPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>differentPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>equalPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>equalPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>isNullPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>isNullPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>isNotNullPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>isNotNullPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>multiplyPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>multiplyPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>undoPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>undoPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>redoPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>redoPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>delPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QueryWindow</receiver>
+        <slot>delPushButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>attributeComboBox</tabstop>
+    <tabstop>plusPushButton</tabstop>
+    <tabstop>minusPushButton</tabstop>
+    <tabstop>multiplyPushButton</tabstop>
+    <tabstop>dividePushButton</tabstop>
+    <tabstop>openParPushButton</tabstop>
+    <tabstop>closeParPushButton</tabstop>
+    <tabstop>andPushButton</tabstop>
+    <tabstop>orPushButton</tabstop>
+    <tabstop>notPushButton</tabstop>
+    <tabstop>likePushButton</tabstop>
+    <tabstop>plicPushButton</tabstop>
+    <tabstop>percentPushButton</tabstop>
+    <tabstop>greatPushButton</tabstop>
+    <tabstop>lessPushButton</tabstop>
+    <tabstop>greatEqualPushButton</tabstop>
+    <tabstop>lessEqualpushButton</tabstop>
+    <tabstop>differentPushButton</tabstop>
+    <tabstop>equalPushButton</tabstop>
+    <tabstop>isNullPushButton</tabstop>
+    <tabstop>isNotNullPushButton</tabstop>
+    <tabstop>undoPushButton</tabstop>
+    <tabstop>redoPushButton</tabstop>
+    <tabstop>delPushButton</tabstop>
+    <tabstop>attributeValuesCheckBox</tabstop>
+    <tabstop>attributeValuesComboBox</tabstop>
+    <tabstop>queryTextEdit</tabstop>
+    <tabstop>newQueryPushButton</tabstop>
+    <tabstop>addToQueryPushButton</tabstop>
+    <tabstop>filterQueryPushButton</tabstop>
+    <tabstop>cancelPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">TeAttribute.h</include>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="local" impldecl="in implementation">query.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>class TeAppTheme;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable>TerraViewBase *mainWindow_;</variable>
+    <variable>TeAppTheme* theme_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot access="protected">init()</slot>
+    <slot>attributeComboBox_activated( const QString &amp; attr )</slot>
+    <slot>attributeValuesCheckBox_toggled( bool isChecked )</slot>
+    <slot>attributeValuesComboBox_activated( const QString &amp; value )</slot>
+    <slot>newQueryPushButton_clicked()</slot>
+    <slot>addToQueryPushButton_clicked()</slot>
+    <slot>filterQueryPushButton_clicked()</slot>
+    <slot>helpPushButton_clicked()</slot>
+    <slot>plusPushButton_clicked()</slot>
+    <slot>minusPushButton_clicked()</slot>
+    <slot>multiplyPushButton_clicked()</slot>
+    <slot>dividePushButton_clicked()</slot>
+    <slot>openParPushButton_clicked()</slot>
+    <slot>closeParPushButton_clicked()</slot>
+    <slot>andPushButton_clicked()</slot>
+    <slot>orPushButton_clicked()</slot>
+    <slot>notPushButton_clicked()</slot>
+    <slot>likePushButton_clicked()</slot>
+    <slot>plicPushButton_clicked()</slot>
+    <slot>percentPushButton_clicked()</slot>
+    <slot>greatPushButton_clicked()</slot>
+    <slot>lessPushButton_clicked()</slot>
+    <slot>lessEqualpushButton_clicked()</slot>
+    <slot>greatEqualPushButton_clicked()</slot>
+    <slot>differentPushButton_clicked()</slot>
+    <slot>equalPushButton_clicked()</slot>
+    <slot>isNullPushButton_clicked()</slot>
+    <slot>isNotNullPushButton_clicked()</slot>
+    <slot>redoPushButton_clicked()</slot>
+    <slot>undoPushButton_clicked()</slot>
+    <slot>delPushButton_clicked()</slot>
+</slots>
+<functions>
+    <function>setTheme( TeAppTheme * theme )</function>
+    <function>insertText( string tx )</function>
+    <function>show()</function>
+</functions>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,210 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>DisplayWindow</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>DisplayWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>651</width>
+            <height>899</height>
+        </rect>
+    </property>
+    <property name="paletteBackgroundColor">
+        <color>
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+        </color>
+    </property>
+    <property name="caption">
+        <string>Display</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>11</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+    </grid>
+</widget>
+<toolbars>
+</toolbars>
+<includes>
+    <include location="global" impldecl="in declaration">TeCoord2D.h</include>
+    <include location="global" impldecl="in declaration">vector</include>
+    <include location="global" impldecl="in declaration">TeDataTypes.h</include>
+    <include location="global" impldecl="in declaration">TeQtTextEdit.h</include>
+    <include location="global" impldecl="in declaration">qpointarray.h</include>
+    <include location="global" impldecl="in implementation">qapplication.h</include>
+    <include location="global" impldecl="in implementation">terraViewBase.h</include>
+    <include location="global" impldecl="in implementation">TeQtCanvas.h</include>
+    <include location="global" impldecl="in implementation">TeRasterRemap.h</include>
+    <include location="global" impldecl="in implementation">TeQtDatabasesListView.h</include>
+    <include location="global" impldecl="in implementation">TeQtGrid.h</include>
+    <include location="global" impldecl="in implementation">TeGeometryAlgorithms.h</include>
+    <include location="global" impldecl="in implementation">TeDatabaseUtils.h</include>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="global" impldecl="in implementation">visual.h</include>
+    <include location="global" impldecl="in implementation">TeQtProgress.h</include>
+    <include location="global" impldecl="in implementation">TePlotTheme.h</include>
+    <include location="local" impldecl="in implementation">display.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class QCanvas;</forward>
+    <forward>class TerraViewBase;</forward>
+    <forward>class TeQtCanvas;</forward>
+    <forward>class TeCoord2D;</forward>
+    <forward>struct TeBox;</forward>
+    <forward>using namespace std;</forward>
+    <forward>class QPopupMenu;</forward>
+    <forward>class QPixmap;</forward>
+    <forward>class TeAppTheme;</forward>
+</forwards>
+<variables>
+    <variable>QPoint mGraphicScale_;</variable>
+    <variable>double graphicScaleOffsetY_;</variable>
+    <variable>double graphicScaleOffsetX_;</variable>
+    <variable>QPoint pGraphicScale_;</variable>
+    <variable>bool graphicScaleVisible_;</variable>
+    <variable>bool symbolFixedSize_;</variable>
+    <variable>QColor symbolColor_;</variable>
+    <variable>int symbolSize_;</variable>
+    <variable>QString symbolFamily_;</variable>
+    <variable>QPixmap *contrastPixmap_;</variable>
+    <variable>bool drawSetOnCenter_;</variable>
+    <variable>TeCoord2D textInsertion_;</variable>
+    <variable>bool displaySelection_;</variable>
+    <variable>QPopupMenu *popupCanvas_;</variable>
+    <variable>TeSpatialRelation spatialOperation_;</variable>
+    <variable>string object_id_;</variable>
+    <variable>TeCoord2D pLeg_;</variable>
+    <variable>TeBox pieBarBoxEdit_;</variable>
+    <variable>vector&lt;QPointArray&gt; xorPointArrayVec_;</variable>
+    <variable>bool graphCursorOn_;</variable>
+    <variable>bool editOn_;</variable>
+    <variable>TeCoord2D panStart_;</variable>
+    <variable>TerraViewBase* mainWindow_;</variable>
+    <variable>TeQtCanvas *canvas_;</variable>
+    <variable>TeQtMultiTextEdit mtEdit_;</variable>
+    <variable>bool xorOn_;</variable>
+    <variable>TeQtMultiTextEdit xorMtEdit_;</variable>
+    <variable>QPoint cGraphCursor_;</variable>
+    <variable>int wGraphCursor_;</variable>
+    <variable>int hGraphCursor_;</variable>
+    <variable>string tipId_;</variable>
+    <variable>QRect rectLegendOnCanvas_;</variable>
+    <variable>QRect textRectSelected_;</variable>
+    <variable>string pointedObjId_;</variable>
+    <variable>QPopupMenu* popupOwnVisual_;</variable>
+    <variable>QPopupMenu* popupSpatialCursorType_;</variable>
+    <variable>QPoint distancePoint_;</variable>
+    <variable>int circleRadius_;</variable>
+    <variable>double spatialCursorAngle_;</variable>
+    <variable>int mtEditInd_;</variable>
+    <variable>QPopupMenu* popupZoom_;</variable>
+    <variable>double zoomFactor_;</variable>
+    <variable>TeBox pointBoxEdit_;</variable>
+    <variable>TeCoord2D rightButtonPressed_;</variable>
+    <variable>QPixmap* connectedPixmap_;</variable>
+    <variable>QRect connectedRect_;</variable>
+    <variable>QPopupMenu* popupGraphicScaleUnit_;</variable>
+    <variable>bool isSGUnitSet_;</variable>
+    <variable>int SGUnit_;</variable>
+    <variable>double unitConv_;</variable>
+    <variable>string unit_;</variable>
+</variables>
+<signals>
+    <signal>distanceMeterSignal(TeCoord2D, TeCoord2D);</signal>
+</signals>
+<slots>
+    <slot access="protected">init()</slot>
+    <slot access="protected">resizeEvent( QResizeEvent * )</slot>
+    <slot>closeEvent( QCloseEvent * )</slot>
+    <slot access="protected">mousePressedOnCanvas( TeCoord2D &amp; pt, int state, QPoint &amp; m )</slot>
+    <slot access="protected">mouseRightButtonPressedOnCanvas( TeCoord2D &amp; pt, int, QPoint &amp; )</slot>
+    <slot>mouseMovedOnCanvas( TeCoord2D &amp; pt, int state, QPoint &amp; m )</slot>
+    <slot access="protected">mouseReleasedOnCanvas( TeCoord2D &amp; pt, int state, QPoint &amp; m )</slot>
+    <slot access="protected">mouseDoublePressedOnCanvas( TeCoord2D &amp; pt, int state, QPoint &amp; )</slot>
+    <slot access="protected">mouseLeaveCanvas()</slot>
+    <slot>keyPressedOnCanvas( QKeyEvent * e )</slot>
+    <slot>keyReleasedOnCanvas( QKeyEvent * e )</slot>
+    <slot>graphicScaleVisualSlot( int view_id )</slot>
+    <slot>plotConnectedView()</slot>
+    <slot>plotData( TeBox box, bool docopy )</slot>
+    <slot>plotData( TeAppTheme * theme, set&lt;string&gt; &amp; drawSet )</slot>
+    <slot>spatialOperationButtonGroup_clicked( int i )</slot>
+    <slot>popupCanvasSlot( QMouseEvent * m )</slot>
+    <slot>ownVisualSlot()</slot>
+    <slot>removeOwnVisualSlot()</slot>
+    <slot>removeAllOwnVisualsSlot()</slot>
+    <slot specifier="non virtual">popupGraphicScaleVisualSlot()</slot>
+    <slot>showGraphicScaleSlot()</slot>
+    <slot>showGeographicalCoordinatesSlot()</slot>
+    <slot>popupGeographicalCoordinatesVisualSlot()</slot>
+    <slot>changeLegendVisualSlot()</slot>
+    <slot>setSquareCursorTypeSlot()</slot>
+    <slot>setCircleCursorTypeSlot()</slot>
+    <slot>insertTextSlot()</slot>
+    <slot>editTextSlot()</slot>
+    <slot>textEditVisualSlot()</slot>
+    <slot>popupDrawSelectedOnCenterSlot()</slot>
+    <slot>setDefaultVisual()</slot>
+    <slot>setPointingVisual()</slot>
+    <slot>setQueryVisual()</slot>
+    <slot>setPointingQueryVisual()</slot>
+    <slot>changeZoomFactorSlot( int zoomFactor )</slot>
+    <slot>popupInsertPointSlot()</slot>
+    <slot>popupDeletePointedObjectsSlot()</slot>
+    <slot>popupAnimationSlot()</slot>
+    <slot>restoreConnectedRect( QRect &amp; rect )</slot>
+    <slot>paintEventSlot()</slot>
+    <slot>popupInsertSymbolSlot()</slot>
+    <slot specifier="non virtual">removeRasterContrastSlot()</slot>
+    <slot>plotOnPrinter( QString fileName )</slot>
+    <slot>displaySizeSlot()</slot>
+    <slot>setGraphicScaleUnit_DecimalDegreesSlot()</slot>
+    <slot>setGraphicScaleUnit_KilometersSlot()</slot>
+    <slot>setGraphicScaleUnit_MetersSlot()</slot>
+    <slot>setGraphicScaleUnit_FeetsSlot()</slot>
+</slots>
+<functions>
+    <function specifier="non virtual" returnType="TeQtCanvas *">getCanvas()</function>
+    <function returnType="bool">plotXor( bool mode )</function>
+    <function>plotGraphicScale()</function>
+    <function>plotGeographicalGrid()</function>
+    <function>updateTextEdit()</function>
+    <function>plotData()</function>
+    <function returnType="bool">legendFromKernel( TeAppTheme * theme, vector&lt;string&gt; &amp; kHeader )</function>
+    <function access="protected" returnType="QRect">plotLegendKernel( QPoint &amp; pIni, vector&lt;string&gt; &amp; s )</function>
+    <function returnType="QRect">getRectLegendOnCanvas( TeAppTheme * theme, vector&lt;string&gt; &amp; s )</function>
+    <function>plotLegendOnCanvas( TeAppTheme * theme )</function>
+    <function>resetEditions()</function>
+    <function returnType="QPointArray">getCircle( QPoint pa, QPoint pb )</function>
+    <function returnType="QPointArray">getElipse( QPoint pc, int rx, int ry )</function>
+    <function returnType="vector&lt;QPointArray&gt;">rotateXorPoints()</function>
+    <function returnType="QPixmap *">getContrastPixmap()</function>
+    <function>setContrastPixmap( QPixmap * p )</function>
+    <function>resetConnectedPixmap()</function>
+    <function returnType="TeBox">getPieBarBox(TeAppTheme*)</function>
+    <function specifier="non virtual">setScaleGraphicUnit(int n)</function>
+    <function specifier="non virtual" returnType="bool">getGUScaleSetting()</function>
+    <function specifier="non virtual" returnType="int">getSGUnit()</function>
+    <function>rasterDataToStatusBar(TeLayer* layer, TeCoord2D pdw)</function>
+    <function>createGraphicScaleTable()</function>
+	<function returnType="bool">drawSetOnCenter()</function>
+</functions>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

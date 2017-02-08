@@ -1,0 +1,370 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>UnionPluginMainForm</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>UnionPluginMainForm</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>499</width>
+            <height>400</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>21</width>
+            <height>21</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>500</width>
+            <height>400</height>
+        </size>
+    </property>
+    <property name="backgroundOrigin">
+        <enum>WidgetOrigin</enum>
+    </property>
+    <property name="caption">
+        <string>Union Plugin</string>
+    </property>
+    <property name="acceptDrops">
+        <bool>false</bool>
+    </property>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>pixmapLabel8</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>100</y>
+                <width>70</width>
+                <height>169</height>
+            </rect>
+        </property>
+        <property name="pixmap">
+            <pixmap>image0</pixmap>
+        </property>
+        <property name="scaledContents">
+            <bool>true</bool>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>execute_button</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>111</x>
+                <y>349</y>
+                <width>187</width>
+                <height>23</height>
+            </rect>
+        </property>
+        <property name="cursor">
+            <cursor>0</cursor>
+        </property>
+        <property name="text">
+            <string>Executar</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>close_button</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>304</x>
+                <y>349</y>
+                <width>187</width>
+                <height>23</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Fechar</string>
+        </property>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>groupBoxA</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>111</x>
+                <y>11</y>
+                <width>380</width>
+                <height>120</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Selecionar Tema de Entrada</string>
+        </property>
+        <widget class="QButtonGroup">
+            <property name="name">
+                <cstring>groupA</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>30</x>
+                    <y>60</y>
+                    <width>320</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="frameShape">
+                <enum>NoFrame</enum>
+            </property>
+            <property name="lineWidth">
+                <number>1</number>
+            </property>
+            <property name="margin">
+                <number>0</number>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <widget class="QRadioButton">
+                <property name="name">
+                    <cstring>radioTodosA</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>10</y>
+                        <width>60</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Todos</string>
+                </property>
+                <property name="checked">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QRadioButton">
+                <property name="name">
+                    <cstring>radioApontadosA</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>110</x>
+                        <y>10</y>
+                        <width>80</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Apontados</string>
+                </property>
+            </widget>
+            <widget class="QRadioButton">
+                <property name="name">
+                    <cstring>radioConsultadosA</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>220</x>
+                        <y>10</y>
+                        <width>85</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Consultados</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QComboBox">
+            <property name="name">
+                <cstring>cmbTemaA</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>30</y>
+                    <width>340</width>
+                    <height>20</height>
+                </rect>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>groupBoxB</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>111</x>
+                <y>137</y>
+                <width>380</width>
+                <height>120</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Selecionar Tema de Sobreposição</string>
+        </property>
+        <widget class="QButtonGroup">
+            <property name="name">
+                <cstring>groupB</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>60</y>
+                    <width>330</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="frameShape">
+                <enum>NoFrame</enum>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <widget class="QRadioButton">
+                <property name="name">
+                    <cstring>radioConsultadosB</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>230</x>
+                        <y>10</y>
+                        <width>85</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Consultados</string>
+                </property>
+            </widget>
+            <widget class="QRadioButton">
+                <property name="name">
+                    <cstring>radioTodosB</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>10</y>
+                        <width>60</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Todos</string>
+                </property>
+                <property name="checked">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QRadioButton">
+                <property name="name">
+                    <cstring>radioApontadosB</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>120</x>
+                        <y>10</y>
+                        <width>85</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Apontados</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QComboBox">
+            <property name="name">
+                <cstring>cmbTemaB</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>30</y>
+                    <width>340</width>
+                    <height>20</height>
+                </rect>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>groupBoxResult</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>111</x>
+                <y>263</y>
+                <width>380</width>
+                <height>80</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Nome do Plano de Saída</string>
+        </property>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>nameNewLayer</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>30</y>
+                    <width>340</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="frameShape">
+                <enum>LineEditPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="maxLength">
+                <number>32767</number>
+            </property>
+        </widget>
+    </widget>
+</widget>
+<toolbars>
+</toolbars>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="26399">789ced9cd96edb481686eff31446ce5d30a81677128db9f096288e37d9b1656730175c6dc59277cbcb60debd7f9e2a254eb7281697c49e1eea00497e2e555f9da58aa4c4fcf66ee968776be9dd6f6f6e6ec3db51bc149f86d74bef92bbc9e4f15ffffee77fdebcf57a4b861b2c19a6bb64befdc79bb783dba57869fbe23ccd85c0094bd4e34faee98eb5d7737b36efdf67ede7c63ac9b561f4d25ec4c7bf973afff0fe116bdfb07a19ef5f671d1aaeda7fc83ac5110c43d7b9368ddc78bfc9da323223e4fd5f5807a6a1f420d7966106866cff036bfeb0eeb3f6cc58b5d7631d5b3d93c743cc6f9b301eaf58656de38c80f73b4a87963cff9eb5670526f72f2cd6214c9eff997562a526f3882cd74ecfee5972ffb2d2b1f2d784b5e11836b74f6b33edc8fe1e58dbb6677aacaf587b7622c72bce5887b66ff17e8aa4c61639feed5cbb969d59b23f2135b6c8f87aac6dc7b7636e6fcada7102d3e5fdccebf287f547d6a1e3a8f13eb28e9c4c1e2f383e6eecc6aafd2dd69913481ec1fd798667a8fe78bc9ee95a26e71fb13f3dcb751de97ff6a7e738a92dc7c7f1f1dcdc5873fe7801d253e6e393d2b1e2bf953a37deefb34ebcc491fe39619d7aa91acf11eb0c440eef1fe6da375ddf96f5712cb5e7ba928fe3e13bb9f1fe15d6aea7fc27389ffdc0f3547c4ea5f60387c74f37acc3dc58efb04e3dcb91c7bbb90e4cb428f77f62ed78bec3f1147752a3c012d67c7ee0fab3f8717e04f8c8f8099ae940fa639775eccfe217b04e83993f2e731d1afe2c9f36585b3e3288b52175e0f99287f9423bf055ff0f52e7c69aeb2f0c7c4fe513fb2be40f9fcfe30da33052f9c3f34d18fba1f4b758973ab06c99cf2475187b3c7ee2f844a69fb972bf2975e807d23f17acbd2056f1e7f929f2235ff1f3fc150561a2f833a9a340f983f3258a11509eaf04d71b8ad90b65fb1cdfd80c224fce9703a92347f997e31d5ba1ade21fb276622790bc9cbf317ff8f831eb24b464fcc579ae935e98b89cef34963adfc29aeb3131e22096f3c71e6b3356fd93ad74184bfe03a567f337cfff8995a8f94170bd276e82199ef7cbf6c230f5653d6fb28e2247fa83385f92388923393f71fd24fc61cdf9926449ace66f3e1f9d5bbef4cfb6d489a5fc95b286ff7c59dfecafd4cd8d35d777ea458927eb93c797faa9aff2279de944e61fe77b9a46a92ff978bd48b3d454feb9503a53e7f37c901988a81cdf54ea144df0f93c7f6756eca8fcd9903a9dad471cafccc99c548e97fd9db988b7cc0f9e1f332f0d55ff5fa5ce3cd53faf37999f1b1f2ff76771aceab72f75a6f885a3b4e21fdc363741226ca31d592f227e2da678129136b44c9c346ee3f41bcf487c6d686762dcb88db4e3d1e4493a9e853caf2d5e1d4fc7d3f1e43611e7e2425c8a2b718d3f2fc50df4cbf0dc8a3b3115f7e2413c8a27b12c56604fd8f22056c59a5807e9afe339478ff7e8fdbdf820fa6c1fc586fa571fdb3e816b151ebbfd053c9b6079408f5bdffaff338fb46df8eb1e4cfa7eaac3733987653e8ff4d4138ebff8493c1344618a71ffb5df229edcde83e8fa27f06c8265a7a0cf453c79e4a6f05379dcaaf04c30ca9d3971d2e1e9e3bcbc06dbe3c923b5bba0bf321ee9a3b2a8e9f35c6374c5bed1e1c973fbbe24b375796e10abf9595c85a72f066867d18ca4c79367cea0b42f1d9e3e66a4b5c63c97c8c5f29ef478b631b6e2f54d8727f7ce5e6b3c7dd468b18774782e50173afde8f27cc0ba5694433af71753ccaf6df2f411fdbbda3c13d4e807ad5ef479061863dd78dd6846ab0acf1622367fed28e7b94485b6cdd32facb1729e355c5bb4cf33c538ebf294cf84d5799e6af34cb5e69eaa3c2b051556ceb35aba6ed5e1299a1375e2f573fc533f7ff466c35f953f4f255761f578a6b83b5bccb32f3ecfb565d841eb7688bbd979bdad2a9ea13812c773ed8be809a365db1366617fc765cfe785256ce1b46aaef0163f9f5fc8e38ba05d1e1244f57928a4a8559a98124aebf38028a2ac459e133a2dfb3ea5846704a2af6d7947588bbca3c30322d15a0e7da1b3c57d69f18c69829135a709d0ce79731e109da12a1ac68c33795cd693eef783740a5f5f34a28916d579659e7378e8a42e11e7f1c2baaaca9313090f63ac914794216f4af2b83a0f339d617674ab64127d85572734d2eda1eaf7cb98af27c8244d2f6126b510e74bfdf6ab7fdf8d4c3aa3a48c0999e622ba139d1c6ec6c34c299da2af096291fd25c76d6ccb631481bb64b6698b475185a08a30ab4cb877019b203e09fe3eab12a3b678be718dd988ffacc9d1264f9bd6f1743c1d4fc7d3f1fc9d79e88aae9fd9cdcbf388fdef46572fce734b77b35fecd1dd6be0815f66bf217c15fee9783a9e8ea7e3e9783a9e8ea7e3f93fe3b97a2d3c34a57bd8d50fd7abb89ec7b6e98bf03cd0233dd1f2f3775e68195b9e68e545786e6895d668fd87b7700eb1e556547cb2da0e8f08e1a1ebefd15211bba6957aef3b35cf6764d02dbdff81671df9542b7b5a7abe3a45ccbe11d1fbfa346dd53ba2b62c12e64990cdb569da7b9e2086c2e27be535316cd24e7bcf3750e11f28a1a766adb4c83345a5ad348955bb3ced58c7d3f1743c1d4fc7f39d471c3535ac5c93e6adc086cc1353bf998991309bb601bb13f2ff07880b7e9da96df491369ab6011b753c1d4fc7d3f1743c7f6f1e71469f5e9e87366983f2b79546ea29cb9d58a56ddaa9fd267c6d1edaa51d1a888406e87f83f6f8cf5dfcbd4f9f458f57fb2ddafc353ce8771b67f668ffd9b61ff2870ec40922b82eb28a9eaac103bfcce9675e3ee75e1323f869f767f1a0e55544e964ce9ea2fa1a237aa6b697aaf18c31da6dc4621e6961bdd3011d8a7dcdd9a00acf98d669389fa66cfe4196af6b11e9f38c17b7583a1f9e60362827d2e441de98f0faa2234ae767ec1f95e691ae7f329115454a9707c70c31aaa3e63c744c5fca6a568b671773d656531eb432a25e695f7aebe9182bca69439e21eed316c6aa020f8ec36ad78807c7cc99ff6af3ec61cd2b5ed74a79e8581c967ba7d2f5cf67acb8f579b64b32b0320f4668d6e7d19833aaf21c2c68b38c67acfbff8055b95e457decd4e3c9679ef6797065549441653c4371ff13fc332cacf9521e5c51b5cfd3abcb8355abb8366bf360862eaab0ff319ed716af0599d784a77e3ef7f22b0d2ddba64f9a47ee220bb69ea9b93cf9bd65810d740c2d1dea1d8963f79ffdf6e44f3d2b9ea8d046589135e3a019ad03acf046517f345dfc7d014d742b4c9b675f98f5bfbf2053ef7aa382dd93d5e4fb1444ecb845efe4d76376239e635c85b7e7a13372cabfdf59b49fa6f0d0464b34a7790535e35139b4f8be492f56f9fdcec2dcd1e3c9ab0c59d89808956a96ff9a428b679a3fef6a48b35196c9fa3c207aa4f5264f2c41b34f46793f15de377f445e7fae5769b481d168d1547adf1c44b87bd27ffa26598eb0f6dfe9d254fb7e99a6e460c53faee0a531d64f931e757ba8f1beb90b2fdd632629671a8b33e4b055ed174a35de379f92c7d7211b0b6294ff7f3909bc69576bbbf6fbe653f8c944cd7cc10ab0234e680f0cbb88ce275c990d70173922abdeefda9afc3e410cc980af1cf43ebba2727085e256f7ca339efffefee60f3f176530</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>close_button</sender>
+        <signal>clicked()</signal>
+        <receiver>UnionPluginMainForm</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>execute_button</sender>
+        <signal>clicked()</signal>
+        <receiver>UnionPluginMainForm</receiver>
+        <slot>execute()</slot>
+    </connection>
+    <connection>
+        <sender>cmbTemaA</sender>
+        <signal>activated(int)</signal>
+        <receiver>UnionPluginMainForm</receiver>
+        <slot>cmbTemaA_activated()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>execute()</slot>
+    <slot>radioTodosA_toggled( bool )</slot>
+    <slot>radioTodosA_stateChanged( int )</slot>
+    <slot>cmbTemaA_activated()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

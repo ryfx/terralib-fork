@@ -1,0 +1,1131 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>LegendWindow</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>LegendWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>582</width>
+            <height>604</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>0</width>
+            <height>0</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Legend Editor</string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout16</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>importGroupingGroupBox</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="title">
+                        <string>Import Theme Grouping</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="1" rowspan="2" colspan="1">
+                            <property name="name">
+                                <cstring>layout14</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget" row="0" column="1">
+                                    <property name="name">
+                                        <cstring>layout12</cstring>
+                                    </property>
+                                    <vbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QComboBox">
+                                            <property name="name">
+                                                <cstring>importFromViewComboBox</cstring>
+                                            </property>
+                                            <property name="sizePolicy">
+                                                <sizepolicy>
+                                                    <hsizetype>7</hsizetype>
+                                                    <vsizetype>0</vsizetype>
+                                                    <horstretch>0</horstretch>
+                                                    <verstretch>0</verstretch>
+                                                </sizepolicy>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>200</width>
+                                                    <height>0</height>
+                                                </size>
+                                            </property>
+                                        </widget>
+                                        <widget class="QComboBox">
+                                            <property name="name">
+                                                <cstring>importFromThemeComboBox</cstring>
+                                            </property>
+                                            <property name="sizePolicy">
+                                                <sizepolicy>
+                                                    <hsizetype>7</hsizetype>
+                                                    <vsizetype>0</vsizetype>
+                                                    <horstretch>0</horstretch>
+                                                    <verstretch>0</verstretch>
+                                                </sizepolicy>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>200</width>
+                                                    <height>0</height>
+                                                </size>
+                                            </property>
+                                        </widget>
+                                    </vbox>
+                                </widget>
+                                <widget class="QLayoutWidget" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>layout13</cstring>
+                                    </property>
+                                    <vbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>textLabel1</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>View:</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>AlignVCenter|AlignRight</set>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>textLabel2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Theme:</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>AlignVCenter|AlignRight</set>
+                                            </property>
+                                        </widget>
+                                    </vbox>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout15</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer14</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>16</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QCheckBox">
+                                    <property name="name">
+                                        <cstring>importCheckBox</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Import</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer15_2</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>16</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </hbox>
+                        </widget>
+                        <widget class="QLayoutWidget" row="1" column="0">
+                            <property name="name">
+                                <cstring>layout17</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer17</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>16</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>importPushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Import</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer16</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>16</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </hbox>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupingParamsGroupBox</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="title">
+                        <string>Grouping Parameters</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel" row="1" column="0">
+                            <property name="name">
+                                <cstring>attributeTextLabel</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>1</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="text">
+                                <string>Attribute:</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                            <property name="hAlign" stdset="0">
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="0" column="0">
+                            <property name="name">
+                                <cstring>groupingModeTextLabel</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Mode:</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                            <property name="hAlign" stdset="0">
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="2" column="2">
+                            <property name="name">
+                                <cstring>precisionTextLabel</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>1</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="text">
+                                <string>Precision:</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                            <property name="hAlign" stdset="0">
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="2" column="0">
+                            <property name="name">
+                                <cstring>slicesTextLabel</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>1</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="text">
+                                <string>Slices:</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                            <property name="hAlign" stdset="0">
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="0" column="4" rowspan="1" colspan="3">
+                            <property name="name">
+                                <cstring>stdDevTextLabel</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="text">
+                                <string>Standard Deviation:</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                            <property name="hAlign" stdset="0">
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="1" column="4" rowspan="1" colspan="2">
+                            <property name="name">
+                                <cstring>functionTextLabel</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Function:</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="2" column="4">
+                            <property name="name">
+                                <cstring>chrononTextLabel</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>1</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="text">
+                                <string>Chronon:</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                            <property name="hAlign" stdset="0">
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget" row="3" column="0" rowspan="1" colspan="8">
+                            <property name="name">
+                                <cstring>layout15</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer13</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>40</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>applyPushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&amp;Apply</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+A</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer14_2</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>40</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </hbox>
+                        </widget>
+                        <widget class="QComboBox" row="0" column="1" rowspan="1" colspan="3">
+                            <property name="name">
+                                <cstring>groupingModeComboBox</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>160</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                        </widget>
+                        <widget class="QComboBox" row="2" column="1">
+                            <property name="name">
+                                <cstring>slicesComboBox</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>50</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="editable">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <widget class="QComboBox" row="2" column="3">
+                            <property name="name">
+                                <cstring>precisionComboBox</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>50</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                        </widget>
+                        <widget class="QComboBox" row="2" column="5" rowspan="1" colspan="3">
+                            <property name="name">
+                                <cstring>chrononComboBox</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>120</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                        </widget>
+                        <widget class="QComboBox" row="1" column="6" rowspan="1" colspan="2">
+                            <property name="name">
+                                <cstring>functionComboBox</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>60</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                        </widget>
+                        <widget class="QComboBox" row="0" column="7">
+                            <property name="name">
+                                <cstring>stdDevComboBox</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>60</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                        </widget>
+                        <widget class="QComboBox" row="1" column="1" rowspan="1" colspan="3">
+                            <property name="name">
+                                <cstring>attributesComboBox</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>160</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>colorGroupBox</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="title">
+                        <string>Colors</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="TeQtColorBar" row="1" column="0">
+                            <property name="name">
+                                <cstring>frameBTeQtColorBar</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>384</width>
+                                    <height>25</height>
+                                </size>
+                            </property>
+                            <property name="paletteBackgroundColor">
+                                <color>
+                                    <red>255</red>
+                                    <green>255</green>
+                                    <blue>255</blue>
+                                </color>
+                            </property>
+                            <property name="mouseTracking">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <widget class="TeQtColorBar" row="0" column="0">
+                            <property name="name">
+                                <cstring>frameTeQtColorBar</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>384</width>
+                                    <height>25</height>
+                                </size>
+                            </property>
+                            <property name="paletteBackgroundColor">
+                                <color>
+                                    <red>255</red>
+                                    <green>255</green>
+                                    <blue>255</blue>
+                                </color>
+                            </property>
+                            <property name="mouseTracking">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget" row="2" column="0">
+                            <property name="name">
+                                <cstring>layout15</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>clearColorsPushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Clear</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>invertColorsPushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Invert</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>equalSpacePushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Equal Space</string>
+                                    </property>
+                                </widget>
+                                <widget class="QGroupBox">
+                                    <property name="name">
+                                        <cstring>loadGroupBox</cstring>
+                                    </property>
+                                    <property name="title">
+                                        <string>Load Color Bar</string>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QComboBox" row="0" column="0">
+                                            <item>
+                                                <property name="text">
+                                                    <string>      -------------------------------------</string>
+                                                </property>
+                                            </item>
+                                            <property name="name">
+                                                <cstring>loadNamesComboBox</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>160</width>
+                                                    <height>0</height>
+                                                </size>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>saveColorPushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Save...</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="TeQtBigTable">
+                    <property name="name">
+                        <cstring>legendTable</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>150</height>
+                        </size>
+                    </property>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout25</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer22</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>okPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;OK</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+O</string>
+                            </property>
+                            <property name="default">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>Spacer16</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>30</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>cancelPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Cancel</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>Spacer14</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>16</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer23</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>40</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>TeQtBigTable</class>
+        <header location="global">TeQtBigTable.h</header>
+        <sizehint>
+            <width>200</width>
+            <height>150</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image1</pixmap>
+    </customwidget>
+    <customwidget>
+        <class>TeQtColorBar</class>
+        <header location="global">TeQtColorBar.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image1</pixmap>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="556">789c6d91dd0a82401085ef7d8ac17327a119544af40845974174319a521716f47311d1bbb73bfb67d64159e79bd9b3e36c96d076b3a2248b6e77be9f6aaa8f7ca5e4f0e8bae76ebf7c45715e927aa694c7a3284ea9a6f5e5dce86f554b68e6b3321febb092b02d9a8954b20edbb6988c250b136a89cfaffa184a430c30335cc662818ab25ad1c342cdabeb050315579e323bec6a19262918f0d49cc110ccb53535d0612bbb2560ef6c9d603b09d8ecb29d20c89bb89f0cdee95f8cef99b893c3047d6b5fa30a33c4f01a7ab790c6ef45f401c4bb8056</data>
+    </image>
+    <image name="image1">
+        <data format="XPM.GZ" length="45">789cd3d7528808f055d0d2e72a2e492cc94c5648ce482c52d04a29cdcdad8c8eb5ade6523250004143a55a6b2e0026630c4f</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>attributesComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>attributesComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>slicesComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>slicesComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>stdDevComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>stdDevComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>precisionComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>precisionComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>functionComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>functionComboBox_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>okPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>groupingModeComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>groupingModeComboBox_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>invertColorsPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>invertColorsPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>importFromThemeComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>importFromThemeComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>importFromViewComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>importFromViewComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>importCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>importCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>importPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>importPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>clearColorsPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>clearColorsPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>applyPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>applyPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>chrononComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>chrononComboBox_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>equalSpacePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>equalSpacePushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>saveColorPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>saveColorPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>loadNamesComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>LegendWindow</receiver>
+        <slot>loadNamesComboBox_activated(int)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>importCheckBox</tabstop>
+    <tabstop>importFromViewComboBox</tabstop>
+    <tabstop>importFromThemeComboBox</tabstop>
+    <tabstop>importPushButton</tabstop>
+    <tabstop>groupingModeComboBox</tabstop>
+    <tabstop>attributesComboBox</tabstop>
+    <tabstop>slicesComboBox</tabstop>
+    <tabstop>precisionComboBox</tabstop>
+    <tabstop>stdDevComboBox</tabstop>
+    <tabstop>functionComboBox</tabstop>
+    <tabstop>chrononComboBox</tabstop>
+    <tabstop>clearColorsPushButton</tabstop>
+    <tabstop>invertColorsPushButton</tabstop>
+    <tabstop>applyPushButton</tabstop>
+    <tabstop>okPushButton</tabstop>
+    <tabstop>cancelPushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in implementation">terraViewBase.h</include>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="global" impldecl="in implementation">TeGroupingAlgorithms.h</include>
+    <include location="global" impldecl="in implementation">qcolordialog.h</include>
+    <include location="global" impldecl="in implementation">qapplication.h</include>
+    <include location="global" impldecl="in implementation">help.h</include>
+    <include location="global" impldecl="in declaration">TeAttribute.h</include>
+    <include location="global" impldecl="in declaration">TeLegendEntry.h</include>
+    <include location="global" impldecl="in declaration">qdir.h</include>
+    <include location="global" impldecl="in declaration">set</include>
+    <include location="global" impldecl="in declaration">TeQtLegendSource.h</include>
+    <include location="global" impldecl="in declaration">TeColorUtils.h</include>
+    <include location="local" impldecl="in implementation">legendWindow.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>class TeQtThemeItem;</forward>
+    <forward>class TeDatabase;</forward>
+    <forward>class TeQtCanvas;</forward>
+    <forward>class TeAppTheme;</forward>
+    <forward>class QPopupMenu;</forward>
+    <forward>class TeView;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable>multimap&lt;string, TeAppTheme*&gt; viewThemeMap_;</variable>
+    <variable>Help* help_;</variable>
+    <variable>TeAppTheme* importTheme_;</variable>
+    <variable>QPixmap backPixmap_;</variable>
+    <variable>TeQtThemeItem *themeItem_;</variable>
+    <variable>TerraViewBase* mainWindow_;</variable>
+    <variable>TeDatabase *db_;</variable>
+    <variable>TeQtCanvas *canvas_;</variable>
+    <variable>TeAppTheme *theme_;</variable>
+    <variable>TeAttributeRep attrRep_;</variable>
+    <variable>string groupingAttr_;</variable>
+    <variable>TeGroupingMode groupingMode_;</variable>
+    <variable>map&lt;TePolyBasicType, Qt::BrushStyle&gt; brushStyleMap_;</variable>
+    <variable>map&lt;TeLnBasicType, Qt::PenStyle&gt; penStyleMap_;</variable>
+    <variable>TeChronon chronon_;</variable>
+    <variable>bool invertColor_;</variable>
+    <variable>QPopupMenu* popup_;</variable>
+    <variable>TeQtLegendSource legendSource_;</variable>
+    <variable>vector&lt;ColorBar&gt; colorBarVec_;</variable>
+</variables>
+<slots>
+    <slot>groupingModeComboBox_activated( int groupingMode )</slot>
+    <slot>attributesComboBox_activated( const QString &amp; attr )</slot>
+    <slot>chrononComboBox_activated( int i )</slot>
+    <slot>slicesComboBox_activated( const QString &amp; )</slot>
+    <slot>stdDevComboBox_activated( const QString &amp; )</slot>
+    <slot>precisionComboBox_activated( const QString &amp; )</slot>
+    <slot>functionComboBox_activated( int )</slot>
+    <slot>clearColorsPushButton_clicked()</slot>
+    <slot>invertColorsPushButton_clicked()</slot>
+    <slot access="protected">applyPushButton_clicked()</slot>
+    <slot>okPushButton_clicked()</slot>
+    <slot>helpPushButton_clicked()</slot>
+    <slot>importCheckBox_toggled( bool status )</slot>
+    <slot>importFromViewComboBox_activated( const QString &amp; vName )</slot>
+    <slot>importFromThemeComboBox_activated( const QString &amp; themeName )</slot>
+    <slot>importPushButton_clicked()</slot>
+    <slot>legendTableChanged()</slot>
+    <slot>legendTable_contextMenuRequested( int, int, const QPoint &amp; p )</slot>
+    <slot>popupChangeMinAndMaxSlot()</slot>
+    <slot>legendTable_doubleClicked( int row, int col, int, const QPoint &amp; )</slot>
+    <slot>colorChangedSlot()</slot>
+    <slot>equalSpacePushButton_clicked()</slot>
+    <slot>saveColorPushButton_clicked()</slot>
+    <slot>loadNamesComboBox_activated( int )</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function>getColorNameVector( string &amp; scor, vector&lt;string&gt; &amp; colorNameVec )</function>
+    <function returnType="bool">updateDatabase()</function>
+    <function>createFrame( map&lt;string, TeGeomRepVisualMap *&gt; &amp; objVisualMap, int n )</function>
+    <function>plotBackground()</function>
+    <function>setGroupingAttributes()</function>
+    <function>checkWidgetEnabling()</function>
+    <function returnType="TeAttrTableType">getAttrTableType()</function>
+    <function>setAndAdjustTableColumns()</function>
+    <function>show()</function>
+</functions>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

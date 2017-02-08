@@ -1,0 +1,240 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>RasterTransparency</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>RasterTransparency</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>316</width>
+            <height>99</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Raster Transparency</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout32</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout24</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel1</cstring>
+                            </property>
+                            <property name="text">
+                                <string>0</string>
+                            </property>
+                        </widget>
+                        <widget class="QSlider">
+                            <property name="name">
+                                <cstring>transpSlider</cstring>
+                            </property>
+                            <property name="maxValue">
+                                <number>255</number>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="tickmarks">
+                                <enum>Below</enum>
+                            </property>
+                            <property name="tickInterval">
+                                <number>10</number>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>sliderValueTextLabel</cstring>
+                            </property>
+                            <property name="text">
+                                <string>100 %</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer34</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>Layout15</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <property name="spacing">
+                            <number>6</number>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>resetPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Reset</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+R</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>Spacer15</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>54</width>
+                                    <height>16</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>cancelPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Cancel</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>Spacer16</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>54</width>
+                                    <height>16</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Help</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+H</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>resetPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>RasterTransparency</receiver>
+        <slot>resetPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>transpSlider</sender>
+        <signal>sliderReleased()</signal>
+        <receiver>RasterTransparency</receiver>
+        <slot>transpSlider_sliderReleased()</slot>
+    </connection>
+    <connection>
+        <sender>cancelPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>RasterTransparency</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>transpSlider</sender>
+        <signal>sliderMoved(int)</signal>
+        <receiver>RasterTransparency</receiver>
+        <slot>transpSlider_sliderMoved(int)</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>RasterTransparency</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>RasterTransparency</sender>
+        <signal>destroyed(QObject*)</signal>
+        <receiver>RasterTransparency</receiver>
+        <slot>RasterTransparency_destroyed(QObject*)</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+    <include location="local" impldecl="in implementation">rasterTransparency.ui.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+    <forward>class DisplayWindow;</forward>
+    <forward>class Help;</forward>
+</forwards>
+<variables>
+    <variable access="private">TerraViewBase *mainWindow_;</variable>
+    <variable access="private">DisplayWindow* displayWindow_;</variable>
+    <variable>Help* help_;</variable>
+</variables>
+<slots>
+    <slot>init()</slot>
+    <slot>resetPushButton_clicked()</slot>
+    <slot>helpPushButton_clicked()</slot>
+    <slot>transpSlider_sliderReleased()</slot>
+    <slot>transpSlider_sliderMoved( int v )</slot>
+    <slot>RasterTransparency_destroyed( QObject * )</slot>
+</slots>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

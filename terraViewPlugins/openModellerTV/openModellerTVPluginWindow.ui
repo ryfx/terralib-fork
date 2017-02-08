@@ -1,0 +1,35 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>openModellerTVPluginWindow</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>openModellerTVPluginWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>190</width>
+            <height>112</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>HelloWorld Plugin</string>
+    </property>
+    <widget class="QComboBox">
+        <property name="name">
+            <cstring>q_db_layers_</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>30</y>
+                <width>150</width>
+                <height>20</height>
+            </rect>
+        </property>
+    </widget>
+</widget>
+<toolbars>
+</toolbars>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

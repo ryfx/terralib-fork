@@ -1,0 +1,753 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>UISpatialIndex</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>UISpatialIndex</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>547</width>
+            <height>528</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Spatial Index</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout26</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="1" column="0">
+                    <property name="name">
+                        <cstring>layout1</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton" row="0" column="0">
+                            <property name="name">
+                                <cstring>helpPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Help</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="2">
+                            <property name="name">
+                                <cstring>okPushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Ok</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="3">
+                            <property name="name">
+                                <cstring>closePushButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Close</string>
+                            </property>
+                        </widget>
+                        <spacer row="0" column="1">
+                            <property name="name">
+                                <cstring>spacer1</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>131</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </grid>
+                </widget>
+                <widget class="QTabWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>mainTabWidget</cstring>
+                    </property>
+                    <widget class="QWidget">
+                        <property name="name">
+                            <cstring>inputParametersPage</cstring>
+                        </property>
+                        <attribute name="title">
+                            <string>Input Parameters</string>
+                        </attribute>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget" row="0" column="0">
+                                <property name="name">
+                                    <cstring>layout25</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QButtonGroup" row="1" column="0">
+                                        <property name="name">
+                                            <cstring>populationsGroupButtonGroup</cstring>
+                                        </property>
+                                        <property name="title">
+                                            <string>Populations Groups</string>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLayoutWidget" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>layout24</cstring>
+                                                </property>
+                                                <grid>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QTable" row="1" column="0">
+                                                        <property name="name">
+                                                            <cstring>groupsTable</cstring>
+                                                        </property>
+                                                        <property name="numRows">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="numCols">
+                                                            <number>0</number>
+                                                        </property>
+                                                    </widget>
+                                                    <widget class="QLayoutWidget" row="0" column="0">
+                                                        <property name="name">
+                                                            <cstring>layout23</cstring>
+                                                        </property>
+                                                        <grid>
+                                                            <property name="name">
+                                                                <cstring>unnamed</cstring>
+                                                            </property>
+                                                            <widget class="QButtonGroup" row="0" column="0">
+                                                                <property name="name">
+                                                                    <cstring>suffixButtonGroup</cstring>
+                                                                </property>
+                                                                <property name="title">
+                                                                    <string></string>
+                                                                </property>
+                                                                <grid>
+                                                                    <property name="name">
+                                                                        <cstring>unnamed</cstring>
+                                                                    </property>
+                                                                    <widget class="QLayoutWidget" row="0" column="0">
+                                                                        <property name="name">
+                                                                            <cstring>layout2</cstring>
+                                                                        </property>
+                                                                        <grid>
+                                                                            <property name="name">
+                                                                                <cstring>unnamed</cstring>
+                                                                            </property>
+                                                                            <widget class="QLabel" row="0" column="0">
+                                                                                <property name="name">
+                                                                                    <cstring>attrSuffixTextLabel</cstring>
+                                                                                </property>
+                                                                                <property name="text">
+                                                                                    <string>What is the suffix of Local Population Intensity attribute?</string>
+                                                                                </property>
+                                                                            </widget>
+                                                                            <widget class="QPushButton" row="0" column="2">
+                                                                                <property name="name">
+                                                                                    <cstring>verifyPushButton</cstring>
+                                                                                </property>
+                                                                                <property name="text">
+                                                                                    <string>Verify</string>
+                                                                                </property>
+                                                                            </widget>
+                                                                            <widget class="QLineEdit" row="0" column="1">
+                                                                                <property name="name">
+                                                                                    <cstring>attrSuffixLineEdit</cstring>
+                                                                                </property>
+                                                                                <property name="frameShape">
+                                                                                    <enum>LineEditPanel</enum>
+                                                                                </property>
+                                                                                <property name="frameShadow">
+                                                                                    <enum>Sunken</enum>
+                                                                                </property>
+                                                                                <property name="text">
+                                                                                    <string>_w</string>
+                                                                                </property>
+                                                                                <property name="maxLength">
+                                                                                    <number>10</number>
+                                                                                </property>
+                                                                                <property name="alignment">
+                                                                                    <set>AlignRight</set>
+                                                                                </property>
+                                                                            </widget>
+                                                                        </grid>
+                                                                    </widget>
+                                                                </grid>
+                                                            </widget>
+                                                            <widget class="QLayoutWidget" row="1" column="0">
+                                                                <property name="name">
+                                                                    <cstring>layout22</cstring>
+                                                                </property>
+                                                                <grid>
+                                                                    <property name="name">
+                                                                        <cstring>unnamed</cstring>
+                                                                    </property>
+                                                                    <widget class="QButtonGroup" row="0" column="1">
+                                                                        <property name="name">
+                                                                            <cstring>groupNButtonGroup</cstring>
+                                                                        </property>
+                                                                        <property name="enabled">
+                                                                            <bool>true</bool>
+                                                                        </property>
+                                                                        <property name="sizePolicy">
+                                                                            <sizepolicy>
+                                                                                <hsizetype>5</hsizetype>
+                                                                                <vsizetype>5</vsizetype>
+                                                                                <horstretch>0</horstretch>
+                                                                                <verstretch>0</verstretch>
+                                                                            </sizepolicy>
+                                                                        </property>
+                                                                        <property name="margin">
+                                                                            <number>0</number>
+                                                                        </property>
+                                                                        <property name="title">
+                                                                            <string></string>
+                                                                        </property>
+                                                                        <grid>
+                                                                            <property name="name">
+                                                                                <cstring>unnamed</cstring>
+                                                                            </property>
+                                                                            <widget class="QLayoutWidget" row="0" column="0">
+                                                                                <property name="name">
+                                                                                    <cstring>layout16</cstring>
+                                                                                </property>
+                                                                                <grid>
+                                                                                    <property name="name">
+                                                                                        <cstring>unnamed</cstring>
+                                                                                    </property>
+                                                                                    <widget class="QLabel" row="0" column="0">
+                                                                                        <property name="name">
+                                                                                            <cstring>groupNTextLabel</cstring>
+                                                                                        </property>
+                                                                                        <property name="text">
+                                                                                            <string>Choose the group N:</string>
+                                                                                        </property>
+                                                                                    </widget>
+                                                                                    <widget class="QComboBox" row="0" column="1">
+                                                                                        <property name="name">
+                                                                                            <cstring>groupNComboBox</cstring>
+                                                                                        </property>
+                                                                                        <property name="sizePolicy">
+                                                                                            <sizepolicy>
+                                                                                                <hsizetype>3</hsizetype>
+                                                                                                <vsizetype>0</vsizetype>
+                                                                                                <horstretch>0</horstretch>
+                                                                                                <verstretch>0</verstretch>
+                                                                                            </sizepolicy>
+                                                                                        </property>
+                                                                                    </widget>
+                                                                                </grid>
+                                                                            </widget>
+                                                                        </grid>
+                                                                    </widget>
+                                                                    <widget class="QButtonGroup" row="0" column="0">
+                                                                        <property name="name">
+                                                                            <cstring>groupMButtonGroup</cstring>
+                                                                        </property>
+                                                                        <property name="title">
+                                                                            <string></string>
+                                                                        </property>
+                                                                        <grid>
+                                                                            <property name="name">
+                                                                                <cstring>unnamed</cstring>
+                                                                            </property>
+                                                                            <widget class="QLayoutWidget" row="0" column="0">
+                                                                                <property name="name">
+                                                                                    <cstring>layout21</cstring>
+                                                                                </property>
+                                                                                <grid>
+                                                                                    <property name="name">
+                                                                                        <cstring>unnamed</cstring>
+                                                                                    </property>
+                                                                                    <widget class="QLabel" row="0" column="0">
+                                                                                        <property name="name">
+                                                                                            <cstring>groupMTextLabel</cstring>
+                                                                                        </property>
+                                                                                        <property name="text">
+                                                                                            <string>Choose the group M:</string>
+                                                                                        </property>
+                                                                                        <property name="alignment">
+                                                                                            <set>AlignJustify|AlignVCenter</set>
+                                                                                        </property>
+                                                                                    </widget>
+                                                                                    <widget class="QComboBox" row="0" column="1">
+                                                                                        <property name="name">
+                                                                                            <cstring>groupMComboBox</cstring>
+                                                                                        </property>
+                                                                                        <property name="sizePolicy">
+                                                                                            <sizepolicy>
+                                                                                                <hsizetype>3</hsizetype>
+                                                                                                <vsizetype>0</vsizetype>
+                                                                                                <horstretch>0</horstretch>
+                                                                                                <verstretch>0</verstretch>
+                                                                                            </sizepolicy>
+                                                                                        </property>
+                                                                                    </widget>
+                                                                                </grid>
+                                                                            </widget>
+                                                                        </grid>
+                                                                    </widget>
+                                                                </grid>
+                                                            </widget>
+                                                        </grid>
+                                                    </widget>
+                                                </grid>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                    <widget class="QButtonGroup" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>themeButtonGroup</cstring>
+                                        </property>
+                                        <property name="title">
+                                            <string>Select a Theme</string>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QComboBox" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>themeComboBox</cstring>
+                                                </property>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                </grid>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QWidget">
+                        <property name="name">
+                            <cstring>optionsPage</cstring>
+                        </property>
+                        <attribute name="title">
+                            <string>Options</string>
+                        </attribute>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget" row="0" column="0">
+                                <property name="name">
+                                    <cstring>layout14</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QButtonGroup" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>statisticButtonGroup</cstring>
+                                        </property>
+                                        <property name="title">
+                                            <string>Statistic</string>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLayoutWidget" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>layout10</cstring>
+                                                </property>
+                                                <grid>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QButtonGroup" row="1" column="0">
+                                                        <property name="name">
+                                                            <cstring>directoryButtonGroup</cstring>
+                                                        </property>
+                                                        <property name="enabled">
+                                                            <bool>false</bool>
+                                                        </property>
+                                                        <property name="title">
+                                                            <string>Choose the directory that contains the random distributions results</string>
+                                                        </property>
+                                                        <grid>
+                                                            <property name="name">
+                                                                <cstring>unnamed</cstring>
+                                                            </property>
+                                                            <widget class="QLayoutWidget" row="0" column="0">
+                                                                <property name="name">
+                                                                    <cstring>layout6</cstring>
+                                                                </property>
+                                                                <grid>
+                                                                    <property name="name">
+                                                                        <cstring>unnamed</cstring>
+                                                                    </property>
+                                                                    <widget class="QLineEdit" row="0" column="1">
+                                                                        <property name="name">
+                                                                            <cstring>directoryLineEdit</cstring>
+                                                                        </property>
+                                                                        <property name="readOnly">
+                                                                            <bool>true</bool>
+                                                                        </property>
+                                                                    </widget>
+                                                                    <widget class="QPushButton" row="0" column="0">
+                                                                        <property name="name">
+                                                                            <cstring>directoryPushButton</cstring>
+                                                                        </property>
+                                                                        <property name="text">
+                                                                            <string>Browse...</string>
+                                                                        </property>
+                                                                    </widget>
+                                                                </grid>
+                                                            </widget>
+                                                        </grid>
+                                                    </widget>
+                                                    <widget class="QLayoutWidget" row="0" column="0">
+                                                        <property name="name">
+                                                            <cstring>layout9</cstring>
+                                                        </property>
+                                                        <grid>
+                                                            <property name="name">
+                                                                <cstring>unnamed</cstring>
+                                                            </property>
+                                                            <widget class="QCheckBox" row="0" column="0">
+                                                                <property name="name">
+                                                                    <cstring>pvalueCheckBox</cstring>
+                                                                </property>
+                                                                <property name="text">
+                                                                    <string>Calculate p-value</string>
+                                                                </property>
+                                                            </widget>
+                                                            <spacer row="0" column="1">
+                                                                <property name="name">
+                                                                    <cstring>spacer2</cstring>
+                                                                </property>
+                                                                <property name="orientation">
+                                                                    <enum>Horizontal</enum>
+                                                                </property>
+                                                                <property name="sizeType">
+                                                                    <enum>Expanding</enum>
+                                                                </property>
+                                                                <property name="sizeHint">
+                                                                    <size>
+                                                                        <width>251</width>
+                                                                        <height>20</height>
+                                                                    </size>
+                                                                </property>
+                                                            </spacer>
+                                                        </grid>
+                                                    </widget>
+                                                </grid>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                    <widget class="QLayoutWidget" row="1" column="0">
+                                        <property name="name">
+                                            <cstring>layout13</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <spacer row="1" column="0">
+                                                <property name="name">
+                                                    <cstring>spacer3</cstring>
+                                                </property>
+                                                <property name="orientation">
+                                                    <enum>Vertical</enum>
+                                                </property>
+                                                <property name="sizeType">
+                                                    <enum>Expanding</enum>
+                                                </property>
+                                                <property name="sizeHint">
+                                                    <size>
+                                                        <width>20</width>
+                                                        <height>70</height>
+                                                    </size>
+                                                </property>
+                                            </spacer>
+                                            <widget class="QButtonGroup" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>generalOptionsButtonGroup</cstring>
+                                                </property>
+                                                <property name="title">
+                                                    <string>General Options</string>
+                                                </property>
+                                                <grid>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QLayoutWidget" row="0" column="0">
+                                                        <property name="name">
+                                                            <cstring>layout9</cstring>
+                                                        </property>
+                                                        <grid>
+                                                            <property name="name">
+                                                                <cstring>unnamed</cstring>
+                                                            </property>
+                                                            <widget class="QLabel" row="0" column="0">
+                                                                <property name="name">
+                                                                    <cstring>attrNameTextLabel</cstring>
+                                                                </property>
+                                                                <property name="text">
+                                                                    <string>Attribute name for Spatial Index:</string>
+                                                                </property>
+                                                            </widget>
+                                                            <widget class="QLineEdit" row="0" column="1">
+                                                                <property name="name">
+                                                                    <cstring>attrNameLineEdit</cstring>
+                                                                </property>
+                                                                <property name="text">
+                                                                    <string>&lt; default value &gt;</string>
+                                                                </property>
+                                                            </widget>
+                                                        </grid>
+                                                    </widget>
+                                                    <widget class="QLayoutWidget" row="1" column="0">
+                                                        <property name="name">
+                                                            <cstring>layout12</cstring>
+                                                        </property>
+                                                        <grid>
+                                                            <property name="name">
+                                                                <cstring>unnamed</cstring>
+                                                            </property>
+                                                            <widget class="QCheckBox" row="0" column="0">
+                                                                <property name="name">
+                                                                    <cstring>generateMapCheckBox</cstring>
+                                                                </property>
+                                                                <property name="text">
+                                                                    <string>Generate Map of Local Indexes</string>
+                                                                </property>
+                                                            </widget>
+                                                            <spacer row="0" column="1">
+                                                                <property name="name">
+                                                                    <cstring>spacer4</cstring>
+                                                                </property>
+                                                                <property name="orientation">
+                                                                    <enum>Horizontal</enum>
+                                                                </property>
+                                                                <property name="sizeType">
+                                                                    <enum>Expanding</enum>
+                                                                </property>
+                                                                <property name="sizeHint">
+                                                                    <size>
+                                                                        <width>261</width>
+                                                                        <height>20</height>
+                                                                    </size>
+                                                                </property>
+                                                            </spacer>
+                                                        </grid>
+                                                    </widget>
+                                                </grid>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                </grid>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QWidget">
+                        <property name="name">
+                            <cstring>resultsPage</cstring>
+                        </property>
+                        <attribute name="title">
+                            <string>Results</string>
+                        </attribute>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget" row="0" column="0">
+                                <property name="name">
+                                    <cstring>layout25</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <spacer row="1" column="0">
+                                        <property name="name">
+                                            <cstring>spacer9</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Vertical</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>20</width>
+                                                <height>181</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <widget class="QLayoutWidget" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>layout24</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QButtonGroup" row="0" column="1">
+                                                <property name="name">
+                                                    <cstring>pvalueButtonGroup</cstring>
+                                                </property>
+                                                <property name="title">
+                                                    <string>p-value</string>
+                                                </property>
+                                                <grid>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QLineEdit" row="0" column="0">
+                                                        <property name="name">
+                                                            <cstring>pvalueLineEdit</cstring>
+                                                        </property>
+                                                        <property name="lineWidth">
+                                                            <number>1</number>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>&lt; p-value &gt;</string>
+                                                        </property>
+                                                        <property name="frame">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>AlignRight</set>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </grid>
+                                            </widget>
+                                            <widget class="QButtonGroup" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>globalIndexButtonGroup</cstring>
+                                                </property>
+                                                <property name="title">
+                                                    <string>Global Index</string>
+                                                </property>
+                                                <grid>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <widget class="QLineEdit" row="0" column="0">
+                                                        <property name="name">
+                                                            <cstring>globalIndexLineEdit</cstring>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>&lt; Global Index &gt;</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>AlignRight</set>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </grid>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                </grid>
+                            </widget>
+                        </grid>
+                    </widget>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>verifyPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>UISpatialIndex</receiver>
+        <slot>verifyPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>UISpatialIndex</receiver>
+        <slot>okPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>helpPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>UISpatialIndex</receiver>
+        <slot>helpPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>closePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>UISpatialIndex</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>themeComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>UISpatialIndex</receiver>
+        <slot>themeComboBox_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>directoryPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>UISpatialIndex</receiver>
+        <slot>directoryPushButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pvalueCheckBox</sender>
+        <signal>clicked()</signal>
+        <receiver>UISpatialIndex</receiver>
+        <slot>pvalueCheckBox_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>mainTabWidget</tabstop>
+    <tabstop>themeComboBox</tabstop>
+    <tabstop>attrSuffixLineEdit</tabstop>
+    <tabstop>verifyPushButton</tabstop>
+    <tabstop>groupsTable</tabstop>
+    <tabstop>pvalueCheckBox</tabstop>
+    <tabstop>directoryPushButton</tabstop>
+    <tabstop>directoryLineEdit</tabstop>
+    <tabstop>attrNameLineEdit</tabstop>
+    <tabstop>generateMapCheckBox</tabstop>
+    <tabstop>globalIndexLineEdit</tabstop>
+    <tabstop>pvalueLineEdit</tabstop>
+    <tabstop>okPushButton</tabstop>
+    <tabstop>closePushButton</tabstop>
+    <tabstop>helpPushButton</tabstop>
+</tabstops>
+<slots>
+    <slot specifier="pure virtual">verifyPushButton_clicked()</slot>
+    <slot specifier="pure virtual">okPushButton_clicked()</slot>
+    <slot specifier="pure virtual">helpPushButton_clicked()</slot>
+    <slot specifier="pure virtual">themeComboBox_activated(const QString&amp;)</slot>
+    <slot specifier="pure virtual">directoryPushButton_clicked()</slot>
+    <slot specifier="pure virtual">pvalueCheckBox_clicked()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

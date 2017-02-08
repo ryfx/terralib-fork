@@ -1,0 +1,104 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>TerraView</title>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+
+<div class=Section1>
+
+  <p> <strong> <span style='font-family:"Arial","sans-serif";'> <font size="3" face="Arial, Helvetica, sans-serif">TerraView</font></span></strong></p>
+  <p align=right> <font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family:Arial'> <a href="visualizando_atributos_dados_selecionados.htm">&lt;&lt; 
+    Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="operacao_espacial_disjunto.htm">Next 
+    &gt;&gt;</a> </span> </font></p>
+  <hr size=2 width="100%" align=center>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><strong><u> <span style='font-size: 13.5pt;font-family:Arial'>Other Spatial Selection
+    Operations</span></u></strong> </font></p>
+  <div align="justify"><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-family:Arial'> 
+    <p>In default mode, selected objects are those that intersect (are contained or touch) the 
+    selection cursor. In addition to default Intersects option, TerraView allows 
+    the user to choose other spatial operation types with the cursor. </p>
+    <p>
+    Spatial Operation options do not affect objects equally, since they have specific 
+    effects for each type of geometry, as shown in the table below: </p>
+    </span></font></div>
+  <div align=center>
+  <table align=center width="70%" border="1" cellspacing="0" cellpadding="0" bordercolor="#000000" style="border-left: 1px; border-right: 1px; border-top: 1px; border-bottom: thin;">
+    <tr> 
+      <td width="25%" align="center"><font size="3" face="Arial, Helvetica, sans-serif"><strong><span style='font-size: 11.5pt;font-family:Arial'>Operation</strong></font></td>
+      <td width="25%" align="center"><font size="3" face="Arial, Helvetica, sans-serif"><strong><span style='font-size: 11.5pt;font-family:Arial'>Points</strong></font></td>
+      <td width="25%" align="center"><font size="3" face="Arial, Helvetica, sans-serif"><strong><span style='font-size: 11.5pt;font-family:Arial'>Lines</strong></font></td>
+      <td width="25%" align="center"><font size="3" face="Arial, Helvetica, sans-serif"><strong><span style='font-size: 11.5pt;font-family:Arial'>Polygons</strong></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;Intersects&nbsp;</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;Inside 
+        the cursor&nbsp;</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;Inside 
+        or crosses the cursor&nbsp;</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;Inside 
+        or crosses the cursor&nbsp;</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;Disjoint&nbsp;</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;Outside 
+        the cursor&nbsp;</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;Outside 
+        the cursor&nbsp;</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;Outside 
+        the cursor&nbsp;</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;Within&nbsp;</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;Inside 
+        the cursor&nbsp;</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;Inside 
+        the cursor&nbsp;</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;Inside 
+        the cursor&nbsp;</span></font></td>
+    </tr>
+    <tr> 
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;Crosses&nbsp;</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;No&nbsp;</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;Crosses 
+        the cursor&nbsp;</span></font></td>
+      <td><font size="3" face="Arial, Helvetica, sans-serif"><span style='font-size: 11.5pt;font-family:Arial'>&nbsp;Crosses 
+        the cursor&nbsp;</span></font></td>
+    </tr>
+  </table>
+  </div>
+  <div align="justify"><font size="3" face="Arial, Helvetica, sans-serif"><br>
+    <p>
+    Spatial Operation option Within selects all areas fully inside (are contained) 
+    the cursor. </p>
+    <p>
+    If the user chooses Spatial Operation option No Spatial Operation, the cursor 
+    will not select areas. </p>
+    <p>
+    To unselect areas selected by the Graphic Cursor, click outside the map or 
+    use the tool to unselect objects. </p>
+    <p>
+    <strong>Note:</strong> </p>
+    <p> In Figure below, Graphic Cursor and <strong>Spatial Operation &gt; Within 
+      </strong>were used to select one point of Crimes2002 theme. </font> </div>
+  <p align=center> <font size="3" face="Arial, Helvetica, sans-serif"><img border=0 id="_x0000_i1027" src="terraViewBase_arquivos/operacao_espaci_dentro.png"> 
+    </font></p>
+  <div align="justify"><font size="3" face="Arial, Helvetica, sans-serif">
+  <p>
+    Observe the theme table. Notice that with the selection eight points are selected. 
+    That is, one point selects eight crimes. </p>
+  <p>
+    This is due to many events occurring at the same geographic location or at 
+    a location very close to each other. </p> </font> </div>
+  <hr size=2 width="100%" align=JUSTIFY>
+  <p align=right> <font size="3" face="Arial, Helvetica, sans-serif"><a href="visualizando_atributos_dados_selecionados.htm">&lt;&lt; 
+    Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> | <a href="operacao_espacial_disjunto.htm">Next 
+    &gt;&gt;</a> </font></p>
+  
+</div>
+
+</body>
+
+</html>

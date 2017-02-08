@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>TerraView</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<font face="Arial, Helvetica, sans-serif" size="4">
+<table width="100%">
+  <tr>
+ 
+  </tr>
+  <tr> 
+    <td><b><font size="4" face="Arial, Helvetica, sans-serif">Spatial Proximity Matrix</font></b><br>
+      <hr>
+      <p>A basic tool to estimate the data spatial variability in an area is the Spatial 
+        Proximity Matrix, also known as Neighborhood Matrix. The proximity matrix is used 
+        to calculate indicators during the exploratory analysis of spatial data for other 
+        analysis available in TerraView. Since the calculation is costly and can be executed 
+        with criteria, TerraView stores the matrices in the database, allowing the use of 
+        them in different analysis to avoid recalculation, thus achieving efficiency.</p>
+      <p>To calculate the proximity matrix, select the 
+        <b>Analysis</b> <b>- Proximity Matrix - Create Proximity Matrix</b> option in the Menu Bar. 
+        The interface shown in the following figure below will be displayed. 
+        Once the operation is finished, the created matrix describes, for each object, which other 
+        objects are considered to be the nearest ones.</p>
+      <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/matriz_proximidade.png"> 
+        </font></p>
+      <p><font face="Arial">1. Choose the <b>Theme</b> with data. 
+        Choose UP Theme with the Planning Units for Belo Horizonte in the BH.mdb database. </font></p>
+      <p><font face="Arial">2. Select one of the available strategies in <b>Construction Strategy</b> 
+        field to decide how objects are close to each other. In this case, select the <b>Contiguity</b> 
+        strategy. The options are:</font></p>
+      <p><font face="Arial, Helvetica, sans-serif">a.<b> Contiguity</b>: An object is near to 
+        only other ones with shared borders. This characteristic is highly dependent on objects 
+        geometry and the Theme objects geometries must be without digitalization and building 
+        errors;</font></p>
+      <p><font face="Arial"> b.</font><font face="Arial, Helvetica, sans-serif"></font><font face="Arial"> 
+        <b>Distance</b>: An object is near another one if their centroids are at a 
+        distance d specified by the user in the Distance field (enabled when this 
+        strategy is selected);</font></p>
+      <p><font face="Arial">c. <b>Nearest Neighbours</b>: 
+        An object is near on only the <i>n</i> nearest neighbors (considering centroids), 
+        where <i>n</i> is defined by the user in Number of Neighbours field 
+        (enabled when this strategy is selected).</font></p>
+      <p><font face="Arial"> 3. <b>Weight</b> field allows weights to be assigned to the 
+        found proximities. The options are: 
+        </font></p>
+      <p><font face="Arial">a. <b>Without Weight</b>: All near objects have the same weight;</font></p>
+      <p><font face="Arial">b. <b>Inverse Distance</b>;</font></p>
+      <p>c. <b>Squared Inverse Distance</b>.</p>
+      <p><font face="Arial"> 4. <b>Save output file</b> option allows the matrix calculated by 
+        TerraView to be saved in text files for data interchange with other spatial analysis 
+        software. In this case, fill in the format and the location and name of the file.</font></p>
+      <p><font face="Arial">5. Click on <b>OK</b>.</font></p>
+      <p>The matrix is built and saved in the database, associated with this Theme.</p>
+      <p><font face="Arial"><strong><a name="selecionar_matriz"></a>Selecting a Proximity 
+        Matrix</strong></font></p>
+      <p>Using <b>Analysis Proximity Matrix</b> - 
+        <b>Select Proximity Matrix</b> menu, the interface shown in Figure below is displayed 
+        and it allows the manipulation of the proximity matrices built for a given Theme.</p>
+      <p align="center"><img src="terraViewBase_arquivos/selecionar_matriz.png"></p>
+      <p><font face="Arial">1. Choose the <b>Theme</b> with proximity matrices.</font></p>
+      <p>2. Observe the list of available matrices.</p>
+      <p>3. Click on <b>Set Matrix as Default</b> to indicate that the selected matrix is 
+        the one to be used in the following spatial operations which need a proximity matrix.</p>
+      <p>4. Click on <b>Delete Matrix</b> to delete the selected matrix.<br>
+      </p>
+      <p>&nbsp;</p>
+    </td>
+  </tr>
+  <tr>
+  </tr>
+</table>
+</font> 
+</body>
+</html>

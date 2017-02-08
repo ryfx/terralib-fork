@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="openModellerTVPlugin"
+	ProjectGUID="{0ACF4EB8-F146-43E6-A453-62BB17315040}">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug\"
+			IntermediateDirectory="Debug\"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				Optimization="4"
+				AdditionalIncludeDirectories=".;..\..\terraViewPlugins\base;..\..\terraView;..\..\terraView\ui;..\..\src\libspl;..\..\src\terralib\kernel;..\..\src\terralib\functions;..\..\src\terralib\image_processing;..\..\src\terralib\drivers\MySQL;..\..\src\terralib\drivers\MySQL\include;..\..\src\terralib\drivers\Oracle;..\..\src\terralib\drivers\Oracle\OCI\include;..\..\src\terralib\drivers\PostgreSQL;..\..\src\terralib\drivers\PostgreSQL\includepg;..\..\src\terralib\utils;..\..\src\terralib\drivers\qt;..\..\src\terralib\stat;..\..\terralibw\ado;libs\include;&quot;$(QTDIR)\include&quot;;Moc\;C:\dev\omTvPlugin\terralib321\terraViewPlugins\openModellerTVPlugin;&quot;C:\Qt\3.2.0\mkspecs\win32-msvc.net&quot;"
+				PreprocessorDefinitions="_WINDOWS;UNICODE;WIN32;QT_DLL;QT_THREAD_SUPPORT;dllexp=__declspec(dllimport);TERRALIB_FOUND=TRUE"
+				GeneratePreprocessedFile="0"
+				MinimalRebuild="TRUE"
+				ExceptionHandling="TRUE"
+				RuntimeLibrary="3"
+				BufferSecurityCheck="FALSE"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="Debug\"
+				ObjectFile="Debug\"
+				ProgramDataBaseFileName="Debug\"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mt320.lib ..\..\Debug\libspl\libspl.lib ..\..\Debug\terralibpdi\terralibpdi.lib ..\..\Debug\terralib\terralib.lib libs\Debug\lib\openmodeller.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile="..\..\terraView\windows\plugins\openModellerTVPlugin.dll"
+				SuppressStartupBanner="TRUE"
+				AdditionalLibraryDirectories="$(QTDIR)\lib"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				BaseAddress="0x39D00000"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				Optimization="4"
+				AdditionalIncludeDirectories=".;..\..\terraViewPlugins\base;..\..\terraView;..\..\terraView\ui;..\..\src\libspl;..\..\src\terralib\kernel;..\..\src\terralib\functions;..\..\src\terralib\image_processing;..\..\src\terralib\drivers\MySQL;..\..\src\terralib\drivers\MySQL\include;..\..\src\terralib\drivers\Oracle;..\..\src\terralib\drivers\Oracle\OCI\include;..\..\src\terralib\drivers\PostgreSQL;..\..\src\terralib\drivers\PostgreSQL\includepg;..\..\src\terralib\utils;..\..\src\terralib\drivers\qt;..\..\src\terralib\stat;..\..\terralibw\ado;libs\include;&quot;$(QTDIR)\include&quot;;Moc\;C:\dev\omTvPlugin\terralib321\terraViewPlugins\openModellerTVPlugin;&quot;C:\Qt\3.2.0\mkspecs\win32-msvc.net&quot;"
+				PreprocessorDefinitions="_WINDOWS;UNICODE;WIN32;QT_DLL;QT_THREAD_SUPPORT;dllexp=__declspec(dllimport);TERRALIB_FOUND=TRUE"
+				GeneratePreprocessedFile="0"
+				MinimalRebuild="TRUE"
+				ExceptionHandling="TRUE"
+				RuntimeLibrary="2"
+				BufferSecurityCheck="FALSE"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="Release\"
+				ObjectFile="Release\"
+				ProgramDataBaseFileName="Release\"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="0"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mt320.lib ..\..\Release\libspl\libspl.lib ..\..\Release\terralibpdi\terralibpdi.lib ..\..\Release\terralib\terralib.lib libs\Release\lib\openmodeller.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile=".\libs\Release\bin\openModellerTVPlugin.dll"
+				SuppressStartupBanner="TRUE"
+				AdditionalLibraryDirectories="$(QTDIR)\lib"
+				GenerateDebugInformation="FALSE"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				BaseAddress="0x39D00000"
+				ImportLibrary="./Release/$(TargetName).lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="openModellerPluginWindow.cpp">
+			</File>
+			<File
+				RelativePath=".\openModellerTVPluginCode.cpp">
+			</File>
+			<File
+				RelativePath="parametersWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\terraView\PluginParameters.cpp">
+			</File>
+			<File
+				RelativePath="..\..\terraView\PluginsSignal.cpp">
+			</File>
+			<File
+				RelativePath="QOpenModeller.cpp">
+			</File>
+			<File
+				RelativePath="..\..\terraView\TeApplicationUtils.cpp">
+			</File>
+			<File
+				RelativePath="..\..\terraView\TeAppTheme.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\utils\TeColorUtils.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeDecoderQtImage.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtCanvas.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtCheckListItem.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtDatabaseItem.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtDatabasesListView.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtGrid.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtViewsListView.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeWaitCursor.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath="openModellerPluginWindow.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing openModellerPluginWindow.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe openModellerPluginWindow.h -o Moc\moc_openModellerPluginWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Moc\moc_openModellerPluginWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing openModellerPluginWindow.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe openModellerPluginWindow.h -o Moc\moc_openModellerPluginWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Moc\moc_openModellerPluginWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="openModellerTVPluginCode.h">
+			</File>
+			<File
+				RelativePath="parametersWindow.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing parametersWindow.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe parametersWindow.h -o Moc\moc_parametersWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Moc\moc_parametersWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing parametersWindow.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe parametersWindow.h -o Moc\moc_parametersWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Moc\moc_parametersWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\terraViewPlugins\base\PluginBase.h">
+			</File>
+			<File
+				RelativePath="..\..\terraView\PluginParameters.h">
+			</File>
+			<File
+				RelativePath="..\..\terraView\PluginsSignal.h">
+			</File>
+			<File
+				RelativePath="QLogCallback.h">
+			</File>
+			<File
+				RelativePath="QOpenModeller.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing QOpenModeller.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe QOpenModeller.h -o Moc\moc_QOpenModeller.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Moc\moc_QOpenModeller.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing QOpenModeller.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe QOpenModeller.h -o Moc\moc_QOpenModeller.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Moc\moc_QOpenModeller.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\terraView\TeApplicationUtils.h">
+			</File>
+			<File
+				RelativePath="..\..\terraView\TeAppTheme.h">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\utils\TeColorUtils.h">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeDecoderQtImage.h">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtCanvas.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\src\terralib\drivers\qt\TeQtCanvas.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\src\terralib\drivers\qt\TeQtCanvas.h -o Moc\moc_TeQtCanvas.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Moc\moc_TeQtCanvas.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\src\terralib\drivers\qt\TeQtCanvas.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\src\terralib\drivers\qt\TeQtCanvas.h -o Moc\moc_TeQtCanvas.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Moc\moc_TeQtCanvas.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtCheckListItem.h">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtDatabaseItem.h">
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtDatabasesListView.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\src\terralib\drivers\qt\TeQtDatabasesListView.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\src\terralib\drivers\qt\TeQtDatabasesListView.h -o Moc\moc_TeQtDatabasesListView.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Moc\moc_TeQtDatabasesListView.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\src\terralib\drivers\qt\TeQtDatabasesListView.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\src\terralib\drivers\qt\TeQtDatabasesListView.h -o Moc\moc_TeQtDatabasesListView.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Moc\moc_TeQtDatabasesListView.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtGrid.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\src\terralib\drivers\qt\TeQtGrid.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\src\terralib\drivers\qt\TeQtGrid.h -o Moc\moc_TeQtGrid.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Moc\moc_TeQtGrid.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\src\terralib\drivers\qt\TeQtGrid.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\src\terralib\drivers\qt\TeQtGrid.h -o Moc\moc_TeQtGrid.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Moc\moc_TeQtGrid.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeQtViewsListView.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\src\terralib\drivers\qt\TeQtViewsListView.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\src\terralib\drivers\qt\TeQtViewsListView.h -o Moc\moc_TeQtViewsListView.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Moc\moc_TeQtViewsListView.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\src\terralib\drivers\qt\TeQtViewsListView.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\src\terralib\drivers\qt\TeQtViewsListView.h -o Moc\moc_TeQtViewsListView.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="Moc\moc_TeQtViewsListView.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\src\terralib\drivers\qt\TeWaitCursor.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated MOC Files"
+			Filter="cpp;c;cxx;moc">
+			<File
+				RelativePath=".\moc\moc_openModellerForm.cpp">
+			</File>
+			<File
+				RelativePath=".\moc\moc_openModellerPluginWindow.cpp">
+			</File>
+			<File
+				RelativePath=".\moc\moc_openModellerTVPluginWindow.cpp">
+			</File>
+			<File
+				RelativePath=".\moc\moc_parametersForm.cpp">
+			</File>
+			<File
+				RelativePath=".\moc\moc_parametersWindow.cpp">
+			</File>
+			<File
+				RelativePath=".\moc\moc_progressForm.cpp">
+			</File>
+			<File
+				RelativePath=".\moc\moc_QOpenModeller.cpp">
+			</File>
+			<File
+				RelativePath=".\moc\moc_TeQtCanvas.cpp">
+			</File>
+			<File
+				RelativePath=".\moc\moc_TeQtDatabasesListView.cpp">
+			</File>
+			<File
+				RelativePath=".\moc\moc_TeQtGrid.cpp">
+			</File>
+			<File
+				RelativePath=".\moc\moc_TeQtViewsListView.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated UI Files"
+			Filter="cpp;c;cxx;h;hpp;hxx;">
+			<File
+				RelativePath=".\moc\openModellerForm.cpp">
+			</File>
+			<File
+				RelativePath=".\moc\openModellerForm.h">
+			</File>
+			<File
+				RelativePath=".\moc\openModellerTVPluginWindow.cpp">
+			</File>
+			<File
+				RelativePath=".\moc\openModellerTVPluginWindow.h">
+			</File>
+			<File
+				RelativePath=".\moc\parametersForm.cpp">
+			</File>
+			<File
+				RelativePath=".\moc\parametersForm.h">
+			</File>
+			<File
+				RelativePath=".\moc\progressForm.cpp">
+			</File>
+			<File
+				RelativePath=".\moc\progressForm.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Forms"
+			Filter="ui"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="openModellerForm.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing openModellerForm.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe openModellerForm.ui -o Moc\openModellerForm.h &amp;&amp; $(QTDIR)\bin\uic.exe openModellerForm.ui -i openModellerForm.h -o Moc\openModellerForm.cpp &amp;&amp; $(QTDIR)\bin\moc.exe Moc\openModellerForm.h -o Moc\moc_openModellerForm.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="Moc\openModellerForm.h;Moc\openModellerForm.cpp;Moc\moc_openModellerForm.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing openModellerForm.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe openModellerForm.ui -o Moc\openModellerForm.h &amp;&amp; $(QTDIR)\bin\uic.exe openModellerForm.ui -i openModellerForm.h -o Moc\openModellerForm.cpp &amp;&amp; $(QTDIR)\bin\moc.exe Moc\openModellerForm.h -o Moc\moc_openModellerForm.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="Moc\openModellerForm.h;Moc\openModellerForm.cpp;Moc\moc_openModellerForm.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="openModellerTVPluginWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing openModellerTVPluginWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe openModellerTVPluginWindow.ui -o Moc\openModellerTVPluginWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe openModellerTVPluginWindow.ui -i openModellerTVPluginWindow.h -o Moc\openModellerTVPluginWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe Moc\openModellerTVPluginWindow.h -o Moc\moc_openModellerTVPluginWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="Moc\openModellerTVPluginWindow.h;Moc\openModellerTVPluginWindow.cpp;Moc\moc_openModellerTVPluginWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing openModellerTVPluginWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe openModellerTVPluginWindow.ui -o Moc\openModellerTVPluginWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe openModellerTVPluginWindow.ui -i openModellerTVPluginWindow.h -o Moc\openModellerTVPluginWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe Moc\openModellerTVPluginWindow.h -o Moc\moc_openModellerTVPluginWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="Moc\openModellerTVPluginWindow.h;Moc\openModellerTVPluginWindow.cpp;Moc\moc_openModellerTVPluginWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="parametersForm.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing parametersForm.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe parametersForm.ui -o Moc\parametersForm.h &amp;&amp; $(QTDIR)\bin\uic.exe parametersForm.ui -i parametersForm.h -o Moc\parametersForm.cpp &amp;&amp; $(QTDIR)\bin\moc.exe Moc\parametersForm.h -o Moc\moc_parametersForm.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="Moc\parametersForm.h;Moc\parametersForm.cpp;Moc\moc_parametersForm.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing parametersForm.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe parametersForm.ui -o Moc\parametersForm.h &amp;&amp; $(QTDIR)\bin\uic.exe parametersForm.ui -i parametersForm.h -o Moc\parametersForm.cpp &amp;&amp; $(QTDIR)\bin\moc.exe Moc\parametersForm.h -o Moc\moc_parametersForm.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="Moc\parametersForm.h;Moc\parametersForm.cpp;Moc\moc_parametersForm.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="progressForm.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing progressForm.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe progressForm.ui -o Moc\progressForm.h &amp;&amp; $(QTDIR)\bin\uic.exe progressForm.ui -i progressForm.h -o Moc\progressForm.cpp &amp;&amp; $(QTDIR)\bin\moc.exe Moc\progressForm.h -o Moc\moc_progressForm.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="Moc\progressForm.h;Moc\progressForm.cpp;Moc\moc_progressForm.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing progressForm.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe progressForm.ui -o Moc\progressForm.h &amp;&amp; $(QTDIR)\bin\uic.exe progressForm.ui -i progressForm.h -o Moc\progressForm.cpp &amp;&amp; $(QTDIR)\bin\moc.exe Moc\progressForm.h -o Moc\moc_progressForm.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="Moc\progressForm.h;Moc\progressForm.cpp;Moc\moc_progressForm.cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

@@ -1,0 +1,11 @@
+The version 0.1.3:
+- Bug fix when server returns an invalid document type;
+
+The version 0.1.2 introduces the following features:
+- Selection of layers from a WMS Server in order to be displayed in TerraView environment;
+- Display of layers inside TerraView environment;
+- Display of layer legends;
+- Query properties for features in a WMS theme;
+- You can remove a WMS theme from your theme list;
+- The user interface has support for English and Portuguese;
+- Help system in Portuguese.

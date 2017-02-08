@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="copyDatabase"
+	ProjectGUID="{83f1e0d0-60a1-4618-82df-211bd4628041}">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="..\Debug\"
+			IntermediateDirectory="..\Debug\obj\"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				Optimization="0"
+				AdditionalIncludeDirectories="..\..\src\terralib\kernel;.;..\..\terraViewPlugins\base;..\..\terraView;..\..\terraView\ui;..\..\ui\terraView;..\..\src\libspl;..\..\src\terralib\functions;..\..\src\terralib\drivers\qt;..\..\src\terralib\drivers\spl;..\..\src\appUtils;..\..\ui;include;..\..\src\terralib\utils;&quot;$(QTDIR)\include&quot;;src\ui\;ui;src\moc\"
+				PreprocessorDefinitions="_WINDOWS,_DEBUG,WIN32,QT_DLL,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				MinimalRebuild="TRUE"
+				ExceptionHandling="TRUE"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				BufferSecurityCheck="TRUE"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="..\Debug\obj\"
+				ObjectFile="..\Debug\obj\"
+				ProgramDataBaseFileName="..\Debug\obj\"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="3"
+				DisableSpecificWarnings="4100"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mt320.lib libspl.lib terralib.lib te_apputils.lib terraViewCore.lib te_spl.lib te_functions.lib te_utils.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile="..\Debug\copyDatabase.dll"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="../../Debug/terralib;../../Debug/te_apputils;../../Debug/libspl;../../Debug/te_spl;../../Debug/terraViewCore;../../Debug/te_functions;../../Debug/te_utils;&quot;$(QTDIR)\lib&quot;"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
+				SubSystem="2"
+				BaseAddress="0x39D00000"
+				ImportLibrary="$(OutDir)/$(ProjectName).lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Copy copyDatabase.dll to plugins"
+				CommandLine="if not exist plugins mkdir plugins
+copy  &quot;$(TargetPath)&quot; &quot;plugins&quot;
+copy *.qm &quot;plugins&quot;
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="..\Release\"
+			IntermediateDirectory="..\Release\obj\"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				Optimization="2"
+				AdditionalIncludeDirectories="..\..\src\terralib\kernel;.;..\..\terraViewPlugins\base;..\..\terraView;..\..\terraView\ui;..\..\ui\terraView;..\..\src\libspl;..\..\src\terralib\functions;..\..\src\terralib\drivers\qt;..\..\src\terralib\drivers\spl;..\..\src\appUtils;..\..\ui;include;..\..\src\terralib\utils;&quot;$(QTDIR)\include&quot;;src\ui\;ui;src\moc\"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,NDEBUG,WIN32,QT_DLL,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				ExceptionHandling="TRUE"
+				RuntimeLibrary="2"
+				BufferSecurityCheck="TRUE"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="..\Release\obj\"
+				ObjectFile="..\Release\obj\"
+				ProgramDataBaseFileName="..\Release\obj\"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="0"
+				DisableSpecificWarnings="4100"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mt320.lib libspl.lib terralib.lib te_apputils.lib terraViewCore.lib te_spl.lib te_functions.lib te_utils.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile="..\Release\copyDatabase.dll"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="../../Release/terralib;../../Release/te_apputils;../../Release/libspl;../../Release/te_spl;../../Release/terraViewCore;../../Release/te_functions;../../Release/te_utils;&quot;$(QTDIR)\lib&quot;"
+				DelayLoadDLLs="comdlg32.dll,oleaut32.dll,winmm.dll,wsock32.dll,winspool.dll"
+				ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
+				SubSystem="2"
+				BaseAddress="0x39D00000"
+				ImportLibrary="$(OutDir)/$(ProjectName).lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Copy copyDatabase.dll to ..\..\Release\plugins"
+				CommandLine="copy  &quot;$(TargetPath)&quot; &quot;..\..\Release\plugins&quot;
+copy *.qm ..\..\Release\plugins
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="src\copydatabasePluginCode.cpp">
+			</File>
+			<File
+				RelativePath="ui\CopyDatabaseWindow.ui.h">
+			</File>
+			<File
+				RelativePath="src\copydbplugin.cpp">
+			</File>
+			<File
+				RelativePath="ui\DatabaseDialog.ui.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath="include\copydatabasePluginCode.h">
+			</File>
+			<File
+				RelativePath="include\copydbplugin.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing include\copydbplugin.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe include\copydbplugin.h -o src\moc\moc_copydbplugin.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="src\moc\moc_copydbplugin.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing include\copydbplugin.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe include\copydbplugin.h -o src\moc\moc_copydbplugin.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="src\moc\moc_copydbplugin.cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated MOC Files"
+			Filter="cpp;c;cxx;moc">
+			<File
+				RelativePath="src\moc\moc_CopyDatabaseWindow.cpp">
+			</File>
+			<File
+				RelativePath="src\moc\moc_copydbplugin.cpp">
+			</File>
+			<File
+				RelativePath="src\moc\moc_DatabaseDialog.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated UI Files"
+			Filter="cpp;c;cxx;h;hpp;hxx;">
+			<File
+				RelativePath="src\ui\CopyDatabaseWindow.cpp">
+			</File>
+			<File
+				RelativePath="src\ui\CopyDatabaseWindow.h">
+			</File>
+			<File
+				RelativePath="src\ui\DatabaseDialog.cpp">
+			</File>
+			<File
+				RelativePath="src\ui\DatabaseDialog.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Forms"
+			Filter="ui"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="ui\CopyDatabaseWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ui\CopyDatabaseWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ui\CopyDatabaseWindow.ui -o src\ui\CopyDatabaseWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ui\CopyDatabaseWindow.ui -i CopyDatabaseWindow.h -o src\ui\CopyDatabaseWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe src\ui\CopyDatabaseWindow.h -o src\moc\moc_CopyDatabaseWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="src\ui\CopyDatabaseWindow.h;src\ui\CopyDatabaseWindow.cpp;src\moc\moc_CopyDatabaseWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ui\CopyDatabaseWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ui\CopyDatabaseWindow.ui -o src\ui\CopyDatabaseWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ui\CopyDatabaseWindow.ui -i CopyDatabaseWindow.h -o src\ui\CopyDatabaseWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe src\ui\CopyDatabaseWindow.h -o src\moc\moc_CopyDatabaseWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="src\ui\CopyDatabaseWindow.h;src\ui\CopyDatabaseWindow.cpp;src\moc\moc_CopyDatabaseWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui\DatabaseDialog.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ui\DatabaseDialog.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ui\DatabaseDialog.ui -o src\ui\DatabaseDialog.h &amp;&amp; $(QTDIR)\bin\uic.exe ui\DatabaseDialog.ui -i DatabaseDialog.h -o src\ui\DatabaseDialog.cpp &amp;&amp; $(QTDIR)\bin\moc.exe src\ui\DatabaseDialog.h -o src\moc\moc_DatabaseDialog.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="src\ui\DatabaseDialog.h;src\ui\DatabaseDialog.cpp;src\moc\moc_DatabaseDialog.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ui\DatabaseDialog.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ui\DatabaseDialog.ui -o src\ui\DatabaseDialog.h &amp;&amp; $(QTDIR)\bin\uic.exe ui\DatabaseDialog.ui -i DatabaseDialog.h -o src\ui\DatabaseDialog.cpp &amp;&amp; $(QTDIR)\bin\moc.exe src\ui\DatabaseDialog.h -o src\moc\moc_DatabaseDialog.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="src\ui\DatabaseDialog.h;src\ui\DatabaseDialog.cpp;src\moc\moc_DatabaseDialog.cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Translations Files"
+			Filter="ts"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="copydatabase_pt.ts">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

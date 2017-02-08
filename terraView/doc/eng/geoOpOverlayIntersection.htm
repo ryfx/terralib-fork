@@ -1,0 +1,108 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<link rel=File-List href="geoOpOverlayIntersection_files/filelist.xml">
+<link rel=Edit-Time-Data href="geoOpOverlayIntersection_files/editdata.mso">
+<title>Operação de Intersecção Entre Temas</title>
+<link rel=themeData href="geoOpOverlayIntersection_files/themedata.thmx">
+<link rel=colorSchemeMapping href="geoOpOverlayIntersection_files/colorschememapping.xml">
+<meta content="TerraView - documentacion help" name=Description>
+<meta content="geoprocessing,terraview,terralib,dpi,inpe" name=KeyWords>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+
+<div class=Section1>
+
+  <p> <strong> <span style='font-family:"Arial","sans-serif";'> TerraView 3.3.1</span></strong></p>
+
+<hr size=2 width="100%" align=center>
+
+<p align=center>
+	<strong><u>
+		<span style='font-size: 13.5pt;font-family:Arial'>Intersection Operation Between
+Themes</span>
+	</u></strong>
+</p>
+
+<p>
+	<span style='font-family:Arial'>
+Intersection operation uses a theme with geometric representations of polygons type as an overlay mask. The theme to be clipped may have geometries of polygons type only, lines type only, points type only, cells type only, or raster type (images or grids). 
+<br><br>
+For themes with geometric representations of point type or cell type, a new layer is created with objects that intersect the overlay mask.
+<br><br>
+For themes with geometric representations of polygon type or line type, a new object is created for each intersection region. An object may be divided in many parts and a new object is created for each part. Divided objects have the same attributes of the source objects, although they have different identifiers. If required, a grouping operation can be executed to create an object similar to the source one.
+<br><br>
+For themes with geometric representations of raster type, a new layer is created with valid values only where there are intersections with the overlay mask. All source raster representation characteristics are preserved in the clipped representation. 
+<br><br>
+The attributes table of the created layer may have the attributes of the overlay mask theme in addition to the attributes of the source theme.
+<br><br>
+The projection of the created layer is the same of the clipped theme layer. When the overlay mask theme has a different projection, the geometries are reprojected in order to operate in the projection of the clip theme.
+<br><br>
+Figure 1 shows Brazil municipalities theme being clipped by a polygonal theme with an ellipses shape and Figure 2 shows the result of the operation.
+<p align=center>
+<img id="_x0000_i1032" src="geoOpOverlayIntersection_arquivos/image001.png">
+<br>
+Figure 1 - Theme with municipalities to clip.
+<br><br>
+<img id="_x0000_i1031" src="geoOpOverlayIntersection_arquivos/image003.png">
+<br>
+Figure 2 – Result from theme clip.
+</p>
+Figure 3 shows a theme created on a layer with image on Rio de Janeiro municipality being clipped by a theme with the boundaries of Jacarepaguá neighborhood. Figure 4 shows the result of the operation.
+<p align=center>
+<img id="_x0000_i1030" src="geoOpOverlayIntersection_arquivos/image006.png">
+<br>
+Figure 3 - Theme with image to clip.
+<br><br>
+<img id="_x0000_i1029" src="geoOpOverlayIntersection_arquivos/image007.png">
+<br>
+Figure 4 – Result from theme clip
+</p>
+<strong>Intersection Between Themes Interface</strong>
+<br><br>
+  Intersection between themes interface is shown in Figures 5 and 6. To activate 
+  the interface use the context menu on a View and select <strong>Geoprocessing 
+  - Intersection</strong>. In <i>Select Input Theme to be Clipped by Intersection</i>, 
+  select the theme to clip. If the theme to be clipped has vector representations, 
+  the interface changes to the one shown in Figure 5. 
+  <p align=center>
+<img id="_x0000_i1028" src="geoOpOverlayIntersection_arquivos/image009.png">
+<br>
+Figure 5 - Intersection between themes interface for vector input.
+</p>
+
+Use input theme selection box buttons to set the objects to be clipped: all, pointed only, or queried only.
+<br><br>
+  When a theme to be clipped has raster representation, the buttons to select 
+  objects are disabled. 
+  <p align=center>&nbsp; </p>
+<i>Select a Overlay Polygon´s Theme</i> box is used to choose the theme to be used as overlay mask. Use the buttons to set the objects to be used as mask: all, pointed only, or queried only.
+<br><br>
+In addition, choose if the output layer table will include overlay theme attributes by selecting the <i>Put Overlay Theme Attributes </i> option. This option is available only for themes to be clipped with vector representation, otherwise it is disabled. <br><br>
+<i>Specify the Output Layer Name </i>box is automatically filled in by the interface, but it can be edited to create the layer with another name.
+<br><br>
+To clip themes with raster representation, set <i>Background Values field</i> with the value to be used to fill areas not intersected by polygons of the overlay mask. Figure 7 shows the difference between using 255 and 0 as background value.
+<p align=center>
+<img id="_x0000_i1026" src="geoOpOverlayIntersection_arquivos/image007.png"><img id="_x0000_i1025" src="geoOpOverlayIntersection_arquivos/image010.png">
+<br>
+Figure 7 – Images clipped with different background values.
+</p>
+<i>OK</i> button applies the intersection operation.
+<br><br>
+  <i>Cancel</i> button disables the interface. <br>
+  <br>
+<i>Help </i>button activates the help interface.
+
+</p>
+
+<hr size=2 width="100%" align=center>
+
+</span>
+
+</div>
+
+</body>
+
+</html>

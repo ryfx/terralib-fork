@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Matriz de Proximidade</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<font face="Arial, Helvetica, sans-serif" size="4">
+<table width="100%">
+  <tr>
+ 
+  </tr>
+  <tr> 
+    <td><b><font size="4" face="Arial, Helvetica, sans-serif">Matriz de Proximidade</font></b><br>
+      <hr>
+      <p>Para estimar a variabilidade espacial de dados de &aacute;rea, uma ferramenta 
+        b&aacute;sica &eacute; a Matriz de Proximidade Espacial, tamb&eacute;m 
+        chamada Matriz de Vizinhan&ccedil;a. A matriz de proximidade &eacute; 
+        utilizada em c&aacute;lculos de indicadores na fase de an&aacute;lise 
+        explorat&oacute;ria dos dados espaciais ou outras an&aacute;lises dispon&iacute;veis 
+        no TerraView. Como seu c&aacute;lculo &eacute; um procedimento custoso 
+        e pode ser feito de acordo com v&aacute;rios crit&eacute;rios, o TerraView 
+        permite o seu armazenamento no banco de dados, dessa forma, a mesma matriz 
+        pode ser usada em diferentes an&aacute;lises, evitando seu c&aacute;lculo 
+        diversas vezes e obtendo-se efici&ecirc;ncia.</p>
+      <p>Para calcular a matriz de proximidade escolha na Barra de Menu a op&ccedil;&atilde;o 
+        <b>An&aacute;lise</b> <b>- Matriz de Proximidade - Criar Matriz de Proximidade</b>, 
+        obtendo a interface mostrada na figura a seguir. Ao final da opera&ccedil;&atilde;o 
+        ser&aacute; criada uma matriz que diz, para cada objeto, quais, dentre 
+        os outros objetos, s&atilde;o considerados seus pr&oacute;ximos.</p>
+      <p align="center"><font face="Arial"><img src="terraViewBase_arquivos/matriz_proximidade.png" width="370" height="533"> 
+        </font></p>
+      <p><font face="Arial">1. Escolha o <b>Tema</b> que cont&eacute;m os dados. 
+        Nesse caso o tema UP (Unidades de Planejamento) de Belo Horizonte do banco 
+        BH.mdb. </font></p>
+      <p><font face="Arial">2. No quadro <b>Estrat&eacute;gia de Constru&ccedil;&atilde;o</b> 
+        deve ser escolhida uma dentre as estrat&eacute;gias dispon&iacute;veis 
+        para decidir como os objetos est&atilde;o pr&oacute;ximos entre si. Nesse 
+        caso escolha a estrat&eacute;gia de <b>Contiguidade</b>. As possibilidades 
+        s&atilde;o:</font></p>
+      <p><font face="Arial, Helvetica, sans-serif">a.<b> Contiguidade</b>: um 
+        objeto est&aacute; pr&oacute;ximo apenas daqueles com os quais compartilha 
+        uma fronteira. Essa caracter&iacute;stica &eacute; fortemente dependente 
+        da geometria dos objetos e, portanto deve-se garantir que a geometria 
+        dos objetos do Tema onde ser&aacute; executada a an&aacute;lise esteja 
+        correta, sem falhas de digitaliza&ccedil;&atilde;o ou constru&ccedil;&atilde;o;</font></p>
+      <p><font face="Arial"> b</font><font face="Arial, Helvetica, sans-serif">.</font><font face="Arial"> 
+        <b>Dist&acirc;ncia</b>: um objeto est&aacute; pr&oacute;ximo de outro 
+        caso os centr&oacute;ides de suas &aacute;reas estejam a uma dist&acirc;ncia 
+        <i>d</i> especificada pelo usu&aacute;rio no campo Dist&acirc;ncia (habilitado 
+        quando essa estrat&eacute;gia &eacute; escolhida);</font></p>
+      <p><font face="Arial">c. <b>Vizinhos mais pr&oacute;ximos</b>: um objeto 
+        est&aacute; pr&oacute;ximo apenas dos <i>n</i> vizinhos mais pr&oacute;ximos 
+        (considerando seus centr&oacute;ides) e onde <i>n</i> &eacute; indicado 
+        pelo usu&aacute;rio no campo N&uacute;mero de vizinhos (habilitado quando 
+        essa estrat&eacute;gia &eacute; escolhida).</font></p>
+      <p><font face="Arial"> 3. No quadro <b>Peso</b> permite que sejam atribu&iacute;dos 
+        pesos &agrave;s proximidades encontradas. As possibilidades s&atilde;o: 
+        </font></p>
+      <p><font face="Arial">a. <b>Sem peso</b>: todos os objetos est&atilde;o 
+        pr&oacute;ximos com o mesmo peso;</font></p>
+      <p><font face="Arial">b. <b>Dist&acirc;ncia Inversa</b>;</font></p>
+      <p>c. <b>Dist&acirc;ncia Inversa ao Quadrado</b>.</p>
+      <p><font face="Arial"> 4. A op&ccedil;&atilde;o <b>Salvar arquivo de sa&iacute;da</b> 
+        permite que a matriz de proximidade calculada no TerraView seja salva 
+        em arquivos texto, para interc&acirc;mbio com outros softwares de an&aacute;lise 
+        espacial. Nesse caso, devem ser preenchidas as indica&ccedil;&otilde;es 
+        do formato, localiza&ccedil;&atilde;o e nome do arquivo.</font></p>
+      <p><font face="Arial">5. Clique em <b>Executar</b>.</font></p>
+      <p>A matriz &eacute; constru&iacute;da e armazenada no banco de dados, associada 
+        a esse Tema.</p>
+      <p><font face="Arial"><strong><a name="selecionar_matriz"></a>Selecionando 
+        uma Matriz de Proximidade</strong></font></p>
+      <p>Atrav&eacute;s do menu <b>An&aacute;lise Matriz de Proximidade</b> - 
+        <b>Selecionar Matriz de Proximidade</b> temos acesso &agrave; interface 
+        mostrada na figura abaixo, que permite manipular as matrizes de proximidade 
+        geradas para um determinado Tema.</p>
+      <p align="center"><img src="terraViewBase_arquivos/selecionar_matriz.png" width="449" height="153"></p>
+      <p><font face="Arial">1. Escolha o <b>Tema</b> que cont&eacute;m as matrizes 
+        de proximidade.</font></p>
+      <p>2. Observe na lista quais as matrizes dispon&iacute;veis.</p>
+      <p>3. Clique no bot&atilde;o <b>Designar Matriz como Default</b> para indicar 
+        que a matriz selecionada ser&aacute; a matriz usada nas opera&ccedil;&otilde;es 
+        espaciais que ser&atilde;o executadas a seguir e que necessitem de uma 
+        matriz de proximidade.</p>
+      <p>4. Clique no bot&atilde;o <b>Remover Matriz</b> para remover a matriz 
+        selecionada.<br>
+      </p>
+      <p>&nbsp;</p>
+    </td>
+  </tr>
+  <tr>
+  </tr>
+</table>
+</font> 
+</body>
+</html>

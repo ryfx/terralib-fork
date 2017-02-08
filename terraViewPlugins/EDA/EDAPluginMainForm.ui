@@ -1,0 +1,785 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>EDAPluginMainForm</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>EDAPluginMainForm</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>448</width>
+            <height>510</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <widget class="QFrame">
+        <property name="name">
+            <cstring>inputLayerPane</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>0</y>
+                <width>400</width>
+                <height>90</height>
+            </rect>
+        </property>
+        <property name="frameShape">
+            <enum>StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+            <enum>Raised</enum>
+        </property>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>inputLayerLable</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>10</y>
+                    <width>380</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Input Layer:</string>
+            </property>
+        </widget>
+        <widget class="QComboBox">
+            <property name="name">
+                <cstring>inputLayerCombo</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>40</y>
+                    <width>380</width>
+                    <height>30</height>
+                </rect>
+            </property>
+        </widget>
+    </widget>
+    <spacer>
+        <property name="name">
+            <cstring>spacer0</cstring>
+        </property>
+        <property name="orientation">
+            <enum>Vertical</enum>
+        </property>
+        <property name="sizeType">
+            <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+            <size>
+                <width>20</width>
+                <height>16</height>
+            </size>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>90</x>
+                <y>90</y>
+                <width>20</width>
+                <height>16</height>
+            </rect>
+        </property>
+    </spacer>
+    <widget class="QButtonGroup">
+        <property name="name">
+            <cstring>compute</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>110</y>
+                <width>390</width>
+                <height>70</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Compute</string>
+        </property>
+        <widget class="QRadioButton">
+            <property name="name">
+                <cstring>setFlowDirection</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>250</x>
+                    <y>20</y>
+                    <width>120</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Set Flow Direction</string>
+            </property>
+            <property name="buttonGroupId">
+                <number>3</number>
+            </property>
+        </widget>
+        <widget class="QRadioButton">
+            <property name="name">
+                <cstring>flood</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>170</x>
+                    <y>20</y>
+                    <width>70</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Flood</string>
+            </property>
+            <property name="buttonGroupId">
+                <number>2</number>
+            </property>
+        </widget>
+        <widget class="QRadioButton">
+            <property name="name">
+                <cstring>slope</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>100</x>
+                    <y>20</y>
+                    <width>60</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Slope</string>
+            </property>
+            <property name="buttonGroupId">
+                <number>1</number>
+            </property>
+        </widget>
+        <widget class="QRadioButton">
+            <property name="name">
+                <cstring>aspect</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>80</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Aspect</string>
+            </property>
+            <property name="buttonGroupId">
+                <number>0</number>
+            </property>
+        </widget>
+    </widget>
+    <spacer>
+        <property name="name">
+            <cstring>spacer1</cstring>
+        </property>
+        <property name="orientation">
+            <enum>Vertical</enum>
+        </property>
+        <property name="sizeType">
+            <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+            <size>
+                <width>40</width>
+                <height>20</height>
+            </size>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>80</x>
+                <y>180</y>
+                <width>40</width>
+                <height>20</height>
+            </rect>
+        </property>
+    </spacer>
+    <spacer>
+        <property name="name">
+            <cstring>spacer2</cstring>
+        </property>
+        <property name="orientation">
+            <enum>Vertical</enum>
+        </property>
+        <property name="sizeType">
+            <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+            <size>
+                <width>40</width>
+                <height>20</height>
+            </size>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>290</x>
+                <y>180</y>
+                <width>40</width>
+                <height>20</height>
+            </rect>
+        </property>
+    </spacer>
+    <widget class="QButtonGroup">
+        <property name="name">
+            <cstring>useFlowLayer</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>210</x>
+                <y>200</y>
+                <width>120</width>
+                <height>60</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Use Flow Layer?</string>
+        </property>
+        <widget class="QRadioButton">
+            <property name="name">
+                <cstring>yes</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>50</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Yes</string>
+            </property>
+            <property name="buttonGroupId">
+                <number>2</number>
+            </property>
+        </widget>
+        <widget class="QRadioButton">
+            <property name="name">
+                <cstring>no</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>70</x>
+                    <y>20</y>
+                    <width>40</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>No</string>
+            </property>
+            <property name="buttonGroupId">
+                <number>3</number>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QButtonGroup">
+        <property name="name">
+            <cstring>slopeUnit</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>200</y>
+                <width>180</width>
+                <height>60</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Slope Unit</string>
+        </property>
+        <widget class="QRadioButton">
+            <property name="name">
+                <cstring>degrees</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>90</x>
+                    <y>20</y>
+                    <width>70</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Degrees</string>
+            </property>
+            <property name="buttonGroupId">
+                <number>3</number>
+            </property>
+        </widget>
+        <widget class="QRadioButton">
+            <property name="name">
+                <cstring>percent</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>80</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Percent</string>
+            </property>
+            <property name="buttonGroupId">
+                <number>2</number>
+            </property>
+        </widget>
+    </widget>
+    <spacer>
+        <property name="name">
+            <cstring>spacer3</cstring>
+        </property>
+        <property name="orientation">
+            <enum>Vertical</enum>
+        </property>
+        <property name="sizeType">
+            <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+            <size>
+                <width>20</width>
+                <height>16</height>
+            </size>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>150</x>
+                <y>260</y>
+                <width>20</width>
+                <height>16</height>
+            </rect>
+        </property>
+    </spacer>
+    <spacer>
+        <property name="name">
+            <cstring>spacer4</cstring>
+        </property>
+        <property name="orientation">
+            <enum>Vertical</enum>
+        </property>
+        <property name="sizeType">
+            <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+            <size>
+                <width>20</width>
+                <height>16</height>
+            </size>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>300</x>
+                <y>260</y>
+                <width>20</width>
+                <height>16</height>
+            </rect>
+        </property>
+    </spacer>
+    <widget class="QFrame">
+        <property name="name">
+            <cstring>inputFlowLayerPane</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>280</y>
+                <width>410</width>
+                <height>60</height>
+            </rect>
+        </property>
+        <property name="frameShape">
+            <enum>StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+            <enum>Raised</enum>
+        </property>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>inputFlowLayerLable</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>0</y>
+                    <width>370</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Input Flow Layer name:</string>
+            </property>
+        </widget>
+        <widget class="QComboBox">
+            <property name="name">
+                <cstring>inputFlowLayerCombo</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>11</x>
+                    <y>21</y>
+                    <width>380</width>
+                    <height>30</height>
+                </rect>
+            </property>
+        </widget>
+    </widget>
+    <spacer>
+        <property name="name">
+            <cstring>spacer5</cstring>
+        </property>
+        <property name="orientation">
+            <enum>Vertical</enum>
+        </property>
+        <property name="sizeType">
+            <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+            <size>
+                <width>20</width>
+                <height>20</height>
+            </size>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>180</x>
+                <y>340</y>
+                <width>20</width>
+                <height>20</height>
+            </rect>
+        </property>
+    </spacer>
+    <widget class="QFrame">
+        <property name="name">
+            <cstring>outputLayerPane</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>360</y>
+                <width>400</width>
+                <height>60</height>
+            </rect>
+        </property>
+        <property name="frameShape">
+            <enum>StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+            <enum>Raised</enum>
+        </property>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>outputLayerLine</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>370</width>
+                    <height>30</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>outputLayerLable</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>0</y>
+                    <width>370</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Output Layer name:</string>
+            </property>
+        </widget>
+    </widget>
+    <spacer>
+        <property name="name">
+            <cstring>spacer6</cstring>
+        </property>
+        <property name="orientation">
+            <enum>Vertical</enum>
+        </property>
+        <property name="sizeType">
+            <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+            <size>
+                <width>20</width>
+                <height>16</height>
+            </size>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>180</x>
+                <y>420</y>
+                <width>20</width>
+                <height>16</height>
+            </rect>
+        </property>
+    </spacer>
+    <widget class="QButtonGroup">
+        <property name="name">
+            <cstring>action</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>30</x>
+                <y>440</y>
+                <width>300</width>
+                <height>60</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Action</string>
+        </property>
+        <property name="radioButtonExclusive">
+            <bool>false</bool>
+        </property>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>execute</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>30</x>
+                    <y>20</y>
+                    <width>60</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Execute</string>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>cancel</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>120</x>
+                    <y>20</y>
+                    <width>60</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Cancel</string>
+            </property>
+            <property name="buttonGroupId">
+                <number>1</number>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>help</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>230</x>
+                    <y>20</y>
+                    <width>50</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>help</string>
+            </property>
+            <property name="buttonGroupId">
+                <number>2</number>
+            </property>
+        </widget>
+        <spacer>
+            <property name="name">
+                <cstring>spacer7</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>30</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>90</x>
+                    <y>30</y>
+                    <width>30</width>
+                    <height>20</height>
+                </rect>
+            </property>
+        </spacer>
+        <spacer>
+            <property name="name">
+                <cstring>spacer8</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>50</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>180</x>
+                    <y>30</y>
+                    <width>50</width>
+                    <height>20</height>
+                </rect>
+            </property>
+        </spacer>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>aspect</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>EDAPluginMainForm</receiver>
+        <slot>optAspectSlot(bool)</slot>
+    </connection>
+    <connection>
+        <sender>slope</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>EDAPluginMainForm</receiver>
+        <slot>optSlopeGenSlot(bool)</slot>
+    </connection>
+    <connection>
+        <sender>degrees</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>EDAPluginMainForm</receiver>
+        <slot>optSlopeDegreesSlot(bool)</slot>
+    </connection>
+    <connection>
+        <sender>percent</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>EDAPluginMainForm</receiver>
+        <slot>optSlopePercentSlot(bool)</slot>
+    </connection>
+    <connection>
+        <sender>flood</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>EDAPluginMainForm</receiver>
+        <slot>optFloodSlot(bool)</slot>
+    </connection>
+    <connection>
+        <sender>setFlowDirection</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>EDAPluginMainForm</receiver>
+        <slot>optSetDirSlot(bool)</slot>
+    </connection>
+    <connection>
+        <sender>no</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>EDAPluginMainForm</receiver>
+        <slot>optNoFlowSlot(bool)</slot>
+    </connection>
+    <connection>
+        <sender>yes</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>EDAPluginMainForm</receiver>
+        <slot>optYesFlowSlot(bool)</slot>
+    </connection>
+    <connection>
+        <sender>inputLayerCombo</sender>
+        <signal>highlighted(const QString&amp;)</signal>
+        <receiver>EDAPluginMainForm</receiver>
+        <slot>inToOutSlot(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>aspect</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>EDAPluginMainForm</receiver>
+        <slot>localHelp()</slot>
+    </connection>
+    <connection>
+        <sender>execute</sender>
+        <signal>clicked()</signal>
+        <receiver>EDAPluginMainForm</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>cancel</sender>
+        <signal>clicked()</signal>
+        <receiver>EDAPluginMainForm</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>help</sender>
+        <signal>clicked()</signal>
+        <receiver>EDAPluginMainForm</receiver>
+        <slot>localHelp()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in declaration">TeLayer.h</include>
+    <include location="local" impldecl="in implementation">EDAPluginMainForm.ui.h</include>
+</includes>
+<slots>
+    <slot>localHelp()</slot>
+    <slot>inToOutSlot( const QString &amp; inLayer )</slot>
+    <slot>optAspectSlot( bool isOn )</slot>
+    <slot>optSlopeDegreesSlot( bool isOn )</slot>
+    <slot>optSetDirSlot( bool isOn )</slot>
+    <slot>optSlopePercentSlot( bool isOn )</slot>
+    <slot>optFloodSlot( bool isOn )</slot>
+    <slot>optSlopeGenSlot( bool isOn )</slot>
+    <slot>optYesFlowSlot( bool isOn )</slot>
+    <slot>optNoFlowSlot( bool isOn )</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

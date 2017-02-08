@@ -1,0 +1,11 @@
+To compile TerraView Hidro Plugin is necessary has 
+the Boost library over ./Hidro directory
+
+./Hidro/boost
+
+The version from Boost used to build Hidro Plugin is
+1_37_0. Boost library can be download from
+http://www.boost.org/doc/libs/1_37_0/libs/graph/doc/index.html
+
+Eric Silva Abreu
+eric@dpi.inpe.br

@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE>Plugin WMS Cliente para TerraView </TITLE>
+	<META NAME="GENERATOR" CONTENT="BrOffice.org 3.0  (Win32)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGED" CONTENT="20090714;20483500">
+	<META NAME="Informa&ccedil;&otilde;es 1" CONTENT="">
+	<META NAME="Informa&ccedil;&otilde;es 2" CONTENT="">
+	<META NAME="Informa&ccedil;&otilde;es 3" CONTENT="">
+	<META NAME="Informa&ccedil;&otilde;es 4" CONTENT="">
+	<STYLE TYPE="text/css">
+	<!--
+		P { font-family: "Verdana", "Arial", "Helvetica" }
+		P.tab { text-indent: 0.66cm; font-family: "Verdana", "Arial", "Helvetica" }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P LANG="pt-BR" ALIGN=CENTER><SPAN STYLE="background: transparent"><FONT SIZE=4><B>WMS
+Client TerraView<META HTTP-EQUIV="Content-Language" CONTENT="pt-br"></B></FONT>
+<FONT SIZE=4><B>Plugin </B></FONT><BR><B>User Guide</B> </SPAN>
+</P>
+<P LANG="pt-BR" ALIGN=RIGHT><FONT SIZE=2><SPAN LANG="en-US"><B><SPAN STYLE="background: transparent">Author:</SPAN></B></SPAN></FONT><SPAN LANG="pt-BR"><SPAN STYLE="background: transparent">
+</SPAN></SPAN><FONT SIZE=2><SPAN LANG="en-US"><I><SPAN STYLE="background: transparent">Gilberto
+Ribeiro de Queiroz</SPAN></I></SPAN></FONT><SPAN LANG="pt-BR"><SPAN STYLE="background: transparent">
+</SPAN></SPAN><FONT SIZE=2><SPAN LANG="en-US"><SPAN STYLE="background: transparent">(<A HREF="mailto:gribeiro@dpi.inpe.br">gribeiro@dpi.inpe.br</A>)<BR></SPAN></SPAN></FONT><FONT SIZE=2><SPAN LANG="en-US"><B><SPAN STYLE="background: transparent">Date:</SPAN></B></SPAN></FONT><SPAN LANG="pt-BR"><SPAN STYLE="background: transparent">
+</SPAN></SPAN><FONT SIZE=2><SPAN LANG="en-US"><SPAN STYLE="background: transparent">12/08/2007</SPAN></SPAN></FONT></P>
+<P LANG="pt-BR" ALIGN=CENTER><FONT SIZE=4><B>Introduction to WMS
+Support in TerraView</B></FONT> 
+</P>
+<P LANG="pt-BR" ALIGN=RIGHT><SPAN LANG="en-US"><A HREF="../wmsclient.htm">&lt;&lt;
+Previous </A>|&nbsp;<A HREF="../wmsclient.htm">First </A>&nbsp;|&nbsp;<A HREF="wmscreatetheme.htm">Next
+&gt;&gt;</A> </SPAN>
+</P>
+<P LANG="pt-BR" CLASS="tab" ALIGN=JUSTIFY>Web Map Service, or WMS, is
+a type of service to produce maps in the Web from geo-referred
+information. TerraView version 3.2.0 provides support to create maps
+(themes) from WMS servers. Starting from this version, TerraView can
+be a WMS services client, requesting and presenting maps from these
+type of service. 
+</P>
+<P LANG="pt-BR" CLASS="tab" ALIGN=JUSTIFY><SPAN LANG="en-US">The user
+can connect to servers compliant with official versions WMS
+specifications defined by the <A HREF="http://www.opengeospatial.org/">Open
+Geospatial Consortium</A> (OGC). These WMS server versions are: </SPAN>
+</P>
+<UL>
+	<LI><P LANG="pt-BR" STYLE="margin-bottom: 0cm"><SPAN LANG="en-US">1.3.0
+	from 03/15/2006, <A HREF="http://portal.opengeospatial.org/files/?artifact_id=4756">03-109r1</A>;
+	</SPAN>
+	</P>
+	<LI><P LANG="pt-BR" STYLE="margin-bottom: 0cm"><SPAN LANG="en-US">1.1.1
+	from 01/16/2002, <A HREF="http://portal.opengeospatial.org/files/?artifact_id=1081&amp;version=1&amp;format=pdf">01-068r3</A>;
+	</SPAN>
+	</P>
+	<LI><P LANG="pt-BR" STYLE="margin-bottom: 0cm"><SPAN LANG="en-US">1.1.0
+	from 01/21/2001, <A HREF="http://portal.opengeospatial.org/files/?artifact_id=1058">01-047r2</A>;
+	</SPAN>
+	</P>
+	<LI><P LANG="pt-BR"><SPAN LANG="en-US">1.0.0 from 04/19/2000,
+	<A HREF="http://portal.opengeospatial.org/files/?artifact_id=7196">00-028</A>.
+	</SPAN>
+	</P>
+</UL>
+<P LANG="pt-BR" CLASS="tab" ALIGN=JUSTIFY>The <B>WMS Client plugin</B>
+provides TerraView with the following capabilities: 
+</P>
+<UL>
+	<LI><P LANG="pt-BR" ALIGN=JUSTIFY>Creation of themes WMS servers to
+	be visualized with other common TerraView themes. There is no limit
+	to the number of servers and maps that can be added to the same
+	view;</P>
+	<LI><P LANG="pt-BR" ALIGN=JUSTIFY>Display of legend of a WMS theme
+	when the server provides correctly this support;</P>
+	<LI><P LANG="pt-BR" ALIGN=JUSTIFY>Query of information about
+	features displayed on maps from WMS servers, through pointing on the
+	draw area (maps visualization);</P>
+	<LI><P LANG="pt-BR" ALIGN=JUSTIFY>Query of information about WMS
+	themes: server address, metadata provided by the server, information
+	about projection and map presentation.</P>
+</UL>
+<P LANG="pt-BR" CLASS="tab" ALIGN=JUSTIFY>Figure below shows
+TerraView main window. Observe in the figure that there are 3 themes
+associated to <I><B>Brasil view</B></I>: 
+</P>
+<UL>
+	<LI><P LANG="pt-BR" ALIGN=JUSTIFY><B>Munic&iacute;pios
+	(Municipalities):</B> map of Brazilian municipalities from the
+	database to which TerraView is currently connected;</P>
+	<LI><P LANG="pt-BR" ALIGN=JUSTIFY><B>Biomas do Brasil (Brazil
+	Biomes):</B> map from a WMS, highlighted with an different Theme
+	icon - T letter added by W symbol &ndash; to indicate that the theme
+	is from a layer originated from a WMS server;</P>
+	<LI><P LANG="pt-BR" ALIGN=JUSTIFY><B>Limites estaduais do Brasil
+	(Brazil States Borders):</B> map from a WMS.</P>
+</UL>
+<P LANG="pt-BR" ALIGN=CENTER STYLE="margin-bottom: 0cm">
+<center>
+<img src="images/terraview_support.png">
+<P LANG="pt-BR" ALIGN=CENTER><FONT SIZE=2>TerraView window displaying
+maps from WMS servers</FONT></P>
+<P LANG="pt-BR" CLASS="tab" ALIGN=JUSTIFY><SPAN LANG="en-US">In the
+window shown above, two WMS themes are from the same WMS. However,
+this is not a restriction given that the user can add in a view maps
+from different services. To execute that, open the WMS creation
+window to add a new map in TerraView window. <A HREF="wmscreatetheme.htm">Click
+here</A> to learn how to create themes from WMS services or continue
+to the next page. </SPAN>
+</P>
+<P LANG="pt-BR" ALIGN=JUSTIFY><B>More Details about WMS Services :</B>
+</P>
+<P LANG="pt-BR" CLASS="tab" ALIGN=JUSTIFY>The above functionalities
+are possible since a WMS server provides a set of standard
+operations, which are: 
+</P>
+<UL>
+	<LI><P LANG="pt-BR" ALIGN=JUSTIFY><B>GetCapabilities:</B> returns a
+	XML document describing the interfaces are supported by the server,
+	the layers that are served, and the image formats used to serve the
+	layers;</P>
+	<LI><P LANG="pt-BR" ALIGN=JUSTIFY><B>GetMap:</B> allows clients to
+	request &ldquo;figures&rdquo; that correspond ti served maps;</P>
+	<LI><P LANG="pt-BR" ALIGN=JUSTIFY><B>GetFeatureInfo:</B> provides
+	additional information to clients about specific points in the image
+	returned by the server.</P>
+</UL>
+<P LANG="pt-BR" ALIGN=RIGHT><SPAN LANG="en-US"><A HREF="../wmsclient.htm">&lt;&lt;
+Previous </A>|&nbsp;<A HREF="../wmsclient.htm">First </A>&nbsp;|&nbsp;<A HREF="wmscreatetheme.htm">Next
+&gt;&gt;</A> </SPAN>
+</P>
+</BODY>
+</HTML>

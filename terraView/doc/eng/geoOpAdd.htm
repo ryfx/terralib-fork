@@ -1,0 +1,75 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Themes Add Operation</title>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+
+<div class=Section1>
+
+<p align=center>
+	<strong><u>
+		<span style='font-size: 13.5pt;font-family:Arial'>Themes Add Operation</span>
+	</u></strong>
+</p>
+
+<p>
+	<span style='font-family:Arial'>
+	This operation adds themes to create a new layer. Themes must have the same type of vector representation and one type de geometry: polygons only, lines only, points only, or cells only.
+<br><br>
+In this operation a theme is selected to act as a guide. The guide theme is used as a base. Name and type of the new attributes table are defined from this theme. In addition, the guide theme defines the projection of the new layer geometries. Figure 1 shows three themes to be added:
+<p align=center>
+<img id="_x0000_i1027" src="geoOpAdd_arquivos/image001.png">
+<br>
+Figure 1 - Themes to be used in Add operation.
+</p>
+The result of adding these three themes is shown in Figure 2:
+<p align=center>
+<img id="_x0000_i1026" src="geoOpAdd_arquivos/image003.png">
+<br>
+Figure 2 – Result of an Add operation. 
+</p>
+The created layer contains a copy of all geometries of all input themes. Geometries in different projections are re-projected to the guide theme projection.
+<br><br>
+The first field of the new attributes table is the primary key and it links to geometries. The remaining attributes are copies of the guide theme attributes. Attributes from other themes used in the operation are added to the table if the name and the type of the attributes coincide with the ones in the guide theme.
+<br><br>
+It is also possible to add only pointed or queried objects to obtain a map with only the desired objects with their geometries and attributes.
+<br><br>
+<strong>Themes Add Interface</strong>
+<br><br>
+  The themes add operation interface is shown in Figure 3 and to activate it use 
+  the context menu on a View and select <strong>Geoprocessing - Add</strong>. 
+  In <i>Representation Type field</i>, select the type of geometry to be added. 
+  Choose <em>polygons, lines, points, or cells</em>. After the selection, the 
+  interface fills in the <i>Input Themes</i> list with themes having the selected 
+  geometric representation. 
+  <p align=center>
+<img id="_x0000_i1025" src="geoOpAdd_arquivos/image005.png">
+<br>
+Figure 3 - Themes Add Operation interface.
+</p>
+In <i>Input Themes list </i>select the themes to be added. Objects to be added may be all of them, pointed ones only, or queried ones only.
+<br><br>
+In <i>Fields</i> list select the theme of reference. The output layer table will contain all attributes of this theme. Attributes of other themes with the same name and type of a reference theme attribute will be added to the output layer table.
+<br><br>
+<i>Output Layer Name</i> box is automatically filled in by the interface, but it can be edited to create the layer with another name.
+<br><br>
+<i>OK</i> button applies the add operation.
+<br><br>
+<i>Cancel</i> button disables the interface.
+<br><br>
+<i>Help</i> button activates the help interface.
+
+</p>
+
+<hr size=2 width="100%" align=center>
+
+</span>
+
+</div>
+
+</body>
+
+</html>

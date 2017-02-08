@@ -1,0 +1,12 @@
+Debug
+Release
+*.vcproj
+*.ncb
+*.suo
+*.idb
+*.pdb
+*.sln
+.imgcol
+Makefile
+*.qm
+

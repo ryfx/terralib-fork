@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "voronoi", "voronoi.vcproj", "{1B13B81F-D9EF-4027-A20D-FE510B20FD7F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1B13B81F-D9EF-4027-A20D-FE510B20FD7F}.Debug.ActiveCfg = Debug|Win32
+		{1B13B81F-D9EF-4027-A20D-FE510B20FD7F}.Debug.Build.0 = Debug|Win32
+		{1B13B81F-D9EF-4027-A20D-FE510B20FD7F}.Release.ActiveCfg = Release|Win32
+		{1B13B81F-D9EF-4027-A20D-FE510B20FD7F}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,66 @@
+<HTML> <HEAD> <TITLE> TerraView - Perguntas mais frequentes  </TITLE> </HEAD>
+
+<BODY>
+	
+<p align="center"> <big><b><font size="4" face="Arial, Helvetica, sans-serif">TerraView 
+  -  </font></b></big><font size="4" face="Arial, Helvetica, sans-serif"> 
+   <b>Perguntas mais frequentes</b> </font> </p>
+
+	
+<hr>
+<p align="left"><strong>Por que dados vetoriais que foram importados corretamente 
+  n&atilde;o s&atilde;o visualizados?</strong></p>
+<hr>
+<p align="justify">A n&atilde;o visualiza&ccedil;&atilde;o de um tema, desde que 
+  marcado para visualiza&ccedil;&atilde;o, pode ocorrer em duas situa&ccedil;&otilde;es:	
+</p>
+<div align="justify">
+  <ol>
+    <li> 
+	<p align="justify">O plano foi importado sem proje&ccedil;&atilde;o definida ("No Projection") 
+      e depois foi criado um tema daquele plano em uma vista com uma proje&ccedil;&atilde;o 
+      definida (p. ex. UTM). Este tema n&atilde;o ser&aacute visualizado, pois ele n&atilde;o 
+      pode ser georeferenciado, ou seja, localizado espacialmente. Para que isso 
+      ocorra, o plano correspondente deve ter uma proje&ccedil;&atilde;o definida. 
+      Se a proje&ccedil;&atilde;o do plano tiver sido definida e for diferente 
+      da proje&ccedil;&atilde;o da vista, as coordenadas de cada objeto do plano 
+      ser&atilde;o convertidas em coordenadas da vista durante a visualiza&ccedil;&atilde;o 
+      do tema. </p></li>
+    <li> <p align="justify">O plano foi importado com uma proje&ccedil;&atilde;o definida (p. ex. 
+      UTM), e foi criado um tema daquele plano em uma vista sem proje&ccedil;&atilde;o 
+      definida ("No Projection"). Neste caso, s&oacute; ser&atilde;o visualizados os 
+      temas marcados para visualiza&ccedil;&atilde;o referentes a planos que n&atilde;o 
+      possuem uma proje&ccedil;&atilde;o definida (ou seja, com proje&ccedil;&atilde;o 
+      igual a "No Projection").</p></li>
+  </ol>
+  <p align="justify">A tabela abaixo resume quando o Tema &eacute; ou n&atilde;o visualizado, em fun&ccedil;&atilde;o 
+  das proje&ccedil;&otilde;es do Plano e da Vista: </p>
+  &nbsp; 
+</div>
+<table align=center border cellspacing=0 cellpadding=5>
+  <tr> 
+    <td colspan=2 rowspan=2 ></td>
+    <th colspan=2 align=center>Proje&ccedil;&atilde;o do Plano</th>
+  </tr>
+  <TR> 
+    <TH>Definida</TH>
+    <TH>N&atilde;o Definida</TH>
+  </TR>
+  <TR align=center> 
+    <TH rowspan=2>Proje&ccedil;&atilde;o da Vista</TH>
+    <TH>Definida</TH>
+    <TD>SIM</TD>
+    <TD>N&Atilde;O</TD>
+  </TR>
+  <TR align=center> 
+    <TH>N&atilde;o Definida</TH>
+    <TD>N&Atilde;O</TD>
+    <TD>SIM</TD>
+  </TR>
+</table>
+<p align="justify"></p>
+<hr>
+	
+		
+</BODY>
+</HTML>

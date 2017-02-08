@@ -1,0 +1,496 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>TerraView</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<p><font size="3" face="Arial"><strong>TerraView  </strong> </font></p>
+<p align="right"><font face="Arial"><a href="kernelWindow.htm">&lt;&lt; Anterior</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">In&iacute;cio</a>
+    | <a href="tabWin.htm">Próximo &gt;&gt;</a><font face="Arial"> </font></p>
+<hr>
+<font face="Arial"> 
+<p align="center"><font size="4" face="Arial"><u><strong>Geocodifica&ccedil;&atilde;o 
+  de Endere&ccedil;os</strong></u></font></p>
+</font><p>&nbsp;</p> 
+        <h3><font face="Arial, Helvetica, sans-serif">O que é Geocodificação?</font></h3>
+        <p><font face="Arial, Helvetica, sans-serif">A finalidade da geocodificação 
+          é colocar dados pontuais em um Sistema de Informação Geográfica (SIG). 
+          Neste contexto, ela é o processo de associar uma coordenada geográfica 
+          a um evento tendo por base um plano de informação (entendido como uma 
+          camada de dados com informações geográficas, ou seja, geometria e atributos) 
+          que contenha os endereços que se deseja encontrar. Deste modo, uma vez 
+          associado a uma localização, o endereço pode ser usado para visualização 
+          dos eventos sobre um mapa ou utilizado para análises.</font></p>
+        <p><font face="Arial, Helvetica, sans-serif">Na TerraLib o método utilizado 
+          para se calcular a localização é baseado na interpolação de endereços 
+          e funciona da seguinte maneira: </font> 
+        <ol>
+          <li><font face="Arial, Helvetica, sans-serif">A localização é determinada 
+            a partir de um plano de informação que contém segmentos de ruas (trechos) 
+            com a faixa de endereços de cada ladodo segmento.</font></li>
+          <li><font face="Arial, Helvetica, sans-serif"> Após encontrar o trecho 
+            que contém o número informado, a localização é estimada com base no 
+            comprimento do segmento, ou seja, porcentagem do deslocamento do número 
+            dentro da faixa de números do segmento (Figura 1).</font></li>
+        </ol>
+        <p> 
+        <table align=center>
+          <tr> 
+            <td>
+      <div align="center"><font face="Arial, Helvetica, sans-serif"><img src="spatializationWindow_arquivos/gc1.png" width="456" height="191" border=0></font></div>
+    </td>
+          </tr>
+          <tr> 
+            <td> 
+              <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+                1 - Interpolação de Endereços</font></div>
+            </td>
+          </tr>
+        </table>
+        <h3><font face="Arial, Helvetica, sans-serif">Como geocodificar uma tabela 
+          com endereços no TerraView?</font></h3>
+        <p><font face="Arial, Helvetica, sans-serif">Geocodificar uma tabela de 
+          endereços (Figura 2) é uma forma de espacializar as informações tabulares 
+          criando um plano de informação que contém a localização geográfica (representado 
+          na forma de pontos) associada à tabela de atributos com endereços.</font></p>
+        <p> 
+        <table align=center>
+          <tr> 
+            <td> 
+              <div align="center"><font face="Arial, Helvetica, sans-serif"><img src="spatializationWindow_arquivos/gc2.png" border=1></font></div>
+            </td>
+          </tr>
+          <tr> 
+            <td> 
+              <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+                2 - Tabela do usuário que contém os endereços a serem geocodificados</font></div>
+            </td>
+          </tr>
+        </table>
+        <p><font face="Arial, Helvetica, sans-serif"><a name="spatializationStack1"></a>Para 
+          geocodificar uma tabela procede-se conforme descrito abaixo:</font></p>
+        <ol>
+          <li><font face="Arial, Helvetica, sans-serif">No menu "Arquivo" seleciona-se 
+            a opção "Geocodifica&ccedil;&atilde;o de Endere&ccedil;os..." (Figura 
+            3). </font> 
+            <p> 
+            <table align=center>
+              <tr> 
+                <td> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif"><img src="spatializationWindow_arquivos/gc3.png" width="580" height="410"></font></div>
+                </td>
+              </tr>
+              <tr> 
+                <td> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+                    3 - Menu de seleção para geocodificação de tabelas</font></div>
+                </td>
+              </tr>
+            </table>
+            <p></p>
+          </li>
+          <li><font face="Arial, Helvetica, sans-serif"> Uma janela será aberta 
+            (Figura 4). Nela deve-se escolher o plano de informação a ser empregado 
+            como referência para o processo de geocodificação, em outras palavras, 
+            é selecionado o plano de informação que contém as ruas (ou trechos 
+            de rua). O primeiro passo é verificar se o plano desejado foi previamente 
+            configurado para aparecer na lista de itens da tela inicial, pois 
+            caso contrário torna-se necessário que seja, bastando para isso acionar 
+            o botão "Configurar...". </font> 
+            <p> 
+            <table align=center>
+              <tr> 
+                <td> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif"><img src="spatializationWindow_arquivos/gc4.png" border=0></font></div>
+                </td>
+              </tr>
+              <tr> 
+                <td> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+                    4 - Seleção do plano de informação de referência para geocodificação</font></div>
+                </td>
+              </tr>
+            </table>
+            <p></p>
+          </li>
+          <li><font face="Arial, Helvetica, sans-serif"><a name="lbsDefinition"></a>Para 
+            a configuração uma nova janela será exibida (Figura 5). Nesta, para 
+            o bom desempenho do processo de geocodificação basta selecionar: </font> 
+            <p><font face="Arial, Helvetica, sans-serif"><b>a. </b>os campos da 
+              tabela de atributos correspondentes ao número inicial e final dos 
+              logradouros;</font></p>
+            <p><font face="Arial, Helvetica, sans-serif"><b>b. </b>a composição 
+              do endereço do logradouro. Essa pode estar dividida em mais de um 
+              campo na tabela, como, por exemplo, nos campos TIPO (Avenida, Rua, 
+              Travessa...), TÍTULO (Comendador, Doutor...), PREPOSIÇÃO (do, das, 
+              de...) e NOME (MARIA CLARA, JOAO GILBERTO...).</font></p>
+            <p><font face="Arial, Helvetica, sans-serif"><b>c. </b>um campo que 
+              contenha o nome completo do logradouro (nesta situação o sistema 
+              irá perguntar se o usuário deseja converter para maiúscula os caracteres 
+              contidos nesse campo <font size="2" color="#FF0000"><a name="fntref1"></a><a href="#fnt1">[1]</a></font>. 
+              No caso em que ele não exista, poderá ser criado bastando para isso 
+              informar um nome; essa nova coluna será formada por todos os campos 
+              que compõe o endereço do logradouro.</font></p>
+            <p><font face="Arial, Helvetica, sans-serif"><b>d. </b>dois campos 
+              adicionais, um contendo os bairros (setores, distritos...) e o outro 
+              os códigos de endereçamento postal;</font></p>
+            <p><font face="Arial, Helvetica, sans-serif"> Após selecionar os campos, 
+              basta pressionar o botão "Confirmar". Além disso, o usuário poderá 
+              alterar os campos quando desejado e atualizar as informações no 
+              mesmo botão ou poderá remover o plano da lista de planos de endereçamento 
+              fazendo uso do botão "Remover". </font> 
+            <p><font face="Arial, Helvetica, sans-serif">Uma vez que configurado 
+              o plano de informação não será preciso repetir estas etapas em localizações 
+              futuras (mesmo após fechar a janela de localização ou sair do TerraView). 
+              </font> 
+            <p> 
+            <table align=center>
+              <tr> 
+                <td> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif"><img src="spatializationWindow_arquivos/gc5.png" border=0></font></div>
+                </td>
+              </tr>
+              <tr> 
+                <td> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+                    5 - Configuração do plano de informação de referência para 
+                    geo-codificação</font></div>
+                </td>
+              </tr>
+            </table>
+            <p></p>
+          </li>
+          <li><font face="Arial, Helvetica, sans-serif"><a name="spatializationStack2"></a> 
+            Após selecionar o plano de referência conforme descrito nos procedimentos 
+            anteriores, pressionando-se o botão "Pr&oacute;ximo" será solicitado 
+            ao usuário para que ele informe a tabela que contém os endereços a 
+            serem geocodificados (Figura 2) e os campos de endereço existentes 
+            na tabela (Figura 6). </font> 
+            <p> 
+            <table align=center>
+              <tr> 
+                <td><font face="Arial, Helvetica, sans-serif"><img src="spatializationWindow_arquivos/gc6.png" border=0></font></td>
+              </tr>
+              <tr> 
+                <td> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+                    6 - Configuração da tabela a ser geocodificada</font></div>
+                </td>
+              </tr>
+            </table>
+            <p></p>
+            <p><font face="Arial, Helvetica, sans-serif">Deve-se frisar que não 
+              é necessário que o usuário tenha todos os campos como do plano de 
+              informação que servirá de referência, porém é desejável que o nome 
+              do logradouro seja composto de forma "similar"<font size="2" color="#FF0000"><a name="fntref2"></a><a href="#fnt2">[2]</a></font>.</font></p>
+            <p><font face="Arial, Helvetica, sans-serif">Além de tabelas dentro 
+              do próprio banco de dados (BD), pode-se importar tabelas para dentro 
+              do banco (caso a tabela dele esteja no BD, mas não apareça na lista, 
+              basta que ele selecione a tabela na janela de importação do próprio 
+              banco e forne&ccedil;a outra designação).</font></p>
+          </li>
+          <li> <font face="Arial, Helvetica, sans-serif"><a name="spatializationStack3"></a>Uma 
+            vez configurada a tabela tem-se a opção de utilizar um dicionário 
+            durante a pesquisa dos endereços na base com os logradouros que ajude 
+            no processo de pesquisa à base (Figura 7). O dicionário deve conter 
+            termos comuns na base de logradouros que estão grafados de forma diferente 
+            na tabela com os endereços. </font> 
+            <p><font face="Arial, Helvetica, sans-serif">Exemplo: Na tabela de 
+              endereços poderia haver a seguinte expressão: RUA CÔNEGO CASSIANO 
+              e na base de logradouros R CON. CASSIANO. Assim, existindo uma 
+              entrada no dicionário entre as palavras RUA e R e outra entre CÔNEGO e CON., 
+              a pesquisa poderá ser realizada de forma mais precisa.</font></p>
+            <p><font face="Arial, Helvetica, sans-serif">O dicionário, em formato 
+              ASCII, possui a seguinte configuração: </font> 
+            </p> 
+			<p>
+            <pre>
+	<font face="Arial, Helvetica, sans-serif">
+	"AV", "AV.", "AVN" ,"AVENIDA"
+	"CON.", "CÔNEGO"
+	"PALAVRA", "PAL.", "PALAVR","PLVR"
+	"R", "RUA", "R."
+	... ...</font></pre></p>
+            
+    <p><font face="Arial, Helvetica, sans-serif">Deste modo, a primeira palavra 
+      será usada na ocorrência das demais da mesma linha. No exemplo acima, tanto 
+      "RUA" quanto "R." poder&atilde;o <font size="2" color="#FF0000"><a name="fntref3"></a><a href="#fnt3">[3]</a></font> 
+      ser substituídas por "R" na pesquisa.</font></p>
+            <p> 
+            <table align=center>
+              <tr> 
+                <td><font face="Arial, Helvetica, sans-serif"><img src="spatializationWindow_arquivos/gc7.png" border=0></font></td>
+              </tr>
+              <tr> 
+                <td> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+                    7 - Dicionário de pesquisa</font></div>
+                </td>
+              </tr>
+            </table>
+			</p>
+          </li>
+          <li><font face="Arial, Helvetica, sans-serif"><a name="spatializationStack4"></a>A 
+            próxima tela (Figura 8) permite a remoção de possíveis caracteres 
+            especiais na entrada caso a base de logradouros não contenha esses 
+            caracteres. </font> 
+            <p> 
+            <table align=center>
+              <tr> 
+                <td><font face="Arial, Helvetica, sans-serif"><img src="spatializationWindow_arquivos/gc8.png" border=0></font></td>
+              </tr>
+              <tr> 
+                <td> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+                    8 - Remoção de caracteres especiais</font></div>
+                </td>
+              </tr>
+            </table></p>
+            <p></p>
+          </li>
+          <li><font face="Arial, Helvetica, sans-serif"><a name="spatializationStack5"></a>Em 
+            seguida, pode-se optar pela escolha de um plano de informação cujos 
+            centróides dos objetos servirão para determinar os pontos geocodificados 
+            dado que a busca por endereços não for bem-sucedida (Figura 9). Nessa 
+            mesma janela informa-se se o módulo de geocodificação fará uma busca 
+            mais exaustiva na base - um procedimento que eleva o tempo do processo 
+            de geocodificação<font size="2" color="#FF0000"><a name="fntref4"></a><a href="#fnt4">[4]</a></font></font> 
+            <p> 
+            <table align=center>
+              <tr> 
+                <td><font face="Arial, Helvetica, sans-serif"><img src="spatializationWindow_arquivos/gc9.png" border=0></font></td>
+              </tr>
+              <tr> 
+                <td height="21"> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+                    9 - Uso de centróides e Busca exaustiva</font></div>
+                </td>
+              </tr>
+            </table>
+            <p></p>
+          </li>
+          <li><font face="Arial, Helvetica, sans-serif"><a name="spatializationStack6"></a>Por 
+            fim, deve-se informar o nome do novo plano de informação que resultará 
+            do processo de geocodificação (Figura 10) e o diretório e nome do 
+            arquivo que conterá um relatório completo da geocodificação (Figura 
+            11). </font> 
+            <p> 
+            <table align=center>
+              <tr> 
+                <td> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif"><img src="spatializationWindow_arquivos/gc10.png" border=0></font></div>
+                </td>
+              </tr>
+              <tr> 
+                <td><font face="Arial, Helvetica, sans-serif">Figura 10 - Nome 
+                  do novo plano de informação contendo os pontos da geocodificação</font></td>
+              </tr>
+            </table></p>
+            <p><font face="Arial, Helvetica, sans-serif"><a name="spatializationStack7"></a></font></p>
+            <p> 
+            <table align=center>
+              <tr> 
+                <td><font face="Arial, Helvetica, sans-serif"><img src="spatializationWindow_arquivos/gc11.png" border=0></font></td>
+              </tr>
+              <tr> 
+                <td> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+                    11 - Nome do relatório da geocodificação</font></div>
+                </td>
+              </tr>
+            </table>
+            </p>
+          </li>
+          <li><font face="Arial, Helvetica, sans-serif">O relatório apresenta 
+            para cada endereço procurado o código do processo de geocodificação, 
+            o identificador da linha do endereço procurado e, no caso de descobri-lo, 
+            a localização encontrada. De mais a mais, os códigos representam as 
+            seguintes situações: </font> 
+            <p><font face="Arial, Helvetica, sans-serif"><b>0</b>: Problema de 
+              conexão com o banco de dados </font> 
+          </li>
+          <p><font face="Arial, Helvetica, sans-serif"><b>1</b>: Endereço não 
+            encontrado</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>2</b>: Nome completo 
+            vazio</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>3</b>: Erro na busca 
+            do banco de dados</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>4</b>: Endereço encontrado 
+            utilizando nome e número</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>5</b>: Múltiplos endereços 
+            encontrados utilizando nome e número</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>6</b>: Endereço encontrado 
+            utilizando nome e sem número</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>7</b>: Múltiplos endereços 
+            encontrados utilizando nome e sem número</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>8</b>: Endereço encontrado 
+            por similaridade</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>9</b>: Endereço encontrado 
+            utilizando bairro ou códigos de endereçamento postal</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>10</b>: Endereço encontrado 
+            utilizando nome, número e sem tipo</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>11</b>: Múltiplos endereços 
+            encontrados utilizando nome, número e sem tipo</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>12</b>: Endereço encontrado 
+            utilizando nome e sem número e tipo</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>13</b>: Múltiplos endereços 
+            encontrados utilizando nome e sem número e tipo</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>14</b>: Endereço encontrado 
+            utilizando nome, número e sem tipo e título</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>15</b>: Múltiplos endereços 
+            encontrados utilizando nome, número e sem tipo e título</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>16</b>: Endereço encontrado 
+            utilizando nome e sem número, tipo e título</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>17</b>: Múltiplos endereços 
+            encontrados utilizando nome e sem número, tipo e título</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>18</b>: Endereço encontrado 
+            utilizando nome, número, e sem tipo, título e preposição</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>19</b>: Múltiplos endereços 
+            encontrados utilizando nome, número, e sem tipo, título e preposição</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>20</b>: Endereço encontrado 
+            utilizando nome e sem número, tipo, título e preposição</font></p>
+          <p><font face="Arial, Helvetica, sans-serif"><b>21</b>: Múltiplos endereços 
+            encontrados utilizando nome e sem número, tipo, título e preposição</font></p>
+          <li><font face="Arial, Helvetica, sans-serif">Com o final do processo 
+            obtêm-se um plano de informação contendo os pontos geolocalizados 
+            (Figura 12). </font> 
+            <p> 
+            <table align=center>
+              <tr> 
+                <td><font face="Arial, Helvetica, sans-serif"><img src="spatializationWindow_arquivos/gc12.png" width="580" height="411"></font></td>
+              </tr>
+              <tr> 
+                <td> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+                    12 - Tema gerado a partir do plano resultante da geolocalização</font></div>
+                </td>
+              </tr>
+              <p></p>
+            </table>
+            <p></p>
+        </ol>
+        <h3><font face="Arial, Helvetica, sans-serif">Como localizar um endereço 
+          no TerraView?</font></h3>
+        <ol>
+          <li><font face="Arial, Helvetica, sans-serif">Selecionar um tema<a name="fntref5"></a><font size="2" color="#FF0000"><a href="#fnt5">[5]</a></font> 
+            com informações de logradouros (Figura 13): </font> 
+            <p><font face="Arial, Helvetica, sans-serif"><b>a.</b> Este tema deve 
+              conter uma tabela de atributos contendo as informações do endereço 
+              do logradouro (Tipo, Título e/ou Preposição e Nome), bem como o 
+              número inicial e final de cada lado (esquerdo e direito) de seus 
+              trechos.</font></p>
+            <p><font face="Arial, Helvetica, sans-serif"><b>b.</b> Opcionalmente, 
+              essa tabela de atributos poderá conter informações sobre bairro 
+              e código de endereçamento postal.</font></p>
+          <li><font face="Arial, Helvetica, sans-serif">Clicar com o botão direito 
+            do mouse sobre o tema ativo e selecionar a opção "Localizar Endere&ccedil;o..." 
+            (Figura 14).</font></li>
+          <p> 
+          <table align=center>
+            <tr> 
+              <td><font face="Arial, Helvetica, sans-serif"><img src="spatializationWindow_arquivos/gc13.png" width="580" height="411"></font></td>
+            </tr>
+            <tr> 
+              <td> 
+                <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+                  13 - Tema com informações de logradouros da cidade de Taubaté</font></div>
+              </td>
+            </tr>
+            <p></p>
+          </table>
+          <p></p>
+          <p> 
+          <table align=center>
+            <tr> 
+              <td><font face="Arial, Helvetica, sans-serif"><img src="spatializationWindow_arquivos/gc14.png" border=0></font></td>
+            </tr>
+            <tr> 
+              <td> 
+                <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+                  14 - Opção da janela de localização de endereços</font></div>
+              </td>
+            </tr>
+            <p></p>
+          </table>
+          <p></p>
+          <li><font face="Arial, Helvetica, sans-serif">Caso o plano de informação 
+            de origem do tema não esteja configurado como um plano de referência 
+            para geocodificação, uma mensagem será exibida (Figura 15). </font> 
+            <p> 
+            <table align=center>
+              <tr> 
+                <td> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif"><img src="spatializationWindow_arquivos/gc15.png" border=0></font></div>
+                </td>
+              </tr>
+              <tr> 
+                <td> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+                    15 - Janela de aviso caso o plano de ruas não esteja configurado 
+                    como um plano de referência para localização de endereços</font></div>
+                </td>
+              </tr>
+              <p></p>
+            </table>
+            <p></p>
+          </li>
+          <li><font face="Arial, Helvetica, sans-serif"><a name="addressLocatorWindow"></a>Na 
+            janela de localização de endereços (Figura 16), caso o plano de informação 
+            do tema não esteja configurado, deve-se escolher a opção "Configurar...", 
+            que abrirá uma tela para que o plano de informação de origem do tema 
+            seja configurado como "plano de referência para geocodificação" (da 
+            mesma forma que na Figura 5 da seção anterior). </font> 
+            <p> 
+            <table align=center>
+              <tr> 
+                <td>
+          <div align="center"><font face="Arial, Helvetica, sans-serif"><img src="spatializationWindow_arquivos/gc16.png" border=0></font></div>
+        </td>
+              </tr>
+              <tr> 
+                <td> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif">Figura 
+                    16 - Janela de localização de endereço</font></div>
+                </td>
+              </tr>
+              <p></p>
+            </table>
+            <p></p>
+          </li>
+          <li><font face="Arial, Helvetica, sans-serif">Após ter um plano configurado, 
+            retorna-se a tela da Figura 16 na qual digita-se o endereço desejado. 
+            Deste modo, após pressionar o botão "Executar", um ponto será desenhado 
+            sobre o mapa na localização encontrada. </font></li>
+        </ol>
+        <hr>
+        <font face="Arial, Helvetica, sans-serif"><a name="fnt1"></a><a href="#fntref1"><font size="3" color="#FF0000">[1]</font></a> 
+        A tabela original será escrita com estes novos valores, por isso o usuário 
+        deverá prestar atenção neste ponto.</font> 
+        <p><font size="3" color="#FF0000" face="Arial, Helvetica, sans-serif"><a name="fnt2"></a><a href="#fntref2">[2]</a></font><font face="Arial, Helvetica, sans-serif"> 
+          Por similar deve ser entendido que se o plano de ruas contém os campos 
+          tipo+título+preposição+nome, a tabela com os endereços poderia estar 
+          neste mesmo formato, mas caso ela esteja num formato que contenha a 
+          composição dos mesmo, não tem problema, é só selecionar de forma compatível. 
+          Ex: Um plano configurado com tipo+título+preposição+nome e uma tabela 
+          com apenas tipo+nome, onde ?nome? já contém titulo+preposição+nome poderá 
+          ser usado.</font></p>
+        <p><font size="3" color="#FF0000" face="Arial, Helvetica, sans-serif"><a name="fnt3"></a><a href="#fntref3">[3]</a></font><font face="Arial, Helvetica, sans-serif"> 
+          Caso seja necessário a troca.</font></p>
+        <p><font size="3" color="#FF0000" face="Arial, Helvetica, sans-serif"><a name="fnt4"></a><a href="#fntref4">[4]</a></font><font face="Arial, Helvetica, sans-serif"> 
+          A busca exaustiva compreende os métodos de procura com os códigos de 
+          número 10 em diante.</font></p>
+        
+<p><font size="3" color="#FF0000" face="Arial, Helvetica, sans-serif"><a name="fnt5"></a><a href="#fntref5">[5]</a></font><font face="Arial, Helvetica, sans-serif"> 
+  O plano de informação do tema contendo os logradouros é denominado de plano 
+  de referência para a geocodificação.</font></p>
+        
+       
+  <p>&nbsp;</p>
+ 
+    <hr>
+<p align="right"><font face="Arial"><a href="kernelWindow.htm">&lt;&lt; Anterior</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">In&iacute;cio</a>
+    | <a href="tabWin.htm">Próximo &gt;&gt;</a></p></font></p>
+</body>
+</html>

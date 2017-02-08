@@ -1,0 +1,27 @@
+/* XPM */
+static char *fileTheme_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 5 1",
+"  c blue",
+". c red",
+"X c #808080",
+"o c #C0C0C0",
+"O c gray100",
+/* pixels */
+"oooooooooooooooX",
+"o        OOooooX",
+"o        OOooooX",
+"oooo  OOOOOooooX",
+"oooo  OOOOOooooX",
+"oooo  OOoooooooX",
+"oooo  OOoooooooX",
+"oooo  OOo....ooX",
+"oooo  OOo....ooX",
+"oooo  OOo.oooooX",
+"oooooOOOo...oooX",
+"ooooooooo...oooX",
+"ooooooooo.oooooX",
+"ooooooooo.oooooX",
+"ooooooooo.oooooX",
+"XXXXXXXXXXXXXXXX"
+};

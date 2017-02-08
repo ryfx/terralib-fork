@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>TerraView</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<p><font size="3" face="Arial"><b>TerraView  </b> </font></p>
+<p align="right"><font face="Arial"><a href="ImportTblPoints.htm">&lt;&lt; Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> 
+  | <a href="importando_tabelas_externas.htm">Next &gt;&gt;</a></font></p>
+<hr>
+<font face="Arial"> 
+<p align="center"><font size="4" face="Arial"><b><u>Importing 
+  Attribute Tables</u></b></font></p>
+<p align="center">&nbsp;</p>
+</font> 
+<p align="justify"  ><font face="Arial">When a table with additional information (attributes) 
+  about geographic data of a layer exists, this information can be included in this layer using 
+  TerraView. The resulting table will be another Attribute Table of that layer.</font></p>
+<p align="justify"><font face="Arial">Tables of this type must be in one of these formats: DBF (.dbf); Ascii/Text (.csv 
+    or .txt); Spring (.spr) and Access (.mdb). 
+    When in the DBF, Spring or Access formats, column names and types are already stored in the file that contains the table, whereas in the Text format  
+    they must be specified by the user when importing the file. 
+    In this example, the table is in the DBF format. If it were in Text format, you should follow the instructions  
+	on providing specific information about table columns, that are in the preceding section, Importing Point Data.  
+    </font></p>
+  <p align="justify"><font face="Arial">To import this type of table, use the <b>File &gt; 
+    Import Table</b> menu option . 
+    In the Import Table interface, fill in the required parameters. 
+    </p>
+  
+<p align="center"><font face="Arial"><img src="terraViewBase_arquivos/import_tabela.png"></font></p>
+<div align="left">
+<p  >&nbsp;</p>
+    
+  <ol>
+    <li><font face="Arial, Helvetica, sans-serif"> Click on <b>File</b> button and select 
+	  the file with the atribute table to be imported. In this example, select the file SOC_ECONOMY.dbf, which is available in TerraView tutorial. Don´t forget to change
+	  the file selection filter to DBF files (*.dbf) in order to see only files with this extension. </font></li>
+
+    <li><font face="Arial">Select <b>Static</b> as the <b>Type</b> of Destination Table, which means an attribute table.</font></li>
+    <font face="Arial, Helvetica, sans-serif"> 
+    <li> Select the <b>Layer</b> to which the new attribute table will be associated, in this case Districts1.</li>
+    <li> Select the <b>Geometry link</b>, the attribute of the table used to link to the geometries. In this example, use DIST.  </li>
+    <li> Fill in the <b>Name</b> of the table, in this example, leave the suggested name: SOC_ECONOMY. </li>
+    <li> Apply the import by clicking <b>OK</b> button.</li>
+    </font>
+ </ol>	
+    <p><br>
+      <font face="Arial, Helvetica, sans-serif">Now the Districts layer has two attribute tables:
+      one that is part of the original mid/mif file and the other, SOC_ECONOMY, imported from the DBF file.
+      The themes associated with this layer may have one or both of these tables visibles 
+      on the grid.</p> 
+    <p>In order to visualize SOC_ECONOMY table data in the grid, the table has to be 
+    included in the selected Theme. In <i>Views/Themes Tree</i>, follow the 
+    steps below: </p>
+<ol>
+	<li> Click Districts theme to activate it. </li>
+	<li> Activate the theme popup menu (right click on its name).</li>
+	<li> Click on <b>Select Theme Tables</b> option. </li>
+</ol>		     	
+  <p align=center><img border=0 src="terraViewBase_arquivos/selecionar_tab_tema.png"></p>
+  <div align="left"> 
+<p ><font face="Arial"><br>
+  In the <i>Selection of Theme Tables</i> interface you shall follow the steps e notes below.
+  </font></p>    
+
+<p align="center"><font face="Arial"><img src="terraViewBase_arquivos/selecionar_tab_tema1.png"></font></p>
+ <ol>
+    <li> 
+      <font face="Arial">The left panel shows the tables of the layer that are not currently associated with the theme;</font>
+    </li>
+    <li><font face="Arial">The right panel shows the tables that are currently associated with the theme;</font></li>
+    
+  <li><font face="Arial">The arrows allow you to transfer a table from one side to the other; </font></li>
+    
+  <li><font face="Arial">Transfer SOC_ECONOMY table to the right side (<i>Theme Tables</i>) and click on <b>OK</b>. </font></li>
+  
+  </ol>
+<p ><font face="Arial"><br>
+  As you can see below, the attributes of the table that was imported are now displayed in the grid, e.g. 
+  RENDA_FAM which is displayed in the status bar as belonging to SOC_ECONOMY table.
+  </font></p>
+<p align="center"  ><font face="Arial"><img src="terraViewBase_arquivos/grade_atributos.png"></font></p>
+
+<hr>
+<p align="right"><font face="Arial"><a href="ImportTblPoints.htm">&lt;&lt; Previous</a>&nbsp;|&nbsp;<a href="terraViewBase.htm">Home</a> 
+  | <a href="importando_tabelas_externas.htm">Next &gt;&gt;</a><font face="Arial"> </font></font></p>
+<font face="Arial"><p  ><font face="Arial"> </font></p>
+</font><font face="Arial"></font> 
+</body>
+</html>

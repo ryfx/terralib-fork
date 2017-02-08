@@ -1,0 +1,69 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>ViewProperties</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>ViewProperties</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>259</width>
+            <height>258</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>View Properties</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>11</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="QTable" row="0" column="0">
+            <property name="name">
+                <cstring>viewPropertiesTable</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="numRows">
+                <number>10</number>
+            </property>
+            <property name="numCols">
+                <number>2</number>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<includes>
+    <include location="global" impldecl="in declaration">terraViewBase.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraView;</forward>
+</forwards>
+<variables>
+    <variable>TerraViewBase* mainWindow_;</variable>
+</variables>
+<slots>
+    <slot access="protected">init()</slot>
+</slots>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

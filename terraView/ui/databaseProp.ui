@@ -1,0 +1,69 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>DatabaseProperties</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>DatabaseProperties</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>257</width>
+            <height>250</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Database Properties</string>
+    </property>
+    <property name="icon">
+        <pixmap>terralib.bmp</pixmap>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>11</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="QTable" row="0" column="0">
+            <property name="name">
+                <cstring>databasePropertiesTable</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>235</width>
+                    <height>225</height>
+                </size>
+            </property>
+            <property name="numRows">
+                <number>10</number>
+            </property>
+            <property name="numCols">
+                <number>2</number>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<includes>
+    <include location="global" impldecl="in implementation">terraViewBase.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<forwards>
+    <forward>class TerraViewBase;</forward>
+</forwards>
+<variables>
+    <variable>TerraViewBase* mainWindow_;</variable>
+</variables>
+<slots>
+    <slot access="protected">init()</slot>
+</slots>
+<pixmapinproject/>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

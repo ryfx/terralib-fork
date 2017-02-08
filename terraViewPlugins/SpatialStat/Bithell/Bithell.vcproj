@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="Bithell"
+	ProjectGUID="{A666DCD8-2B65-4E99-84F0-90DB5C98A35A}">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="..\Debug\plugins\"
+			IntermediateDirectory="..\Debug\plugins\obj\Bithell\"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				Optimization="0"
+				AdditionalIncludeDirectories="..\..\..\src\terralib\kernel,.,..\..\..\terraViewPlugins\base,..\..\..\terraView,..\..\..\terraView\ui,..\..\..\ui\terraView,..\..\..\ui\appUtils,..\..\..\src\libspl,..\..\..\src\terralib\kernel,..\..\..\src\terralib\functions,..\..\..\src\terralib\drivers\qt,..\..\..\src\terralib\drivers\spl,..\..\..\src\appUtils,..\..\..\ui,..\..\..\src\terralib\utils,include,$(QTDIR)\include,src\ui\,ui,D:\funcate\tags_tlib\v-3.6.0\terralib\terraViewPlugins\SpatialStat\Bithell,src\moc\,C:\Qt\3.2.0\mkspecs\win32-msvc.net"
+				PreprocessorDefinitions="_WINDOWS,_DEBUG,WIN32,QT_DLL,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				MinimalRebuild="TRUE"
+				ExceptionHandling="TRUE"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				BufferSecurityCheck="TRUE"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="..\Debug\plugins\obj\Bithell\"
+				ObjectFile="..\Debug\plugins\obj\Bithell\"
+				ProgramDataBaseFileName="../Debug/win32-msvc/obj/Bithell/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="3"
+				DisableSpecificWarnings="4100"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mt320.lib libspl.lib terralib.lib te_apputils.lib terraViewCore.lib te_spl.lib te_spl.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile="..\Debug\plugins\Bithell.dll"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="../../../Debug/terralib,../../../Debug/terralib,../../../Debug/te_apputils,../../../Debug/libspl,../../../Debug/te_spl,../../../Debug/terraViewCore,$(QTDIR)\lib"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
+				SubSystem="2"
+				BaseAddress="0x39D00000"
+				ImportLibrary="$(OutDir)/$(ProjectName).lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Copy Bithell.dll to ..\..\..\terraView\windows\plugins"
+				CommandLine="copy  &quot;$(TargetPath)&quot; &quot;..\..\..\terraView\windows\plugins&quot;"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="..\Release\plugins\"
+			IntermediateDirectory="..\Release\plugins\obj\Bithell\"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				Optimization="2"
+				AdditionalIncludeDirectories="..\..\..\src\terralib\kernel,.,..\..\..\terraViewPlugins\base,..\..\..\terraView,..\..\..\terraView\ui,..\..\..\ui\terraView,..\..\..\ui\appUtils,..\..\..\src\libspl,..\..\..\src\terralib\kernel,..\..\..\src\terralib\functions,..\..\..\src\terralib\drivers\qt,..\..\..\src\terralib\drivers\spl,..\..\..\src\appUtils,..\..\..\ui,..\..\..\src\terralib\utils,include,$(QTDIR)\include,src\ui\,ui,D:\funcate\tags_tlib\v-3.6.0\terralib\terraViewPlugins\SpatialStat\Bithell,src\moc\,C:\Qt\3.2.0\mkspecs\win32-msvc.net"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,NDEBUG,WIN32,QT_DLL,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				ExceptionHandling="TRUE"
+				RuntimeLibrary="2"
+				BufferSecurityCheck="TRUE"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="..\Release\plugins\obj\Bithell\"
+				ObjectFile="..\Release\plugins\obj\Bithell\"
+				ProgramDataBaseFileName="../Release/win32-msvc/obj/Bithell/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="0"
+				DisableSpecificWarnings="4100"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mt320.lib libspl.lib terralib.lib te_apputils.lib terraViewCore.lib te_spl.lib te_spl.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile="..\Release\plugins\Bithell.dll"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="../../../Release/terralib,../../../Release/terralib,../../../Release/te_apputils,../../../Release/libspl,../../../Release/te_spl,../../../Release/terraViewCore,$(QTDIR)\lib"
+				DelayLoadDLLs="comdlg32.dll,oleaut32.dll,winmm.dll,wsock32.dll,winspool.dll"
+				ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
+				SubSystem="2"
+				BaseAddress="0x39D00000"
+				ImportLibrary="$(OutDir)/$(ProjectName).lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Copy Bithell.dll to ..\..\..\Release\plugins"
+				CommandLine="copy  &quot;$(TargetPath)&quot; &quot;..\..\..\Release\plugins&quot;"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="src\Bithell2.cpp">
+			</File>
+			<File
+				RelativePath="src\bithellplugin.cpp">
+			</File>
+			<File
+				RelativePath="src\bithellPluginCode.cpp">
+			</File>
+			<File
+				RelativePath="src\BithellPluginWindow.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath="include\Bithell2.h">
+			</File>
+			<File
+				RelativePath="include\bithellplugin.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing include\bithellplugin.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe include\bithellplugin.h -o src\moc\moc_bithellplugin.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="src\moc\moc_bithellplugin.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing include\bithellplugin.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe include\bithellplugin.h -o src\moc\moc_bithellplugin.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="src\moc\moc_bithellplugin.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="include\bithellPluginCode.h">
+			</File>
+			<File
+				RelativePath="include\BithellPluginWindow.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing include\BithellPluginWindow.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe include\BithellPluginWindow.h -o src\moc\moc_BithellPluginWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="src\moc\moc_BithellPluginWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing include\BithellPluginWindow.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe include\BithellPluginWindow.h -o src\moc\moc_BithellPluginWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="src\moc\moc_BithellPluginWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated MOC Files"
+			Filter="cpp;c;cxx;moc">
+			<File
+				RelativePath="src\moc\moc_BithellForm.cpp">
+			</File>
+			<File
+				RelativePath="src\moc\moc_bithellplugin.cpp">
+			</File>
+			<File
+				RelativePath="src\moc\moc_BithellPluginWindow.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated UI Files"
+			Filter="cpp;c;cxx;h;hpp;hxx;">
+			<File
+				RelativePath="src\ui\BithellForm.cpp">
+			</File>
+			<File
+				RelativePath="src\ui\BithellForm.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Forms"
+			Filter="ui"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="ui\BithellForm.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ui\BithellForm.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ui\BithellForm.ui -o src\ui\BithellForm.h &amp;&amp; $(QTDIR)\bin\uic.exe ui\BithellForm.ui -i BithellForm.h -o src\ui\BithellForm.cpp &amp;&amp; $(QTDIR)\bin\moc.exe src\ui\BithellForm.h -o src\moc\moc_BithellForm.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="src\ui\BithellForm.h;src\ui\BithellForm.cpp;src\moc\moc_BithellForm.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ui\BithellForm.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ui\BithellForm.ui -o src\ui\BithellForm.h &amp;&amp; $(QTDIR)\bin\uic.exe ui\BithellForm.ui -i BithellForm.h -o src\ui\BithellForm.cpp &amp;&amp; $(QTDIR)\bin\moc.exe src\ui\BithellForm.h -o src\moc\moc_BithellForm.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="src\ui\BithellForm.h;src\ui\BithellForm.cpp;src\moc\moc_BithellForm.cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Translations Files"
+			Filter="ts"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="bithell_pt.ts">
+			</File>
+			<File
+				RelativePath="bithell_sp.ts">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

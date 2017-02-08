@@ -1,0 +1,86 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>SemivarGraph</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>SemivarGraph</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>523</width>
+            <height>459</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="paletteBackgroundColor">
+        <color>
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+        </color>
+    </property>
+    <property name="font">
+        <font>
+        </font>
+    </property>
+    <property name="cursor">
+        <cursor>2</cursor>
+    </property>
+    <property name="caption">
+        <string>Semivar Graphic</string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+</widget>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="559">789c6d91cb0ac2301045f7f98ad0bb2bd2975814f113049782b898a6165d74a37521e2bf9b4c5e6d759a50eec9e46632c953793cec659a8bc740c34d4975a5bb4cdb67dfbf4ee7dd5b24e546eab19265b210492695842acc67a432f252d5545646362cdbb5aa38998cecbaf5b2a88d849526d8ea37c6183ae6182022f81587196a4afa8f11666aa7c9670c34d4044ae4b1cf25d845c640a0f60c026352ced4428f5db82d110767e7045749c47697ab04318289bf64f4cefe624c7be24f8e1d0ca54d5a157b88f9338c5e214b3e5bf105d04a80ca</data>
+    </image>
+</images>
+<includes>
+    <include location="global" impldecl="in declaration">TeQtGraph.h</include>
+    <include location="global" impldecl="in declaration">vector</include>
+    <include location="global" impldecl="in declaration">TeMatrix.h</include>
+    <include location="global" impldecl="in declaration">TeQtGraph.h</include>
+    <include location="local" impldecl="in implementation">semivarGraph.ui.h</include>
+    <include location="global" impldecl="in declaration">TViewDefines.h</include>
+</includes>
+<variables>
+    <variable access="private">double xmin_;</variable>
+    <variable access="private">double xmax_;</variable>
+    <variable access="private">double ymin_;</variable>
+    <variable access="private">double ymax_;</variable>
+    <variable access="private">TePlotWidget* gplot_;</variable>
+    <variable access="private">double* vx_;</variable>
+    <variable access="private">double* vy_;</variable>
+    <variable access="private">int vsize_;</variable>
+    <variable access="private">Labels labels_;</variable>
+    <variable access="private">double* vmx_;</variable>
+    <variable access="private">double* vmy_;</variable>
+    <variable access="private">int vmsize_;</variable>
+</variables>
+<slots>
+    <slot access="protected">init()</slot>
+    <slot access="protected">paintEvent( QPaintEvent * )</slot>
+    <slot access="protected">resizeEvent( QResizeEvent * )</slot>
+</slots>
+<functions>
+    <function>init( TeMatrix &amp; mx, TeMatrix &amp; mod )</function>
+    <function>adjustAxis()</function>
+    <function specifier="non virtual">setModSize( int )</function>
+</functions>
+<exportmacro>TVIEW_DLL</exportmacro>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

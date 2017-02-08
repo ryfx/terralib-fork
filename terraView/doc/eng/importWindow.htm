@@ -1,0 +1,122 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Importação de Dados Vetoriais</title>
+</head>
+
+<body lang=PT-BR link=blue vlink=blue>
+
+<div class=Section1>
+
+<p align=center>
+	<strong><u>
+		<span style='font-size: 13.5pt;font-family:Arial'>Vector Data Import</span>
+	</u></strong>
+</p>
+
+<p>
+	<span style='font-family:Arial'> TerraView imports vector data files in one 
+  of these formats: Shapefiles, MID/MIF, TAB/GEO (from SPRING), and BNA (from 
+  TabWIN). A database must be connected to TerraView before importing vector data. 
+  <br>
+  <br>
+  <strong>MID/MIF</strong> <br>
+  <br>
+  Assume that <u>distritos.mif</u> and <u>distritos.mid</u> files contain the 
+  map of São Paulo municipality districts with their locations and descriptive 
+  attributes. File extensions &quot;.<u>mif</u>&quot; and &quot;.<u>mid</u>&quot; 
+  indicate that these files are MAPInfo interchange format and this format can 
+  be imported by TerraView. To import files in this format, execute the following 
+  steps: <br>
+  <br>
+  1. Click on <img id="_x0000_i1035" src="importWindow_arquivos/image001.png"> 
+  icon in the Tool Bar<b> </b>or select <b>File <span lang=EN-US style='font-size:12.0pt;font-family:Symbol'>®</span> 
+  Import Data</b> menu. The import interface shown below is displayed: 
+  <p align=center> <img id="_x0000_i1034" src="importWindow_arquivos/image002.png"> 
+  </p>
+  2. Click <em>File</em> button to select the data. Note that type of filter has 
+  to be changed to match MID/MIF format files, as shown in the Figure below. Select 
+  <u>distritos.mif</u> file and click <em>Open</em> button. 
+  <p align=center> <img src="importWindow_arquivos/image003.png" width="308" height="83" id="_x0000_i1033"> 
+  </p>
+  3. Notice in the Figure below that the import interface identifies data projection 
+  since this format stores this projection information. A name for the layer to 
+  be created is suggested by the interface. 
+  <p align=center> <img id="_x0000_i1032" src="importWindow_arquivos/image004.png"> 
+  </p>
+  4. Next, the interface presents the <em>Linking Tables of Attributes and Geometries 
+  </em> frame to allow the selection of the linking method between districts attributes 
+  (in MID file) and their geometries (in MIF file). <em>Automatic</em> option 
+  indicates that an attribute will be created with a sequential numbering accordingly 
+  to data sequence in the file and this attribute will be used for the linkage 
+  <em>Link Column</em> option allows one of the existing attributes (or columns) 
+  of the file to be used for the linkage. When this option is selected, verify 
+  that the attribute or column value is not repeated in the file. Here, select 
+  the second option and SPRROTULO column, as shown in the previous Figure. A confirmation 
+  of the choices will be asked by the interface. <br>
+  <br>
+  5. When import is finished, a new layer will be displayed in the layers tree 
+  as shown in the Figure below: 
+  <p align=center> <img src="importWindow_arquivos/image005.png" width="180" height="79" id="_x0000_i1031"> 
+  </p>
+  6. In order to display or manipulate a layer it must be associated to a Theme 
+  and included in a View. For that reason, the import procedure offers to create 
+  these entities automatically through the question presented in Figure below. 
+  Select <em>Yes</em>. 
+  <p align=center> <img id="_x0000_i1030" src="importWindow_arquivos/image006.png"> 
+  </p>
+  7. Notice that a View and a Theme were created and Grid and Draw areas are filled 
+  in as shown in Figure below. 
+  <p align=center> <img id="_x0000_i1029" src="importWindow_arquivos/image007.png"> 
+  </p>
+  <strong>Shapefile</strong> <br>
+  <br>
+  Files in shapefile format are imported using a procedure similar to the one 
+  explained in the previous section. Assume that a file with point data related 
+  to the location of subway stations in shapefile has to be imported. Shapefile 
+  is the exchange format for ESRI products and are composed by three files: &quot;<u>estacoes-metro.shp</u>&quot;, 
+  &quot;<u>estacoes-metro.dbf</u>&quot;, and &quot;<u>estacoes-metro.shx</u>&quot;. 
+  Follow steps 1 to 3 described above. Note that the filter type has to be changed. 
+  The interface shown in Figure below will be presented: 
+  <p align=center> <img src="importWindow_arquivos/image008.png" width="347" height="283" id="_x0000_i1028"> 
+  </p>
+  Notice that the projection could not be retrieved from the file and for that 
+  reason the interface indicates data projection to be &quot;NoProjection&quot;. 
+  If data projection is known, click <em>Projection...</em><i>button </i>and provide 
+  the projection definition presented in the Figure below. 
+  <p align=center> <img src="importWindow_arquivos/image009.png" width="343" height="281"></p>
+  For each projection, a set of parameters are required. Here subway stations 
+  data are projected using UTM, Zone 23, and Datum SAD69. Provide these parameters 
+  and click <em>OK </em>button. <br>
+  <br>
+  Finish the import procedure as shown in the previous example (steps 4, 5, and 
+  6). Use ROTULO column for the linkage. <br>
+  <br>
+  This time select No to the question about imported data visualization. Notice 
+  that the layer is available (as seen in the Figure below) but is not automatically 
+  displayed. 
+  <p align=center> <img src="importWindow_arquivos/image010.png" width="152" height="68" id="_x0000_i1026"> 
+  </p>
+  <strong>Tab/Geo</strong> <br>
+  <br>
+  Next, import a file with point data related to the location of train stations 
+  in Geo/Tab format. This format is the export format of SPRING data to TerraView. 
+  Geo/Tab format is composed by two files: &quot;<u>estacoes-ferroviarias.geo</u>&quot; 
+  and &quot;<u>estacoes-ferroviarias.tab</u>. Follow steps 1 to 3 described previously. 
+  Note that the filter type has to be changed in step 2. This format does not 
+  contain data projection information. If this information is known, provide data 
+  projection as described above for shapefile format.&nbsp;Notice that this format 
+  does not allow the linking column to be selected since the column is defined 
+  by SPRING data. Therefore, step 4 is not applicable for Geo/Tab format. <br>
+  <br>
+  Here again if the answer for automatic visualization is &quot;No&quot; the layer 
+  will be available as shown in Figure below but will not be automatically displayed. 
+  <p align=center> <img id="_x0000_i1025" src="importWindow_arquivos/image011.png"> 
+  </p></p>
+  <hr size=2 width="100%" align=center>
+  </span> </div>
+
+</body>
+
+</html>

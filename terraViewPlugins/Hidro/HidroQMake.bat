@@ -1,0 +1,1 @@
+qmake hidro TE_PROJECT_TYPE=DEBUG
